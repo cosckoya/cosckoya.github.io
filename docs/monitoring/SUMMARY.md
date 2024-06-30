@@ -1,1 +1,0 @@
-* [Prometheus](prometheus.md)

@@ -3,6 +3,5 @@
 * [Cloud](cloud/index.md)
 * [Containers](containers/index.md)
 * [Code](code/)
-* [Monitoring](monitoring/)
-* [CyberSecurity](security/)
-* [Sample](sample/)
+* [Monitoring](monitoring/index.md)
+* [CyberSecurity](security/index.md)

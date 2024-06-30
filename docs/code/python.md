@@ -38,6 +38,12 @@
     $> pip3 freeze > requisites.txt
     ```
 
+### Reference
+=== "Documentation"
+    - [MkDocs Documentation](https://www.mkdocs.org/)
+    - [Python Markdown Extensions](https://python-markdown.github.io/extensions)
+
+
 ## VirtualEnv
 !!! tip "VirtualEnv"
     Install VirtualEnv with Pip
@@ -50,6 +56,11 @@
     $> source venv/bin/activate
     $> pip install -r requeriments.txt
     ```
+
+### Reference
+=== "Documentation"
+    - [MkDocs Documentation](https://www.mkdocs.org/)
+    - [Python Markdown Extensions](https://python-markdown.github.io/extensions)
 
 ## MkDocs
 !!! tip "MkDocs"

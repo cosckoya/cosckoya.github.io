@@ -152,44 +152,22 @@ Obsidian is a powerful note-taking and knowledge management application that use
     - [Dracula Theme](https://draculatheme.com)
 
 ## Bookmarks
-
----
-## Useful Gits
-
-- [Helm](https://github.com/helm)
-- [Kubernetes SIGs](https://github.com/kubernetes-sigs)
 - [Cheat](https://github.com/cheat)
-## Awesome Gits
 - [Awesome](https://github.com/sindresorhus/awesome)
-- [Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
-- [Kubernetes Operators](https://github.com/operator-framework/awesome-operators)
-- [Kubernetes Plugins](https://github.com/ishantanu/awesome-kubectl-plugins)
-- [Helm](https://github.com/cdwv/awesome-helm)
 - [Terraform](https://github.com/shuaibiyy/awesome-terraform)
 
-## Tech
-- [Dev.to](https://dev.to)
-- [Hackaday.io](https://hackaday.io)
-- [Hackster.io](https://www.hackster.io)
-- [Gbatemp](https://gbatemp.net)
-## Learning
-- [CNCF](https://landscape.cncf.io)
-- [RedHat Developers](https://developers.redhat.com)
-- [Hackr.io](https://hackr.io)
-- [Hashicorp](https://learn.hashicorp.com)
-- [Mozilla Developers](https://developer.mozilla.org)
-- [Raspberry PI](https://projects.raspberrypi.org)
-## Tools
-- [httpstatus](https://httpstatus.io)
-- [Mozilla SSL](https://ssl-config.mozilla.org)
-## More
-- [DevDocs.io](https://devdocs.io)
-- [Zeal](https://zealdocs.org/): Offline documentation browser for software developers.
-- [Google Style Guides ](https://google.github.io/styleguide):
-- [Codeacademy](https://www.codecademy.com)
-## References
-- [ASCII Art](http://patorjk.com/software/taag)
-- [IP Calculator](http://jodies.de/ipcalc)
+=== "Learn"
+    - [CNCF](https://landscape.cncf.io)
+    - [RedHat Developers](https://developers.redhat.com)
+    - [Mozilla Developers](https://developer.mozilla.org)
+    - [Google Style Guides ](https://google.github.io/styleguide)
+    - [Codeacademy](https://www.codecademy.com)
+=== "Sites"
+    - [Gbatemp](https://gbatemp.net)
+    - [Hackr.io](https://hackr.io)
+    - [Hashicorp](https://learn.hashicorp.com)
+    - [DevDocs.io](https://devdocs.io)
+    - [Zeal](https://zealdocs.org/)
 
 
 ![!](resources/img/zelda.png#center)

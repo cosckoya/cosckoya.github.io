@@ -17,14 +17,20 @@
 === "Documentation"
     - [Kubernetes](https://kubernetes.io)
     - [Kubernetes Github](https://github.com/kubernetes)
+    - [Awesome Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
+    - [Kubernetes SIGs](https://github.com/kubernetes-sigs)
 === "Minis (SelfHosted)"
     - [Minikube](https://minikube.sigs.k8s.io)
     - [Kind](https://kind.sigs.k8s.io)
     - [Matchbox](https://matchbox.psdn.io)
-=== "Helm"
+=== "Helm & Operators"
     - [Helm](https://helm.sh)
     - [Helm Github](https://github.com/helm)
+    - [Awesome Helm](https://github.com/cdwv/awesome-helm)
     - [ArtifactHUB](https://artifacthub.io/)
+    - [Kubernetes Operators](https://github.com/operator-framework/awesome-operators)
+=== "Plugins"
+    - [Kubernetes Plugins](https://github.com/ishantanu/awesome-kubectl-plugins)
 === "Cloud"
     - [AWS EKS](https://aws.amazon.com/eks)
     - [Azure AKS](https://azure.microsoft.com/services/kubernetes-service)

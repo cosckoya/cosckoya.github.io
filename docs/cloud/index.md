@@ -10,5 +10,4 @@
     - [r/Learn AWS](https://www.reddit.com/r/learnAWS/)
 
 ## Configure AWS Cli
-!!! info "Reference"
-    - [AWS Command Line Interface Documentation](https://docs.aws.amazon.com/cli/)
+- [AWS Command Line Interface Documentation](https://docs.aws.amazon.com/cli/)

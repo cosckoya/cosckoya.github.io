@@ -1,6 +1,0 @@
-* [Learning](learn.md)
-* [Tools](tools.md)
-* [RECON](recon.md)
-* [Web Pentesting](webpen.md)
-* [OSINT](osint.md)
-* [Bruteforce & Wordlists](brute.md)
