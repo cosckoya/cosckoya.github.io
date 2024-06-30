@@ -9,7 +9,6 @@ tags:
   - DevSecOps
 ---
 # Git
-![!](../resources/img/welcome.png#center)
 !!! info "Reference"
     === "Learning"
     - [Gitlab Learn](https://about.gitlab.com/learn/)

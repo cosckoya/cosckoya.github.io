@@ -20,11 +20,6 @@
     === "Learn"
     - [VIM adventures](https://vim-adventures.com)
 
-!!! tip "Remove ^M with Vim"
-    Run the command in Vim
-    ```
-    :%s/\r$//g
-    ```
 ## Tmux
 !!! info "Links"
     - [Tmux](https://github.com/tmux/tmux)

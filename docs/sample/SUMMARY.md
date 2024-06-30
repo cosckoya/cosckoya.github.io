@@ -1,2 +1,2 @@
-* [SampleIndex](sample_index.md)
+* [SampleIndex](index.md)
 * [SampleDir](sample_dir/)
