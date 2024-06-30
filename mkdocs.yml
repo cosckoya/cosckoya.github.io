@@ -1,0 +1,81 @@
+site_name: It's dangerous to go alone!
+site_url: https://cosckoya.github.io
+site_description: Cosckoya's Tech Toolbox
+site_author: 'cosckoya'
+copyright: Copyright &copy; 2024 цосцкоыа
+
+repo_url: https://cosckoya.github.io
+edit_uri: ""
+
+theme:
+  name: material
+  logo: resources/img/logo.png
+  favicon: resources/img/favicon.png
+  language: en
+  #highlightjs: true
+  #hljs_style: gml
+  #hljs_languages:
+  #  - bash,sh
+  #  - yaml
+  #  - python
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: teal
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cosckoya
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/cosckoya
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/cosckoya
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/cosckoya
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/javier-coscolla-cabrera-95948224
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/cosckoya
+
+markdown_extensions:
+  - toc:
+      permalink: True
+# Admotions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+# Annotations
+  - attr_list
+  - md_in_html
+# TBR
+  - def_list
+  - pymdownx.magiclink
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+#      base_path: 'resources/code'
+  - pymdownx.tabbed
+  #- pymdownx.emoji:
+  #    emoji_index: !!python/name:materialx.emoji.twemoji
+  #    emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - same-dir
+  - tags
+  - literate-nav:
+      nav_file: SUMMARY.md
+#  - minify:
+#      minify_html: true
+#      minify_js: true
+#  - sequence-js:
+#      theme: simple|hand
+#      popup: true
+
+extra_css:
+  - resources/stylesheets/images.css
