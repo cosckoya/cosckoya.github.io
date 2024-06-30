@@ -1,12 +1,12 @@
-!!! info "Reference"
-    === "Useful"
+## AWS
+=== "Useful"
     - [AWS Instances](https://instances.vantage.sh/)
-    === "Learning"
+=== "Learning"
     - [AWS Skill Builder](https://skillbuilder.aws/)
     - [W3 Schools: AWS](https://www.w3schools.com/aws/)
-    === "Reddit"
+=== "Community"
     - [r/AWS](https://www.reddit.com/r/aws)
-    - [r(AWS Certifications](https://www.reddit.com/r/AWSCertifications/)
+    - [r/AWS Certifications](https://www.reddit.com/r/AWSCertifications/)
     - [r/Learn AWS](https://www.reddit.com/r/learnAWS/)
 
 ## Configure AWS Cli

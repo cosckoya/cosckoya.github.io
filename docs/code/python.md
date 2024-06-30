@@ -17,6 +17,7 @@
     - [Tools of the Trade](https://github.com/cjbarber/ToolsOfTheTrade)
     - [Awesome Python](https://github.com/vinta/awesome-python)
 
+
 ## Pip
 !!! tip "Pip"
     Install Pip
