@@ -1,13 +1,15 @@
 # Shell scripting
-!!! info "Reference"
-    === "Documentation"
-        - [Shell StyleGuide](https://google.github.io/styleguide/shellguide.html)
-        - [Gnu Bash](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
-        - [SS64: Bash](https://ss64.com/bash/)
-    === "Books"
-        - [Bash Cookbook, 2nd Edtion](https://www.oreilly.com/library/view/bash-cookbook-2nd/9781491975329)
-    === "Git"
-        - [Awesome Shell](https://github.com/alebcay/awesome-shell)
+## Reference
+=== "Documentation"
+    - [Shell StyleGuide](https://google.github.io/styleguide/shellguide.html)
+    - [Gnu Bash](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
+    - [SS64: Bash](https://ss64.com/bash/)
+
+=== "Books"
+    - [Bash Cookbook, 2nd Edtion](https://www.oreilly.com/library/view/bash-cookbook-2nd/9781491975329)
+
+=== "Git Repositories"
+    - [Awesome Shell](https://github.com/alebcay/awesome-shell)
 
 ## Variables
 

@@ -25,6 +25,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    - content.tabs.link
     - content.code.copy
 
 extra:
@@ -59,7 +60,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 #      base_path: 'resources/code'
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   #- pymdownx.emoji:
   #    emoji_index: !!python/name:materialx.emoji.twemoji
   #    emoji_generator: !!python/name:materialx.emoji.to_svg

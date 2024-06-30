@@ -1,46 +1,45 @@
 # Python
 ## Reference
-!!! info "Reference"
-    === "Documentation"
+=== "Documentation"
     - [Python Docs](https://docs.python.org/)
     - [Python StyleGuide](https://google.github.io/styleguide/pyguide.html)
     - [W3Schools](https://www.w3schools.com/python/default.asp)
-    === "Books"
+=== "Books"
     - [Python Crash Course, 2nd edition](https://nostarch.com/pythoncrashcourse2e)
     - [Learn Python 3 the Hard Way](https://dl.acm.org/doi/book/10.5555/3164654)
     - [Learn More Python 3 the Hard Way](https://dl.acm.org/doi/book/10.5555/3176168)
     - [Automate the Boring Stuff with Python, 2nd Edition](https://nostarch.com/automatestuff2)
-    === "Learning"
+=== "Learning"
     - [Geeks for Geeks: Python](https://www.geeksforgeeks.org/python-programming-language)
     - [Learn Python 3: Absolute Begginers](https://www.tutorialspoint.com/python3/index.htm)
-    === "Gits"
+=== "Git Repositories"
     - [Easy-Python](https://easy-python.readthedocs.io)
     - [Tools of the Trade](https://github.com/cjbarber/ToolsOfTheTrade)
     - [Awesome Python](https://github.com/vinta/awesome-python)
 
 ## Pip
 !!! tip "Pip"
-    === "Install Pip"
+    Install Pip
     ```
     $> curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
     $> python3 get-pip.py --user
     ```
-    === "Upgrade Pip"
+    Upgrade Pip
     ```
     $> python3 -m pip install --upgrade pip
     ```
-    === "Update Pip Package"
+    Update Pip Package
     ```
     $> pip3 install --upgrade --force-reinstall
     ```
-    === "Freeze Pip packages"
+    Freeze Pip packages
     ```
     $> pip3 freeze > requisites.txt
     ```
 
 ## VirtualEnv
 !!! tip "VirtualEnv"
-    === "Install VirtualEnv with Pip"
+    Install VirtualEnv with Pip
     ```
     $> pip3 install virtualenv
     ```
@@ -66,8 +65,9 @@
     $> python3 -m mkdocs serve
     ```
 
-!!! info "Reference"
-    === "Documentation"
+### Reference
+=== "Documentation"
     - [MkDocs Documentation](https://www.mkdocs.org/)
     - [Python Markdown Extensions](https://python-markdown.github.io/extensions)
+=== "Themes"
     - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material)
