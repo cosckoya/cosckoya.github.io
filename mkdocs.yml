@@ -4,7 +4,7 @@ site_description: Cosckoya's Tech Toolbox
 site_author: 'cosckoya'
 copyright: Copyright &copy; 2024 цосцкоыа
 
-repo_url: https://cosckoya.github.io
+repo_url: https://github.com/cosckoya/cosckoya.github.io
 edit_uri: ""
 
 theme:
