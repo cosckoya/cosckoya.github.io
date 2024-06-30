@@ -93,7 +93,7 @@ With a "getops" case you can add more logic to your scripts, making them more co
     done
     echo $arg1 $arg2 $arg3
     ```
-    
+
 ### Split strings
 
 Capture values from an output and use them in your script. Imagine that you want to parse a "free -m" command and get some values to work     with. If you run this command it will show you a "table" with all the metrics so let's manipulate this output.
@@ -295,7 +295,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
 !!! example
     ```bash
     #!/bin/bash
-    
+
     n=20
     a=100
     b=200
@@ -381,7 +381,7 @@ Think of a function as a small script within a script. It's a small chunk of cod
     Inside function: var1: C, var2: D
     After executing function: var1: A, var2: D
     ```
-    
+
 ??? example "Variable Scope #2"
     ```bash
     #!/bin/bash
