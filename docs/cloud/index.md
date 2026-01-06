@@ -1,4 +1,5 @@
 ## AWS
+
 === "Useful"
     - [AWS Instances](https://instances.vantage.sh/)
 === "Learning"
@@ -10,4 +11,5 @@
     - [r/Learn AWS](https://www.reddit.com/r/learnAWS/)
 
 ## Configure AWS Cli
+
 - [AWS Command Line Interface Documentation](https://docs.aws.amazon.com/cli/)

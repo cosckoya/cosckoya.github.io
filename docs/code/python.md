@@ -1,5 +1,7 @@
 # Python
+
 ## Reference
+
 === "Documentation"
     - [Python Docs](https://docs.python.org/)
     - [Python StyleGuide](https://google.github.io/styleguide/pyguide.html)
@@ -17,8 +19,8 @@
     - [Tools of the Trade](https://github.com/cjbarber/ToolsOfTheTrade)
     - [Awesome Python](https://github.com/vinta/awesome-python)
 
-
 ## Pip
+
 !!! tip "Pip"
     Install Pip
     ```
@@ -38,13 +40,14 @@
     $> pip3 freeze > requisites.txt
     ```
 
-### Reference
+### Pip Reference
+
 === "Documentation"
     - [MkDocs Documentation](https://www.mkdocs.org/)
     - [Python Markdown Extensions](https://python-markdown.github.io/extensions)
 
-
 ## VirtualEnv
+
 !!! tip "VirtualEnv"
     Install VirtualEnv with Pip
     ```
@@ -57,12 +60,14 @@
     $> pip install -r requeriments.txt
     ```
 
-### Reference
+### VirtualEnv Reference
+
 === "Documentation"
     - [MkDocs Documentation](https://www.mkdocs.org/)
     - [Python Markdown Extensions](https://python-markdown.github.io/extensions)
 
 ## MkDocs
+
 !!! tip "MkDocs"
     Install mkdocs with Pip
     ```
@@ -72,12 +77,13 @@
     ```
     $> python3 -m mkdocs new .
     ```
-    Run the project and go to http://localhost:8000
+    Run the project and go to <http://localhost:8000>
     ```
     $> python3 -m mkdocs serve
     ```
 
-### Reference
+### MkDocs Reference
+
 === "Documentation"
     - [MkDocs Documentation](https://www.mkdocs.org/)
     - [Python Markdown Extensions](https://python-markdown.github.io/extensions)

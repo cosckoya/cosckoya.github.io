@@ -1,5 +1,7 @@
 ![!](resources/img/rorschach.png#center)
+
 ## ZSH
+
 Zsh, short for Z shell, is a powerful command-line shell for Unix-like operating systems. It is renowned for its advanced features, including improved tab completion, spelling correction, and powerful scripting capabilities. Zsh is highly customisable, allowing users to tailor their shell environment to their specific needs.
 
 === "Documentation"
@@ -15,6 +17,7 @@ Zsh, short for Z shell, is a powerful command-line shell for Unix-like operating
     - [Awesome ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins)
 
 ## NeoVim
+
 NeoVim is a highly extensible text editor designed to enable efficient text editing. It builds on the strengths of Vim, offering improved user experience, modern features, and better plugin integration. Its open-source nature encourages contributions from the community, fostering rapid development and innovation.
 === "Documentation"
     - [NeoVim](https://neovim.io/)
@@ -32,6 +35,7 @@ NeoVim is a highly extensible text editor designed to enable efficient text edit
     - [VIM adventures](https://vim-adventures.com)
 
 ## Tmux
+
 Tmux is a terminal multiplexer that allows users to run multiple terminal sessions within a single window. It enables users to detach and reattach sessions, making it easy to manage long-running processes. Tmux also supports window splitting, session management, and extensive customisation, enhancing productivity in the terminal.
 === "Documentation"
     - [Tmux](https://github.com/tmux/tmux)
@@ -98,6 +102,7 @@ Tmux is a terminal multiplexer that allows users to run multiple terminal sessio
     ```
 
 ## ASDF
+
 ASDF is a versatile version manager for managing multiple runtime versions of different languages. It supports a wide range of programming languages and tools, enabling seamless switching between different versions for development projects. ASDF's plugin architecture allows easy extension, making it a flexible tool for developers.
 
 ??? example "ASDF Command line basics"
@@ -141,6 +146,7 @@ ASDF is a versatile version manager for managing multiple runtime versions of di
     - [ASDF](https://asdf-vm.com)
 
 ## Obisidan
+
 Obsidian is a powerful note-taking and knowledge management application that uses plain text Markdown files. It offers features like backlinking, graph views, and plugins to help users create interconnected and structured notes. Obsidian's flexibility and customisability make it ideal for personal knowledge management and project organisation.
 === "Documentation"
     - [Obsidian](https://obsidian.md)
@@ -148,10 +154,12 @@ Obsidian is a powerful note-taking and knowledge management application that use
     - [r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/)
 
 ## Pimp my Desktop
+
 === "Themes"
     - [Dracula Theme](https://draculatheme.com)
 
 ## Bookmarks
+
 - [Cheat](https://github.com/cheat)
 - [Awesome](https://github.com/sindresorhus/awesome)
 - [Terraform](https://github.com/shuaibiyy/awesome-terraform)
@@ -160,7 +168,7 @@ Obsidian is a powerful note-taking and knowledge management application that use
     - [CNCF](https://landscape.cncf.io)
     - [RedHat Developers](https://developers.redhat.com)
     - [Mozilla Developers](https://developer.mozilla.org)
-    - [Google Style Guides ](https://google.github.io/styleguide)
+    - [Google Style Guides](https://google.github.io/styleguide)
     - [Codeacademy](https://www.codecademy.com)
 === "Sites"
     - [Gbatemp](https://gbatemp.net)
@@ -168,7 +176,6 @@ Obsidian is a powerful note-taking and knowledge management application that use
     - [Hashicorp](https://learn.hashicorp.com)
     - [DevDocs.io](https://devdocs.io)
     - [Zeal](https://zealdocs.org/)
-
 
 ![!](resources/img/zelda.png#center)
 ![!](resources/img/welcome.png#center)

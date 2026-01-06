@@ -29,6 +29,7 @@ theme:
     - content.code.copy
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/cosckoya
@@ -72,12 +73,13 @@ plugins:
   - tags
   - literate-nav:
       nav_file: SUMMARY.md
-#  - minify:
-#      minify_html: true
-#      minify_js: true
-#  - sequence-js:
-#      theme: simple|hand
-#      popup: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
 
 extra_css:
   - resources/stylesheets/images.css

@@ -1,5 +1,7 @@
 # Shell scripting
+
 ## Reference
+
 === "Documentation"
     - [Shell StyleGuide](https://google.github.io/styleguide/shellguide.html)
     - [Gnu Bash](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
@@ -22,7 +24,9 @@
     STRING  = 'Hello World'
     COMMAND = $( ls -l )
     ```
+
 ### Shell Built-In
+
 Built-in variables are automatically set by the shell and are typically used inside shell scripts
 
 !!! info
@@ -36,9 +40,10 @@ Built-in variables are automatically set by the shell and are typically used ins
     | `$0`     | First word, that is the command name  |
     | `$1-9`   | Individual arguments (positional)     |
     | `$*`     | Location of the user’s mail spool     |
-    | `"$@"`   | Location of the user’s mail spool     |
+    | `"$@"`   | Location of the user's mail spool     |
 
-### Substitution
+### Variable Substitution
+
 !!! info
     | Variable            | Description                                                     |
     | ------------------- | --------------------------------------------------------------- |
@@ -49,7 +54,8 @@ Built-in variables are automatically set by the shell and are typically used ins
     | `${ var :? value }` | Use `var` if set; otherwise, print value and exit               |
     | `${ var :+ value }` | Use value if `var` is set; otherwise, use nothing               |
 
-### Variables
+### Environment Variables
+
 These variables are typically used in your ".profile" file, and can be shown running "echo $VAR".
 !!! info "Variables"
     | Variable     | Description                                 |
@@ -72,6 +78,7 @@ These variables are typically used in your ".profile" file, and can be shown run
     | `RANDOM`     | Returns a different random number each time |
 
 ### Getopts
+
 With a "getops" case you can add more logic to your scripts, making them more complex. It will take the command line arguments to but  they have to be added before a "parameter"
 
 ??? example
@@ -152,7 +159,8 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     fi
     ```
 
-### Substitution
+### Parameter Substitution with Getopts
+
 ??? example
     ```bash
     #!/bin/bash
@@ -196,23 +204,23 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
 ??? example
 
     ```
-    command >   filename	    Redirect stdout to file “filename.”
-    command >>  filename	    Redirect and append stdout to file “filename.”
+    command >   filename     Redirect stdout to file “filename.”
+    command >>  filename     Redirect and append stdout to file “filename.”
 
-    command 2>  filename	    Redirect stderr to file “filename.”
-    command 2>> filename	    Redirect and append stderr to file “filename.”
+    command 2>  filename     Redirect stderr to file “filename.”
+    command 2>> filename     Redirect and append stderr to file “filename.”
 
     command &>  filename
-    command >   filename 2>&1	Redirect both stdout and stderr to file “filename.”
+    command >   filename 2>&1 Redirect both stdout and stderr to file “filename.”
 
     command &>> filename
-    command >>  filename 2>&1	Redirect both stdout and stderr append to file “filename.”
+    command >>  filename 2>&1 Redirect both stdout and stderr append to file “filename.”
     ```
 
 ## Operators
 
+### Arithmetic Operators
 
-### Arithmetic
 !!! info
     ```bash
     +  -- echo `expr 3 + 4`        # 7
@@ -229,6 +237,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     ```
 
 ### String
+
 !!! info
     ```bash
     >,< -- String length compare
@@ -237,6 +246,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     ```
 
 ### Compare
+
 !!! info
     ```bash
     -eq,== -- Equal
@@ -248,6 +258,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     ```
 
 ### File
+
 !!! info
     ```bash
     -e    -- File or folder exists
@@ -275,6 +286,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     ```
 
 ### Increment / Decrement
+
 !!! example
     ```bash
     ++ -- i=1;echo $((++i+7)) # 9 (PRE)
@@ -284,6 +296,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     ```
 
 ### Logical
+
 !!! example
     ```bash
     && -- if [[ $INT = 7 && $STRING = "Lucky" ]]; then echo "Lucky Strike"; fi # AND
@@ -292,7 +305,9 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     -o -- if [ 7 -gt 1 -a 8 -gt 7 ]; then echo "OK"; fi                        # OR
     !  -- if [[ !$STRING ]]; then echo "Not so lucky"; fi                      # NOT
     ```
+
 ### Ternary
+
 ‘?:’ operator can be used as an alternative of if statement. The logical condition is defined before ‘?’  and if the condition returns true then it will execute the statement that is defined before ‘:’ otherwise it will execute the statement that is defined after ‘:’. The following script shows the use of this operator.
 !!! example
     ```bash
@@ -305,6 +320,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     ```
 
 ### Bitwise
+
 !!! info
     ```bash
     &
@@ -314,6 +330,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     >>
     >>=
     ```
+
 ### comma 'operators'
 
 ‘,’ operator is used to execute multiple statements in a line. The following command shows the use of this operator. The value of $n is assigned to 10, 30 is added with $n and the value of $n is printed.
@@ -325,6 +342,7 @@ We must parse the command and get the 2nd, 3rd and 6th values. Here, we should u
     ```
 
 ## Functions
+
 Think of a function as a small script within a script. It's a small chunk of code which you may call multiple times within your script. They are particularly useful if you have certain tasks which need to be performed several times.
 !!! tip
     ``` bash
@@ -390,8 +408,8 @@ Think of a function as a small script within a script. It's a small chunk of cod
 
     die(){
       local m="$1"  # the first arg
-    	local e=$2    # the second arg
-    	echo "$m"
+     local e=$2    # the second arg
+     echo "$m"
       exit $e
     }
 
@@ -413,18 +431,20 @@ Think of a function as a small script within a script. It's a small chunk of cod
     ```
 
 ## Shell Expansions
+
 - [GNU reference](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 !!! info
-    ```bash
-    touch {file1,file2}.md
-    mkdir -p $HOME/{dir1,dir2}
-    ```
+
+        touch {file1,file2}.md
+        mkdir -p $HOME/{dir1,dir2}
+
 ### Patterns
+
 !!! info
     | Pattern      | Description                                                     |
     | -----------  | --------------------------------------------------------------- |
-    |`*`	       | Match zero or more characters                                   |
-    |`?`	       | Match any single character                                      |
+    |`*`        | Match zero or more characters                                   |
+    |`?`        | Match any single character                                      |
     |`[...]`       | Match any of the characters in a set                            |
     |`?(patterns)` | Match zero or one occurrences of the patterns (extglob)         |
     |`*(patterns)` | Match zero or more occurrences of the patterns (extglob)        |
@@ -433,18 +453,19 @@ Think of a function as a small script within a script. It's a small chunk of cod
     |`!(patterns)` | Match anything that doesn't match one of the patterns (extglob) |
 
 ### Glob Regex
+
 !!! info
     | Glob          | Regular Expression Equivalent | Description                                |
     | ------------- | ----------------------------- | ------------------------------------------ |
     | `?(patterns)` | `(regex)?`                    | Match an optional regex                    |
     | `*(patterns)` | `(regex)*`                    | Match zero or more occurrences of a regex  |
     | `+(patterns)` | `(regex)+`                    | Match one or more occurrences of a regex   |
-    | `@(patterns)` | `(regex)`	                    | Match the regex (one occurrence)           |
+    | `@(patterns)` | `(regex)`                     | Match the regex (one occurrence)           |
 
 ## Statements
 
-
 ### For
+
 Run a command in between "$(command)" to iterate:
 !!! example "command"
     ```bash
@@ -463,7 +484,9 @@ Run a command in between "$(command)" to iterate:
       echo $i
     done
     ```
+
 ### While
+
 !!! example
     ```bash
     #!/bin/bash
@@ -474,7 +497,9 @@ Run a command in between "$(command)" to iterate:
         let COUNTER=COUNTER+1
     done
     ```
+
 ### Until
+
 !!! example
     ```bash
     #!/bin/bash
@@ -489,14 +514,15 @@ Run a command in between "$(command)" to iterate:
 ## Arithmetic
 
 ### let expression"
+
         Make a variable equal to an expression.
 !!! info
         ```
-        Operator	    Operation
-        +, -, \*, /	  Addition, subtraction, multiply, divide
-        var++	        Increase the variable var by 1
-        var--	        Decrease the variable var by 1
-        %	            Modulus (Return the remainder after division)
+        Operator     Operation
+        +, -, \*, /   Addition, subtraction, multiply, divide
+        var++         Increase the variable var by 1
+        var--         Decrease the variable var by 1
+        %             Modulus (Return the remainder after division)
         ```
 !!! example
     ```bash
@@ -518,6 +544,7 @@ Run a command in between "$(command)" to iterate:
     ```
 
 ### expr expression
+
 Print out the result of the expression.
 !!! example
     ```bash
@@ -532,7 +559,9 @@ Print out the result of the expression.
     a=$( expr 10 - 3 )
     echo $a # 7
     ```
+
 ### $(( expression ))
+
 Return the result of the expression.
 !!! example
     ```bash
@@ -556,6 +585,7 @@ Return the result of the expression.
     ```
 
 ### ${#var} expression
+
 Return the length of the variable var.
     ```bash
     #!/bin/bash
@@ -568,6 +598,7 @@ Return the length of the variable var.
     ```
 
 ## + More Scripts
+
 ???- tip "Scripts"
     === "colors"
         ```bash

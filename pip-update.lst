@@ -1,0 +1,10 @@
+certifi
+filelock
+MarkupSafe
+mkdocs-material
+nodeenv
+packaging
+pathspec
+pymdown-extensions
+pyyaml_env_tag
+watchdog

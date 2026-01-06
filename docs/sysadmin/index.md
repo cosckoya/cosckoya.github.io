@@ -1,4 +1,5 @@
 ## Linux
+
 === "Documentation"
     - [Debian Docs](https://www.debian.org/doc/)
     - [Arch Linux](https://archlinux.org/)
@@ -19,6 +20,7 @@
     - [r/Linux](https://www.reddit.com/r/linux)
 
 ## MacOS
+
 === "Documentation"
     - [MacOS Support](https://support.apple.com/macos)
     - [MacOS Developer](https://developer.apple.com/macos/)

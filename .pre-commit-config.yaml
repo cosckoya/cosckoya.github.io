@@ -6,10 +6,19 @@ repos:
   - id: trailing-whitespace
   - id: end-of-file-fixer
   - id: check-added-large-files
+    args: ['--maxkb=500']
   - id: detect-private-key
+  - id: check-yaml
+    args: ['--allow-multiple-documents']
+  - id: check-json
+- repo: https://github.com/igorshubovych/markdownlint-cli
+  rev: v0.39.0
+  hooks:
+  - id: markdownlint
+    args: ['--fix', '--ignore', 'node_modules']
 - repo: local
   hooks:
   - id: mkdocs-build
-    name: mkdocs-buid
+    name: mkdocs-build
     entry: bash -c 'rm -rf test; python3 -m mkdocs build --strict --quiet --site-dir test'
     language: system

@@ -1,4 +1,12 @@
-```
+# It's dangerous to go alone
+
+[![CI](https://github.com/cosckoya/cosckoya.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cosckoya/cosckoya.github.io/actions/workflows/gh-pages.yml)
+[![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
+[![MkDocs](https://img.shields.io/badge/mkdocs-material-blue.svg)](https://squidfunk.github.io/mkdocs-material/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+```text
           .                                                      .
         .n                   .                 .                  n.
   .   .dP                  dP                   9b                 9b.    .
@@ -21,3 +29,7 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
                               `b  `       '  d'
                                `             '
 ```
+
+Cosckoya's Tech Toolbox - A personal documentation site for tech notes and guides.
+
+**Live Site**: [https://cosckoya.github.io](https://cosckoya.github.io)

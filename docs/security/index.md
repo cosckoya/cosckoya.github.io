@@ -27,6 +27,7 @@
 === "Books"
 
 ## Tools
+
 === "Tools"
     - [Kali Tools Listing](https://tools.kali.org/tools-listing)
     - [Burp](https://portswigger.net/burp)
@@ -69,12 +70,7 @@
     - [Maltego](https://www.maltego.com)
     - [CaseFile](https://gitlab.com/kalilinux/packages/casefile)
 
-
-
-
-
-
-```
+```text
 inurl:/view.shtml
 site:hack-yourself-first.com filetype:pdf
 password filetype:pdf site:hack-yourself-first.com
