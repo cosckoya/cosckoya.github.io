@@ -448,5 +448,3 @@ All-in-one observability solutions.
 - [Awesome Prometheus](https://github.com/roaldnefs/awesome-prometheus) - Curated Prometheus resources
 - [Awesome Observability](https://github.com/adriannovegil/awesome-observability) - Observability tools and resources
 - [CNCF Landscape - Observability](https://landscape.cncf.io/guide#observability-and-analysis) - Cloud-native observability tools
-
----

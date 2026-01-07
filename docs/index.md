@@ -1,181 +1,188 @@
 ![!](resources/img/rorschach.png#center)
 
-## ZSH
+# Klaatu Barada Nikto
 
-Zsh, short for Z shell, is a powerful command-line shell for Unix-like operating systems. It is renowned for its advanced features, including improved tab completion, spelling correction, and powerful scripting capabilities. Zsh is highly customisable, allowing users to tailor their shell environment to their specific needs.
+Welcome to my personal tech documentation hub. A curated collection of technical notes, guides, and resources covering modern infrastructure, development tools, and cybersecurity practices.
 
-=== "Documentation"
-    - [ZSH.org](https://www.zsh.org)
-    - [ArchWiki - ZSH](https://wiki.archlinux.org/title/zsh)
-    - [A User's Guide to the Z-Shell](https://zsh.sourceforge.io/Guide/zshguide.html)
-    - [ZSH Cheatsheet](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet)
-    - [ZSH DevHints](https://devhints.io/zsh)
-=== "Customization"
-    - [Zinit](https://github.com/zdharma-continuum/zinit)
-    - [Oh my ZSH](https://ohmyz.sh)
-=== "Plugins"
-    - [Awesome ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins)
+---
 
-## NeoVim
+## Explore
 
-NeoVim is a highly extensible text editor designed to enable efficient text editing. It builds on the strengths of Vim, offering improved user experience, modern features, and better plugin integration. Its open-source nature encourages contributions from the community, fostering rapid development and innovation.
-=== "Documentation"
-    - [NeoVim](https://neovim.io/)
-    - [Vim-plug](https://github.com/junegunn/vim-plug)
-    - [Lazy](https://github.com/folke/lazy.nvim)
-=== "Plugins"
-    - [NERDTree](https://github.com/preservim/nerdtree)
-    - [fzf.vim](https://github.com/junegunn/fzf.vim)
-    - [Vim-Prettier](https://github.com/prettier/vim-prettier)
-    - [Lightline](https://github.com/itchyny/lightline.vim)
-=== "Git Repositories"
-    - [Vim Kickstarter](https://github.com/nvim-lua/kickstart.nvim)
-    - [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)
-=== "Learn"
-    - [VIM adventures](https://vim-adventures.com)
+<div class="grid cards" markdown>
 
-## Tmux
+- :fontawesome-solid-server:{ .lg .middle } **SysAdmin**
 
-Tmux is a terminal multiplexer that allows users to run multiple terminal sessions within a single window. It enables users to detach and reattach sessions, making it easy to manage long-running processes. Tmux also supports window splitting, session management, and extensive customisation, enhancing productivity in the terminal.
-=== "Documentation"
-    - [Tmux](https://github.com/tmux/tmux)
-    - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+    ---
 
-## Git
+    System administration guides for Linux, macOS, and server management.
 
-=== "Learning"
-    - [Gitlab Learn](https://about.gitlab.com/learn/)
-    - [Gitignore Templates](https://github.com/github/gitignore)
-    - [Git Branching](https://learngitbranching.js.org)
-=== "Badges and Shields"
-    - [ASCII Art](https://github.com/moul/awesome-ascii-art)
-    - [Version Badge](https://badge.fury.io)
-    - [Shields.io](https://shields.io)
-    - [Aleen42 Badges](https://badges.aleen42.com)
-    - [For The Badge](https://forthebadge.com)
-    - [Badgen](https://badgen.net)
-=== "Git Hooks"
-    - [Pre-Commit Official](https://pre-commit.com)
-    - [Pre-Commit Git Repo](https://github.com/pre-commit)
-    - [Awesome Git Hooks](https://github.com/aitemr/awesome-git-hooks)
-=== "Github"
-    - [Github Docs](https://docs.github.com/)
-    - [Github Skills](https://skills.github.com/)
+    [:octicons-arrow-right-24: Explore SysAdmin](sysadmin/)
 
-### Pre-Commit
+- :fontawesome-solid-cloud:{ .lg .middle } **Cloud**
 
-??? example "Install Pre-Commit with Pip"
-    Install pre-commit
-    ```
-    $> pip install pre-commit
-    ```
+    ---
 
-    Create a file .pre-commit-config.yaml with the content
-    ```yaml
-    repos:
-    - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
-    hooks:
-    - id: check-merge-conflict
-    - id: trailing-whitespace
-    - id: end-of-file-fixer
-    - id: check-added-large-files
-    - id: detect-private-key
-    ```
+    Cloud platform guides and best practices for AWS and multi-cloud environments.
 
-    Install pre-commit hook
-    ```sh
-    $> pre-commit install
-    $> pre-commit install-hooks
-    ```
+    [:octicons-arrow-right-24: Explore Cloud](cloud/)
 
-    Run pre-commit hook
-    ```sh
-    $> pre-commit run -a
+- :fontawesome-solid-gears:{ .lg .middle } **DevOps**
 
-    check for merge conflicts................................................Passed
-    trim trailing whitespace.................................................Passed
-    fix end of files.........................................................Passed
-    check for added large files..............................................Passed
-    detect private key.......................................................Passed
-    mkdocs-buid..............................................................Passed
-    ```
+    ---
 
-## ASDF
+    CI/CD pipelines, Infrastructure as Code, automation, and observability.
 
-ASDF is a versatile version manager for managing multiple runtime versions of different languages. It supports a wide range of programming languages and tools, enabling seamless switching between different versions for development projects. ASDF's plugin architecture allows easy extension, making it a flexible tool for developers.
+    [:octicons-arrow-right-24: Explore DevOps](devops/)
 
-??? example "ASDF Command line basics"
-    ASDF UPDATE
-    ```bash
-    $> asdf update --head
-    ```
+- :fontawesome-solid-shield-halved:{ .lg .middle } **Cybersecurity**
 
-    LIST PLUGIN
-    ```bash
-    $> asdf plugin list all
-    ```
+    ---
 
-    ADD PLUGIN
-    ```bash
-    $> asdf plugin add <plugin_name>
-    ```
+    Offensive security, defensive practices, incident response, and compliance.
 
-    LIST PLUGIN VERSIONS
-    ```bash
-    $> asdf list all <plugin_name>
-    ```
+    [:octicons-arrow-right-24: Explore Cybersecurity](cybersecurity/)
 
-    INSTALL PLUGIN
-    ```bash
-    # Install latest plugin version
-    $> asdf install <plugin_name>
+- :fontawesome-solid-box:{ .lg .middle } **Containerization**
 
-    # Install a selected plugin version
-    $> asdf install <plugin_name> <plugin_version>
-    ```
+    ---
 
-    SETUP A PLUGIN VERSION
-    ```bash
-    $> asdf global <plugin_name> <plugin_version> # Set the package global version
-    $> asdf local <plugin_name> <plugin_version>  # Set the package local version
-    $> asdf shell <plugin_name> <plugin_version>  # Set the package in the current shell
-    ```
+    Docker, Kubernetes, Helm, operators, and container orchestration.
 
-=== "Documentation"
-    - [ASDF](https://asdf-vm.com)
+    [:octicons-arrow-right-24: Explore Containerization](containerization/)
 
-## Obisidan
+- :fontawesome-solid-brain:{ .lg .middle } **Artificial Intelligence**
 
-Obsidian is a powerful note-taking and knowledge management application that uses plain text Markdown files. It offers features like backlinking, graph views, and plugins to help users create interconnected and structured notes. Obsidian's flexibility and customisability make it ideal for personal knowledge management and project organisation.
-=== "Documentation"
-    - [Obsidian](https://obsidian.md)
-    === "Community"
-    - [r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/)
+    ---
 
-## Pimp my Desktop
+    Machine Learning, LLMs, MLOps, and AI model deployment.
 
-=== "Themes"
-    - [Dracula Theme](https://draculatheme.com)
+    [:octicons-arrow-right-24: Explore IA](artificial-intelligence/)
 
-## Bookmarks
+- :fontawesome-solid-bookmark:{ .lg .middle } **Bookmarks**
 
-- [Cheat](https://github.com/cheat)
-- [Awesome](https://github.com/sindresorhus/awesome)
-- [Terraform](https://github.com/shuaibiyy/awesome-terraform)
+    ---
 
-=== "Learn"
-    - [CNCF](https://landscape.cncf.io)
-    - [RedHat Developers](https://developers.redhat.com)
-    - [Mozilla Developers](https://developer.mozilla.org)
-    - [Google Style Guides](https://google.github.io/styleguide)
-    - [Codeacademy](https://www.codecademy.com)
-=== "Sites"
-    - [Gbatemp](https://gbatemp.net)
-    - [Hackr.io](https://hackr.io)
-    - [Hashicorp](https://learn.hashicorp.com)
-    - [DevDocs.io](https://devdocs.io)
-    - [Zeal](https://zealdocs.org/)
+    Curated collection of valuable resources and learning platforms.
+
+    [:octicons-arrow-right-24: View Bookmarks](bookmarks.md)
+
+</div>
+
+---
+
+## What's Inside
+
+This documentation hub is organized into focused topic areas:
+
+| Section | What You'll Find | Best For |
+|---------|------------------|----------|
+| **[SysAdmin](sysadmin/)** | OS fundamentals, networking, storage | System administrators, infrastructure engineers |
+| **[Cloud](cloud/)** | AWS, Azure, GCP, multi-cloud strategies | Cloud architects, solutions engineers |
+| **[DevOps](devops/)** | CI/CD, IaC, automation, monitoring | DevOps engineers, SREs, platform engineers |
+| **[Cybersecurity](cybersecurity/)** | Offensive, defensive, incident response | Security engineers, pentesters, SOC analysts |
+| **[Containerization](containerization/)** | Docker, Kubernetes, Helm, operators | Container specialists, cloud-native developers |
+| **[Artificial Intelligence](artificial-intelligence/)** | ML, LLMs, MLOps, model deployment | ML engineers, data scientists, AI developers |
+| **[Bookmarks](bookmarks.md)** | Curated learning resources | Everyone looking to learn |
+
+---
+
+## Quick Paths by Role
+
+### I'm a DevOps Engineer
+
+Start here to set up your workflow:
+
+1. **[DevOps](devops/)** - CI/CD pipelines, IaC, and automation fundamentals
+2. **[Containerization](containerization/)** - Docker and Kubernetes essentials
+3. **[Cloud](cloud/)** - AWS, Azure, GCP configuration and best practices
+4. **[DevOps Monitoring](devops/monitoring-observability/)** - Observability and alerting setup
+
+### I'm a Software Developer
+
+Focus on these areas:
+
+1. **[DevOps](devops/version-control/)** - Git workflows and collaboration
+2. **[DevOps CI/CD](devops/ci-cd/)** - Build and deployment automation
+3. **[Containerization](containerization/)** - Containerize your applications
+4. **[Artificial Intelligence](artificial-intelligence/)** - ML integration and AI tools
+
+### I'm a System Administrator
+
+Your roadmap:
+
+1. **[SysAdmin](sysadmin/)** - Linux, Windows, networking, and storage fundamentals
+2. **[SysAdmin Scripting](sysadmin/scripting/)** - Bash, PowerShell, Python automation
+3. **[DevOps IaC](devops/iac/)** - Infrastructure as Code with Terraform and Ansible
+4. **[Cybersecurity](cybersecurity/hardening/)** - System hardening and security
+
+### I'm Learning Security
+
+Follow this path:
+
+1. **[Cybersecurity](cybersecurity/)** - Offensive and defensive security fundamentals
+2. **[Cybersecurity Pentesting](cybersecurity/pentesting/)** - Penetration testing techniques
+3. **[Container Security](containerization/seguridad/)** - Container security
+4. **[Cloud Security](cloud/cloud-native/)** - Cloud infrastructure security
+
+### I'm an AI/ML Engineer
+
+Your learning path:
+
+1. **[Artificial Intelligence](artificial-intelligence/fundamentos/)** - ML fundamentals and frameworks
+2. **[IA MLOps](artificial-intelligence/mlops/)** - Model training, deployment, and monitoring
+3. **[IA Cloud AI](artificial-intelligence/cloud-ai/)** - AWS SageMaker, Azure ML, GCP Vertex AI
+4. **[DevOps](devops/)** - CI/CD for ML models and infrastructure automation
+
+---
+
+## How Content is Organized
+
+### Deep Dive Pages
+
+Most sections have an **index page** (like `devops/monitoring-observability/index.md`) that provides:
+
+- Overview of the topic
+- Key concepts and tools
+- Practical examples
+- Learning resources
+- Related topics
+
+### Quick Reference
+
+Look for expandable sections marked with `???` for:
+
+- Command-line examples
+- Configuration snippets
+- Step-by-step procedures
+
+### Navigation
+
+Each page includes:
+
+- **Breadcrumbs** at the top to see where you are
+- **Related links** at the bottom to explore connected topics
+- **Tags** to find similar content
+
+---
+
+## Tips for Effective Use
+
+!!! tip "Bookmark Your Favorites"
+    Use your browser bookmarks to save frequently referenced pages for quick access.
+
+!!! info "Search is Your Friend"
+    Use the search bar (top of page) to quickly find specific topics, tools, or commands.
+
+!!! success "Learn by Doing"
+    Most guides include practical examples you can try immediately in your environment.
+
+---
+
+## Contribution & Feedback
+
+This is a living documentation project. If you find issues or have suggestions, feel free to contribute or provide feedback.
+
+---
 
 ![!](resources/img/zelda.png#center)
 ![!](resources/img/welcome.png#center)

@@ -1,0 +1,8 @@
+* [Development Tools](index.md)
+* [ZSH](shell/zsh.md)
+* [Tmux](shell/tmux.md)
+* [NeoVim](editors/neovim.md)
+* [Obsidian](editors/obsidian.md)
+* [Git](git/index.md)
+* [Git Hooks](git/hooks.md)
+* [ASDF](version-managers/asdf.md)
