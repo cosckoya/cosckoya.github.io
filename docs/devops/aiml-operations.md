@@ -1,14 +1,14 @@
 ---
-title: Artificial Intelligence
-description: Comprehensive guide to Artificial Intelligence, Machine Learning, Deep Learning, and AI tools for developers and data scientists
+title: AI/ML Operations
+description: Guide to Artificial Intelligence, Machine Learning, MLOps, and integrating AI into DevOps workflows
 tags:
   - ai
   - machine-learning
-  - deep-learning
-  - llm
+  - mlops
+  - devops
 ---
 
-# Artificial Intelligence
+# AI/ML Operations
 
 Artificial Intelligence (AI) is the discipline that creates systems capable of performing tasks that normally require human intelligence. From Machine Learning to Large Language Models, AI is transforming how we develop software, analyze data, and solve complex problems.
 
@@ -422,7 +422,7 @@ Query → Embedding → Vector Search → Top-K Results → Context + Query → 
 - **[Anthropic's Constitutional AI](https://www.anthropic.com/index/claudes-constitution)**: Value alignment
 - **[Google's AI Principles](https://ai.google/responsibility/principles/)**: Responsible AI principles
 - **[Microsoft's Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai)**: Tools and practices
-- **[OECD AI Principles](https://www.oecd.org/digital/artificial-intelligence/)**: International principles
+- **[OECD AI Principles](https://www.oecd.org/digital/devops/aiml-operations.md)**: International principles
 
 ---
 
@@ -465,6 +465,6 @@ Query → Embedding → Vector Search → Top-K Results → Context + Query → 
 
 ## Related Topics
 
-- [DevOps](../devops/) - MLOps and model deployment
-- [Cloud](../cloud/) - AI services in cloud (SageMaker, Vertex AI)
-- [Tools](../tools/) - Complementary tools
+- [DevOps & Automation](index.md) - MLOps and model deployment
+- [Cloud Platforms](../cloud/) - AI services in cloud (SageMaker, Vertex AI)
+- [Containerization](../containerization/) - Docker and Kubernetes for model deployment

@@ -1,4 +1,4 @@
-* [DevOps Overview](index.md)
+* [DevOps & Automation Overview](index.md)
 * [Version Control](version-control/)
 * [CI/CD](ci-cd/)
 * [Infrastructure as Code](iac/)
@@ -8,3 +8,4 @@
 * [DevSecOps](devsecops/)
 * [Testing](testing/)
 * [Artifact Management](artifact-management/)
+* [AI/ML Operations](aiml-operations.md)

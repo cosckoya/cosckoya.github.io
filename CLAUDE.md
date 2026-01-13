@@ -204,3 +204,75 @@ Material for MkDocs extensions enabled in this project:
 - **Magic links**: Auto-linking for URLs, email addresses
 - **Snippets**: Include external code files in documentation (base path: docs/)
 - **Permalinks**: Automatic heading anchors for direct linking
+
+## DocMaster Agent
+
+This project includes **DocMaster**, a specialized MkDocs documentation agent for Claude Code that ensures documentation integrity and quality.
+
+### What is DocMaster?
+
+DocMaster is a Claude Code agent that:
+
+- ✅ Verifies link integrity before commits
+- ✅ Detects orphaned documents
+- ✅ Validates documentation structure
+- ✅ Enforces zero-waste principles (no empty directories)
+- ✅ Maintains consistent style and organization
+- ✅ Performs automated maintenance checks
+
+### Using DocMaster
+
+**Activate DocMaster mode:**
+
+```
+@DOCMASTER.md check documentation structure
+```
+
+**Common tasks:**
+
+```
+@DOCMASTER.md validate all links
+@DOCMASTER.md find orphaned documents
+@DOCMASTER.md run weekly maintenance
+```
+
+### DocMaster Tools
+
+Automated maintenance scripts are available:
+
+```bash
+# Full maintenance check
+./scripts/docmaster-tools.sh full-maintenance
+
+# Specific checks
+./scripts/docmaster-tools.sh check-links
+./scripts/docmaster-tools.sh find-orphans
+./scripts/docmaster-tools.sh cleanup-empty
+./scripts/docmaster-tools.sh validate-structure
+```
+
+See [DOCMASTER.md](DOCMASTER.md) for full documentation and [scripts/README.md](scripts/README.md) for tool usage.
+
+### DocMaster Golden Rules
+
+When working on documentation, DocMaster enforces:
+
+1. **Never create orphan documents** - All files must be in SUMMARY.md
+2. **Always use relative links** - Follow literate-nav convention: `section/` not `section/index.md`
+3. **Deletion is maintenance** - Remove obsolete content and empty directories
+4. **Verify before publishing** - Run `mkdocs build --strict` before committing
+5. **Zero waste** - Only create directories when content exists
+
+### Integration
+
+DocMaster is integrated into the development workflow:
+
+- **Before commits**: Run link checks and structure validation
+- **Weekly**: Cleanup empty directories and find orphans
+- **Monthly**: Audit content freshness
+
+**Quick validation:**
+
+```bash
+./scripts/docmaster-tools.sh full-maintenance && mkdocs build --strict
+```

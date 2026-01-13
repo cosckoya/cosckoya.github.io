@@ -41,10 +41,5 @@ A curated collection of valuable resources, learning platforms, documentation hu
 
 ## Related Pages
 
-- [Development Tools](tools/index.md) - Essential development tools and utilities
-- [Code Snippets](code/) - Programming examples and patterns
-
----
-
-[Back to Home](index.md){ .md-button .md-button--primary }
-[Development Tools](tools/index.md){ .md-button }
+- [DevOps](devops/) - DevOps tools, CI/CD, and infrastructure automation
+- [SysAdmin](sysadmin/) - System administration guides and tools

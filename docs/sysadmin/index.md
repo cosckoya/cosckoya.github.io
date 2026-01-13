@@ -1,15 +1,15 @@
 ---
-title: System Administration
-description: Comprehensive guide to modern system administration covering Linux, Windows, networking, virtualization, automation, and cloud infrastructure
+title: Infrastructure & System Administration
+description: Comprehensive guide to modern infrastructure and system administration covering Linux, Windows, networking, virtualization, automation, and cloud infrastructure
 tags:
+  - infrastructure
   - sysadmin
   - linux
   - windows
   - networking
-  - infrastructure
 ---
 
-# System Administration
+# Infrastructure & System Administration
 
 System administration is the backbone of IT infrastructure, encompassing the management, configuration, and reliable operation of computer systems, networks, and services. Modern sysadmins must master a diverse set of technologies from traditional operating systems to cloud platforms and automation tools.
 
@@ -750,6 +750,6 @@ Modern infrastructure requires automation to maintain consistency, speed, and re
 - [Configuration Management](../devops/configuration-management/) - Ansible, Puppet, Chef, SaltStack
 - [Monitoring & Observability](../devops/monitoring-observability/) - Deep dive into monitoring tools and practices
 - [Containerization](../containerization/) - Docker and Kubernetes administration
-- [Cybersecurity](../cybersecurity/) - Security hardening and compliance
+- [Cybersecurity](../security/) - Security hardening and compliance
 
 ---

@@ -409,6 +409,6 @@ Understanding security responsibilities between cloud provider and customer.
 - [DevOps](../devops/) - CI/CD, IaC, and automation for cloud
 - [Containerization](../containerization/) - Kubernetes and container orchestration
 - [SysAdmin](../sysadmin/) - Foundational infrastructure knowledge
-- [Cybersecurity](../cybersecurity/) - Cloud security best practices
+- [Cybersecurity](../security/) - Cloud security best practices
 
 ---

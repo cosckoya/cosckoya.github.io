@@ -10,37 +10,29 @@ Welcome to my personal tech documentation hub. A curated collection of technical
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-server:{ .lg .middle } **SysAdmin**
+- :fontawesome-solid-server:{ .lg .middle } **Infrastructure & SysAdmin**
 
     ---
 
-    System administration guides for Linux, macOS, and server management.
+    System administration guides for Linux, macOS, networking, and server management.
 
     [:octicons-arrow-right-24: Explore SysAdmin](sysadmin/)
 
-- :fontawesome-solid-cloud:{ .lg .middle } **Cloud**
+- :fontawesome-solid-cloud:{ .lg .middle } **Cloud Platforms**
 
     ---
 
-    Cloud platform guides and best practices for AWS and multi-cloud environments.
+    Cloud platform guides and best practices for AWS, Azure, GCP and multi-cloud environments.
 
     [:octicons-arrow-right-24: Explore Cloud](cloud/)
 
-- :fontawesome-solid-gears:{ .lg .middle } **DevOps**
+- :fontawesome-solid-gears:{ .lg .middle } **DevOps & Automation**
 
     ---
 
-    CI/CD pipelines, Infrastructure as Code, automation, and observability.
+    CI/CD pipelines, Infrastructure as Code, automation, observability, and AI/ML operations.
 
     [:octicons-arrow-right-24: Explore DevOps](devops/)
-
-- :fontawesome-solid-shield-halved:{ .lg .middle } **Cybersecurity**
-
-    ---
-
-    Offensive security, defensive practices, incident response, and compliance.
-
-    [:octicons-arrow-right-24: Explore Cybersecurity](cybersecurity/)
 
 - :fontawesome-solid-box:{ .lg .middle } **Containerization**
 
@@ -50,13 +42,13 @@ Welcome to my personal tech documentation hub. A curated collection of technical
 
     [:octicons-arrow-right-24: Explore Containerization](containerization/)
 
-- :fontawesome-solid-brain:{ .lg .middle } **Artificial Intelligence**
+- :fontawesome-solid-shield-halved:{ .lg .middle } **Security**
 
     ---
 
-    Machine Learning, LLMs, MLOps, and AI model deployment.
+    Offensive security, defensive practices, pentesting, incident response, and compliance.
 
-    [:octicons-arrow-right-24: Explore IA](artificial-intelligence/)
+    [:octicons-arrow-right-24: Explore Security](security/)
 
 - :fontawesome-solid-bookmark:{ .lg .middle } **Bookmarks**
 
@@ -76,12 +68,11 @@ This documentation hub is organized into focused topic areas:
 
 | Section | What You'll Find | Best For |
 |---------|------------------|----------|
-| **[SysAdmin](sysadmin/)** | OS fundamentals, networking, storage | System administrators, infrastructure engineers |
-| **[Cloud](cloud/)** | AWS, Azure, GCP, multi-cloud strategies | Cloud architects, solutions engineers |
-| **[DevOps](devops/)** | CI/CD, IaC, automation, monitoring | DevOps engineers, SREs, platform engineers |
-| **[Cybersecurity](cybersecurity/)** | Offensive, defensive, incident response | Security engineers, pentesters, SOC analysts |
+| **[Infrastructure & SysAdmin](sysadmin/)** | OS fundamentals, networking, storage, virtualization | System administrators, infrastructure engineers |
+| **[Cloud Platforms](cloud/)** | AWS, Azure, GCP, multi-cloud strategies | Cloud architects, solutions engineers |
+| **[DevOps & Automation](devops/)** | CI/CD, IaC, automation, monitoring, AI/MLOps | DevOps engineers, SREs, platform engineers |
 | **[Containerization](containerization/)** | Docker, Kubernetes, Helm, operators | Container specialists, cloud-native developers |
-| **[Artificial Intelligence](artificial-intelligence/)** | ML, LLMs, MLOps, model deployment | ML engineers, data scientists, AI developers |
+| **[Security](security/)** | Offensive, defensive, pentesting, incident response | Security engineers, pentesters, SOC analysts |
 | **[Bookmarks](bookmarks.md)** | Curated learning resources | Everyone looking to learn |
 
 ---
@@ -92,46 +83,46 @@ This documentation hub is organized into focused topic areas:
 
 Start here to set up your workflow:
 
-1. **[DevOps](devops/)** - CI/CD pipelines, IaC, and automation fundamentals
+1. **[DevOps & Automation](devops/)** - CI/CD pipelines, IaC, and automation fundamentals
 2. **[Containerization](containerization/)** - Docker and Kubernetes essentials
-3. **[Cloud](cloud/)** - AWS, Azure, GCP configuration and best practices
-4. **[DevOps Monitoring](devops/monitoring-observability/)** - Observability and alerting setup
+3. **[Cloud Platforms](cloud/)** - AWS, Azure, GCP configuration and best practices
+4. **[Monitoring & Observability](devops/monitoring-observability/)** - Observability and alerting setup
 
 ### I'm a Software Developer
 
 Focus on these areas:
 
-1. **[DevOps](devops/version-control/)** - Git workflows and collaboration
-2. **[DevOps CI/CD](devops/ci-cd/)** - Build and deployment automation
+1. **[Version Control](devops/version-control/)** - Git workflows and collaboration
+2. **[CI/CD](devops/ci-cd/)** - Build and deployment automation
 3. **[Containerization](containerization/)** - Containerize your applications
-4. **[Artificial Intelligence](artificial-intelligence/)** - ML integration and AI tools
+4. **[AI/ML Operations](devops/aiml-operations.md)** - ML integration and AI tools
 
 ### I'm a System Administrator
 
 Your roadmap:
 
-1. **[SysAdmin](sysadmin/)** - Linux, Windows, networking, and storage fundamentals
-2. **[SysAdmin Scripting](sysadmin/scripting/)** - Bash, PowerShell, Python automation
-3. **[DevOps IaC](devops/iac/)** - Infrastructure as Code with Terraform and Ansible
-4. **[Cybersecurity](cybersecurity/hardening/)** - System hardening and security
+1. **[Infrastructure & SysAdmin](sysadmin/)** - Linux, Windows, networking, and storage fundamentals
+2. **[DevOps & Automation](devops/)** - Infrastructure as Code and configuration management
+3. **[Cloud Platforms](cloud/)** - Cloud infrastructure and services
+4. **[Security](security/)** - System hardening and security best practices
 
 ### I'm Learning Security
 
 Follow this path:
 
-1. **[Cybersecurity](cybersecurity/)** - Offensive and defensive security fundamentals
-2. **[Cybersecurity Pentesting](cybersecurity/pentesting/)** - Penetration testing techniques
-3. **[Container Security](containerization/seguridad/)** - Container security
-4. **[Cloud Security](cloud/cloud-native/)** - Cloud infrastructure security
+1. **[Security](security/)** - Offensive and defensive security fundamentals
+2. **[DevSecOps](devops/devsecops/)** - Security integration in DevOps
+3. **[Containerization](containerization/)** - Container security
+4. **[Cloud Platforms](cloud/)** - Cloud infrastructure security
 
 ### I'm an AI/ML Engineer
 
 Your learning path:
 
-1. **[Artificial Intelligence](artificial-intelligence/fundamentos/)** - ML fundamentals and frameworks
-2. **[IA MLOps](artificial-intelligence/mlops/)** - Model training, deployment, and monitoring
-3. **[IA Cloud AI](artificial-intelligence/cloud-ai/)** - AWS SageMaker, Azure ML, GCP Vertex AI
-4. **[DevOps](devops/)** - CI/CD for ML models and infrastructure automation
+1. **[AI/ML Operations](devops/aiml-operations.md)** - ML fundamentals, LLMs, and MLOps
+2. **[DevOps & Automation](devops/)** - CI/CD for ML models and infrastructure automation
+3. **[Cloud Platforms](cloud/)** - AWS SageMaker, Azure ML, GCP Vertex AI
+4. **[Containerization](containerization/)** - Docker and Kubernetes for model deployment
 
 ---
 

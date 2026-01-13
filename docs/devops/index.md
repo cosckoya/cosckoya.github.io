@@ -1,14 +1,14 @@
 ---
-title: DevOps
+title: DevOps & Automation
 description: Modern DevOps practices, tools, and methodologies for continuous delivery, infrastructure automation, and operational excellence
 tags:
   - devops
-  - ci-cd
   - automation
+  - ci-cd
   - infrastructure
 ---
 
-# DevOps
+# DevOps & Automation
 
 DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle and provide continuous delivery with high software quality. Modern DevOps encompasses automation, monitoring, security, and cultural practices that enable teams to build, test, and release software faster and more reliably.
 
@@ -298,6 +298,6 @@ DevOps Research and Assessment (DORA) identified four key metrics that indicate 
 - [Cloud](../cloud/) - Cloud platforms and architecture
 - [Containerization](../containerization/) - Docker and Kubernetes
 - [Monitoring & Observability](monitoring-observability/) - Deep dive into monitoring practices
-- [Cybersecurity](../cybersecurity/) - Security practices and tools
+- [Cybersecurity](../security/) - Security practices and tools
 
 ---

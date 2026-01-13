@@ -1,5 +1,5 @@
 ---
-title: Cloud Computing
+title: Cloud Platforms
 description: Comprehensive guide to cloud platforms including AWS, Azure, and GCP with best practices for cloud-native architectures
 tags:
   - cloud
@@ -9,7 +9,7 @@ tags:
   - cloud-native
 ---
 
-# Cloud Computing
+# Cloud Platforms
 
 Cloud platforms have become essential infrastructure for modern applications. This guide covers the major cloud providers, their core services, and best practices for building resilient, scalable cloud-native solutions.
 
@@ -409,4 +409,4 @@ Understanding security responsibilities between cloud provider and customer.
 - [DevOps](../devops/) - CI/CD, IaC, and automation for cloud
 - [Containerization](../containerization/) - Kubernetes and container orchestration
 - [SysAdmin](../sysadmin/) - Foundational infrastructure knowledge
-- [Cybersecurity](../cybersecurity/) - Cloud security best practices
+- [Cybersecurity](../security/) - Cloud security best practices
