@@ -25,6 +25,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    - navigation.indexes
     - content.tabs.link
     - content.code.copy
 
@@ -83,3 +84,4 @@ plugins:
 
 extra_css:
   - resources/stylesheets/images.css
+  - stylesheets/snape.css

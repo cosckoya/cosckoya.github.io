@@ -1,0 +1,391 @@
+/*
+ * Snape Premium Design System
+ * Technical Reference Enhancement Styles
+ * Version: 1.0.0
+ */
+
+/* ============================================
+   PREMIUM CARD STYLING
+   ============================================ */
+
+/* Enhanced card appearance */
+.md-typeset .grid.cards > div {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Premium hover effect with elevation */
+.md-typeset .grid.cards > div:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12),
+              0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+/* Active card state */
+.md-typeset .grid.cards > div:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Card title styling */
+.md-typeset .grid.cards > div > strong {
+  font-size: 1.1em;
+  color: var(--md-accent-fg-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   ENHANCED BUTTON STYLING
+   ============================================ */
+
+/* Premium button appearance */
+.md-button {
+  border-radius: 0.35rem;
+  padding: 0.7rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: none;
+}
+
+/* Primary button premium styling */
+.md-button--primary {
+  background: linear-gradient(135deg,
+    var(--md-primary-fg-color) 0%,
+    var(--md-accent-fg-color) 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Button hover with elevation */
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.md-button--primary:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Button active state */
+.md-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* ============================================
+   ICON ENHANCEMENTS
+   ============================================ */
+
+/* Branded icon colors */
+.icon-github { color: #181717; }
+.icon-gitlab { color: #FC6D26; }
+.icon-docker { color: #2496ED; }
+.icon-kubernetes { color: #326CE5; }
+.icon-python { color: #3776AB; }
+.icon-javascript { color: #F7DF1E; }
+.icon-typescript { color: #3178C6; }
+.icon-go { color: #00ADD8; }
+.icon-rust { color: #CE422B; }
+.icon-aws { color: #FF9900; }
+.icon-azure { color: #0078D4; }
+.icon-gcp { color: #4285F4; }
+
+/* API and documentation icons */
+.icon-api { color: #00BCD4; }
+.icon-docs { color: #4CAF50; }
+.icon-spec { color: #9C27B0; }
+
+/* Lab and learning icons */
+.icon-lab { color: #FF9800; }
+.icon-playground { color: #FF6F00; }
+.icon-exercise { color: #E91E63; }
+.icon-learning { color: #2196F3; }
+
+/* Icon sizing utilities */
+.icon-large {
+  font-size: 1.75rem;
+  vertical-align: middle;
+}
+
+.icon-xl {
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+
+/* Inline icon alignment */
+.md-typeset a svg.twemoji,
+.md-typeset a svg {
+  vertical-align: -0.125em;
+}
+
+/* ============================================
+   ADMONITION ENHANCEMENTS
+   ============================================ */
+
+/* Premium admonition styling */
+.md-typeset .admonition {
+  border-radius: 0.4rem;
+  border-left-width: 0.3rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Custom resource admonition */
+.md-typeset .admonition.resource {
+  border-left-color: #00BCD4;
+}
+
+.md-typeset .admonition.resource > .admonition-title {
+  background-color: rgba(0, 188, 212, 0.1);
+}
+
+.md-typeset .admonition.resource > .admonition-title::before {
+  background-color: #00BCD4;
+}
+
+/* Custom specification admonition */
+.md-typeset .admonition.spec {
+  border-left-color: #9C27B0;
+}
+
+.md-typeset .admonition.spec > .admonition-title {
+  background-color: rgba(156, 39, 176, 0.1);
+}
+
+/* ============================================
+   TABLE ENHANCEMENTS
+   ============================================ */
+
+/* Premium table styling */
+.md-typeset table:not([class]) {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* Striped rows for readability */
+.md-typeset table tbody tr:nth-child(odd) {
+  background-color: var(--md-code-bg-color);
+}
+
+/* Interactive row hover */
+.md-typeset table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.md-typeset table tbody tr:hover {
+  background-color: rgba(var(--md-accent-fg-color--transparent), 0.1);
+  cursor: pointer;
+}
+
+/* Header styling */
+.md-typeset table thead th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+}
+
+/* Compact table variant */
+.md-typeset .compact-table td,
+.md-typeset .compact-table th {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9em;
+}
+
+/* ============================================
+   CONTENT TAB ENHANCEMENTS
+   ============================================ */
+
+/* Premium tab styling */
+.md-typeset .tabbed-labels > label {
+  border-radius: 0.4rem 0.4rem 0 0;
+  transition: all 0.2s ease;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+/* Active tab with bottom border */
+.md-typeset .tabbed-labels > label[for]:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* ============================================
+   GRID LAYOUT UTILITIES
+   ============================================ */
+
+/* Responsive two-column grid */
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Responsive three-column grid */
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Auto-fit responsive grid */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .two-column,
+  .three-column {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .md-typeset .grid.cards > div {
+    padding: 1rem;
+  }
+}
+
+/* ============================================
+   DEFINITION LIST ENHANCEMENTS
+   ============================================ */
+
+/* Premium definition list styling for API references */
+.md-typeset dd {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: var(--md-code-bg-color);
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.md-typeset dt code {
+  background-color: transparent;
+  font-size: 1.1em;
+  color: var(--md-accent-fg-color);
+}
+
+/* ============================================
+   CODE BLOCK ENHANCEMENTS
+   ============================================ */
+
+/* Premium code block styling */
+.md-typeset pre > code {
+  border-radius: 0.4rem;
+}
+
+.md-typeset pre {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Inline code enhancement */
+.md-typeset code {
+  border-radius: 0.25rem;
+  padding: 0.15em 0.4em;
+}
+
+/* ============================================
+   SECTION DIVIDERS
+   ============================================ */
+
+/* Premium horizontal rules */
+.md-typeset hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--md-default-fg-color--lightest) 20%,
+    var(--md-default-fg-color--lightest) 80%,
+    transparent 100%);
+  margin: 2rem 0;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+/* Text alignment utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Spacing utilities */
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+/* Display utilities */
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ============================================
+   DARK MODE OPTIMIZATIONS
+   ============================================ */
+
+/* Enhance contrast in dark mode */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > div {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > div:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .md-button,
+  .md-typeset .grid.cards > div:hover {
+    box-shadow: none;
+    transform: none;
+  }
+
+  .md-typeset .grid.cards > div {
+    break-inside: avoid;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================ */
+
+/* Focus states for keyboard navigation */
+.md-button:focus,
+.md-typeset .grid.cards > div:focus-within {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid.cards > div,
+  .md-button {
+    transition: none;
+  }
+}

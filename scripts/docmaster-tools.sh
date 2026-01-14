@@ -1,0 +1,1 @@
+../.claude/skills/docmaster/scripts/docmaster-tools.sh

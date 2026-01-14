@@ -1,0 +1,6 @@
+- [DevOps Tools Overview](index.md)
+- [Claude Code](claude-code.md)
+- [GitHub](github.md)
+- [GitHub Actions](github-actions.md)
+- [Pre-Commit](pre-commit.md)
+- [Azure DevOps](azure-devops.md)

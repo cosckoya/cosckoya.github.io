@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal tech documentation site built with MkDocs Material. The site is hosted on GitHub Pages at <https://cosckoya.github.io> and contains technical notes and guides on topics like SysAdmin, Cloud, Containers, Code, Monitoring, and CyberSecurity.
+This is a personal tech documentation site built with MkDocs Material. The site is hosted on GitHub Pages at
+<https://cosckoya.github.io> and contains technical notes and guides on topics like SysAdmin, Cloud, Containers, Code,
+Monitoring, and CyberSecurity.
 
 ## Development Commands
 
@@ -37,13 +39,15 @@ mkdocs serve
 # or
 make serve
 
-# Build the site (output to site/ directory by default)
+# Build the site (output to site/ directory)
 mkdocs build
 
-# Build with strict mode (fails on warnings)
+# Build with strict mode (fails on warnings, recommended)
 mkdocs build --strict
 # or
 make build
+
+# Note: Pre-commit hooks build to test/ directory for validation
 ```
 
 ### Other Makefile Commands
@@ -77,10 +81,14 @@ The pre-commit hooks will:
 
 Deployment to GitHub Pages is automated via GitHub Actions when pushing to the `main` branch. The workflow:
 
+1. Caches pip and MkDocs Material dependencies for faster builds
 1. Installs Python dependencies from requirements.txt
-2. Runs `mkdocs gh-deploy --force` to build and publish to the gh-pages branch
+1. Builds the site with `mkdocs build --strict` to catch any errors
+1. Runs `mkdocs gh-deploy --force` to publish to the gh-pages branch
 
-Manual deployment: `mkdocs gh-deploy --force`
+Manual deployment: `mkdocs gh-deploy --force` or `make deploy`
+
+**Important**: Always test locally with `mkdocs serve` and ensure pre-commit hooks pass before pushing to main.
 
 ## Architecture
 
@@ -92,6 +100,7 @@ Manual deployment: `mkdocs gh-deploy --force`
 - **Minification**: Enabled for HTML, JS, and CSS to optimize performance
 - **SEO**: Generator attribution disabled, sitemap.xml auto-generated, robots.txt configured
 - **Markdown Extensions**: Admonitions, tabbed content, code highlighting, magic links, and more
+- **Features**: Content tabs linking, code copy buttons enabled in theme configuration
 
 ### Content Structure (docs/)
 
@@ -109,7 +118,46 @@ The documentation is organized into topic-based directories:
 
 ### Navigation Pattern
 
-The site uses the literate-nav plugin which reads `SUMMARY.md` files to build navigation. Subdirectories like `code/` can have their own SUMMARY.md for nested navigation structures.
+The site uses the literate-nav plugin which reads `SUMMARY.md` files to build navigation. Each SUMMARY.md uses bullet
+lists with markdown links:
+
+```markdown
+* [Page Title](path/to/file.md)
+* [Section Title](section/)
+  * [Nested Page](nested.md)
+```
+
+**IMPORTANT CONVENTIONS:**
+
+1. **SUMMARY.md is MANDATORY**: Every first-level content directory MUST have a `SUMMARY.md` file
+
+    - ✅ Required: `sysadmin/`, `cloud/`, `containers/`, `code/`, `monitoring/`, `security/`
+    - ✅ Exception: Only `resources/` may omit SUMMARY.md (it contains assets, not content)
+
+1. **Consistent Linking in Top-Level SUMMARY.md**: The `/docs/SUMMARY.md` file should link to directories, not directly
+    to `index.md` files:
+
+    - ✅ Correct: `* [SysAdmin](sysadmin/)`
+    - ❌ Incorrect: `* [SysAdmin](sysadmin/index.md)`
+    - This allows literate-nav to automatically find and use the section's SUMMARY.md
+
+1. **Section SUMMARY.md Structure**: Each section's SUMMARY.md should start with its overview:
+
+    ```markdown
+    * [Section Name Overview](index.md)
+    * [Subtopic 1](subtopic1.md)
+    * [Subtopic 2](subtopic2.md)
+    ```
+
+1. **Nested Navigation**: Subdirectories can have their own SUMMARY.md for hierarchical navigation. The top-level
+    `docs/SUMMARY.md` controls the main navigation menu.
+
+**Why these conventions matter:**
+
+- Predictable structure for contributors
+- Scalability as content grows
+- Consistent behavior across all sections
+- Clear pattern for adding new content
 
 ### Branches
 
@@ -150,3 +198,132 @@ When adding or modifying documentation:
 - Test locally with `mkdocs serve` before committing
 - Pre-commit hooks will validate the build, so fix any warnings/errors they report
 - Follow the Contributing Guide (CONTRIBUTING.md) for detailed workflow
+
+### Available Markdown Features
+
+Material for MkDocs extensions enabled in this project:
+
+- **Admonitions**: `!!! note`, `!!! warning`, `!!! tip`, `!!! danger`, etc. (collapsible with `???`)
+- **Code blocks**: Syntax highlighting with language specification, inline code with `pymdownx.inlinehilite`
+- **Tabbed content**: Use `=== "Tab Title"` for content tabs that can link across the site
+- **Tables**: Standard markdown tables with alignment
+- **Definition lists**: For glossary-style content
+- **Magic links**: Auto-linking for URLs, email addresses
+- **Snippets**: Include external code files in documentation (base path: docs/)
+- **Permalinks**: Automatic heading anchors for direct linking
+
+## Skills - Documentation & Maintenance
+
+This project uses two custom Claude Code skills:
+
+### 1. TechWriter v2.0 - Modern Technical Documentation
+
+**Philosophy:** Practical, no-BS technical references for people who know their shit.
+
+**Activate:**
+
+```bash
+/techwriter
+```
+
+**What You Get:**
+
+- 1-2 line technical intro (straight to the point)
+- Quick Hits tabs: Essential commands, patterns, pro tips
+- Optional TL;DR reference table
+- Curated links (5-10 best resources, not 50)
+- No academic BS, no tutorials, no fluff
+
+**Style:**
+
+- 🎯 Direct and technical
+- ⚡ Modern with emojis
+- 🔥 Assumes you know the basics
+- 💀 Real-world code patterns
+- 🚀 No motivational language
+
+**What TechWriter Does NOT Create:**
+
+- ❌ "Core Concepts" academic sections
+- ❌ "Core Services" or "Strategies" abstractions
+- ❌ Step-by-step tutorials
+- ❌ Verbose explanations
+- ❌ 50+ link lists
+
+**Example requests:**
+
+```
+Document Redis
+Create reference for Terraform
+Add page for Kubernetes
+```
+
+**Page structure:**
+
+1. **WTF** - What it is (1-2 lines)
+1. **Quick Hits** - 3 tabs with commands/patterns/tips
+1. **TL;DR Reference** - Optional table
+1. **Worth Checking** - 4 card categories with curated links
+1. **See Also** - Related topics
+
+**Validation:**
+
+```bash
+# MANDATORY - must pass before completion
+source venv/bin/activate && mkdocs build --strict
+```
+
+______________________________________________________________________
+
+### 2. Janitor - Repository Maintenance
+
+**Philosophy:** Clean repos, clear mind, zero BS. With sass and class.
+
+**Activate:**
+
+```bash
+/janitor
+```
+
+**What It Does:**
+
+- 🗑️ Finds obsolete files (365+ days old)
+- 💾 Detects cache files in version control
+- 📋 Identifies duplicate markdown files
+- 🐘 Locates large files
+- 🧼 Validates .gitignore configuration
+- 🌿 Analyzes branch hygiene
+- 📊 Generates health reports (0-100 score)
+- 🎭 Provides witty, sarcastic feedback
+
+**Common commands:**
+
+```bash
+./scripts/janitor.sh inspect         # Full inspection
+./scripts/janitor.sh clean-cache     # Remove cache files
+./scripts/janitor.sh health-report   # Repository health score
+```
+
+**Example output:**
+
+> "Found 47 markdown files. Are we writing a novel or documenting code?"
+
+______________________________________________________________________
+
+### Skills Configuration
+
+**Location:** `.claude/skills/`
+
+```
+.claude/skills/
+├── techwriter/
+│   ├── SKILL.md
+│   ├── README.md
+│   └── templates/
+└── janitor/
+    ├── SKILL.md
+    ├── README.md
+    └── scripts/
+```
+
+**CSS Styling:** `docs/stylesheets/snape.css` (premium card grids, hover effects)
