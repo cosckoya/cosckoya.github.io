@@ -15,7 +15,7 @@ repos:
 
   # Enhanced YAML validation
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
 
@@ -27,15 +27,17 @@ repos:
 
   # Markdown formatting (MkDocs-aware)
   - repo: https://github.com/executablebooks/mdformat
-    rev: 1.0.0
+    rev: 0.7.19
     hooks:
       - id: mdformat
         additional_dependencies:
-          - mdformat-mkdocs>=2.0.0
-          - mdformat-gfm>=0.3.5
-          - mdformat-frontmatter>=2.0.1
+          - mdformat-admon==2.0.6
+          - mdformat-tables==0.4.1
+          - mdformat-gfm==0.3.6
+          - mdformat-frontmatter==2.0.8
+          - mdformat-mkdocs==2.0.11
         args: [--wrap, '120']
-        exclude: '^(\.github/docs/architecture/|venv/|site/|test/)'
+        exclude: '^(\.github/docs/architecture/|\.claude/|venv/|site/|test/|info/)'
 
   # MkDocs build validation
   - repo: local

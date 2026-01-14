@@ -10,7 +10,9 @@ tags:
 
 # Containerization
 
-Containerization is a lightweight virtualization technology that packages applications and their dependencies into portable units called containers. Unlike traditional virtual machines, containers share the host operating system kernel, making them much more resource-efficient and faster to start.
+Containerization is a lightweight virtualization technology that packages applications and their dependencies into
+portable units called containers. Unlike traditional virtual machines, containers share the host operating system
+kernel, making them much more resource-efficient and faster to start.
 
 !!! abstract "Key Benefits"
     - **Portability**: Run the same application in any environment
@@ -20,20 +22,20 @@ Containerization is a lightweight virtualization technology that packages applic
     - **Speed**: Fast deployments and startup times
     - **Consistency**: Same execution in development, staging, and production
 
----
+______________________________________________________________________
 
 ## Fundamental Concepts
 
 ### Containers vs. Virtual Machines
 
-| Feature | Containers | Virtual Machines |
-|---------|-----------|------------------|
-| **Virtualization** | OS-level | Hardware-level |
-| **Size** | Lightweight (MB) | Heavy (GB) |
-| **Startup** | Seconds | Minutes |
-| **Overhead** | Low | High |
-| **Isolation** | Processes | Complete |
-| **Use Case** | Microservices, CI/CD | Legacy apps, strong isolation |
+| Feature            | Containers           | Virtual Machines              |
+| ------------------ | -------------------- | ----------------------------- |
+| **Virtualization** | OS-level             | Hardware-level                |
+| **Size**           | Lightweight (MB)     | Heavy (GB)                    |
+| **Startup**        | Seconds              | Minutes                       |
+| **Overhead**       | Low                  | High                          |
+| **Isolation**      | Processes            | Complete                      |
+| **Use Case**       | Microservices, CI/CD | Legacy apps, strong isolation |
 
 ### Container Architecture
 
@@ -55,11 +57,12 @@ Containerization is a lightweight virtualization technology that packages applic
 └─────────────────────────────────────┘
 ```
 
----
+______________________________________________________________________
 
 ## Docker
 
-Docker is the most popular containerization platform, facilitating the creation, distribution, and execution of containers.
+Docker is the most popular containerization platform, facilitating the creation, distribution, and execution of
+containers.
 
 ### Docker Components
 
@@ -67,6 +70,7 @@ Docker is the most popular containerization platform, facilitating the creation,
     The main engine that executes and manages containers.
 
     **Components**:
+
     - **Docker Daemon (dockerd)**: Service that manages Docker objects
     - **Docker CLI (docker)**: Command-line interface
     - **Docker API**: REST API to interact with daemon
@@ -77,6 +81,7 @@ Docker is the most popular containerization platform, facilitating the creation,
     Read-only templates to create containers.
 
     **Key concepts**:
+
     - **Layers**: Images built in incremental layers
     - **Dockerfile**: Image definition file
     - **Base Image**: Base image (e.g., `ubuntu:22.04`, `alpine:3.18`)
@@ -95,18 +100,20 @@ Docker is the most popular containerization platform, facilitating the creation,
     Running instances of Docker images.
 
     **Lifecycle**:
+
     1. **Create**: Create container without starting
-    2. **Start**: Start container
-    3. **Running**: Container running
-    4. **Pause/Unpause**: Pause/resume processes
-    5. **Stop**: Stop container gracefully
-    6. **Kill**: Force stop
-    7. **Remove**: Delete container
+    1. **Start**: Start container
+    1. **Running**: Container running
+    1. **Pause/Unpause**: Pause/resume processes
+    1. **Stop**: Stop container gracefully
+    1. **Kill**: Force stop
+    1. **Remove**: Delete container
 
 === "Docker Volumes"
     Mechanism to persist data outside container lifecycle.
 
     **Persistence types**:
+
     - **Volumes**: Managed by Docker, best practice
     - **Bind Mounts**: Mount host directory
     - **tmpfs**: In-memory storage (non-persistent)
@@ -123,6 +130,7 @@ Docker is the most popular containerization platform, facilitating the creation,
     Virtual networks for container communication.
 
     **Network types**:
+
     - **bridge**: Default network, containers on same host
     - **host**: Uses host network directly
     - **overlay**: For containers on multiple hosts (Swarm)
@@ -261,21 +269,22 @@ volumes:
 
 !!! success "Docker Best Practices"
     1. **Use official base images**: `python:3.11-slim`, `node:18-alpine`
-    2. **Multi-stage builds**: Reduce image size
-    3. **Minimize layers**: Combine RUN commands when possible
-    4. **Use .dockerignore**: Exclude unnecessary files
-    5. **Don't run as root**: Use USER to specify non-privileged user
-    6. **Scan images**: Use tools like Trivy, Snyk
-    7. **Tag images appropriately**: Avoid using `:latest` in production
-    8. **Clean up in each layer**: Delete temporary files in same RUN
-    9. **Use health checks**: Define HEALTHCHECK in Dockerfile
-    10. **Configure resource limits**: CPU and memory for each container
+    1. **Multi-stage builds**: Reduce image size
+    1. **Minimize layers**: Combine RUN commands when possible
+    1. **Use .dockerignore**: Exclude unnecessary files
+    1. **Don't run as root**: Use USER to specify non-privileged user
+    1. **Scan images**: Use tools like Trivy, Snyk
+    1. **Tag images appropriately**: Avoid using `:latest` in production
+    1. **Clean up in each layer**: Delete temporary files in same RUN
+    1. **Use health checks**: Define HEALTHCHECK in Dockerfile
+    1. **Configure resource limits**: CPU and memory for each container
 
----
+______________________________________________________________________
 
 ## Kubernetes (K8s)
 
-Kubernetes is the industry-leading container orchestration system, designed to automate deployment, scaling, and management of containerized applications.
+Kubernetes is the industry-leading container orchestration system, designed to automate deployment, scaling, and
+management of containerized applications.
 
 ### Kubernetes Architecture
 
@@ -283,6 +292,7 @@ Kubernetes is the industry-leading container orchestration system, designed to a
     Components that manage the cluster.
 
     **Main components**:
+
     - **kube-apiserver**: REST API to interact with cluster
     - **etcd**: Distributed key-value database for cluster state
     - **kube-scheduler**: Assigns Pods to Nodes
@@ -293,6 +303,7 @@ Kubernetes is the industry-leading container orchestration system, designed to a
     Machines that run containerized applications.
 
     **Components on each node**:
+
     - **kubelet**: Agent that communicates with control plane
     - **kube-proxy**: Manages network rules on nodes
     - **Container Runtime**: Docker, containerd, CRI-O
@@ -353,6 +364,7 @@ Kubernetes is the industry-leading container orchestration system, designed to a
     Exposes Pods as network service.
 
     **Service types**:
+
     - **ClusterIP**: Internal to cluster (default)
     - **NodePort**: Exposes on node port
     - **LoadBalancer**: Creates external load balancer
@@ -496,6 +508,7 @@ Helm simplifies deployment of complex applications in Kubernetes using charts.
     - **Repository**: Collection of available charts
 
     **Basic commands**:
+
     ```bash
     # Search charts
     helm search repo nginx
@@ -521,19 +534,13 @@ Helm simplifies deployment of complex applications in Kubernetes using charts.
 
 === "Chart Structure"
     ```
-    mychart/
-    ├── Chart.yaml          # Chart metadata
-    ├── values.yaml         # Default values
-    ├── charts/             # Dependent charts
-    ├── templates/          # Kubernetes templates
-    │   ├── deployment.yaml
-    │   ├── service.yaml
-    │   ├── ingress.yaml
-    │   └── _helpers.tpl   # Helper templates
-    └── README.md
     ```
 
----
+mychart/ ├── Chart.yaml # Chart metadata ├── values.yaml # Default values ├── charts/ # Dependent charts ├── templates/
+\# Kubernetes templates │ ├── deployment.yaml │ ├── service.yaml │ ├── ingress.yaml │ └── \_helpers.tpl # Helper
+templates └── README.md \`\`\`
+
+______________________________________________________________________
 
 ## Container Registries
 
@@ -555,7 +562,7 @@ Repositories for storing and distributing container images.
     - **[JFrog Artifactory](https://jfrog.com/artifactory/)** - Universal artifact repository
     - **[Nexus Repository](https://www.sonatype.com/products/nexus-repository)** - Docker registry and more
 
----
+______________________________________________________________________
 
 ## Container Security
 
@@ -563,15 +570,15 @@ Repositories for storing and distributing container images.
 
 !!! warning "Security Principles"
     1. **Image scanning**: Search for known vulnerabilities
-    2. **Minimal images**: Use `alpine`, `distroless` to reduce attack surface
-    3. **Don't run as root**: Non-privileged user in container
-    4. **Secrets management**: Don't store credentials in images
-    5. **Network policies**: Limit communication between Pods
-    6. **Resource limits**: Define CPU/memory limits
-    7. **Read-only filesystem**: Mount filesystem as read-only when possible
-    8. **Regular updates**: Keep base images updated
-    9. **RBAC**: Role-based access control in Kubernetes
-    10. **Audit logging**: Record accesses and changes
+    1. **Minimal images**: Use `alpine`, `distroless` to reduce attack surface
+    1. **Don't run as root**: Non-privileged user in container
+    1. **Secrets management**: Don't store credentials in images
+    1. **Network policies**: Limit communication between Pods
+    1. **Resource limits**: Define CPU/memory limits
+    1. **Read-only filesystem**: Mount filesystem as read-only when possible
+    1. **Regular updates**: Keep base images updated
+    1. **RBAC**: Role-based access control in Kubernetes
+    1. **Audit logging**: Record accesses and changes
 
 ### Security Tools
 
@@ -589,9 +596,10 @@ Repositories for storing and distributing container images.
 === "Policy Enforcement"
     - **[OPA (Open Policy Agent)](https://www.openpolicyagent.org)** - Policy-as-code
     - **[Kyverno](https://kyverno.io)** - Policy engine for Kubernetes
-    - **[Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)** - Kubernetes security standards
+    - **[Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)** - Kubernetes
+        security standards
 
----
+______________________________________________________________________
 
 ## Alternatives and Ecosystem
 
@@ -617,7 +625,7 @@ Repositories for storing and distributing container images.
 - **[KinD](https://kind.sigs.k8s.io)** - Kubernetes in Docker for testing
 - **[Minikube](https://minikube.sigs.k8s.io)** - Local Kubernetes for development
 
----
+______________________________________________________________________
 
 ## Learning Resources
 
@@ -652,11 +660,11 @@ Repositories for storing and distributing container images.
     - [CNCF Slack](https://slack.cncf.io)
     - [Kubernetes Forums](https://discuss.kubernetes.io)
 
----
+______________________________________________________________________
 
 ## Related Topics
 
-- [DevOps](../devops/) - CI/CD and automation for containers
+- [DevOps Tools](../devops/) - CI/CD and automation tools
 - [Cloud](../cloud/) - Container services in cloud platforms
-- [Monitoring](../devops/monitoring-observability/) - Monitoring containerized applications
-- [DevSecOps](../devops/devsecops/) - Security for containers
+- [GitHub Actions](../devops/github-actions.md) - CI/CD for containerized applications
+- [Security](../security/) - Container security practices

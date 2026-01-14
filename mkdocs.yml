@@ -84,3 +84,4 @@ plugins:
 
 extra_css:
   - resources/stylesheets/images.css
+  - stylesheets/snape.css

@@ -1,10 +1,8 @@
 # TechWriter - Unified Technical Documentation Expert
 
-**Version:** 1.0.0
-**Created:** 2026-01-13
-**Status:** Active
+**Version:** 1.0.0 **Created:** 2026-01-13 **Status:** Active
 
----
+______________________________________________________________________
 
 ## Overview
 
@@ -15,19 +13,19 @@ TechWriter is the **unified documentation skill** that combines the best of DocM
 
 **Result:** Practical, didactic technical references with beautiful presentation.
 
----
+______________________________________________________________________
 
 ## What TechWriter Creates
 
 Every page includes:
 
 1. **Brief Introduction** (2-4 sentences)
-2. **Core Concepts** (tabbed, concise)
-3. **Technical Reference** (optional, when applicable)
-4. **Resources** (card grids with 4 categories)
-5. **Related Topics**
+1. **Core Concepts** (tabbed, concise)
+1. **Technical Reference** (optional, when applicable)
+1. **Resources** (card grids with 4 categories)
+1. **Related Topics**
 
----
+______________________________________________________________________
 
 ## Key Features
 
@@ -48,7 +46,7 @@ Every page includes:
 - ❌ Plain bullet lists
 - ❌ Motivational language
 
----
+______________________________________________________________________
 
 ## Activation
 
@@ -57,15 +55,17 @@ Every page includes:
 ```
 
 Or in a message:
+
 ```
 Create documentation for [Technology]
 ```
 
----
+______________________________________________________________________
 
 ## Example Output
 
 ### Input
+
 ```
 Create documentation for Redis
 ```
@@ -104,22 +104,22 @@ In-memory data structure store used as database, cache, message broker, and stre
 </div>
 ```
 
----
+______________________________________________________________________
 
 ## Page Structure
 
 ### Required Sections
 
 1. ✅ **Title & Introduction** (2-4 sentences)
-2. ✅ **Core Concepts** (tabbed, minimum 3)
-3. ✅ **Resources** (card grids, 4 categories)
-4. ✅ **Related Topics**
+1. ✅ **Core Concepts** (tabbed, minimum 3)
+1. ✅ **Resources** (card grids, 4 categories)
+1. ✅ **Related Topics**
 
 ### Optional Sections
 
 - **Technical Reference** (only if technology has specs/API/config)
 
----
+______________________________________________________________________
 
 ## Design Principles
 
@@ -153,21 +153,21 @@ In-memory data structure store used as database, cache, message broker, and stre
 - `:material-flask:` - Labs
 - `:material-api:` - API
 
----
+______________________________________________________________________
 
 ## Research Workflow
 
 **BEFORE creating any page:**
 
 1. ✅ Search official documentation
-2. ✅ Find interactive labs/playgrounds
-3. ✅ Locate video tutorials
-4. ✅ Search awesome lists
-5. ✅ Find community resources (Discord, forums, Reddit)
-6. ✅ Identify GitHub repositories
-7. ✅ Verify all links are accessible
+1. ✅ Find interactive labs/playgrounds
+1. ✅ Locate video tutorials
+1. ✅ Search awesome lists
+1. ✅ Find community resources (Discord, forums, Reddit)
+1. ✅ Identify GitHub repositories
+1. ✅ Verify all links are accessible
 
----
+______________________________________________________________________
 
 ## Validation Checklist
 
@@ -183,7 +183,7 @@ Before completing ANY page:
 - [ ] English only
 - [ ] `mkdocs build --strict` passes with 0 errors
 
----
+______________________________________________________________________
 
 ## Integration
 
@@ -198,7 +198,7 @@ Before completing ANY page:
 - **MkDocs Material** - Theme configuration required
 - **Snape CSS** - Premium styling (`docs/stylesheets/snape.css`)
 
----
+______________________________________________________________________
 
 ## Configuration Requirements
 
@@ -226,7 +226,7 @@ extra_css:
   - stylesheets/snape.css
 ```
 
----
+______________________________________________________________________
 
 ## File Structure
 
@@ -238,53 +238,53 @@ extra_css:
     └── DOCUMENTATION_TEMPLATE.md     # Page template
 ```
 
----
+______________________________________________________________________
 
 ## Golden Rules
 
 1. 🔍 **Research first** - Never write from memory
-2. 🇬🇧 **English only** - Non-negotiable
-3. 🎨 **Card grids** - Never plain bullets for links
-4. 📐 **Concise** - Brief intro, straight to content
-5. 🔗 **Comprehensive** - But visually organized
-6. ✅ **Validate** - Build MUST pass
-7. 📊 **Tabs** - For concepts and organization
-8. 🎯 **Practical** - Developer-focused content
+1. 🇬🇧 **English only** - Non-negotiable
+1. 🎨 **Card grids** - Never plain bullets for links
+1. 📐 **Concise** - Brief intro, straight to content
+1. 🔗 **Comprehensive** - But visually organized
+1. ✅ **Validate** - Build MUST pass
+1. 📊 **Tabs** - For concepts and organization
+1. 🎯 **Practical** - Developer-focused content
 
----
+______________________________________________________________________
 
 ## Comparison
 
-| Aspect | DocMaster | Snape | TechWriter |
-|--------|-----------|-------|------------|
-| **Introduction** | Extensive | Brief | Brief (2-4 sentences) |
-| **Tutorials** | Yes, detailed | No | No |
-| **Design** | Basic markdown | Premium | Premium |
-| **Resources** | 12 categories | 3 categories | 4 categories (visual) |
-| **Concepts** | Verbose | Minimal | Concise tabs |
-| **Build Validation** | Yes | Yes | Yes |
-| **Best For** | Learning paths | Pure reference | Practical reference |
+| Aspect               | DocMaster      | Snape          | TechWriter            |
+| -------------------- | -------------- | -------------- | --------------------- |
+| **Introduction**     | Extensive      | Brief          | Brief (2-4 sentences) |
+| **Tutorials**        | Yes, detailed  | No             | No                    |
+| **Design**           | Basic markdown | Premium        | Premium               |
+| **Resources**        | 12 categories  | 3 categories   | 4 categories (visual) |
+| **Concepts**         | Verbose        | Minimal        | Concise tabs          |
+| **Build Validation** | Yes            | Yes            | Yes                   |
+| **Best For**         | Learning paths | Pure reference | Practical reference   |
 
----
+______________________________________________________________________
 
 ## Migration from Old Skills
 
 ### From DocMaster Pages
 
 1. Reduce introduction to 2-4 sentences
-2. Remove "Quick Start" and "Getting Started" sections
-3. Convert concepts to tabbed format
-4. Consolidate 12 resource categories into 4
-5. Use card grids for all links
+1. Remove "Quick Start" and "Getting Started" sections
+1. Convert concepts to tabbed format
+1. Consolidate 12 resource categories into 4
+1. Use card grids for all links
 
 ### From Snape Pages
 
 1. Add more didactic context to concepts
-2. Expand from 3 to 4 resource categories
-3. Ensure learning resources are included
-4. Make technical definitions more accessible
+1. Expand from 3 to 4 resource categories
+1. Ensure learning resources are included
+1. Make technical definitions more accessible
 
----
+______________________________________________________________________
 
 ## Example Commands
 
@@ -299,7 +299,7 @@ extra_css:
 /techwriter research and document gRPC
 ```
 
----
+______________________________________________________________________
 
 ## Success Criteria
 
@@ -312,9 +312,7 @@ A TechWriter page is successful when:
 - ✅ No verbose tutorials
 - ✅ Build validates without errors
 
----
+______________________________________________________________________
 
-**Documentation:** This README
-**Template:** `templates/DOCUMENTATION_TEMPLATE.md`
-**Activation:** `/techwriter`
+**Documentation:** This README **Template:** `templates/DOCUMENTATION_TEMPLATE.md` **Activation:** `/techwriter`
 **Status:** Active (v1.0.0)

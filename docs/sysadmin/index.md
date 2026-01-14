@@ -11,7 +11,9 @@ tags:
 
 # Infrastructure & System Administration
 
-System administration is the backbone of IT infrastructure, encompassing the management, configuration, and reliable operation of computer systems, networks, and services. Modern sysadmins must master a diverse set of technologies from traditional operating systems to cloud platforms and automation tools.
+System administration is the backbone of IT infrastructure, encompassing the management, configuration, and reliable
+operation of computer systems, networks, and services. Modern sysadmins must master a diverse set of technologies from
+traditional operating systems to cloud platforms and automation tools.
 
 !!! abstract "Core Competencies"
     - Operating systems administration (Linux & Windows)
@@ -21,20 +23,23 @@ System administration is the backbone of IT infrastructure, encompassing the man
     - Security hardening and compliance
     - Monitoring and incident response
 
----
+______________________________________________________________________
 
 ## Sistemas Operativos
 
-Deep knowledge of operating systems is fundamental for any system administrator. This includes user management, permissions, process control, service management, and system troubleshooting.
+Deep knowledge of operating systems is fundamental for any system administrator. This includes user management,
+permissions, process control, service management, and system troubleshooting.
 
 ### Linux
 
-Linux remains the dominant platform for servers, cloud infrastructure, and containerized workloads. Mastery of major distributions and their unique characteristics is essential.
+Linux remains the dominant platform for servers, cloud infrastructure, and containerized workloads. Mastery of major
+distributions and their unique characteristics is essential.
 
 === "Distributions"
     **Enterprise Linux**
 
-    - [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) - Industry standard for enterprise deployments
+    - [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) - Industry
+        standard for enterprise deployments
     - [CentOS Stream](https://www.centos.org/) - Upstream development platform for RHEL
     - [Rocky Linux](https://rockylinux.org/) - Community enterprise Linux distribution
     - [AlmaLinux](https://almalinux.org/) - RHEL-compatible enterprise OS
@@ -75,7 +80,8 @@ Linux remains the dominant platform for servers, cloud infrastructure, and conta
 
 ### Windows Server
 
-Windows Server administration is critical for many enterprise environments, especially those with Active Directory, Exchange, or Microsoft-centric infrastructures.
+Windows Server administration is critical for many enterprise environments, especially those with Active Directory,
+Exchange, or Microsoft-centric infrastructures.
 
 === "Documentation"
     - [Microsoft Docs: Windows Server](https://docs.microsoft.com/en-us/windows-server/) - Official documentation
@@ -98,11 +104,12 @@ Windows Server administration is critical for many enterprise environments, espe
     - Windows Firewall and security policies
     - Remote Desktop Services (RDS)
 
----
+______________________________________________________________________
 
 ## Redes
 
-Understanding networking is fundamental to system administration. You must diagnose connectivity issues, configure network services, and implement security policies.
+Understanding networking is fundamental to system administration. You must diagnose connectivity issues, configure
+network services, and implement security policies.
 
 ### Core Networking Concepts
 
@@ -154,11 +161,12 @@ Understanding networking is fundamental to system administration. You must diagn
     - [Practical Networking](https://www.practicalnetworking.net/) - Clear networking explanations
     - [Subnet Calculator](https://www.subnet-calculator.com/) - IP addressing tool
 
----
+______________________________________________________________________
 
 ## Virtualización y Contenedores
 
-Virtualization and containerization are now standard practice, enabling efficient resource utilization, rapid deployment, and infrastructure portability.
+Virtualization and containerization are now standard practice, enabling efficient resource utilization, rapid
+deployment, and infrastructure portability.
 
 ### Virtualization Platforms
 
@@ -212,11 +220,12 @@ Virtualization and containerization are now standard practice, enabling efficien
     - **Containers**: Microservices, cloud-native apps, CI/CD pipelines, rapid scaling
     - **Hybrid**: Containers on VMs for best of both worlds
 
----
+______________________________________________________________________
 
 ## Scripting y Automatización
 
-Automation is the key to scaling operations, reducing errors, and freeing time for strategic work. Master scripting languages to automate repetitive tasks.
+Automation is the key to scaling operations, reducing errors, and freeing time for strategic work. Master scripting
+languages to automate repetitive tasks.
 
 ### Scripting Languages
 
@@ -224,6 +233,7 @@ Automation is the key to scaling operations, reducing errors, and freeing time f
     The default shell for most Linux systems, essential for system automation.
 
     **Key Concepts**:
+
     - Variables, loops, conditionals
     - Command substitution and pipelines
     - File operations and text processing
@@ -245,6 +255,7 @@ Automation is the key to scaling operations, reducing errors, and freeing time f
     ```
 
     **Resources**:
+
     - [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
     - [ShellCheck](https://www.shellcheck.net/) - Shell script linter
 
@@ -252,6 +263,7 @@ Automation is the key to scaling operations, reducing errors, and freeing time f
     Microsoft's automation framework, essential for Windows administration.
 
     **Key Features**:
+
     - Object-oriented pipeline
     - Cmdlets (verb-noun naming)
     - Remote management via WinRM
@@ -271,6 +283,7 @@ Automation is the key to scaling operations, reducing errors, and freeing time f
     ```
 
     **Resources**:
+
     - [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
     - [PowerShell Gallery](https://www.powershellgallery.com/) - Module repository
 
@@ -278,6 +291,7 @@ Automation is the key to scaling operations, reducing errors, and freeing time f
     Versatile language for complex automation, APIs, and system integration.
 
     **Use Cases**:
+
     - System monitoring and reporting
     - API interactions (REST, GraphQL)
     - Data processing and analysis
@@ -299,6 +313,7 @@ Automation is the key to scaling operations, reducing errors, and freeing time f
     ```
 
     **Libraries**:
+
     - `psutil` - System and process utilities
     - `paramiko` - SSH client
     - `requests` - HTTP library
@@ -312,7 +327,7 @@ Automation is the key to scaling operations, reducing errors, and freeing time f
     - **Documentation**: Comment your code and maintain README files
     - **Testing**: Test scripts in non-production before deployment
 
----
+______________________________________________________________________
 
 ## Almacenamiento y Backup
 
@@ -323,13 +338,13 @@ Data is the lifeblood of any organization. Proper storage architecture and backu
 === "RAID"
     **Redundant Array of Independent Disks** provides redundancy and/or performance.
 
-    | RAID Level | Redundancy | Performance | Capacity | Use Case |
-    |------------|------------|-------------|----------|----------|
-    | RAID 0 | None | High | 100% | Non-critical, high-speed data |
-    | RAID 1 | Mirror | Good read | 50% | OS drives, critical data |
-    | RAID 5 | Single parity | Balanced | (n-1)/n | General purpose servers |
-    | RAID 6 | Double parity | Good | (n-2)/n | Large arrays, high reliability |
-    | RAID 10 | Mirror+Stripe | Best | 50% | Databases, high I/O applications |
+    | RAID Level | Redundancy    | Performance | Capacity | Use Case                         |
+    | ---------- | ------------- | ----------- | -------- | -------------------------------- |
+    | RAID 0     | None          | High        | 100%     | Non-critical, high-speed data    |
+    | RAID 1     | Mirror        | Good read   | 50%      | OS drives, critical data         |
+    | RAID 5     | Single parity | Balanced    | (n-1)/n  | General purpose servers          |
+    | RAID 6     | Double parity | Good        | (n-2)/n  | Large arrays, high reliability   |
+    | RAID 10    | Mirror+Stripe | Best        | 50%      | Databases, high I/O applications |
 
     **Software RAID**: mdadm (Linux), Storage Spaces (Windows)
 
@@ -375,16 +390,19 @@ Data is the lifeblood of any organization. Proper storage architecture and backu
 
 === "Backup Types"
     **Full Backup**
+
     - Complete copy of all data
     - Longest time, most storage
     - Fastest recovery
 
     **Incremental Backup**
+
     - Only changes since last backup (full or incremental)
     - Fastest backup, least storage
     - Slower recovery (needs full + all incrementals)
 
     **Differential Backup**
+
     - Changes since last full backup
     - Moderate time and storage
     - Faster recovery (needs full + last differential)
@@ -417,11 +435,12 @@ Data is the lifeblood of any organization. Proper storage architecture and backu
     - **Documentation**: Maintain runbooks for disaster scenarios
     - **Automation**: Automate failover and recovery processes
 
----
+______________________________________________________________________
 
 ## Seguridad
 
-Security is not optional—it's a core responsibility. System hardening, patch management, and security best practices are critical.
+Security is not optional—it's a core responsibility. System hardening, patch management, and security best practices are
+critical.
 
 ### System Hardening
 
@@ -468,7 +487,8 @@ Security is not optional—it's a core responsibility. System hardening, patch m
 
     **Tools**:
 
-    - [WSUS](https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) - Windows Server Update Services
+    - [WSUS](https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+        \- Windows Server Update Services
     - [yum-cron](https://linux.die.net/man/8/yum-cron) - Automated YUM updates
     - [unattended-upgrades](https://wiki.debian.org/UnattendedUpgrades) - Debian/Ubuntu auto-updates
     - [Ansible](https://www.ansible.com/) - Automated patch orchestration
@@ -488,11 +508,12 @@ Security is not optional—it's a core responsibility. System hardening, patch m
     - [OSSEC](https://www.ossec.net/) - Host-based intrusion detection
     - [Wazuh](https://wazuh.com/) - Security monitoring platform
 
----
+______________________________________________________________________
 
 ## Monitorización y Logging
 
-Proactive monitoring prevents incidents from becoming outages. Comprehensive logging enables rapid troubleshooting and forensic analysis.
+Proactive monitoring prevents incidents from becoming outages. Comprehensive logging enables rapid troubleshooting and
+forensic analysis.
 
 ### Monitoring Solutions
 
@@ -537,7 +558,6 @@ Proactive monitoring prevents incidents from becoming outages. Comprehensive log
     - [Datadog](https://www.datadoghq.com/) - Cloud monitoring and analytics
     - [New Relic](https://newrelic.com/) - Application performance monitoring
     - [Elastic APM](https://www.elastic.co/apm) - Application performance within ELK
-    - See [Monitoring & Observability](../devops/monitoring-observability/) for detailed coverage
 
 ### Logging Infrastructure
 
@@ -574,14 +594,16 @@ Proactive monitoring prevents incidents from becoming outages. Comprehensive log
     - **Correlation**: Link logs across systems for troubleshooting
     - **Compliance**: Meet regulatory requirements (GDPR, HIPAA, PCI-DSS)
 
----
+______________________________________________________________________
 
 ## Cloud Computing
 
-Cloud platforms have become essential infrastructure for modern system administrators. While on-premise skills remain crucial, cloud proficiency is increasingly mandatory.
+Cloud platforms have become essential infrastructure for modern system administrators. While on-premise skills remain
+crucial, cloud proficiency is increasingly mandatory.
 
 !!! info "Comprehensive Cloud Guide Available"
-    For detailed coverage of AWS, Azure, GCP, cloud architecture patterns, security best practices, and migration strategies, see the dedicated **[Cloud Computing](../cloud/)** section.
+    For detailed coverage of AWS, Azure, GCP, cloud architecture patterns, security best practices, and migration
+    strategies, see the dedicated **[Cloud Computing](../cloud/)** section.
 
 **Quick Cloud Resources**:
 
@@ -589,11 +611,12 @@ Cloud platforms have become essential infrastructure for modern system administr
 - [Azure Documentation](https://docs.microsoft.com/en-us/azure/)
 - [GCP Documentation](https://cloud.google.com/docs)
 
----
+______________________________________________________________________
 
 ## Bases de Datos Básicas
 
-While you're not expected to be a DBA, understanding database fundamentals helps in many situations—from application support to backup planning.
+While you're not expected to be a DBA, understanding database fundamentals helps in many situations—from application
+support to backup planning.
 
 === "Relational Databases"
     **MySQL/MariaDB**
@@ -649,17 +672,12 @@ While you're not expected to be a DBA, understanding database fundamentals helps
     pg_dump -U postgres database_name > backup.sql
     ```
 
----
+______________________________________________________________________
 
 ## Automation & Configuration Management
 
-Modern infrastructure requires automation to maintain consistency, speed, and reliability. Configuration management and Infrastructure as Code have become core DevOps practices.
-
-!!! info "Comprehensive Automation Guides Available"
-    These topics have been expanded into dedicated DevOps sections:
-
-    - **[Infrastructure as Code (IaC)](../devops/iac/)** - Terraform, CloudFormation, Pulumi for infrastructure provisioning
-    - **[Configuration Management](../devops/configuration-management/)** - Ansible, Puppet, Chef, SaltStack for server configuration
+Modern infrastructure requires automation to maintain consistency, speed, and reliability. Configuration management and
+Infrastructure as Code have become core DevOps practices.
 
 **Why Automation Matters for SysAdmins**:
 
@@ -669,31 +687,37 @@ Modern infrastructure requires automation to maintain consistency, speed, and re
 - **Documentation**: Code serves as living documentation
 - **Version Control**: Track all infrastructure changes
 
+**Automation Tools**:
+
+- **Infrastructure as Code**: Terraform, CloudFormation, Pulumi for infrastructure provisioning
+- **Configuration Management**: Ansible, Puppet, Chef, SaltStack for server configuration
+- **CI/CD**: See [DevOps Tools](../devops/) section for GitHub Actions, Azure DevOps
+
 **Quick Start Resources**:
 
 - [Ansible Documentation](https://docs.ansible.com/) - Easiest to learn
 - [Terraform Documentation](https://www.terraform.io/docs) - Most popular IaC tool
 
----
+______________________________________________________________________
 
 ## Learning Path
 
 ### Beginner to Intermediate
 
 1. **Master Linux fundamentals**: Command line, file system, permissions
-2. **Learn networking basics**: TCP/IP, DNS, routing
-3. **Start scripting**: Begin with Bash, progress to Python
-4. **Understand virtualization**: Set up VirtualBox or VMware lab
-5. **Practice security**: Harden a test system using CIS benchmarks
+1. **Learn networking basics**: TCP/IP, DNS, routing
+1. **Start scripting**: Begin with Bash, progress to Python
+1. **Understand virtualization**: Set up VirtualBox or VMware lab
+1. **Practice security**: Harden a test system using CIS benchmarks
 
 ### Intermediate to Advanced
 
 1. **Deep dive into automation**: Master Ansible or Puppet
-2. **Learn containerization**: Docker fundamentals, orchestration basics
-3. **Cloud certification**: AWS Certified SysOps Administrator or equivalent
-4. **Infrastructure as Code**: Terraform projects
-5. **Advanced networking**: Implement VPNs, VLANs, load balancers
-6. **Monitoring mastery**: Deploy Prometheus + Grafana stack
+1. **Learn containerization**: Docker fundamentals, orchestration basics
+1. **Cloud certification**: AWS Certified SysOps Administrator or equivalent
+1. **Infrastructure as Code**: Terraform projects
+1. **Advanced networking**: Implement VPNs, VLANs, load balancers
+1. **Monitoring mastery**: Deploy Prometheus + Grafana stack
 
 ### Continuous Learning
 
@@ -703,23 +727,23 @@ Modern infrastructure requires automation to maintain consistency, speed, and re
 - **Documentation**: Read man pages, official docs, RFCs
 - **Practice**: Break things in safe environments, learn from failures
 
----
+______________________________________________________________________
 
 ## Best Practices
 
 !!! success "Essential Principles"
     1. **Automation First**: If you do it twice, automate it
-    2. **Documentation**: Document everything—your future self will thank you
-    3. **Backups**: Test your backups; untested backups are worthless
-    4. **Monitoring**: You can't fix what you can't see
-    5. **Security**: Defense in depth, principle of least privilege
-    6. **Change Management**: Test changes, have rollback plans
-    7. **Version Control**: Infrastructure as code, scripts in Git
-    8. **Capacity Planning**: Monitor trends, plan for growth
-    9. **Disaster Recovery**: Have a plan, test it regularly
-    10. **Continuous Learning**: Technology changes—stay current
+    1. **Documentation**: Document everything—your future self will thank you
+    1. **Backups**: Test your backups; untested backups are worthless
+    1. **Monitoring**: You can't fix what you can't see
+    1. **Security**: Defense in depth, principle of least privilege
+    1. **Change Management**: Test changes, have rollback plans
+    1. **Version Control**: Infrastructure as code, scripts in Git
+    1. **Capacity Planning**: Monitor trends, plan for growth
+    1. **Disaster Recovery**: Have a plan, test it regularly
+    1. **Continuous Learning**: Technology changes—stay current
 
----
+______________________________________________________________________
 
 ## Community & Resources
 
@@ -740,16 +764,16 @@ Modern infrastructure requires automation to maintain consistency, speed, and re
     - **Self-Hosted** - Self-hosting and home labs
     - **TechSNAP** - Systems, networking, and administration
 
----
+______________________________________________________________________
 
 ## Related Topics
 
 - [Cloud Platforms](../cloud/) - AWS, Azure, GCP, cloud architecture patterns
-- [DevOps](../devops/) - CI/CD, automation, and modern operational practices
-- [Infrastructure as Code](../devops/iac/) - Terraform, CloudFormation, Pulumi
-- [Configuration Management](../devops/configuration-management/) - Ansible, Puppet, Chef, SaltStack
-- [Monitoring & Observability](../devops/monitoring-observability/) - Deep dive into monitoring tools and practices
+- [DevOps Tools](../devops/) - CI/CD, automation, and modern operational practices
+- [GitHub Actions](../devops/github-actions.md) - CI/CD workflows and automation
+- [Azure DevOps](../devops/azure-devops.md) - Microsoft DevOps platform
+- [Pre-Commit](../devops/pre-commit.md) - Code quality automation
 - [Containerization](../containerization/) - Docker and Kubernetes administration
 - [Cybersecurity](../security/) - Security hardening and compliance
 
----
+______________________________________________________________________

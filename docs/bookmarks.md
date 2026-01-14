@@ -9,9 +9,10 @@ tags:
 
 # Bookmarks
 
-A curated collection of valuable resources, learning platforms, documentation hubs, and community sites for developers and tech enthusiasts.
+A curated collection of valuable resources, learning platforms, documentation hubs, and community sites for developers
+and tech enthusiasts.
 
----
+______________________________________________________________________
 
 ## Essential Resources
 
@@ -19,7 +20,7 @@ A curated collection of valuable resources, learning platforms, documentation hu
 - [Awesome](https://github.com/sindresorhus/awesome) - Curated lists of awesome resources
 - [Terraform](https://github.com/shuaibiyy/awesome-terraform) - Awesome Terraform resources
 
----
+______________________________________________________________________
 
 ## Learning Platforms
 
@@ -37,7 +38,7 @@ A curated collection of valuable resources, learning platforms, documentation hu
     - [DevDocs.io](https://devdocs.io) - Unified API documentation
     - [Zeal](https://zealdocs.org/) - Offline documentation browser
 
----
+______________________________________________________________________
 
 ## Related Pages
 

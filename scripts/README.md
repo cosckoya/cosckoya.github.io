@@ -35,6 +35,7 @@ DocMaster Tools provides automated checks and maintenance tasks for this MkDocs 
 Scans all markdown files for internal links and verifies targets exist.
 
 **Checks**:
+
 - Relative link targets exist
 - Directory links resolve to index.md
 - No broken cross-references
@@ -48,6 +49,7 @@ Scans all markdown files for internal links and verifies targets exist.
 Finds markdown files not referenced in any SUMMARY.md.
 
 **Reports**:
+
 - Documents not in navigation
 - Files without incoming links
 - Suggestions for integration
@@ -61,6 +63,7 @@ Finds markdown files not referenced in any SUMMARY.md.
 Validates documentation structure follows project conventions.
 
 **Checks**:
+
 - First-level directories have SUMMARY.md
 - Directories have index.md files
 - Main docs/SUMMARY.md exists
@@ -75,6 +78,7 @@ Validates documentation structure follows project conventions.
 Finds and removes empty placeholder directories.
 
 **Actions**:
+
 - Scans docs/ for empty directories
 - Removes empty directories
 - Reports cleanup results
@@ -88,6 +92,7 @@ Finds and removes empty placeholder directories.
 Identifies stale content and TODO markers.
 
 **Reports**:
+
 - Files not modified in 6+ months
 - TODO/FIXME/XXX markers
 - Placeholder content
@@ -101,6 +106,7 @@ Identifies stale content and TODO markers.
 Runs MkDocs build in strict mode to catch warnings and errors.
 
 **Checks**:
+
 - Activates venv if present
 - Runs `mkdocs build --strict`
 - Reports build success/failure
@@ -124,12 +130,13 @@ Runs markdownlint to enforce markdown style conventions.
 Runs all checks in sequence for comprehensive validation.
 
 **Includes**:
+
 1. Structure validation
-2. Empty directory cleanup
-3. Orphan detection
-4. Link integrity check
-5. Freshness audit
-6. Build validation
+1. Empty directory cleanup
+1. Orphan detection
+1. Link integrity check
+1. Freshness audit
+1. Build validation
 
 ## Integration with Pre-Commit
 
@@ -153,15 +160,15 @@ Add to `Makefile`:
 ```makefile
 .PHONY: docmaster-check
 docmaster-check:
-	@./scripts/docmaster-tools.sh full-maintenance
+ @./scripts/docmaster-tools.sh full-maintenance
 
 .PHONY: docmaster-links
 docmaster-links:
-	@./scripts/docmaster-tools.sh check-links
+ @./scripts/docmaster-tools.sh check-links
 
 .PHONY: docmaster-clean
 docmaster-clean:
-	@./scripts/docmaster-tools.sh cleanup-empty
+ @./scripts/docmaster-tools.sh cleanup-empty
 ```
 
 Then use:
@@ -183,11 +190,12 @@ DocMaster tools work seamlessly with Claude Code via the DOCMASTER.md prompt.
 ```
 
 Claude will:
-1. Read DOCMASTER.md instructions
-2. Run appropriate docmaster-tools.sh commands
-3. Report results and suggest fixes
 
-See [DOCMASTER.md](../DOCMASTER.md) for full agent documentation.
+1. Read DOCMASTER.md instructions
+1. Run appropriate docmaster-tools.sh commands
+1. Report results and suggest fixes
+
+See [DOCMASTER.md](../info/agents/DOCMASTER.md) for full agent documentation.
 
 ## Workflow Examples
 
@@ -284,19 +292,17 @@ Some files are intentionally standalone (e.g., `bookmarks.md`). These are exclud
 When adding new checks:
 
 1. Follow the existing function pattern
-2. Add colored output (info/success/warning/error)
-3. Return appropriate exit codes
-4. Update help text
-5. Update this README
+1. Add colored output (info/success/warning/error)
+1. Return appropriate exit codes
+1. Update help text
+1. Update this README
 
 ## Related Documentation
 
-- [DOCMASTER.md](../DOCMASTER.md) - Full DocMaster agent documentation
+- [DOCMASTER.md](../info/agents/DOCMASTER.md) - Full DocMaster agent documentation
 - [CLAUDE.md](../CLAUDE.md) - Project development guidelines
 - [.github/docs/architecture/](../.github/docs/architecture/) - Architecture decisions
 
----
+______________________________________________________________________
 
-**Created**: 2026-01-13
-**Maintained by**: DocMaster Agent
-**Status**: Active
+**Created**: 2026-01-13 **Maintained by**: DocMaster Agent **Status**: Active

@@ -1,1 +1,1 @@
-* [Infrastructure & SysAdmin Overview](index.md)
+- [Infrastructure & SysAdmin Overview](index.md)

@@ -1,1 +1,1 @@
-* [Security Overview](index.md)
+- [Security Overview](index.md)

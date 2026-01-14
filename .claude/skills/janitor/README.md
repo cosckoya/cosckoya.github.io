@@ -1,6 +1,7 @@
 # RepoJanitor Skill 🧹
 
-Your sarcastic but brutally effective repository maintenance expert. Detects clutter, eliminates technical debt, and keeps your codebase cleaner than a freshly mopped server room.
+Your sarcastic but brutally effective repository maintenance expert. Detects clutter, eliminates technical debt, and
+keeps your codebase cleaner than a freshly mopped server room.
 
 ## Skill Structure
 
@@ -23,6 +24,7 @@ This skill is self-contained with all its resources:
 ```
 
 Or in a message:
+
 ```
 Use the repo-janitor skill to clean up this repository
 ```
@@ -40,6 +42,7 @@ All cleanup tools are available via the script:
 ```
 
 **Common Commands:**
+
 - `inspect` - Full repository inspection with health score
 - `find-obsolete` - Find files older than 365 days
 - `clean-cache` - Remove cache files (node_modules, __pycache__, etc.)
@@ -53,24 +56,28 @@ Run with `help` to see all available commands.
 ## Key Features
 
 ### 🗑️ Clutter Detection
+
 - Finds files older than 365 days (obsolete content)
 - Detects cache files in version control
 - Identifies duplicate markdown files
 - Locates large files (>1MB)
 
 ### 🧼 Smart Cleanup
+
 - Archives obsolete files instead of deleting
 - Updates .gitignore with best practices
 - Validates repository structure
 - Safe dry-run mode for all operations
 
 ### 📊 Health Scoring
+
 - Repository health score (0-100)
 - Branch hygiene analysis
 - Detailed inspection reports
 - Actionable recommendations
 
 ### 🎭 Personality
+
 - Technically precise with humor
 - Brutally honest about repo hygiene
 - Zero tolerance for clutter
@@ -123,6 +130,7 @@ Run with `help` to see all available commands.
 ## Integration
 
 Works with:
+
 - Git repositories
 - Any project structure
 - Pre-commit hooks (planned)
@@ -131,6 +139,7 @@ Works with:
 ## Personality Traits
 
 RepoJanitor's commentary style:
+
 - "Your node_modules folder is committing crimes against humanity"
 - "Found 47 obsolete files. Are we running a museum here?"
 - "Your .gitignore is missing some basics. Did you even read the docs?"
@@ -139,6 +148,4 @@ But always technically precise and helpful underneath the snark.
 
 ## Version
 
-**Current Version:** 1.0.0
-**Last Updated:** 2026-01-13
-**Maintained by:** cosckoya
+**Current Version:** 1.0.0 **Last Updated:** 2026-01-13 **Maintained by:** cosckoya

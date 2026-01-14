@@ -10,7 +10,9 @@ tags:
 
 # Security
 
-Cybersecurity is the set of practices, technologies, and processes designed to protect systems, networks, programs, and data from digital attacks, unauthorized access, and damage. In an increasingly connected world, information security is essential to protect the confidentiality, integrity, and availability of information.
+Cybersecurity is the set of practices, technologies, and processes designed to protect systems, networks, programs, and
+data from digital attacks, unauthorized access, and damage. In an increasingly connected world, information security is
+essential to protect the confidentiality, integrity, and availability of information.
 
 !!! abstract "Fundamental Principles"
     - **Confidentiality**: Protect sensitive information from unauthorized access
@@ -20,7 +22,7 @@ Cybersecurity is the set of practices, technologies, and processes designed to p
     - **Non-repudiation**: Ensure actions cannot be denied
     - **Authorization**: Control what resources authenticated users can access
 
----
+______________________________________________________________________
 
 ## Cybersecurity Areas
 
@@ -67,7 +69,7 @@ Ethical hacking techniques and penetration testing to identify vulnerabilities.
 - Responsible disclosure
 - Platforms: HackerOne, Bugcrowd, Synack
 
----
+______________________________________________________________________
 
 ## Security Tools
 
@@ -83,7 +85,8 @@ Operating systems specialized in security and pentesting.
     - **[Fedora Security Spin](https://labs.fedoraproject.org/es/security)** - Fedora for security auditing
 
 === "Docker Resources"
-    - [Kali Docker Images](https://www.kali.org/docs/containers/official-kalilinux-docker-images) - Official Kali Linux containers
+    - [Kali Docker Images](https://www.kali.org/docs/containers/official-kalilinux-docker-images) - Official Kali Linux
+        containers
 
 ### Pentesting Tools
 
@@ -95,11 +98,13 @@ Operating systems specialized in security and pentesting.
 === "Reconnaissance"
     - **[Nmap](https://nmap.org)** - Network scanner and security auditing
     - **[Recon-ng](https://github.com/lanmaster53/recon-ng)** - Web reconnaissance framework
-    - **[DMitry](https://mor-pah.net/software/dmitry-deepmagic-information-gathering-tool)** - Deepmagic Information Gathering Tool
+    - **[DMitry](https://mor-pah.net/software/dmitry-deepmagic-information-gathering-tool)** - Deepmagic Information
+        Gathering Tool
     - **[Skipfish](https://github.com/spinkham/skipfish)** - Active web security scanner
     - **[NmapAutomator](https://github.com/21y4d/nmapAutomator)** - Script to automate Nmap scans
 
     **Online Tools:**
+
     - [ping.eu](https://ping.eu) - Network diagnostic tools
     - [HostingChecker](https://hostingchecker.co) - Hosting verification
     - [HTTPStatus](https://httpstatus.io) - HTTP status code verification
@@ -132,7 +137,7 @@ Operating systems specialized in security and pentesting.
     - **[Maltego](https://www.maltego.com)** - Intelligence and link analysis platform
     - **[CaseFile](https://gitlab.com/kalilinux/packages/casefile)** - Offline analysis tool
 
----
+______________________________________________________________________
 
 ## Google Dorking
 
@@ -164,7 +169,7 @@ Google Dorking is the technique of using Google advanced search operators to fin
     intitle:"phpMyAdmin" "Welcome to phpMyAdmin"
     ```
 
----
+______________________________________________________________________
 
 ## Bug Bounty
 
@@ -182,7 +187,7 @@ Vulnerability discovery reward programs.
     - **Intigriti** - European bug bounty platform
     - **YesWeHack** - Collaborative security platform
 
----
+______________________________________________________________________
 
 ## Frameworks and Standards
 
@@ -194,16 +199,17 @@ Vulnerability discovery reward programs.
     - **[OWASP Top 10](https://owasp.org/www-project-top-ten/)** - 10 most critical web security risks
 
     **OWASP Top 10 (2021):**
+
     1. Broken Access Control
-    2. Cryptographic Failures
-    3. Injection
-    4. Insecure Design
-    5. Security Misconfiguration
-    6. Vulnerable and Outdated Components
-    7. Identification and Authentication Failures
-    8. Software and Data Integrity Failures
-    9. Security Logging and Monitoring Failures
-    10. Server-Side Request Forgery (SSRF)
+    1. Cryptographic Failures
+    1. Injection
+    1. Insecure Design
+    1. Security Misconfiguration
+    1. Vulnerable and Outdated Components
+    1. Identification and Authentication Failures
+    1. Software and Data Integrity Failures
+    1. Security Logging and Monitoring Failures
+    1. Server-Side Request Forgery (SSRF)
 
 ### Other Frameworks
 
@@ -212,7 +218,7 @@ Vulnerability discovery reward programs.
 - **CIS Controls**: Priority actions set for cyber defense
 - **MITRE ATT&CK**: Knowledge base of adversary tactics and techniques
 
----
+______________________________________________________________________
 
 ## Wordlists
 
@@ -231,7 +237,7 @@ Word lists for brute force attacks and fuzzing.
     - **[Lovecraft Creatures](https://lovecraft.fandom.com/wiki/Category:Creatures)** - Lovecraft creatures
     - **[Behind the Name](https://www.behindthename.com)** - Name etymology
 
----
+______________________________________________________________________
 
 ## Learning & Practice
 
@@ -255,7 +261,7 @@ Word lists for brute force attacks and fuzzing.
     - **[Hackster.io](https://www.hackster.io)** - Hardware and software projects
     - **[PortSwigger Web Security Academy](https://portswigger.net/web-security)** - Free web security academy
 
----
+______________________________________________________________________
 
 ## Security Certifications
 
@@ -281,23 +287,23 @@ Word lists for brute force attacks and fuzzing.
 - **Azure Security Engineer Associate**: Azure security
 - **Google Cloud Professional Cloud Security Engineer**: GCP security
 
----
+______________________________________________________________________
 
 ## Best Practices
 
 !!! success "Security Principles"
     1. **Defense in Depth**: Multiple security layers
-    2. **Least Privilege**: Minimum necessary privileges
-    3. **Separation of Duties**: Segregation of critical functions
-    4. **Zero Trust**: Don't trust any entity by default
-    5. **Security by Design**: Security integrated from design
-    6. **Keep it Simple**: Complexity is the enemy of security
-    7. **Fail Securely**: Failures should be secure
-    8. **Security Awareness**: Continuous security training
-    9. **Regular Audits**: Periodic security audits
-    10. **Incident Response Plan**: Incident response plan
+    1. **Least Privilege**: Minimum necessary privileges
+    1. **Separation of Duties**: Segregation of critical functions
+    1. **Zero Trust**: Don't trust any entity by default
+    1. **Security by Design**: Security integrated from design
+    1. **Keep it Simple**: Complexity is the enemy of security
+    1. **Fail Securely**: Failures should be secure
+    1. **Security Awareness**: Continuous security training
+    1. **Regular Audits**: Periodic security audits
+    1. **Incident Response Plan**: Incident response plan
 
----
+______________________________________________________________________
 
 ## Communities and Resources
 
@@ -318,10 +324,10 @@ Word lists for brute force attacks and fuzzing.
     - **Security Now**: Security news and analysis
     - **Risky Business**: Information security news
 
----
+______________________________________________________________________
 
 ## Related Topics
 
-- [DevSecOps](../devops/devsecops/) - Security integration in DevOps
+- [DevOps Tools](../devops/) - Security tools and automation
 - [Cloud Security](../cloud/) - Cloud platform security
 - [SysAdmin Security](../sysadmin/#seguridad) - Hardening and patch management

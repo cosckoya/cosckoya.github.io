@@ -2,9 +2,10 @@
 
 # Klaatu Barada Nikto
 
-Welcome to my personal tech documentation hub. A curated collection of technical notes, guides, and resources covering modern infrastructure, development tools, and cybersecurity practices.
+Welcome to my personal tech documentation hub. A curated collection of technical notes, guides, and resources covering
+modern infrastructure, development tools, and cybersecurity practices.
 
----
+______________________________________________________________________
 
 ## Explore
 
@@ -12,7 +13,7 @@ Welcome to my personal tech documentation hub. A curated collection of technical
 
 - :fontawesome-solid-server:{ .lg .middle } **Infrastructure & SysAdmin**
 
-    ---
+    ______________________________________________________________________
 
     System administration guides for Linux, macOS, networking, and server management.
 
@@ -20,23 +21,23 @@ Welcome to my personal tech documentation hub. A curated collection of technical
 
 - :fontawesome-solid-cloud:{ .lg .middle } **Cloud Platforms**
 
-    ---
+    ______________________________________________________________________
 
     Cloud platform guides and best practices for AWS, Azure, GCP and multi-cloud environments.
 
     [:octicons-arrow-right-24: Explore Cloud](cloud/)
 
-- :fontawesome-solid-gears:{ .lg .middle } **DevOps & Automation**
+- :fontawesome-solid-gears:{ .lg .middle } **DevOps Tools**
 
-    ---
+    ______________________________________________________________________
 
-    CI/CD pipelines, Infrastructure as Code, automation, observability, and AI/ML operations.
+    Essential tools for modern DevOps: GitHub, GitHub Actions, Pre-Commit, Azure DevOps, and Claude Code.
 
     [:octicons-arrow-right-24: Explore DevOps](devops/)
 
 - :fontawesome-solid-box:{ .lg .middle } **Containerization**
 
-    ---
+    ______________________________________________________________________
 
     Docker, Kubernetes, Helm, operators, and container orchestration.
 
@@ -44,7 +45,7 @@ Welcome to my personal tech documentation hub. A curated collection of technical
 
 - :fontawesome-solid-shield-halved:{ .lg .middle } **Security**
 
-    ---
+    ______________________________________________________________________
 
     Offensive security, defensive practices, pentesting, incident response, and compliance.
 
@@ -52,7 +53,7 @@ Welcome to my personal tech documentation hub. A curated collection of technical
 
 - :fontawesome-solid-bookmark:{ .lg .middle } **Bookmarks**
 
-    ---
+    ______________________________________________________________________
 
     Curated collection of valuable resources and learning platforms.
 
@@ -60,22 +61,22 @@ Welcome to my personal tech documentation hub. A curated collection of technical
 
 </div>
 
----
+______________________________________________________________________
 
 ## What's Inside
 
 This documentation hub is organized into focused topic areas:
 
-| Section | What You'll Find | Best For |
-|---------|------------------|----------|
+| Section                                    | What You'll Find                                     | Best For                                        |
+| ------------------------------------------ | ---------------------------------------------------- | ----------------------------------------------- |
 | **[Infrastructure & SysAdmin](sysadmin/)** | OS fundamentals, networking, storage, virtualization | System administrators, infrastructure engineers |
-| **[Cloud Platforms](cloud/)** | AWS, Azure, GCP, multi-cloud strategies | Cloud architects, solutions engineers |
-| **[DevOps & Automation](devops/)** | CI/CD, IaC, automation, monitoring, AI/MLOps | DevOps engineers, SREs, platform engineers |
-| **[Containerization](containerization/)** | Docker, Kubernetes, Helm, operators | Container specialists, cloud-native developers |
-| **[Security](security/)** | Offensive, defensive, pentesting, incident response | Security engineers, pentesters, SOC analysts |
-| **[Bookmarks](bookmarks.md)** | Curated learning resources | Everyone looking to learn |
+| **[Cloud Platforms](cloud/)**              | AWS, Azure, GCP, multi-cloud strategies              | Cloud architects, solutions engineers           |
+| **[DevOps Tools](devops/)**                | GitHub, GitHub Actions, Pre-Commit, Azure DevOps     | DevOps engineers, SREs, platform engineers      |
+| **[Containerization](containerization/)**  | Docker, Kubernetes, Helm, operators                  | Container specialists, cloud-native developers  |
+| **[Security](security/)**                  | Offensive, defensive, pentesting, incident response  | Security engineers, pentesters, SOC analysts    |
+| **[Bookmarks](bookmarks.md)**              | Curated learning resources                           | Everyone looking to learn                       |
 
----
+______________________________________________________________________
 
 ## Quick Paths by Role
 
@@ -83,60 +84,49 @@ This documentation hub is organized into focused topic areas:
 
 Start here to set up your workflow:
 
-1. **[DevOps & Automation](devops/)** - CI/CD pipelines, IaC, and automation fundamentals
-2. **[Containerization](containerization/)** - Docker and Kubernetes essentials
-3. **[Cloud Platforms](cloud/)** - AWS, Azure, GCP configuration and best practices
-4. **[Monitoring & Observability](devops/monitoring-observability/)** - Observability and alerting setup
+1. **[DevOps Tools](devops/)** - GitHub, GitHub Actions, Pre-Commit, Azure DevOps
+1. **[Containerization](containerization/)** - Docker and Kubernetes essentials
+1. **[Cloud Platforms](cloud/)** - AWS, Azure, GCP configuration and best practices
 
 ### I'm a Software Developer
 
 Focus on these areas:
 
-1. **[Version Control](devops/version-control/)** - Git workflows and collaboration
-2. **[CI/CD](devops/ci-cd/)** - Build and deployment automation
-3. **[Containerization](containerization/)** - Containerize your applications
-4. **[AI/ML Operations](devops/aiml-operations.md)** - ML integration and AI tools
+1. **[GitHub](devops/github.md)** - Git workflows and collaboration
+1. **[GitHub Actions](devops/github-actions.md)** - Build and deployment automation
+1. **[Containerization](containerization/)** - Containerize your applications
+1. **[Claude Code](devops/claude-code.md)** - AI-assisted development
 
 ### I'm a System Administrator
 
 Your roadmap:
 
 1. **[Infrastructure & SysAdmin](sysadmin/)** - Linux, Windows, networking, and storage fundamentals
-2. **[DevOps & Automation](devops/)** - Infrastructure as Code and configuration management
-3. **[Cloud Platforms](cloud/)** - Cloud infrastructure and services
-4. **[Security](security/)** - System hardening and security best practices
+1. **[DevOps & Automation](devops/)** - Infrastructure as Code and configuration management
+1. **[Cloud Platforms](cloud/)** - Cloud infrastructure and services
+1. **[Security](security/)** - System hardening and security best practices
 
 ### I'm Learning Security
 
 Follow this path:
 
 1. **[Security](security/)** - Offensive and defensive security fundamentals
-2. **[DevSecOps](devops/devsecops/)** - Security integration in DevOps
-3. **[Containerization](containerization/)** - Container security
-4. **[Cloud Platforms](cloud/)** - Cloud infrastructure security
+1. **[Containerization](containerization/)** - Container security
+1. **[Cloud Platforms](cloud/)** - Cloud infrastructure security
 
-### I'm an AI/ML Engineer
-
-Your learning path:
-
-1. **[AI/ML Operations](devops/aiml-operations.md)** - ML fundamentals, LLMs, and MLOps
-2. **[DevOps & Automation](devops/)** - CI/CD for ML models and infrastructure automation
-3. **[Cloud Platforms](cloud/)** - AWS SageMaker, Azure ML, GCP Vertex AI
-4. **[Containerization](containerization/)** - Docker and Kubernetes for model deployment
-
----
+______________________________________________________________________
 
 ## How Content is Organized
 
-### Deep Dive Pages
+### Tool Pages
 
-Most sections have an **index page** (like `devops/monitoring-observability/index.md`) that provides:
+Each tool page provides:
 
-- Overview of the topic
-- Key concepts and tools
-- Practical examples
-- Learning resources
-- Related topics
+- Overview of the tool
+- Getting started guides
+- Key concepts and features
+- Learning resources and official documentation
+- Related topics and integrations
 
 ### Quick Reference
 
@@ -154,7 +144,7 @@ Each page includes:
 - **Related links** at the bottom to explore connected topics
 - **Tags** to find similar content
 
----
+______________________________________________________________________
 
 ## Tips for Effective Use
 
@@ -167,14 +157,13 @@ Each page includes:
 !!! success "Learn by Doing"
     Most guides include practical examples you can try immediately in your environment.
 
----
+______________________________________________________________________
 
 ## Contribution & Feedback
 
-This is a living documentation project. If you find issues or have suggestions, feel free to contribute or provide feedback.
+This is a living documentation project. If you find issues or have suggestions, feel free to contribute or provide
+feedback.
 
----
+______________________________________________________________________
 
-![!](resources/img/zelda.png#center)
-![!](resources/img/welcome.png#center)
-![!](resources/img/drizzt.jpg#center)
+![!](resources/img/zelda.png#center) ![!](resources/img/welcome.png#center) ![!](resources/img/drizzt.jpg#center)

@@ -1,414 +1,393 @@
 ---
-title: Cloud Computing
-description: Comprehensive guide to cloud platforms including AWS, Azure, and GCP with best practices for cloud-native architectures
+title: Amazon Web Services (AWS)
+description: AWS reference - cloud platform running half the internet, 200+ services, pricing mystery
 tags:
-  - cloud
   - aws
-  - azure
-  - gcp
-  - cloud-native
+  - cloud
 ---
 
-# Cloud Computing
+# AWS (Amazon Web Services)
+
+Cloud platform that runs half the internet. 200+ services (you'll use maybe 10). 33+ regions globally. Industry standard
+for cloud infrastructure. Pricing is a mystery, bills are scary, but it works.
+
+______________________________________________________________________
+
+## Quick Hits
+
+=== "🎯 Essential Services"
+    ```bash
+    # EC2 - Virtual machines (you'll use this)
+    aws ec2 run-instances --image-id ami-xxx --instance-type t3.micro
+
+    # S3 - Object storage (everyone uses this)
+    aws s3 cp file.txt s3://bucket-name/
+    aws s3 sync ./local s3://bucket/path --delete
+
+    # Lambda - Serverless functions (scales like crazy)
+    aws lambda invoke --function-name my-function output.txt
+
+    # RDS - Managed databases (don't run your own DB)
+    aws rds describe-db-instances
+
+    # IAM - Identity management (painful but critical)
+    aws iam create-user --user-name dev-user
+    aws sts get-caller-identity  # "Who the fuck am I?"
+
+    # CloudWatch - Logs and monitoring (set billing alarms!)
+    aws logs tail /aws/lambda/my-function --follow
+
+    # ECS/EKS - Container orchestration
+    aws ecs list-clusters
+    aws eks list-clusters
+    ```
+
+    **Real talk:**
+
+    - Start with EC2, S3, RDS - that's 80% of use cases
+    - IAM is hell, but you MUST learn it - security nightmare otherwise
+    - Enable MFA on root account RIGHT NOW (seriously, stop reading and do it)
+    - us-east-1 is cheapest but goes down more often (Murphy's law applies)
+    - Use `--profile` for multiple accounts (you'll have dev/staging/prod)
+
+=== "⚡ Common Patterns"
+    ```python
+    import boto3
+    from botocore.exceptions import ClientError
+
+    # S3 upload with proper error handling
+    def upload_to_s3(file_path, bucket, key):
+        s3 = boto3.client('s3')
+        try:
+            s3.upload_file(
+                file_path,
+                bucket,
+                key,
+                ExtraArgs={'ACL': 'private'}  # Don't leak shit
+            )
+            return True
+        except ClientError as e:
+            print(f"Upload failed: {e}")
+            return False
+
+    # Lambda handler pattern (use this)
+    def lambda_handler(event, context):
+        try:
+            # Parse event (API Gateway, SQS, etc.)
+            body = json.loads(event.get('body', '{}'))
+
+            # Do work
+            result = process_data(body)
+
+            # Return proper response
+            return {
+                'statusCode': 200,
+                'headers': {'Content-Type': 'application/json'},
+                'body': json.dumps(result)
+            }
+        except Exception as e:
+            print(f"Error: {e}")  # Goes to CloudWatch
+            return {'statusCode': 500, 'body': 'Internal error'}
+
+    # DynamoDB pattern (NoSQL done right)
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table('Users')
+
+    # Query (efficient)
+    response = table.query(
+        KeyConditionExpression='user_id = :uid',
+        ExpressionAttributeValues={':uid': '12345'}
+    )
+
+    # Scan (expensive, avoid in prod)
+    response = table.scan(Limit=100)
+    ```
+
+    ```yaml
+    # CloudFormation/SAM pattern (infrastructure as code)
+    AWSTemplateFormatVersion: '2010-09-09'
+    Transform: AWS::Serverless-2016-10-31
+
+    Resources:
+      MyFunction:
+        Type: AWS::Serverless::Function
+        Properties:
+          Runtime: python3.12
+          Handler: app.lambda_handler
+          Environment:
+            Variables:
+              TABLE_NAME: !Ref MyTable
+          Policies:
+            - DynamoDBCrudPolicy:
+                TableName: !Ref MyTable
+
+      MyTable:
+        Type: AWS::DynamoDB::Table
+        Properties:
+          BillingMode: PAY_PER_REQUEST
+          AttributeDefinitions:
+            - AttributeName: id
+              AttributeType: S
+          KeySchema:
+            - AttributeName: id
+              KeyType: HASH
+    ```
+
+=== "🔥 Pro Tips & Gotchas"
+    **Cost optimization (your CFO will thank you):**
+
+    - Use Reserved Instances for predictable workloads (up to 72% savings)
+    - Spot Instances for batch jobs (up to 90% savings, but can be terminated)
+    - S3 Intelligent-Tiering for storage (automatic cost optimization)
+    - Set CloudWatch billing alarms IMMEDIATELY (save yourself from $10k surprises)
+    - Delete unused snapshots, AMIs, and elastic IPs (they add up fast)
 
-Cloud platforms have become essential infrastructure for modern applications. This guide covers the major cloud providers, their core services, and best practices for building resilient, scalable cloud-native solutions.
+    **Security (don't get hacked):**
 
-!!! abstract "Core Cloud Concepts"
-    - **Infrastructure as a Service (IaaS)**: Virtual machines, storage, networking
-    - **Platform as a Service (PaaS)**: Managed application platforms
-    - **Serverless**: Event-driven, auto-scaling compute without server management
-    - **Cloud-Native**: Architectures designed specifically for cloud environments
+    - Never hardcode credentials - use IAM roles everywhere
+    - Enable CloudTrail + GuardDuty (detect breaches before bankruptcy)
+    - Use Systems Manager Parameter Store for secrets (free for \<10k params)
+    - VPC Flow Logs for network debugging
+    - Principle of least privilege (IAM policies should be restrictive AF)
 
----
+    **Performance:**
+
+    - Keep traffic in same region/AZ (cross-region costs money + latency)
+    - Use CloudFront CDN for static content (S3 alone is slow)
+    - RDS read replicas for read-heavy workloads
+    - ElastiCache (Redis/Memcached) for caching (sub-ms latency)
 
-## Major Cloud Providers
+    **Gotchas (learn from others' pain):**
 
-### Amazon Web Services (AWS)
+    - Data transfer OUT costs add up fast (in is free, out is $$$$)
+    - NAT Gateway costs more than the EC2 instances sometimes
+    - CloudWatch Logs can get expensive with verbose logging
+    - DynamoDB scans will bankrupt you at scale (use queries)
+    - Lambda cold starts can be 1-2 seconds (use provisioned concurrency if critical)
+    - EBS snapshots are incremental but deletions are confusing (read the docs)
 
-AWS is the market leader in cloud computing, offering the most comprehensive set of services and global infrastructure.
+    **Monitoring:**
+
+    - CloudWatch is included but basic (consider Datadog/New Relic for serious monitoring)
+    - X-Ray for distributed tracing (debug microservices hell)
+    - Set up alarms for: billing, CPU, disk, error rates
+
+    **When NOT to use AWS:**
 
-=== "Core Services"
-    **Compute**:
+    - Small personal projects (Vercel/Netlify/Railway way easier)
+    - You hate vendor lock-in (consider Kubernetes on any cloud)
+    - Budget is tiny (free tier ends, bills start)
+    - Team has no cloud experience (steep learning curve)
 
-    - **EC2**: Elastic Compute Cloud (virtual servers)
-    - **Lambda**: Serverless compute
-    - **ECS/EKS**: Container orchestration
-    - **Fargate**: Serverless containers
+______________________________________________________________________
+
+## Learning Paths
 
-    **Storage**:
+### 🎓 Free Resources
 
-    - **S3**: Simple Storage Service (object storage)
-    - **EBS**: Elastic Block Store (block storage)
-    - **EFS**: Elastic File System (shared file storage)
-    - **Glacier**: Long-term archival storage
+- **[AWS Skill Builder](https://skillbuilder.aws)** - Official training, tons of free courses (start here)
+- **[AWS Free Tier](https://aws.amazon.com/free)** - 12 months free for core services (stay within limits!)
+- **[freeCodeCamp AWS Course](https://www.youtube.com/watch?v=ulprqHHWlng)** - 10+ hour deep dive, quality content
+- **[AWS Workshops](https://workshops.aws)** - Hands-on labs, various topics
+- **[A Cloud Guru Free Tier](https://learn.acloud.guru/search?query=aws&type=free)** - Quality video courses
+- **[AWS Getting Started Guides](https://aws.amazon.com/getting-started/)** - Official tutorials
 
-    **Networking**:
+### 🧪 Interactive Labs
 
-    - **VPC**: Virtual Private Cloud
-    - **Route 53**: DNS service
-    - **CloudFront**: Content Delivery Network
-    - **API Gateway**: API management
+- **[AWS Sandbox Accounts](https://aws.amazon.com/getting-started/hands-on/)** - Official hands-on tutorials in real AWS
+- **[Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)** - Temporary accounts for safe
+    experimentation
+- **[Instruqt AWS Labs](https://play.instruqt.com/public/topics/aws)** - Browser-based scenarios
+- **[LocalStack](https://localstack.cloud/)** - Run AWS locally for development
 
-    **Databases**:
+### 📜 Certifications Worth It
 
-    - **RDS**: Relational Database Service (MySQL, PostgreSQL, etc.)
-    - **DynamoDB**: NoSQL database
-    - **Aurora**: High-performance relational database
-    - **ElastiCache**: In-memory caching (Redis, Memcached)
+- **[Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)** - $100, easiest, good
+    starting point if totally new
+- **[Solutions Architect Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** -
+    $150, **most popular**, worth it for resume (this one matters)
+- **[Developer Associate](https://aws.amazon.com/certification/certified-developer-associate/)** - $150, worth it if you
+    code on AWS daily
+- **[SysOps Administrator Associate](https://aws.amazon.com/certification/certified-sysops-admin-associate/)** - $150,
+    operations-focused
+- **Skip unless senior/employer pays:** Professional certs ($300), Specialty certs ($300) - overkill for most
 
-    **Security & Identity**:
+**Reality check:**
 
-    - **IAM**: Identity and Access Management
-    - **KMS**: Key Management Service
-    - **Secrets Manager**: Secrets management
-    - **GuardDuty**: Threat detection
+- Solutions Architect Associate is the sweet spot (most job postings ask for this)
+- Study 2-3 months, practice exams are critical
+- Use [Tutorials Dojo practice exams](https://tutorialsdojo.com/) ($15, best investment)
 
-    **Monitoring & Management**:
+### 🚀 Projects to Build
 
-    - **CloudWatch**: Monitoring and logging
-    - **CloudTrail**: API audit logging
-    - **Systems Manager**: Operations management
-    - **AWS Config**: Configuration management
+**Beginner (learn the basics):**
 
-=== "Resources"
-    - [AWS Documentation](https://docs.aws.amazon.com/)
-    - [AWS Skill Builder](https://skillbuilder.aws/) - Free training
-    - [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-    - [AWS CLI](https://aws.amazon.com/cli/) - Command-line interface
-    - [AWS Instances Comparison](https://instances.vantage.sh/)
+- Static website on S3 + CloudFront (learn storage + CDN)
+- Serverless URL shortener (Lambda + DynamoDB + API Gateway)
 
-=== "Community"
-    - [r/AWS](https://www.reddit.com/r/aws)
-    - [r/AWS Certifications](https://www.reddit.com/r/AWSCertifications/)
-    - [r/Learn AWS](https://www.reddit.com/r/learnAWS/)
+**Intermediate (portfolio-worthy):**
 
-=== "Learning"
-    - [AWS Skill Builder](https://skillbuilder.aws/)
-    - [W3 Schools: AWS](https://www.w3schools.com/aws/)
-    - [AWS Training and Certification](https://aws.amazon.com/training/)
+- REST API with Lambda + API Gateway + DynamoDB + Cognito auth
+- File processing pipeline (S3 triggers Lambda, stores results in RDS)
+- CI/CD pipeline with CodePipeline + CodeBuild + ECR + ECS
 
----
+**Advanced (job-interview flex):**
 
-### Microsoft Azure
+- Multi-region application with Route 53 failover + RDS cross-region replicas
+- Event-driven microservices with SQS/SNS/EventBridge
+- Cost optimization dashboard with Lambda + Cost Explorer API + QuickSight
 
-Azure is Microsoft's cloud platform, deeply integrated with the Microsoft ecosystem and strong for hybrid cloud scenarios.
+______________________________________________________________________
 
-=== "Core Services"
-    **Compute**:
+## Community Pulse
 
-    - **Virtual Machines**: Windows and Linux VMs
-    - **App Service**: PaaS for web apps
-    - **Azure Functions**: Serverless computing
-    - **AKS**: Azure Kubernetes Service
+### 🐦 Who to Follow
 
-    **Storage**:
+**Twitter/X:**
 
-    - **Azure Storage**: Blob, File, Queue, Table storage
-    - **Managed Disks**: Block storage for VMs
-    - **Azure Files**: SMB file shares
-    - **Archive Storage**: Long-term archival
+- [@awscloud](https://twitter.com/awscloud) - Official updates, new service launches
+- [@QuinnyPig](https://twitter.com/QuinnyPig) - Corey Quinn, AWS cost optimization, hilarious roasts
+- [@ben11kehoe](https://twitter.com/ben11kehoe) - Serverless expert, AWS Community Builder
+- [@nathankpeck](https://twitter.com/nathankpeck) - AWS Principal Dev Advocate, ECS/containers expert
+- [@jeremy_daly](https://twitter.com/jeremy_daly) - Serverless champion, great technical insights
+- [@neiltheblue](https://twitter.com/neiltheblue) - Solutions Architect, hands-on tutorials
+- [@esh](https://twitter.com/esh) - AWS Chief Evangelist (Jeff Barr)
 
-    **Networking**:
+**YouTube/Streamers:**
 
-    - **Azure Virtual Network**: VPC equivalent
-    - **Azure DNS**: DNS service
-    - **Azure CDN**: Content delivery
-    - **Application Gateway**: Load balancing
+- [AWS Online Tech Talks](https://www.youtube.com/c/AWSOnlineTechTalks) - Deep dives, re:Invent sessions
+- [FooBar Serverless](https://www.youtube.com/c/FooBarServerless) - Serverless tutorials
+- [Be A Better Dev](https://www.youtube.com/c/BeABetterDev) - Practical AWS projects
+- [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana) - DevOps + AWS tutorials
+- [AWS Events](https://www.youtube.com/c/AWSEventsChannel) - Conference talks, workshops
 
-    **Databases**:
+### 💬 Active Communities
 
-    - **Azure SQL Database**: Managed SQL Server
-    - **Cosmos DB**: Globally distributed NoSQL
-    - **Azure Database for PostgreSQL/MySQL**: Managed open-source databases
-    - **Azure Cache for Redis**: In-memory caching
+- **[r/aws](https://reddit.com/r/aws)** - 250k+ members, active daily, mix of beginner + advanced (best community)
+- **[AWS Community Discord](https://discord.gg/aws)** - Official, helpful, core team present
+- **[Dev.to #aws](https://dev.to/t/aws)** - Quality tutorials, case studies, community posts
+- **[AWS Community Builders](https://aws.amazon.com/developer/community/community-builders/)** - Official program, great
+    networking
+- **[AWS re:Post](https://repost.aws/)** - Official Q&A (replaces old forums)
+- **[ServerlessLand Community](https://serverlessland.com/)** - Serverless-focused, active Slack/Discord
 
-    **Security & Identity**:
+### 🎙️ Podcasts & Newsletters
 
-    - **Azure AD**: Identity and access management
-    - **Key Vault**: Secrets and key management
-    - **Azure Security Center**: Security monitoring
-    - **Azure Sentinel**: SIEM and SOAR
+**Podcasts:**
 
-    **Monitoring & Management**:
+- **[AWS Podcast](https://aws.amazon.com/podcasts/aws-podcast/)** - Official, weekly, new features + customer stories
+- **[Screaming in the Cloud](https://www.lastweekinaws.com/podcast/screaming-in-the-cloud/)** - Corey Quinn, hilarious,
+    critical of AWS (in good way)
+- **[AWS TechChat](https://aws.amazon.com/podcasts/aws-techchat/)** - Technical deep dives
+- **[AWS Morning Brief](https://www.lastweekinaws.com/podcast/aws-morning-brief/)** - Short daily AWS news
 
-    - **Azure Monitor**: Monitoring and diagnostics
-    - **Log Analytics**: Log aggregation and analysis
-    - **Application Insights**: APM solution
-    - **Azure Automation**: Runbook automation
+**Newsletters:**
 
-=== "Resources"
-    - [Azure Documentation](https://docs.microsoft.com/en-us/azure/)
-    - [Microsoft Learn](https://docs.microsoft.com/en-us/learn/azure/) - Free training
-    - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/) - Command-line interface
-    - [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
+- **[Last Week in AWS](https://www.lastweekinaws.com/)** - Weekly, irreverent, critical analysis (subscribe now)
+- **[Off-by-none](https://offbynone.io/)** - Serverless newsletter, Jeremy Daly, quality content
+- **[AWS Week in Review](https://aws.amazon.com/blogs/aws/category/week-in-review/)** - Official blog, weekly updates
+- **[AWS Open Source News](https://dev.to/aws/aws-open-source-newsletter-191-4e9b)** - Open source projects on AWS
 
----
+### 🎪 Events & Conferences
 
-### Google Cloud Platform (GCP)
+- **[AWS re:Invent](https://reinvent.awsevents.com/)** - Las Vegas, late November, 50k+ attendees, $2k+ (worth it once
+    in career)
+- **[AWS Summit](https://aws.amazon.com/events/summits/)** - Free, regional (20+ cities), good for networking
+- **[AWS Community Day](https://www.awscommunity.day/)** - Free, community-organized, worldwide, quality talks
+- **[ServerlessDays](https://serverlessdays.io/)** - Free/cheap, serverless-focused, technical talks
 
-GCP is Google's cloud offering, known for its data analytics, machine learning capabilities, and Kubernetes expertise.
+______________________________________________________________________
 
-=== "Core Services"
-    **Compute**:
+## Worth Checking
 
-    - **Compute Engine**: Virtual machines
-    - **Cloud Functions**: Serverless compute
-    - **Cloud Run**: Serverless containers
-    - **GKE**: Google Kubernetes Engine
+<div class="grid cards" markdown>
 
-    **Storage**:
+- 📚 __Official Stuff__
 
-    - **Cloud Storage**: Object storage
-    - **Persistent Disk**: Block storage
-    - **Filestore**: Managed file storage
-    - **Archive Storage**: Long-term archival
+    ______________________________________________________________________
 
-    **Networking**:
+    [AWS Docs](https://docs.aws.amazon.com/)
 
-    - **VPC Network**: Virtual networking
-    - **Cloud DNS**: DNS service
-    - **Cloud CDN**: Content delivery
-    - **Cloud Load Balancing**: Global load balancing
+    [AWS CLI Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
 
-    **Databases**:
+    [AWS Architecture Center](https://aws.amazon.com/architecture/)
 
-    - **Cloud SQL**: Managed databases (MySQL, PostgreSQL, SQL Server)
-    - **Cloud Spanner**: Globally distributed relational database
-    - **Firestore**: NoSQL document database
-    - **Memorystore**: Redis and Memcached
+    [Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 
-    **Security & Identity**:
+- 🧪 __Hands-on__
 
-    - **Cloud IAM**: Identity management
-    - **Secret Manager**: Secrets management
-    - **Cloud KMS**: Key management
-    - **Security Command Center**: Security monitoring
+    ______________________________________________________________________
 
-    **Monitoring & Management**:
+    [AWS Free Tier](https://aws.amazon.com/free/)
 
-    - **Cloud Monitoring**: Observability (formerly Stackdriver)
-    - **Cloud Logging**: Log management
-    - **Cloud Trace**: Distributed tracing
-    - **Cloud Profiler**: Performance profiling
+    [AWS Workshops](https://workshops.aws/)
 
-    **AI & Machine Learning**:
+    [Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)
 
-    - **Vertex AI**: Unified ML platform
-    - **BigQuery**: Data warehouse and analytics
-    - **Dataflow**: Stream and batch processing
-    - **AI Platform**: ML model deployment
+    [LocalStack](https://localstack.cloud/)
 
-=== "Resources"
-    - [GCP Documentation](https://cloud.google.com/docs)
-    - [Google Cloud Skills Boost](https://www.cloudskillsboost.google/) - Training
-    - [gcloud CLI](https://cloud.google.com/sdk/gcloud) - Command-line interface
-    - [GCP Architecture Framework](https://cloud.google.com/architecture/framework)
+- 💻 __Real Code__
 
----
+    ______________________________________________________________________
 
-## Cloud Architecture Patterns
+    [Awesome AWS](https://github.com/donnemartin/awesome-aws)
 
-### Multi-Cloud Strategy
+    [AWS Samples](https://github.com/aws-samples)
 
-Running workloads across multiple cloud providers for resilience and flexibility.
+    [Serverless Examples](https://www.serverless.com/examples/)
 
-**Benefits**:
+    [CDK Patterns](https://cdkpatterns.com/)
 
-- Avoid vendor lock-in
-- Use best-of-breed services from each provider
-- Geographic coverage and compliance
-- Disaster recovery across clouds
-- Negotiate better pricing
+    [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
 
-**Challenges**:
+- 🔥 __Deep Dives__
 
-- Increased complexity
-- Skills and training requirements
-- Cost management across providers
-- Tooling and monitoring fragmentation
+    ______________________________________________________________________
 
-**Best Practices**:
+    [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 
-- Standardize with Infrastructure as Code (Terraform)
-- Use cloud-agnostic tools (Kubernetes, Prometheus)
-- Implement centralized identity and monitoring
-- Consider complexity vs. flexibility tradeoffs
-- Start with strategic workloads, not everything
+    [Last Week in AWS Blog](https://www.lastweekinaws.com/blog/)
 
-### Cloud-Native Architecture
+    [AWS Heroes Blogs](https://aws.amazon.com/developer/community/heroes/)
 
-Designing applications specifically for cloud environments.
+    [AWS This Week](https://aweeklydigest.com/)
 
-**Key Principles**:
+    [Corey Quinn's Blog](https://www.lastweekinaws.com/blog/)
 
-- **Microservices**: Decompose into independent services
-- **Containers**: Package with dependencies
-- **Orchestration**: Kubernetes for container management
-- **Serverless**: Event-driven, auto-scaling compute
-- **API-driven**: Services communicate via APIs
-- **Observability**: Comprehensive monitoring and logging
-- **DevOps/GitOps**: Automate deployment and operations
+- 🛠️ __Tools & Extensions__
 
-### Cost Optimization
+    ______________________________________________________________________
 
-Managing cloud spending effectively.
+    [AWS CLI](https://aws.amazon.com/cli/)
 
-**Strategies**:
+    [AWS CDK](https://aws.amazon.com/cdk/) (Infrastructure as Code)
 
-- Right-sizing: Match resources to actual needs
-- Reserved Instances/Savings Plans: Commit for discounts
-- Spot/Preemptible Instances: Use excess capacity
-- Auto-scaling: Scale based on demand
-- Serverless: Pay only for execution time
-- Storage tiers: Move cold data to cheaper storage
-- Monitoring: Track costs and set budgets
+    [Serverless Framework](https://www.serverless.com/)
 
-**Tools**:
+    [AWS SAM](https://aws.amazon.com/serverless/sam/) (Serverless Application Model)
 
-- AWS Cost Explorer, AWS Budgets
-- Azure Cost Management + Billing
-- GCP Cost Management
-- Third-party: CloudHealth, Cloudability
+    [AWS Toolkit (VSCode)](https://aws.amazon.com/visualstudiocode/)
 
----
+    [Steampipe](https://steampipe.io/) (SQL for AWS APIs)
 
-## Cloud Security
+- 📰 __News & Updates__
 
-### Shared Responsibility Model
+    ______________________________________________________________________
 
-Understanding security responsibilities between cloud provider and customer.
+    [AWS What's New](https://aws.amazon.com/new/)
 
-**Provider Responsibilities**:
+    [AWS Blog](https://aws.amazon.com/blogs/)
 
-- Physical security of data centers
-- Hardware and network infrastructure
-- Hypervisor and virtualization layer
-- Service availability and uptime
+    [r/aws](https://reddit.com/r/aws)
 
-**Customer Responsibilities**:
+    [Hacker News AWS](https://hn.algolia.com/?q=AWS)
 
-- Data encryption
-- Access control and identity management
-- Application security
-- Network configuration
-- Compliance and governance
+    [AWS Status](https://status.aws.amazon.com/) (When shit breaks)
 
-### Security Best Practices
+</div>
 
-=== "Identity & Access"
-    - Implement least privilege access
-    - Enable Multi-Factor Authentication (MFA)
-    - Use service accounts for applications
-    - Rotate credentials regularly
-    - Audit access logs continuously
+______________________________________________________________________
 
-=== "Network Security"
-    - Use VPCs and security groups
-    - Implement network segmentation
-    - Enable WAF for web applications
-    - Use private endpoints for services
-    - Monitor traffic with flow logs
-
-=== "Data Protection"
-    - Encrypt data at rest and in transit
-    - Use managed encryption services
-    - Implement key rotation policies
-    - Backup data regularly
-    - Test disaster recovery procedures
-
-=== "Compliance"
-    - Enable audit logging (CloudTrail, Azure Monitor)
-    - Implement resource tagging
-    - Use compliance frameworks (CIS, NIST)
-    - Regular security assessments
-    - Document security controls
-
----
-
-## Cloud Migration
-
-### Migration Strategies (6 R's)
-
-1. **Rehost** ("Lift and Shift")
-   - Move applications as-is to cloud
-   - Fastest migration path
-   - Minimal code changes
-
-2. **Replatform** ("Lift, Tinker, and Shift")
-   - Minor optimizations during migration
-   - Example: Move to managed database
-   - Balance speed and cloud benefits
-
-3. **Refactor/Re-architect**
-   - Redesign for cloud-native
-   - Maximum cloud benefits
-   - Highest effort and cost
-
-4. **Repurchase** ("Drop and Shop")
-   - Move to SaaS solutions
-   - Example: Migrate CRM to Salesforce
-   - Reduce operational burden
-
-5. **Retire**
-   - Decommission unused applications
-   - Reduce costs and complexity
-
-6. **Retain**
-   - Keep on-premises temporarily
-   - Migrate later or not at all
-
-### Migration Best Practices
-
-- **Assess**: Inventory applications and dependencies
-- **Plan**: Choose migration strategy per application
-- **Proof of Concept**: Test with non-critical workloads
-- **Migrate**: Execute in waves, not big bang
-- **Optimize**: Refine and optimize post-migration
-- **Operate**: Establish cloud operations practices
-
----
-
-## Learning Resources
-
-=== "Certifications"
-    **AWS**:
-
-    - AWS Certified Solutions Architect
-    - AWS Certified SysOps Administrator
-    - AWS Certified DevOps Engineer
-
-    **Azure**:
-
-    - Azure Administrator Associate
-    - Azure Solutions Architect Expert
-    - Azure DevOps Engineer Expert
-
-    **GCP**:
-
-    - Associate Cloud Engineer
-    - Professional Cloud Architect
-    - Professional DevOps Engineer
-
-=== "Hands-On Labs"
-    - [AWS Free Tier](https://aws.amazon.com/free/)
-    - [Azure Free Account](https://azure.microsoft.com/free/)
-    - [GCP Free Tier](https://cloud.google.com/free)
-    - [A Cloud Guru](https://acloudguru.com/)
-    - [Pluralsight Cloud Courses](https://www.pluralsight.com/)
-
-=== "Community"
-    - [CNCF (Cloud Native Computing Foundation)](https://www.cncf.io/)
-    - [r/cloudcomputing](https://www.reddit.com/r/cloudcomputing/)
-    - [DevOps Subreddit](https://www.reddit.com/r/devops/)
-    - Cloud provider community forums
-
----
-
-## Related Topics
-
-- [DevOps](../devops/) - CI/CD, IaC, and automation for cloud
-- [Containerization](../containerization/) - Kubernetes and container orchestration
-- [SysAdmin](../sysadmin/) - Foundational infrastructure knowledge
-- [Cybersecurity](../security/) - Cloud security best practices
-
----
+**Last Updated:** 2026-01-13 **Vibe Check:** 🌍 Mainstream - AWS is the default cloud. Not the coolest kid anymore
+(Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're
+learning AWS.

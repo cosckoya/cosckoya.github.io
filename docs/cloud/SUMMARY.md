@@ -1,2 +1,3 @@
-* [Cloud Platforms Overview](index.md)
-* [AWS](aws/)
+- [AWS](aws/)
+- [Azure](azure/)
+- [GCP](gcp/)

@@ -76,16 +76,17 @@ The `--strict` flag ensures warnings are treated as errors.
 ### Adding New Content
 
 1. Create your markdown file in the appropriate directory under `docs/`:
-   - `docs/sysadmin/` - System administration topics
-   - `docs/cloud/` - Cloud platform guides
-   - `docs/containers/` - Container technology
-   - `docs/code/` - Programming snippets
-   - `docs/monitoring/` - Monitoring and observability
-   - `docs/security/` - Cybersecurity topics
 
-2. Update the relevant `SUMMARY.md` file to include your new page in the navigation
+    - `docs/sysadmin/` - System administration topics
+    - `docs/cloud/` - Cloud platform guides
+    - `docs/containers/` - Container technology
+    - `docs/code/` - Programming snippets
+    - `docs/monitoring/` - Monitoring and observability
+    - `docs/security/` - Cybersecurity topics
 
-3. Add images and assets to `docs/resources/`
+1. Update the relevant `SUMMARY.md` file to include your new page in the navigation
+
+1. Add images and assets to `docs/resources/`
 
 ### Markdown Formatting
 
@@ -129,9 +130,9 @@ pre-commit run --all-files
 Before submitting a PR:
 
 1. Serve the site locally and verify your changes
-2. Check for broken links
-3. Test on different screen sizes if applicable
-4. Ensure all images load correctly
+1. Check for broken links
+1. Test on different screen sizes if applicable
+1. Ensure all images load correctly
 
 ## Submitting Changes
 
