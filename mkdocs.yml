@@ -19,15 +19,60 @@ theme:
   #  - yaml
   #  - python
   palette:
-    scheme: slate
-    primary: deep purple
-    accent: teal
+    # Light mode
+    - scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+
+    # Dark mode (default)
+    - scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
+    admonition:
+      note: octicons/info-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/light-bulb-16
+      success: octicons/check-circle-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/stop-16
+      bug: octicons/bug-16
+      example: octicons/code-16
+      quote: octicons/quote-16
+    tag:
+      default: octicons/tag-16
   features:
+    # Navigation enhancements
     - navigation.indexes
-    - content.tabs.link
-    - content.code.copy
+    - navigation.breadcrumbs       # Breadcrumb trail
+    - navigation.instant.loading   # SPA-like navigation
+    - navigation.tracking          # URL updates on scroll
+    - navigation.top               # Back to top button
+
+    # Search improvements
+    - search.suggest               # Search suggestions
+    - search.highlight             # Highlight search matches
+    - search.share                 # Share search results
+
+    # Content features
+    - content.tabs.link            # Persistent tab state
+    - content.code.copy            # Copy code button
+    - content.code.select          # Select code easily
+    - content.code.annotate        # Inline code annotations
+    - content.tooltips             # Abbreviation tooltips
+
+    # Table of contents
+    - toc.follow                   # Follow scroll position
 
 extra:
   generator: false
@@ -64,12 +109,18 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 #      base_path: 'resources/code'
-  #- pymdownx.emoji:
-  #    emoji_index: !!python/name:materialx.emoji.twemoji
-  #    emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
-  - search
+  - search:
+      lang: en
+      pipeline:
+        - stemmer                  # Word stemming (running → run)
+        - stopWordFilter           # Remove common words
+        - trimmer                  # Whitespace cleanup
+      separator: '[\s\-\.]'        # Search delimiters
   - same-dir
   - tags
   - literate-nav:
