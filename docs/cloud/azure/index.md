@@ -9,14 +9,14 @@ tags:
 
 # Microsoft Azure
 
-Microsoft's cloud platform. Second biggest after AWS. Enterprise-friendly with strong Active Directory integration.
-Windows ecosystem plays nice here. Growing fast, sometimes too fast (service names change constantly).
+Microsoft's cloud platform. Second biggest after AWS. Enterprise-friendly with strong Active Directory integration. Windows ecosystem plays nice here. Growing fast, sometimes too fast (service names change constantly).
 
 ______________________________________________________________________
 
 ## Quick Hits
 
 === "🎯 Essential Services"
+
     ```bash
     # Login (interactive)
     az login
@@ -52,6 +52,7 @@ ______________________________________________________________________
     - West US 2 and East US are cheapest regions usually
 
 === "⚡ Common Patterns"
+
     ```python
     from azure.storage.blob import BlobServiceClient
     from azure.identity import DefaultAzureCredential
@@ -132,6 +133,7 @@ ______________________________________________________________________
     ```
 
 === "🔥 Pro Tips & Gotchas"
+
     **Cost optimization:**
 
     - Use Azure Reservations for predictable workloads (up to 72% savings)
@@ -184,8 +186,7 @@ ______________________________________________________________________
 
 ### 🎓 Free Resources
 
-- **[Microsoft Learn](https://learn.microsoft.com/en-us/training/azure/)** - Official training, tons of free modules
-    (start here)
+- **[Microsoft Learn](https://learn.microsoft.com/en-us/training/azure/)** - Official training, tons of free modules (start here)
 - **[Azure Free Account](https://azure.microsoft.com/en-us/free/)** - $200 credit for 30 days + 12 months free services
 - **[Azure Fundamentals Course](https://www.youtube.com/watch?v=NKEFWyqJ5XA)** - 3+ hour freeCodeCamp course
 - **[Azure Documentation](https://learn.microsoft.com/en-us/azure/)** - Official docs (actually decent)
@@ -194,23 +195,17 @@ ______________________________________________________________________
 
 ### 🧪 Interactive Labs
 
-- **[Microsoft Learn Sandbox](https://learn.microsoft.com/en-us/training/)** - Free Azure subscription in browser (no
-    credit card)
+- **[Microsoft Learn Sandbox](https://learn.microsoft.com/en-us/training/)** - Free Azure subscription in browser (no credit card)
 - **[Azure Cloud Shell](https://shell.azure.com/)** - Browser-based CLI (Bash or PowerShell)
 - **[Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)** - Deploy pre-built solutions
-- **[Terraform Azure Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)** - Better
-    than ARM templates
+- **[Terraform Azure Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)** - Better than ARM templates
 
 ### 📜 Certifications Worth It
 
-- **[AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/azure-fundamentals/)** - $99, easiest,
-    good if totally new to Azure
-- **[AZ-104: Azure Administrator](https://learn.microsoft.com/en-us/certifications/azure-administrator/)** - $165,
-    **most popular**, sysadmin/operations focus (this one matters)
-- **[AZ-204: Azure Developer](https://learn.microsoft.com/en-us/certifications/azure-developer/)** - $165, for
-    developers building apps on Azure
-- **[AZ-305: Azure Solutions Architect](https://learn.microsoft.com/en-us/certifications/azure-solutions-architect/)** -
-    $165, design-focused, intermediate level
+- **[AZ-900: Azure Fundamentals](https://learn.microsoft.com/en-us/certifications/azure-fundamentals/)** - $99, easiest, good if totally new to Azure
+- **[AZ-104: Azure Administrator](https://learn.microsoft.com/en-us/certifications/azure-administrator/)** - $165, **most popular**, sysadmin/operations focus (this one matters)
+- **[AZ-204: Azure Developer](https://learn.microsoft.com/en-us/certifications/azure-developer/)** - $165, for developers building apps on Azure
+- **[AZ-305: Azure Solutions Architect](https://learn.microsoft.com/en-us/certifications/azure-solutions-architect/)** - $165, design-focused, intermediate level
 - **Skip unless senior:** AZ-500 (Security), specialty certs ($165+) - overkill for most
 
 **Reality check:**
@@ -218,8 +213,7 @@ ______________________________________________________________________
 - AZ-104 is the sweet spot for ops/infrastructure roles
 - Microsoft certs expire after 1 year (AWS is 3 years) - annoying renewal requirement
 - Study 1-2 months, use practice exams
-- [Whizlabs](https://www.whizlabs.com/microsoft-azure-certification-courses/) and
-    [MeasureUp](https://www.measureup.com/) for practice tests
+- [Whizlabs](https://www.whizlabs.com/microsoft-azure-certification-courses/) and [MeasureUp](https://www.measureup.com/) for practice tests
 
 ### 🚀 Projects to Build
 
@@ -269,17 +263,14 @@ ______________________________________________________________________
 - **[Azure Community Discord](https://discord.gg/azurecommunity)** - Active community, helpful folks
 - **[Dev.to #azure](https://dev.to/t/azure)** - Quality tutorials and articles
 - **[Microsoft Q&A](https://learn.microsoft.com/en-us/answers/products/azure)** - Official Q&A, Microsoft staff answer
-- **[Azure Tech Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)** - Official forums, product teams
-    participate
+- **[Azure Tech Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)** - Official forums, product teams participate
 
 ### 🎙️ Podcasts & Newsletters
 
 **Podcasts:**
 
-- **[Azure Friday Podcast](https://azure.microsoft.com/en-us/resources/videos/azure-friday/)** - Weekly, Scott
-    Hanselman, quality guests
-- **[Cloud Native Show](https://www.youtube.com/playlist?list=PLLasX02E8BPBEXHhjmkWmQDbSaX_TwdUU)** - Kubernetes on
-    Azure focus
+- **[Azure Friday Podcast](https://azure.microsoft.com/en-us/resources/videos/azure-friday/)** - Weekly, Scott Hanselman, quality guests
+- **[Cloud Native Show](https://www.youtube.com/playlist?list=PLLasX02E8BPBEXHhjmkWmQDbSaX_TwdUU)** - Kubernetes on Azure focus
 - **[The Azure Podcast](http://azpodcast.azurewebsites.net/)** - Weekly Azure news + interviews
 
 **Newsletters:**
@@ -290,8 +281,7 @@ ______________________________________________________________________
 
 ### 🎪 Events & Conferences
 
-- **[Microsoft Ignite](https://ignite.microsoft.com/)** - November, Microsoft's biggest conference, virtual + in-person
-    (Seattle/Orlando)
+- **[Microsoft Ignite](https://ignite.microsoft.com/)** - November, Microsoft's biggest conference, virtual + in-person (Seattle/Orlando)
 - **[Microsoft Build](https://build.microsoft.com/)** - May, developer-focused, virtual + Seattle
 - **[Azure Global Bootcamp](https://www.azureglobalbootcamp.com/)** - Free, community-organized, worldwide
 - **[Azure Meetups](https://www.meetup.com/pro/azureplatform/)** - Local meetups, check your city
@@ -380,6 +370,4 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-01-13 **Vibe Check:** 📈 Growing Fast - Azure is the enterprise choice. Strong Windows/AD
-integration, Microsoft sales force pushing hard. Not as mature as AWS for some services, but catching up quick. Great if
-you're already in Microsoft ecosystem.
+**Last Updated:** 2026-01-13 **Vibe Check:** 📈 Growing Fast - Azure is the enterprise choice. Strong Windows/AD integration, Microsoft sales force pushing hard. Not as mature as AWS for some services, but catching up quick. Great if you're already in Microsoft ecosystem.

@@ -1,1 +1,0 @@
-../.claude/skills/repo-janitor/scripts/repo-janitor.sh

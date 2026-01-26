@@ -1,6 +1,6 @@
 ---
 paths:
-  - "**"
+  - '**'
 ---
 
 # Git Workflow Guidelines
@@ -16,6 +16,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
 **Types**:
+
 - `feat:` - New feature or content
 - `fix:` - Bug fix or correction
 - `docs:` - Documentation changes
@@ -26,6 +27,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ## Commit Safety Rules
 
 **NEVER**:
+
 - Run `git push --force` (especially to main/master)
 - Run `git reset --hard` without explicit user request
 - Skip hooks with `--no-verify` unless requested
@@ -33,6 +35,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - Use `git add -A` or `git add .` blindly
 
 **ALWAYS**:
+
 - Stage specific files by name
 - Create NEW commits (not `--amend`) unless requested
 - Include co-author attribution
@@ -42,11 +45,13 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ## Pre-Commit Hook Workflow
 
 Hooks enforce:
+
 - Markdown formatting (`mdformat`)
 - Spell checking (`codespell`)
 - YAML validation (`yamllint`)
 
 Run manually:
+
 ```bash
 pre-commit run --all-files
 ```
@@ -54,18 +59,19 @@ pre-commit run --all-files
 ## Pull Request Workflow
 
 1. Create feature branch from `develop`
-2. Make changes and commit with conventional format
-3. Run `make test` to validate
-4. Run `./scripts/docmaster-tools.sh full-maintenance`
-5. Push to remote: `git push -u origin feature-branch`
-6. Create PR to `develop` (not `main`)
-7. Wait for CI/CD checks
-8. Address review feedback
-9. Merge when approved
+1. Make changes and commit with conventional format
+1. Run `make test` to validate
+1. Run `./scripts/docmaster-tools.sh full-maintenance`
+1. Push to remote: `git push -u origin feature-branch`
+1. Create PR to `develop` (not `main`)
+1. Wait for CI/CD checks
+1. Address review feedback
+1. Merge when approved
 
 ## Creating Pull Requests
 
 Use GitHub CLI for PRs:
+
 ```bash
 gh pr create --title "feat: add new feature" --body "$(cat <<'EOF'
 ## Summary
@@ -90,8 +96,10 @@ EOF
 ## Git Configuration
 
 Repository uses:
+
 - User: "Roy Batty"
 - Email: roy.batty@users.noreply.github.com
 
 For commits via Claude Code:
+
 - Co-Author: Claude <noreply@anthropic.com>

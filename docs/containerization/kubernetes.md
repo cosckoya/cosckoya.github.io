@@ -1,280 +1,335 @@
 # Kubernetes
 
-Production-grade container orchestration for automating deployment, scaling, and management of containerized
-applications.
+Container orchestration at scale. Runs most of the internet. YAML as far as the eye can see. The learning curve is brutal, the operational complexity is real, but when you need to run 10,000 containers across 500 nodes, there's nothing else that comes close.
 
 ______________________________________________________________________
 
-## Overview
+## Quick Hits
 
-### What is Kubernetes?
+=== "🎯 Essential Commands"
 
-Kubernetes (K8s) is an open-source container orchestration platform originally designed by Google and now maintained by
-the Cloud Native Computing Foundation (CNCF). It automates deployment, scaling, and operations of containerized
-applications across clusters.
+    ```bash
+    # Cluster info
+    kubectl cluster-info
+    kubectl get nodes
+    kubectl version
 
-**Current Stable Version:** v1.35 (December 2025)
+    # Pods - the basic unit
+    kubectl get pods
+    kubectl get pods -A                    # All namespaces
+    kubectl describe pod <pod-name>
+    kubectl logs <pod-name>
+    kubectl logs <pod-name> -f             # Follow
+    kubectl exec -it <pod-name> -- /bin/sh # Shell into pod
 
-### Why Use Kubernetes?
+    # Deployments - the workhorse
+    kubectl get deployments
+    kubectl create deployment nginx --image=nginx
+    kubectl scale deployment nginx --replicas=3
+    kubectl rollout status deployment/nginx
+    kubectl rollout undo deployment/nginx
 
-- ✅ **Automated Operations** - Self-healing, auto-scaling, rollouts/rollbacks
-- ✅ **Multi-Cloud** - Run anywhere: on-premises, cloud, hybrid
-- ✅ **Service Discovery** - Built-in networking and load balancing
-- ✅ **Declarative** - Infrastructure as Code with YAML
-- ✅ **Extensible** - CRDs, Operators, massive ecosystem
+    # Services - networking
+    kubectl get services
+    kubectl expose deployment nginx --port=80 --type=LoadBalancer
 
-**Common Use Cases:** Microservices, CI/CD, batch processing, hybrid cloud
+    # Apply YAML (the K8s way)
+    kubectl apply -f deployment.yaml
+    kubectl apply -f https://url.com/manifest.yaml
+    kubectl delete -f deployment.yaml
+
+    # Debug
+    kubectl get events --sort-by=.metadata.creationTimestamp
+    kubectl top nodes          # Requires metrics-server
+    kubectl top pods
+    ```
+
+    **Real talk:**
+
+    - Use `-A` (all namespaces) when hunting for pods
+    - `kubectl describe` is your debugging friend
+    - `kubectl get pods -o wide` shows node placement
+    - Set up aliases: `alias k=kubectl` (everyone does this)
+
+=== "⚡ Common Patterns"
+
+    ```yaml
+    # Deployment pattern - use this 90% of the time
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: myapp
+      labels:
+        app: myapp
+    spec:
+      replicas: 3
+      selector:
+        matchLabels:
+          app: myapp
+      template:
+        metadata:
+          labels:
+            app: myapp
+        spec:
+          containers:
+          - name: myapp
+            image: myapp:v1.2.3
+            ports:
+            - containerPort: 8080
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "100m"
+              limits:
+                memory: "512Mi"
+                cpu: "500m"
+            livenessProbe:
+              httpGet:
+                path: /health
+                port: 8080
+              initialDelaySeconds: 30
+              periodSeconds: 10
+            readinessProbe:
+              httpGet:
+                path: /ready
+                port: 8080
+              initialDelaySeconds: 5
+              periodSeconds: 5
+            env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: db-url
+    ```
+
+    ```yaml
+    # Service pattern - expose your deployment
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: myapp-service
+    spec:
+      selector:
+        app: myapp
+      ports:
+      - protocol: TCP
+        port: 80
+        targetPort: 8080
+      type: LoadBalancer  # ClusterIP (internal), NodePort, LoadBalancer
+    ```
+
+    ```yaml
+    # ConfigMap pattern - configuration
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      name: app-config
+    data:
+      app.properties: |
+        database.host=postgres
+        database.port=5432
+        log.level=INFO
+    ```
+
+=== "🔥 Pro Tips & Gotchas"
+
+    - **Resource requests/limits:** ALWAYS set both. Requests for scheduling, limits prevent noisy neighbors
+    - **Readiness vs liveness:** Readiness = "ready for traffic", Liveness = "restart me if I'm broken"
+    - **ImagePullPolicy:** Use `IfNotPresent` in dev, `Always` in prod with specific tags
+    - **Labels matter:** Use consistent labels, they're how everything connects
+    - **Namespaces:** Use them to isolate environments (dev, staging, prod)
+    - **YAML debugging:** Pipe to `--dry-run=client -o yaml` to validate before applying
+    - **Security:** Never run as root (use `securityContext`), scan images, use network policies
+    - **Persistent storage:** StatefulSets for databases, ReadWriteMany is rare and slow
+    - **DNS works:** Pods can reach `<service-name>.<namespace>.svc.cluster.local`
+    - **Gotcha:** Pods are ephemeral - state goes away unless you use volumes
+    - **Gotcha:** Each container in a pod shares network namespace (localhost works)
+    - **Gotcha:** CrashLoopBackOff usually means startup failure, check logs
+    - **When NOT to use:** Single app, simple workload, no scaling needed (use Docker Compose)
 
 ______________________________________________________________________
 
-## Getting Started
+## Learning Paths
 
-### Learning Paths
+### 🎓 Free Resources
 
-**Complete Beginners:**
+- **[Official Kubernetes Docs](https://kubernetes.io/docs/)** - Comprehensive, well-written, start here
+- **[Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)** - Build K8s from scratch, understand internals
+- **[Introduction to Kubernetes (CNCF/edX)](https://www.edx.org/learn/kubernetes/the-linux-foundation-introduction-to-kubernetes)** - Free course from Linux Foundation
+- **[Interactive Tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/)** - Official interactive browser tutorial
+- **[Kubernetes By Example](https://kubernetesbyexample.com/)** - Short, practical examples
 
-1. Start with [Official Getting Started Guide](https://kubernetes.io/docs/setup/)
-1. Try [Interactive Tutorials](https://kubernetes.io/docs/tutorials/)
-1. Take free [Introduction to Kubernetes (edX)](https://www.edx.org/)
+### 🧪 Interactive Labs
 
-**Hands-On Practice:**
-
-- **[kind](https://kind.sigs.k8s.io/)** - Local Kubernetes clusters in Docker (fastest for testing)
-- **[Minikube](https://minikube.sigs.k8s.io/)** - Local single-node clusters
+- **[Katacoda Kubernetes](https://www.katacoda.com/courses/kubernetes)** - Browser-based scenarios (free)
+- **[Play with Kubernetes](https://labs.play-with-k8s.com/)** - Free 4-hour K8s playground
 - **[Kubernetes Goat](https://madhuakula.com/kubernetes-goat)** - Security training (22 vulnerable scenarios)
 
-!!! warning "Security Training"
-    **kube-goat** is intentionally vulnerable. ONLY use in isolated environments, NEVER in production.
+### 📜 Certifications Worth It
 
-**Production:**
+- **[CKA - Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/)** - $395, hands-on exam, highly respected, worth it
+- **[CKAD - Certified Kubernetes Application Developer](https://www.cncf.io/certification/ckad/)** - $395, developer-focused, also worth it
+- **[CKS - Certified Kubernetes Security Specialist](https://www.cncf.io/certification/cks/)** - $395, requires CKA, worth it for security roles
+- **[KCNA - Kubernetes and Cloud Native Associate](https://www.cncf.io/certification/kcna/)** - $250, entry-level, skip if you have experience
+- **Skip:** Cloud provider K8s certs (AKS, EKS, GKE) unless employer pays
 
-- **[AKS](https://learn.microsoft.com/azure/aks/)** - Azure managed Kubernetes
-- **[EKS](https://aws.amazon.com/eks/)** - AWS managed Kubernetes
-- **[GKE](https://cloud.google.com/kubernetes-engine)** - Google Cloud managed K8s
+### 🚀 Projects to Build
 
-______________________________________________________________________
-
-## Core Concepts
-
-Learn the fundamental building blocks:
-
-- **[Pods](https://kubernetes.io/docs/concepts/workloads/pods/)** - Smallest deployable units
-- **[Services](https://kubernetes.io/docs/concepts/services-networking/service/)** - Network endpoints and load
-    balancing
-- **[Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)** - Declarative updates and
-    scaling
-- **[Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)** - Resource isolation
-- **[ConfigMaps & Secrets](https://kubernetes.io/docs/concepts/configuration/)** - Configuration management
-- **[Volumes](https://kubernetes.io/docs/concepts/storage/volumes/)** - Persistent storage
-
-**Recommended Reading:**
-
-- [Official Concepts Guide](https://kubernetes.io/docs/concepts/) - Complete concepts documentation
-- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/) - Quick command reference
+- **Beginner:** Deploy a multi-tier web app (frontend + backend + database) with services
+- **Intermediate:** Set up GitOps with ArgoCD, deploy via Git push, implement rollbacks
+- **Advanced:** Multi-cluster setup with service mesh (Istio), observability stack (Prometheus/Grafana), and network policies
 
 ______________________________________________________________________
 
-## Key Tools
+## Community Pulse
 
-### Essential CLI Tools
+### 🐦 Who to Follow
 
-- **[kubectl](https://kubernetes.io/docs/reference/kubectl/)** - Kubernetes command-line tool
-- **[Helm](https://helm.sh)** - Package manager for Kubernetes
-- **[k9s](https://k9scli.io/)** - Terminal UI for cluster management
-- **[Kustomize](https://kustomize.io/)** - Configuration customization
+**Twitter/X:**
 
-### Development & Testing
+- [@kubernetesio](https://twitter.com/kubernetesio) - Official Kubernetes account
+- [@kelseyhightower](https://twitter.com/kelseyhightower) - K8s legend, creator of "Kubernetes The Hard Way"
+- [@brendandburns](https://twitter.com/brendandburns) - K8s co-founder, Microsoft
+- [@thockin](https://twitter.com/thockin) - Tim Hockin, K8s networking lead, Google
+- [@IanMLewis](https://twitter.com/IanMLewis) - Google Dev Advocate, K8s expert
 
-- **[kind](https://kind.sigs.k8s.io/)** - Local clusters in Docker (fastest)
-- **[Minikube](https://minikube.sigs.k8s.io/)** - Local single-node clusters
-- **[Kubernetes Goat](https://madhuakula.com/kubernetes-goat)** - Security training (isolated only!)
+**YouTube:**
 
-### Monitoring & Observability
+- [CNCF](https://www.youtube.com/@cncf) - Official, KubeCon talks
+- [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana) - Great K8s tutorials
+- [DevOps Toolkit](https://www.youtube.com/@DevOpsToolkit) - Advanced topics, real-world scenarios
 
-- **[Prometheus](https://prometheus.io)** - Monitoring and alerting
-- **[Grafana](https://grafana.com)** - Metrics visualization
-- **[Istio](https://istio.io)** - Service mesh
-- **[Argo CD](https://argo-cd.readthedocs.io)** - GitOps delivery
+### 💬 Active Communities
 
-### Security
+- **[r/kubernetes](https://reddit.com/r/kubernetes)** - 180k+ members, active daily, helpful community
+- **[Kubernetes Slack](https://kubernetes.slack.com)** - Official, massive, #kubernetes-users is the place
+- **[CNCF Slack](https://cloud-native.slack.com/)** - Broader cloud-native ecosystem
+- **[Stack Overflow](https://stackoverflow.com/questions/tagged/kubernetes)** - 100k+ questions answered
+- **[Dev.to #kubernetes](https://dev.to/t/kubernetes)** - Quality tutorials and war stories
 
-- **[Trivy](https://github.com/aquasecurity/trivy)** - Vulnerability scanner
-- **[Falco](https://falco.org/)** - Runtime security
-- **[kube-goat](https://github.com/madhuakula/kubernetes-goat)** - Security training scenarios
+### 🎙️ Podcasts & Newsletters
 
-______________________________________________________________________
+- **[Kubernetes Podcast from Google](https://kubernetespodcast.com/)** - Weekly, news and interviews
+- **[KubeWeekly](https://www.cncf.io/kubeweekly/)** - Newsletter, curated K8s content every week
+- **[Cloud Native News](https://www.cncf.io/newsletter/)** - CNCF monthly newsletter
+- **[Last Week in AWS](https://www.lastweekinaws.com/)** - Covers EKS news (Corey Quinn's irreverent take)
 
-## Best Practices
+### 🎪 Events & Conferences
 
-**Learn from the experts:**
-
-- **[Kubernetes Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)** - Official
-    recommendations
-- **[Production Best Practices](https://learnk8s.io/production-best-practices)** - LearnK8s guide
-- **[Security Best Practices](https://kubernetes.io/docs/concepts/security/)** - Official security guide
-- **[12 Factor Apps on Kubernetes](https://12factor.net/)** - Cloud-native patterns
-
-**Key Areas:**
-
-- Development: Namespaces, labels, version tags, health checks
-- Production: HA clusters, RBAC, network policies, monitoring
-- Security: Pod Security, image scanning, secrets management, audit logging
+- **[KubeCon + CloudNativeCon](https://www.cncf.io/kubecon-cloudnativecon-events/)** - The K8s conference, 3x/year (NA, EU, China)
+- **[Kubernetes Community Days](https://community.cncf.io/kubernetes-community-days/)** - Local, community-run events
+- **[CNCF Webinars](https://www.cncf.io/webinars/)** - Free online sessions
 
 ______________________________________________________________________
 
-## Resources & Links
+## Worth Checking
 
-### 🏠 Official
+<div class="grid cards" markdown>
 
-**Primary Resources:**
+- 📚 __Official Stuff__
 
-- **[Kubernetes Official Website](https://kubernetes.io)** - Main project website
-- **[Official Documentation](https://kubernetes.io/docs/home/)** - Comprehensive documentation hub
-- **[Getting Started Guide](https://kubernetes.io/docs/setup/)** - Official quick start
-- **[Release Notes](https://kubernetes.io/releases/)** - Version history and changelogs
-- **[Official Blog](https://kubernetes.io/blog/)** - Latest updates and announcements
-- **[Enhancement Proposals (KEPs)](https://github.com/kubernetes/enhancements)** - Feature proposals
+    ______________________________________________________________________
 
-### 📚 Documentation & References
+    [Kubernetes Docs](https://kubernetes.io/docs/)
 
-**Technical Documentation:**
+    [API Reference](https://kubernetes.io/docs/reference/)
 
-- **[API Reference](https://kubernetes.io/docs/reference/)** - Complete API documentation
-- **[kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)** - Command-line cheat
-    sheet
-- **[kubectl Reference](https://kubectl.docs.kubernetes.io)** - kubectl documentation
-- **[Glossary](https://kubernetes.io/docs/reference/glossary/)** - Kubernetes terminology
-- **[Concepts Guide](https://kubernetes.io/docs/concepts/)** - Core concepts explained
+    [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
 
-### 💻 Code & Repositories
+    [GitHub Repo](https://github.com/kubernetes/kubernetes)
 
-**Source Code:**
+- 🧪 __Hands-on__
 
-- **[GitHub Organization](https://github.com/kubernetes)** - Official GitHub organization
-- **[Main Repository](https://github.com/kubernetes/kubernetes)** - Primary source code (120k+ stars)
-- **[Community Repository](https://github.com/kubernetes/community)** - Community documentation (1,300+ contributors)
-- **[kind Repository](https://github.com/kubernetes-sigs/kind)** - Kubernetes in Docker for local development
-- **[kubectl Repository](https://github.com/kubernetes/kubectl)** - kubectl source code
+    ______________________________________________________________________
 
-### ⭐ Awesome Lists & Curated Resources
+    [Interactive Tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 
-**Community Curations:**
+    [Play with K8s](https://labs.play-with-k8s.com/)
 
-- **[Awesome Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)** - Comprehensive curated list (389+
-    contributors)
-- **[Kubernetes Tools](https://github.com/topics/kubernetes-tools)** - Tool ecosystem
-- **[CNCF Landscape](https://landscape.cncf.io)** - Cloud native technology landscape
+    [Katacoda Scenarios](https://www.katacoda.com/courses/kubernetes)
 
-### 👥 Community & Support
+    [Kubernetes Goat](https://madhuakula.com/kubernetes-goat)
 
-**Discussion Forums:**
+- 💻 __Real Code__
 
-- **[Kubernetes Slack](https://kubernetes.slack.com)** - Real-time community chat (multiple channels)
-- **[Stack Overflow](https://stackoverflow.com/questions/tagged/kubernetes)** - Q&A for Kubernetes
-- **[Reddit - r/kubernetes](https://reddit.com/r/kubernetes)** - Reddit community discussions
-- **[Dev.to Kubernetes Tag](https://dev.to/t/kubernetes)** - Developer articles
-- **[GitHub Discussions](https://github.com/kubernetes/kubernetes/discussions)** - Community discussions
+    ______________________________________________________________________
 
-### 🎓 Learning Platforms & Courses
+    [Awesome Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
 
-**Structured Learning:**
+    [Kubernetes Examples](https://github.com/kubernetes/examples)
 
-- **[Official Training](https://kubernetes.io/training/)** - Training resources and certifications
-- **[Linux Foundation Kubernetes Courses](https://training.linuxfoundation.org/training/course-catalog/?_sft_technology=kubernetes)**
-    \- Official courses
-- **[Introduction to Kubernetes (edX)](https://www.edx.org/)** - Free edX course
-- **[Kubernetes and Cloud Native Associate (KCNA)](https://www.cncf.io/certification/kcna/)** - Entry-level
-    certification
-- **[Certified Kubernetes Administrator (CKA)](https://www.cncf.io/certification/cka/)** - Admin certification
-- **[Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/)** - Developer
-    certification
-- **[Certified Kubernetes Security Specialist (CKS)](https://www.cncf.io/certification/cks/)** - Security certification
+    [Kubernetes Patterns](https://github.com/k8spatterns/examples)
 
-### 🎥 Video Content
+- 🔥 __Deep Dives__
 
-**Video Resources:**
+    ______________________________________________________________________
 
-- **[CNCF YouTube Channel](https://www.youtube.com/@cncf)** - Official CNCF content
-- **[KubeCon Talks](https://www.youtube.com/@cncf/playlists)** - Conference presentations
-- **Community Channels** - TechWorld with Nana, DevOps Toolkit, Just me and Opensource
+    [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
-### 📝 Blogs & Articles
+    [Production Best Practices](https://learnk8s.io/production-best-practices)
 
-**Technical Blogs:**
+    [Kubernetes Failure Stories](https://k8s.af/)
 
-- **[Kubernetes Blog](https://kubernetes.io/blog/)** - Official blog
-- **[CNCF Blog](https://www.cncf.io/blog/)** - Cloud Native Computing Foundation
-- **[Dev.to Kubernetes](https://dev.to/t/kubernetes)** - Community tutorials
+- 🛠️ __Tools & Extensions__
 
-### 🛠️ Tools & Integrations
+    ______________________________________________________________________
 
-**Ecosystem Tools:**
+    [Helm](https://helm.sh) - Package manager
 
-- **[Helm](https://helm.sh)** - Kubernetes package manager (v4.0.0)
-- **[k9s](https://k9scli.io/)** - Terminal UI for cluster management (32.4k stars)
-- **[Minikube](https://minikube.sigs.k8s.io/)** - Local Kubernetes clusters (31.4k stars)
-- **[kind](https://kind.sigs.k8s.io/)** - Kubernetes in Docker (v0.31.0)
-- **[Kustomize](https://kubectl.docs.kubernetes.io/references/kustomize/)** - Configuration customization
-- **[Krew](https://krew.sigs.k8s.io)** - kubectl plugin manager
-- **[Istio](https://istio.io)** - Service mesh (37.8k stars, CNCF graduated)
-- **[Argo CD](https://argo-cd.readthedocs.io)** - GitOps continuous delivery
-- **[Prometheus](https://prometheus.io)** - Monitoring system (CNCF graduated)
-- **[Trivy](https://github.com/aquasecurity/trivy)** - Security scanner (30.9k stars)
+    [k9s](https://k9scli.io/) - Terminal UI
 
-### 🔒 Security Resources
+    [Lens](https://k8slens.dev/) - Desktop UI
 
-**Security Tools:**
+    [ArgoCD](https://argo-cd.readthedocs.io/) - GitOps
 
-- **[Kubernetes Goat](https://madhuakula.com/kubernetes-goat)** - Security training platform (22 scenarios)
-- **[kube-goat GitHub](https://github.com/madhuakula/kubernetes-goat)** - Source repository
-- **[Trivy](https://github.com/aquasecurity/trivy)** - Vulnerability scanner
-- **[Falco](https://falco.org/)** - Runtime security
+    [Istio](https://istio.io/) - Service mesh
 
-### ☁️ Managed Kubernetes Services
+- 📰 __News & Updates__
 
-**Cloud Providers:**
+    ______________________________________________________________________
 
-- **[Azure Kubernetes Service (AKS)](https://azure.microsoft.com/products/kubernetes-service)** - Microsoft Azure
-    managed K8s
-- **[AKS Documentation](https://learn.microsoft.com/azure/aks/)** - Complete AKS docs
-- **[Amazon EKS](https://aws.amazon.com/eks/)** - AWS managed Kubernetes
-- **[Google GKE](https://cloud.google.com/kubernetes-engine)** - Google Cloud managed K8s
+    [Kubernetes Blog](https://kubernetes.io/blog/)
 
-### 🌐 Additional Resources
+    [Release Notes](https://kubernetes.io/releases/)
 
-**Other Valuable Resources:**
+    [r/kubernetes](https://reddit.com/r/kubernetes)
 
-- **[kubectl Aliases](https://github.com/ahmetb/kubectl-aliases)** - Shell shortcuts
-- **[Kubernetes CheatSheet A4](https://github.com/dennyzhang/cheatsheet-kubernetes-A4)** - Quick reference
-- **[OperatorHub](https://operatorhub.io)** - Kubernetes Operator registry
-- **[Artifact Hub](https://artifacthub.io)** - Package discovery
+    [KubeWeekly](https://www.cncf.io/kubeweekly/)
+
+</div>
 
 ______________________________________________________________________
 
-## Related Topics
+## Core Concepts Reference
 
-- **[Containerization](../containerization/)** - Container fundamentals and Docker basics
-- **[Security](../security/)** - Security best practices for containers
-- **[GitHub Actions](../devops/github-actions.md)** - CI/CD for Kubernetes deployments
-- **[Azure DevOps](../devops/azure-devops.md)** - Azure Pipelines for Kubernetes
-- **[Cloud Platforms](../cloud/)** - AWS EKS, Azure AKS, Google GKE managed services
-- **[DevOps Tools](../devops/)** - Automation and operational tools
-
-______________________________________________________________________
-
-## Version History
-
-**Current Version:** v1.35 "Timbernetes" (December 17, 2025)
-
-**Recent Changes:**
-
-- **v1.35** (Dec 2025) - Kubeconfig credential plugin allowlist, mutable PV node affinity (alpha), CSI SA token
-    improvements, in-place Pod restart
-- **v1.34** (Oct 2025) - EOL February 2026
-- **v1.33** (Jun 2025) - EOL October 2026
-
-**Support Model:** ~1 year of patch support, most recent 3 minor versions maintained
+| Concept         | What It Is                              | When You Need It                                        |
+| --------------- | --------------------------------------- | ------------------------------------------------------- |
+| **Pod**         | Smallest deployable unit, 1+ containers | Always - it's the basic building block                  |
+| **Deployment**  | Manages ReplicaSets, rolling updates    | 90% of the time - this is your workhorse                |
+| **Service**     | Stable network endpoint, load balancing | Whenever pods need to talk to each other                |
+| **Namespace**   | Virtual cluster, resource isolation     | Multi-tenant, env separation (dev/staging/prod)         |
+| **ConfigMap**   | Configuration data                      | App config, non-sensitive settings                      |
+| **Secret**      | Sensitive data (base64, not encrypted)  | Passwords, tokens, keys (use external secrets for prod) |
+| **Volume**      | Persistent storage                      | Databases, stateful apps, shared data                   |
+| **Ingress**     | HTTP/HTTPS routing, load balancing      | External access, multiple services behind one IP        |
+| **StatefulSet** | Ordered, stable pod identities          | Databases, clustered apps, requires stable network      |
+| **DaemonSet**   | Pod on every node                       | Log collectors, monitoring agents, node-level work      |
+| **Job**         | Run to completion                       | Batch processing, ETL, one-off tasks                    |
+| **CronJob**     | Scheduled jobs                          | Regular backups, reports, cleanup tasks                 |
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-01-13 **Status:** Active **Maintained by:** DocMaster Agent v2.0
+## Related Sections
+
+!!! info "Expand Your Skills"
+
+    - **[Docker](docker.md)** - Container fundamentals, build images before orchestrating them
+    - **[Helm](helm.md)** - Package manager for Kubernetes, chart templating
+    - **[Container Security](container-security.md)** - Scan images, runtime security, pod policies
+    - **[GitOps](../devops/gitops.md)** - ArgoCD and FluxCD for K8s deployments
+    - **[Cloud](../cloud/)** - EKS (AWS), AKS (Azure), GKE (GCP) managed Kubernetes
+
+______________________________________________________________________
+
+**Last Updated:** 2026-01-14 **Vibe Check:** 🌍 **Mainstream** - Kubernetes won. It's the default for container orchestration. Every major company runs it, cloud providers offer managed services, the ecosystem is massive. Learning curve is still brutal, YAML fatigue is real, but once you get it, you get it. Not the coolest tech anymore (that's serverless/edge), but it's the foundation everything else builds on.

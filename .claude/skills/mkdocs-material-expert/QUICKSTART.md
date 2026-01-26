@@ -2,7 +2,7 @@
 
 **Version:** 2026.01 | **Created:** January 26, 2026
 
----
+______________________________________________________________________
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ The MkDocs Material Expert is now available! She's a UX/UI documentation designe
 /mkdocs-material-expert [command]
 ```
 
----
+______________________________________________________________________
 
 ## 📋 Common Tasks
 
@@ -25,12 +25,13 @@ The MkDocs Material Expert is now available! She's a UX/UI documentation designe
 ```
 
 **What it does:**
+
 - Reviews your `mkdocs.yml` configuration
 - Analyzes enabled features vs. available 2026 features
 - Suggests improvements with priority levels
 - Estimates complexity and performance impact
 
----
+______________________________________________________________________
 
 ### 2. Add Octicons Everywhere :octicons-sparkle-16:
 
@@ -39,6 +40,7 @@ The MkDocs Material Expert is now available! She's a UX/UI documentation designe
 ```
 
 **Result:**
+
 ```yaml
 theme:
   icon:
@@ -49,7 +51,7 @@ theme:
       danger: octicons/stop-16
 ```
 
----
+______________________________________________________________________
 
 ### 3. Improve Navigation UX
 
@@ -58,13 +60,14 @@ theme:
 ```
 
 **Enables:**
+
 - Breadcrumb trails
 - Instant loading (SPA-like)
 - URL tracking on scroll
 - "Back to top" button
 - Section indexes
 
----
+______________________________________________________________________
 
 ### 4. Enable Social Cards (OG Images)
 
@@ -73,11 +76,12 @@ theme:
 ```
 
 **Result:**
+
 - Auto-generated social media preview images
 - Beautiful OpenGraph cards for Twitter/LinkedIn
 - Custom layouts with your branding
 
----
+______________________________________________________________________
 
 ### 5. Add Dark Mode Toggle
 
@@ -86,6 +90,7 @@ theme:
 ```
 
 **Result:**
+
 ```yaml
 theme:
   palette:
@@ -102,7 +107,7 @@ theme:
         name: Switch to light mode
 ```
 
----
+______________________________________________________________________
 
 ### 6. Optimize Performance ⚡
 
@@ -111,17 +116,19 @@ theme:
 ```
 
 **Actions:**
+
 - Enable minification (HTML/CSS/JS)
 - Configure caching
 - Set up lazy loading
 - Measure improvements
 - Report metrics
 
----
+______________________________________________________________________
 
 ## 🎨 Feature Categories
 
 ### Navigation
+
 - Breadcrumbs
 - Instant loading
 - Section indexes
@@ -129,24 +136,28 @@ theme:
 - Tracking
 
 ### Search
+
 - Auto-suggestions
 - Highlighting
 - Share results
 - Stemming
 
 ### Content
+
 - Code copy/select/annotate
 - Tabs with persistence
 - Tooltips
 - Annotations
 
 ### Visual
+
 - Octicons :octicons-heart-16:
 - Custom colors
 - Typography
 - Dark mode toggle
 
 ### Plugins
+
 - Social cards
 - Git committers
 - Tags
@@ -155,14 +166,16 @@ theme:
 - Offline
 - Privacy
 
----
+______________________________________________________________________
 
 ## 💡 Pro Tips
 
 ### 1. Start Small
+
 Add one feature at a time and test with `make serve`
 
 ### 2. Use Octicons
+
 ```markdown
 :octicons-heart-16: User loves these!
 :octicons-star-fill-24: Featured
@@ -170,11 +183,13 @@ Add one feature at a time and test with `make serve`
 ```
 
 ### 3. Test Accessibility
+
 - Use keyboard navigation
 - Check color contrast
 - Test with screen reader
 
 ### 4. Measure Performance
+
 ```bash
 # Before changes
 time make build
@@ -186,11 +201,12 @@ time make build
 ```
 
 ### 5. Progressive Enhancement
+
 - **Phase 1**: Navigation + Search improvements
 - **Phase 2**: Social cards + Git committers
 - **Phase 3**: Blog + RSS + Offline
 
----
+______________________________________________________________________
 
 ## 📖 Quick Reference
 
@@ -217,53 +233,60 @@ mkdocs.yml              # Main configuration
 └── QUICKSTART.md       # This file!
 ```
 
----
+______________________________________________________________________
 
 ## 🎯 Example Workflow
 
 ### Scenario: Enhance Your Documentation Site
 
 1. **Audit current setup**
-   ```
-   /mkdocs-material-expert audit
-   ```
 
-2. **Implement Phase 1** (Low complexity)
-   ```
-   /mkdocs-material-expert improve navigation
-   /mkdocs-material-expert add search suggestions
-   ```
+    ```
+    /mkdocs-material-expert audit
+    ```
 
-3. **Test locally**
-   ```bash
-   make serve
-   # Visit localhost:8000
-   ```
+1. **Implement Phase 1** (Low complexity)
 
-4. **Implement Phase 2** (Medium complexity)
-   ```
-   /mkdocs-material-expert enable social cards
-   /mkdocs-material-expert add octicons
-   ```
+    ```
+    /mkdocs-material-expert improve navigation
+    /mkdocs-material-expert add search suggestions
+    ```
 
-5. **Validate build**
-   ```bash
-   make build
-   ```
+1. **Test locally**
 
-6. **Commit changes**
-   ```bash
-   git add mkdocs.yml
-   git commit -m "feat: enhance MkDocs Material theme"
-   ```
+    ```bash
+    make serve
+    # Visit localhost:8000
+    ```
 
----
+1. **Implement Phase 2** (Medium complexity)
+
+    ```
+    /mkdocs-material-expert enable social cards
+    /mkdocs-material-expert add octicons
+    ```
+
+1. **Validate build**
+
+    ```bash
+    make build
+    ```
+
+1. **Commit changes**
+
+    ```bash
+    git add mkdocs.yml
+    git commit -m "feat: enhance MkDocs Material theme"
+    ```
+
+______________________________________________________________________
 
 ## 🆘 Troubleshooting
 
 ### "Icon not showing"
 
 Check pymdownx.emoji configuration:
+
 ```yaml
 markdown_extensions:
   - pymdownx.emoji:
@@ -283,11 +306,11 @@ make build
 ### "Feature not working"
 
 1. Check Material version: `pip show mkdocs-material`
-2. Verify feature flag syntax
-3. Test with `make serve`
-4. Check browser console for errors
+1. Verify feature flag syntax
+1. Test with `make serve`
+1. Check browser console for errors
 
----
+______________________________________________________________________
 
 ## 📚 Learn More
 
@@ -295,18 +318,17 @@ make build
 - **Examples**: `.claude/skills/mkdocs-material-expert/README.md`
 - **Material Docs**: https://squidfunk.github.io/mkdocs-material/
 
----
+______________________________________________________________________
 
 ## 🎉 Next Steps
 
 1. Run an audit to see what's possible
-2. Pick 2-3 quick wins from Phase 1
-3. Test locally with `make serve`
-4. Gradually add advanced features
+1. Pick 2-3 quick wins from Phase 1
+1. Test locally with `make serve`
+1. Gradually add advanced features
 
 **Remember:** Beautiful documentation is **functional art**! :octicons-paintbrush-16:
 
----
+______________________________________________________________________
 
-**Created with** :octicons-heart-fill-16: **by the MkDocs Material Expert**
-**Version:** 2026.01
+**Created with** :octicons-heart-fill-16: **by the MkDocs Material Expert** **Version:** 2026.01

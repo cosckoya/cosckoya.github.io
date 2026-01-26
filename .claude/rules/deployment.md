@@ -1,7 +1,7 @@
 ---
 paths:
-  - ".github/workflows/**"
-  - "Makefile"
+  - .github/workflows/**
+  - Makefile
 ---
 
 # Deployment and CI/CD Guidelines
@@ -13,14 +13,15 @@ paths:
 **Trigger**: Push to `main` branch only
 
 **Pipeline Steps**:
+
 1. Checkout code (actions/checkout@v4)
-2. Configure Git credentials (Roy Batty user)
-3. Setup Python 3.x
-4. Cache MkDocs Material assets (weekly rotation)
-5. Cache pip dependencies (based on requirements.txt hash)
-6. Install dependencies: `pip install -r requirements.txt`
-7. Build site: `mkdocs build --strict`
-8. Deploy: `mkdocs gh-deploy --force` to `gh-pages` branch
+1. Configure Git credentials (Roy Batty user)
+1. Setup Python 3.x
+1. Cache MkDocs Material assets (weekly rotation)
+1. Cache pip dependencies (based on requirements.txt hash)
+1. Install dependencies: `pip install -r requirements.txt`
+1. Build site: `mkdocs build --strict`
+1. Deploy: `mkdocs gh-deploy --force` to `gh-pages` branch
 
 **IMPORTANT**: Only pushes to `main` trigger deployment
 
@@ -44,6 +45,7 @@ make deploy      # Manual deploy to GitHub Pages (rarely needed)
 ## Build Artifacts
 
 Generated artifacts (gitignored):
+
 - `site/` - Built HTML/CSS/JS output (11MB)
 - `.cache/` - MkDocs Material cache
 - `__pycache__/` - Python bytecode
@@ -61,6 +63,7 @@ Dependabot runs monthly for automated dependency PRs.
 ## Deployment Checklist
 
 Before merging to main:
+
 - [ ] `make test` passes (pre-commit + strict build)
 - [ ] `./scripts/docmaster-tools.sh full-maintenance` passes
 - [ ] All navigation links verified with `make serve`

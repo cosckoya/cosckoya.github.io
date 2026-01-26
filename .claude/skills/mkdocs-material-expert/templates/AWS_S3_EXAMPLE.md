@@ -14,11 +14,12 @@ tags:
 
 S3 is AWS's foundational storage service—think of it as an infinitely scalable hard drive accessible via HTTP. It's where you store files, backups, static websites, data lakes, and pretty much anything that needs reliable, cheap storage. 99.999999999% (11 nines) durability means you'll lose yourself before you lose your data.
 
----
+______________________________________________________________________
 
 ## :octicons-zap-16: Quick Start
 
 === "Essential Commands"
+
     ```bash
     # Upload file - most common operation
     aws s3 cp local-file.txt s3://my-bucket/path/file.txt  # (1)!
@@ -40,13 +41,14 @@ S3 is AWS's foundational storage service—think of it as an infinitely scalable
     ```
 
     1. :octicons-info-16: Uploads single file, sets metadata automatically
-    2. :octicons-info-16: Downloads to local filesystem
-    3. :octicons-info-16: `--delete` removes files in S3 not in local (careful!)
-    4. :octicons-info-16: Lists objects with prefix filtering
-    5. :octicons-info-16: Permanent deletion (no recycle bin unless versioning enabled)
-    6. :octicons-info-16: Bucket names must be globally unique across ALL AWS accounts
+    1. :octicons-info-16: Downloads to local filesystem
+    1. :octicons-info-16: `--delete` removes files in S3 not in local (careful!)
+    1. :octicons-info-16: Lists objects with prefix filtering
+    1. :octicons-info-16: Permanent deletion (no recycle bin unless versioning enabled)
+    1. :octicons-info-16: Bucket names must be globally unique across ALL AWS accounts
 
 === "Python SDK"
+
     ```python
     import boto3
     from botocore.exceptions import ClientError
@@ -99,6 +101,7 @@ S3 is AWS's foundational storage service—think of it as an infinitely scalable
     ```
 
 === "Terraform"
+
     ```hcl
     # S3 bucket with security best practices
     resource "aws_s3_bucket" "data" {
@@ -143,13 +146,14 @@ S3 is AWS's foundational storage service—think of it as an infinitely scalable
     ```
 
 !!! tip "Real Talk :octicons-light-bulb-16:"
+
     - **Bucket names are globally unique** - `my-bucket` is taken, use `company-project-env-bucket-uuid`
     - **Block public access by default** - 90% of S3 breaches are misconfigured public buckets
     - **Enable versioning** - Costs pennies, saves your ass when you accidentally delete something
     - **Use lifecycle policies** - Transition old data to Glacier, save 80% on storage costs
     - **Always encrypt** - AES256 is free, KMS costs but gives audit trails
 
----
+______________________________________________________________________
 
 ## :octicons-book-16: Core Concepts
 
@@ -184,9 +188,10 @@ aws s3 cp file.txt s3://my-bucket/data/file.txt \
 Object identifier within a bucket. Looks like a file path but S3 is actually flat—no real directories.
 
 !!! warning "Common Mistake :octicons-alert-16:"
+
     Keys like `data/2024/01/file.txt` look hierarchical, but S3 treats this as a single string. The S3 console fakes directories for UX. When listing, every object with prefix `data/2024/` gets scanned—can be slow and expensive on millions of objects.
 
----
+______________________________________________________________________
 
 ## :octicons-checklist-16: Common Use Cases
 
@@ -195,6 +200,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
 **Scenario:** Host HTML/CSS/JS site without servers
 
 === "CLI"
+
     ```bash
     # Enable website hosting
     aws s3 website s3://my-bucket/ \
@@ -211,6 +217,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
 === "Python"
+
     ```python
     def deploy_website(bucket, local_dir):
         """Deploy static website to S3"""
@@ -248,6 +255,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
 === "Terraform"
+
     ```hcl
     # Website bucket
     resource "aws_s3_bucket" "website" {
@@ -287,13 +295,14 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
 
 **Result:** Website accessible at `http://bucket-name.s3-website-region.amazonaws.com`
 
----
+______________________________________________________________________
 
 ### Use Case 2: Backup & Disaster Recovery
 
 **Scenario:** Automated backups with lifecycle management
 
 === "CLI"
+
     ```bash
     # Upload backup with metadata
     aws s3 cp /var/backups/db-$(date +%Y%m%d).sql.gz \
@@ -308,6 +317,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
     **lifecycle.json:**
+
     ```json
     {
       "Rules": [
@@ -334,6 +344,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
 === "Python"
+
     ```python
     def backup_to_s3(local_file, bucket, prefix):
         """Upload backup with intelligent tiering"""
@@ -363,6 +374,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
 === "Terraform"
+
     ```hcl
     # Backup bucket with lifecycle
     resource "aws_s3_bucket" "backups" {
@@ -399,13 +411,14 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
 
 **Result:** Automated cost optimization—recent backups in STANDARD_IA (~$0.0125/GB), 30-day old in GLACIER (~$0.004/GB), 90-day old in DEEP_ARCHIVE (~$0.00099/GB)
 
----
+______________________________________________________________________
 
 ### Use Case 3: Data Lake Storage
 
 **Scenario:** Store raw data for analytics (Athena, EMR, Redshift Spectrum)
 
 === "CLI"
+
     ```bash
     # Upload data partitioned by date
     aws s3 cp data.parquet \
@@ -419,6 +432,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
 === "Python"
+
     ```python
     import pandas as pd
     import pyarrow as pa
@@ -450,6 +464,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
 === "Terraform"
+
     ```hcl
     # Data lake bucket
     resource "aws_s3_bucket" "datalake" {
@@ -510,13 +525,14 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
 
 **Result:** Petabyte-scale analytics with SQL queries, pay only for data scanned
 
----
+______________________________________________________________________
 
 ## :octicons-gear-16: Configuration & Best Practices
 
 ### Security :octicons-shield-check-16:
 
 !!! danger "Critical Security :octicons-stop-16:"
+
     - **Block public access by default** - Prevents accidental leaks (Capital One breach)
     - **Enable MFA Delete** - Requires multi-factor auth to delete objects/disable versioning
     - **Use bucket policies + IAM** - Defense in depth, both layers must allow access
@@ -524,6 +540,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     - **Encrypt everything** - SSE-S3 is free, SSE-KMS costs but gives audit trail
 
 === "IAM Policy"
+
     ```json
     {
       "Version": "2012-10-17",
@@ -555,6 +572,7 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
     ```
 
 === "Bucket Policy"
+
     ```json
     {
       "Version": "2012-10-17",
@@ -595,10 +613,10 @@ Object identifier within a bucket. Looks like a file path but S3 is actually fla
 **Optimization strategies:**
 
 1. **Multipart uploads** - Required for files >5GB, faster for anything >100MB
-2. **Transfer Acceleration** - CloudFront edge locations, 50-500% faster for global uploads
-3. **S3 Select** - Query CSV/JSON in-place, retrieve subset instead of entire file
-4. **Request rate** - 3,500 PUT/COPY/POST/DELETE, 5,500 GET/HEAD per prefix per second
-5. **Use prefixes for high throughput** - `data/001/`, `data/002/` instead of `data/` for parallel access
+1. **Transfer Acceleration** - CloudFront edge locations, 50-500% faster for global uploads
+1. **S3 Select** - Query CSV/JSON in-place, retrieve subset instead of entire file
+1. **Request rate** - 3,500 PUT/COPY/POST/DELETE, 5,500 GET/HEAD per prefix per second
+1. **Use prefixes for high throughput** - `data/001/`, `data/002/` instead of `data/` for parallel access
 
 ```bash
 # Multipart upload (automatic with aws s3 cp for large files)
@@ -623,6 +641,7 @@ aws s3api select-object-content \
 ### Cost Optimization :octicons-credit-card-16:
 
 !!! info "Pricing Model :octicons-info-16:"
+
     - **Storage**: $0.023/GB/month (STANDARD), $0.0125/GB (STANDARD_IA), $0.004/GB (GLACIER)
     - **Requests**: $0.005 per 1,000 PUT, $0.0004 per 1,000 GET
     - **Data Transfer**: First 1GB free/month, then $0.09/GB out to internet
@@ -668,6 +687,7 @@ aws s3api put-bucket-replication \
 ```
 
 **replication.json:**
+
 ```json
 {
   "Role": "arn:aws:iam::account-id:role/replication-role",
@@ -691,11 +711,12 @@ aws s3api put-bucket-replication \
 }
 ```
 
----
+______________________________________________________________________
 
 ## :octicons-tools-16: Advanced Patterns
 
 ??? example "Pattern 1: Presigned URLs for Secure Uploads :octicons-code-16:"
+
     **When to use:** Allow users to upload directly to S3 without AWS credentials
 
     ```python
@@ -750,11 +771,13 @@ aws s3api put-bucket-replication \
     ```
 
     **Benefits:**
+
     - :octicons-check-16: No files pass through your server (saves bandwidth/processing)
     - :octicons-check-16: Scales to millions of concurrent uploads
     - :octicons-check-16: Secure (time-limited, size-limited, content-type restricted)
 
 ??? example "Pattern 2: Event-Driven Processing with Lambda :octicons-code-16:"
+
     **When to use:** Automatically process files when uploaded (resize images, parse logs, etc.)
 
     ```python
@@ -803,6 +826,7 @@ aws s3api put-bucket-replication \
     ```
 
     **S3 Event Notification:**
+
     ```json
     {
       "LambdaFunctionConfigurations": [{
@@ -825,11 +849,13 @@ aws s3api put-bucket-replication \
     ```
 
     **Benefits:**
+
     - :octicons-check-16: Real-time processing (triggered in milliseconds)
     - :octicons-check-16: Serverless (no infrastructure to manage)
     - :octicons-check-16: Scalable (processes millions of files in parallel)
 
 ??? example "Pattern 3: Object Lock for Compliance :octicons-code-16:"
+
     **When to use:** Prevent deletion/modification for regulatory compliance (WORM storage)
 
     ```python
@@ -881,11 +907,12 @@ aws s3api put-bucket-replication \
     ```
 
     **Benefits:**
+
     - :octicons-check-16: Immutable storage (cannot be deleted, even by root)
     - :octicons-check-16: Meets SEC Rule 17a-4, FINRA, HIPAA requirements
     - :octicons-check-16: Legal hold capability for litigation
 
----
+______________________________________________________________________
 
 ## :octicons-alert-16: Troubleshooting
 
@@ -894,10 +921,12 @@ aws s3api put-bucket-replication \
 #### Issue 1: Access Denied Errors
 
 **Symptoms:**
+
 - `An error occurred (AccessDenied) when calling the GetObject operation`
 - HTTP 403 Forbidden
 
 **Solution:**
+
 ```bash
 # Check IAM permissions
 aws iam get-user-policy --user-name my-user --policy-name S3Access
@@ -920,15 +949,17 @@ aws s3 ls s3://my-bucket/ --profile admin
 
 **Why this happens:** S3 security is layered (IAM policy + bucket policy + ACL + public access block). ALL layers must allow access. One "Deny" overrides all "Allow".
 
----
+______________________________________________________________________
 
 #### Issue 2: Slow Upload/Download Speeds
 
 **Symptoms:**
+
 - Uploads taking minutes for small files
 - Timeout errors on large files
 
 **Solution:**
+
 ```bash
 # Enable Transfer Acceleration
 aws s3api put-bucket-accelerate-configuration \
@@ -950,15 +981,17 @@ traceroute s3.amazonaws.com
 
 **Why this happens:** Distance from AWS region, network congestion, or inefficient transfer method (single stream vs. multipart).
 
----
+______________________________________________________________________
 
 #### Issue 3: Unexpected Storage Costs
 
 **Symptoms:**
+
 - Bill shows TBs of storage but bucket only has GBs
 - High request costs
 
 **Solution:**
+
 ```bash
 # Find large objects
 aws s3 ls s3://my-bucket/ --recursive --human-readable --summarize | sort -k 1 -h -r | head -20
@@ -983,7 +1016,7 @@ aws s3api list-objects-v2 --bucket my-bucket --output json | \
 
 **Why this happens:** Versioning keeps all versions (deleted files still cost money), incomplete multipart uploads, or data in expensive storage class.
 
----
+______________________________________________________________________
 
 ### Debugging Tips :octicons-bug-16:
 
@@ -1019,23 +1052,25 @@ aws s3api get-bucket-metrics-configuration \
 aws s3 presign s3://my-bucket/file.txt --expires-in 300
 ```
 
----
+______________________________________________________________________
 
 ## :octicons-law-16: Limits & Quotas
 
-| Resource | Default Limit | Hard Limit | Adjustable? |
-|----------|--------------|------------|-------------|
-| Buckets per account | 100 | 1,000 | :octicons-check-16: Yes (soft limit) |
-| Object size | 5 TB | 5 TB | :octicons-x-16: No |
-| PUT/COPY/POST/DELETE requests | 3,500/sec/prefix | Unlimited* | :octicons-check-16: Auto-scales |
-| GET/HEAD requests | 5,500/sec/prefix | Unlimited* | :octicons-check-16: Auto-scales |
-| Bucket policy size | 20 KB | 20 KB | :octicons-x-16: No |
-| Metadata size | 2 KB | 2 KB | :octicons-x-16: No |
+| Resource                      | Default Limit    | Hard Limit  | Adjustable?                          |
+| ----------------------------- | ---------------- | ----------- | ------------------------------------ |
+| Buckets per account           | 100              | 1,000       | :octicons-check-16: Yes (soft limit) |
+| Object size                   | 5 TB             | 5 TB        | :octicons-x-16: No                   |
+| PUT/COPY/POST/DELETE requests | 3,500/sec/prefix | Unlimited\* | :octicons-check-16: Auto-scales      |
+| GET/HEAD requests             | 5,500/sec/prefix | Unlimited\* | :octicons-check-16: Auto-scales      |
+| Bucket policy size            | 20 KB            | 20 KB       | :octicons-x-16: No                   |
+| Metadata size                 | 2 KB             | 2 KB        | :octicons-x-16: No                   |
 
-*S3 automatically scales to handle high request rates
+\*S3 automatically scales to handle high request rates
 
 !!! tip "Request Limit Increase :octicons-arrow-up-16:"
+
     S3 scales automatically for request rates. For buckets, use AWS Service Quotas:
+
     ```bash
     aws service-quotas request-service-quota-increase \
       --service-code s3 \
@@ -1043,22 +1078,22 @@ aws s3 presign s3://my-bucket/file.txt --expires-in 300
       --desired-value 200
     ```
 
----
+______________________________________________________________________
 
 ## :octicons-link-16: Integration & Related Services
 
 ### Works With
 
 - **CloudFront** - CDN for fast global delivery
-  - Example: [CDN Setup](../aws-cloudfront.md)
+    - Example: [CDN Setup](../aws-cloudfront.md)
 - **Lambda** - Event-driven file processing
-  - Example: [Serverless](../aws-lambda.md)
+    - Example: [Serverless](../aws-lambda.md)
 - **Athena** - SQL queries on S3 data
-  - Example: [Analytics](../aws-athena.md)
+    - Example: [Analytics](../aws-athena.md)
 - **Glacier** - Long-term archival
-  - Example: [Backup Strategy](../../sysadmin/storage-backup.md)
+    - Example: [Backup Strategy](../../sysadmin/storage-backup.md)
 - **IAM** - Access control
-  - Example: [Security](../cloud-security.md)
+    - Example: [Security](../cloud-security.md)
 
 ### Common Architectures
 
@@ -1075,25 +1110,28 @@ graph LR
 
 **Use case:** Serverless file upload and delivery system with automatic processing
 
----
+______________________________________________________________________
 
 ## :octicons-mortar-board-16: Learning Resources
 
 ### Official Documentation :octicons-book-16:
+
 - [AWS S3 Documentation](https://docs.aws.amazon.com/s3/)
 - [AWS CLI S3 Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html)
 - [Boto3 S3 Documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html)
 
 ### Best Practices :octicons-star-16:
+
 - [S3 Security Best Practices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html)
 - [Performance Guidelines](https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html)
 
 ### Community :octicons-people-16:
+
 - [AWS Forums - S3](https://forums.aws.amazon.com/forum.jspa?forumID=24)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/amazon-s3)
 - [r/aws on Reddit](https://reddit.com/r/aws)
 
----
+______________________________________________________________________
 
 ## :octicons-checklist-16: Quick Reference
 
@@ -1152,23 +1190,25 @@ Resources:
           Value: production
 ```
 
----
+______________________________________________________________________
 
 ## :octicons-note-16: Notes & Tips
 
 !!! tip "Pro Tips :octicons-light-bulb-16:"
+
     1. **Use S3 Inventory** - Daily/weekly reports of all objects, storage classes, encryption status
-    2. **Enable requester pays** - Make users pay for their GET requests (useful for public datasets)
-    3. **S3 Batch Operations** - Bulk operations on billions of objects (tag, copy, restore)
-    4. **S3 Select & Glacier Select** - Query compressed CSV/JSON without downloading (90% cost savings)
+    1. **Enable requester pays** - Make users pay for their GET requests (useful for public datasets)
+    1. **S3 Batch Operations** - Bulk operations on billions of objects (tag, copy, restore)
+    1. **S3 Select & Glacier Select** - Query compressed CSV/JSON without downloading (90% cost savings)
 
 !!! warning "Watch Out For :octicons-alert-16:"
+
     - **Eventual consistency** - Old behavior; now all requests are strongly consistent
     - **List operations are expensive** - $0.005 per 1,000 requests, can add up on large buckets
     - **Cross-region data transfer** - $0.02/GB between regions (use same-region when possible)
     - **Versioning costs** - Old versions count toward storage (set lifecycle expiration)
 
----
+______________________________________________________________________
 
 ## :octicons-link-external-16: Related Pages
 
@@ -1181,16 +1221,15 @@ Resources:
 - [Terraform](../terraform.md)
 
 **Cross-references:**
+
 - [SysAdmin / Backup Strategy](../../sysadmin/storage-backup.md) - For backup best practices
 - [DevOps / CI/CD](../../devops/cicd.md) - For artifact storage
 - [Container / Registry](../../containerization/docker.md) - For image storage alternatives
 
----
+______________________________________________________________________
 
-**Last Updated:** January 26, 2026
-**AWS S3 Version:** Latest
-**Tested Regions:** us-east-1, us-west-2, eu-west-1
+**Last Updated:** January 26, 2026 **AWS S3 Version:** Latest **Tested Regions:** us-east-1, us-west-2, eu-west-1
 
----
+______________________________________________________________________
 
 _Built with :octicons-heart-16: for practical cloud documentation_

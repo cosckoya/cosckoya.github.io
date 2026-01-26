@@ -8,8 +8,7 @@ ______________________________________________________________________
 
 ### What is Pre-Commit?
 
-Pre-commit is a framework for managing git hooks written in any language. It runs checks automatically before each
-commit, catching issues early in the development process.
+Pre-commit is a framework for managing git hooks written in any language. It runs checks automatically before each commit, catching issues early in the development process.
 
 **Key Features:**
 

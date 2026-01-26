@@ -1,8 +1,6 @@
 # DevOps GitHub Expert - CI/CD/CS Automation Specialist
 
-**Skill Name:** `devops-github-expert`
-**Purpose:** Modern GitHub Actions, Pages, and CI/CD/CS pipeline automation following 2026 DevOps best practices
-**Language:** English only
+**Skill Name:** `devops-github-expert` **Purpose:** Modern GitHub Actions, Pages, and CI/CD/CS pipeline automation following 2026 DevOps best practices **Language:** English only
 
 ______________________________________________________________________
 

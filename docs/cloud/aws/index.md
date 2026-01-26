@@ -8,14 +8,14 @@ tags:
 
 # AWS (Amazon Web Services)
 
-Cloud platform that runs half the internet. 200+ services (you'll use maybe 10). 33+ regions globally. Industry standard
-for cloud infrastructure. Pricing is a mystery, bills are scary, but it works.
+Cloud platform that runs half the internet. 200+ services (you'll use maybe 10). 33+ regions globally. Industry standard for cloud infrastructure. Pricing is a mystery, bills are scary, but it works.
 
 ______________________________________________________________________
 
 ## Quick Hits
 
 === "🎯 Essential Services"
+
     ```bash
     # EC2 - Virtual machines (you'll use this)
     aws ec2 run-instances --image-id ami-xxx --instance-type t3.micro
@@ -51,6 +51,7 @@ ______________________________________________________________________
     - Use `--profile` for multiple accounts (you'll have dev/staging/prod)
 
 === "⚡ Common Patterns"
+
     ```python
     import boto3
     from botocore.exceptions import ClientError
@@ -134,6 +135,7 @@ ______________________________________________________________________
     ```
 
 === "🔥 Pro Tips & Gotchas"
+
     **Cost optimization (your CFO will thank you):**
 
     - Use Reserved Instances for predictable workloads (up to 72% savings)
@@ -195,21 +197,16 @@ ______________________________________________________________________
 ### 🧪 Interactive Labs
 
 - **[AWS Sandbox Accounts](https://aws.amazon.com/getting-started/hands-on/)** - Official hands-on tutorials in real AWS
-- **[Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)** - Temporary accounts for safe
-    experimentation
+- **[Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)** - Temporary accounts for safe experimentation
 - **[Instruqt AWS Labs](https://play.instruqt.com/public/topics/aws)** - Browser-based scenarios
 - **[LocalStack](https://localstack.cloud/)** - Run AWS locally for development
 
 ### 📜 Certifications Worth It
 
-- **[Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)** - $100, easiest, good
-    starting point if totally new
-- **[Solutions Architect Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** -
-    $150, **most popular**, worth it for resume (this one matters)
-- **[Developer Associate](https://aws.amazon.com/certification/certified-developer-associate/)** - $150, worth it if you
-    code on AWS daily
-- **[SysOps Administrator Associate](https://aws.amazon.com/certification/certified-sysops-admin-associate/)** - $150,
-    operations-focused
+- **[Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)** - $100, easiest, good starting point if totally new
+- **[Solutions Architect Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** - $150, **most popular**, worth it for resume (this one matters)
+- **[Developer Associate](https://aws.amazon.com/certification/certified-developer-associate/)** - $150, worth it if you code on AWS daily
+- **[SysOps Administrator Associate](https://aws.amazon.com/certification/certified-sysops-admin-associate/)** - $150, operations-focused
 - **Skip unless senior/employer pays:** Professional certs ($300), Specialty certs ($300) - overkill for most
 
 **Reality check:**
@@ -266,8 +263,7 @@ ______________________________________________________________________
 - **[r/aws](https://reddit.com/r/aws)** - 250k+ members, active daily, mix of beginner + advanced (best community)
 - **[AWS Community Discord](https://discord.gg/aws)** - Official, helpful, core team present
 - **[Dev.to #aws](https://dev.to/t/aws)** - Quality tutorials, case studies, community posts
-- **[AWS Community Builders](https://aws.amazon.com/developer/community/community-builders/)** - Official program, great
-    networking
+- **[AWS Community Builders](https://aws.amazon.com/developer/community/community-builders/)** - Official program, great networking
 - **[AWS re:Post](https://repost.aws/)** - Official Q&A (replaces old forums)
 - **[ServerlessLand Community](https://serverlessland.com/)** - Serverless-focused, active Slack/Discord
 
@@ -276,8 +272,7 @@ ______________________________________________________________________
 **Podcasts:**
 
 - **[AWS Podcast](https://aws.amazon.com/podcasts/aws-podcast/)** - Official, weekly, new features + customer stories
-- **[Screaming in the Cloud](https://www.lastweekinaws.com/podcast/screaming-in-the-cloud/)** - Corey Quinn, hilarious,
-    critical of AWS (in good way)
+- **[Screaming in the Cloud](https://www.lastweekinaws.com/podcast/screaming-in-the-cloud/)** - Corey Quinn, hilarious, critical of AWS (in good way)
 - **[AWS TechChat](https://aws.amazon.com/podcasts/aws-techchat/)** - Technical deep dives
 - **[AWS Morning Brief](https://www.lastweekinaws.com/podcast/aws-morning-brief/)** - Short daily AWS news
 
@@ -290,8 +285,7 @@ ______________________________________________________________________
 
 ### 🎪 Events & Conferences
 
-- **[AWS re:Invent](https://reinvent.awsevents.com/)** - Las Vegas, late November, 50k+ attendees, $2k+ (worth it once
-    in career)
+- **[AWS re:Invent](https://reinvent.awsevents.com/)** - Las Vegas, late November, 50k+ attendees, $2k+ (worth it once in career)
 - **[AWS Summit](https://aws.amazon.com/events/summits/)** - Free, regional (20+ cities), good for networking
 - **[AWS Community Day](https://www.awscommunity.day/)** - Free, community-organized, worldwide, quality talks
 - **[ServerlessDays](https://serverlessdays.io/)** - Free/cheap, serverless-focused, technical talks
@@ -388,6 +382,4 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-01-13 **Vibe Check:** 🌍 Mainstream - AWS is the default cloud. Not the coolest kid anymore
-(Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're
-learning AWS.
+**Last Updated:** 2026-01-13 **Vibe Check:** 🌍 Mainstream - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.

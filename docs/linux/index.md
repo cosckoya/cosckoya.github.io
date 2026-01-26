@@ -81,18 +81,18 @@ ______________________________________________________________________
 
 ## Distribution Comparison
 
-| Aspect             | Debian/Ubuntu             | RHEL/CentOS/Rocky    | Arch Linux           | SUSE                    |
-| ------------------ | ------------------------- | -------------------- | -------------------- | ----------------------- |
-| **Philosophy**     | Stability                 | Enterprise stability | Bleeding edge        | Enterprise + stability  |
-| **Package Mgr**    | apt/dpkg                  | yum/dnf/rpm          | pacman               | zypper/rpm              |
-| **Release Cycle**  | 2 years (LTS)             | 7-10 years (RHEL)    | Rolling release      | 3-4 years               |
-| **Init System**    | systemd                   | systemd              | systemd              | systemd                 |
-| **Best For**       | General purpose, dev      | Production servers   | Power users, latest  | SAP, enterprise Linux   |
-| **Support**        | Community / Canonical     | Red Hat / Community  | Community            | SUSE / Community        |
-| **Default Shell**  | bash                      | bash                 | bash                 | bash                    |
-| **Package Count**  | 60,000+                   | 10,000+              | 13,000+ (AUR: 80k+)  | 15,000+                 |
-| **Learning Curve** | Easy                      | Medium               | Steep                | Medium                  |
-| **Docs Quality**   | Excellent                 | Excellent (RHEL)     | Legendary (Wiki)     | Good                    |
+| Aspect             | Debian/Ubuntu         | RHEL/CentOS/Rocky    | Arch Linux          | SUSE                   |
+| ------------------ | --------------------- | -------------------- | ------------------- | ---------------------- |
+| **Philosophy**     | Stability             | Enterprise stability | Bleeding edge       | Enterprise + stability |
+| **Package Mgr**    | apt/dpkg              | yum/dnf/rpm          | pacman              | zypper/rpm             |
+| **Release Cycle**  | 2 years (LTS)         | 7-10 years (RHEL)    | Rolling release     | 3-4 years              |
+| **Init System**    | systemd               | systemd              | systemd             | systemd                |
+| **Best For**       | General purpose, dev  | Production servers   | Power users, latest | SAP, enterprise Linux  |
+| **Support**        | Community / Canonical | Red Hat / Community  | Community           | SUSE / Community       |
+| **Default Shell**  | bash                  | bash                 | bash                | bash                   |
+| **Package Count**  | 60,000+               | 10,000+              | 13,000+ (AUR: 80k+) | 15,000+                |
+| **Learning Curve** | Easy                  | Medium               | Steep               | Medium                 |
+| **Docs Quality**   | Excellent             | Excellent (RHEL)     | Legendary (Wiki)    | Good                   |
 
 ______________________________________________________________________
 
@@ -197,26 +197,26 @@ ______________________________________________________________________
 
 ## File System Hierarchy
 
-| Directory   | Purpose                                  | Examples                         |
-| ----------- | ---------------------------------------- | -------------------------------- |
-| **/bin**    | Essential user binaries                  | ls, cat, cp, bash                |
-| **/boot**   | Boot loader files, kernel                | vmlinuz, initrd.img              |
-| **/dev**    | Device files                             | /dev/sda, /dev/null, /dev/random |
-| **/etc**    | System configuration files               | /etc/passwd, /etc/fstab          |
-| **/home**   | User home directories                    | /home/username                   |
-| **/lib**    | Shared libraries                         | libc.so, libm.so                 |
-| **/media**  | Removable media mount points             | /media/usb, /media/cdrom         |
-| **/mnt**    | Temporary mount points                   | /mnt/backup                      |
-| **/opt**    | Optional third-party software            | /opt/google, /opt/steam          |
-| **/proc**   | Virtual filesystem (kernel/process info) | /proc/cpuinfo, /proc/meminfo     |
-| **/root**   | Root user home directory                 | /root                            |
-| **/run**    | Runtime data since last boot             | /run/lock, /run/user             |
-| **/sbin**   | System administration binaries           | iptables, fdisk, useradd         |
-| **/srv**    | Service data                             | /srv/http, /srv/ftp              |
-| **/sys**    | Virtual filesystem (kernel/device info)  | /sys/class, /sys/devices         |
-| **/tmp**    | Temporary files (cleared on reboot)      | /tmp                             |
-| **/usr**    | User utilities and applications          | /usr/bin, /usr/lib, /usr/share   |
-| **/var**    | Variable data (logs, caches, spool)      | /var/log, /var/cache, /var/www   |
+| Directory  | Purpose                                  | Examples                         |
+| ---------- | ---------------------------------------- | -------------------------------- |
+| **/bin**   | Essential user binaries                  | ls, cat, cp, bash                |
+| **/boot**  | Boot loader files, kernel                | vmlinuz, initrd.img              |
+| **/dev**   | Device files                             | /dev/sda, /dev/null, /dev/random |
+| **/etc**   | System configuration files               | /etc/passwd, /etc/fstab          |
+| **/home**  | User home directories                    | /home/username                   |
+| **/lib**   | Shared libraries                         | libc.so, libm.so                 |
+| **/media** | Removable media mount points             | /media/usb, /media/cdrom         |
+| **/mnt**   | Temporary mount points                   | /mnt/backup                      |
+| **/opt**   | Optional third-party software            | /opt/google, /opt/steam          |
+| **/proc**  | Virtual filesystem (kernel/process info) | /proc/cpuinfo, /proc/meminfo     |
+| **/root**  | Root user home directory                 | /root                            |
+| **/run**   | Runtime data since last boot             | /run/lock, /run/user             |
+| **/sbin**  | System administration binaries           | iptables, fdisk, useradd         |
+| **/srv**   | Service data                             | /srv/http, /srv/ftp              |
+| **/sys**   | Virtual filesystem (kernel/device info)  | /sys/class, /sys/devices         |
+| **/tmp**   | Temporary files (cleared on reboot)      | /tmp                             |
+| **/usr**   | User utilities and applications          | /usr/bin, /usr/lib, /usr/share   |
+| **/var**   | Variable data (logs, caches, spool)      | /var/log, /var/cache, /var/www   |
 
 ______________________________________________________________________
 
@@ -318,38 +318,44 @@ ______________________________________________________________________
 ### Essential Steps
 
 - [ ] **SSH Hardening**
-  - Disable root login: `PermitRootLogin no`
-  - Use key-based authentication
-  - Change default port (security by obscurity, but helps)
-  - Enable fail2ban for brute force protection
+
+    - Disable root login: `PermitRootLogin no`
+    - Use key-based authentication
+    - Change default port (security by obscurity, but helps)
+    - Enable fail2ban for brute force protection
 
 - [ ] **Firewall Configuration**
-  - Enable and configure firewalld or ufw
-  - Default deny incoming, allow necessary ports only
-  - Log dropped packets for analysis
+
+    - Enable and configure firewalld or ufw
+    - Default deny incoming, allow necessary ports only
+    - Log dropped packets for analysis
 
 - [ ] **User Management**
-  - Enforce strong password policies
-  - Regular user account audits
-  - Disable unused accounts
-  - Implement sudo with limited permissions
+
+    - Enforce strong password policies
+    - Regular user account audits
+    - Disable unused accounts
+    - Implement sudo with limited permissions
 
 - [ ] **System Updates**
-  - Enable automatic security updates
-  - Subscribe to security mailing lists
-  - Test updates in staging first
-  - Document update procedures
+
+    - Enable automatic security updates
+    - Subscribe to security mailing lists
+    - Test updates in staging first
+    - Document update procedures
 
 - [ ] **Audit & Monitoring**
-  - Enable auditd for security logging
-  - Configure centralized logging
-  - Set up intrusion detection (AIDE, Tripwire)
-  - Monitor disk usage and performance
+
+    - Enable auditd for security logging
+    - Configure centralized logging
+    - Set up intrusion detection (AIDE, Tripwire)
+    - Monitor disk usage and performance
 
 - [ ] **SELinux/AppArmor**
-  - Enable and configure (don't disable because it's "hard")
-  - Review and understand denial logs
-  - Create custom policies when needed
+
+    - Enable and configure (don't disable because it's "hard")
+    - Review and understand denial logs
+    - Create custom policies when needed
 
 ______________________________________________________________________
 

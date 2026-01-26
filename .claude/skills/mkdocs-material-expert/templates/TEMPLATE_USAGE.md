@@ -1,41 +1,45 @@
 # AWS Documentation Template Usage Guide
 
-**Created:** January 26, 2026
-**MkDocs Material Expert** :octicons-heart-16:
+**Created:** January 26, 2026 **MkDocs Material Expert** :octicons-heart-16:
 
----
+______________________________________________________________________
 
 ## :octicons-file-16: Available Templates
 
 ### 1. AWS_SERVICE_TEMPLATE.md
+
 **Purpose:** Blank template for any AWS service documentation
 
 **Use for:** EC2, Lambda, RDS, CloudFront, IAM, etc.
 
 **Features:**
+
 - Complete structure with all sections
 - Placeholders marked with `[BRACKETS]`
 - Material theme features (tabs, admonitions, icons)
 - Code blocks with annotations
 - Progressive disclosure (collapsible advanced sections)
 
----
+______________________________________________________________________
 
 ### 2. AWS_S3_EXAMPLE.md
+
 **Purpose:** Fully filled-in example using S3
 
 **Use for:**
+
 - Reference implementation
 - Understand how to fill template
 - Copy sections for similar services
 
 **Features:**
+
 - Real S3 commands and code
 - Practical examples
 - Working Terraform configurations
 - Production-ready patterns
 
----
+______________________________________________________________________
 
 ## :octicons-zap-16: Quick Start
 
@@ -55,15 +59,16 @@ cp .claude/skills/mkdocs-material-expert/templates/AWS_S3_EXAMPLE.md \
 
 Search for these patterns and replace:
 
-| Placeholder | Example | Description |
-|-------------|---------|-------------|
-| `[SERVICE_NAME]` | `EC2` | AWS service name (uppercase) |
-| `[service-name]` | `ec2` | Service name (lowercase) |
-| `[service-category]` | `compute` | Category (compute, storage, database, etc.) |
-| `[ONE_LINE_DESCRIPTION]` | `Elastic Compute Cloud` | Full service name |
-| `[service]` | `ec2` | CLI command prefix (`aws ec2...`) |
+| Placeholder              | Example                 | Description                                 |
+| ------------------------ | ----------------------- | ------------------------------------------- |
+| `[SERVICE_NAME]`         | `EC2`                   | AWS service name (uppercase)                |
+| `[service-name]`         | `ec2`                   | Service name (lowercase)                    |
+| `[service-category]`     | `compute`               | Category (compute, storage, database, etc.) |
+| `[ONE_LINE_DESCRIPTION]` | `Elastic Compute Cloud` | Full service name                           |
+| `[service]`              | `ec2`                   | CLI command prefix (`aws ec2...`)           |
 
 **Quick find & replace:**
+
 ```bash
 # In your editor:
 :%s/\[SERVICE_NAME\]/EC2/g
@@ -76,11 +81,11 @@ Search for these patterns and replace:
 Work through sections in order:
 
 1. **Quick Start** - Most common commands
-2. **Core Concepts** - 2-3 key concepts to understand
-3. **Common Use Cases** - 3-5 real-world scenarios
-4. **Configuration & Best Practices** - Security, performance, cost
-5. **Advanced Patterns** - Optional, for power users
-6. **Troubleshooting** - Common issues and fixes
+1. **Core Concepts** - 2-3 key concepts to understand
+1. **Common Use Cases** - 3-5 real-world scenarios
+1. **Configuration & Best Practices** - Security, performance, cost
+1. **Advanced Patterns** - Optional, for power users
+1. **Troubleshooting** - Common issues and fixes
 
 ### Step 4: Add to Navigation
 
@@ -99,7 +104,7 @@ make serve
 # Visit http://localhost:8000/cloud/aws/ec2/
 ```
 
----
+______________________________________________________________________
 
 ## :octicons-paintbrush-16: Template Features
 
@@ -118,6 +123,7 @@ The template uses octicons extensively (user's favorite!):
 ```
 
 **Icon Reference:**
+
 - `:octicons-cloud-16:` - Cloud/AWS
 - `:octicons-zap-16:` - Quick/Fast
 - `:octicons-book-16:` - Documentation
@@ -139,7 +145,7 @@ The template uses octicons extensively (user's favorite!):
 
 Used for showing multiple approaches (CLI, Python, Terraform):
 
-```markdown
+````markdown
 === "CLI"
     ```bash
     aws service command
@@ -154,7 +160,7 @@ Used for showing multiple approaches (CLI, Python, Terraform):
     ```hcl
     resource configuration
     ```
-```
+````
 
 ### Code Annotations
 
@@ -193,7 +199,7 @@ Visual callouts for important info:
 
 Keep page scannable:
 
-```markdown
+````markdown
 ??? example "Pattern 1: Advanced Technique :octicons-code-16:"
     **When to use:** Scenario description
 
@@ -204,9 +210,9 @@ Keep page scannable:
     **Benefits:**
     - Benefit 1
     - Benefit 2
-```
+````
 
----
+______________________________________________________________________
 
 ## :octicons-checklist-16: Content Checklist
 
@@ -222,24 +228,27 @@ Before publishing, verify:
 - [ ] `make build` passes (strict mode)
 - [ ] Added to SUMMARY.md navigation
 
----
+______________________________________________________________________
 
 ## :octicons-sparkle-16: Style Guidelines
 
 ### Tone
 
 Match the existing style:
+
 - **Practical** - Real commands that work
 - **Direct** - No corporate marketing speak
 - **Honest** - Call out gotchas and costs
 - **Experienced** - "Real talk" sections with insider knowledge
 
 **Good examples:**
+
 - "S3 is AWS's foundational storage service—think of it as an infinitely scalable hard drive"
 - "Bucket names are globally unique—`my-bucket` is taken, use `company-project-env-bucket-uuid`"
 - "IAM is hell, but you MUST learn it—security nightmare otherwise"
 
 **Bad examples:**
+
 - "Leverage the power of AWS's industry-leading cloud infrastructure"
 - "Best-in-class solution for enterprise-grade deployments"
 - "Seamlessly integrate with your existing workflows"
@@ -247,12 +256,14 @@ Match the existing style:
 ### Code Examples
 
 **Always include:**
+
 - Working commands (tested)
 - Comments explaining parameters
 - Error handling
 - Real-world context
 
 **Good example:**
+
 ```python
 def upload_to_s3(file_path, bucket, key):
     """Upload file with proper error handling"""
@@ -271,6 +282,7 @@ def upload_to_s3(file_path, bucket, key):
 ```
 
 **Bad example:**
+
 ```python
 s3.upload_file(file, bucket, key)  # Upload file
 ```
@@ -284,7 +296,7 @@ s3.upload_file(file, bucket, key)  # Upload file
 
 Keep it **practical and scannable**. Users should find what they need in 30 seconds.
 
----
+______________________________________________________________________
 
 ## :octicons-rocket-16: Advanced Customization
 
@@ -312,6 +324,7 @@ For service-specific styling:
 ```
 
 Register in `mkdocs.yml`:
+
 ```yaml
 extra_css:
   - stylesheets/aws-custom.css
@@ -349,40 +362,41 @@ social:
 ---
 ```
 
----
+______________________________________________________________________
 
 ## :octicons-file-directory-16: Template Structure Explained
 
 ### Why This Structure?
 
 1. **Quick Start First** - Users need commands NOW
-2. **Concepts Second** - Understanding follows doing
-3. **Use Cases Third** - Real scenarios show value
-4. **Config Fourth** - Deep dive for production
-5. **Advanced Last** - Progressive disclosure
-6. **Troubleshooting Always** - Debug when stuck
+1. **Concepts Second** - Understanding follows doing
+1. **Use Cases Third** - Real scenarios show value
+1. **Config Fourth** - Deep dive for production
+1. **Advanced Last** - Progressive disclosure
+1. **Troubleshooting Always** - Debug when stuck
 
 ### Section Purposes
 
-| Section | Purpose | Audience |
-|---------|---------|----------|
-| Quick Start | Get running in 5 minutes | Everyone |
-| Core Concepts | Understand how it works | Beginners |
-| Use Cases | See real applications | Everyone |
-| Configuration | Production-ready setup | Intermediate |
-| Advanced Patterns | Optimize and scale | Advanced |
-| Troubleshooting | Fix common issues | Everyone |
-| Limits & Quotas | Know boundaries | Architects |
-| Integration | Connect services | Architects |
-| Learning Resources | Go deeper | Everyone |
+| Section            | Purpose                  | Audience     |
+| ------------------ | ------------------------ | ------------ |
+| Quick Start        | Get running in 5 minutes | Everyone     |
+| Core Concepts      | Understand how it works  | Beginners    |
+| Use Cases          | See real applications    | Everyone     |
+| Configuration      | Production-ready setup   | Intermediate |
+| Advanced Patterns  | Optimize and scale       | Advanced     |
+| Troubleshooting    | Fix common issues        | Everyone     |
+| Limits & Quotas    | Know boundaries          | Architects   |
+| Integration        | Connect services         | Architects   |
+| Learning Resources | Go deeper                | Everyone     |
 
----
+______________________________________________________________________
 
 ## :octicons-git-branch-16: Workflow
 
 ### 1. Research Phase
 
 Before writing:
+
 - Read AWS official docs
 - Test commands in real account
 - Check pricing page
@@ -391,6 +405,7 @@ Before writing:
 ### 2. Writing Phase
 
 Follow template sections:
+
 - Start with Quick Start (most impact)
 - Add Core Concepts (foundation)
 - Document 3-5 Use Cases (practical value)
@@ -401,6 +416,7 @@ Follow template sections:
 ### 3. Review Phase
 
 Before committing:
+
 ```bash
 # Test locally
 make serve
@@ -438,7 +454,7 @@ Complete documentation for AWS [SERVICE] including:
 Co-Authored-By: Claude <noreply@anthropic.com>"
 ```
 
----
+______________________________________________________________________
 
 ## :octicons-people-16: Getting Help
 
@@ -453,15 +469,18 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 ### Resources
 
 - **Template Files**:
-  - `.claude/skills/mkdocs-material-expert/templates/AWS_SERVICE_TEMPLATE.md`
-  - `.claude/skills/mkdocs-material-expert/templates/AWS_S3_EXAMPLE.md`
-  - `.claude/skills/mkdocs-material-expert/templates/TEMPLATE_USAGE.md` (this file)
+
+    - `.claude/skills/mkdocs-material-expert/templates/AWS_SERVICE_TEMPLATE.md`
+    - `.claude/skills/mkdocs-material-expert/templates/AWS_S3_EXAMPLE.md`
+    - `.claude/skills/mkdocs-material-expert/templates/TEMPLATE_USAGE.md` (this file)
 
 - **Material Theme Docs**: [squidfunk.github.io/mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
+
 - **Octicons**: [primer.style/foundations/icons](https://primer.style/foundations/icons)
+
 - **AWS Docs**: [docs.aws.amazon.com](https://docs.aws.amazon.com/)
 
----
+______________________________________________________________________
 
 ## :octicons-star-16: Examples in the Wild
 
@@ -473,26 +492,27 @@ Your project already has great examples:
 
 **Copy patterns from these** for consistency!
 
----
+______________________________________________________________________
 
 ## :octicons-note-16: Tips & Tricks
 
 !!! tip "Pro Tips :octicons-light-bulb-16:"
+
     1. **Start with S3 example** - Copy and modify instead of blank template
-    2. **Use real commands** - Test everything in AWS console first
-    3. **Include costs** - Users ALWAYS care about pricing
-    4. **Show Terraform** - Infrastructure-as-code is expected
-    5. **Link related pages** - Create web of knowledge
-    6. **Update regularly** - AWS changes fast, docs need maintenance
+    1. **Use real commands** - Test everything in AWS console first
+    1. **Include costs** - Users ALWAYS care about pricing
+    1. **Show Terraform** - Infrastructure-as-code is expected
+    1. **Link related pages** - Create web of knowledge
+    1. **Update regularly** - AWS changes fast, docs need maintenance
 
 !!! warning "Common Mistakes :octicons-alert-16:"
+
     - Forgetting to test code examples
     - Using generic descriptions ("AWS service for compute")
     - Skipping security best practices section
     - Not linking to related services
     - Forgetting to add to SUMMARY.md navigation
 
----
+______________________________________________________________________
 
-**Created with** :octicons-heart-16: **by MkDocs Material Expert**
-**Version:** 2026.01
+**Created with** :octicons-heart-16: **by MkDocs Material Expert** **Version:** 2026.01

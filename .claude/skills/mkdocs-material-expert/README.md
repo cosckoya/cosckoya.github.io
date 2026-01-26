@@ -1,10 +1,8 @@
 # MkDocs Material Expert Skill
 
-**Version:** 2026.01
-**Status:** ✅ Active
-**Created:** January 26, 2026
+**Version:** 2026.01 **Status:** ✅ Active **Created:** January 26, 2026
 
----
+______________________________________________________________________
 
 ## Overview
 
@@ -20,18 +18,19 @@ A comprehensive Claude Code skill for MkDocs Material theme expertise. She's a U
 - ♿ **Accessibility** - WCAG 2.1 AA compliance
 - 🎯 **Advanced Features** - Annotations, tabs, admonitions, custom components
 
----
+______________________________________________________________________
 
 ## Installation
 
 The skill is already installed at:
+
 ```
 .claude/skills/mkdocs-material-expert/SKILL.md
 ```
 
 It's registered in `CLAUDE.md` and ready to use.
 
----
+______________________________________________________________________
 
 ## Usage
 
@@ -69,7 +68,7 @@ It's registered in `CLAUDE.md` and ready to use.
 /mkdocs-material-expert setup blog
 ```
 
----
+______________________________________________________________________
 
 ## Capabilities
 
@@ -128,7 +127,7 @@ It's registered in `CLAUDE.md` and ready to use.
 - Definition lists
 - Magic links
 
----
+______________________________________________________________________
 
 ## Configuration Examples
 
@@ -173,7 +172,7 @@ plugins:
 
 Add blog, RSS, offline support, privacy compliance, and custom styling.
 
----
+______________________________________________________________________
 
 ## Personality
 
@@ -196,12 +195,13 @@ The MkDocs Material Expert has a distinct personality:
 ### Communication Style
 
 Always explains:
-1. **What** the feature does
-2. **Why** it's beneficial
-3. **How** to implement it
-4. **Trade-offs** (complexity, performance)
 
----
+1. **What** the feature does
+1. **Why** it's beneficial
+1. **How** to implement it
+1. **Trade-offs** (complexity, performance)
+
+______________________________________________________________________
 
 ## Integration
 
@@ -218,7 +218,7 @@ Always explains:
 - Pre-commit hooks
 - Existing configuration
 
----
+______________________________________________________________________
 
 ## Dependencies (2026)
 
@@ -242,28 +242,30 @@ mkdocs-offline-plugin>=1.0.0
 pymdown-extensions>=10.5
 ```
 
----
+______________________________________________________________________
 
 ## Examples
 
 ### Example 1: Add Octicons to Admonitions
 
 **Input:**
+
 ```
 /mkdocs-material-expert add octicons to admonitions
 ```
 
-**Output:**
-Configures mkdocs.yml with octicon icons for all admonition types (note, warning, tip, danger, etc.)
+**Output:** Configures mkdocs.yml with octicon icons for all admonition types (note, warning, tip, danger, etc.)
 
 ### Example 2: Enable Social Cards
 
 **Input:**
+
 ```
 /mkdocs-material-expert enable social cards
 ```
 
 **Output:**
+
 - Adds social plugin configuration
 - Creates card layout directory
 - Tests OG image generation
@@ -272,18 +274,20 @@ Configures mkdocs.yml with octicon icons for all admonition types (note, warning
 ### Example 3: Optimize Performance
 
 **Input:**
+
 ```
 /mkdocs-material-expert optimize performance
 ```
 
 **Output:**
+
 - Enables minification
 - Configures caching
 - Sets up lazy loading
 - Measures build time improvements
 - Checks site size reduction
 
----
+______________________________________________________________________
 
 ## Testing
 
@@ -311,34 +315,34 @@ make build
 - [ ] Colors readable (contrast)
 - [ ] Mobile responsive
 - [ ] Keyboard accessible
-- [ ] Fast loading (<3s)
+- [ ] Fast loading (\<3s)
 
----
+______________________________________________________________________
 
 ## Performance Metrics
 
 Typical improvements after optimization:
 
-| Metric | Before | After | Improvement |
-|--------|--------|-------|-------------|
-| Build time | 5s | 3s | 40% faster |
-| Site size | 15MB | 11MB | 27% smaller |
-| Page load | 2.5s | 1.2s | 52% faster |
-| Lighthouse | 85 | 95+ | Performance |
+| Metric     | Before | After | Improvement |
+| ---------- | ------ | ----- | ----------- |
+| Build time | 5s     | 3s    | 40% faster  |
+| Site size  | 15MB   | 11MB  | 27% smaller |
+| Page load  | 2.5s   | 1.2s  | 52% faster  |
+| Lighthouse | 85     | 95+   | Performance |
 
----
+______________________________________________________________________
 
 ## Best Practices
 
 1. **Test locally** - Always use `make serve` before committing
-2. **Validate build** - Run `make build` (strict mode catches errors)
-3. **Incremental changes** - Add one feature at a time
-4. **Measure performance** - Check build time and site size
-5. **Accessibility first** - WCAG 2.1 AA minimum standard
-6. **Use octicons** :octicons-heart-16: - User loves them!
-7. **Explain benefits** - User should understand why each feature helps
+1. **Validate build** - Run `make build` (strict mode catches errors)
+1. **Incremental changes** - Add one feature at a time
+1. **Measure performance** - Check build time and site size
+1. **Accessibility first** - WCAG 2.1 AA minimum standard
+1. **Use octicons** :octicons-heart-16: - User loves them!
+1. **Explain benefits** - User should understand why each feature helps
 
----
+______________________________________________________________________
 
 ## Troubleshooting
 
@@ -369,11 +373,12 @@ markdown_extensions:
 # Example: search before minify
 ```
 
----
+______________________________________________________________________
 
 ## Version History
 
 ### 2026.01 (January 26, 2026)
+
 - Initial release
 - Material 9.5.x+ support
 - 10+ plugin configurations
@@ -383,7 +388,7 @@ markdown_extensions:
 - Custom CSS patterns
 - Full 2026 feature set
 
----
+______________________________________________________________________
 
 ## Resources
 
@@ -393,29 +398,27 @@ markdown_extensions:
 - [Octicons](https://primer.style/foundations/icons)
 - [WCAG Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 
----
+______________________________________________________________________
 
 ## Contributing
 
 To enhance this skill:
 
 1. Test new Material features as they're released
-2. Update plugin versions and configurations
-3. Add new icon sets or design patterns
-4. Improve accessibility guidance
-5. Optimize performance techniques
-6. Document user feedback and common requests
+1. Update plugin versions and configurations
+1. Add new icon sets or design patterns
+1. Improve accessibility guidance
+1. Optimize performance techniques
+1. Document user feedback and common requests
 
----
+______________________________________________________________________
 
 ## License
 
 This skill is part of the cosckoya.github.io project.
 
----
+______________________________________________________________________
 
-**Maintained By:** MkDocs Material Expert + Human
-**Last Updated:** January 26, 2026
-**Version:** 2026.01
+**Maintained By:** MkDocs Material Expert + Human **Last Updated:** January 26, 2026 **Version:** 2026.01
 
 Built with :octicons-heart-fill-16: for beautiful documentation

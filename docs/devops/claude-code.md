@@ -8,8 +8,7 @@ ______________________________________________________________________
 
 ### What is Claude Code?
 
-Claude Code is Anthropic's official command-line interface for Claude AI. It enables AI-assisted software development
-through natural language interactions, with access to your codebase, terminal commands, and file operations.
+Claude Code is Anthropic's official command-line interface for Claude AI. It enables AI-assisted software development through natural language interactions, with access to your codebase, terminal commands, and file operations.
 
 **Key Features:**
 

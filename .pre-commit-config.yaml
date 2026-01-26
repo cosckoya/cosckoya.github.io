@@ -25,6 +25,7 @@ repos:
           - mdformat-mkdocs>=2.0.0       # MkDocs-specific formatting
           - mdformat-frontmatter>=2.0.1  # YAML frontmatter support
         args: [--wrap, "no"]
+        exclude: ^\.claude/  # Exclude Claude Code configuration files
 
   # Spell checking
   - repo: https://github.com/codespell-project/codespell
@@ -32,7 +33,7 @@ repos:
     hooks:
       - id: codespell
         args:
-          - --ignore-words-list=sur,nad,als,crate,unexpect
+          - --ignore-words-list=sur,nad,als,crate,unexpect,aks,gud,themeing,inforce
           - --skip=*.min.js,*.min.css,*.lock,venv/*,.git/*,site/*
 
   # YAML validation
@@ -64,6 +65,7 @@ repos:
       - id: check-toml
       - id: check-yaml
         args: [--allow-multiple-documents]
+        exclude: ^mkdocs\.yml$  # MkDocs uses Python-specific YAML tags
 
       # Python-specific
       - id: check-ast                    # Valid Python syntax

@@ -8,9 +8,7 @@ ______________________________________________________________________
 
 ### What is Azure DevOps?
 
-Azure DevOps is Microsoft's cloud-based DevOps platform offering integrated services for planning, developing,
-delivering, and operating applications. It provides both cloud-hosted (Azure DevOps Services) and on-premises (Azure
-DevOps Server) options.
+Azure DevOps is Microsoft's cloud-based DevOps platform offering integrated services for planning, developing, delivering, and operating applications. It provides both cloud-hosted (Azure DevOps Services) and on-premises (Azure DevOps Server) options.
 
 **Key Services:**
 
@@ -37,18 +35,15 @@ ______________________________________________________________________
 
 **Quick Starts:**
 
-- **[Azure DevOps Overview](https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops)** - Platform
-    introduction
-- **[Sign up for Azure DevOps](https://learn.microsoft.com/azure/devops/user-guide/sign-up-invite-teammates)** - Create
-    free account
+- **[Azure DevOps Overview](https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops)** - Platform introduction
+- **[Sign up for Azure DevOps](https://learn.microsoft.com/azure/devops/user-guide/sign-up-invite-teammates)** - Create free account
 - **[Quick Start Guide](https://learn.microsoft.com/azure/devops/get-started/)** - Get started fast
 
 **Service-Specific:**
 
 - **[Azure Boards Quickstart](https://learn.microsoft.com/azure/devops/boards/get-started/)** - Start tracking work
 - **[Azure Repos Quickstart](https://learn.microsoft.com/azure/devops/repos/get-started/)** - Set up Git repos
-- **[Azure Pipelines Quickstart](https://learn.microsoft.com/azure/devops/pipelines/get-started/)** - Create first
-    pipeline
+- **[Azure Pipelines Quickstart](https://learn.microsoft.com/azure/devops/pipelines/get-started/)** - Create first pipeline
 
 ______________________________________________________________________
 
@@ -100,10 +95,8 @@ Package management:
 
 - **[Azure Artifacts Documentation](https://learn.microsoft.com/azure/devops/artifacts/)** - Complete guide
 - **[Feeds](https://learn.microsoft.com/azure/devops/artifacts/concepts/feeds)** - Package repositories
-- **[Supported Packages](https://learn.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts)** - NuGet, npm,
-    Maven, Python, Universal
-- **[Upstream Sources](https://learn.microsoft.com/azure/devops/artifacts/concepts/upstream-sources)** - Public
-    registries proxy
+- **[Supported Packages](https://learn.microsoft.com/azure/devops/artifacts/start-using-azure-artifacts)** - NuGet, npm, Maven, Python, Universal
+- **[Upstream Sources](https://learn.microsoft.com/azure/devops/artifacts/concepts/upstream-sources)** - Public registries proxy
 
 ______________________________________________________________________
 
@@ -128,8 +121,7 @@ ______________________________________________________________________
 
 - **[Security Overview](https://learn.microsoft.com/azure/devops/organizations/security/)** - Security features
 - **[Permissions](https://learn.microsoft.com/azure/devops/organizations/security/permissions)** - Access control
-- **[Service Connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)** - Secure
-    connections
+- **[Service Connections](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints)** - Secure connections
 - **[Audit Logs](https://learn.microsoft.com/azure/devops/organizations/audit/azure-devops-auditing)** - Track changes
 
 ______________________________________________________________________
@@ -162,10 +154,8 @@ az devops configure --defaults organization=https://dev.azure.com/myorg project=
 Programmatic access:
 
 - **[REST API Reference](https://learn.microsoft.com/rest/api/azure/devops/)** - Complete API docs
-- **[Authentication](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)**
-    \- API authentication
-- **[PAT Tokens](https://learn.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)**
-    \- Personal access tokens
+- **[Authentication](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/authentication-guidance)** - API authentication
+- **[PAT Tokens](https://learn.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate)** - Personal access tokens
 
 ______________________________________________________________________
 
@@ -196,8 +186,7 @@ ______________________________________________________________________
 
 **Learn More:**
 
-- **[Best Practices Guide](https://learn.microsoft.com/azure/devops/pipelines/build/best-practices)** - Official
-    recommendations
+- **[Best Practices Guide](https://learn.microsoft.com/azure/devops/pipelines/build/best-practices)** - Official recommendations
 
 ______________________________________________________________________
 
@@ -233,8 +222,7 @@ ______________________________________________________________________
 
 - **[Azure DevOps CLI](https://learn.microsoft.com/cli/azure/devops)** - Command-line interface
 - **[REST API](https://learn.microsoft.com/rest/api/azure/devops/)** - API reference
-- **[VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)** - IDE
-    integration
+- **[VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)** - IDE integration
 - **[Power BI Integration](https://learn.microsoft.com/azure/devops/report/powerbi/)** - Analytics
 
 ### 👥 Community
@@ -247,10 +235,8 @@ ______________________________________________________________________
 ### 🛠️ Marketplace
 
 - **[Azure DevOps Marketplace](https://marketplace.visualstudio.com/azuredevops)** - Extensions
-- **[Pipeline Tasks](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs)**
-    \- CI/CD tasks
-- **[Widgets](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Installs)**
-    \- Dashboard widgets
+- **[Pipeline Tasks](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Pipelines&sortBy=Installs)** - CI/CD tasks
+- **[Widgets](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Installs)** - Dashboard widgets
 
 ______________________________________________________________________
 

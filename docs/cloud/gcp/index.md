@@ -9,15 +9,14 @@ tags:
 
 # Google Cloud Platform (GCP)
 
-Google's cloud platform. Third in market share but first in data analytics and ML. Kubernetes was born here (GKE is
-solid). Cleaner UX than AWS, better pricing calculators. BigQuery is ridiculously fast. Smaller service catalog than
-AWS/Azure, but quality over quantity.
+Google's cloud platform. Third in market share but first in data analytics and ML. Kubernetes was born here (GKE is solid). Cleaner UX than AWS, better pricing calculators. BigQuery is ridiculously fast. Smaller service catalog than AWS/Azure, but quality over quantity.
 
 ______________________________________________________________________
 
 ## Quick Hits
 
 === "🎯 Essential Services"
+
     ```bash
     # Login
     gcloud auth login
@@ -58,6 +57,7 @@ ______________________________________________________________________
     - IAM is simpler than AWS (but still confusing at first)
 
 === "⚡ Common Patterns"
+
     ```python
     from google.cloud import storage
     from google.cloud import bigquery
@@ -145,6 +145,7 @@ ______________________________________________________________________
     ```
 
 === "🔥 Pro Tips & Gotchas"
+
     **Cost optimization:**
 
     - Use Committed Use Discounts (CUD) for predictable workloads (up to 57% savings)
@@ -198,8 +199,7 @@ ______________________________________________________________________
 
 ### 🎓 Free Resources
 
-- **[Google Cloud Skills Boost](https://www.cloudskillsboost.google/)** - Official training, lots of free quests (start
-    here)
+- **[Google Cloud Skills Boost](https://www.cloudskillsboost.google/)** - Official training, lots of free quests (start here)
 - **[GCP Free Tier](https://cloud.google.com/free)** - $300 credit for 90 days + always-free tier
 - **[freeCodeCamp GCP Course](https://www.youtube.com/watch?v=jpno8FSqpc8)** - 8+ hour deep dive
 - **[GCP Documentation](https://cloud.google.com/docs)** - Official docs (well-written, good examples)
@@ -208,34 +208,25 @@ ______________________________________________________________________
 
 ### 🧪 Interactive Labs
 
-- **[Qwiklabs](https://www.cloudskillsboost.google/catalog)** - Hands-on labs, temporary GCP projects (some free, some
-    paid)
+- **[Qwiklabs](https://www.cloudskillsboost.google/catalog)** - Hands-on labs, temporary GCP projects (some free, some paid)
 - **[Cloud Shell](https://shell.cloud.google.com/)** - Browser-based terminal with gcloud pre-installed
 - **[GCP Marketplace](https://console.cloud.google.com/marketplace)** - One-click deployments
-- **[Terraform GCP Provider Docs](https://registry.terraform.io/providers/hashicorp/google/latest/docs)** - Lots of
-    examples
+- **[Terraform GCP Provider Docs](https://registry.terraform.io/providers/hashicorp/google/latest/docs)** - Lots of examples
 
 ### 📜 Certifications Worth It
 
-- **[Cloud Digital Leader](https://cloud.google.com/learn/certification/cloud-digital-leader)** - $99, non-technical,
-    business-focused (skip if technical)
-- **[Associate Cloud Engineer](https://cloud.google.com/learn/certification/cloud-engineer)** - $125, **most popular**,
-    hands-on focused (this one matters)
-- **[Professional Cloud Architect](https://cloud.google.com/learn/certification/cloud-architect)** - $200,
-    design-focused, tough but valuable
-- **[Professional Data Engineer](https://cloud.google.com/learn/certification/data-engineer)** - $200, worth it if doing
-    data/ML on GCP
-- **[Professional Cloud Developer](https://cloud.google.com/learn/certification/cloud-developer)** - $200, app
-    development focus
+- **[Cloud Digital Leader](https://cloud.google.com/learn/certification/cloud-digital-leader)** - $99, non-technical, business-focused (skip if technical)
+- **[Associate Cloud Engineer](https://cloud.google.com/learn/certification/cloud-engineer)** - $125, **most popular**, hands-on focused (this one matters)
+- **[Professional Cloud Architect](https://cloud.google.com/learn/certification/cloud-architect)** - $200, design-focused, tough but valuable
+- **[Professional Data Engineer](https://cloud.google.com/learn/certification/data-engineer)** - $200, worth it if doing data/ML on GCP
+- **[Professional Cloud Developer](https://cloud.google.com/learn/certification/cloud-developer)** - $200, app development focus
 
 **Reality check:**
 
 - Associate Cloud Engineer is the best starting point (practical, hands-on)
 - Google certs don't expire (unlike Azure's 1 year, AWS's 3 years) - nice!
 - Study 1-2 months, use practice exams
-- [Whizlabs](https://www.whizlabs.com/google-cloud-certified-associate-cloud-engineer/) and
-    [Tutorials Dojo](https://tutorialsdojo.com/courses/google-certified-associate-cloud-engineer-practice-exams/) for
-    practice
+- [Whizlabs](https://www.whizlabs.com/google-cloud-certified-associate-cloud-engineer/) and [Tutorials Dojo](https://tutorialsdojo.com/courses/google-certified-associate-cloud-engineer-practice-exams/) for practice
 
 ### 🚀 Projects to Build
 
@@ -284,8 +275,7 @@ ______________________________________________________________________
 - **[GCP Community Discord](https://discord.gg/google-cloud-community)** - Active, friendly, product teams participate
 - **[Dev.to #gcp](https://dev.to/t/gcp)** - Quality articles and tutorials
 - **[Google Cloud Community](https://www.googlecloudcommunity.com/)** - Official forums, product teams answer questions
-- **[Stack Overflow [google-cloud-platform]](https://stackoverflow.com/questions/tagged/google-cloud-platform)** - 75k+
-    questions
+- **[Stack Overflow [google-cloud-platform]](https://stackoverflow.com/questions/tagged/google-cloud-platform)** - 75k+ questions
 
 ### 🎙️ Podcasts & Newsletters
 
@@ -302,8 +292,7 @@ ______________________________________________________________________
 
 ### 🎪 Events & Conferences
 
-- **[Google Cloud Next](https://cloud.withgoogle.com/next)** - Annual, April-ish, San Francisco + virtual, biggest GCP
-    event
+- **[Google Cloud Next](https://cloud.withgoogle.com/next)** - Annual, April-ish, San Francisco + virtual, biggest GCP event
 - **[Google Cloud Summit](https://cloudonair.withgoogle.com/events/summit)** - Free, regional, various cities
 - **[Google Developer Groups (GDG) Cloud](https://developers.google.com/community/gdg)** - Local meetups worldwide
 - **[Community Day Cloud](https://www.communitydaycloud.com/)** - Community-organized, free
@@ -392,6 +381,4 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-01-13 **Vibe Check:** 🎯 Niche Excellence - GCP is the data/ML cloud. Not as big as AWS/Azure, but
-BigQuery is unmatched, GKE is top-tier, and the UX is cleanest. Pick GCP if you're doing data analytics, ML, or
-Kubernetes at scale. Enterprise adoption growing but still behind AWS/Azure.
+**Last Updated:** 2026-01-13 **Vibe Check:** 🎯 Niche Excellence - GCP is the data/ML cloud. Not as big as AWS/Azure, but BigQuery is unmatched, GKE is top-tier, and the UX is cleanest. Pick GCP if you're doing data analytics, ML, or Kubernetes at scale. Enterprise adoption growing but still behind AWS/Azure.

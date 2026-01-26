@@ -10,11 +10,10 @@ tags:
 
 # Security
 
-Cybersecurity is the set of practices, technologies, and processes designed to protect systems, networks, programs, and
-data from digital attacks, unauthorized access, and damage. In an increasingly connected world, information security is
-essential to protect the confidentiality, integrity, and availability of information.
+Cybersecurity is the set of practices, technologies, and processes designed to protect systems, networks, programs, and data from digital attacks, unauthorized access, and damage. In an increasingly connected world, information security is essential to protect the confidentiality, integrity, and availability of information.
 
 !!! abstract "Fundamental Principles"
+
     - **Confidentiality**: Protect sensitive information from unauthorized access
     - **Integrity**: Ensure data is not modified without authorization
     - **Availability**: Ensure systems and data are available when needed
@@ -78,6 +77,7 @@ ______________________________________________________________________
 Operating systems specialized in security and pentesting.
 
 === "Main Distributions"
+
     - **[Kali Linux](https://www.kali.org)** - Most popular pentesting distribution
     - **[Parrot Security](https://www.parrotsec.org)** - Kali alternative with privacy focus
     - **[BlackArch](https://blackarch.org)** - Arch Linux distribution with 2000+ security tools
@@ -85,21 +85,22 @@ Operating systems specialized in security and pentesting.
     - **[Fedora Security Spin](https://labs.fedoraproject.org/es/security)** - Fedora for security auditing
 
 === "Docker Resources"
-    - [Kali Docker Images](https://www.kali.org/docs/containers/official-kalilinux-docker-images) - Official Kali Linux
-        containers
+
+    - [Kali Docker Images](https://www.kali.org/docs/containers/official-kalilinux-docker-images) - Official Kali Linux containers
 
 ### Pentesting Tools
 
 === "Complete Suites"
+
     - **[Kali Tools Listing](https://tools.kali.org/tools-listing)** - Complete Kali tools catalog
     - **[Burp Suite](https://portswigger.net/burp)** - Integrated web security testing platform
     - **[OWASP ZAP](https://owasp.org/www-project-zap)** - Open-source web security scanner
 
 === "Reconnaissance"
+
     - **[Nmap](https://nmap.org)** - Network scanner and security auditing
     - **[Recon-ng](https://github.com/lanmaster53/recon-ng)** - Web reconnaissance framework
-    - **[DMitry](https://mor-pah.net/software/dmitry-deepmagic-information-gathering-tool)** - Deepmagic Information
-        Gathering Tool
+    - **[DMitry](https://mor-pah.net/software/dmitry-deepmagic-information-gathering-tool)** - Deepmagic Information Gathering Tool
     - **[Skipfish](https://github.com/spinkham/skipfish)** - Active web security scanner
     - **[NmapAutomator](https://github.com/21y4d/nmapAutomator)** - Script to automate Nmap scans
 
@@ -113,6 +114,7 @@ Operating systems specialized in security and pentesting.
     - [Mozilla SSL Config](https://ssl-config.mozilla.org) - SSL configuration generator
 
 === "Web Scanning"
+
     - **[dirsearch](https://github.com/maurosoria/dirsearch)** - Web directory and file search
     - **[DirBuster](https://sourceforge.net/projects/dirbuster)** - Java directory brute force tool
     - **[GoBuster](https://github.com/OJ/gobuster)** - Brute force tool in Go
@@ -122,18 +124,22 @@ Operating systems specialized in security and pentesting.
     - **[Wfuzz](https://github.com/xmendez/wfuzz)** - Web fuzzing tool
 
 === "SSL/TLS Testing"
+
     - **[sslscan](https://github.com/rbsec/sslscan)** - SSL/TLS cipher testing
 
 === "Exploitation"
+
     - **[Metasploit Framework](https://www.metasploit.com)** - Most popular exploitation framework
     - **[Metasploit GitHub](https://github.com/rapid7/metasploit-framework)** - Official repository
     - **[Exploit Database](https://www.exploit-db.com)** - Public exploit archive
 
 === "Decoding"
+
     - **[Rot Decode](https://rot13.com)** - ROT13/ROT47 decoder
     - **[Reqbin](https://reqbin.com)** - API development and testing tools
 
 === "OSINT"
+
     - **[Maltego](https://www.maltego.com)** - Intelligence and link analysis platform
     - **[CaseFile](https://gitlab.com/kalilinux/packages/casefile)** - Offline analysis tool
 
@@ -144,11 +150,13 @@ ______________________________________________________________________
 Google Dorking is the technique of using Google advanced search operators to find sensitive information.
 
 === "Resources"
+
     - **[ExploitDB Google Dorks](https://www.exploit-db.com/google-hacking-database)** - Google Dorks database
     - **[GBHackers Dorks List](https://gbhackers.com/latest-google-dorks-list)** - Updated Google Dorks list
     - **[go-dork](https://github.com/dwisiswant0/go-dork)** - Tool to automate Google Dorking
 
 === "Dork Examples"
+
     ```text
     # Search for exposed webcams
     inurl:/view.shtml
@@ -176,11 +184,13 @@ ______________________________________________________________________
 Vulnerability discovery reward programs.
 
 === "Resources"
+
     - **[Holy Tips](https://github.com/HolyBugx/HolyTips)** - Tips collection for bug bounty hunters
     - **[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)** - Vulnerable web application for practice
     - **[Juice Shop Demo](https://juice-shop.herokuapp.com)** - Juice Shop online demo
 
 === "Platforms"
+
     - **HackerOne** - Leading bug bounty platform
     - **Bugcrowd** - Crowdsourced security platform
     - **Synack** - Security researcher network
@@ -194,6 +204,7 @@ ______________________________________________________________________
 ### OWASP (Open Web Application Security Project)
 
 === "OWASP Resources"
+
     - **[OWASP Foundation](https://github.com/OWASP)** - Non-profit organization for application security
     - **[OWASP Cheatsheets](https://github.com/OWASP/CheatSheetSeries)** - Security reference sheets
     - **[OWASP Top 10](https://owasp.org/www-project-top-ten/)** - 10 most critical web security risks
@@ -225,12 +236,14 @@ ______________________________________________________________________
 Word lists for brute force attacks and fuzzing.
 
 === "Wordlist Resources"
+
     - **[Awesome Wordlist](https://github.com/gmelodie/awesome-wordlists)** - Curated wordlist collection
     - **[Probable Wordlists](https://github.com/berzerk0/Probable-Wordlists)** - Real data-based wordlists
     - **[SecLists](https://github.com/danielmiessler/SecLists)** - Security testing list collection
     - **[RockYou](https://github.com/brannondorsey/naive-hashcat/releases/tag/data)** - Leaked password wordlist
 
 === "Custom Wordlist Ideas"
+
     - **[Fictional Deities](https://en.wikipedia.org/wiki/List_of_fictional_deities)** - Fictional deities
     - **[Mythologies](https://simple.wikipedia.org/wiki/List_of_mythologies)** - World mythologies
     - **[Vampires](https://en.wikipedia.org/wiki/Vampire_folklore_by_region)** - Vampire folklore by region
@@ -244,6 +257,7 @@ ______________________________________________________________________
 ### Learning Platforms
 
 === "Online Labs"
+
     - **[HackTheBox](https://www.hackthebox.com)** - Pentesting practice platform
     - **[TryHackMe](https://tryhackme.com)** - Gamified cybersecurity learning
     - **[PentesterLab](https://pentesterlab.com)** - Web pentesting exercises
@@ -252,11 +266,13 @@ ______________________________________________________________________
     - **[Root-Me](https://www.root-me.org)** - Hacking challenge platform
 
 === "CTF (Capture The Flag)"
+
     - **[CTFtime](https://ctftime.org)** - CTF calendar and rankings
     - **[PicoCTF](https://picoctf.org)** - Educational CTF
     - **[HackThisSite](https://www.hackthissite.org)** - Legal hacking challenges
 
 === "Learning Resources"
+
     - **[Hackaday.io](https://hackaday.io)** - Hackers and makers community
     - **[Hackster.io](https://www.hackster.io)** - Hardware and software projects
     - **[PortSwigger Web Security Academy](https://portswigger.net/web-security)** - Free web security academy
@@ -292,6 +308,7 @@ ______________________________________________________________________
 ## Best Practices
 
 !!! success "Security Principles"
+
     1. **Defense in Depth**: Multiple security layers
     1. **Least Privilege**: Minimum necessary privileges
     1. **Separation of Duties**: Segregation of critical functions
@@ -308,18 +325,21 @@ ______________________________________________________________________
 ## Communities and Resources
 
 === "Communities"
+
     - **[r/netsec](https://www.reddit.com/r/netsec/)** - Network security
     - **[r/AskNetsec](https://www.reddit.com/r/AskNetsec/)** - Security Q&A
     - **[r/cybersecurity](https://www.reddit.com/r/security/)** - General cybersecurity
     - **[SecurityTube](http://www.securitytube.net/)** - Security videos
 
 === "Blogs and Resources"
+
     - **[Krebs on Security](https://krebsonsecurity.com)** - Brian Krebs blog
     - **[Troy Hunt's Blog](https://www.troyhunt.com)** - Security and breach notifications
     - **[Schneier on Security](https://www.schneier.com)** - Bruce Schneier blog
     - **[The Hacker News](https://thehackernews.com)** - Cybersecurity news
 
 === "Podcasts"
+
     - **Darknet Diaries**: Cybersecurity stories
     - **Security Now**: Security news and analysis
     - **Risky Business**: Information security news

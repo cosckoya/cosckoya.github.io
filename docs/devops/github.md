@@ -8,8 +8,7 @@ ______________________________________________________________________
 
 ### What is GitHub?
 
-GitHub is the world's largest code hosting platform built on Git. It provides distributed version control, collaboration
-tools, CI/CD automation, security features, and a marketplace for developer tools.
+GitHub is the world's largest code hosting platform built on Git. It provides distributed version control, collaboration tools, CI/CD automation, security features, and a marketplace for developer tools.
 
 **Key Features:**
 
@@ -54,34 +53,26 @@ ______________________________________________________________________
 
 Learn repository management:
 
-- **[About Repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)**
-    \- Repository basics
-- **[Best Practices](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories)**
-    \- Repository organization
+- **[About Repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)** - Repository basics
+- **[Best Practices](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories)** - Repository organization
 - **.gitignore** - [Ignore files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
-- **README** -
-    [Writing good READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
+- **README** - [Writing good READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
 ### Pull Requests
 
 Master the PR workflow:
 
-- **[About Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)**
-    \- PR concepts
-- **[Creating a PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)**
-    \- How to create
-- **[Code Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests)**
-    \- Review process
+- **[About Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)** - PR concepts
+- **[Creating a PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)** - How to create
+- **[Code Review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests)** - Review process
 
 ### Branching Strategy
 
 Common workflows:
 
 - **[GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)** - Simple branching model
-- **[Branch Protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches)**
-    \- Protect main branches
-- **[GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)** - Advanced workflow
-    (external)
+- **[Branch Protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches)** - Protect main branches
+- **[GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)** - Advanced workflow (external)
 
 ______________________________________________________________________
 
@@ -110,16 +101,14 @@ Project management:
 
 - **[Projects V2](https://docs.github.com/en/issues/planning-and-tracking-with-projects)** - Kanban boards
 - **[Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues)** - Track work
-- **[Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones)** -
-    Release planning
+- **[Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones)** - Release planning
 
 ### GitHub Pages
 
 Static site hosting:
 
 - **[GitHub Pages Docs](https://docs.github.com/en/pages)** - Free hosting for docs
-- **[Jekyll Integration](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)** - Static site
-    generator
+- **[Jekyll Integration](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)** - Static site generator
 
 ______________________________________________________________________
 
@@ -173,8 +162,7 @@ ______________________________________________________________________
 
 **Learn More:**
 
-- **[Best Practices Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories)**
-    \- Official recommendations
+- **[Best Practices Guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories)** - Official recommendations
 - **[GitHub Skills](https://skills.github.com/)** - Interactive learning paths
 
 ______________________________________________________________________
