@@ -330,4 +330,4 @@ ______________________________________________________________________
 
 - [DevOps Tools](../devops/) - Security tools and automation
 - [Cloud Security](../cloud/) - Cloud platform security
-- [SysAdmin Security](../sysadmin/#seguridad) - Hardening and patch management
+- [Containerization Security](../containerization/container-security.md) - Container hardening and security

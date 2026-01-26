@@ -53,11 +53,15 @@ theme:
       default: octicons/tag-16
   features:
     # Navigation enhancements
-    - navigation.indexes
+    - navigation.indexes           # Section index pages
     - navigation.breadcrumbs       # Breadcrumb trail
     - navigation.instant.loading   # SPA-like navigation
+    - navigation.instant.prefetch  # Prefetch pages on hover
+    - navigation.instant.progress  # Show progress indicator
     - navigation.tracking          # URL updates on scroll
     - navigation.top               # Back to top button
+    - navigation.footer            # Previous/next page navigation
+    - navigation.path              # Show page path in navigation
 
     # Search improvements
     - search.suggest               # Search suggestions
@@ -70,9 +74,15 @@ theme:
     - content.code.select          # Select code easily
     - content.code.annotate        # Inline code annotations
     - content.tooltips             # Abbreviation tooltips
+    - content.action.edit          # Edit page link
+    - content.action.view          # View source link
 
     # Table of contents
     - toc.follow                   # Follow scroll position
+
+    # Header improvements
+    - header.autohide              # Auto-hide header on scroll
+    - announce.dismiss             # Dismissible announcements
 
 extra:
   generator: false
