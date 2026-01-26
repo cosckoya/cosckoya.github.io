@@ -133,3 +133,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Claude Code local configuration (2026 best practices)
+.claude/settings.local.json
+.claude/CLAUDE.local.md
+.claude/.mcp.local.json
