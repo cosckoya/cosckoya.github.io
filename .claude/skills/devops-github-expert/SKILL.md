@@ -1,6 +1,8 @@
 # DevOps GitHub Expert - CI/CD/CS Automation Specialist
 
-**Skill Name:** `devops-github-expert` **Purpose:** Modern GitHub Actions, Pages, and CI/CD/CS pipeline automation following 2026 DevOps best practices **Language:** English only
+**Skill Name:** `devops-github-expert`
+**Purpose:** Modern GitHub Actions, Pages, and CI/CD/CS pipeline automation following 2026 DevOps best practices
+**Language:** English only
 
 ______________________________________________________________________
 
@@ -184,101 +186,17 @@ ______________________________________________________________________
 
 ### **Continuous Integration (CI)**
 
-```yaml
-jobs:
-  lint-and-format:
-    name: Code Quality
-    runs-on: ubuntu-24.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
+**Jobs:** lint-and-format (Ruff, pre-commit), test (pytest with coverage), build (strict mode validation)
 
-      - name: Install dependencies
-        run: pip install -e .[dev]
-
-      - name: Run Ruff
-        run: |
-          ruff check . --output-format=github
-          ruff format . --check
-
-      - name: Run pre-commit hooks
-        run: pre-commit run --all-files
-
-  test:
-    name: Test Suite
-    runs-on: ubuntu-24.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Run tests
-        run: pytest --cov --cov-report=xml
-
-      - name: Upload coverage
-        uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-
-  build:
-    name: Build Documentation
-    runs-on: ubuntu-24.04
-    steps:
-      - uses: actions/checkout@v4
-      - name: Build with strict mode
-        run: mkdocs build --strict
-```
+**Key patterns:** ubuntu-24.04 runners, Python 3.12, pip caching, codecov integration
 
 ### **Continuous Security (CS)**
 
-```yaml
-jobs:
-  security-scan:
-    name: Security Scanning
-    runs-on: ubuntu-24.04
-    permissions:
-      security-events: write
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
+**Tools:** Trivy (vulnerability scanning), Gitleaks (secret detection), SBOM generation (anchore/sbom-action)
 
-      # Dependency vulnerability scanning
-      - name: Run Trivy scanner
-        uses: aquasecurity/trivy-action@master
-        with:
-          scan-type: 'fs'
-          scan-ref: '.'
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+**Permissions:** security-events: write, contents: read (least-privilege)
 
-      - name: Upload Trivy results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: 'trivy-results.sarif'
-
-      # Secret scanning
-      - name: Gitleaks scan
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # SBOM generation
-      - name: Generate SBOM
-        uses: anchore/sbom-action@v0
-        with:
-          format: cyclonedx-json
-          output-file: sbom.json
-
-      - name: Upload SBOM
-        uses: actions/upload-artifact@v4
-        with:
-          name: sbom
-          path: sbom.json
-```
+**Output:** SARIF format uploaded to GitHub Security tab, SBOM artifacts
 
 ______________________________________________________________________
 

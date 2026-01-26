@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
+**Language Policy:** All Claude Code interactions must be conducted in English only.
+
 This is a personal technical documentation site built with MkDocs Material and hosted on GitHub Pages at https://cosckoya.github.io. The site serves as a comprehensive knowledge base covering six main technical domains: SysAdmin, Cloud, DevOps, Containerization, Security (Hack), and Tools.
 
 ## Build System and Commands
@@ -37,26 +39,12 @@ make update           # Update dependencies to latest compatible versions
 
 ### Dependency Management
 
-The project uses modern **PEP 621** standards via `pyproject.toml`:
-
-- Single source of truth for all dependencies (KISS principle)
-- Separates production and development dependencies
-- Includes Ruff configuration for future Python code quality
-- No need for `requirements.txt` or `requirements-lock.txt`
-
-**Installation:**
+Uses **PEP 621** via `pyproject.toml` - single source of truth for all dependencies.
 
 ```bash
-pip install -e .          # Install production dependencies
-pip install -e .[dev]     # Install with dev tools (mdformat, codespell, yamllint, ruff)
+pip install -e .          # Production dependencies
+pip install -e .[dev]     # + development tools (mdformat, codespell, ruff)
 ```
-
-**Why pyproject.toml?**
-
-- **KISS**: Single configuration file instead of multiple
-- **DRY**: No duplication between setup.py, requirements.txt, etc.
-- **Modern**: PEP 621 standard, supported by all modern Python tools
-- **Clean**: Declarative format, easier to read and maintain
 
 ## Architecture
 
@@ -124,61 +112,29 @@ Available extensions in `mkdocs.yml`:
 
 ### Link Integrity
 
-Use DocMaster Tools scripts for validation:
+Validate documentation integrity with these commands:
 
 ```bash
-./scripts/docmaster-tools.sh check-links          # Verify all internal links
-./scripts/docmaster-tools.sh find-orphans         # Find files not in navigation
-./scripts/docmaster-tools.sh validate-structure   # Check directory structure
-./scripts/docmaster-tools.sh full-maintenance     # Run all checks
+make build                    # Strict mode catches broken links and missing files
+make test                     # Run pre-commit hooks + build validation
+grep -r "\.md" docs/ | grep -v "site/"  # Find all markdown files
 ```
 
-Exit codes: 0 = success, 1 = issues detected
+The strict build mode (`mkdocs build --strict`) will fail on:
+- Broken internal links
+- Missing files in navigation
+- Orphaned pages not in SUMMARY.md files
 
 ### Code Quality and Style Guidelines
 
-The project uses **pre-commit hooks** to enforce code quality automatically. Hooks are configured in `.pre-commit-config.yaml` and integrated with `pyproject.toml`.
-
-**First-time setup:**
+**Pre-commit hooks** enforce quality automatically (configured in `.pre-commit-config.yaml`):
 
 ```bash
-make dev              # Installs pre-commit and all hooks automatically
+make dev                      # Setup hooks
+pre-commit run --all-files    # Run manually
 ```
 
-**Manual operations:**
-
-```bash
-# Run all hooks on all files
-pre-commit run --all-files
-
-# Run specific hook
-pre-commit run ruff --all-files
-pre-commit run mdformat --all-files
-
-# Update hooks to latest versions
-pre-commit autoupdate
-
-# Skip hooks temporarily (use sparingly)
-git commit --no-verify
-```
-
-**Automated checks:**
-
-- **Ruff** - Modern Python linter and formatter (replaces black, isort, flake8)
-- **mdformat** - Markdown formatting with MkDocs support
-- **codespell** - Spell checking for documentation
-- **yamllint** - YAML file validation
-- **bandit** - Python security vulnerability scanning
-- **Standard hooks** - File checks, trailing whitespace, JSON/TOML/YAML syntax
-
-**On every commit**, pre-commit automatically:
-
-1. Formats Python code with Ruff
-1. Formats Markdown files preserving MkDocs syntax
-1. Checks spelling in all text files
-1. Validates YAML configuration files
-1. Prevents commits to protected branches (main/master)
-1. Checks for large files, merge conflicts, private keys
+**Automated checks:** Ruff (Python), mdformat (Markdown), codespell (spelling), yamllint (YAML), bandit (security)
 
 ## CI/CD Pipeline
 
@@ -199,14 +155,14 @@ GitHub Actions workflow (`.github/workflows/gh-pages.yml`):
 1. Create `docs/newsection/index.md` with section overview
 1. Create `docs/newsection/SUMMARY.md` with section navigation
 1. Add section to main `docs/SUMMARY.md`: `- [New Section](newsection/)`
-1. Verify with `make serve` and `./scripts/docmaster-tools.sh validate-structure`
+1. Verify with `make serve` and `make build` (strict mode validates structure)
 
 ### Fixing Broken Links
 
-1. Run `./scripts/docmaster-tools.sh check-links` to identify issues
+1. Run `make build` to identify broken links (strict mode fails on errors)
 1. Links must be relative to the file containing them
 1. Directory links should point to directory with trailing slash or to `index.md`
-1. Verify fix with `make build` (strict mode will catch broken links)
+1. Test with `make serve` to verify navigation works correctly
 
 ### Updating Dependencies
 
@@ -222,108 +178,21 @@ Dependabot runs monthly to suggest dependency updates via pull requests.
 
 ### `/mkdocs-material-expert` - MkDocs Material Theme Specialist
 
-A UX/UI documentation designer specializing in Material for MkDocs. She's passionate about beautiful, accessible documentation and loves octicons! :octicons-heart-16:
+UX/UI designer for Material for MkDocs. Specializes in theme configuration, icon systems (loves octicons! :octicons-heart-16:), navigation, plugins, performance, and accessibility (WCAG 2.1 AA).
 
-**Core Expertise**:
-
-- Material theme configuration (colors, typography, icons)
-- Icon systems (Octicons, FontAwesome, Material Design Icons)
-- UX/UI optimization (navigation, search, breadcrumbs, social cards)
-- Plugin ecosystem (search, tags, blog, social, offline, minify)
-- Performance optimization and accessibility (WCAG 2.1 AA)
-- Advanced features (annotations, code blocks, admonitions, tabs)
-
-**Use when**:
-
-- Enhancing mkdocs.yml configuration
-- Adding new Material theme features
-- Improving navigation and search UX
-- Configuring plugins (social cards, git-committers, blog)
-- Optimizing site performance
-- Ensuring accessibility compliance
-- Adding custom CSS/styling
-
-**Example invocations**:
-
-- `/mkdocs-material-expert audit` - Review current setup and suggest improvements
-- `/mkdocs-material-expert add octicons` - Configure octicon icons
-- `/mkdocs-material-expert improve navigation` - Enhance navigation UX
-- `/mkdocs-material-expert enable social cards` - Setup OG image generation
+**Use for:** mkdocs.yml configuration, Material theme features, navigation/search UX, plugin setup, performance optimization, custom CSS.
 
 ### `/devops-github-expert` - CI/CD/CS Pipeline Automation Specialist
 
-A DevOps engineer specializing in GitHub Actions, GitHub Pages, and modern CI/CD/CS practices. She follows KISS, DRY, and Clean Code principles, embracing Infrastructure as Code, Everything as Code, Immutable Infrastructure, and Continuous Everything philosophies.
+DevOps engineer for GitHub Actions, Pages, and modern CI/CD/CS. Follows KISS, DRY, Clean Code, IaC, Everything as Code, Immutable Infrastructure, Continuous Everything.
 
-**Core Expertise**:
-
-- GitHub Actions workflows (CI/CD/CS pipelines)
-- GitHub Pages deployment (modern 2026 patterns)
-- Security scanning (Trivy, Gitleaks, SBOM generation)
-- Performance optimization (caching, parallel jobs, matrix strategies)
-- Infrastructure as Code (Dependabot, Renovate, repository settings)
-- Reusable workflows and composite actions (DRY principle)
-- Immutable deployments (build once, deploy everywhere)
-
-**Use when**:
-
-- Auditing or optimizing GitHub Actions workflows
-- Implementing or improving GitHub Pages deployment
-- Adding security scanning (vulnerability detection, secret scanning)
-- Setting up dependency management (Dependabot/Renovate)
-- Creating reusable workflows or composite actions
-- Improving pipeline performance and efficiency
-- Enforcing DevOps best practices and security policies
-
-**Example invocations**:
-
-- `/devops-github-expert audit` - Review workflows for security and performance issues
-- `/devops-github-expert optimize pages deployment` - Modernize GitHub Pages workflow
-- `/devops-github-expert add security scanning` - Implement Trivy, Gitleaks, SBOM
-- `/devops-github-expert setup dependabot` - Configure automated dependency updates
-- `/devops-github-expert create reusable workflow` - Design DRY composite actions
+**Use for:** Workflow optimization, GitHub Pages deployment, security scanning (Trivy, Gitleaks, SBOM), Dependabot setup, reusable workflows, performance tuning.
 
 ### `/technical-writer` - DevSecOps Documentation Specialist
 
-A professional technical writer who creates documentation for ANY technology following formal international standards that are superior to AWS docs style. Follows IEC/IEEE 82079-1, ALCOA-C principles, DevSecOps philosophies, and 2026 AI optimization (GEO).
+Professional technical writer for ANY technology following formal IEC/IEEE 82079-1 and ALCOA-C standards (superior to AWS docs). Integrates DevSecOps philosophies, Docs-as-Code, and AI optimization (GEO).
 
-**Core Standards**:
-
-- **IEC/IEEE 82079-1:2019** - International standard for technical instructions
-- **ALCOA-C** - Attributable, Legible, Contemporaneous, Original, Accurate, Complete
-- **DevSecOps** - Zero Trust, PoLP, Defense in Depth, Shift Left, Immutable Infrastructure
-- **Docs-as-Code** - Git versioning, CI/CD integration, automated validation
-- **AI-Optimized (GEO)** - Generated Engine Optimization for 2026 LLMs
-
-**Core Expertise**:
-
-- Formal standards compliance (IEC/IEEE 82079-1, ALCOA-C)
-- API documentation (OpenAPI/Swagger 3.x specifications)
-- Architecture documentation (ADRs, diagrams as code with Mermaid)
-- Security documentation (threat models, policies as code, compliance)
-- Operational documentation (runbooks with RTO/RPO, troubleshooting guides)
-- Material for MkDocs integration (octicons, admonitions, tabs, annotations)
-- Automated validation (CI/CD checks, quality metrics)
-- Multi-technology support (Kubernetes, Docker, Terraform, Prometheus, etc.)
-
-**Use when**:
-
-- Documenting ANY technology with formal standards
-- Creating API documentation with OpenAPI specifications
-- Writing Architecture Decision Records (ADRs)
-- Creating security documentation (threat models, policies)
-- Developing operational runbooks and troubleshooting guides
-- Ensuring documentation quality metrics and compliance
-- Adding automated validation to documentation pipelines
-- Optimizing documentation for AI/LLM consumption
-
-**Example invocations**:
-
-- `/technical-writer document Kubernetes RBAC` - Create formal K8s documentation
-- `/technical-writer create ADR for service mesh adoption` - Write architecture decision record
-- `/technical-writer write threat model for authentication` - Security documentation
-- `/technical-writer create runbook for database failover` - Operational documentation
-- `/technical-writer document API with OpenAPI spec` - API documentation with formal spec
-- `/technical-writer improve docs quality metrics` - Add validation and metrics
+**Use for:** API docs (OpenAPI), ADRs, security docs (threat models), runbooks (RTO/RPO), infrastructure docs, quality metrics, automated validation.
 
 ## Project-Specific Notes
 
@@ -348,20 +217,6 @@ All builds use `--strict` flag. This means:
 
 This is intentional and ensures high quality documentation.
 
-### DocMaster Tools Integration
-
-The `scripts/docmaster-tools.sh` script provides automated maintenance:
-
-- **check-links** - Scan for broken internal links
-- **find-orphans** - Find markdown files not in navigation
-- **validate-structure** - Check directory structure conventions
-- **cleanup-empty** - Remove empty directories
-- **audit-freshness** - Find stale content and TODO markers
-- **validate-build** - Run build in strict mode
-- **full-maintenance** - Run all checks in sequence
-
-Use these tools before committing significant changes to ensure documentation integrity.
-
 ### Assets and Images
 
 - Logos/favicons: `docs/resources/img/`
@@ -374,3 +229,9 @@ Use these tools before committing significant changes to ensure documentation in
 - `develop` - Development branch (based on git status)
 - Feature branches - Create from develop, PR back to develop
 - Only maintainer pushes to main trigger deployment
+
+---
+
+**Last Updated:** 2026-01-26
+**Claude Code Version:** 2026.01
+**Maintained By:** cosckoya + Claude Code

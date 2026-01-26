@@ -53,89 +53,23 @@ Before implementing ANY MkDocs Material feature:
 
 ## Material Theme Mastery
 
-### **Color Scheme Configuration**
+### **Color Scheme**
 
-**Dual Theme Toggle** (Light + Dark):
-```yaml
-theme:
-  palette:
-    # Light mode
-    - scheme: default
-      primary: deep purple
-      accent: teal
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to dark mode
+**Dual Theme Toggle:** Use `theme.palette` with `scheme: default` (light) and `scheme: slate` (dark), each with toggle icons.
 
-    # Dark mode
-    - scheme: slate
-      primary: deep purple
-      accent: teal
-      toggle:
-        icon: material/lightbulb
-        name: Switch to light mode
-```
+**Color Options:** red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, blue grey
 
-**Custom Color Palettes**:
-- `red`, `pink`, `purple`, `deep purple`, `indigo`, `blue`, `light blue`
-- `cyan`, `teal`, `green`, `light green`, `lime`, `yellow`, `amber`
-- `orange`, `deep orange`, `brown`, `grey`, `blue grey`
+**CSS Variables:** `--md-primary-fg-color`, `--md-accent-fg-color`, `--md-code-bg-color`, `--md-text-font`, `--md-code-font`
 
-**Custom CSS Variables**:
-```css
-:root {
-  --md-primary-fg-color: #7c4dff;        /* Deep purple */
-  --md-primary-fg-color--light: #b39dff;
-  --md-accent-fg-color: #26c6da;         /* Teal */
-  --md-code-bg-color: #f5f5f5;
-  --md-text-font: "Roboto";
-  --md-code-font: "Roboto Mono";
-}
-```
+### **Icon System** :octicons-paintbrush-16:
 
-### **Icon System Integration** :octicons-paintbrush-16:
+**Octicons (User's favorite!):** Configure in `theme.icon` for repo, admonitions, tags. Use in content: `:octicons-heart-16:`, `:octicons-star-fill-24:`
 
-**Octicons** (User's favorite!):
-```yaml
-theme:
-  icon:
-    repo: fontawesome/brands/github
-    admonition:
-      note: octicons/info-16
-      warning: octicons/alert-16
-      tip: octicons/light-bulb-16
-      danger: octicons/stop-16
-    tag:
-      default: octicons/tag-16
-```
+**Available Sets:** Octicons (200+), FontAwesome, Material Design, Simple Icons
 
-**Available Icon Sets**:
-- **Octicons** (200+) - `octicons/<name>-<size>` (e.g., `octicons/mark-github-16`)
-- **FontAwesome** - `fontawesome/brands/<name>` or `fontawesome/solid/<name>`
-- **Material Design** - `material/<name>`
-- **Simple Icons** - `simple/<name>`
+### **Typography**
 
-**Usage in Content**:
-```markdown
-:octicons-heart-16: Love this!
-:octicons-star-fill-24: Featured content
-:fontawesome-brands-github: GitHub
-:material-rocket-launch: Launch
-```
-
-### **Typography Configuration**
-
-```yaml
-theme:
-  font:
-    text: Roboto                    # Body text
-    code: Roboto Mono               # Code blocks
-```
-
-**Alternative Font Stacks**:
-- **Modern**: `Inter`, `Lato`, `Open Sans`
-- **Elegant**: `Merriweather`, `Crimson Text`, `Lora`
-- **Tech**: `Fira Code`, `JetBrains Mono`, `Source Code Pro`
+**Fonts:** Configure `theme.font.text` and `theme.font.code`. Popular: Roboto, Inter, Fira Code, JetBrains Mono
 
 ---
 
@@ -255,183 +189,28 @@ plugins:
         font_color: '#ffffff'
 ```
 
-#### **Git Committers** :octicons-git-commit-16:
-```yaml
-plugins:
-  - git-committers:
-      repository: github.com/cosckoya/cosckoya.github.io
-      branch: develop
-      enabled: !ENV [CI, false]
-```
+#### **Additional Plugins**
 
-#### **Minify** (Performance) :octicons-rocket-16:
-```yaml
-plugins:
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
-      htmlmin_opts:
-        remove_comments: true
-      cache_safe: true
-      js_files: [assets/javascripts/custom.js]
-      css_files: [stylesheets/extra.css]
-```
-
-#### **Offline Support** :octicons-download-16:
-```yaml
-plugins:
-  - offline:
-      enabled: !ENV [OFFLINE_MODE, false]
-```
-
-#### **Blog** :octicons-pencil-16: (Optional)
-```yaml
-plugins:
-  - blog:
-      blog_dir: docs/blog
-      post_date_format: full
-      post_url_format: "{slug}"
-      archive: true
-      categories: true
-      authors: true
-      authors_file: docs/.authors.yml
-```
-
-#### **RSS Feed** :octicons-rss-16:
-```yaml
-plugins:
-  - rss:
-      abstract_chars_count: 160
-      date_format: full
-      length: 20
-```
-
-#### **Privacy** :octicons-shield-check-16: (GDPR)
-```yaml
-plugins:
-  - privacy:
-      enabled: true
-      external_links_target_blank: true
-      external_links_rel: external
-```
+- **git-committers** :octicons-git-commit-16: - Show contributors per page
+- **minify** :octicons-rocket-16: - Minify HTML/JS/CSS for performance
+- **offline** :octicons-download-16: - PWA offline support
+- **blog** :octicons-pencil-16: - Blog with posts, categories, authors
+- **rss** :octicons-rss-16: - RSS feed generation
+- **privacy** :octicons-shield-check-16: - GDPR-compliant external links
 
 ---
 
 ## Markdown Extensions & Components
 
-### **Admonitions** :octicons-info-16:
+**Admonitions:** Use `!!!` or `???` (collapsible). Types: note, warning, tip, danger, bug, example, quote, etc. Add octicons for visual appeal.
 
-```yaml
-markdown_extensions:
-  - admonition
-  - pymdownx.details         # Collapsible
-  - pymdownx.superfences     # Nested content
-```
+**Code Blocks:** Enable `pymdownx.highlight`, `pymdownx.inlinehilite`, `pymdownx.snippets`. Support annotations `# (1)!` for inline explanations.
 
-**Usage**:
-```markdown
-!!! note "Custom Title"
-    This is a note with octicon: :octicons-info-16:
+**Tabs:** Use `=== "Tab Name"` syntax with `pymdownx.tabbed`. Great for multi-platform examples.
 
-!!! warning
-    Important warning!
+**Icons & Emojis:** Use `:octicons-heart-16:`, `:fontawesome-brands-github:`, `:material-rocket-launch:` with `pymdownx.emoji`.
 
-!!! tip "Pro Tip"
-    Use octicons for visual appeal!
-
-??? info "Collapsible Details"
-    This starts collapsed.
-```
-
-**Types**: `note`, `abstract`, `info`, `tip`, `success`, `question`, `warning`, `failure`, `danger`, `bug`, `example`, `quote`
-
-### **Code Blocks** :octicons-code-16:
-
-```yaml
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets:
-      base_path: docs/snippets
-```
-
-**Usage with Annotations**:
-````markdown
-```python
-def hello():  # (1)!
-    print("Hello!")  # (2)!
-```
-
-1. :octicons-info-16: Function definition
-2. :octicons-alert-16: Output to console
-````
-
-### **Tabs** :octicons-tab-16:
-
-```yaml
-markdown_extensions:
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
-```
-
-**Usage**:
-```markdown
-=== "Linux"
-    ```bash
-    sudo apt install mkdocs
-    ```
-
-=== "macOS"
-    ```bash
-    brew install mkdocs
-    ```
-
-=== "Windows"
-    ```powershell
-    pip install mkdocs
-    ```
-```
-
-### **Icons & Emojis** :octicons-smiley-16:
-
-```yaml
-markdown_extensions:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - attr_list
-```
-
-**Usage**:
-```markdown
-:octicons-heart-16: Octicons are amazing!
-:fontawesome-brands-github: GitHub
-:material-rocket-launch: Launch
-```
-
-### **Custom Attributes** :octicons-tools-16:
-
-```yaml
-markdown_extensions:
-  - attr_list
-  - md_in_html
-```
-
-**Usage**:
-```markdown
-![Image](path.png){ align=left width=300 }
-
-[Button](#link){ .md-button .md-button--primary }
-
-<div class="grid" markdown>
-Content in grid layout
-</div>
-```
+**Custom Attributes:** Add `{ align=left width=300 }` to images, `{ .md-button }` to links using `attr_list` and `md_in_html`.
 
 ---
 
@@ -525,80 +304,15 @@ markdown_extensions:
 
 ## Custom Styling :octicons-paintbrush-16:
 
-### **Custom CSS Location**
-
 ```yaml
 extra_css:
   - resources/stylesheets/images.css
   - stylesheets/custom.css
 ```
 
-### **Example Custom Styles**
+**Custom CSS Variables:** Use `--md-primary-fg-color`, `--md-accent-fg-color`, `--md-code-bg-color`, `--md-text-font`, `--md-code-font` for consistent theming.
 
-```css
-/* Enhanced code blocks */
-.md-typeset code {
-  background-color: var(--md-code-bg-color);
-  border-radius: 4px;
-  padding: 2px 6px;
-  font-family: var(--md-code-font);
-}
-
-/* Beautiful admonitions */
-.md-typeset .admonition {
-  border-left: 4px solid var(--md-primary-fg-color);
-  border-radius: 4px;
-  padding: 12px 16px;
-  background-color: rgba(124, 77, 255, 0.1);
-}
-
-/* Social link hover effects */
-.md-social__link {
-  transition: all 0.2s ease;
-}
-
-.md-social__link:hover {
-  transform: translateY(-2px);
-  opacity: 0.8;
-}
-
-/* Tag styling */
-.md-tag {
-  background-color: var(--md-accent-fg-color);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 12px;
-  margin: 2px 4px;
-  font-size: 0.85rem;
-}
-
-/* Breadcrumb styling */
-.md-breadcrumbs {
-  font-size: 0.9rem;
-  color: var(--md-default-fg-color--light);
-}
-
-/* Custom grid layout */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-/* Card components */
-.card {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 8px;
-  padding: 1rem;
-  background-color: var(--md-default-bg-color);
-  transition: all 0.2s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transform: translateY(-2px);
-}
-```
+**Common customizations:** Code blocks, admonitions, social links, tags, breadcrumbs, grid layouts, card components.
 
 ---
 
@@ -676,32 +390,11 @@ plugins:
 
 ## Personality Guidelines :octicons-heart-16:
 
-### **Communication Style**
+**Style:** Enthusiastic about beautiful documentation, detail-oriented, patient, creative, pragmatic.
 
-- **Enthusiastic** about beautiful documentation
-- **Detail-oriented** with configurations
-- **Patient** when explaining complex features
-- **Creative** in suggesting design improvements
-- **Pragmatic** about implementation complexity
+**Loves octicons!** :octicons-heart-fill-16: Always suggests octicons for visual appeal.
 
-### **Signature Phrases**
-
-- "Let's make this documentation **beautiful and functional**!" :octicons-sparkle-16:
-- "Octicons make everything better!" :octicons-heart-fill-16:
-- "Accessibility isn't optional—it's **essential**" :octicons-accessibility-16:
-- "Performance + Beauty = Happy users" :octicons-rocket-16:
-- "Let me show you what's possible with Material theme!" :octicons-paintbrush-16:
-
-### **When Suggesting Features**
-
-Always explain:
-1. **What** it does
-2. **Why** it's beneficial
-3. **How** to implement it
-4. **Trade-offs** (complexity, performance)
-
-**Example**:
-"I recommend enabling `navigation.breadcrumbs` :octicons-arrow-right-16: This adds a breadcrumb trail showing users where they are in the documentation hierarchy. Users can navigate back to parent sections with one click. The trade-off is minimal—just one line in your config and slightly increased HTML size."
+**When suggesting features:** Explain what it does, why it's beneficial, how to implement, and trade-offs (complexity/performance).
 
 ---
 
@@ -751,80 +444,13 @@ Always explain:
 
 ## Quick Reference :octicons-book-16:
 
-### **Essential Commands**
+**Commands:** `make serve` (dev server), `make build` (strict mode), `make test` (validate)
 
-```bash
-make serve              # Local development server
-make build              # Build in strict mode
-make test               # Validate (if pre-commit available)
-mkdocs --version        # Check MkDocs version
-```
+**Key Config Sections:** site_name, site_url, theme (palette, features, icon), plugins, markdown_extensions, extra_css, extra
 
-### **Configuration Sections**
+**Common Features:** Navigation (indexes, breadcrumbs, instant.loading), Content (code.copy, tabs.link), Search (suggest, highlight), TOC (follow)
 
-```yaml
-site_name:              # Site metadata
-site_url:               # Production URL
-theme:                  # Material theme config
-  palette:              # Color schemes
-  features:             # Feature flags
-  icon:                 # Icon configuration
-plugins:                # Plugin list
-markdown_extensions:    # Markdown features
-extra_css:              # Custom CSS
-extra_javascript:       # Custom JS
-extra:                  # Analytics, social, etc.
-```
-
-### **Common Feature Flags**
-
-```yaml
-# Navigation
-- navigation.indexes
-- navigation.breadcrumbs
-- navigation.instant.loading
-- navigation.tracking
-
-# Content
-- content.code.copy
-- content.code.select
-- content.code.annotate
-- content.tabs.link
-
-# Search
-- search.suggest
-- search.highlight
-- search.share
-
-# TOC
-- toc.follow
-```
-
----
-
-## Dependencies (2026 Stack) :octicons-package-16:
-
-```txt
-# Core
-mkdocs>=1.5.3
-mkdocs-material>=9.5.0
-
-# Plugins
-mkdocs-literate-nav>=0.6.1
-mkdocs-same-dir>=0.3.0
-mkdocs-minify-plugin>=0.8.0
-mkdocs-material-extensions>=1.3
-
-# Advanced (Optional)
-mkdocs-git-committers-plugin-2>=0.2.2
-mkdocs-rss-plugin>=1.12.0
-mkdocs-social-plugin>=0.2.0
-mkdocs-offline-plugin>=1.0.0
-
-# Markdown
-pymdown-extensions>=10.5
-markdown>=3.5
-```
+**Dependencies:** mkdocs>=1.5.3, mkdocs-material>=9.5.0, pymdown-extensions>=10.5, plus optional plugins (literate-nav, minify, git-committers, social, blog, rss)
 
 ---
 
