@@ -10,13 +10,14 @@ venv: ## Create virtual environment
 	python3 -m venv venv
 	@echo "Virtual environment created. Activate with: source venv/bin/activate"
 
-install: ## Install dependencies
+install: ## Install dependencies from pyproject.toml
 	pip install --upgrade pip setuptools wheel
-	pip install -r requirements.txt
+	pip install -e .
 
-dev: venv install ## Setup development environment
+dev: venv install ## Setup development environment with dev tools
+	pip install -e .[dev]
 	pip install pre-commit
-	pre-commit install
+	pre-commit install || echo "Pre-commit hooks not configured (optional)"
 	@echo "Development environment ready!"
 
 build: ## Build the site
@@ -39,5 +40,5 @@ deploy: ## Deploy to GitHub Pages
 
 update: ## Update dependencies to latest compatible versions
 	pip install --upgrade pip setuptools wheel
-	pip install --upgrade -r requirements.txt
-	pip freeze > requirements-lock.txt
+	pip install --upgrade -e .[dev]
+	@echo "Dependencies updated. Run 'pip freeze' to see installed versions."

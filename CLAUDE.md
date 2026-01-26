@@ -35,6 +35,26 @@ make update           # Update dependencies to latest compatible versions
 - Pre-commit hooks enforce markdown formatting, spell checking, and YAML validation
 - Python virtual environment in `venv/` directory is used for dependency isolation
 
+### Dependency Management
+
+The project uses modern **PEP 621** standards via `pyproject.toml`:
+- Single source of truth for all dependencies (KISS principle)
+- Separates production and development dependencies
+- Includes Ruff configuration for future Python code quality
+- No need for `requirements.txt` or `requirements-lock.txt`
+
+**Installation:**
+```bash
+pip install -e .          # Install production dependencies
+pip install -e .[dev]     # Install with dev tools (mdformat, codespell, yamllint, ruff)
+```
+
+**Why pyproject.toml?**
+- **KISS**: Single configuration file instead of multiple
+- **DRY**: No duplication between setup.py, requirements.txt, etc.
+- **Modern**: PEP 621 standard, supported by all modern Python tools
+- **Clean**: Declarative format, easier to read and maintain
+
 ## Architecture
 
 ### Content Organization
