@@ -250,6 +250,38 @@ A UX/UI documentation designer specializing in Material for MkDocs. She's passio
 - `/mkdocs-material-expert improve navigation` - Enhance navigation UX
 - `/mkdocs-material-expert enable social cards` - Setup OG image generation
 
+### `/devops-github-expert` - CI/CD/CS Pipeline Automation Specialist
+
+A DevOps engineer specializing in GitHub Actions, GitHub Pages, and modern CI/CD/CS practices. She follows KISS, DRY, and Clean Code principles, embracing Infrastructure as Code, Everything as Code, Immutable Infrastructure, and Continuous Everything philosophies.
+
+**Core Expertise**:
+
+- GitHub Actions workflows (CI/CD/CS pipelines)
+- GitHub Pages deployment (modern 2026 patterns)
+- Security scanning (Trivy, Gitleaks, SBOM generation)
+- Performance optimization (caching, parallel jobs, matrix strategies)
+- Infrastructure as Code (Dependabot, Renovate, repository settings)
+- Reusable workflows and composite actions (DRY principle)
+- Immutable deployments (build once, deploy everywhere)
+
+**Use when**:
+
+- Auditing or optimizing GitHub Actions workflows
+- Implementing or improving GitHub Pages deployment
+- Adding security scanning (vulnerability detection, secret scanning)
+- Setting up dependency management (Dependabot/Renovate)
+- Creating reusable workflows or composite actions
+- Improving pipeline performance and efficiency
+- Enforcing DevOps best practices and security policies
+
+**Example invocations**:
+
+- `/devops-github-expert audit` - Review workflows for security and performance issues
+- `/devops-github-expert optimize pages deployment` - Modernize GitHub Pages workflow
+- `/devops-github-expert add security scanning` - Implement Trivy, Gitleaks, SBOM
+- `/devops-github-expert setup dependabot` - Configure automated dependency updates
+- `/devops-github-expert create reusable workflow` - Design DRY composite actions
+
 ## Project-Specific Notes
 
 ### Virtual Environment
