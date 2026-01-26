@@ -4,326 +4,224 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal tech documentation site built with MkDocs Material. The site is hosted on GitHub Pages at
-<https://cosckoya.github.io> and contains technical notes and guides on topics like SysAdmin, Cloud, Containers, Code,
-Monitoring, and CyberSecurity.
+This is a personal technical documentation site built with MkDocs Material and hosted on GitHub Pages at https://cosckoya.github.io. The site serves as a comprehensive knowledge base covering six main technical domains: SysAdmin, Cloud, DevOps, Containerization, Security (Hack), and Tools.
 
-## Development Commands
+## Build System and Commands
 
-### Python Environment
-
-This project requires **Python 3.12+**. It's recommended to use a virtual environment:
+### Development Workflow
 
 ```bash
-# Create and activate virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Linux/Mac
-# or
-venv\Scripts\activate  # On Windows
+# First-time setup
+make dev              # Creates venv, installs dependencies, sets up pre-commit hooks
 
-# Install dependencies
-pip install -r requirements.txt
+# Local development
+make serve            # Start live-reload server at localhost:8000
+
+# Building and testing
+make build            # Build site in strict mode (catches all warnings/errors)
+make test             # Run pre-commit hooks + strict build validation
+
+# Deployment
+make deploy           # Deploy to GitHub Pages (rarely needed - CI handles this)
+
+# Maintenance
+make clean            # Remove build artifacts and Python cache files
+make update           # Update dependencies to latest compatible versions
 ```
 
-Alternatively, use the provided Makefile:
+### Key Requirements
 
-```bash
-make dev  # Setup complete development environment
-```
-
-### Local Development
-
-```bash
-# Serve the site locally with live reload
-mkdocs serve
-# or
-make serve
-
-# Build the site (output to site/ directory)
-mkdocs build
-
-# Build with strict mode (fails on warnings, recommended)
-mkdocs build --strict
-# or
-make build
-
-# Note: Pre-commit hooks build to test/ directory for validation
-```
-
-### Other Makefile Commands
-
-```bash
-make help     # Show all available commands
-make test     # Run pre-commit hooks and build
-make clean    # Clean build artifacts
-make update   # Update dependencies
-```
-
-### Pre-commit Hooks
-
-```bash
-# Install pre-commit hooks
-pre-commit install
-
-# Run hooks manually
-pre-commit run --all-files
-```
-
-The pre-commit hooks will:
-
-- Check for merge conflicts, trailing whitespace, and end-of-file issues
-- Check for large files (max 500KB) and private keys
-- Validate YAML and JSON files
-- Lint markdown files with markdownlint (auto-fix enabled)
-- Build the MkDocs site in strict mode to catch errors before commit
-
-### Deployment
-
-Deployment to GitHub Pages is automated via GitHub Actions when pushing to the `main` branch. The workflow:
-
-1. Caches pip and MkDocs Material dependencies for faster builds
-1. Installs Python dependencies from requirements.txt
-1. Builds the site with `mkdocs build --strict` to catch any errors
-1. Runs `mkdocs gh-deploy --force` to publish to the gh-pages branch
-
-Manual deployment: `mkdocs gh-deploy --force` or `make deploy`
-
-**Important**: Always test locally with `mkdocs serve` and ensure pre-commit hooks pass before pushing to main.
+- All builds use `mkdocs build --strict` which treats warnings as errors
+- Pre-commit hooks enforce markdown formatting, spell checking, and YAML validation
+- Python virtual environment in `venv/` directory is used for dependency isolation
 
 ## Architecture
 
-### Site Configuration (mkdocs.yml)
+### Content Organization
 
-- **Theme**: Material for MkDocs with slate color scheme and deep purple/teal accents
-- **Navigation**: Uses literate-nav plugin with SUMMARY.md files for navigation structure
-- **Plugins**: search, same-dir (allows index.md in subdirectories), tags, literate-nav, minify
-- **Minification**: Enabled for HTML, JS, and CSS to optimize performance
-- **SEO**: Generator attribution disabled, sitemap.xml auto-generated, robots.txt configured
-- **Markdown Extensions**: Admonitions, tabbed content, code highlighting, magic links, and more
-- **Features**: Content tabs linking, code copy buttons enabled in theme configuration
+The site uses **literate navigation** via `SUMMARY.md` files. Each major section has:
+- `SUMMARY.md` - Defines navigation structure for that section
+- `index.md` - Landing page for the section
 
-### Content Structure (docs/)
+Main sections:
+- `docs/sysadmin/` - Linux, networking, storage, fundamentals
+- `docs/cloud/` - AWS, Azure, GCP with sub-sections for each platform
+- `docs/devops/` - Git workflows, CI/CD, GitHub Actions
+- `docs/containerization/` - Docker, Kubernetes, Helm
+- `docs/hack/` - OSINT, pentesting, security research
+- `docs/tools/` - CLI tools, editors, utilities
 
-The documentation is organized into topic-based directories:
+### Navigation Structure
 
-- `docs/index.md` - Main landing page
-- `docs/SUMMARY.md` - Top-level navigation structure
-- `docs/sysadmin/` - System administration content
-- `docs/cloud/` - Cloud platform guides
-- `docs/containers/` - Container technology documentation
-- `docs/code/` - Programming snippets and examples (has its own SUMMARY.md)
-- `docs/monitoring/` - Monitoring and observability
-- `docs/security/` - Cybersecurity topics
-- `docs/resources/` - Images, stylesheets, and other assets
+Navigation is controlled by `SUMMARY.md` files using the `mkdocs-literate-nav` plugin:
+- Main navigation: `docs/SUMMARY.md`
+- Section navigation: `docs/<section>/SUMMARY.md`
+- Maximum 3-level hierarchy enforced
+- All links must be relative paths from the SUMMARY.md location
 
-### Navigation Pattern
+### Theme and Styling
 
-The site uses the literate-nav plugin which reads `SUMMARY.md` files to build navigation. Each SUMMARY.md uses bullet
-lists with markdown links:
+MkDocs Material theme (v9.7.0+) with:
+- Slate color scheme with deep purple/teal accents
+- Custom CSS in `docs/resources/stylesheets/` and `docs/stylesheets/`
+- Features enabled: code copy buttons, navigation indexes, tabbed content
+- HTML/JS/CSS minification for production builds
 
-```markdown
-* [Page Title](path/to/file.md)
-* [Section Title](section/)
-  * [Nested Page](nested.md)
+### Markdown Extensions
+
+Available extensions in `mkdocs.yml`:
+- **Admonitions** - Use `!!! note`, `!!! warning`, `!!! tip` for callouts
+- **Tabbed content** - Use `=== "Tab Name"` syntax
+- **Code highlighting** - Automatic syntax highlighting with copy buttons
+- **Table of contents** - Auto-generated with permalinks
+- **Superfences** - Nested code blocks and content blocks
+
+## Development Guidelines
+
+### Adding New Content
+
+1. Create markdown file in appropriate section directory
+2. Add entry to the section's `SUMMARY.md` file
+3. Use relative paths from the SUMMARY.md location
+4. Test with `make serve` to verify navigation works
+5. Run `make test` before committing
+
+### Modifying Navigation
+
+- Navigation is defined in `SUMMARY.md` files, not in `mkdocs.yml`
+- Main nav: `docs/SUMMARY.md`
+- Section nav: `docs/<section>/SUMMARY.md`
+- Format: `- [Link Text](relative/path.md)`
+- For directory links, use trailing slash: `- [Section](directory/)`
+
+### Link Integrity
+
+Use DocMaster Tools scripts for validation:
+```bash
+./scripts/docmaster-tools.sh check-links          # Verify all internal links
+./scripts/docmaster-tools.sh find-orphans         # Find files not in navigation
+./scripts/docmaster-tools.sh validate-structure   # Check directory structure
+./scripts/docmaster-tools.sh full-maintenance     # Run all checks
 ```
 
-**IMPORTANT CONVENTIONS:**
+Exit codes: 0 = success, 1 = issues detected
 
-1. **SUMMARY.md is MANDATORY**: Every first-level content directory MUST have a `SUMMARY.md` file
+### Style Guidelines
 
-    - ✅ Required: `sysadmin/`, `cloud/`, `containers/`, `code/`, `monitoring/`, `security/`
-    - ✅ Exception: Only `resources/` may omit SUMMARY.md (it contains assets, not content)
+- Pre-commit hooks enforce markdown formatting via `mdformat`
+- Spell checking via `codespell`
+- YAML linting via `yamllint`
+- Run `pre-commit run --all-files` to check all files
 
-1. **Consistent Linking in Top-Level SUMMARY.md**: The `/docs/SUMMARY.md` file should link to directories, not directly
-    to `index.md` files:
+## CI/CD Pipeline
 
-    - ✅ Correct: `* [SysAdmin](sysadmin/)`
-    - ❌ Incorrect: `* [SysAdmin](sysadmin/index.md)`
-    - This allows literate-nav to automatically find and use the section's SUMMARY.md
+GitHub Actions workflow (`.github/workflows/gh-pages.yml`):
+- Triggers on push to `main` branch only
+- Builds with `mkdocs build --strict`
+- Deploys to `gh-pages` branch automatically
+- Caches pip dependencies and MkDocs Material assets (weekly rotation)
 
-1. **Section SUMMARY.md Structure**: Each section's SUMMARY.md should start with its overview:
+**Important**: Only pushes to `main` trigger deployment. Development should happen in feature branches.
 
-    ```markdown
-    * [Section Name Overview](index.md)
-    * [Subtopic 1](subtopic1.md)
-    * [Subtopic 2](subtopic2.md)
-    ```
+## Common Scenarios
 
-1. **Nested Navigation**: Subdirectories can have their own SUMMARY.md for hierarchical navigation. The top-level
-    `docs/SUMMARY.md` controls the main navigation menu.
+### Adding a New Section
 
-**Why these conventions matter:**
+1. Create directory: `docs/newsection/`
+2. Create `docs/newsection/index.md` with section overview
+3. Create `docs/newsection/SUMMARY.md` with section navigation
+4. Add section to main `docs/SUMMARY.md`: `- [New Section](newsection/)`
+5. Verify with `make serve` and `./scripts/docmaster-tools.sh validate-structure`
 
-- Predictable structure for contributors
-- Scalability as content grows
-- Consistent behavior across all sections
-- Clear pattern for adding new content
+### Fixing Broken Links
 
-### Branches
+1. Run `./scripts/docmaster-tools.sh check-links` to identify issues
+2. Links must be relative to the file containing them
+3. Directory links should point to directory with trailing slash or to `index.md`
+4. Verify fix with `make build` (strict mode will catch broken links)
 
-- `main` - Production branch that triggers GitHub Pages deployment
-- `develop` - Development branch (current)
-
-## Quality and Best Practices
-
-### Code Quality Tools
-
-- **EditorConfig**: Configured for consistent formatting (.editorconfig)
-- **Markdownlint**: Enforces markdown standards with auto-fix (.markdownlint.json)
-- **Dependabot**: Automated dependency updates for Python packages and GitHub Actions
-
-### CI/CD Pipeline
-
-The GitHub Actions workflow (.github/workflows/gh-pages.yml):
-
-- Caches pip dependencies for faster builds
-- Builds site in strict mode to catch warnings
-- Deploys automatically to GitHub Pages on push to main branch
-
-### Dependency Management
-
-- Dependencies are pinned in requirements.txt for reproducibility
-- Dependabot creates monthly PRs for updates
-- Pre-commit hooks validate the environment before commits
-
-## Content Guidelines
-
-When adding or modifying documentation:
-
-- Place markdown files in the appropriate topical directory under docs/
-- Update the relevant SUMMARY.md file to include new pages in navigation
-- Use Material for MkDocs extensions for better formatting (admonitions, tabs, code blocks)
-- Images and assets go in docs/resources/ (max 500KB per file)
-- Add descriptive alt text to images for accessibility
-- Test locally with `mkdocs serve` before committing
-- Pre-commit hooks will validate the build, so fix any warnings/errors they report
-- Follow the Contributing Guide (CONTRIBUTING.md) for detailed workflow
-
-### Available Markdown Features
-
-Material for MkDocs extensions enabled in this project:
-
-- **Admonitions**: `!!! note`, `!!! warning`, `!!! tip`, `!!! danger`, etc. (collapsible with `???`)
-- **Code blocks**: Syntax highlighting with language specification, inline code with `pymdownx.inlinehilite`
-- **Tabbed content**: Use `=== "Tab Title"` for content tabs that can link across the site
-- **Tables**: Standard markdown tables with alignment
-- **Definition lists**: For glossary-style content
-- **Magic links**: Auto-linking for URLs, email addresses
-- **Snippets**: Include external code files in documentation (base path: docs/)
-- **Permalinks**: Automatic heading anchors for direct linking
-
-## Skills - Documentation & Maintenance
-
-This project uses two custom Claude Code skills:
-
-### 1. TechWriter v2.0 - Modern Technical Documentation
-
-**Philosophy:** Practical, no-BS technical references for people who know their shit.
-
-**Activate:**
+### Updating Dependencies
 
 ```bash
-/techwriter
+make update           # Updates all Python packages
+make test            # Verify everything still works
+# Review changes to requirements-lock.txt
 ```
 
-**What You Get:**
+Dependabot runs monthly to suggest dependency updates via pull requests.
 
-- 1-2 line technical intro (straight to the point)
-- Quick Hits tabs: Essential commands, patterns, pro tips
-- Optional TL;DR reference table
-- Curated links (5-10 best resources, not 50)
-- No academic BS, no tutorials, no fluff
+## Available Skills
 
-**Style:**
+### `/mkdocs-material-expert` - MkDocs Material Theme Specialist
 
-- 🎯 Direct and technical
-- ⚡ Modern with emojis
-- 🔥 Assumes you know the basics
-- 💀 Real-world code patterns
-- 🚀 No motivational language
+A UX/UI documentation designer specializing in Material for MkDocs. She's passionate about beautiful, accessible documentation and loves octicons! :octicons-heart-16:
 
-**What TechWriter Does NOT Create:**
+**Core Expertise**:
+- Material theme configuration (colors, typography, icons)
+- Icon systems (Octicons, FontAwesome, Material Design Icons)
+- UX/UI optimization (navigation, search, breadcrumbs, social cards)
+- Plugin ecosystem (search, tags, blog, social, offline, minify)
+- Performance optimization and accessibility (WCAG 2.1 AA)
+- Advanced features (annotations, code blocks, admonitions, tabs)
 
-- ❌ "Core Concepts" academic sections
-- ❌ "Core Services" or "Strategies" abstractions
-- ❌ Step-by-step tutorials
-- ❌ Verbose explanations
-- ❌ 50+ link lists
+**Use when**:
+- Enhancing mkdocs.yml configuration
+- Adding new Material theme features
+- Improving navigation and search UX
+- Configuring plugins (social cards, git-committers, blog)
+- Optimizing site performance
+- Ensuring accessibility compliance
+- Adding custom CSS/styling
 
-**Example requests:**
+**Example invocations**:
+- `/mkdocs-material-expert audit` - Review current setup and suggest improvements
+- `/mkdocs-material-expert add octicons` - Configure octicon icons
+- `/mkdocs-material-expert improve navigation` - Enhance navigation UX
+- `/mkdocs-material-expert enable social cards` - Setup OG image generation
 
-```
-Document Redis
-Create reference for Terraform
-Add page for Kubernetes
-```
+## Project-Specific Notes
 
-**Page structure:**
+### Virtual Environment
 
-1. **WTF** - What it is (1-2 lines)
-1. **Quick Hits** - 3 tabs with commands/patterns/tips
-1. **TL;DR Reference** - Optional table
-1. **Worth Checking** - 4 card categories with curated links
-1. **See Also** - Related topics
-
-**Validation:**
-
+The project uses a Python virtual environment in `venv/`. Always activate it before manual operations:
 ```bash
-# MANDATORY - must pass before completion
-source venv/bin/activate && mkdocs build --strict
+source venv/bin/activate
 ```
 
-______________________________________________________________________
+Make targets handle this automatically.
 
-### 2. Janitor - Repository Maintenance
+### Strict Mode Enforcement
 
-**Philosophy:** Clean repos, clear mind, zero BS. With sass and class.
+All builds use `--strict` flag. This means:
+- Warnings are treated as errors
+- Broken links cause build failure
+- Missing files in navigation cause build failure
+- Invalid markdown extensions cause build failure
 
-**Activate:**
+This is intentional and ensures high quality documentation.
 
-```bash
-/janitor
-```
+### DocMaster Tools Integration
 
-**What It Does:**
+The `scripts/docmaster-tools.sh` script provides automated maintenance:
+- **check-links** - Scan for broken internal links
+- **find-orphans** - Find markdown files not in navigation
+- **validate-structure** - Check directory structure conventions
+- **cleanup-empty** - Remove empty directories
+- **audit-freshness** - Find stale content and TODO markers
+- **validate-build** - Run build in strict mode
+- **full-maintenance** - Run all checks in sequence
 
-- 🗑️ Finds obsolete files (365+ days old)
-- 💾 Detects cache files in version control
-- 📋 Identifies duplicate markdown files
-- 🐘 Locates large files
-- 🧼 Validates .gitignore configuration
-- 🌿 Analyzes branch hygiene
-- 📊 Generates health reports (0-100 score)
-- 🎭 Provides witty, sarcastic feedback
+Use these tools before committing significant changes to ensure documentation integrity.
 
-**Common commands:**
+### Assets and Images
 
-```bash
-./scripts/janitor.sh inspect         # Full inspection
-./scripts/janitor.sh clean-cache     # Remove cache files
-./scripts/janitor.sh health-report   # Repository health score
-```
+- Logos/favicons: `docs/resources/img/`
+- Custom CSS: `docs/resources/stylesheets/` and `docs/stylesheets/`
+- Images should be referenced with relative paths from the markdown file
 
-**Example output:**
+### Branch Strategy
 
-> "Found 47 markdown files. Are we writing a novel or documenting code?"
-
-______________________________________________________________________
-
-### Skills Configuration
-
-**Location:** `.claude/skills/`
-
-```
-.claude/skills/
-├── techwriter/
-│   ├── SKILL.md
-│   ├── README.md
-│   └── templates/
-└── janitor/
-    ├── SKILL.md
-    ├── README.md
-    └── scripts/
-```
-
-**CSS Styling:** `docs/stylesheets/snape.css` (premium card grids, hover effects)
+- `main` - Production branch, auto-deploys to GitHub Pages
+- `develop` - Development branch (based on git status)
+- Feature branches - Create from develop, PR back to develop
+- Only maintainer pushes to main trigger deployment
