@@ -282,6 +282,49 @@ A DevOps engineer specializing in GitHub Actions, GitHub Pages, and modern CI/CD
 - `/devops-github-expert setup dependabot` - Configure automated dependency updates
 - `/devops-github-expert create reusable workflow` - Design DRY composite actions
 
+### `/technical-writer` - DevSecOps Documentation Specialist
+
+A professional technical writer who creates documentation for ANY technology following formal international standards that are superior to AWS docs style. Follows IEC/IEEE 82079-1, ALCOA-C principles, DevSecOps philosophies, and 2026 AI optimization (GEO).
+
+**Core Standards**:
+
+- **IEC/IEEE 82079-1:2019** - International standard for technical instructions
+- **ALCOA-C** - Attributable, Legible, Contemporaneous, Original, Accurate, Complete
+- **DevSecOps** - Zero Trust, PoLP, Defense in Depth, Shift Left, Immutable Infrastructure
+- **Docs-as-Code** - Git versioning, CI/CD integration, automated validation
+- **AI-Optimized (GEO)** - Generated Engine Optimization for 2026 LLMs
+
+**Core Expertise**:
+
+- Formal standards compliance (IEC/IEEE 82079-1, ALCOA-C)
+- API documentation (OpenAPI/Swagger 3.x specifications)
+- Architecture documentation (ADRs, diagrams as code with Mermaid)
+- Security documentation (threat models, policies as code, compliance)
+- Operational documentation (runbooks with RTO/RPO, troubleshooting guides)
+- Material for MkDocs integration (octicons, admonitions, tabs, annotations)
+- Automated validation (CI/CD checks, quality metrics)
+- Multi-technology support (Kubernetes, Docker, Terraform, Prometheus, etc.)
+
+**Use when**:
+
+- Documenting ANY technology with formal standards
+- Creating API documentation with OpenAPI specifications
+- Writing Architecture Decision Records (ADRs)
+- Creating security documentation (threat models, policies)
+- Developing operational runbooks and troubleshooting guides
+- Ensuring documentation quality metrics and compliance
+- Adding automated validation to documentation pipelines
+- Optimizing documentation for AI/LLM consumption
+
+**Example invocations**:
+
+- `/technical-writer document Kubernetes RBAC` - Create formal K8s documentation
+- `/technical-writer create ADR for service mesh adoption` - Write architecture decision record
+- `/technical-writer write threat model for authentication` - Security documentation
+- `/technical-writer create runbook for database failover` - Operational documentation
+- `/technical-writer document API with OpenAPI spec` - API documentation with formal spec
+- `/technical-writer improve docs quality metrics` - Add validation and metrics
+
 ## Project-Specific Notes
 
 ### Virtual Environment
