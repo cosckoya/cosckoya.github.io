@@ -1,50 +1,110 @@
----
+# Pre-commit hooks configuration
+# Enforces code quality, formatting, and documentation standards
+# Integrated with pyproject.toml configuration
+
 repos:
-  # Standard pre-commit hooks
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0
+  # Ruff - Modern Python linter and formatter (replaces black, isort, flake8)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.6
     hooks:
-      - id: check-merge-conflict
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-added-large-files
-        args: ['--maxkb=500']
-      - id: detect-private-key
-      - id: check-json
-      - id: check-toml
+      # Run the linter
+      - id: ruff
+        args: [--fix]
+        types_or: [python, pyi]
+      # Run the formatter
+      - id: ruff-format
+        types_or: [python, pyi]
 
-  # Enhanced YAML validation
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.38.0
-    hooks:
-      - id: yamllint
-
-  # Spell checking for documentation
-  - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
-    hooks:
-      - id: codespell
-
-  # Markdown formatting (MkDocs-aware)
+  # Markdown formatting with MkDocs support
   - repo: https://github.com/executablebooks/mdformat
     rev: 0.7.19
     hooks:
       - id: mdformat
         additional_dependencies:
-          - mdformat-admon==2.0.6
-          - mdformat-tables==0.4.1
-          - mdformat-gfm==0.3.6
-          - mdformat-frontmatter==2.0.8
-          - mdformat-mkdocs==2.0.11
-        args: [--wrap, '120']
-        exclude: '^(\.github/docs/architecture/|\.claude/|venv/|site/|test/|info/)'
+          - mdformat-gfm>=0.3.5          # GitHub Flavored Markdown
+          - mdformat-mkdocs>=2.0.0       # MkDocs-specific formatting
+          - mdformat-frontmatter>=2.0.1  # YAML frontmatter support
+        args: [--wrap, "no"]
 
-  # MkDocs build validation
-  - repo: local
+  # Spell checking
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
     hooks:
-      - id: mkdocs-build
-        name: mkdocs-build
-        entry: bash
-        args: [-c, 'rm -rf test && source venv/bin/activate && mkdocs build --strict --quiet --site-dir test']
-        language: system
-        pass_filenames: false
+      - id: codespell
+        args:
+          - --ignore-words-list=sur,nad,als,crate,unexpect
+          - --skip=*.min.js,*.min.css,*.lock,venv/*,.git/*,site/*
+
+  # YAML validation
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: [--config-file, .yamllintrc]
+        types: [yaml]
+
+  # Standard pre-commit hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      # Prevent commits to protected branches
+      - id: no-commit-to-branch
+        args: [--branch, main, --branch, master]
+
+      # File checks
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: destroyed-symlinks
+
+      # JSON/TOML/YAML syntax checks
+      - id: check-json
+      - id: check-toml
+      - id: check-yaml
+        args: [--allow-multiple-documents]
+
+      # Python-specific
+      - id: check-ast                    # Valid Python syntax
+      - id: check-builtin-literals       # Use [] instead of list()
+      - id: check-docstring-first        # Docstring before code
+      - id: debug-statements             # No debugger statements
+      - id: name-tests-test              # Test files named test_*.py
+        args: [--pytest-test-first]
+
+      # File hygiene
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+
+      # Security
+      - id: detect-private-key
+
+  # Python security checks
+  - repo: https://github.com/pycqa/bandit
+    rev: 1.8.0
+    hooks:
+      - id: bandit
+        args: [-c, pyproject.toml]
+        additional_dependencies: ["bandit[toml]"]
+        exclude: ^tests/
+
+  # pyproject.toml validation
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.30.0
+    hooks:
+      - id: check-dependabot
+      - id: check-github-workflows
+      - id: check-readthedocs
+
+# Configuration
+ci:
+  autofix_commit_msg: "style: auto-fix pre-commit hooks"
+  autofix_prs: true
+  autoupdate_commit_msg: "chore: update pre-commit hooks"
+  autoupdate_schedule: monthly
+  skip: []
+  submodules: false

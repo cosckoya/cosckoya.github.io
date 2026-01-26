@@ -38,18 +38,21 @@ make update           # Update dependencies to latest compatible versions
 ### Dependency Management
 
 The project uses modern **PEP 621** standards via `pyproject.toml`:
+
 - Single source of truth for all dependencies (KISS principle)
 - Separates production and development dependencies
 - Includes Ruff configuration for future Python code quality
 - No need for `requirements.txt` or `requirements-lock.txt`
 
 **Installation:**
+
 ```bash
 pip install -e .          # Install production dependencies
 pip install -e .[dev]     # Install with dev tools (mdformat, codespell, yamllint, ruff)
 ```
 
 **Why pyproject.toml?**
+
 - **KISS**: Single configuration file instead of multiple
 - **DRY**: No duplication between setup.py, requirements.txt, etc.
 - **Modern**: PEP 621 standard, supported by all modern Python tools
@@ -60,10 +63,12 @@ pip install -e .[dev]     # Install with dev tools (mdformat, codespell, yamllin
 ### Content Organization
 
 The site uses **literate navigation** via `SUMMARY.md` files. Each major section has:
+
 - `SUMMARY.md` - Defines navigation structure for that section
 - `index.md` - Landing page for the section
 
 Main sections:
+
 - `docs/sysadmin/` - Linux, networking, storage, fundamentals
 - `docs/cloud/` - AWS, Azure, GCP with sub-sections for each platform
 - `docs/devops/` - Git workflows, CI/CD, GitHub Actions
@@ -74,6 +79,7 @@ Main sections:
 ### Navigation Structure
 
 Navigation is controlled by `SUMMARY.md` files using the `mkdocs-literate-nav` plugin:
+
 - Main navigation: `docs/SUMMARY.md`
 - Section navigation: `docs/<section>/SUMMARY.md`
 - Maximum 3-level hierarchy enforced
@@ -82,6 +88,7 @@ Navigation is controlled by `SUMMARY.md` files using the `mkdocs-literate-nav` p
 ### Theme and Styling
 
 MkDocs Material theme (v9.7.0+) with:
+
 - Slate color scheme with deep purple/teal accents
 - Custom CSS in `docs/resources/stylesheets/` and `docs/stylesheets/`
 - Features enabled: code copy buttons, navigation indexes, tabbed content
@@ -90,6 +97,7 @@ MkDocs Material theme (v9.7.0+) with:
 ### Markdown Extensions
 
 Available extensions in `mkdocs.yml`:
+
 - **Admonitions** - Use `!!! note`, `!!! warning`, `!!! tip` for callouts
 - **Tabbed content** - Use `=== "Tab Name"` syntax
 - **Code highlighting** - Automatic syntax highlighting with copy buttons
@@ -101,10 +109,10 @@ Available extensions in `mkdocs.yml`:
 ### Adding New Content
 
 1. Create markdown file in appropriate section directory
-2. Add entry to the section's `SUMMARY.md` file
-3. Use relative paths from the SUMMARY.md location
-4. Test with `make serve` to verify navigation works
-5. Run `make test` before committing
+1. Add entry to the section's `SUMMARY.md` file
+1. Use relative paths from the SUMMARY.md location
+1. Test with `make serve` to verify navigation works
+1. Run `make test` before committing
 
 ### Modifying Navigation
 
@@ -117,6 +125,7 @@ Available extensions in `mkdocs.yml`:
 ### Link Integrity
 
 Use DocMaster Tools scripts for validation:
+
 ```bash
 ./scripts/docmaster-tools.sh check-links          # Verify all internal links
 ./scripts/docmaster-tools.sh find-orphans         # Find files not in navigation
@@ -126,16 +135,55 @@ Use DocMaster Tools scripts for validation:
 
 Exit codes: 0 = success, 1 = issues detected
 
-### Style Guidelines
+### Code Quality and Style Guidelines
 
-- Pre-commit hooks enforce markdown formatting via `mdformat`
-- Spell checking via `codespell`
-- YAML linting via `yamllint`
-- Run `pre-commit run --all-files` to check all files
+The project uses **pre-commit hooks** to enforce code quality automatically. Hooks are configured in `.pre-commit-config.yaml` and integrated with `pyproject.toml`.
+
+**First-time setup:**
+
+```bash
+make dev              # Installs pre-commit and all hooks automatically
+```
+
+**Manual operations:**
+
+```bash
+# Run all hooks on all files
+pre-commit run --all-files
+
+# Run specific hook
+pre-commit run ruff --all-files
+pre-commit run mdformat --all-files
+
+# Update hooks to latest versions
+pre-commit autoupdate
+
+# Skip hooks temporarily (use sparingly)
+git commit --no-verify
+```
+
+**Automated checks:**
+
+- **Ruff** - Modern Python linter and formatter (replaces black, isort, flake8)
+- **mdformat** - Markdown formatting with MkDocs support
+- **codespell** - Spell checking for documentation
+- **yamllint** - YAML file validation
+- **bandit** - Python security vulnerability scanning
+- **Standard hooks** - File checks, trailing whitespace, JSON/TOML/YAML syntax
+
+**On every commit**, pre-commit automatically:
+
+1. Formats Python code with Ruff
+1. Formats Markdown files preserving MkDocs syntax
+1. Checks spelling in all text files
+1. Validates YAML configuration files
+1. Prevents commits to protected branches (main/master)
+1. Checks for large files, merge conflicts, private keys
 
 ## CI/CD Pipeline
 
 GitHub Actions workflow (`.github/workflows/gh-pages.yml`):
+
 - Triggers on push to `main` branch only
 - Builds with `mkdocs build --strict`
 - Deploys to `gh-pages` branch automatically
@@ -148,17 +196,17 @@ GitHub Actions workflow (`.github/workflows/gh-pages.yml`):
 ### Adding a New Section
 
 1. Create directory: `docs/newsection/`
-2. Create `docs/newsection/index.md` with section overview
-3. Create `docs/newsection/SUMMARY.md` with section navigation
-4. Add section to main `docs/SUMMARY.md`: `- [New Section](newsection/)`
-5. Verify with `make serve` and `./scripts/docmaster-tools.sh validate-structure`
+1. Create `docs/newsection/index.md` with section overview
+1. Create `docs/newsection/SUMMARY.md` with section navigation
+1. Add section to main `docs/SUMMARY.md`: `- [New Section](newsection/)`
+1. Verify with `make serve` and `./scripts/docmaster-tools.sh validate-structure`
 
 ### Fixing Broken Links
 
 1. Run `./scripts/docmaster-tools.sh check-links` to identify issues
-2. Links must be relative to the file containing them
-3. Directory links should point to directory with trailing slash or to `index.md`
-4. Verify fix with `make build` (strict mode will catch broken links)
+1. Links must be relative to the file containing them
+1. Directory links should point to directory with trailing slash or to `index.md`
+1. Verify fix with `make build` (strict mode will catch broken links)
 
 ### Updating Dependencies
 
@@ -177,6 +225,7 @@ Dependabot runs monthly to suggest dependency updates via pull requests.
 A UX/UI documentation designer specializing in Material for MkDocs. She's passionate about beautiful, accessible documentation and loves octicons! :octicons-heart-16:
 
 **Core Expertise**:
+
 - Material theme configuration (colors, typography, icons)
 - Icon systems (Octicons, FontAwesome, Material Design Icons)
 - UX/UI optimization (navigation, search, breadcrumbs, social cards)
@@ -185,6 +234,7 @@ A UX/UI documentation designer specializing in Material for MkDocs. She's passio
 - Advanced features (annotations, code blocks, admonitions, tabs)
 
 **Use when**:
+
 - Enhancing mkdocs.yml configuration
 - Adding new Material theme features
 - Improving navigation and search UX
@@ -194,6 +244,7 @@ A UX/UI documentation designer specializing in Material for MkDocs. She's passio
 - Adding custom CSS/styling
 
 **Example invocations**:
+
 - `/mkdocs-material-expert audit` - Review current setup and suggest improvements
 - `/mkdocs-material-expert add octicons` - Configure octicon icons
 - `/mkdocs-material-expert improve navigation` - Enhance navigation UX
@@ -204,6 +255,7 @@ A UX/UI documentation designer specializing in Material for MkDocs. She's passio
 ### Virtual Environment
 
 The project uses a Python virtual environment in `venv/`. Always activate it before manual operations:
+
 ```bash
 source venv/bin/activate
 ```
@@ -213,6 +265,7 @@ Make targets handle this automatically.
 ### Strict Mode Enforcement
 
 All builds use `--strict` flag. This means:
+
 - Warnings are treated as errors
 - Broken links cause build failure
 - Missing files in navigation cause build failure
@@ -223,6 +276,7 @@ This is intentional and ensures high quality documentation.
 ### DocMaster Tools Integration
 
 The `scripts/docmaster-tools.sh` script provides automated maintenance:
+
 - **check-links** - Scan for broken internal links
 - **find-orphans** - Find markdown files not in navigation
 - **validate-structure** - Check directory structure conventions
