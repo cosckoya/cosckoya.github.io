@@ -14,7 +14,7 @@ ______________________________________________________________________
 
 ## Quick Hits
 
-=== ":octicons-checklist-16: Essential Services"
+=== ":fontawesome-solid-list-check: Essential Services"
 
     ```bash
     # EC2 - Virtual machines (you'll use this)
@@ -50,7 +50,7 @@ ______________________________________________________________________
     - us-east-1 is cheapest but goes down more often (Murphy's law applies)
     - Use `--profile` for multiple accounts (you'll have dev/staging/prod)
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```python
     import boto3
@@ -134,7 +134,7 @@ ______________________________________________________________________
               KeyType: HASH
     ```
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Cost optimization (your CFO will thank you):**
 
@@ -185,7 +185,7 @@ ______________________________________________________________________
 
 ## Learning Paths
 
-### :octicons-mortar-board-16: Free Resources
+### :fontawesome-solid-graduation-cap: Free Resources
 
 - **[AWS Skill Builder](https://skillbuilder.aws)** - Official training, tons of free courses (start here)
 - **[AWS Free Tier](https://aws.amazon.com/free)** - 12 months free for core services (stay within limits!)
@@ -194,14 +194,14 @@ ______________________________________________________________________
 - **[A Cloud Guru Free Tier](https://learn.acloud.guru/search?query=aws&type=free)** - Quality video courses
 - **[AWS Getting Started Guides](https://aws.amazon.com/getting-started/)** - Official tutorials
 
-### :octicons-beaker-16: Interactive Labs
+### :fontawesome-solid-flask: Interactive Labs
 
 - **[AWS Sandbox Accounts](https://aws.amazon.com/getting-started/hands-on/)** - Official hands-on tutorials in real AWS
 - **[Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)** - Temporary accounts for safe experimentation
 - **[Instruqt AWS Labs](https://play.instruqt.com/public/topics/aws)** - Browser-based scenarios
 - **[LocalStack](https://localstack.cloud/)** - Run AWS locally for development
 
-### :octicons-note-16: Certifications Worth It
+### :fontawesome-solid-certificate: Certifications Worth It
 
 - **[Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)** - $100, easiest, good starting point if totally new
 - **[Solutions Architect Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** - $150, **most popular**, worth it for resume (this one matters)
@@ -215,7 +215,7 @@ ______________________________________________________________________
 - Study 2-3 months, practice exams are critical
 - Use [Tutorials Dojo practice exams](https://tutorialsdojo.com/) ($15, best investment)
 
-### :octicons-rocket-16: Projects to Build
+### :fontawesome-solid-rocket: Projects to Build
 
 **Beginner (learn the basics):**
 
@@ -238,7 +238,7 @@ ______________________________________________________________________
 
 ## Community Pulse
 
-### :octicons-people-16: Who to Follow
+### :fontawesome-solid-users: Who to Follow
 
 **Twitter/X:**
 
@@ -258,7 +258,7 @@ ______________________________________________________________________
 - [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana) - DevOps + AWS tutorials
 - [AWS Events](https://www.youtube.com/c/AWSEventsChannel) - Conference talks, workshops
 
-### :octicons-comment-discussion-16: Active Communities
+### :fontawesome-solid-comments: Active Communities
 
 - **[r/aws](https://reddit.com/r/aws)** - 250k+ members, active daily, mix of beginner + advanced (best community)
 - **[AWS Community Discord](https://discord.gg/aws)** - Official, helpful, core team present
@@ -267,7 +267,7 @@ ______________________________________________________________________
 - **[AWS re:Post](https://repost.aws/)** - Official Q&A (replaces old forums)
 - **[ServerlessLand Community](https://serverlessland.com/)** - Serverless-focused, active Slack/Discord
 
-### :octicons-broadcast-16: Podcasts & Newsletters
+### :fontawesome-solid-podcast: Podcasts & Newsletters
 
 **Podcasts:**
 
@@ -283,7 +283,7 @@ ______________________________________________________________________
 - **[AWS Week in Review](https://aws.amazon.com/blogs/aws/category/week-in-review/)** - Official blog, weekly updates
 - **[AWS Open Source News](https://dev.to/aws/aws-open-source-newsletter-191-4e9b)** - Open source projects on AWS
 
-### :octicons-calendar-16: Events & Conferences
+### :fontawesome-solid-calendar: Events & Conferences
 
 - **[AWS re:Invent](https://reinvent.awsevents.com/)** - Las Vegas, late November, 50k+ attendees, $2k+ (worth it once in career)
 - **[AWS Summit](https://aws.amazon.com/events/summits/)** - Free, regional (20+ cities), good for networking
@@ -296,7 +296,7 @@ ______________________________________________________________________
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Stuff__
+- :fontawesome-solid-book: __Official Stuff__
 
     ______________________________________________________________________
 
@@ -308,7 +308,7 @@ ______________________________________________________________________
 
     [Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 
-- :octicons-beaker-16: __Hands-on__
+- :fontawesome-solid-flask: __Hands-on__
 
     ______________________________________________________________________
 
@@ -320,7 +320,7 @@ ______________________________________________________________________
 
     [LocalStack](https://localstack.cloud/)
 
-- :octicons-code-16: __Real Code__
+- :fontawesome-solid-code: __Real Code__
 
     ______________________________________________________________________
 
@@ -334,7 +334,7 @@ ______________________________________________________________________
 
     [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
 
-- :octicons-flame-16: __Deep Dives__
+- :fontawesome-solid-fire: __Deep Dives__
 
     ______________________________________________________________________
 
@@ -348,7 +348,7 @@ ______________________________________________________________________
 
     [Corey Quinn's Blog](https://www.lastweekinaws.com/blog/)
 
-- :octicons-tools-16: __Tools & Extensions__
+- :fontawesome-solid-screwdriver-wrench: __Tools & Extensions__
 
     ______________________________________________________________________
 
@@ -364,7 +364,7 @@ ______________________________________________________________________
 
     [Steampipe](https://steampipe.io/) (SQL for AWS APIs)
 
-- :octicons-rss-16: __News & Updates__
+- :fontawesome-solid-rss: __News & Updates__
 
     ______________________________________________________________________
 
@@ -382,4 +382,4 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-01-13 **Vibe Check:** :octicons-globe-16: Mainstream - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.
+**Last Updated:** 2026-01-13 **Vibe Check:** :fontawesome-solid-globe: Mainstream - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.
