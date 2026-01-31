@@ -1,8 +1,18 @@
 {
   "permissions": {
     "allow": [
+      "Read(**)",
+      "Write(**)",
+      "Edit(**)",
+      "Glob(**)",
+      "Grep(**)",
       "Bash(make *)",
       "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(mkdocs *)",
+      "Bash(pre-commit *)",
+      "Bash(python *)",
+      "Bash(pip *)",
       "Bash(ls *)",
       "Bash(cat *)",
       "Bash(grep *)",
@@ -15,31 +25,18 @@
       "Bash(pwd)",
       "Bash(cd *)",
       "Bash(which *)",
-      "Bash(ps *)",
-      "Bash(netstat *)",
-      "Bash(ss *)",
-      "Bash(lsof *)",
-      "Bash(df *)",
-      "Bash(du *)",
       "Bash(mkdir *)",
       "Bash(touch *)",
       "Bash(chmod *)",
       "Bash(source *)",
-      "Bash(python *)",
-      "Bash(pip *)",
-      "Bash(mkdocs *)",
-      "Bash(pre-commit *)",
       "Bash(mdformat *)",
       "Bash(codespell *)",
       "Bash(ruff *)",
-      "Bash(sleep *)",
-      "Read",
-      "Write",
-      "Edit",
-      "Glob",
-      "Grep"
+      "WebFetch(domain:squidfunk.github.io)"
     ],
     "block": [
+      "Read(.env*)",
+      "Read(secrets/**)",
       "Bash(rm -rf /)",
       "Bash(chmod -R 777 /)",
       "Bash(dd *)",
@@ -53,7 +50,9 @@
       "Bash(kill -9 1)",
       "Bash(curl * | bash)",
       "Bash(wget * | bash)",
-      "Bash(* > /dev/sda*)"
+      "Bash(* > /dev/sda*)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)"
     ]
   },
   "ai_attribution": {

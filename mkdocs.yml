@@ -2,7 +2,7 @@ site_name: It's dangerous to go alone!
 site_url: https://cosckoya.github.io
 site_description: Cosckoya's Tech Toolbox
 site_author: 'cosckoya'
-copyright: Copyright &copy; 2024 цосцкоыа
+copyright: Copyright &copy; 2026 цосцкоыа
 
 repo_url: https://github.com/cosckoya/cosckoya.github.io
 edit_uri: ""
@@ -24,7 +24,7 @@ theme:
       primary: deep purple
       accent: teal
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Dark mode (default)
@@ -32,7 +32,7 @@ theme:
       primary: deep purple
       accent: teal
       toggle:
-        icon: material/lightbulb
+        icon: material/brightness-4
         name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
@@ -53,7 +53,8 @@ theme:
       default: octicons/tag-16
   features:
     # Navigation enhancements
-    - navigation.indexes           # Section index pages
+    - navigation.sections          # Expandable/collapsible sections
+    - navigation.expand            # Expand all sections by default
     - navigation.breadcrumbs       # Breadcrumb trail
     - navigation.instant.loading   # SPA-like navigation
     - navigation.instant.prefetch  # Prefetch pages on hover
@@ -144,5 +145,5 @@ plugins:
       cache_safe: true
 
 extra_css:
-  - resources/stylesheets/images.css
-  - stylesheets/snape.css
+  - resources/css/images.css
+  - resources/css/snape.css

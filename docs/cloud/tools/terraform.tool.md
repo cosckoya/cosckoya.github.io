@@ -17,7 +17,7 @@ ______________________________________________________________________
 
 ## Quick Hits
 
-=== "🎯 Essential Commands"
+=== ":octicons-checklist-16: Essential Commands"
 
     ```bash
     # Initialize (download providers)
@@ -58,7 +58,7 @@ ______________________________________________________________________
     - Use workspaces or separate directories for environments
     - Lock state during operations (S3 + DynamoDB for AWS)
 
-=== "⚡ Common Patterns"
+=== ":octicons-zap-16: Common Patterns"
 
     ```hcl
     # Basic AWS EC2 instance
@@ -121,7 +121,7 @@ ______________________________________________________________________
     }
     ```
 
-=== "🔥 Pro Tips & Gotchas"
+=== ":octicons-flame-16: Pro Tips & Gotchas"
 
     - **State management:** Use remote state (S3, Terraform Cloud), never commit state to Git
     - **Modules:** DRY - create modules for repeated patterns
@@ -240,7 +240,7 @@ ______________________________________________________________________
 
     [Awesome Terraform](https://github.com/shuaibiyy/awesome-terraform)
 
-- 🔥 __Best Practices__
+- :octicons-flame-16: __Best Practices__
 
     ______________________________________________________________________
 

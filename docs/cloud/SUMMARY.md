@@ -1,7 +1,3 @@
-- [Cloud Overview](index.md)
-- [AWS](aws/)
-- [Azure](azure/)
-- [GCP](gcp/)
-- [FinOps](finops.md)
-- [Terraform](terraform.md)
-- [Cloud Security](cloud-security.md)
+- [AMAZON](aws.cloud.md)
+- [TOOLS](tools/)
+

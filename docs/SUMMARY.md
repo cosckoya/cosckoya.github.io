@@ -1,7 +1,2 @@
 - [Klaatu Barada Nikto!](index.md)
-- [Linux](linux/)
 - [Cloud](cloud/)
-- [DevOps](devops/)
-- [Containerization](containerization/)
-- [Security](security/)
-- [Tools](tools/)

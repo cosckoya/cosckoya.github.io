@@ -382,6 +382,35 @@
   outline-offset: 2px;
 }
 
+/* ============================================
+   NAVIGATION SECTION HEADERS CUSTOMIZATION
+   ============================================ */
+
+/* Section header labels (Linux, Cloud, DevOps, etc.) */
+.md-nav__item--section > .md-nav__link {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #A3D1FF;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Section header hover effect */
+.md-nav__item--section > .md-nav__link:hover {
+  color: #8FC3FF;
+}
+
+/* Optional: Add icon spacing for section headers */
+.md-nav__item--section > .md-nav__link .md-ellipsis {
+  font-family: var(--md-text-font);
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .md-typeset .grid.cards > div,

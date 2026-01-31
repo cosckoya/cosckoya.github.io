@@ -1,7 +1,0 @@
-- [DevOps Overview](index.md)
-- [CI/CD](cicd.md)
-- [GitOps](gitops.md)
-- [Ansible](ansible.md)
-- [Pre-Commit](pre-commit.md)
-- [Claude Code](claude-code.md)
-- [Azure DevOps](azure-devops.md)

@@ -1,1 +1,0 @@
-- [Azure Overview](index.md)

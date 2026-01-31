@@ -1,424 +1,263 @@
-# MkDocs Material Expert Skill
+# MkDocs Material Expert
 
-**Version:** 2026.01 **Status:** ✅ Active **Created:** January 26, 2026
+**Purpose:** UX/UI expert for Material for MkDocs theme - navigation, icons (loves octicons!), plugins, performance, accessibility (WCAG 2.1 AA), and template-based documentation generation.
 
-______________________________________________________________________
+**Version:** 2026.02 | **Status:** Active | **Updated:** January 31, 2026
 
-## Overview
+---
 
-A comprehensive Claude Code skill for MkDocs Material theme expertise. She's a UX/UI documentation designer who specializes in creating beautiful, accessible, and performant documentation sites.
+## Quick Start
 
-### Key Features
-
-- ✨ **Material Theme Mastery** - Colors, typography, icons, custom CSS
-- 🎨 **Icon Systems** - Octicons, FontAwesome, Material Design Icons
-- 🚀 **UX/UI Optimization** - Navigation, search, breadcrumbs, social cards
-- 🔌 **Plugin Ecosystem** - 10+ plugins configured and optimized
-- ⚡ **Performance** - Minification, caching, lazy loading
-- ♿ **Accessibility** - WCAG 2.1 AA compliance
-- 🎯 **Advanced Features** - Annotations, tabs, admonitions, custom components
-
-______________________________________________________________________
-
-## Installation
-
-The skill is already installed at:
-
-```
-.claude/skills/mkdocs-material-expert/SKILL.md
-```
-
-It's registered in `CLAUDE.md` and ready to use.
-
-______________________________________________________________________
-
-## Usage
-
-### Basic Invocation
-
-```
+```bash
 /mkdocs-material-expert [command]
 ```
 
 ### Common Commands
 
 ```bash
-# Audit current setup
+# Audit and suggest improvements
 /mkdocs-material-expert audit
 
-# Add octicons to admonitions
+# Generate documentation from templates
+/mkdocs-material-expert generate docs for kubectl
+/mkdocs-material-expert generate docs for Azure
+
+# Theme enhancements
 /mkdocs-material-expert add octicons
-
-# Improve navigation UX
 /mkdocs-material-expert improve navigation
-
-# Enable social cards (OG images)
-/mkdocs-material-expert enable social cards
-
-# Optimize performance
 /mkdocs-material-expert optimize performance
-
-# Add dark mode toggle
-/mkdocs-material-expert dark mode toggle
-
-# Configure breadcrumbs
-/mkdocs-material-expert add breadcrumbs
-
-# Setup blog section
-/mkdocs-material-expert setup blog
+/mkdocs-material-expert enable social cards
 ```
 
-______________________________________________________________________
+---
 
-## Capabilities
+## Core Capabilities
 
 ### Theme Configuration
+- Color schemes (light/dark with toggles)
+- Icon systems (Octicons, FontAwesome, Material)
+- Custom CSS and typography
+- Accessibility (WCAG 2.1 AA)
 
-- Dual color scheme (light/dark) with toggles
-- Custom palettes (16+ colors)
-- Typography configuration
-- Custom CSS variables
-- Icon system integration
-
-### Navigation Features
-
-- Section indexes
-- Breadcrumb trails
-- Instant loading (SPA-like)
-- URL tracking on scroll
-- Expandable sections
-- "Back to top" button
-
-### Search Optimization
-
-- Auto-suggestions
-- Highlight matches
-- Share search results
-- Stemming and stop words
-- Custom separators
-
-### Content Features
-
-- Code block copy/select/annotate
-- Persistent tab state
-- Tooltips
-- Edit/view source links
+### UX/UI Features
+- Navigation (breadcrumbs, instant loading, sections, tracking)
+- Search (suggestions, highlighting, sharing)
+- Content (code copy/annotate, tabs, tooltips)
+- Performance (minification, caching, lazy loading)
 
 ### Plugins
+- Search (optimized)
+- Tags (categorization)
+- Social (OG images)
+- Git committers (attribution)
+- Minify (HTML/CSS/JS)
+- Blog, RSS, Offline, Privacy
 
-- **Search** - Full-text with optimization
-- **Tags** - Tag system with index pages
-- **Social** - Auto-generated OG images
-- **Git Committers** - Author attribution
-- **Minify** - HTML/CSS/JS optimization
-- **Offline** - Service worker support
-- **Blog** - Integrated blogging platform
-- **RSS** - Feed generation
-- **Privacy** - GDPR compliance
+### Template Generation (NEW)
+Generate consistent documentation from project templates:
+- **tech-reference.template.md** - Cloud platforms, technologies (AWS, Azure, Kubernetes)
+- **tool-reference.template.md** - CLI tools, utilities (Terraform, Docker, kubectl)
 
-### Markdown Extensions
+**Features:**
+- Automated placeholder filling
+- Enforces octicons (no plain emojis)
+- Validates cynical/realistic tone
+- Updates navigation automatically
+- Tests with strict build validation
 
-- Admonitions (9 types)
-- Code blocks with syntax highlighting
-- Tabs and tabbed content
-- Icons and emojis (3 icon sets)
-- Custom attributes
-- Details/summary
-- Definition lists
-- Magic links
+---
 
-______________________________________________________________________
+## Development Philosophies
 
-## Configuration Examples
+**KISS (Keep It Simple)**
+- Use built-in features before custom CSS
+- One feature at a time
+- Minimal configuration
 
-### Minimal Enhancement (Phase 1)
+**DRY (Don't Repeat Yourself)**
+- Centralize CSS in single file
+- Use templates for consistency
+- Reuse components via includes
 
-```yaml
-theme:
-  features:
-    - navigation.breadcrumbs
-    - search.suggest
-    - search.highlight
-    - content.code.select
-```
+**Clean Code**
+- Group related features with comments
+- Consistent naming (`.cloud.md`, `.tool.md`, `.service.md`)
+- Remove unused config
 
-### Recommended Stack (Phase 2)
-
-```yaml
-theme:
-  features:
-    - navigation.indexes
-    - navigation.breadcrumbs
-    - navigation.instant.loading
-    - navigation.tracking
-    - content.code.copy
-    - content.code.select
-    - content.code.annotate
-    - content.tabs.link
-    - search.suggest
-    - search.highlight
-    - search.share
-    - toc.follow
-
-plugins:
-  - search
-  - tags
-  - social
-  - git-committers
-  - minify
-```
-
-### Advanced Setup (Phase 3)
-
-Add blog, RSS, offline support, privacy compliance, and custom styling.
-
-______________________________________________________________________
-
-## Personality
-
-The MkDocs Material Expert has a distinct personality:
-
-- **Enthusiastic** about beautiful documentation :octicons-sparkle-16:
-- **Detail-oriented** with configurations
-- **Patient** when explaining features
-- **Creative** in design suggestions
-- **Pragmatic** about complexity trade-offs
-
-### Favorite Things
-
-- **Octicons** :octicons-heart-fill-16: (user's favorite!)
-- Beautiful typography
-- Accessible design
-- Performance optimization
-- Clean, semantic markup
-
-### Communication Style
-
-Always explains:
-
-1. **What** the feature does
-1. **Why** it's beneficial
-1. **How** to implement it
-1. **Trade-offs** (complexity, performance)
-
-______________________________________________________________________
-
-## Integration
-
-### Works With
-
-- `/claude-code-expert` - Skill architecture
-- `documentation` rules - Content guidelines
-- `git-workflow` rules - Commit processes
-
-### Respects
-
-- SUMMARY.md files (literate navigation)
-- Strict build mode
-- Pre-commit hooks
-- Existing configuration
-
-______________________________________________________________________
-
-## Dependencies (2026)
-
-```txt
-# Core (Required)
-mkdocs>=1.5.3
-mkdocs-material>=9.5.0
-
-# Plugins (Essential)
-mkdocs-literate-nav>=0.6.1
-mkdocs-same-dir>=0.3.0
-mkdocs-minify-plugin>=0.8.0
-
-# Plugins (Optional)
-mkdocs-git-committers-plugin-2>=0.2.2
-mkdocs-rss-plugin>=1.12.0
-mkdocs-social-plugin>=0.2.0
-mkdocs-offline-plugin>=1.0.0
-
-# Markdown
-pymdown-extensions>=10.5
-```
-
-______________________________________________________________________
-
-## Examples
-
-### Example 1: Add Octicons to Admonitions
-
-**Input:**
-
-```
-/mkdocs-material-expert add octicons to admonitions
-```
-
-**Output:** Configures mkdocs.yml with octicon icons for all admonition types (note, warning, tip, danger, etc.)
-
-### Example 2: Enable Social Cards
-
-**Input:**
-
-```
-/mkdocs-material-expert enable social cards
-```
-
-**Output:**
-
-- Adds social plugin configuration
-- Creates card layout directory
-- Tests OG image generation
-- Provides usage examples
-
-### Example 3: Optimize Performance
-
-**Input:**
-
-```
-/mkdocs-material-expert optimize performance
-```
-
-**Output:**
-
-- Enables minification
-- Configures caching
-- Sets up lazy loading
-- Measures build time improvements
-- Checks site size reduction
-
-______________________________________________________________________
+---
 
 ## Testing
-
-The skill includes comprehensive testing guidance:
 
 ```bash
 # Local preview
 make serve
 
-# Build validation
+# Validate build (strict mode)
 make build
 
-# Check accessibility
-# (Manual testing with keyboard, screen reader)
+# Full validation
+make test
 ```
 
-### Testing Checklist
-
+### Checklist
 - [ ] `make serve` works
-- [ ] `make build` passes (strict mode)
-- [ ] Navigation resolves all links
-- [ ] Search returns relevant results
+- [ ] `make build` passes strict mode
+- [ ] Navigation links resolve
+- [ ] Search returns results
 - [ ] Icons display correctly
-- [ ] Code blocks render properly
-- [ ] Colors readable (contrast)
 - [ ] Mobile responsive
 - [ ] Keyboard accessible
-- [ ] Fast loading (\<3s)
+- [ ] Fast loading (<3s)
 
-______________________________________________________________________
+---
 
-## Performance Metrics
+## Configuration Examples
 
-Typical improvements after optimization:
+### Minimal (Phase 1)
 
-| Metric     | Before | After | Improvement |
-| ---------- | ------ | ----- | ----------- |
-| Build time | 5s     | 3s    | 40% faster  |
-| Site size  | 15MB   | 11MB  | 27% smaller |
-| Page load  | 2.5s   | 1.2s  | 52% faster  |
-| Lighthouse | 85     | 95+   | Performance |
+```yaml
+theme:
+  features:
+    - navigation.breadcrumbs
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+```
 
-______________________________________________________________________
+### Recommended (Phase 2)
 
-## Best Practices
+```yaml
+theme:
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant.loading
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - toc.follow
 
-1. **Test locally** - Always use `make serve` before committing
-1. **Validate build** - Run `make build` (strict mode catches errors)
-1. **Incremental changes** - Add one feature at a time
-1. **Measure performance** - Check build time and site size
-1. **Accessibility first** - WCAG 2.1 AA minimum standard
-1. **Use octicons** :octicons-heart-16: - User loves them!
-1. **Explain benefits** - User should understand why each feature helps
+plugins:
+  - search
+  - tags
+  - minify:
+      minify_html: true
+      minify_css: true
+      minify_js: true
+```
 
-______________________________________________________________________
+### Advanced (Phase 3)
+Add social cards, git-committers, blog, RSS, offline support.
+
+---
+
+## Integration
+
+**Works with:**
+- `/devops-github-expert` - CI/CD for Pages deployment
+- `/technical-writer` - Formal documentation standards
+- `/claude-code-expert` - Skill architecture
+
+**Respects:**
+- SUMMARY.md literate navigation
+- Strict build mode
+- Pre-commit hooks
+- Project templates
+
+---
+
+## Template Generation Workflow
+
+**Example: Generate kubectl documentation**
+
+1. **Invoke:**
+   ```
+   /mkdocs-material-expert generate docs for kubectl
+   ```
+
+2. **Skill gathers information** (via AskUserQuestion):
+   - Tool name, description, tags
+   - Essential commands
+   - Common patterns
+   - Installation steps
+   - Pro tips and gotchas
+
+3. **Fills template placeholders:**
+   - Replaces all `{{PLACEHOLDER}}` values
+   - Enforces octicons (`:octicons-name-16:`)
+   - Applies cynical/realistic tone
+   - Sets current date
+
+4. **Writes and validates:**
+   - Writes to `docs/cloud/tools/kubectl.tool.md`
+   - Updates `docs/cloud/tools/SUMMARY.md`
+   - Runs `mkdocs build --strict`
+
+---
 
 ## Troubleshooting
 
-### Build Fails
-
-```bash
-make build
-# Review error output
-# Check mkdocs.yml syntax
-# Validate plugin versions
-```
-
-### Icons Not Showing
-
+**Icons not showing:**
 ```yaml
-# Verify pymdownx.emoji is configured
 markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 ```
 
-### Plugin Conflicts
+**Build fails:**
+```bash
+make build  # Review errors
+# Check mkdocs.yml syntax
+# Validate plugin versions
+# Check for broken links
+```
 
+**Plugin conflicts:**
 ```bash
 # Check plugin order in mkdocs.yml
 # Some plugins must run before others
 # Example: search before minify
 ```
 
-______________________________________________________________________
-
-## Version History
-
-### 2026.01 (January 26, 2026)
-
-- Initial release
-- Material 9.5.x+ support
-- 10+ plugin configurations
-- Comprehensive icon system support
-- Accessibility guidelines
-- Performance optimization
-- Custom CSS patterns
-- Full 2026 feature set
-
-______________________________________________________________________
+---
 
 ## Resources
 
-- [Material for MkDocs Docs](https://squidfunk.github.io/mkdocs-material/)
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - [MkDocs Documentation](https://www.mkdocs.org/)
-- [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/)
 - [Octicons](https://primer.style/foundations/icons)
 - [WCAG Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+- [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/)
 
-______________________________________________________________________
+---
 
-## Contributing
+## Dependencies
 
-To enhance this skill:
+```txt
+# Core
+mkdocs>=1.5.3
+mkdocs-material>=9.7.0
 
-1. Test new Material features as they're released
-1. Update plugin versions and configurations
-1. Add new icon sets or design patterns
-1. Improve accessibility guidance
-1. Optimize performance techniques
-1. Document user feedback and common requests
+# Essential Plugins
+mkdocs-literate-nav>=0.6.1
+mkdocs-minify-plugin>=0.8.0
 
-______________________________________________________________________
+# Optional Plugins
+mkdocs-git-committers-plugin-2>=0.2.2
+mkdocs-rss-plugin>=1.12.0
 
-## License
+# Markdown
+pymdown-extensions>=10.5
+```
 
-This skill is part of the cosckoya.github.io project.
+---
 
-______________________________________________________________________
-
-**Maintained By:** MkDocs Material Expert + Human **Last Updated:** January 26, 2026 **Version:** 2026.01
-
-Built with :octicons-heart-fill-16: for beautiful documentation
+**Maintained By:** cosckoya + Claude Code
+**Philosophy:** DRY, KISS, Clean Code
+**Communication:** Professional (no emojis in responses)
+**Content:** ALWAYS use octicons in site content (`:octicons-name-16:`)
