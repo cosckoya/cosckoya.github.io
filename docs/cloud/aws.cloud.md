@@ -4,43 +4,69 @@ description: AWS reference - cloud platform running half the internet, 200+ serv
 tags:
   - aws
   - cloud
+  - amazon
 ---
 
-# AWS (Amazon Web Services)
+# :fontawesome-brands-aws: AWS (Amazon Web Services)
 
 Cloud platform that runs half the internet. 200+ services (you'll use maybe 10). 33+ regions globally. Industry standard for cloud infrastructure. Pricing is a mystery, bills are scary, but it works.
 
+!!! tip "2026 Update"
+    AWS continues to dominate cloud infrastructure with over 200 services. Focus on core services (EC2, S3, Lambda, RDS) and learn IAM inside-out. Cost optimization is more critical than ever.
+
 ______________________________________________________________________
 
-## Quick Hits
+## :fontawesome-solid-bolt-lightning: Quick Hits
 
 === ":fontawesome-solid-list-check: Essential Services"
 
     ```bash
     # EC2 - Virtual machines (you'll use this)
-    aws ec2 run-instances --image-id ami-xxx --instance-type t3.micro
+    aws ec2 run-instances \
+      --image-id ami-xxx \
+      --instance-type t3.micro \
+      --key-name my-key # (1)!
 
     # S3 - Object storage (everyone uses this)
     aws s3 cp file.txt s3://bucket-name/
-    aws s3 sync ./local s3://bucket/path --delete
+    aws s3 sync ./local s3://bucket/path --delete # (2)!
 
     # Lambda - Serverless functions (scales like crazy)
-    aws lambda invoke --function-name my-function output.txt
+    aws lambda invoke \
+      --function-name my-function \
+      --payload '{"key":"value"}' \
+      output.txt # (3)!
 
     # RDS - Managed databases (don't run your own DB)
     aws rds describe-db-instances
+    aws rds create-db-snapshot --db-instance-identifier prod-db # (4)!
 
     # IAM - Identity management (painful but critical)
     aws iam create-user --user-name dev-user
     aws sts get-caller-identity  # "Who the fuck am I?"
+    aws iam list-attached-user-policies --user-name dev-user # (5)!
 
     # CloudWatch - Logs and monitoring (set billing alarms!)
     aws logs tail /aws/lambda/my-function --follow
+    aws cloudwatch put-metric-alarm \
+      --alarm-name BillingAlarm \
+      --alarm-description "Alert when bill exceeds $100" \
+      --metric-name EstimatedCharges \
+      --threshold 100 # (6)!
 
     # ECS/EKS - Container orchestration
     aws ecs list-clusters
     aws eks list-clusters
+    aws eks update-kubeconfig --name my-cluster # (7)!
     ```
+
+    1. SSH key for instance access - create with `aws ec2 create-key-pair`
+    2. `--delete` removes files from S3 that don't exist locally - dangerous!
+    3. Lambda invoke is synchronous - use `--invocation-type Event` for async
+    4. Always snapshot before major changes - saved my ass multiple times
+    5. Check permissions when debugging "Access Denied" errors
+    6. Set this up DAY ONE - learn from others' $10k+ billing surprises
+    7. Updates your kubeconfig for kubectl access
 
     **Real talk:**
 
@@ -58,13 +84,14 @@ ______________________________________________________________________
 
     # S3 upload with proper error handling
     def upload_to_s3(file_path, bucket, key):
+        """Upload file to S3 with private ACL."""
         s3 = boto3.client('s3')
         try:
             s3.upload_file(
                 file_path,
                 bucket,
                 key,
-                ExtraArgs={'ACL': 'private'}  # Don't leak shit
+                ExtraArgs={'ACL': 'private'}  # Don't leak shit # (1)!
             )
             return True
         except ClientError as e:
@@ -73,6 +100,7 @@ ______________________________________________________________________
 
     # Lambda handler pattern (use this)
     def lambda_handler(event, context):
+        """Standard Lambda handler with proper error handling."""
         try:
             # Parse event (API Gateway, SQS, etc.)
             body = json.loads(event.get('body', '{}'))
@@ -83,26 +111,35 @@ ______________________________________________________________________
             # Return proper response
             return {
                 'statusCode': 200,
-                'headers': {'Content-Type': 'application/json'},
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'  # Adjust for prod # (2)!
+                },
                 'body': json.dumps(result)
             }
         except Exception as e:
-            print(f"Error: {e}")  # Goes to CloudWatch
+            print(f"Error: {e}")  # Goes to CloudWatch # (3)!
             return {'statusCode': 500, 'body': 'Internal error'}
 
     # DynamoDB pattern (NoSQL done right)
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('Users')
 
-    # Query (efficient)
+    # Query (efficient) - use this
     response = table.query(
         KeyConditionExpression='user_id = :uid',
         ExpressionAttributeValues={':uid': '12345'}
-    )
+    ) # (4)!
 
-    # Scan (expensive, avoid in prod)
-    response = table.scan(Limit=100)
+    # Scan (expensive) - avoid in prod
+    response = table.scan(Limit=100)  # Will cost $$$$ at scale # (5)!
     ```
+
+    1. Always set ACL to private unless you specifically need public access
+    2. Lock down CORS in production - `*` is for development only
+    3. Lambda logs go to CloudWatch automatically - use structured logging for production
+    4. Queries use indexes - fast and cheap
+    5. Scans read entire table - slow and expensive, only for admin tasks
 
     ```yaml
     # CloudFormation/SAM pattern (infrastructure as code)
@@ -113,79 +150,102 @@ ______________________________________________________________________
       MyFunction:
         Type: AWS::Serverless::Function
         Properties:
-          Runtime: python3.12
+          Runtime: python3.12  # Use latest runtime # (1)!
           Handler: app.lambda_handler
+          Timeout: 30  # Seconds - adjust based on workload
+          MemorySize: 512  # MB - more memory = faster CPU # (2)!
           Environment:
             Variables:
               TABLE_NAME: !Ref MyTable
           Policies:
             - DynamoDBCrudPolicy:
-                TableName: !Ref MyTable
+                TableName: !Ref MyTable  # Least privilege # (3)!
 
       MyTable:
         Type: AWS::DynamoDB::Table
         Properties:
-          BillingMode: PAY_PER_REQUEST
+          BillingMode: PAY_PER_REQUEST  # No capacity planning # (4)!
           AttributeDefinitions:
             - AttributeName: id
               AttributeType: S
           KeySchema:
             - AttributeName: id
               KeyType: HASH
+          StreamSpecification:  # For DynamoDB Streams
+            StreamViewType: NEW_AND_OLD_IMAGES # (5)!
     ```
+
+    1. Python 3.12 available since 2024 - use latest for performance
+    2. Lambda charges by GB-seconds - 512MB is sweet spot for most workloads
+    3. Only grant permissions this function actually needs
+    4. Pay per request - no provisioned capacity, scales automatically
+    5. Streams enable event-driven architectures - trigger Lambda on changes
+
+    **Why this works:**
+
+    - Boto3 is official AWS SDK - well maintained, good docs
+    - Error handling prevents silent failures
+    - CloudFormation/SAM enables version control for infrastructure
+    - DynamoDB queries scale better than scans (use indexes!)
+    - Lambda handler pattern is battle-tested across millions of functions
 
 === ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
-    **Cost optimization (your CFO will thank you):**
+    !!! success "Cost Optimization (your CFO will thank you)"
+        - **Reserved Instances:** 72% savings for predictable workloads (1-3 year commitment)
+        - **Spot Instances:** 90% savings for batch jobs (can be terminated with 2-min warning)
+        - **S3 Intelligent-Tiering:** Automatic cost optimization based on access patterns
+        - **CloudWatch billing alarms:** Set up IMMEDIATELY - prevent $10k+ surprises
+        - **Delete unused resources:** Snapshots, AMIs, elastic IPs add up fast
+        - **Use AWS Cost Explorer:** Analyze spending patterns, identify waste
+        - **Tag everything:** Enable cost allocation by project/team/environment
 
-    - Use Reserved Instances for predictable workloads (up to 72% savings)
-    - Spot Instances for batch jobs (up to 90% savings, but can be terminated)
-    - S3 Intelligent-Tiering for storage (automatic cost optimization)
-    - Set CloudWatch billing alarms IMMEDIATELY (save yourself from $10k surprises)
-    - Delete unused snapshots, AMIs, and elastic IPs (they add up fast)
+    !!! warning "Security (don't get hacked)"
+        - **Never hardcode credentials** - use IAM roles, instance profiles, or Systems Manager
+        - **Enable CloudTrail + GuardDuty** - detect breaches before bankruptcy
+        - **Systems Manager Parameter Store** - free for <10k parameters, encrypted at rest
+        - **VPC Flow Logs** - network debugging and security analysis
+        - **Least privilege IAM policies** - start restrictive, open up as needed
+        - **MFA on root account** - this is non-negotiable, do it now
+        - **AWS Security Hub** - centralized security findings (2026 standard)
 
-    **Security (don't get hacked):**
+    !!! tip "Performance"
+        - **Same region/AZ traffic** - cross-region costs money + latency (100ms+)
+        - **CloudFront CDN** - S3 alone is slow for users, CDN is sub-50ms globally
+        - **RDS read replicas** - scale read-heavy workloads horizontally
+        - **ElastiCache** - Redis/Memcached for sub-ms caching (game changer)
+        - **Lambda provisioned concurrency** - eliminate cold starts for critical paths
+        - **Use AWS PrivateLink** - avoid internet gateway for service-to-service
 
-    - Never hardcode credentials - use IAM roles everywhere
-    - Enable CloudTrail + GuardDuty (detect breaches before bankruptcy)
-    - Use Systems Manager Parameter Store for secrets (free for \<10k params)
-    - VPC Flow Logs for network debugging
-    - Principle of least privilege (IAM policies should be restrictive AF)
+    !!! danger "Gotchas (learn from others' pain)"
+        - **Data transfer OUT** - in is free, out costs $$$ (especially cross-region)
+        - **NAT Gateway costs** - can exceed EC2 instance costs (use VPC endpoints instead)
+        - **CloudWatch Logs** - verbose logging = expensive storage ($0.50/GB)
+        - **DynamoDB scans** - will bankrupt you at scale, always use queries with indexes
+        - **Lambda cold starts** - 1-2 seconds for large functions (use provisioned concurrency)
+        - **EBS snapshots** - incremental but deletions are confusing (read the docs!)
+        - **S3 bucket policies** - one wrong character = data leak (test with IAM simulator)
 
-    **Performance:**
+    !!! info "Monitoring & Observability"
+        - **CloudWatch** - included but basic, good enough for small/medium workloads
+        - **X-Ray** - distributed tracing for microservices debugging (2026 essential)
+        - **Datadog/New Relic** - consider for serious production monitoring
+        - **Set up alarms for:** billing, CPU >80%, disk >90%, error rates >1%
+        - **Use CloudWatch Insights** - query logs with SQL-like syntax
+        - **CloudWatch RUM** - real user monitoring for frontend performance (2026)
 
-    - Keep traffic in same region/AZ (cross-region costs money + latency)
-    - Use CloudFront CDN for static content (S3 alone is slow)
-    - RDS read replicas for read-heavy workloads
-    - ElastiCache (Redis/Memcached) for caching (sub-ms latency)
-
-    **Gotchas (learn from others' pain):**
-
-    - Data transfer OUT costs add up fast (in is free, out is $$$$)
-    - NAT Gateway costs more than the EC2 instances sometimes
-    - CloudWatch Logs can get expensive with verbose logging
-    - DynamoDB scans will bankrupt you at scale (use queries)
-    - Lambda cold starts can be 1-2 seconds (use provisioned concurrency if critical)
-    - EBS snapshots are incremental but deletions are confusing (read the docs)
-
-    **Monitoring:**
-
-    - CloudWatch is included but basic (consider Datadog/New Relic for serious monitoring)
-    - X-Ray for distributed tracing (debug microservices hell)
-    - Set up alarms for: billing, CPU, disk, error rates
-
-    **When NOT to use AWS:**
-
-    - Small personal projects (Vercel/Netlify/Railway way easier)
-    - You hate vendor lock-in (consider Kubernetes on any cloud)
-    - Budget is tiny (free tier ends, bills start)
-    - Team has no cloud experience (steep learning curve)
+    !!! question "When NOT to use AWS"
+        - **Small personal projects** - Vercel/Netlify/Railway way easier (and cheaper)
+        - **Vendor lock-in concerns** - consider Kubernetes on any cloud
+        - **Tiny budget** - free tier ends after 12 months, bills start
+        - **No cloud experience** - steep learning curve, invest time in fundamentals first
+        - **Compliance hell** - some industries require on-prem (banking, healthcare)
 
 ______________________________________________________________________
 
-## Learning Paths
+## :fontawesome-solid-graduation-cap: Learning Paths
 
-### :fontawesome-solid-graduation-cap: Free Resources
+### :fontawesome-solid-book-open: Free Resources
 
 - **[AWS Skill Builder](https://skillbuilder.aws)** - Official training, tons of free courses (start here)
 - **[AWS Free Tier](https://aws.amazon.com/free)** - 12 months free for core services (stay within limits!)
@@ -193,15 +253,22 @@ ______________________________________________________________________
 - **[AWS Workshops](https://workshops.aws)** - Hands-on labs, various topics
 - **[A Cloud Guru Free Tier](https://learn.acloud.guru/search?query=aws&type=free)** - Quality video courses
 - **[AWS Getting Started Guides](https://aws.amazon.com/getting-started/)** - Official tutorials
+- **[AWS re:Post](https://repost.aws/)** - Official Q&A platform (replaced forums in 2024)
 
 ### :fontawesome-solid-flask: Interactive Labs
 
 - **[AWS Sandbox Accounts](https://aws.amazon.com/getting-started/hands-on/)** - Official hands-on tutorials in real AWS
 - **[Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)** - Temporary accounts for safe experimentation
 - **[Instruqt AWS Labs](https://play.instruqt.com/public/topics/aws)** - Browser-based scenarios
-- **[LocalStack](https://localstack.cloud/)** - Run AWS locally for development
+- **[LocalStack](https://localstack.cloud/)** - Run AWS locally for development (Pro version worth it)
+- **[AWS CloudShell](https://aws.amazon.com/cloudshell/)** - Browser-based shell with AWS CLI pre-installed
 
 ### :fontawesome-solid-certificate: Certifications Worth It
+
+!!! success "Recommended Path"
+    1. **Solutions Architect Associate** - Most valuable, industry standard
+    2. **Developer Associate** - If you code daily on AWS
+    3. Skip others unless employer pays or senior role requires
 
 - **[Cloud Practitioner](https://aws.amazon.com/certification/certified-cloud-practitioner/)** - $100, easiest, good starting point if totally new
 - **[Solutions Architect Associate](https://aws.amazon.com/certification/certified-solutions-architect-associate/)** - $150, **most popular**, worth it for resume (this one matters)
@@ -212,31 +279,32 @@ ______________________________________________________________________
 **Reality check:**
 
 - Solutions Architect Associate is the sweet spot (most job postings ask for this)
-- Study 2-3 months, practice exams are critical
+- Study 2-3 months with hands-on practice, exams are scenario-based
 - Use [Tutorials Dojo practice exams](https://tutorialsdojo.com/) ($15, best investment)
+- Join [r/AWSCertifications](https://reddit.com/r/AWSCertifications) for study tips
 
 ### :fontawesome-solid-rocket: Projects to Build
 
-**Beginner (learn the basics):**
+!!! example "Beginner (learn the basics)"
+    - **Static website** - S3 + CloudFront + Route53 (learn storage + CDN)
+    - **Serverless URL shortener** - Lambda + DynamoDB + API Gateway
+    - **EC2 web server** - Deploy LAMP/NGINX stack manually
 
-- Static website on S3 + CloudFront (learn storage + CDN)
-- Serverless URL shortener (Lambda + DynamoDB + API Gateway)
+!!! example "Intermediate (portfolio-worthy)"
+    - **REST API** - Lambda + API Gateway + DynamoDB + Cognito auth
+    - **File processing pipeline** - S3 triggers Lambda, stores results in RDS
+    - **CI/CD pipeline** - CodePipeline + CodeBuild + ECR + ECS
+    - **Serverless blog** - Amplify + Lambda + DynamoDB + S3
 
-**Intermediate (portfolio-worthy):**
-
-- REST API with Lambda + API Gateway + DynamoDB + Cognito auth
-- File processing pipeline (S3 triggers Lambda, stores results in RDS)
-- CI/CD pipeline with CodePipeline + CodeBuild + ECR + ECS
-
-**Advanced (job-interview flex):**
-
-- Multi-region application with Route 53 failover + RDS cross-region replicas
-- Event-driven microservices with SQS/SNS/EventBridge
-- Cost optimization dashboard with Lambda + Cost Explorer API + QuickSight
+!!! example "Advanced (job-interview flex)"
+    - **Multi-region application** - Route 53 failover + RDS cross-region replicas
+    - **Event-driven microservices** - SQS/SNS/EventBridge architecture
+    - **Cost optimization dashboard** - Lambda + Cost Explorer API + QuickSight
+    - **Real-time analytics** - Kinesis Data Streams + Lambda + Timestream
 
 ______________________________________________________________________
 
-## Community Pulse
+## :fontawesome-solid-heart-pulse: Community Pulse
 
 ### :fontawesome-solid-users: Who to Follow
 
@@ -292,15 +360,15 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Stuff__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
-    [AWS Docs](https://docs.aws.amazon.com/)
+    [AWS Documentation](https://docs.aws.amazon.com/)
 
     [AWS CLI Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/index.html)
 
@@ -308,7 +376,7 @@ ______________________________________________________________________
 
     [Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 
-- :fontawesome-solid-flask: __Hands-on__
+- :fontawesome-solid-flask: __Hands-on Practice__
 
     ______________________________________________________________________
 
@@ -316,17 +384,17 @@ ______________________________________________________________________
 
     [AWS Workshops](https://workshops.aws/)
 
-    [Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)
+    [Qwiklabs AWS Track](https://www.cloudskillsboost.google/catalog?keywords=aws)
 
     [LocalStack](https://localstack.cloud/)
 
-- :fontawesome-solid-code: __Real Code__
+- :fontawesome-solid-code: __Code Examples__
 
     ______________________________________________________________________
 
     [Awesome AWS](https://github.com/donnemartin/awesome-aws)
 
-    [AWS Samples](https://github.com/aws-samples)
+    [AWS Samples (GitHub)](https://github.com/aws-samples)
 
     [Serverless Examples](https://www.serverless.com/examples/)
 
@@ -344,23 +412,23 @@ ______________________________________________________________________
 
     [AWS Heroes Blogs](https://aws.amazon.com/developer/community/heroes/)
 
-    [AWS This Week](https://aweeklydigest.com/)
+    [AWS This Week Newsletter](https://aweeklydigest.com/)
 
     [Corey Quinn's Blog](https://www.lastweekinaws.com/blog/)
 
-- :fontawesome-solid-screwdriver-wrench: __Tools & Extensions__
+- :fontawesome-solid-screwdriver-wrench: __Tools & CLIs__
 
     ______________________________________________________________________
 
-    [AWS CLI](https://aws.amazon.com/cli/)
+    [AWS CLI v2](https://aws.amazon.com/cli/)
 
     [AWS CDK](https://aws.amazon.com/cdk/) (Infrastructure as Code)
 
     [Serverless Framework](https://www.serverless.com/)
 
-    [AWS SAM](https://aws.amazon.com/serverless/sam/) (Serverless Application Model)
+    [AWS SAM](https://aws.amazon.com/serverless/sam/)
 
-    [AWS Toolkit (VSCode)](https://aws.amazon.com/visualstudiocode/)
+    [AWS Toolkit for VSCode](https://aws.amazon.com/visualstudiocode/)
 
     [Steampipe](https://steampipe.io/) (SQL for AWS APIs)
 
@@ -372,14 +440,14 @@ ______________________________________________________________________
 
     [AWS Blog](https://aws.amazon.com/blogs/)
 
-    [r/aws](https://reddit.com/r/aws)
+    [r/aws Subreddit](https://reddit.com/r/aws)
 
     [Hacker News AWS](https://hn.algolia.com/?q=AWS)
 
-    [AWS Status](https://status.aws.amazon.com/) (When shit breaks)
+    [AWS Status Dashboard](https://status.aws.amazon.com/)
 
 </div>
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-01-13 **Vibe Check:** :fontawesome-solid-globe: Mainstream - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.
+**Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-globe: **Mainstream** - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.

@@ -32,7 +32,8 @@
       "Bash(mdformat *)",
       "Bash(codespell *)",
       "Bash(ruff *)",
-      "WebFetch(domain:squidfunk.github.io)"
+      "WebFetch(domain:squidfunk.github.io)",
+      "WebFetch(domain:github.com)"
     ],
     "block": [
       "Read(.env*)",
