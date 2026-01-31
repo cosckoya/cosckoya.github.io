@@ -6,231 +6,206 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Language Policy:** All Claude Code interactions must be conducted in English only.
 
-This is a personal technical documentation site built with MkDocs Material and hosted on GitHub Pages at https://cosckoya.github.io. The site serves as a comprehensive knowledge base covering six main technical domains: SysAdmin, Cloud, DevOps, Containerization, Security (Hack), and Tools.
+Personal technical documentation site built with MkDocs Material and hosted on GitHub Pages at https://cosckoya.github.io. Focus on Cloud platforms and tools with template-based documentation generation.
 
-## Build System and Commands
-
-### Development Workflow
+## Build Commands
 
 ```bash
-# First-time setup
-make dev              # Creates venv, installs dependencies, sets up pre-commit hooks
+# Activate virtual environment (required)
+source venv/bin/activate
 
 # Local development
-make serve            # Start live-reload server at localhost:8000
+mkdocs serve              # Live-reload server at localhost:8000
 
-# Building and testing
-make build            # Build site in strict mode (catches all warnings/errors)
-make test             # Run pre-commit hooks + strict build validation
-
-# Deployment
-make deploy           # Deploy to GitHub Pages (rarely needed - CI handles this)
-
-# Maintenance
-make clean            # Remove build artifacts and Python cache files
-make update           # Update dependencies to latest compatible versions
+# Build and validation
+mkdocs build --strict     # Build with warnings as errors
 ```
 
-### Key Requirements
-
-- All builds use `mkdocs build --strict` which treats warnings as errors
-- Pre-commit hooks enforce markdown formatting, spell checking, and YAML validation
-- Python virtual environment in `venv/` directory is used for dependency isolation
-
-### Dependency Management
-
-Uses **PEP 621** via `pyproject.toml` - single source of truth for all dependencies.
-
-```bash
-pip install -e .          # Production dependencies
-pip install -e .[dev]     # + development tools (mdformat, codespell, ruff)
-```
+**No Makefile exists** - use mkdocs commands directly.
 
 ## Architecture
 
-### Content Organization
+### Content Structure
 
-The site uses **literate navigation** via `SUMMARY.md` files. Each major section has:
-
-- `SUMMARY.md` - Defines navigation structure for that section
-- `index.md` - Landing page for the section
-
-Main sections:
-
-- `docs/sysadmin/` - Linux, networking, storage, fundamentals
-- `docs/cloud/` - AWS, Azure, GCP with sub-sections for each platform
-- `docs/devops/` - Git workflows, CI/CD, GitHub Actions
-- `docs/containerization/` - Docker, Kubernetes, Helm
-- `docs/hack/` - OSINT, pentesting, security research
-- `docs/tools/` - CLI tools, editors, utilities
-
-### Navigation Structure
-
-Navigation is controlled by `SUMMARY.md` files using the `mkdocs-literate-nav` plugin:
-
-- Main navigation: `docs/SUMMARY.md`
-- Section navigation: `docs/<section>/SUMMARY.md`
-- Maximum 3-level hierarchy enforced
-- All links must be relative paths from the SUMMARY.md location
-
-### Theme and Styling
-
-MkDocs Material theme (v9.7.0+) with:
-
-- Slate color scheme with deep purple/teal accents
-- Custom CSS in `docs/resources/stylesheets/` and `docs/stylesheets/`
-- Features enabled: code copy buttons, navigation indexes, tabbed content
-- HTML/JS/CSS minification for production builds
-
-### Markdown Extensions
-
-Available extensions in `mkdocs.yml`:
-
-- **Admonitions** - Use `!!! note`, `!!! warning`, `!!! tip` for callouts
-- **Tabbed content** - Use `=== "Tab Name"` syntax
-- **Code highlighting** - Automatic syntax highlighting with copy buttons
-- **Table of contents** - Auto-generated with permalinks
-- **Superfences** - Nested code blocks and content blocks
-
-## Development Guidelines
-
-### Adding New Content
-
-1. Create markdown file in appropriate section directory
-1. Add entry to the section's `SUMMARY.md` file
-1. Use relative paths from the SUMMARY.md location
-1. Test with `make serve` to verify navigation works
-1. Run `make test` before committing
-
-### Modifying Navigation
-
-- Navigation is defined in `SUMMARY.md` files, not in `mkdocs.yml`
-- Main nav: `docs/SUMMARY.md`
-- Section nav: `docs/<section>/SUMMARY.md`
-- Format: `- [Link Text](relative/path.md)`
-- For directory links, use trailing slash: `- [Section](directory/)`
-
-### Link Integrity
-
-Validate documentation integrity with these commands:
-
-```bash
-make build                    # Strict mode catches broken links and missing files
-make test                     # Run pre-commit hooks + build validation
-grep -r "\.md" docs/ | grep -v "site/"  # Find all markdown files
+```
+docs/
+├── cloud/               # Cloud platforms (AWS) and tools (Terraform)
+│   ├── aws.cloud.md
+│   ├── SUMMARY.md
+│   └── tools/
+│       ├── terraform.tool.md
+│       └── SUMMARY.md
+├── templates/           # Documentation templates
+│   ├── tech-reference.template.md
+│   ├── tool-reference.template.md
+│   └── README.md
+├── index.md            # Home page
+├── SUMMARY.md          # Main navigation
+└── resources/
+    ├── css/
+    │   └── snape.css   # Custom styling
+    └── img/            # Images and logos
 ```
 
-The strict build mode (`mkdocs build --strict`) will fail on:
+### Navigation
 
-- Broken internal links
-- Missing files in navigation
-- Orphaned pages not in SUMMARY.md files
+- **Literate navigation:** Uses `mkdocs-literate-nav` plugin with `SUMMARY.md` files
+- **No index.md pages:** Navigation uses `navigation.sections` + `navigation.expand`
+- **3-level hierarchy maximum**
+- **Relative links:** All links relative from SUMMARY.md location
 
-### Code Quality and Style Guidelines
+### Theme Configuration
 
-**Pre-commit hooks** enforce quality automatically (configured in `.pre-commit-config.yaml`):
+MkDocs Material 9.7.0+ with:
+- **Color scheme:** Slate (deep purple/teal accents)
+- **Custom CSS:** `docs/resources/css/snape.css`
+- **Icons:** Octicons only (`:octicons-name-16:` syntax)
+- **Features:** Instant loading, search suggestions, code copy, breadcrumbs
 
-```bash
-make dev                      # Setup hooks
-pre-commit run --all-files    # Run manually
-```
+Key theme features in `mkdocs.yml`:
+- `navigation.sections` - Expandable sections
+- `navigation.expand` - Auto-expand sections
+- `navigation.instant.loading` - SPA-like navigation
+- `search.suggest` - Search auto-complete
+- `content.code.copy` - Code copy buttons
 
-**Automated checks:** Ruff (Python), mdformat (Markdown), codespell (spelling), yamllint (YAML), bandit (security)
+## Development Workflow
+
+### Adding Content
+
+1. Create markdown file in appropriate section
+2. Add entry to section's `SUMMARY.md`
+3. Use octicons (`:octicons-name-16:`), never plain emojis
+4. Test locally: `mkdocs serve`
+5. Validate: `mkdocs build --strict`
+
+### Template-Based Generation
+
+Use `/mkdocs-material-expert` skill to generate documentation:
+
+**Templates:**
+- `docs/templates/tech-reference.template.md` - Cloud platforms, technologies
+- `docs/templates/tool-reference.template.md` - CLI tools, utilities
+
+**File naming:**
+- Cloud platforms: `{name}.cloud.md`
+- Tools: `{name}.tool.md`
+- Services: `{name}.service.md`
+
+**Workflow:**
+1. Read template and placeholder docs
+2. Gather information from user
+3. Replace all `{{PLACEHOLDER}}` values
+4. Validate (octicons, tone, completeness)
+5. Write file with proper naming
+6. Update SUMMARY.md navigation
+7. Test with `mkdocs build --strict`
+
+### Content Standards
+
+**Tone:**
+- Cynical, realistic, practical
+- No marketing speak
+- Direct and helpful
+- Code-focused examples
+
+**Formatting:**
+- **ALWAYS octicons:** `:octicons-name-16:` syntax
+- **NEVER plain emojis** in site content
+- **Three-tab structure:** Essential → Common Patterns → Pro Tips & Gotchas
+- **Code blocks:** Include inline comments, specify language
+- **"Real talk" sections:** Honest practical advice
 
 ## CI/CD Pipeline
 
-GitHub Actions workflow (`.github/workflows/gh-pages.yml`):
-
+**Deployment:** GitHub Actions `.github/workflows/gh-pages.yml`
 - Triggers on push to `main` branch only
-- Builds with `mkdocs build --strict`
-- Deploys to `gh-pages` branch automatically
-- Caches pip dependencies and MkDocs Material assets (weekly rotation)
+- Runs `mkdocs build --strict`
+- Auto-deploys to `gh-pages` branch
+- Uses Python 3.12 and pip caching
 
-**Important**: Only pushes to `main` trigger deployment. Development should happen in feature branches.
-
-## Common Scenarios
-
-### Adding a New Section
-
-1. Create directory: `docs/newsection/`
-1. Create `docs/newsection/index.md` with section overview
-1. Create `docs/newsection/SUMMARY.md` with section navigation
-1. Add section to main `docs/SUMMARY.md`: `- [New Section](newsection/)`
-1. Verify with `make serve` and `make build` (strict mode validates structure)
-
-### Fixing Broken Links
-
-1. Run `make build` to identify broken links (strict mode fails on errors)
-1. Links must be relative to the file containing them
-1. Directory links should point to directory with trailing slash or to `index.md`
-1. Test with `make serve` to verify navigation works correctly
-
-### Updating Dependencies
-
-```bash
-make update           # Updates all Python packages
-make test            # Verify everything still works
-# Review changes to requirements-lock.txt
-```
-
-Dependabot runs monthly to suggest dependency updates via pull requests.
+**Branch strategy:**
+- `main` - Production (auto-deploys)
+- `develop` - Development
+- Feature branches from develop
 
 ## Available Skills
 
-### `/mkdocs-material-expert` - MkDocs Material Theme Specialist
+### `/mkdocs-material-expert`
 
-UX/UI designer for Material for MkDocs. Specializes in theme configuration, icon systems (loves octicons! :octicons-heart-16:), navigation, plugins, performance, and accessibility (WCAG 2.1 AA).
+UX/UI expert for Material for MkDocs. Handles theme configuration, icons (loves octicons!), navigation, plugins, performance, accessibility (WCAG 2.1 AA), and template-based documentation generation.
 
-**Use for:** mkdocs.yml configuration, Material theme features, navigation/search UX, plugin setup, performance optimization, custom CSS.
+**Capabilities:**
+- Theme configuration (colors, icons, typography, custom CSS)
+- UX/UI optimization (navigation, search, breadcrumbs)
+- Plugin ecosystem (search, tags, social, minify)
+- Performance optimization
+- Template generation from tech-reference and tool-reference templates
+- Follows KISS, DRY, Clean Code philosophies
 
-### `/devops-github-expert` - CI/CD/CS Pipeline Automation Specialist
+**Invocation:**
+```bash
+/mkdocs-material-expert [command]
+/mkdocs-material-expert audit
+/mkdocs-material-expert generate docs for kubectl
+/mkdocs-material-expert optimize performance
+```
 
-DevOps engineer for GitHub Actions, Pages, and modern CI/CD/CS. Follows KISS, DRY, Clean Code, IaC, Everything as Code, Immutable Infrastructure, Continuous Everything.
+## Configuration Files
 
-**Use for:** Workflow optimization, GitHub Pages deployment, security scanning (Trivy, Gitleaks, SBOM), Dependabot setup, reusable workflows, performance tuning.
+### mkdocs.yml
 
-### `/technical-writer` - DevSecOps Documentation Specialist
+Main configuration file with:
+- Site metadata (name, URL, description)
+- Theme configuration (Material 9.7.0+)
+- Navigation plugins (literate-nav)
+- Markdown extensions (admonitions, tabs, code highlighting, emoji)
+- Features (instant loading, search, breadcrumbs)
+- Custom CSS and logo/favicon paths
 
-Professional technical writer for ANY technology following formal IEC/IEEE 82079-1 and ALCOA-C standards (superior to AWS docs). Integrates DevSecOps philosophies, Docs-as-Code, and AI optimization (GEO).
+### .claudeignore
 
-**Use for:** API docs (OpenAPI), ADRs, security docs (threat models), runbooks (RTO/RPO), infrastructure docs, quality metrics, automated validation.
+Excludes from Claude Code context:
+- Build artifacts (`site/`, `.cache/`)
+- Virtual environments (`venv/`)
+- IDE files (`.vscode/`, `.idea/`)
+- Media files (images, videos)
+- Compiled/minified files
 
-## Project-Specific Notes
+## Important Notes
+
+### Strict Mode Enforcement
+
+All builds use `mkdocs build --strict`:
+- Warnings treated as errors
+- Broken links cause build failure
+- Missing navigation causes failure
+- Invalid markdown extensions cause failure
+
+This ensures documentation quality.
 
 ### Virtual Environment
 
-The project uses a Python virtual environment in `venv/`. Always activate it before manual operations:
-
+Python virtual environment in `venv/` directory. **Always activate before mkdocs commands:**
 ```bash
 source venv/bin/activate
 ```
 
-Make targets handle this automatically.
+### Octicons Requirement
 
-### Strict Mode Enforcement
+**Critical:** Site content must use octicons, never plain emojis.
+- ✅ Correct: `:octicons-heart-16:`
+- ❌ Wrong: ❤️
 
-All builds use `--strict` flag. This means:
+Enforced by:
+- `/mkdocs-material-expert` skill audits
+- Content standards documentation
+- Template validation workflows
 
-- Warnings are treated as errors
-- Broken links cause build failure
-- Missing files in navigation cause build failure
-- Invalid markdown extensions cause build failure
+---
 
-This is intentional and ensures high quality documentation.
+**Last Updated:** 2026-01-31
+**Claude Code Version:** 2026.02
+**Maintained By:** cosckoya + Claude Code
 
-### Assets and Images
-
-- Logos/favicons: `docs/resources/img/`
-- Custom CSS: `docs/resources/stylesheets/` and `docs/stylesheets/`
-- Images should be referenced with relative paths from the markdown file
-
-### Branch Strategy
-
-- `main` - Production branch, auto-deploys to GitHub Pages
-- `develop` - Development branch (based on git status)
-- Feature branches - Create from develop, PR back to develop
-- Only maintainer pushes to main trigger deployment
-
-______________________________________________________________________
-
-**Last Updated:** 2026-01-26 **Claude Code Version:** 2026.01 **Maintained By:** cosckoya + Claude Code
+**Skills:** 1 active skill (mkdocs-material-expert) with template generation capabilities.
