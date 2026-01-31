@@ -202,9 +202,9 @@ plugins:
 
 ## Markdown Extensions & Components
 
-**Admonitions:** Use `!!!` or `???` (collapsible). Types: note, warning, tip, danger, bug, example, quote, etc. Add octicons for visual appeal.
+**Admonitions:** Use three exclamation marks `!!!` for regular admonitions, or three question marks `???` for collapsible ones. Types: note, warning, tip, danger, bug, example, quote, etc. Add octicons for visual appeal.
 
-**Code Blocks:** Enable `pymdownx.highlight`, `pymdownx.inlinehilite`, `pymdownx.snippets`. Support annotations `# (1)!` for inline explanations.
+**Code Blocks:** Enable `pymdownx.highlight`, `pymdownx.inlinehilite`, `pymdownx.snippets`. Support annotations with hash and number in parentheses followed by exclamation mark for inline explanations.
 
 **Tabs:** Use `=== "Tab Name"` syntax with `pymdownx.tabbed`. Great for multi-platform examples.
 
