@@ -36,7 +36,8 @@
       "WebFetch(domain:github.com)",
       "Skill(mkdocs-material-expert)",
       "Bash(mv:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "WebFetch(domain:pypi.org)"
     ],
     "block": [
       "Read(.env*)",
