@@ -1,88 +1,19 @@
-# GitHub Pages Deployment - Modern 2026 Pattern
-# Immutable: Build once, deploy unchanged
-# Secure: Least-privilege permissions, separate build/deploy
-# Fast: Aggressive caching (60-80% faster builds)
-
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
-  workflow_dispatch:  # Manual trigger for troubleshooting
-
-# Least-privilege permissions
-permissions:
-  contents: read      # Checkout code only
-  pages: write        # Deploy to Pages
-  id-token: write     # OIDC authentication
-
-# Prevent concurrent deployments
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
-  # Build job: Create immutable artifact
-  build:
-    name: Build Documentation
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Python 3.12
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: 'pyproject.toml'
-
-      - name: Cache MkDocs Material
-        uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ github.run_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-
-      - name: Cache pre-commit hooks
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pre-commit
-          key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
-          restore-keys: |
-            pre-commit-${{ runner.os }}-
-
-      - name: Install dependencies from pyproject.toml
-        run: |
-          pip install --upgrade pip setuptools wheel
-          pip install -e .
-
-      - name: Build site with strict mode
-        run: mkdocs build --strict
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site/
-
-  # Deploy job: Immutable deployment from artifact
   deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    runs-on: ubuntu-24.04
-
-    # Deployment environment with URL tracking
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+    runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: actions/checkout@v4
 
-      - name: Display deployment URL
-        run: |
-          echo "✅ Deployed successfully!"
-          echo "🌐 URL: ${{ steps.deployment.outputs.page_url }}"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+
+      - run: pip install -r requirements.txt
+
+      - run: mkdocs gh-deploy --force
