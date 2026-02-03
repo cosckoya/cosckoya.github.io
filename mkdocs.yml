@@ -19,6 +19,23 @@ theme:
   #  - yaml
   #  - python
   palette:
+    # ORIGINAL THEME (Deep Purple + Teal) - Uncomment to restore
+    # - scheme: slate
+    #   primary: deep purple
+    #   accent: teal
+    # - scheme: default
+    #   primary: deep purple
+    #   accent: teal
+
+    # MALEFICENT THEME (Purple + Acid Green)
+    # Dark mode (default)
+    - scheme: slate
+      primary: purple
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
     # Light mode
     - scheme: default
       primary: deep purple
@@ -26,14 +43,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
-    # Dark mode (default)
-    - scheme: slate
-      primary: deep purple
-      accent: teal
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
     admonition:
@@ -107,7 +116,11 @@ markdown_extensions:
 # Admotions
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
 # Annotations

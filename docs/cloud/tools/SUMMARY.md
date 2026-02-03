@@ -1,1 +1,3 @@
 - [Terraform](terraform.tool.md)
+- [Prowler](prowler.tool.md)
+- [Checkov](checkov.tool.md)

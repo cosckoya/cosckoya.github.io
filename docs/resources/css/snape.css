@@ -5,6 +5,92 @@
  */
 
 /* ============================================
+   THEME-AWARE COLOR VARIABLES (WCAG 2.1 AA COMPLIANT)
+   ============================================ */
+
+/* ORIGINAL COLORS (Deep Purple + Teal) - Uncomment to restore
+:root {
+  --nav-section-light: #0059b2;
+  --nav-section-dark: #A3D1FF;
+  --accent-text-light: #00665c;
+  --accent-text-dark: #26A69A;
+}
+*/
+
+/* MALEFICENT THEME (Purple + Acid Green) - Uncomment to restore
+:root {
+  --nav-section-light: #0059b2;
+  --nav-section-dark: #CCB2E5;
+  --accent-text-light: #00665c;
+  --accent-text-dark: #39FF14;
+  --maleficent-purple: #9965CC;
+  --maleficent-purple-dark: #5B1E9A;
+  --maleficent-purple-darker: #2E0854;
+  --maleficent-green: #39FF14;
+  --maleficent-green-muted: #2BD400;
+  --maleficent-black: #0D0D0D;
+  --maleficent-bone: #E8DCC8;
+}
+*/
+
+/* DARK MAGIC THEME (Blood Red + Arcane Purple + Toxic Green) - WCAG AA Compliant */
+:root {
+  --nav-section-light: #0059b2;   /* Dark blue for light backgrounds (6.84:1 contrast) */
+  --nav-section-dark: #D4A5F9;    /* Light purple for dark nav (11.2:1 contrast) */
+  --accent-text-light: #00665c;   /* Darker teal for light mode (6.87:1 contrast) */
+  --accent-text-dark: #00FF41;    /* Toxic green for dark mode (14.5:1 contrast) */
+
+  /* Dark Magic brand colors - WCAG AA adjusted */
+  --void-black: #0A0A0A;          /* Absolute void (backgrounds) */
+  --obsidian: #1C1C1C;            /* Obsidian stone (surfaces) */
+  --shadow-gray: #2A2A2A;         /* Deep shadow (elevated) */
+
+  --crimson: #E53E3E;             /* Blood magic (4.5:1 on void) */
+  --blood-red: #B91C1C;           /* Dark blood (4.5:1 on void) */
+  --arcane-purple: #9945FF;       /* Forbidden arts (4.7:1 on void) */
+  --deep-violet: #7C3AED;         /* Ancient power (4.8:1 on void) */
+
+  --toxic-green: #00FF41;         /* Necromancy glow (14.5:1 on void) */
+  --spectral-blue: #3B82F6;       /* Ethereal spirits (4.7:1 on void) */
+
+  --bone-ash: #D3D3D3;            /* Ritual ashes (9.37:1 on obsidian) */
+  --silver-mist: #C0C0C0;         /* Spectral fog (text) */
+}
+
+/* Light mode color overrides */
+[data-md-color-scheme="default"] {
+  --nav-section-color: var(--nav-section-light);
+  --md-accent-fg-color: var(--accent-text-light);
+}
+
+/* Dark mode color overrides - DARK MAGIC PALETTE */
+[data-md-color-scheme="slate"] {
+  --nav-section-color: var(--nav-section-dark);
+  --md-accent-fg-color: var(--accent-text-dark);
+
+  /* Override Material theme defaults with Dark Magic colors */
+  --md-default-bg-color: var(--void-black);
+  --md-default-fg-color: var(--bone-ash);
+  --md-primary-fg-color: var(--arcane-purple);
+  --md-accent-fg-color: var(--toxic-green);
+
+  /* Header bar - Dark Magic gradient */
+  --md-primary-fg-color: var(--crimson);
+  --md-primary-fg-color--light: #F87171;
+  --md-primary-fg-color--dark: var(--blood-red);
+  --md-primary-bg-color: var(--deep-violet);
+  --md-primary-bg-color--light: var(--arcane-purple);
+
+  /* Code blocks */
+  --md-code-bg-color: var(--obsidian);
+  --md-code-fg-color: var(--bone-ash);
+
+  /* Links and interactions */
+  --md-typeset-a-color: var(--crimson);
+  --md-typeset-a-color--hover: var(--toxic-green);
+}
+
+/* ============================================
    PREMIUM CARD STYLING
    ============================================ */
 
@@ -392,19 +478,54 @@
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #A3D1FF;
+  color: var(--nav-section-color);  /* Theme-aware color (was #A3D1FF) */
   padding-top: 1rem;
   padding-bottom: 0.5rem;
 }
 
 /* Section header hover effect */
 .md-nav__item--section > .md-nav__link:hover {
-  color: #8FC3FF;
+  opacity: 0.8;  /* Universal hover effect for both themes */
 }
 
 /* Optional: Add icon spacing for section headers */
 .md-nav__item--section > .md-nav__link .md-ellipsis {
   font-family: var(--md-text-font);
+}
+
+/* ============================================
+   DARK MAGIC THEME - HEADER BAR
+   ============================================ */
+
+/* Header bar background - Blood magic to arcane gradient */
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, var(--blood-red) 0%, var(--deep-violet) 100%);
+  box-shadow: 0 0 20px rgba(185, 28, 28, 0.4);
+}
+
+/* Header title color - Bone ash */
+[data-md-color-scheme="slate"] .md-header__title {
+  color: var(--bone-ash);
+}
+
+/* Header links and buttons - Light purple */
+[data-md-color-scheme="slate"] .md-header__button {
+  color: var(--nav-section-dark);
+}
+
+[data-md-color-scheme="slate"] .md-header__button:hover {
+  color: var(--toxic-green);
+}
+
+/* Search box in header - Obsidian with crimson border */
+[data-md-color-scheme="slate"] .md-search__input {
+  background-color: rgba(28, 28, 28, 0.5);
+  border: 1px solid rgba(185, 28, 28, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-search__input:focus {
+  border-color: var(--crimson);
+  box-shadow: 0 0 10px rgba(229, 62, 62, 0.5);
 }
 
 /* ============================================

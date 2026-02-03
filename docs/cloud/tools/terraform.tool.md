@@ -1,11 +1,6 @@
 ---
 title: Terraform
 description: Infrastructure as Code tool - declarative configs, multi-cloud, state management headaches
-tags:
-  - terraform
-  - iac
-  - devops
-  - hashicorp
 ---
 
 # :fontawesome-solid-cube: Terraform
@@ -488,3 +483,4 @@ ______________________________________________________________________
 ______________________________________________________________________
 
 **Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-fire: **Essential** - Infrastructure as Code is non-negotiable in 2026. Terraform is the industry standard. OpenTofu fork is viable alternative post-license drama. Master state management, modules, and workspaces. HCP Terraform (formerly Terraform Cloud) is worth paying for teams.
+**Tags:** terraform, iac, devops, hashicorp

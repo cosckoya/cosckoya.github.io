@@ -385,6 +385,7 @@ Replace all `{{PLACEHOLDER}}` values with actual content:
 - Provide "Real talk" bullets with practical advice
 - Separate pro tips from gotchas
 - Set `{{LAST_UPDATED}}` to current date
+- Place tags at bottom (not in frontmatter): `**Tags:** tag1, tag2, tag3`
 
 **Step 5: Validate Generated Content**
 
@@ -396,6 +397,8 @@ Pre-write checklist:
 - [ ] "Real talk" bullets are practical and honest
 - [ ] Tone is cynical/realistic (not aspirational)
 - [ ] File naming convention followed (`.cloud.md`, `.tool.md`, `.service.md`)
+- [ ] Tags placed at bottom of page (not in frontmatter)
+- [ ] Frontmatter only contains `title` and `description`
 
 **Step 6: Write File**
 
@@ -457,6 +460,8 @@ Generated documentation must meet:
 - **Structure:** Three-tab Quick Hits format
 - **Links:** Relative paths, validated in strict build
 - **Accessibility:** WCAG 2.1 AA compliant
+- **Tags:** Placed at bottom of page (format: `**Tags:** tag1, tag2, tag3`)
+- **Frontmatter:** Only `title` and `description` fields (no tags in frontmatter)
 
 ---
 
@@ -507,7 +512,7 @@ Generated documentation must meet:
 
 ---
 
-**Last Updated:** January 31, 2026
+**Last Updated:** February 2, 2026
 **Version:** 2026.02 (2026 best practices, token-optimized)
 
 Built with :octicons-heart-fill-16: for beautiful documentation

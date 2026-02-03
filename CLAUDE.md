@@ -115,6 +115,10 @@ Use `/mkdocs-material-expert` skill to generate documentation:
 - **Three-tab structure:** Essential → Common Patterns → Pro Tips & Gotchas
 - **Code blocks:** Include inline comments, specify language
 - **"Real talk" sections:** Honest practical advice
+- **Tags placement:** Tags go at the BOTTOM of the page (not in frontmatter)
+  - Format: `**Tags:** tag1, tag2, tag3`
+  - Place after the last content section, typically after "Last Updated" line
+  - Frontmatter should only contain `title` and `description`
 
 ## CI/CD Pipeline
 
@@ -204,7 +208,7 @@ Enforced by:
 
 ---
 
-**Last Updated:** 2026-01-31
+**Last Updated:** 2026-02-02
 **Claude Code Version:** 2026.02
 **Maintained By:** cosckoya + Claude Code
 
