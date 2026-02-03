@@ -1,0 +1,66 @@
+# Dependabot Configuration - 2026 Best Practices
+# Automated dependency updates with intelligent grouping
+
+version: 2
+updates:
+  # Python dependencies (from pyproject.toml)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/Madrid"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "cosckoya"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "python"
+    # Group related updates to reduce PR noise
+    groups:
+      # Production dependencies
+      mkdocs-group:
+        patterns:
+          - "mkdocs*"
+          - "pymdown-extensions"
+          - "Markdown"
+        update-types:
+          - "minor"
+          - "patch"
+      # Development tools
+      dev-tools:
+        patterns:
+          - "pre-commit"
+          - "ruff"
+          - "mdformat*"
+          - "codespell"
+          - "yamllint"
+          - "bandit*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "monday"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    # Group all GitHub Actions updates
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"

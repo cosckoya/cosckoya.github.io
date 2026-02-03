@@ -2,7 +2,7 @@ site_name: It's dangerous to go alone!
 site_url: https://cosckoya.github.io
 site_description: Cosckoya's Tech Toolbox
 site_author: 'cosckoya'
-copyright: Copyright &copy; 2024 цосцкоыа
+copyright: Copyright &copy; 2026 цосцкоыа
 
 repo_url: https://github.com/cosckoya/cosckoya.github.io
 edit_uri: ""
@@ -19,16 +19,83 @@ theme:
   #  - yaml
   #  - python
   palette:
-    scheme: slate
-    primary: deep purple
-    accent: teal
+    # ORIGINAL THEME (Deep Purple + Teal) - Uncomment to restore
+    # - scheme: slate
+    #   primary: deep purple
+    #   accent: teal
+    # - scheme: default
+    #   primary: deep purple
+    #   accent: teal
+
+    # MALEFICENT THEME (Purple + Acid Green)
+    # Dark mode (default)
+    - scheme: slate
+      primary: purple
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Light mode
+    - scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   icon:
     repo: fontawesome/brands/github
+    admonition:
+      note: octicons/info-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/light-bulb-16
+      success: octicons/check-circle-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/stop-16
+      bug: octicons/bug-16
+      example: octicons/code-16
+      quote: octicons/quote-16
+    tag:
+      default: octicons/tag-16
   features:
-    - content.tabs.link
-    - content.code.copy
+    # Navigation enhancements
+    - navigation.sections          # Expandable/collapsible sections
+    - navigation.expand            # Expand all sections by default
+    - navigation.breadcrumbs       # Breadcrumb trail
+    - navigation.instant.loading   # SPA-like navigation
+    - navigation.instant.prefetch  # Prefetch pages on hover
+    - navigation.instant.progress  # Show progress indicator
+    - navigation.tracking          # URL updates on scroll
+    - navigation.top               # Back to top button
+    - navigation.footer            # Previous/next page navigation
+    - navigation.path              # Show page path in navigation
+
+    # Search improvements
+    - search.suggest               # Search suggestions
+    - search.highlight             # Highlight search matches
+    - search.share                 # Share search results
+
+    # Content features
+    - content.tabs.link            # Persistent tab state
+    - content.code.copy            # Copy code button
+    - content.code.select          # Select code easily
+    - content.code.annotate        # Inline code annotations
+    - content.tooltips             # Abbreviation tooltips
+    - content.action.edit          # Edit page link
+    - content.action.view          # View source link
+
+    # Table of contents
+    - toc.follow                   # Follow scroll position
+
+    # Header improvements
+    - header.autohide              # Auto-hide header on scroll
+    - announce.dismiss             # Dismissible announcements
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/cosckoya
@@ -49,7 +116,11 @@ markdown_extensions:
 # Admotions
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
 # Annotations
@@ -62,22 +133,30 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 #      base_path: 'resources/code'
-  #- pymdownx.emoji:
-  #    emoji_index: !!python/name:materialx.emoji.twemoji
-  #    emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
-  - search
+  - search:
+      lang: en
+      pipeline:
+        - stemmer                  # Word stemming (running → run)
+        - stopWordFilter           # Remove common words
+        - trimmer                  # Whitespace cleanup
+      separator: '[\s\-\.]'        # Search delimiters
   - same-dir
   - tags
   - literate-nav:
       nav_file: SUMMARY.md
-#  - minify:
-#      minify_html: true
-#      minify_js: true
-#  - sequence-js:
-#      theme: simple|hand
-#      popup: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
 
 extra_css:
-  - resources/stylesheets/images.css
+  - resources/css/images.css
+  - resources/css/snape.css

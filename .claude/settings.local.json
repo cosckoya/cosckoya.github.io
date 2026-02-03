@@ -1,0 +1,70 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(**)",
+      "Edit(**)",
+      "Glob(**)",
+      "Grep(**)",
+      "Bash(make *)",
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(mkdocs *)",
+      "Bash(pre-commit *)",
+      "Bash(python *)",
+      "Bash(pip *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "Bash(find *)",
+      "Bash(tree *)",
+      "Bash(wc *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(echo *)",
+      "Bash(pwd)",
+      "Bash(cd *)",
+      "Bash(which *)",
+      "Bash(mkdir *)",
+      "Bash(touch *)",
+      "Bash(chmod *)",
+      "Bash(source *)",
+      "Bash(mdformat *)",
+      "Bash(codespell *)",
+      "Bash(ruff *)",
+      "WebFetch(domain:squidfunk.github.io)",
+      "WebFetch(domain:github.com)",
+      "Skill(mkdocs-material-expert)",
+      "Bash(mv:*)",
+      "Bash(rm:*)"
+    ],
+    "block": [
+      "Read(.env*)",
+      "Read(secrets/**)",
+      "Bash(rm -rf /)",
+      "Bash(chmod -R 777 /)",
+      "Bash(dd *)",
+      "Bash(mkfs.*)",
+      "Bash(fdisk *)",
+      "Bash(parted *)",
+      "Bash(shutdown *)",
+      "Bash(reboot *)",
+      "Bash(systemctl poweroff)",
+      "Bash(systemctl reboot)",
+      "Bash(kill -9 1)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)",
+      "Bash(* > /dev/sda*)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)"
+    ]
+  },
+  "ai_attribution": {
+    "enabled": true,
+    "co_author": "Claude <noreply@anthropic.com>"
+  },
+  "extended_thinking": {
+    "enabled": true,
+    "max_tokens": 31999
+  }
+}

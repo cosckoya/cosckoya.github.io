@@ -1,0 +1,5 @@
+- [NeoVim](neovim.tool.md)
+- [ASDF](asdf.tool.md)
+- [TMUX](tmux.tool.md)
+- [ZSH + Zinit](zsh.tool.md)
+- [Kitty](kitty.tool.md)
