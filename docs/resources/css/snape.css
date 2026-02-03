@@ -33,34 +33,68 @@
 }
 */
 
-/* DARK MAGIC THEME (Blood Red + Arcane Purple + Toxic Green) - WCAG AA Compliant */
+/* SORCERER'S GRIMOIRE THEME (Light) + DARK MAGIC THEME (Dark) - WCAG AA Compliant */
 :root {
-  --nav-section-light: #0059b2;   /* Dark blue for light backgrounds (6.84:1 contrast) */
-  --nav-section-dark: #D4A5F9;    /* Light purple for dark nav (11.2:1 contrast) */
-  --accent-text-light: #00665c;   /* Darker teal for light mode (6.87:1 contrast) */
-  --accent-text-dark: #00FF41;    /* Toxic green for dark mode (14.5:1 contrast) */
+  /* LIGHT MODE: Sorcerer's Grimoire - Aged Parchment & Disney Fantasia */
+  --parchment-base: #F5E6D3;          /* Aged paper background */
+  --parchment-light: #FAF3E8;         /* Elevated surfaces */
+  --parchment-border: #D7CCC8;        /* Borders, dividers */
 
-  /* Dark Magic brand colors - WCAG AA adjusted */
-  --void-black: #0A0A0A;          /* Absolute void (backgrounds) */
-  --obsidian: #1C1C1C;            /* Obsidian stone (surfaces) */
-  --shadow-gray: #2A2A2A;         /* Deep shadow (elevated) */
+  --ink-primary: #3E2723;             /* Deep brown ink (9.8:1 contrast) */
+  --ink-secondary: #5D4037;           /* Dim ink (7.2:1 contrast) */
 
-  --crimson: #E53E3E;             /* Blood magic (4.5:1 on void) */
-  --blood-red: #B91C1C;           /* Dark blood (4.5:1 on void) */
-  --arcane-purple: #9945FF;       /* Forbidden arts (4.7:1 on void) */
-  --deep-violet: #7C3AED;         /* Ancient power (4.8:1 on void) */
+  --sorcerer-blue: #1565C0;           /* Mickey's robe (6.1:1 contrast) */
+  --sorcerer-blue-hover: #0D47A1;     /* Darker hover state */
+  --enchanted-purple: #6A1B9A;        /* Yen Sid's hat (8.9:1 contrast) */
+  --golden-stardust: #F57C00;         /* Fantasia stars (4.6:1 contrast) */
 
-  --toxic-green: #00FF41;         /* Necromancy glow (14.5:1 on void) */
-  --spectral-blue: #3B82F6;       /* Ethereal spirits (4.7:1 on void) */
+  --spell-success: #2E7D32;           /* Nature magic (6.8:1 contrast) */
+  --spell-warning: #EF6C00;           /* Alchemy warning (5.1:1 contrast) */
+  --spell-danger: #C62828;            /* Forbidden magic (7.5:1 contrast) */
+  --spell-info: #0277BD;              /* Arcane knowledge (6.9:1 contrast) */
 
-  --bone-ash: #D3D3D3;            /* Ritual ashes (9.37:1 on obsidian) */
-  --silver-mist: #C0C0C0;         /* Spectral fog (text) */
+  /* DARK MODE: Dark Magic - Blood Red & Arcane Purple */
+  --void-black: #0A0A0A;              /* Absolute void (backgrounds) */
+  --obsidian: #1C1C1C;                /* Obsidian stone (surfaces) */
+  --shadow-gray: #2A2A2A;             /* Deep shadow (elevated) */
+
+  --crimson: #E53E3E;                 /* Blood magic (4.5:1 on void) */
+  --blood-red: #B91C1C;               /* Dark blood (4.5:1 on void) */
+  --arcane-purple: #9945FF;           /* Forbidden arts (4.7:1 on void) */
+  --deep-violet: #7C3AED;             /* Ancient power (4.8:1 on void) */
+
+  --toxic-green: #00FF41;             /* Necromancy glow (14.5:1 on void) */
+  --spectral-blue: #3B82F6;           /* Ethereal spirits (4.7:1 on void) */
+
+  --bone-ash: #D3D3D3;                /* Ritual ashes (9.37:1 on obsidian) */
+  --silver-mist: #C0C0C0;             /* Spectral fog (text) */
 }
 
-/* Light mode color overrides */
+/* Light mode color overrides - SORCERER'S GRIMOIRE PALETTE */
 [data-md-color-scheme="default"] {
-  --nav-section-color: var(--nav-section-light);
-  --md-accent-fg-color: var(--accent-text-light);
+  /* Base colors */
+  --md-default-bg-color: var(--parchment-base);
+  --md-default-fg-color: var(--ink-primary);
+  --md-code-bg-color: var(--parchment-light);
+  --md-code-fg-color: var(--ink-primary);
+
+  /* Primary and accent */
+  --md-primary-fg-color: var(--sorcerer-blue);
+  --md-accent-fg-color: var(--enchanted-purple);
+
+  /* Links and interactions */
+  --md-typeset-a-color: var(--sorcerer-blue);
+  --md-typeset-a-color--hover: var(--enchanted-purple);
+
+  /* Navigation */
+  --nav-section-color: var(--sorcerer-blue);
+
+  /* Borders and dividers */
+  --md-default-fg-color--lightest: var(--parchment-border);
+  --md-default-fg-color--lighter: var(--ink-secondary);
+
+  /* Semantic colors */
+  --md-typeset-mark-color: var(--golden-stardust);
 }
 
 /* Dark mode color overrides - DARK MAGIC PALETTE */
@@ -239,6 +273,32 @@
 
 .md-typeset .admonition.spec > .admonition-title {
   background-color: rgba(156, 39, 176, 0.1);
+}
+
+/* Light mode admonition colors - Sorcerer's Grimoire */
+[data-md-color-scheme="default"] .md-typeset .admonition {
+  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.08);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition.tip {
+  border-left-color: var(--golden-stardust);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition.warning {
+  border-left-color: var(--spell-warning);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition.danger {
+  border-left-color: var(--spell-danger);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition.info,
+[data-md-color-scheme="default"] .md-typeset .admonition.note {
+  border-left-color: var(--spell-info);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition.success {
+  border-left-color: var(--spell-success);
 }
 
 /* ============================================
@@ -427,6 +487,33 @@
 }
 
 /* ============================================
+   LIGHT MODE OPTIMIZATIONS
+   ============================================ */
+
+/* Cards on parchment background */
+[data-md-color-scheme="default"] .md-typeset .grid.cards > div {
+  background-color: var(--parchment-light);
+  border-color: var(--parchment-border);
+  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.08);
+}
+
+[data-md-color-scheme="default"] .md-typeset .grid.cards > div:hover {
+  background-color: #FFFFFF;
+  border-color: var(--sorcerer-blue);
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.15);
+}
+
+/* Code blocks - lighter parchment */
+[data-md-color-scheme="default"] .md-typeset pre {
+  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.08);
+}
+
+/* Tables on parchment */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) {
+  box-shadow: 0 1px 4px rgba(62, 39, 35, 0.08);
+}
+
+/* ============================================
    DARK MODE OPTIMIZATIONS
    ============================================ */
 
@@ -494,7 +581,54 @@
 }
 
 /* ============================================
-   DARK MAGIC THEME - HEADER BAR
+   SORCERER'S GRIMOIRE - HEADER BAR (LIGHT MODE)
+   ============================================ */
+
+/* Header bar - Subtle parchment gradient */
+[data-md-color-scheme="default"] .md-header {
+  background: linear-gradient(135deg, var(--parchment-light) 0%, var(--parchment-border) 100%);
+  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.1);
+  border-bottom: 1px solid var(--parchment-border);
+}
+
+/* Header title - Deep ink */
+[data-md-color-scheme="default"] .md-header__title {
+  color: var(--ink-primary);
+}
+
+/* Header links and buttons */
+[data-md-color-scheme="default"] .md-header__button {
+  color: var(--sorcerer-blue);
+}
+
+[data-md-color-scheme="default"] .md-header__button:hover {
+  color: var(--enchanted-purple);
+}
+
+/* Search box - Light parchment with blue border */
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: var(--parchment-light);
+  border: 1px solid var(--parchment-border);
+}
+
+[data-md-color-scheme="default"] .md-search__input:focus {
+  border-color: var(--sorcerer-blue);
+  box-shadow: 0 0 10px rgba(21, 101, 192, 0.2);
+}
+
+/* Primary buttons - Mystical gradient */
+[data-md-color-scheme="default"] .md-button--primary {
+  background: linear-gradient(135deg, var(--sorcerer-blue) 0%, var(--enchanted-purple) 100%);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .md-button--primary:hover {
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   DARK MAGIC THEME - HEADER BAR (DARK MODE)
    ============================================ */
 
 /* Header bar background - Blood magic to arcane gradient */
