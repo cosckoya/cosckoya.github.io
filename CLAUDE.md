@@ -155,6 +155,26 @@ UX/UI expert for Material for MkDocs. Handles theme configuration, icons (loves 
 /mkdocs-material-expert optimize performance
 ```
 
+### `/color-theory`
+
+Color theory and accessibility expert. Provides guidance on color psychology, schemes, harmonies, and WCAG compliance for web design.
+
+**Capabilities:**
+- Generate harmonious color schemes (monochromatic, analogous, complementary, triadic, etc.)
+- Analyze color psychology and emotional associations
+- Check WCAG 2.1 AA/AAA accessibility compliance
+- Calculate contrast ratios programmatically
+- Industry-specific color strategies
+- Theme color recommendations
+
+**Invocation:**
+```bash
+/color-theory [request]
+/color-theory what colors for tech documentation?
+/color-theory check accessibility of #E53E3E on #0A0A0A
+/color-theory generate dark magic theme
+```
+
 ## Configuration Files
 
 ### mkdocs.yml
@@ -208,8 +228,8 @@ Enforced by:
 
 ---
 
-**Last Updated:** 2026-02-02
+**Last Updated:** 2026-02-03
 **Claude Code Version:** 2026.02
 **Maintained By:** cosckoya + Claude Code
 
-**Skills:** 1 active skill (mkdocs-material-expert) with template generation capabilities.
+**Skills:** 2 active skills (mkdocs-material-expert, color-theory)

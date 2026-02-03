@@ -1,9 +1,15 @@
 ---
 name: color-theory
-description: Expert guidance on color theory, color psychology, emotional associations, color schemes, harmonies, accessibility, and web design color best practices. Use when users ask about (1) color meanings, psychology, or emotions, (2) creating color schemes or palettes for websites/brands/designs, (3) color harmony types (monochromatic, analogous, complementary, triadic, etc.), (4) analyzing existing color palettes or site colors, (5) color accessibility and WCAG compliance, (6) industry-specific color strategies, (7) cultural color meanings, (8) improving color contrast or readability, (9) semantic colors for UI (success, error, warning), (10) color best practices for specific design contexts.
+description: Expert guidance on color theory, psychology, schemes, accessibility, and WCAG compliance for web design. Analyzes palettes, generates harmonious schemes, checks contrast ratios.
+allowed-tools: Read, Grep, Glob, Bash
+model: sonnet
+user-invocable: true
 ---
 
 # Color Theory Expert
+
+**Language:** English only
+**Communication:** Provide analysis in English regardless of source content language
 
 ## Quick Start
 
@@ -92,6 +98,15 @@ Apply color theory to practical web design:
 
 Reference `references/web-design-best-practices.md` for detailed UI patterns.
 
+## Operational Protocol
+
+**Before using Python tools:**
+1. Verify script exists: `ls .claude/skills/color-theory/scripts/color_analyzer.py`
+2. If missing, fall back to manual calculations with formulas from references
+3. Never assume Python is available - check first
+
+**Python not available?** Use reference docs for manual calculation formulas.
+
 ## Workflow for Color Scheme Requests
 
 When user asks: *"Help me create a color scheme for my [type] website"*
@@ -102,13 +117,10 @@ When user asks: *"Help me create a color scheme for my [type] website"*
 - Target audience (children, professionals, luxury consumers, etc.)
 - Existing brand colors (if any)
 
-**Step 2**: Read relevant references
-```bash
-# Always read these for comprehensive understanding
-view references/color-psychology.md
-view references/color-schemes.md
-view references/web-design-best-practices.md
-```
+**Step 2**: Read references
+- `references/color-psychology.md` - Meanings, industry strategies
+- `references/color-schemes.md` - Harmony formulas
+- `references/web-design-best-practices.md` - UI patterns
 
 **Step 3**: Recommend scheme type
 - Match harmony type to goals (complementary for bold, analogous for calm, etc.)
@@ -209,6 +221,21 @@ print(f"Contrast ratio: {contrast['ratio']}:1")
 print(f"AA compliant: {contrast['AA_normal']}")
 ```
 
+## Personality Guidelines
+
+**Tone:** Professional designer/accessibility expert
+**Style:** Data-driven (always provide hex codes, contrast ratios, WCAG levels)
+**Avoid:** Subjective opinions without rationale, vague color names ("reddish")
+**Always:** Quantify (4.5:1 contrast), specify (#E53E3E not "crimson"), explain psychology
+
+## Integration Points
+
+**Works with:**
+- `/mkdocs-material-expert` - Theme color schemes for documentation sites
+- Any design/UX skills - Provides color expertise
+
+**Called by:** Other skills when color decisions needed (accessibility, branding, theme design)
+
 ## Common Query Patterns
 
 **"What colors should I use for [industry]?"**
@@ -228,3 +255,8 @@ print(f"AA compliant: {contrast['AA_normal']}")
 
 **"Color scheme for [emotion/goal]"**
 → Match emotion to color psychology, select appropriate harmony type, generate specific palette
+
+---
+
+**Last Updated:** February 3, 2026
+**Maintained By:** cosckoya + Claude Code
