@@ -262,7 +262,7 @@ ______________________________________________________________________
 
 ## :fontawesome-solid-star: Alternatives
 
-- **[Trivy](../../devops/trivy.tool.md)** - Multi-purpose scanner (includes secret scanning)
+- **[Trivy](../../cloud/tools/trivy.tool.md)** - Multi-purpose scanner (includes secret scanning)
 - **[TruffleHog](https://github.com/trufflesecurity/trufflehog)** - Entropy-based detection
 - **[detect-secrets](https://github.com/Yelp/detect-secrets)** - Yelp's secret scanner
 - **[GitGuardian](https://www.gitguardian.com/)** - Commercial, real-time monitoring

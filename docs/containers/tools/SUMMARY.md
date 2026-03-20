@@ -1,4 +1,3 @@
-- [Docker Compose](docker-compose.tool.md)
 - [Helm](helm.tool.md)
 - [Krew](krew.tool.md)
 - [kubectx](kubectx.tool.md)

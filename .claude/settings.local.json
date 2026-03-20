@@ -37,7 +37,8 @@
       "Skill(mkdocs-material-expert)",
       "Bash(mv:*)",
       "Bash(rm:*)",
-      "WebFetch(domain:pypi.org)"
+      "WebFetch(domain:pypi.org)",
+      "Bash(rmdir docs/devops)"
     ],
     "block": [
       "Read(.env*)",
