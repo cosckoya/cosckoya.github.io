@@ -1,4 +1,5 @@
 - [Klaatu Barada Nikto!](index.md)
+- [Showcase](showcase.md)
 - [Toolbox](toolbox/)
 - [Operating Systems](os/)
 - [Containers](containers/)
