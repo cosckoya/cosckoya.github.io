@@ -46,20 +46,20 @@ theme:
   icon:
     repo: fontawesome/brands/github
     admonition:
-      note: octicons/info-16
-      abstract: octicons/checklist-16
-      info: octicons/info-16
-      tip: octicons/light-bulb-16
-      success: octicons/check-circle-16
-      question: octicons/question-16
-      warning: octicons/alert-16
-      failure: octicons/x-circle-16
-      danger: octicons/stop-16
-      bug: octicons/bug-16
-      example: octicons/code-16
-      quote: octicons/quote-16
+      note: fontawesome/solid/circle-info
+      abstract: fontawesome/solid/list-check
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/lightbulb
+      success: fontawesome/solid/circle-check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/circle-xmark
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/bug
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
     tag:
-      default: octicons/tag-16
+      default: fontawesome/solid/tag
   features:
     # Navigation enhancements
     - navigation.sections          # Expandable/collapsible sections
@@ -70,6 +70,7 @@ theme:
     - navigation.instant.progress  # Show progress indicator
     - navigation.tracking          # URL updates on scroll
     - navigation.top               # Back to top button
+    - navigation.indexes           # Section index pages (index.md per section)
     - navigation.footer            # Previous/next page navigation
     - navigation.path              # Show page path in navigation
 
@@ -84,6 +85,7 @@ theme:
     - content.code.select          # Select code easily
     - content.code.annotate        # Inline code annotations
     - content.tooltips             # Abbreviation tooltips
+    - content.footnote.tooltips    # Footnotes as inline tooltips (9.x+)
     - content.action.edit          # Edit page link
     - content.action.view          # View source link
 
@@ -146,6 +148,7 @@ plugins:
         - trimmer                  # Whitespace cleanup
       separator: '[\s\-\.]'        # Search delimiters
   - same-dir
+  - section-index
   - tags
   - literate-nav:
       nav_file: SUMMARY.md
