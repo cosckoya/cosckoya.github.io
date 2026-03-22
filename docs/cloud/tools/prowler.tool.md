@@ -12,9 +12,9 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Installation (Python pip)
@@ -78,7 +78,7 @@ ______________________________________________________________________
     - Compliance frameworks filter checks to specific standards
     - CI/CD integration: exit code 0 = pass, non-zero = findings
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```bash
     # Daily security audit (production)
@@ -162,7 +162,7 @@ ______________________________________________________________________
     - JSON output enables custom dashboards and alerting
     - Compliance frameworks map to audit requirements
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Run daily** - Security posture changes, catch issues early
@@ -207,7 +207,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-shield-16: Compliance Frameworks
+## :fontawesome-solid-shield-halved: Compliance Frameworks
 
 Prowler supports major compliance standards out-of-the-box:
 
@@ -254,16 +254,16 @@ prowler aws --checks-folder ./checks/custom/
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Official Resources
+### :fontawesome-solid-graduation-cap: Official Resources
 
 - **[Prowler Documentation](https://docs.prowler.cloud/)** - Official docs
 - **[GitHub Repository](https://github.com/prowler-cloud/prowler)** - Source code, issues
 - **[Prowler Dashboard](https://dashboard.prowler.cloud/)** - SaaS UI (optional)
 - **[YouTube Channel](https://www.youtube.com/@prowlercloud)** - Tutorials and demos
 
-### :octicons-code-16: Example Use Cases
+### :fontawesome-solid-code: Example Use Cases
 
 !!! example "Daily Operations"
     - **Morning security check** - Run Prowler, review critical findings
@@ -284,11 +284,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -298,7 +298,7 @@ ______________________________________________________________________
 
     [Checks Library](https://github.com/prowler-cloud/prowler/tree/master/prowler/providers)
 
-- :octicons-tools-16: __Related Tools__
+- :fontawesome-solid-wrench: __Related Tools__
 
     ______________________________________________________________________
 
@@ -308,7 +308,7 @@ ______________________________________________________________________
 
     [GitHub Actions](https://github.com/prowler-cloud/prowler-action)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -318,7 +318,7 @@ ______________________________________________________________________
 
     [Twitter @prowlercloud](https://twitter.com/prowlercloud)
 
-- :octicons-code-16: __Integrations__
+- :fontawesome-solid-code: __Integrations__
 
     ______________________________________________________________________
 

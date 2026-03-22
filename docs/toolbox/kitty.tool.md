@@ -12,7 +12,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Installation"
 
@@ -211,7 +211,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
 
 ---
 
-## :octicons-paintbrush-16: Themes & Color Schemes
+## :fontawesome-solid-paintbrush: Themes & Color Schemes
 
 ### Popular Themes
 
@@ -257,7 +257,7 @@ kitty-theme
 
 ---
 
-## :octicons-package-16: Kittens (Plugins)
+## :fontawesome-solid-box: Kittens (Plugins)
 
 **Built-in kittens:**
 
@@ -299,7 +299,7 @@ def handle_result(args, answer, target_window_id, boss):
 
 ---
 
-## :octicons-workflow-16: Layouts
+## :fontawesome-solid-diagram-project: Layouts
 
 **Built-in layouts:**
 
@@ -366,7 +366,7 @@ im.display('/path/to/image.png')
 
 ---
 
-## :octicons-terminal-16: Shell Integration
+## :fontawesome-solid-terminal: Shell Integration
 
 **Automatic integration (ZSH example):**
 
@@ -388,7 +388,7 @@ fi
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Use GPU rendering** - Enable `sync_to_monitor yes` for smoothness
 - **Font ligatures** - JetBrains Mono, Fira Code work great
@@ -403,7 +403,7 @@ fi
 
 ---
 
-## :octicons-alert-16: Common Gotchas
+## :fontawesome-solid-triangle-exclamation: Common Gotchas
 
 - **Font not found** - Install Nerd Fonts or JetBrains Mono
 - **Ligatures not working** - Enable `disable_ligatures never`
@@ -418,7 +418,7 @@ fi
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Official:**
 - **[Kitty Documentation](https://sw.kovidgoyal.net/kitty/)** - Complete docs

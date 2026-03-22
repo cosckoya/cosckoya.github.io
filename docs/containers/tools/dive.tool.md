@@ -3,7 +3,7 @@ title: Dive
 description: Docker image layer analyzer - explore image contents, find wasted space, optimize layer efficiency
 ---
 
-# :octicons-search-16: Dive
+# :fontawesome-solid-magnifying-glass: Dive
 
 Docker image layer explorer. See every layer, every file change, wasted space from deletions. Interactive TUI shows what bloats your images. Build smaller images by understanding what's actually inside.
 
@@ -12,7 +12,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Installation"
 
@@ -123,7 +123,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
 
 ---
 
-## :octicons-gear-16: Configuration
+## :fontawesome-solid-gear: Configuration
 
 **Config file:** `~/.dive.yaml` or `.dive-ci`
 
@@ -186,7 +186,7 @@ export DIVE_SOURCE=docker  # docker, podman, docker-archive
 
 ---
 
-## :octicons-workflow-16: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### Optimize Dockerfile
 
@@ -278,7 +278,7 @@ jq '.layer | length' v2.json
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Use multi-stage builds** - Final image only gets artifacts, not build tools
 - **Order matters** - Put frequently changing files (code) after stable deps
@@ -293,7 +293,7 @@ jq '.layer | length' v2.json
 
 ---
 
-## :octicons-alert-16: Common Gotchas
+## :fontawesome-solid-triangle-exclamation: Common Gotchas
 
 - **Deleted files waste space** - Removing in later layer doesn't free space
 - **apt-get cache** - Always `rm -rf /var/lib/apt/lists/*` in same RUN
@@ -343,7 +343,7 @@ Wasted space by layer:
 
 ---
 
-## :octicons-book-16: Dockerfile Best Practices
+## :fontawesome-solid-book: Dockerfile Best Practices
 
 ```dockerfile
 # ============================================
@@ -393,7 +393,7 @@ CMD ["python", "src/main.py"]
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Official:**
 - **[GitHub](https://github.com/wagoodman/dive)** - Source code

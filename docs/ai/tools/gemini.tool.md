@@ -3,7 +3,7 @@ title: Google Gemini CLI
 description: Google AI command-line interface - multimodal AI, code generation, image analysis via terminal
 ---
 
-# :octicons-code-square-16: Google Gemini CLI
+# :fontawesome-solid-code: Google Gemini CLI
 
 Command-line interface for Google's Gemini AI models. Multimodal capabilities (text, images, code). Free tier with generous limits. Good for quick queries and prototyping. Not as integrated into development workflows as Claude Code or Copilot, but powerful for general-purpose AI tasks.
 
@@ -12,9 +12,9 @@ Command-line interface for Google's Gemini AI models. Multimodal capabilities (t
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Installation (Python)
@@ -66,7 +66,7 @@ ______________________________________________________________________
     - Not as context-aware as Claude Code (no file system access)
     - Good for one-off queries, not autonomous workflows
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```bash
     # Code generation workflows
@@ -122,7 +122,7 @@ ______________________________________________________________________
     - Good at code generation and explanation
     - JSON mode useful for scripting and automation
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Best Use Cases"
         - **Quick code snippets** - Faster than searching Stack Overflow
@@ -175,7 +175,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-code-16: Practical Examples
+## :fontawesome-solid-code: Practical Examples
 
 ### Shell Integration
 
@@ -273,16 +273,16 @@ done
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Official Resources
+### :fontawesome-solid-graduation-cap: Official Resources
 
 - **[Google AI Studio](https://makersuite.google.com/)** - Web interface and API key management
 - **[Gemini API Documentation](https://ai.google.dev/docs)** - Official API docs
 - **[Gemini Quickstart](https://ai.google.dev/tutorials/python_quickstart)** - Python quickstart guide
 - **[Gemini Models](https://ai.google.dev/models/gemini)** - Model capabilities and pricing
 
-### :octicons-code-16: Example Use Cases
+### :fontawesome-solid-code: Example Use Cases
 
 !!! example "Development"
     - **Code generation** - "Create Express middleware for rate limiting"
@@ -304,11 +304,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -320,7 +320,7 @@ ______________________________________________________________________
 
     [Gemini Models](https://ai.google.dev/models/gemini)
 
-- :octicons-tools-16: __Tools & SDKs__
+- :fontawesome-solid-wrench: __Tools & SDKs__
 
     ______________________________________________________________________
 
@@ -330,7 +330,7 @@ ______________________________________________________________________
 
     [REST API](https://ai.google.dev/api/rest)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -340,7 +340,7 @@ ______________________________________________________________________
 
     [Stack Overflow [gemini-api]](https://stackoverflow.com/questions/tagged/gemini-api)
 
-- :octicons-mortar-board-16: __Learning__
+- :fontawesome-solid-graduation-cap: __Learning__
 
     ______________________________________________________________________
 
@@ -354,5 +354,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-zap-16: **Solid Alternative** - Gemini CLI is good for quick queries and multimodal tasks. Free tier is generous. Not as workflow-integrated as Claude Code or Copilot, but powerful for general-purpose AI. Best for one-off tasks, image analysis, and learning.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-bolt: **Solid Alternative** - Gemini CLI is good for quick queries and multimodal tasks. Free tier is generous. Not as workflow-integrated as Claude Code or Copilot, but powerful for general-purpose AI. Best for one-off tasks, image analysis, and learning.
 **Tags:** gemini, google, ai, cli, multimodal

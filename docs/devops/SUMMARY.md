@@ -1,5 +1,0 @@
-- [GitHub](github.tool.md)
-- [Azure DevOps](azure-devops.tool.md)
-- [Snyk](snyk.tool.md)
-- [SonarCloud](sonarcloud.tool.md)
-- [Trivy](trivy.tool.md)

@@ -3,7 +3,7 @@ title: ZSH + Zinit
 description: Z Shell with Zinit plugin manager - fast, powerful shell without oh-my-zsh bloat
 ---
 
-# :octicons-terminal-16: ZSH + Zinit
+# :fontawesome-solid-terminal: ZSH + Zinit
 
 Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you blazing fast startup, lazy loading, and Turbo mode. No bloat, just speed and features.
 
@@ -12,7 +12,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Installation"
 
@@ -195,7 +195,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
 
 ---
 
-## :octicons-package-16: Essential Plugins
+## :fontawesome-solid-box: Essential Plugins
 
 ```bash
 # ============================================
@@ -284,7 +284,7 @@ zinit snippet OMZ::plugins/asdf/asdf.plugin.zsh
 
 ---
 
-## :octicons-terminal-16: Zinit Commands
+## :fontawesome-solid-terminal: Zinit Commands
 
 ```bash
 # Plugin management
@@ -312,7 +312,7 @@ zinit creinstall <plugin>      # Reinstall completions
 
 ---
 
-## :octicons-workflow-16: Powerlevel10k Setup
+## :fontawesome-solid-diagram-project: Powerlevel10k Setup
 
 ```bash
 # Install Powerlevel10k
@@ -344,7 +344,7 @@ p10k configure
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Use Turbo mode** - Shell starts instantly, plugins load in background
 - **Cherry-pick OMZ plugins** - Don't load entire framework, just snippets
@@ -359,7 +359,7 @@ p10k configure
 
 ---
 
-## :octicons-alert-16: Common Gotchas
+## :fontawesome-solid-triangle-exclamation: Common Gotchas
 
 - **Slow startup** - Profile with `zinit times`, use Turbo mode
 - **Completions not working** - Run `zinit cclear && zinit creinstall -q .`
@@ -373,7 +373,7 @@ p10k configure
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Zinit:**
 - **[Zinit Wiki](https://github.com/zdharma-continuum/zinit/wiki)** - Complete documentation

@@ -3,7 +3,7 @@ title: Kubernetes
 description: Container orchestration platform - auto-scaling, self-healing, rolling updates, complexity at scale
 ---
 
-# :octicons-cpu-16: Kubernetes (K8s)
+# :fontawesome-solid-microchip: Kubernetes (K8s)
 
 Container orchestration platform that manages Docker/containerd containers at scale. Auto-scaling, self-healing, rolling updates, service discovery. Overkill for small projects, essential for large deployments. Steep learning curve but industry standard. YAML hell is real.
 
@@ -12,9 +12,9 @@ Container orchestration platform that manages Docker/containerd containers at sc
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Cluster info
@@ -72,7 +72,7 @@ ______________________________________________________________________
     - `-n namespace` flag works with all commands
     - Learn `kubectl diff -f file.yaml` before applying changes
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```yaml
     # deployment.yaml - The bread and butter of K8s
@@ -238,7 +238,7 @@ ______________________________________________________________________
     - Ingress provides HTTP routing + SSL termination at the edge
     - Secrets/ConfigMaps separate config from code
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Namespaces** - Isolate environments (dev, staging, prod)
@@ -294,7 +294,7 @@ ______________________________________________________________________
 
 Essential tools for working with Kubernetes.
 
-### :octicons-tools-16: CLI Tools
+### :fontawesome-solid-wrench: CLI Tools
 
 ```bash
 # kubectl plugins via krew (package manager)
@@ -318,7 +318,7 @@ brew install stern              # Multi-pod log tailing
 brew install dive               # Analyze container images
 ```
 
-### :octicons-package-16: Popular Tools
+### :fontawesome-solid-box: Popular Tools
 
 | Tool | Purpose | Why Use It |
 |------|---------|------------|
@@ -333,9 +333,9 @@ brew install dive               # Analyze container images
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Free Resources
+### :fontawesome-solid-graduation-cap: Free Resources
 
 - **[Kubernetes Documentation](https://kubernetes.io/docs/)** - Official docs, comprehensive
 - **[Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)** - Build K8s from scratch (deep understanding)
@@ -357,7 +357,7 @@ ______________________________________________________________________
 - Study 2-3 months if new to K8s
 - Certifications expire after 3 years
 
-### :octicons-code-16: Practice Projects
+### :fontawesome-solid-code: Practice Projects
 
 !!! example "Beginner"
     - **Deploy static site** - Nginx deployment + service + ingress
@@ -378,11 +378,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -394,7 +394,7 @@ ______________________________________________________________________
 
     [Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)
 
-- :octicons-tools-16: __Essential Tools__
+- :fontawesome-solid-wrench: __Essential Tools__
 
     ______________________________________________________________________
 
@@ -408,7 +408,7 @@ ______________________________________________________________________
 
     [krew (kubectl plugins)](https://krew.sigs.k8s.io/)
 
-- :octicons-code-16: __Learning & Practice__
+- :fontawesome-solid-code: __Learning & Practice__
 
     ______________________________________________________________________
 
@@ -420,7 +420,7 @@ ______________________________________________________________________
 
     [CNCF Landscape](https://landscape.cncf.io/)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -436,5 +436,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-cpu-16: **Complex but Essential** - Kubernetes is overkill for small projects but mandatory at scale. Steep learning curve, but managed services (EKS/GKE/AKS) hide most complexity. If you're doing containers seriously, you're learning K8s.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-microchip: **Complex but Essential** - Kubernetes is overkill for small projects but mandatory at scale. Steep learning curve, but managed services (EKS/GKE/AKS) hide most complexity. If you're doing containers seriously, you're learning K8s.
 **Tags:** kubernetes, k8s, containers, orchestration, devops

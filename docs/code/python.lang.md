@@ -3,7 +3,7 @@ title: Python
 description: General-purpose programming language - readable syntax, massive ecosystem, slow but productive
 ---
 
-# :octicons-code-16: Python
+# :fontawesome-solid-code: Python
 
 General-purpose programming language known for readability and simplicity. Dominant in data science, ML, automation, and web backends. Slow execution but fast development. "Batteries included" philosophy with comprehensive standard library. GIL (Global Interpreter Lock) is both a blessing and a curse.
 
@@ -12,9 +12,9 @@ General-purpose programming language known for readability and simplicity. Domin
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Syntax"
+=== ":fontawesome-solid-list-check: Essential Syntax"
 
     ```python
     # Variables and types (dynamic typing)
@@ -96,7 +96,7 @@ ______________________________________________________________________
     - `with` statements prevent resource leaks
     - PEP 8 style guide is law (use Ruff to enforce)
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```python
     # Virtual environments (isolate project dependencies)
@@ -220,7 +220,7 @@ ______________________________________________________________________
     - Pathlib is more readable than os.path
     - Logging beats print for production code
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Use uv for dependencies** - 10-100x faster than pip
@@ -270,7 +270,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-package-16: Package Management
+## :fontawesome-solid-box: Package Management
 
 ### Modern Approach (uv - Recommended)
 
@@ -334,9 +334,9 @@ poetry run pytest
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Free Resources
+### :fontawesome-solid-graduation-cap: Free Resources
 
 - **[Official Python Tutorial](https://docs.python.org/3/tutorial/)** - Start here if new to Python
 - **[Real Python](https://realpython.com/)** - High-quality tutorials and articles
@@ -344,7 +344,7 @@ ______________________________________________________________________
 - **[PEP 8 Style Guide](https://peps.python.org/pep-0008/)** - Official style guide
 - **[Full Stack Python](https://www.fullstackpython.com/)** - Web development focus
 
-### :octicons-code-16: Practice Projects
+### :fontawesome-solid-code: Practice Projects
 
 !!! example "Beginner"
     - **CLI tool** - Todo list, file organizer, password generator
@@ -366,11 +366,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -382,7 +382,7 @@ ______________________________________________________________________
 
     [PEP Index](https://peps.python.org/)
 
-- :octicons-tools-16: __Essential Tools__
+- :fontawesome-solid-wrench: __Essential Tools__
 
     ______________________________________________________________________
 
@@ -396,7 +396,7 @@ ______________________________________________________________________
 
     [pytest (testing)](https://pytest.org/)
 
-- :octicons-code-16: __Popular Frameworks__
+- :fontawesome-solid-code: __Popular Frameworks__
 
     ______________________________________________________________________
 
@@ -410,7 +410,7 @@ ______________________________________________________________________
 
     [PyTorch](https://pytorch.org/)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -426,5 +426,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-star-16: **Mainstream** - Python is the default choice for data science, ML, automation, and rapid prototyping. Slow execution but fast development. Modern tooling (uv, Ruff) makes it competitive. If you're doing AI/ML, you're learning Python.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-star: **Mainstream** - Python is the default choice for data science, ML, automation, and rapid prototyping. Slow execution but fast development. Modern tooling (uv, Ruff) makes it competitive. If you're doing AI/ML, you're learning Python.
 **Tags:** python, programming, scripting, data-science

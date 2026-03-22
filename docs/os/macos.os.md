@@ -12,9 +12,9 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # System information
@@ -58,7 +58,7 @@ ______________________________________________________________________
     - Terminal.app is fine, but iTerm2 is better
     - Enable tap-to-click - System Settings → Trackpad
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```bash
     # Homebrew setup (install from https://brew.sh)
@@ -99,7 +99,7 @@ ______________________________________________________________________
     - Spotlight indexing can get corrupted, rebuild fixes it
     - DNS cache causes weird networking issues
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Productivity Boosters"
         - **Rectangle/Magnet** - Window management (native snapping is weak)
@@ -140,15 +140,15 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Free Resources
+### :fontawesome-solid-graduation-cap: Free Resources
 
 - **[macOS User Guide](https://support.apple.com/guide/mac-help/)** - Official Apple docs
 - **[Mac Power Users Podcast](https://www.relay.fm/mpu)** - Tips and workflows
 - **[Awesome macOS](https://github.com/iCHAIT/awesome-macOS)** - Curated list of apps/tools
 
-### :octicons-terminal-16: Command Line
+### :fontawesome-solid-terminal: Command Line
 
 - **[macOS Terminal Guide](https://support.apple.com/guide/terminal/)** - Official terminal docs
 - **[Homebrew Documentation](https://docs.brew.sh/)** - Package manager docs
@@ -160,7 +160,7 @@ ______________________________________________________________________
 
 Tools for macOS security auditing, compliance checking, and vulnerability assessment. Because Apple's security is good, but not perfect.
 
-### :octicons-checklist-16: Tool Overview
+### :fontawesome-solid-list-check: Tool Overview
 
 | Tool | Purpose | Type | Best For |
 |------|---------|------|----------|
@@ -169,7 +169,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 | **Apple-Check** | macOS-specific security audit | OSS | Apple compliance baselines, MDM checks |
 | **Osquery** | SQL-based system monitoring | OSS | Fleet management, threat hunting |
 
-### :octicons-gear-16: Installation & Usage
+### :fontawesome-solid-gear: Installation & Usage
 
 === "Lynis - macOS Hardening Audit"
 
@@ -337,7 +337,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
     - Performance impact negligible if queries optimized
     - Essential for enterprise Mac security at scale
 
-### :octicons-light-bulb-16: Best Practices
+### :fontawesome-solid-lightbulb: Best Practices
 
 !!! success "macOS-Specific Hardening"
     - **FileVault** - Full-disk encryption (non-negotiable for laptops)
@@ -369,11 +369,11 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -383,7 +383,7 @@ ______________________________________________________________________
 
     [macOS Release Notes](https://developer.apple.com/documentation/macos-release-notes)
 
-- :octicons-package-16: __Package Managers__
+- :fontawesome-solid-box: __Package Managers__
 
     ______________________________________________________________________
 
@@ -393,7 +393,7 @@ ______________________________________________________________________
 
     [Nix](https://nixos.org/download.html#nix-install-macos)
 
-- :octicons-tools-16: __Essential Tools__
+- :fontawesome-solid-wrench: __Essential Tools__
 
     ______________________________________________________________________
 
@@ -405,7 +405,7 @@ ______________________________________________________________________
 
     [Alfred](https://www.alfredapp.com/)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -419,5 +419,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-heart-16: **Premium** - macOS is the developer's choice if you can afford it. Unix power with GUI polish, but you're locked into Apple's ecosystem.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-heart: **Premium** - macOS is the developer's choice if you can afford it. Unix power with GUI polish, but you're locked into Apple's ecosystem.
 **Tags:** macos, operating-system, apple, unix

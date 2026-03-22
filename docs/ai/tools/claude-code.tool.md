@@ -3,7 +3,7 @@ title: Claude Code
 description: AI-powered CLI coding assistant - autonomous agents, file editing, git integration, bash execution
 ---
 
-# :octicons-code-16: Claude Code
+# :fontawesome-solid-code: Claude Code
 
 Official CLI tool from Anthropic for coding with Claude AI. Autonomous agents that read files, write code, execute commands, and manage git workflows. Context-aware with unlimited conversation length. Terminal-native experience. More capable than Copilot for complex tasks, but requires thoughtful prompting.
 
@@ -12,9 +12,9 @@ Official CLI tool from Anthropic for coding with Claude AI. Autonomous agents th
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Installation (npm global)
@@ -63,7 +63,7 @@ ______________________________________________________________________
     - Sessions are unlimited length (automatic summarization)
     - Use skills (`/command`) for common workflows
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```bash
     # Code generation workflow
@@ -125,7 +125,7 @@ ______________________________________________________________________
     - Conversation history maintains context across tasks
     - Skills encapsulate best practices for common operations
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Productivity Boosters"
         - **Specific prompts** - "Add JWT auth to /api/login endpoint" > "improve security"
@@ -176,7 +176,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-tools-16: Configuration & Customization
+## :fontawesome-solid-wrench: Configuration & Customization
 
 ### CLAUDE.md Project Instructions
 
@@ -273,16 +273,16 @@ Connect external tools via Model Context Protocol:
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Official Resources
+### :fontawesome-solid-graduation-cap: Official Resources
 
 - **[Claude Code Documentation](https://docs.anthropic.com/claude-code)** - Official docs
 - **[Claude AI Documentation](https://docs.anthropic.com/)** - API and concepts
 - **[Model Context Protocol](https://modelcontextprotocol.io/)** - MCP specification
 - **[GitHub Repository](https://github.com/anthropics/claude-code)** - Source code and issues
 
-### :octicons-code-16: Example Use Cases
+### :fontawesome-solid-code: Example Use Cases
 
 !!! example "Development Workflows"
     - **Feature development** - "Implement user authentication with email verification"
@@ -305,11 +305,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -321,7 +321,7 @@ ______________________________________________________________________
 
     [Model Context Protocol](https://modelcontextprotocol.io/)
 
-- :octicons-tools-16: __Related Tools__
+- :fontawesome-solid-wrench: __Related Tools__
 
     ______________________________________________________________________
 
@@ -331,7 +331,7 @@ ______________________________________________________________________
 
     [VSCode Extension](https://marketplace.visualstudio.com/items?itemName=Anthropic.claude-code)
 
-- :octicons-code-16: __Community__
+- :fontawesome-solid-code: __Community__
 
     ______________________________________________________________________
 
@@ -341,7 +341,7 @@ ______________________________________________________________________
 
     [r/ClaudeAI](https://reddit.com/r/ClaudeAI)
 
-- :octicons-light-bulb-16: __Learning__
+- :fontawesome-solid-lightbulb: __Learning__
 
     ______________________________________________________________________
 
@@ -355,5 +355,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-rocket-16: **Game Changer** - Claude Code is the most capable AI coding assistant for complex tasks. Better at architecture, refactoring, and multi-step workflows than alternatives. Requires more guidance than autocomplete tools but produces better results. Free tier is generous, Pro is worth it for serious developers.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Game Changer** - Claude Code is the most capable AI coding assistant for complex tasks. Better at architecture, refactoring, and multi-step workflows than alternatives. Requires more guidance than autocomplete tools but produces better results. Free tier is generous, Pro is worth it for serious developers.
 **Tags:** claude, ai, cli, coding-assistant, anthropic

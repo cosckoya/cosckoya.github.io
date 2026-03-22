@@ -3,7 +3,7 @@ title: Docker
 description: Container platform - package apps with dependencies, ship anywhere, dev/prod parity
 ---
 
-# :octicons-container-16: Docker
+# :fontawesome-solid-box: Docker
 
 Container platform that packages applications with their dependencies into isolated, portable units. Lighter than VMs, faster startup, consistent environments from dev to prod. Industry standard for containerization. Kubernetes runs Docker containers (well, technically any OCI-compliant runtime).
 
@@ -12,9 +12,9 @@ Container platform that packages applications with their dependencies into isola
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Container lifecycle
@@ -64,7 +64,7 @@ ______________________________________________________________________
     - Don't run containers as root - use `USER` directive in Dockerfile
     - `docker system prune -a` is your friend when disk fills up
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```dockerfile
     # Dockerfile best practices (multi-stage build)
@@ -179,7 +179,7 @@ ______________________________________________________________________
     - Service dependencies ensure startup order
     - Networks isolate containers from host
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Build Optimization"
         - **Layer caching** - Order Dockerfile commands by change frequency (COPY dependencies before code)
@@ -226,9 +226,148 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-layer-group: Docker Compose
 
-### :octicons-mortar-board-16: Free Resources
+Compose V2 ships with Docker and manages multi-container stacks from a single YAML file. Already covered the `docker-compose.yml` structure in Quick Hits — this section covers the rest of the CLI, environment layering, and the parts that trip people up.
+
+=== ":fontawesome-solid-list-check: Compose Commands"
+
+    ```bash
+    # Start / stop
+    docker compose up                      # Start all services (foreground)
+    docker compose up -d                   # Start in background
+    docker compose up --build              # Rebuild images before starting
+    docker compose build --no-cache        # Force full rebuild from scratch
+    docker compose down                    # Stop and remove containers
+    docker compose down -v                 # Also wipe named volumes
+
+    # Service management
+    docker compose start                   # Start existing containers
+    docker compose stop                    # Stop without removing
+    docker compose restart web             # Restart specific service
+    docker compose pause web               # Pause (freeze) a service
+    docker compose unpause web
+
+    # Logs and inspection
+    docker compose logs -f web             # Follow a specific service
+    docker compose ps                      # List services and their state
+    docker compose top                     # Show running processes per service
+
+    # Exec and run
+    docker compose exec web bash           # Shell into running service
+    docker compose run --rm web pytest     # One-off command, auto-remove
+
+    # Scaling (no host port conflicts when scaling)
+    docker compose up -d --scale web=3     # Run 3 replicas of web service
+
+    # Profiles (environment-specific services)
+    docker compose --profile dev up        # Start base + dev-profile services
+    docker compose --profile monitoring up
+
+    # Watch mode (Compose V2.22+ — rebuilds on file changes)
+    docker compose watch                   # Live reload without restart loop
+    ```
+
+    **Real talk:**
+
+    - `docker compose` (space) is V2 — `docker-compose` (hyphen) is V1, deprecated and gone in most distros
+    - `depends_on` only waits for container start, not for the service to be ready — always add health checks if startup order matters
+    - `docker compose run --rm` is the clean way to run migrations, seeds, or one-off scripts without leaving a dead container behind
+    - Watch mode is genuinely useful for frontend dev — beats manual rebuild loops
+
+=== ":fontawesome-solid-bolt: Override Files & Profiles"
+
+    ```yaml
+    # docker-compose.override.yml
+    # Automatically merged with docker-compose.yml — no flags needed
+    # Commit this for team dev defaults; gitignore personal tweaks
+    services:
+      web:
+        build:
+          target: development        # Use dev stage of multi-stage Dockerfile
+        environment:
+          DEBUG: "true"
+        volumes:
+          - ./app:/app:cached        # :cached improves macOS bind mount I/O
+        command: npm run dev         # Override CMD with hot-reload dev server
+
+      db:
+        ports:
+          - "5432:5432"              # Expose DB for local clients in dev only
+    ```
+
+    ```yaml
+    # docker-compose.prod.yml (explicit — use with -f flag)
+    # docker compose -f docker-compose.yml -f docker-compose.prod.yml up
+    services:
+      web:
+        build:
+          target: production
+        restart: unless-stopped
+        deploy:
+          resources:
+            limits:
+              cpus: '0.5'
+              memory: 512M
+        logging:
+          driver: "json-file"
+          options:
+            max-size: "10m"
+            max-file: "3"             # Log rotation — set this or disk fills up
+    ```
+
+    ```yaml
+    # Profiles — conditional services per environment
+    services:
+      web:
+        image: myapp:latest
+        # No profile = always starts
+
+      debugger:
+        image: myapp:latest
+        profiles: ["dev"]
+        command: npm run debug
+        ports:
+          - "9229:9229"              # Node.js inspector port
+
+      prometheus:
+        image: prom/prometheus
+        profiles: ["monitoring"]
+        ports:
+          - "9090:9090"
+
+    # Activate: docker compose --profile dev --profile monitoring up
+    ```
+
+    **Why this works:**
+
+    - Override files keep `docker-compose.yml` environment-agnostic — no dev-only settings leaking into prod configs
+    - `-f` flag stacking is explicit and reproducible in CI scripts
+    - Profiles prevent dev tools (debuggers, monitoring) from starting in unintended environments
+
+=== ":fontawesome-solid-fire: Compose Gotchas"
+
+    **Tips:**
+
+    - Store secrets in `.env` files (add to `.gitignore`) — Compose loads them automatically
+    - Named volumes persist across `docker compose down` — use `down -v` only when you want a full reset
+    - `docker compose config` merges and prints the effective config — useful to debug override file merging
+    - `docker compose --project-name myproject up` isolates stacks when running multiple projects on the same machine
+    - Add `read_only: true` and `cap_drop: [ALL]` to services that don't need write access or Linux capabilities
+
+    **Gotchas:**
+
+    - Volume ownership mismatch — if the container runs as UID 1000 but the host file is owned by root, writes will fail silently or with permission errors
+    - `depends_on` with just a service name has no readiness guarantee — use `condition: service_healthy` and add a `healthcheck` block
+    - Anonymous volumes (e.g. `/app/node_modules`) are NOT removed by `down -v` — clean them with `docker volume prune`
+    - macOS bind mounts are slow by default — use `:cached` flag or switch to named volumes for node_modules
+    - Network isolation is strict — services on different custom networks cannot reach each other unless you add them to both
+
+______________________________________________________________________
+
+## :fontawesome-solid-book: Learning Resources
+
+### :fontawesome-solid-graduation-cap: Free Resources
 
 - **[Docker Documentation](https://docs.docker.com/)** - Official docs, comprehensive and well-written
 - **[Docker Getting Started](https://docs.docker.com/get-started/)** - Official tutorial, hands-on
@@ -236,7 +375,7 @@ ______________________________________________________________________
 - **[Docker Curriculum](https://docker-curriculum.com/)** - Beginner-friendly tutorial
 - **[Awesome Docker](https://github.com/veggiemonk/awesome-docker)** - Curated list of tools and resources
 
-### :octicons-code-16: Practice Projects
+### :fontawesome-solid-code: Practice Projects
 
 !!! example "Beginner"
     - **Static website** - Nginx serving HTML/CSS/JS
@@ -255,11 +394,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -271,7 +410,7 @@ ______________________________________________________________________
 
     [Docker CLI Reference](https://docs.docker.com/engine/reference/commandline/cli/)
 
-- :octicons-tools-16: __Essential Tools__
+- :fontawesome-solid-wrench: __Essential Tools__
 
     ______________________________________________________________________
 
@@ -283,7 +422,7 @@ ______________________________________________________________________
 
     [Hadolint](https://github.com/hadolint/hadolint) (Dockerfile linter)
 
-- :octicons-code-16: __Examples & Patterns__
+- :fontawesome-solid-code: __Examples & Patterns__
 
     ______________________________________________________________________
 
@@ -293,7 +432,7 @@ ______________________________________________________________________
 
     [Google Distroless Images](https://github.com/GoogleContainerTools/distroless)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -309,5 +448,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-rocket-16: **Essential** - Docker is the standard for containerization. If you're deploying modern applications, you're using Docker (or at least OCI containers). Learn it well.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Essential** - Docker is the standard for containerization. If you're deploying modern applications, you're using Docker (or at least OCI containers). Learn it well.
 **Tags:** docker, containers, devops, virtualization

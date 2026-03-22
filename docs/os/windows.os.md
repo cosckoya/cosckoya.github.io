@@ -12,9 +12,9 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```powershell
     # System information
@@ -58,7 +58,7 @@ ______________________________________________________________________
     - Use winget for packages - no more downloading .exe files
     - Windows Update breaks things - always have backups
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```powershell
     # WSL2 setup (run in PowerShell as Administrator)
@@ -102,7 +102,7 @@ ______________________________________________________________________
     - PowerShell is object-based, more powerful than bash for Windows tasks
     - winget eliminates manual installations
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Developer Setup"
         - **WSL2** - Must-have for web development, runs Docker natively
@@ -143,16 +143,16 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Free Resources
+### :fontawesome-solid-graduation-cap: Free Resources
 
 - **[Windows Documentation](https://docs.microsoft.com/en-us/windows/)** - Official Microsoft docs
 - **[PowerShell Docs](https://docs.microsoft.com/en-us/powershell/)** - PowerShell reference
 - **[WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)** - Official WSL guide
 - **[PowerShell Gallery](https://www.powershellgallery.com/)** - PowerShell modules
 
-### :octicons-terminal-16: PowerShell Learning
+### :fontawesome-solid-terminal: PowerShell Learning
 
 - **[PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)** - Best beginner book
 - **[PowerShell.org](https://powershell.org/)** - Community resources
@@ -164,7 +164,7 @@ ______________________________________________________________________
 
 Windows security auditing tools for finding privilege escalation paths, Active Directory weaknesses, and configuration issues. Essential for pentesting and defensive security.
 
-### :octicons-checklist-16: Tool Overview
+### :fontawesome-solid-list-check: Tool Overview
 
 | Tool | Purpose | Type | Best For |
 |------|---------|------|----------|
@@ -175,7 +175,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 | **Snaffler** | Sensitive data discovery | OSS | Finding secrets in file shares |
 | **Osquery** | SQL-based system monitoring | OSS | Fleet management, EDR-style queries |
 
-### :octicons-gear-16: Installation & Usage
+### :fontawesome-solid-gear: Installation & Usage
 
 === "WinPEAS - Privilege Escalation"
 
@@ -468,7 +468,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
     - Integrates with SIEM tools for alerting
     - Learning curve steep but worth it
 
-### :octicons-light-bulb-16: Best Practices
+### :fontawesome-solid-lightbulb: Best Practices
 
 !!! success "Windows Security Hardening"
     - **Windows Defender** - Keep enabled and updated (it's actually good now)
@@ -502,11 +502,11 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -516,7 +516,7 @@ ______________________________________________________________________
 
     [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)
 
-- :octicons-package-16: __Package Managers__
+- :fontawesome-solid-box: __Package Managers__
 
     ______________________________________________________________________
 
@@ -526,7 +526,7 @@ ______________________________________________________________________
 
     [Scoop](https://scoop.sh/)
 
-- :octicons-tools-16: __Essential Tools__
+- :fontawesome-solid-wrench: __Essential Tools__
 
     ______________________________________________________________________
 
@@ -538,7 +538,7 @@ ______________________________________________________________________
 
     [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -552,5 +552,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-rocket-16: **Improved** - Windows finally respects developers thanks to WSL2. Still not as smooth as Linux/macOS for dev work, but gaming + productivity combo is unbeatable.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Improved** - Windows finally respects developers thanks to WSL2. Still not as smooth as Linux/macOS for dev work, but gaming + productivity combo is unbeatable.
 **Tags:** windows, operating-system, microsoft, wsl

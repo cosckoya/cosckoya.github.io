@@ -12,7 +12,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Installation"
 
@@ -125,7 +125,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
 
 ---
 
-## :octicons-package-16: Common Plugins
+## :fontawesome-solid-box: Common Plugins
 
 ### Essential Runtimes
 
@@ -182,7 +182,7 @@ asdf install terragrunt latest
 
 ---
 
-## :octicons-terminal-16: Essential Commands
+## :fontawesome-solid-terminal: Essential Commands
 
 ```bash
 # Plugin management
@@ -216,7 +216,7 @@ asdf update                         # Update asdf itself
 
 ---
 
-## :octicons-workflow-16: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### New Project Setup
 
@@ -273,7 +273,7 @@ python --version  # 3.12.1
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Use `latest` carefully** - Pin exact versions in production projects
 - **Reshim after global installs** - Run `asdf reshim` if commands not found
@@ -287,7 +287,7 @@ python --version  # 3.12.1
 
 ---
 
-## :octicons-alert-16: Common Gotchas
+## :fontawesome-solid-triangle-exclamation: Common Gotchas
 
 - **Command not found after install** - Run `asdf reshim <plugin>`
 - **Python build fails** - Install build dependencies: `sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev`
@@ -300,7 +300,7 @@ python --version  # 3.12.1
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Official:**
 - **[ASDF Docs](https://asdf-vm.com/)** - Official documentation

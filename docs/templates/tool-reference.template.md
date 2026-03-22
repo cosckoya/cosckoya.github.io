@@ -11,7 +11,7 @@ ______________________________________________________________________
 
 ## Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     {{ESSENTIAL_COMMANDS}}
@@ -21,7 +21,7 @@ ______________________________________________________________________
 
     {{REAL_TALK_BULLETS}}
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```{{CODE_LANGUAGE}}
     {{COMMON_PATTERNS_CODE}}
@@ -31,7 +31,7 @@ ______________________________________________________________________
 
     {{PATTERN_EXPLANATION_BULLETS}}
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -67,14 +67,14 @@ ______________________________________________________________________
 
 **Documentation:**
 
-- :octicons-book-16: [Official Docs]({{OFFICIAL_DOCS_URL}})
-- :octicons-mark-github-16: [GitHub]({{GITHUB_URL}})
-- :octicons-comment-discussion-16: [Community]({{COMMUNITY_URL}})
+- :fontawesome-solid-book: [Official Docs]({{OFFICIAL_DOCS_URL}})
+- :fontawesome-brands-github: [GitHub]({{GITHUB_URL}})
+- :fontawesome-solid-comments: [Community]({{COMMUNITY_URL}})
 
 **Related:**
 
-- :octicons-flame-16: __{{RELATED_1}}__
-- :octicons-tools-16: __{{RELATED_2}}__
+- :fontawesome-solid-fire: __{{RELATED_1}}__
+- :fontawesome-solid-wrench: __{{RELATED_2}}__
 
 ______________________________________________________________________
 

@@ -12,9 +12,9 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -73,7 +73,7 @@ ______________________________________________________________________
     - Some hooks auto-fix (formatters), others report (linters)
     - Skip hooks with `git commit --no-verify` (emergency only)
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Configuration file (.pre-commit-config.yaml):**
 
@@ -310,7 +310,7 @@ ______________________________________________________________________
     - Language-agnostic (works with any language)
     - CI integration ensures hooks run on all PRs
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Start simple** - Add hooks gradually (don't overwhelm team)
@@ -360,7 +360,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-package-16: Hook Categories
+## :fontawesome-solid-box: Hook Categories
 
 ### Code Quality
 
@@ -410,16 +410,16 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Official Resources
+### :fontawesome-solid-graduation-cap: Official Resources
 
 - **[pre-commit Documentation](https://pre-commit.com/)** - Official docs (comprehensive)
 - **[Supported Hooks](https://pre-commit.com/hooks.html)** - Community hook registry
 - **[Creating Hooks](https://pre-commit.com/#creating-new-hooks)** - Build custom hooks
 - **[GitHub Action](https://github.com/pre-commit/action)** - Official CI integration
 
-### :octicons-code-16: Example Configurations
+### :fontawesome-solid-code: Example Configurations
 
 !!! example "Minimal Python Project"
     ```yaml
@@ -510,11 +510,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -526,7 +526,7 @@ ______________________________________________________________________
 
     [GitHub Action](https://github.com/pre-commit/action)
 
-- :octicons-tools-16: __Popular Hooks__
+- :fontawesome-solid-wrench: __Popular Hooks__
 
     ______________________________________________________________________
 
@@ -540,7 +540,7 @@ ______________________________________________________________________
 
     [golangci-lint](https://github.com/golangci/golangci-lint)
 
-- :octicons-code-16: __Alternative Tools__
+- :fontawesome-solid-code: __Alternative Tools__
 
     ______________________________________________________________________
 
@@ -550,7 +550,7 @@ ______________________________________________________________________
 
     [lint-staged](https://github.com/okonet/lint-staged) (Run on staged files only)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -564,6 +564,6 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-shield-16: **Essential** - pre-commit prevents bad commits (formatting, secrets, syntax errors). Auto-fixes save time. Language-agnostic (works with Python, Go, Node.js, etc.). First run slow (environment setup), subsequent fast. Integrate with CI (GitHub Actions). Team adoption requires discipline (`--no-verify` tempting but dangerous). 200+ hooks available.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield-halved: **Essential** - pre-commit prevents bad commits (formatting, secrets, syntax errors). Auto-fixes save time. Language-agnostic (works with Python, Go, Node.js, etc.). First run slow (environment setup), subsequent fast. Integrate with CI (GitHub Actions). Team adoption requires discipline (`--no-verify` tempting but dangerous). 200+ hooks available.
 
 **Tags:** pre-commit, git-hooks, code-quality, automation, linting

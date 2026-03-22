@@ -12,7 +12,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Installation"
 
@@ -151,7 +151,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :octicons-shield-16: Check Categories
+## :fontawesome-solid-shield-halved: Check Categories
 
 ### Security Issues
 
@@ -205,7 +205,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :octicons-workflow-16: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### Daily Cluster Health Check
 
@@ -280,7 +280,7 @@ k8s-scan:
 
 ---
 
-## :octicons-terminal-16: Output Format
+## :fontawesome-solid-terminal: Output Format
 
 **Terminal output (default):**
 ```
@@ -335,7 +335,7 @@ Legend:
 
 ---
 
-## :octicons-gear-16: Configuration Examples
+## :fontawesome-solid-gear: Configuration Examples
 
 ### Production Configuration
 
@@ -397,7 +397,7 @@ popeye:
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Run regularly** - Schedule daily scans in CI/CD
 - **Track scores over time** - Monitor cluster health trends
@@ -412,7 +412,7 @@ popeye:
 
 ---
 
-## :octicons-alert-16: Common Issues & Fixes
+## :fontawesome-solid-triangle-exclamation: Common Issues & Fixes
 
 **No liveness probe (POP-106):**
 ```yaml
@@ -478,7 +478,7 @@ spec:
 
 ---
 
-## :octicons-checklist-16: Pre-Production Checklist
+## :fontawesome-solid-list-check: Pre-Production Checklist
 
 ```bash
 # Run comprehensive check
@@ -500,7 +500,7 @@ popeye -n production -o yaml > audit.yaml
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Official:**
 - **[GitHub](https://github.com/derailed/popeye)** - Source code
