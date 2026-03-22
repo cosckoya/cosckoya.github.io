@@ -135,6 +135,14 @@ markdown_extensions:
   - md_in_html
   - def_list
   - pymdownx.magiclink
+  # Text decoration
+  - pymdownx.mark          # ==highlighted text==
+  - pymdownx.caret         # ^^inserted^^ and H^2^O superscript
+  - pymdownx.tilde         # ~~del~~ and H~2~O subscript
+  - pymdownx.keys          # ++ctrl+alt+delete++ keyboard keys
+  # References and annotations
+  - abbr                   # *[ABBR]: Abbreviation tooltips
+  - footnotes              # [^1] footnotes
   # Icons
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji

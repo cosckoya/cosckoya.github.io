@@ -7,7 +7,7 @@ description: Complete reference of all Material for MkDocs theme features, markd
 
 **Kitchen sink documentation** — Every feature, pattern, and capability of the Material theme ecosystem. Use this as reference for what's possible, copy/paste examples, or generate new documentation.
 
-Last Updated: 2026-03-22 | Theme: Material 9.7.1 | Tags: material, theme, features, markdown, showcase
+Last Updated: 2026-03-22 | Theme: Material 9.7.1
 
 ______________________________________________________________________
 
@@ -186,7 +186,7 @@ ______________________________________________________________________
 
 ## :fontawesome-solid-message: Admonitions
 
-Admonitions draw attention to important information. Eight types available:
+Admonitions draw attention to important information. Eleven types available:
 
 !!! note "Note"
     This is a note. Use for additional information that doesn't fit elsewhere.
@@ -241,10 +241,10 @@ ______________________________________________________________________
 
 | Feature | Material | Docusaurus | Jekyll | Status |
 |---------|----------|-----------|--------|--------|
-| Setup Time | :fontawesome-solid-bolt: 5 min | :fontawesome-solid-hourglass: 15 min | :fontawesome-solid-hourglass: 20 min | ✓ |
-| Customization | :fontawesome-solid-star: Excellent | :fontawesome-solid-star: Excellent | :fontawesome-solid-star: Good | ✓ |
-| Performance | :fontawesome-solid-rocket: Fast | :fontawesome-solid-rocket: Fast | :fontawesome-solid-snail: Slow | ✓ |
-| Learning Curve | :fontawesome-solid-chart-line: Easy | :fontawesome-solid-chart-line: Moderate | :fontawesome-solid-chart-line: Easy | ✓ |
+| Setup Time | :fontawesome-solid-bolt: 5 min | :fontawesome-solid-hourglass: 15 min | :fontawesome-solid-hourglass: 20 min | :fontawesome-solid-circle-check: |
+| Customization | :fontawesome-solid-star: Excellent | :fontawesome-solid-star: Excellent | :fontawesome-solid-star: Good | :fontawesome-solid-circle-check: |
+| Performance | :fontawesome-solid-rocket: Fast | :fontawesome-solid-rocket: Fast | :fontawesome-solid-snail: Slow | :fontawesome-solid-circle-check: |
+| Learning Curve | :fontawesome-solid-chart-line: Easy | :fontawesome-solid-chart-line: Moderate | :fontawesome-solid-chart-line: Easy | :fontawesome-solid-circle-check: |
 
 **Table with alignment:**
 
@@ -459,44 +459,54 @@ Tabbed content with persistent state across pages:
     mkdocs gh-deploy
     ```
 
-### Nested Tabs
+### Multiple Platform Tabs
 
-=== "Operating Systems"
+!!! warning "Nested tabs not supported"
+    `pymdownx.tabbed` does NOT support nested tabs. Tabs must be flat at the same level.
+    Use separate tab groups if you need multiple dimensions.
 
-    === "Linux"
-        ```bash
-        sudo apt-get install python3-pip
-        pip install mkdocs-material
-        ```
+**Tab group 1 — By OS:**
 
-    === "macOS"
-        ```bash
-        brew install python3
-        pip install mkdocs-material
-        ```
+=== "Linux"
 
-    === "Windows"
-        ```cmd
-        python -m pip install mkdocs-material
-        mkdocs serve
-        ```
+    ```bash
+    sudo apt-get install python3-pip
+    pip install mkdocs-material
+    ```
 
-=== "Package Managers"
+=== "macOS"
 
-    === "pip"
-        ```bash
-        pip install mkdocs-material
-        ```
+    ```bash
+    brew install python3
+    pip install mkdocs-material
+    ```
 
-    === "conda"
-        ```bash
-        conda install mkdocs-material
-        ```
+=== "Windows"
 
-    === "poetry"
-        ```bash
-        poetry add mkdocs-material
-        ```
+    ```cmd
+    python -m pip install mkdocs-material
+    mkdocs serve
+    ```
+
+**Tab group 2 — By package manager:**
+
+=== "pip"
+
+    ```bash
+    pip install mkdocs-material
+    ```
+
+=== "conda"
+
+    ```bash
+    conda install mkdocs-material
+    ```
+
+=== "poetry"
+
+    ```bash
+    poetry add mkdocs-material
+    ```
 
 ______________________________________________________________________
 
@@ -526,7 +536,7 @@ ______________________________________________________________________
   !!! warning "Be careful"
       Do not skip this step
 
-______----------------------------------------------------------------
+______________________________________________________________________
 
 ## :fontawesome-solid-comments: Comments & Annotations
 
@@ -594,18 +604,31 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :fontawesome-solid-sliders: Math & Formulas
+## :fontawesome-solid-calculator: Math & Formulas
 
-Inline math: $E = mc^2$
+!!! warning "Requires additional setup"
+    Math rendering requires `pymdownx.arithmatex` extension **plus** MathJax or KaTeX JavaScript.
+    Add to `mkdocs.yml`:
+    ```yaml
+    markdown_extensions:
+      - pymdownx.arithmatex:
+          generic: true
+    extra_javascript:
+      - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+    ```
+    Not enabled by default on this site — examples below are syntax references only.
 
-Block math:
+Inline math syntax: `$E = mc^2$`
 
+Block math syntax:
+
+```
 $$
 \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
+```
 
-### Complex Formula
-
+```
 $$
 \begin{align}
 a &= b + c \\
@@ -613,6 +636,7 @@ d &= e + f \\
 g &= h + i
 \end{align}
 $$
+```
 
 ______________________________________________________________________
 
@@ -834,26 +858,52 @@ ______________________________________________________________________
 
 ```
 docs/
-├── index.md                  # Homepage
-├── showcase.md              # This file
-├── cloud/
-│   ├── SUMMARY.md           # Cloud section nav
-│   ├── aws.cloud.md         # Cloud platform doc
-│   └── tools/
-│       ├── SUMMARY.md       # Tools subsection nav
-│       └── terraform.tool.md
-├── api/
+├── SUMMARY.md               # Main navigation (literate-nav)
+├── index.md                 # Homepage
+├── showcase.md              # This file (feature reference)
+├── toolbox/                 # CLI tools: asdf, kitty, neovim, tmux, zsh
+│   └── SUMMARY.md
+├── os/                      # Operating systems: linux, macos, windows
+│   └── SUMMARY.md
+├── containers/              # Docker (+ Compose), Kubernetes
+│   ├── SUMMARY.md
+│   └── tools/               # helm, krew, kubectx, dive, popeye
+│       └── SUMMARY.md
+├── databases/               # Database tooling
+│   ├── SUMMARY.md
+│   └── tools/               # dbcli, oracledb-cli
+│       └── SUMMARY.md
+├── cloud/                   # Cloud & DevOps (AWS + merged tools)
+│   ├── SUMMARY.md
+│   ├── aws.cloud.md
+│   └── tools/               # terraform, prowler, checkov, github, azure-devops, snyk, sonarcloud, trivy
+│       └── SUMMARY.md
+├── api/                     # API references
 │   ├── SUMMARY.md
 │   └── github-rest-api.service.md
-├── templates/
+├── code/                    # Programming languages + tools
+│   ├── SUMMARY.md
+│   └── tools/               # gitleaks, shellcheck, etc.
+│       └── SUMMARY.md
+├── ai/                      # AI tools: Claude Code, Copilot, Gemini
+│   ├── SUMMARY.md
+│   └── tools/
+│       └── SUMMARY.md
+├── 1337/                    # Security / CTF content
+│   └── SUMMARY.md
+├── awesome/                 # Curated references
+│   └── SUMMARY.md
+├── templates/               # Doc generation templates
+│   ├── README.md
 │   ├── tech-reference.template.md
 │   └── tool-reference.template.md
 └── resources/
     ├── css/
-    │   ├── snape.css        # Custom styling
+    │   ├── snape.css        # Custom styling (single file, DRY)
     │   └── images.css
     └── img/
-        └── logo.png
+        ├── logo.png
+        └── favicon.png
 ```
 
 ______________________________________________________________________
@@ -923,5 +973,4 @@ ______________________________________________________________________
 ______________________________________________________________________
 
 **Last Updated:** 2026-03-22
-**Theme:** Material for MkDocs 9.7.1
 **Tags:** material, showcase, features, markdown, theme, documentation
