@@ -20,3 +20,5 @@ jobs:
       - run: pip install -r requirements.txt
 
       - run: mkdocs gh-deploy --force
+        env:
+          DISABLE_MKDOCS_2_WARNING: "true"
