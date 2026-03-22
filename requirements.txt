@@ -1,21 +1,26 @@
 # MkDocs Material Documentation Site - Core Dependencies
-# Updated: 2026-02-03
+# Updated: 2026-03-22
+# PINNED to exact versions — newer versions of mkdocs-same-dir, mkdocs-section-index,
+# and mkdocs-literate-nav inject a ProperDocs promotional warning. Pin until resolved.
 
 # Core MkDocs
-mkdocs>=1.6.1,<2.0.0
+mkdocs==1.6.1
 
 # Material Theme
-mkdocs-material>=9.7.1,<10.0.0
-mkdocs-material-extensions>=1.3.1,<2.0.0  # Deprecated but still compatible
+mkdocs-material==9.7.1
+mkdocs-material-extensions==1.3.1
 
 # Markdown Extensions
-pymdown-extensions>=10.20.1,<11.0.0
+pymdown-extensions==10.20.1
 
-# Plugins
-mkdocs-literate-nav>=0.6.2,<1.0.0
-mkdocs-minify-plugin>=0.8.0,<1.0.0
-mkdocs-same-dir>=0.1.3,<1.0.0
-mkdocs-section-index>=0.3.10,<1.0.0
+# Plugins (pinned — newer versions inject ProperDocs warning via plugin hook)
+mkdocs-literate-nav==0.6.2
+mkdocs-minify-plugin==0.8.0
+mkdocs-same-dir==0.1.3
+mkdocs-section-index==0.3.10
+
+# Additional packages for 2026 enhancements
+pillow==12.1.1                   # Image processing (optimization, caching)
 
 # Development Tools (optional)
 mdformat>=0.7.22,<0.8.0

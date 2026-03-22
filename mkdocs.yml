@@ -115,9 +115,10 @@ extra:
 markdown_extensions:
   - toc:
       permalink: True
-# Admotions
+  # Admonitions
   - admonition
   - pymdownx.details
+  # Code and syntax
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -125,16 +126,26 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-# Annotations
-  - attr_list
-  - md_in_html
-# TBR
-  - def_list
-  - pymdownx.magiclink
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-#      base_path: 'resources/code'
+  # Annotations and layout
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.magiclink
+  # Text decoration
+  - pymdownx.mark          # ==highlighted text==
+  - pymdownx.caret         # ^^inserted^^ and H^2^O superscript
+  - pymdownx.tilde         # ~~del~~ and H~2~O subscript
+  - pymdownx.keys          # ++ctrl+alt+delete++ keyboard keys
+  - pymdownx.tasklist:     # - [x] task lists as checkboxes
+      custom_checkbox: true
+  # References and annotations
+  - abbr                   # *[ABBR]: Abbreviation tooltips
+  - footnotes              # [^1] footnotes
+  # Icons
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -163,3 +174,8 @@ plugins:
 extra_css:
   - resources/css/images.css
   - resources/css/snape.css
+
+# Build configuration
+docs_dir: docs
+site_dir: site
+dev_addr: 127.0.0.1:8000
