@@ -134,7 +134,9 @@ data = fetch_api("https://api.example.com/data")  # (4)!
 
 ### Code with Line Numbers
 
-```yaml
+Enable globally in `mkdocs.yml` with `linenums: true`, or per-block with `linenums="1"`:
+
+```yaml linenums="1"
 # mkdocs.yml — Material theme config
 site_name: Documentation
 theme:
@@ -277,7 +279,7 @@ Regular icons: :fontawesome-regular-star: :fontawesome-regular-heart: :fontaweso
 
 | Category | Icons |
 |----------|-------|
-| Development | :fontawesome-brands-github: :fontawesome-brands-gitlab: :fontawesome-solid-code: :fontawesome-solid-git: |
+| Development | :fontawesome-brands-github: :fontawesome-brands-gitlab: :fontawesome-solid-code: :fontawesome-brands-git: |
 | Deployment | :fontawesome-solid-rocket: :fontawesome-brands-docker: :fontawesome-solid-server: :fontawesome-solid-cloud: |
 | Security | :fontawesome-solid-lock: :fontawesome-solid-key: :fontawesome-solid-shield: :fontawesome-solid-bug: |
 | Status | :fontawesome-solid-circle-check: :fontawesome-solid-circle-xmark: :fontawesome-solid-hourglass: :fontawesome-solid-triangle-exclamation: |
@@ -433,7 +435,7 @@ Tabbed content with persistent state across pages:
 
 === "Getting Started"
 
-    # Installation
+    ### Installation
 
     ```bash
     pip install mkdocs-material
@@ -443,7 +445,7 @@ Tabbed content with persistent state across pages:
 
 === "Configuration"
 
-    # mkdocs.yml
+    ### mkdocs.yml
 
     ```yaml
     site_name: My Site
@@ -453,7 +455,7 @@ Tabbed content with persistent state across pages:
 
 === "Deployment"
 
-    # Deploy to GitHub Pages
+    ### Deploy to GitHub Pages
 
     ```bash
     mkdocs gh-deploy
@@ -698,7 +700,7 @@ Material uses these breakpoints:
 
 ______________________________________________________________________
 
-## :fontawesome-solid-palette: Dark & Light Mode
+## :fontawesome-solid-circle-half-stroke: Dark & Light Mode
 
 Toggle between dark (Maleficent theme) and light (Deep Purple + Teal) modes using the button in the top right.
 
@@ -734,26 +736,44 @@ theme:
 
 ### Essential Features
 
+Complete feature list as configured on this site:
+
 ```yaml
 features:
   # Navigation
-  - navigation.sections
-  - navigation.expand
-  - navigation.breadcrumbs
-  - navigation.instant.loading
-  - navigation.instant.prefetch
-  - navigation.instant.progress
+  - navigation.sections          # Expandable/collapsible sections
+  - navigation.expand            # Expand all sections by default
+  - navigation.breadcrumbs       # Breadcrumb trail
+  - navigation.instant.loading   # SPA-like navigation (no full reload)
+  - navigation.instant.prefetch  # Prefetch pages on hover
+  - navigation.instant.progress  # Loading progress indicator
+  - navigation.tracking          # URL fragment updates on scroll
+  - navigation.top               # Back to top button
+  - navigation.indexes           # Section index pages (index.md per section)
+  - navigation.footer            # Previous/next page navigation
+  - navigation.path              # Show full path in navigation
 
   # Search
-  - search.suggest
-  - search.highlight
-  - search.share
+  - search.suggest               # Search auto-complete
+  - search.highlight             # Highlight matches in page
+  - search.share                 # Share search results via URL
 
   # Content
-  - content.code.copy
-  - content.code.annotate
-  - content.tabs.link
-  - toc.follow
+  - content.code.copy            # Copy button on code blocks
+  - content.code.select          # Text selection on code blocks
+  - content.code.annotate        # Inline code annotations (# (1)!)
+  - content.tabs.link            # Persistent tab state across pages
+  - content.tooltips             # Abbreviation tooltips
+  - content.footnote.tooltips    # Footnotes as inline tooltip popovers
+  - content.action.edit          # "Edit this page" button
+  - content.action.view          # "View source" button
+
+  # TOC
+  - toc.follow                   # Highlight current section while scrolling
+
+  # Header
+  - header.autohide              # Auto-hide header on scroll down
+  - announce.dismiss             # Dismissible announcement bar
 ```
 
 ______________________________________________________________________
@@ -783,19 +803,25 @@ ______________________________________________________________________
 ### Three-Tab Quick Hits Pattern
 
 === ":fontawesome-solid-list-check: Essential"
+
     Key commands and basic usage
-    ```
+
+    ```bash
     command --flag argument
     ```
 
 === ":fontawesome-solid-bolt: Common Patterns"
+
     Real-world use cases
-    ```
+
+    ```bash
     command pattern example
     ```
 
 === ":fontawesome-solid-fire: Pro Tips & Gotchas"
+
     Advanced usage and warnings
+
     - Tip 1
     - Gotcha 1
 
@@ -847,10 +873,10 @@ This site aims for WCAG 2.1 AA compliance:
 
 ### Keyboard Shortcuts
 
-- ++search++: Focus search
-- ++esc++: Close modals
+- ++s++ or ++slash++: Focus search (Material default)
+- ++esc++: Close modals / exit search
 - ++tab++: Navigate elements
-- ++enter++: Activate buttons
+- ++enter++: Activate buttons / confirm
 
 ______________________________________________________________________
 
@@ -968,7 +994,7 @@ ______________________________________________________________________
 - :fontawesome-solid-code: Markdown syntax and best practices
 - :fontawesome-solid-palette: Color theory and accessibility
 - :fontawesome-solid-layer-group: Static site generation
-- :fontawesome-solid-search: Full-text search optimization
+- :fontawesome-solid-magnifying-glass: Full-text search optimization
 
 ______________________________________________________________________
 

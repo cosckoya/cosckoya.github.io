@@ -140,6 +140,8 @@ markdown_extensions:
   - pymdownx.caret         # ^^inserted^^ and H^2^O superscript
   - pymdownx.tilde         # ~~del~~ and H~2~O subscript
   - pymdownx.keys          # ++ctrl+alt+delete++ keyboard keys
+  - pymdownx.tasklist:     # - [x] task lists as checkboxes
+      custom_checkbox: true
   # References and annotations
   - abbr                   # *[ABBR]: Abbreviation tooltips
   - footnotes              # [^1] footnotes
