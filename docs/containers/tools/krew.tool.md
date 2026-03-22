@@ -3,7 +3,7 @@ title: Krew
 description: kubectl plugin manager - extend kubectl with 200+ community plugins for better cluster management
 ---
 
-# :octicons-plug-16: Krew
+# :fontawesome-solid-plug: Krew
 
 kubectl plugin manager. 200+ community plugins extend kubectl with features the official binary doesn't have. Debug pods, view resources visually, manage contexts, scan security issues, and more. One plugin manager, endless possibilities.
 
@@ -12,7 +12,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Install Krew"
 
@@ -103,7 +103,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
 
 ---
 
-## :octicons-package-16: Essential Plugins
+## :fontawesome-solid-box: Essential Plugins
 
 ### Context & Namespace Management
 
@@ -250,7 +250,7 @@ kubectl graph deployments        # Generate dependency graph
 
 ---
 
-## :octicons-workflow-16: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### Daily Operations
 
@@ -327,7 +327,7 @@ kubectl deprecations
 
 ---
 
-## :octicons-terminal-16: Advanced Plugins
+## :fontawesome-solid-terminal: Advanced Plugins
 
 ### Development & Testing
 
@@ -380,7 +380,7 @@ kubectl cost                     # Cluster cost breakdown
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Install Krew first** - It's the plugin manager for all others
 - **Update regularly** - `kubectl krew update && kubectl krew upgrade`
@@ -395,7 +395,7 @@ kubectl cost                     # Cluster cost breakdown
 
 ---
 
-## :octicons-alert-16: Common Gotchas
+## :fontawesome-solid-triangle-exclamation: Common Gotchas
 
 - **PATH not updated** - Add `$HOME/.krew/bin` to PATH
 - **Krew not in kubectl plugins** - Krew manages plugins, not a plugin itself
@@ -410,7 +410,7 @@ kubectl cost                     # Cluster cost breakdown
 
 ---
 
-## :octicons-code-16: Custom Plugin Example
+## :fontawesome-solid-code: Custom Plugin Example
 
 **Create custom plugin (`kubectl-hello`):**
 
@@ -436,7 +436,7 @@ kubectl hello
 
 ---
 
-## :octicons-book-16: Plugin Development
+## :fontawesome-solid-book: Plugin Development
 
 **Plugin requirements:**
 - Executable file named `kubectl-<plugin-name>`
@@ -471,7 +471,7 @@ kubectl count-pods
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Official:**
 - **[Krew](https://krew.sigs.k8s.io/)** - Plugin manager

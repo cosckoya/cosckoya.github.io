@@ -3,7 +3,7 @@ title: GitHub Copilot CLI
 description: AI command-line assistant - shell commands, git operations, GitHub integration
 ---
 
-# :octicons-copilot-16: GitHub Copilot CLI
+# :fontawesome-solid-robot: GitHub Copilot CLI
 
 Command-line AI assistant from GitHub. Suggests shell commands, explains existing commands, helps with git operations. Integrated with GitHub ecosystem. Better for quick terminal tasks than complex code generation. Subscription required (comes with GitHub Copilot).
 
@@ -12,9 +12,9 @@ Command-line AI assistant from GitHub. Suggests shell commands, explains existin
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Installation (requires GitHub Copilot subscription)
@@ -65,7 +65,7 @@ ______________________________________________________________________
     - Works across bash, zsh, fish, PowerShell
     - Interactive mode asks clarifying questions
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```bash
     # File operations
@@ -129,7 +129,7 @@ ______________________________________________________________________
     - Interactive refinement if initial suggestion isn't right
     - Explains complex commands before execution
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Productivity Boosters"
         - **Shell aliases** - Set `alias ??='gh copilot suggest'` for quick access
@@ -176,7 +176,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-terminal-16: Advanced Usage
+## :fontawesome-solid-terminal: Advanced Usage
 
 ### Shell Integration
 
@@ -248,15 +248,15 @@ function deploy() {
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Official Resources
+### :fontawesome-solid-graduation-cap: Official Resources
 
 - **[GitHub Copilot Documentation](https://docs.github.com/copilot)** - Official docs
 - **[Copilot CLI Guide](https://docs.github.com/copilot/github-copilot-in-the-cli)** - CLI-specific docs
 - **[GitHub CLI Documentation](https://cli.github.com/manual/)** - gh command reference
 
-### :octicons-code-16: Example Use Cases
+### :fontawesome-solid-code: Example Use Cases
 
 !!! example "Daily Development"
     - **Command discovery** - "List all environment variables containing AWS"
@@ -278,11 +278,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -294,7 +294,7 @@ ______________________________________________________________________
 
     [Copilot Pricing](https://github.com/features/copilot/plans)
 
-- :octicons-tools-16: __Related Tools__
+- :fontawesome-solid-wrench: __Related Tools__
 
     ______________________________________________________________________
 
@@ -304,7 +304,7 @@ ______________________________________________________________________
 
     [GitHub Copilot Chat](https://docs.github.com/copilot/github-copilot-chat)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -314,7 +314,7 @@ ______________________________________________________________________
 
     [GitHub Copilot Feedback](https://github.com/github-community/community/discussions/categories/copilot)
 
-- :octicons-mortar-board-16: __Learning__
+- :fontawesome-solid-graduation-cap: __Learning__
 
     ______________________________________________________________________
 
@@ -328,5 +328,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-terminal-16: **Specialized Tool** - Copilot CLI is excellent for shell command discovery and git operations. Not a replacement for full coding assistants but invaluable for terminal workflows. Worth the subscription if you work in terminals daily.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-terminal: **Specialized Tool** - Copilot CLI is excellent for shell command discovery and git operations. Not a replacement for full coding assistants but invaluable for terminal workflows. Worth the subscription if you work in terminals daily.
 **Tags:** copilot, github, ai, cli, shell

@@ -2,6 +2,7 @@
 - [Toolbox](toolbox/)
 - [Operating Systems](os/)
 - [Containers](containers/)
+- [Databases](databases/)
 - [Cloud & DevOps](cloud/)
 - [API](api/)
 - [Programming Languages](code/)

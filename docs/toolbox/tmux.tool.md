@@ -3,7 +3,7 @@ title: TMUX
 description: Terminal multiplexer for persistent sessions, split panes, and window management - work survives disconnects
 ---
 
-# :octicons-stack-16: TMUX
+# :fontawesome-solid-layer-group: TMUX
 
 Terminal multiplexer. Split terminals, create windows, detach/reattach sessions. SSH connection drops? Session survives. Long-running processes? Background them. Multiple terminals? One window. The Swiss Army knife of terminal management.
 
@@ -12,7 +12,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Installation"
 
@@ -110,7 +110,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
 
 ---
 
-## :octicons-gear-16: Configuration
+## :fontawesome-solid-gear: Configuration
 
 **Config file:** `~/.tmux.conf`
 
@@ -195,7 +195,7 @@ source-file ~/.tmux.conf
 
 ---
 
-## :octicons-workflow-16: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### Development Session
 
@@ -251,7 +251,7 @@ tmux attach -t pair
 
 ---
 
-## :octicons-terminal-16: Advanced Commands
+## :fontawesome-solid-terminal: Advanced Commands
 
 ```bash
 # Session management
@@ -289,7 +289,7 @@ tmux select-layout tiled            # Tile all panes
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Use Ctrl+a prefix** - Easier to reach than Ctrl+b (like GNU Screen)
 - **Mouse mode is OK** - Don't let purists shame you, it's convenient
@@ -304,7 +304,7 @@ tmux select-layout tiled            # Tile all panes
 
 ---
 
-## :octicons-alert-16: Common Gotchas
+## :fontawesome-solid-triangle-exclamation: Common Gotchas
 
 - **Colors broken** - Set `TERM=screen-256color` or `xterm-256color` in config
 - **Nested tmux sessions** - Don't start tmux inside tmux (detach first)
@@ -318,7 +318,7 @@ tmux select-layout tiled            # Tile all panes
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Official:**
 - **[TMUX Manual](https://man7.org/linux/man-pages/man1/tmux.1.html)** - Complete reference

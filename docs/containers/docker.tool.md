@@ -3,7 +3,7 @@ title: Docker
 description: Container platform - package apps with dependencies, ship anywhere, dev/prod parity
 ---
 
-# :octicons-container-16: Docker
+# :fontawesome-solid-box: Docker
 
 Container platform that packages applications with their dependencies into isolated, portable units. Lighter than VMs, faster startup, consistent environments from dev to prod. Industry standard for containerization. Kubernetes runs Docker containers (well, technically any OCI-compliant runtime).
 
@@ -12,9 +12,9 @@ Container platform that packages applications with their dependencies into isola
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Container lifecycle
@@ -64,7 +64,7 @@ ______________________________________________________________________
     - Don't run containers as root - use `USER` directive in Dockerfile
     - `docker system prune -a` is your friend when disk fills up
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```dockerfile
     # Dockerfile best practices (multi-stage build)
@@ -179,7 +179,7 @@ ______________________________________________________________________
     - Service dependencies ensure startup order
     - Networks isolate containers from host
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Build Optimization"
         - **Layer caching** - Order Dockerfile commands by change frequency (COPY dependencies before code)
@@ -226,11 +226,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-stack-16: Docker Compose
+## :fontawesome-solid-layer-group: Docker Compose
 
 Compose V2 ships with Docker and manages multi-container stacks from a single YAML file. Already covered the `docker-compose.yml` structure in Quick Hits — this section covers the rest of the CLI, environment layering, and the parts that trip people up.
 
-=== ":octicons-checklist-16: Compose Commands"
+=== ":fontawesome-solid-list-check: Compose Commands"
 
     ```bash
     # Start / stop
@@ -275,7 +275,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
     - `docker compose run --rm` is the clean way to run migrations, seeds, or one-off scripts without leaving a dead container behind
     - Watch mode is genuinely useful for frontend dev — beats manual rebuild loops
 
-=== ":octicons-zap-16: Override Files & Profiles"
+=== ":fontawesome-solid-bolt: Override Files & Profiles"
 
     ```yaml
     # docker-compose.override.yml
@@ -345,7 +345,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
     - `-f` flag stacking is explicit and reproducible in CI scripts
     - Profiles prevent dev tools (debuggers, monitoring) from starting in unintended environments
 
-=== ":octicons-flame-16: Compose Gotchas"
+=== ":fontawesome-solid-fire: Compose Gotchas"
 
     **Tips:**
 
@@ -365,9 +365,9 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Free Resources
+### :fontawesome-solid-graduation-cap: Free Resources
 
 - **[Docker Documentation](https://docs.docker.com/)** - Official docs, comprehensive and well-written
 - **[Docker Getting Started](https://docs.docker.com/get-started/)** - Official tutorial, hands-on
@@ -375,7 +375,7 @@ ______________________________________________________________________
 - **[Docker Curriculum](https://docker-curriculum.com/)** - Beginner-friendly tutorial
 - **[Awesome Docker](https://github.com/veggiemonk/awesome-docker)** - Curated list of tools and resources
 
-### :octicons-code-16: Practice Projects
+### :fontawesome-solid-code: Practice Projects
 
 !!! example "Beginner"
     - **Static website** - Nginx serving HTML/CSS/JS
@@ -394,11 +394,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -410,7 +410,7 @@ ______________________________________________________________________
 
     [Docker CLI Reference](https://docs.docker.com/engine/reference/commandline/cli/)
 
-- :octicons-tools-16: __Essential Tools__
+- :fontawesome-solid-wrench: __Essential Tools__
 
     ______________________________________________________________________
 
@@ -422,7 +422,7 @@ ______________________________________________________________________
 
     [Hadolint](https://github.com/hadolint/hadolint) (Dockerfile linter)
 
-- :octicons-code-16: __Examples & Patterns__
+- :fontawesome-solid-code: __Examples & Patterns__
 
     ______________________________________________________________________
 
@@ -432,7 +432,7 @@ ______________________________________________________________________
 
     [Google Distroless Images](https://github.com/GoogleContainerTools/distroless)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -448,5 +448,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-rocket-16: **Essential** - Docker is the standard for containerization. If you're deploying modern applications, you're using Docker (or at least OCI containers). Learn it well.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Essential** - Docker is the standard for containerization. If you're deploying modern applications, you're using Docker (or at least OCI containers). Learn it well.
 **Tags:** docker, containers, devops, virtualization

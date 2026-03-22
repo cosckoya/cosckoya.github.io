@@ -11,7 +11,7 @@ ______________________________________________________________________
 
 ## Quick Hits
 
-=== ":octicons-checklist-16: {{TAB_1_TITLE}}"
+=== ":fontawesome-solid-list-check: {{TAB_1_TITLE}}"
 
     ```{{CODE_LANGUAGE}}
     {{TAB_1_CODE_EXAMPLES}}
@@ -21,7 +21,7 @@ ______________________________________________________________________
 
     {{TAB_1_REAL_TALK_BULLETS}}
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```{{CODE_LANGUAGE}}
     {{TAB_2_CODE_EXAMPLES}}
@@ -31,7 +31,7 @@ ______________________________________________________________________
 
     {{TAB_2_EXPLANATION_BULLETS}}
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -65,9 +65,9 @@ ______________________________________________________________________
 
 **Related:**
 
-- :octicons-flame-16: __{{RELATED_SECTION_1}}__
-- :octicons-book-16: __{{RELATED_SECTION_2}}__
-- :octicons-tools-16: __{{RELATED_SECTION_3}}__
+- :fontawesome-solid-fire: __{{RELATED_SECTION_1}}__
+- :fontawesome-solid-book: __{{RELATED_SECTION_2}}__
+- :fontawesome-solid-wrench: __{{RELATED_SECTION_3}}__
 
 ______________________________________________________________________
 

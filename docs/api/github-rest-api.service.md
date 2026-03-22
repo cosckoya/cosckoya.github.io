@@ -11,7 +11,7 @@ ______________________________________________________________________
 
 ## Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # gh api wraps everything — auth is handled by `gh auth login`
@@ -45,7 +45,7 @@ ______________________________________________________________________
     - `--jq` runs the filter server-side before printing — faster than piping to external `jq` for large responses
     - `--paginate` is a gift — no manual page loops, no off-by-one errors, just all the data
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```bash
     # --- POST: create a repo in an org ---
@@ -104,7 +104,7 @@ ______________________________________________________________________
     - `PUT` team and repo permission calls are idempotent — safe to re-run in provisioning scripts
     - `--paginate` + `--jq` is the pagination pattern — one line instead of a while loop
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -511,15 +511,15 @@ ______________________________________________________________________
 
 **Documentation:**
 
-- :octicons-book-16: [GitHub REST API Reference](https://docs.github.com/en/rest)
-- :octicons-terminal-16: [gh api command reference](https://cli.github.com/manual/gh_api)
-- :octicons-shield-16: [Fine-grained PATs Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+- :fontawesome-solid-book: [GitHub REST API Reference](https://docs.github.com/en/rest)
+- :fontawesome-solid-terminal: [gh api command reference](https://cli.github.com/manual/gh_api)
+- :fontawesome-solid-shield: [Fine-grained PATs Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 **Related:**
 
-- :octicons-organization-16: __GitHub Apps — replace PATs for org-level automation that survives employee turnover__
-- :octicons-code-square-16: __PyGithub — higher-level Python client if you want ORM-style access over raw requests__
-- :octicons-key-16: __`gh auth login` — the only setup step you need before using `gh api`__
+- :fontawesome-solid-building: __GitHub Apps — replace PATs for org-level automation that survives employee turnover__
+- :fontawesome-solid-code: __PyGithub — higher-level Python client if you want ORM-style access over raw requests__
+- :fontawesome-solid-key: __`gh auth login` — the only setup step you need before using `gh api`__
 
 ______________________________________________________________________
 

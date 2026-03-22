@@ -3,7 +3,7 @@ title: NeoVim
 description: Modern Vim fork with Lua configuration and LSP support - your terminal text editor that doesn't suck
 ---
 
-# :octicons-code-16: NeoVim
+# :fontawesome-solid-code: NeoVim
 
 Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sitter syntax, async everything. Vim keybindings without the technical debt. No Vimscript hell, just Lua.
 
@@ -12,7 +12,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
 
 ---
 
-## :octicons-zap-16: Quick Start
+## :fontawesome-solid-bolt: Quick Start
 
 === "Installation"
 
@@ -105,7 +105,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
 
 ---
 
-## :octicons-package-16: Essential Plugins
+## :fontawesome-solid-box: Essential Plugins
 
 ### Core Setup
 
@@ -235,7 +235,7 @@ require("lazy").setup({
 
 ---
 
-## :octicons-terminal-16: LSP Setup
+## :fontawesome-solid-terminal: LSP Setup
 
 **Install language servers:**
 
@@ -279,7 +279,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 ---
 
-## :octicons-light-bulb-16: Pro Tips
+## :fontawesome-solid-lightbulb: Pro Tips
 
 - **Use `:checkhealth`** - Diagnose issues with your setup
 - **Learn Lua basics** - `:help lua-guide`, it's simpler than Vimscript
@@ -292,7 +292,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 ---
 
-## :octicons-alert-16: Common Gotchas
+## :fontawesome-solid-triangle-exclamation: Common Gotchas
 
 - **Python provider issues** - Run `:checkhealth provider`, install `pynvim`
 - **Clipboard not working** - Install `xclip` (Linux) or use `pbcopy` (macOS)
@@ -305,7 +305,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 ---
 
-## :octicons-link-16: Resources
+## :fontawesome-solid-link: Resources
 
 **Official:**
 - **[NeoVim Docs](https://neovim.io/doc/)** - Official documentation

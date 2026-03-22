@@ -12,9 +12,9 @@ Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFor
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Quick Hits
+## :fontawesome-solid-bolt: Quick Hits
 
-=== ":octicons-checklist-16: Essential Commands"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     ```bash
     # Installation (Python pip)
@@ -79,7 +79,7 @@ ______________________________________________________________________
     - JSON output enables custom dashboards and reporting
     - Baseline files prevent legacy code from blocking new PRs
 
-=== ":octicons-zap-16: Common Patterns"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     ```bash
     # Pre-commit hook integration
@@ -179,7 +179,7 @@ ______________________________________________________________________
     - Baseline files enable gradual security improvements
     - SARIF format integrates with GitHub Security tab
 
-=== ":octicons-flame-16: Pro Tips & Gotchas"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Run locally first** - Catch issues before CI/CD
@@ -254,7 +254,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-code-16: Policy Examples
+## :fontawesome-solid-code: Policy Examples
 
 ### Common Security Checks
 
@@ -347,16 +347,16 @@ spec:
 
 ______________________________________________________________________
 
-## :octicons-book-16: Learning Resources
+## :fontawesome-solid-book: Learning Resources
 
-### :octicons-mortar-board-16: Official Resources
+### :fontawesome-solid-graduation-cap: Official Resources
 
 - **[Checkov Documentation](https://www.checkov.io/documentation)** - Official docs
 - **[GitHub Repository](https://github.com/bridgecrewio/checkov)** - Source code, policies
 - **[Policy Index](https://www.checkov.io/5.Policy%20Index/terraform.html)** - All built-in checks
 - **[Bridgecrew Blog](https://bridgecrew.io/blog/)** - Tutorials and use cases
 
-### :octicons-code-16: Example Use Cases
+### :fontawesome-solid-code: Example Use Cases
 
 !!! example "Development Workflow"
     - **Local scanning** - Run Checkov before committing code
@@ -378,11 +378,11 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-star-16: Worth Checking
+## :fontawesome-solid-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :octicons-book-16: __Official Docs__
+- :fontawesome-solid-book: __Official Docs__
 
     ______________________________________________________________________
 
@@ -392,7 +392,7 @@ ______________________________________________________________________
 
     [Policy Index](https://www.checkov.io/5.Policy%20Index/terraform.html)
 
-- :octicons-tools-16: __Integrations__
+- :fontawesome-solid-wrench: __Integrations__
 
     ______________________________________________________________________
 
@@ -402,7 +402,7 @@ ______________________________________________________________________
 
     [Pre-commit Hook](https://github.com/bridgecrewio/checkov#pre-commit)
 
-- :octicons-people-16: __Community__
+- :fontawesome-solid-users: __Community__
 
     ______________________________________________________________________
 
@@ -412,7 +412,7 @@ ______________________________________________________________________
 
     [Slack Channel](https://slack.bridgecrew.io/)
 
-- :octicons-code-16: __Learning__
+- :fontawesome-solid-code: __Learning__
 
     ______________________________________________________________________
 

@@ -91,12 +91,12 @@ Standardized templates for creating consistent, high-quality technical documenta
 - ALWAYS use octicons in markdown syntax (`:octicons-name-16:`)
 - NEVER use plain emojis
 - Common icons:
-  - `:octicons-checklist-16:` - Essential/basics
-  - `:octicons-zap-16:` - Common patterns/quick
-  - `:octicons-flame-16:` - Pro tips/advanced
-  - `:octicons-book-16:` - Documentation
-  - `:octicons-tools-16:` - Tools/utilities
-  - `:octicons-mark-github-16:` - GitHub links
+  - `:fontawesome-solid-list-check:` - Essential/basics
+  - `:fontawesome-solid-bolt:` - Common patterns/quick
+  - `:fontawesome-solid-fire:` - Pro tips/advanced
+  - `:fontawesome-solid-book:` - Documentation
+  - `:fontawesome-solid-wrench:` - Tools/utilities
+  - `:fontawesome-brands-github:` - GitHub links
 
 **Code Examples:**
 - Include inline comments

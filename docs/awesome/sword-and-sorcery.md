@@ -3,7 +3,7 @@ title: Awesome Sword & Sorcery
 description: Curated resources for fantasy literature, tabletop RPGs, and sword & sorcery - from Tolkien to Martin, D&D to Warhammer
 ---
 
-# :octicons-flame-16: Awesome Sword & Sorcery
+# :fontawesome-solid-fire: Awesome Sword & Sorcery
 
 Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimdark, pulp classics, tabletop RPGs, video games, wikis, communities. From Tolkien's Middle-earth to Martin's Westeros, from Conan to Kvothe. Roll for initiative.
 
@@ -12,7 +12,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-book-16: Fantasy & Sword & Sorcery Literature
+## :fontawesome-solid-book: Fantasy & Sword & Sorcery Literature
 
 !!! tip "Start Here: The Reading Path"
     Fantasy literature spans from ancient epic poetry to modern sagas. Classical mythology laid the foundation, pulp magazines defined sword & sorcery, Tolkien revolutionized epic fantasy, and modern authors continue pushing boundaries. Start with what speaks to you.
@@ -51,7 +51,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **[r/GreekMythology](https://reddit.com/r/GreekMythology)** - Greek myths (200k+ members)
 - **[r/Norse](https://reddit.com/r/Norse)** - Norse culture and mythology (150k+ members)
 
-### :octicons-zap-16: Classic Pulp Sword & Sorcery (1930s-1980s)
+### :fontawesome-solid-bolt: Classic Pulp Sword & Sorcery (1930s-1980s)
 
 !!! example "The Pulp Era - Where Sword & Sorcery Was Born"
     Barbarians, sorcerers, demons, and adventure. The original grimdark before grimdark had a name.
@@ -93,7 +93,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **[r/discworld](https://reddit.com/r/discworld)** - Discworld community (400k+ members)
 - **[r/Forgotten_Realms](https://reddit.com/r/Forgotten_Realms)** - Forgotten Realms lore
 
-### :octicons-rocket-16: Modern Epic Fantasy
+### :fontawesome-solid-rocket: Modern Epic Fantasy
 
 !!! tip "Contemporary Masters - The New Guard"
     Modern fantasy pushing boundaries with complex magic systems, morally grey characters, and epic scope. Kvothe, Westeros, and the Cosmere await.
@@ -119,7 +119,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 **Horror Fantasy:** H.P. Lovecraft (Cthulhu Mythos, public domain) | [Mythos Wiki](https://lovecraft.fandom.com/), Clive Barker (Hellbound Heart), China Miéville (Perdido Street Station)
 
-### :octicons-globe-16: General Fantasy Resources
+### :fontawesome-solid-globe: General Fantasy Resources
 
 **Communities:** [r/Fantasy](https://reddit.com/r/Fantasy) (2M+) • [r/books](https://reddit.com/r/books) (22M+) • [r/PrintSF](https://reddit.com/r/printSF) (200k+)
 
@@ -129,7 +129,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-star-16: General Sword & Sorcery Resources
+## :fontawesome-solid-star: General Sword & Sorcery Resources
 
 !!! info "Tools, Communities & Resources for the Genre"
     OSR gaming, art, podcasts, random generators, and communities. Everything you need to run campaigns and discover content.
@@ -185,7 +185,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-stack-16: Dungeons & Dragons
+## :fontawesome-solid-layer-group: Dungeons & Dragons
 
 !!! abstract "The Game That Started It All"
     Dungeons, dragons, dice, and destiny. The tabletop RPG that launched a thousand campaigns and changed gaming forever.
@@ -288,7 +288,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-flame-16: Warhammer
+## :fontawesome-solid-fire: Warhammer
 
 !!! abstract "Grimdark Tabletop - In the Grim Darkness..."
     Warhammer 40K and Age of Sigmar. Miniatures, lore, video games, and endless war.
@@ -341,7 +341,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-shield-16: Elder Scrolls
+## :fontawesome-solid-shield-halved: Elder Scrolls
 
 !!! abstract "Open-World RPG Phenomenon"
     Tamriel awaits. Morrowind, Oblivion, Skyrim - epic open-world adventures with deep lore and endless modding.
@@ -432,7 +432,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
     - **[Reddit r/DnDBehindTheScreen](https://reddit.com/r/DnDBehindTheScreen)** - Community resources
 
 
-## :octicons-shield-16: Other Fantasy Tabletop RPGs
+## :fontawesome-solid-shield-halved: Other Fantasy Tabletop RPGs
 
 !!! abstract "Beyond D&D - The Rich Tapestry"
     Pathfinder, OSR classics, modern innovations, and indie gems. Endless variety for every playstyle.
