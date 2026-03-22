@@ -5,13 +5,13 @@ description: Technical documentation built with MkDocs Material, GitHub Pages, a
 
 ![!](resources/img/zelda.png#center)
 
-# :octicons-info-16: About This Project
+# :fontawesome-solid-circle-info: About This Project
 
 Personal technical knowledge base built by engineers, for engineers. No marketing fluff, no enterprise buzzwords, just practical technical content. Documentation as code. Open source tooling. Continuous deployment. Cyberpunk aesthetics optional.
 
 ______________________________________________________________________
 
-## :octicons-rocket-16: The Stack
+## :fontawesome-solid-rocket: The Stack
 
 **Built with modern tooling because legacy tech is a choice, not a requirement.**
 
@@ -77,7 +77,7 @@ markdown_extensions = [
     "pymdownx.tabbed",         # === "Tab 1" syntax
 
     # Icons and emojis
-    "pymdownx.emoji",          # :octicons-heart-16: syntax
+    "pymdownx.emoji",          # :fontawesome-solid-heart: syntax
 
     # Tables and lists
     "tables",                  # GitHub-flavored tables
@@ -235,7 +235,7 @@ theme:
 
 ______________________________________________________________________
 
-## :octicons-terminal-16: Tech Specs
+## :fontawesome-solid-terminal: Tech Specs
 
 ### Repository Structure
 
@@ -319,7 +319,7 @@ extra_css:
 
 ______________________________________________________________________
 
-## :octicons-code-16: Content Generation
+## :fontawesome-solid-code: Content Generation
 
 ### Template-Based Documentation
 
@@ -363,24 +363,24 @@ docs/templates/
 
 ______________________________________________________________________
 
-## :octicons-tools-16: Why This Tech Stack?
+## :fontawesome-solid-wrench: Why This Tech Stack?
 
 ### Static Site Generation
 
 **Pros:**
 
-- ✅ Fast (pre-rendered HTML, no server-side processing)
-- ✅ Secure (no backend, no database, no SQL injection)
-- ✅ Scalable (CDN-friendly, handles traffic spikes)
-- ✅ Free hosting (GitHub Pages, Cloudflare Pages, Vercel)
-- ✅ Version controlled (docs in git, rollback anytime)
-- ✅ Offline-first (works without internet after first load)
+- :fontawesome-solid-circle-check: Fast (pre-rendered HTML, no server-side processing)
+- :fontawesome-solid-circle-check: Secure (no backend, no database, no SQL injection)
+- :fontawesome-solid-circle-check: Scalable (CDN-friendly, handles traffic spikes)
+- :fontawesome-solid-circle-check: Free hosting (GitHub Pages, Cloudflare Pages, Vercel)
+- :fontawesome-solid-circle-check: Version controlled (docs in git, rollback anytime)
+- :fontawesome-solid-circle-check: Offline-first (works without internet after first load)
 
 **Cons:**
 
-- ❌ No dynamic content (no user accounts, comments, forms)
-- ❌ Build step required (not instant publish)
-- ❌ Search is client-side (works well for <1000 pages)
+- :fontawesome-solid-xmark: No dynamic content (no user accounts, comments, forms)
+- :fontawesome-solid-xmark: Build step required (not instant publish)
+- :fontawesome-solid-xmark: Search is client-side (works well for <1000 pages)
 
 **Trade-off:** Perfect for technical documentation. Don't need dynamic features.
 
@@ -388,13 +388,13 @@ ______________________________________________________________________
 
 | Feature | MkDocs Material | Docusaurus | GitBook | Confluence |
 |---------|----------------|------------|---------|------------|
-| **Setup** | ⚡ 5 minutes | 🐢 15 minutes | ☁️ Cloud only | 💰 Enterprise |
-| **Markdown** | ✅ Pure MD | ⚠️ MDX (React) | ✅ Pure MD | ❌ WYSIWYG |
+| **Setup** | :fontawesome-solid-bolt: 5 minutes | :fontawesome-solid-hourglass: 15 minutes | :fontawesome-solid-cloud: Cloud only | :fontawesome-solid-dollar-sign: Enterprise |
+| **Markdown** | :fontawesome-solid-circle-check: Pure MD | :fontawesome-solid-triangle-exclamation: MDX (React) | :fontawesome-solid-circle-check: Pure MD | :fontawesome-solid-xmark: WYSIWYG |
 | **Hosting** | Free (Pages) | Free (Pages) | $$ Paid | $$$ Paid |
-| **Customization** | 🎨 CSS/HTML | ⚛️ React | ❌ Limited | ❌ Limited |
-| **Search** | ✅ Built-in | ✅ Built-in | ✅ Built-in | ✅ Built-in |
-| **Performance** | 🚀 Fast | 🚀 Fast | 🐌 Slow | 🐌 Slow |
-| **Offline** | ✅ Yes | ✅ Yes | ❌ No | ❌ No |
+| **Customization** | :fontawesome-solid-paintbrush: CSS/HTML | :fontawesome-brands-react: React | :fontawesome-solid-xmark: Limited | :fontawesome-solid-xmark: Limited |
+| **Search** | :fontawesome-solid-circle-check: Built-in | :fontawesome-solid-circle-check: Built-in | :fontawesome-solid-circle-check: Built-in | :fontawesome-solid-circle-check: Built-in |
+| **Performance** | :fontawesome-solid-rocket: Fast | :fontawesome-solid-rocket: Fast | :fontawesome-solid-snail: Slow | :fontawesome-solid-snail: Slow |
+| **Offline** | :fontawesome-solid-circle-check: Yes | :fontawesome-solid-circle-check: Yes | :fontawesome-solid-xmark: No | :fontawesome-solid-xmark: No |
 
 **Winner:** MkDocs Material (best docs-to-effort ratio)
 
@@ -433,7 +433,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-heart-16: Philosophy
+## :fontawesome-solid-heart: Philosophy
 
 ### Documentation as Code
 
@@ -458,14 +458,14 @@ ______________________________________________________________________
 
 **Anti-goals:**
 
-- ❌ SEO optimization (this is personal documentation)
-- ❌ Monetization (no ads, no affiliate links)
-- ❌ Completeness (better to have 80% of useful content than 100% of everything)
-- ❌ Beginners first (assumes technical competence)
+- :fontawesome-solid-xmark: SEO optimization (this is personal documentation)
+- :fontawesome-solid-xmark: Monetization (no ads, no affiliate links)
+- :fontawesome-solid-xmark: Completeness (better to have 80% of useful content than 100% of everything)
+- :fontawesome-solid-xmark: Beginners first (assumes technical competence)
 
 ______________________________________________________________________
 
-## :octicons-question-16: FAQ
+## :fontawesome-solid-circle-question: FAQ
 
 ??? question "Why not use a CMS?"
     **CMSs are overkill for technical docs.** WordPress, Ghost, Strapi all require:
@@ -480,16 +480,16 @@ ______________________________________________________________________
     - Simpler (markdown in git)
     - More secure (no backend to hack)
 
-??? question "Why octicons instead of emojis?"
-    **Emojis are inconsistent across platforms.** 😀 renders differently on:
+??? question "Why FontAwesome instead of plain emojis?"
+    **Emojis are inconsistent across platforms.** Plain unicode renders differently on:
     - Windows (Microsoft emojis)
     - macOS (Apple emojis)
     - Linux (font-dependent)
     - Mobile (OS-dependent)
 
-    **Octicons are:**
+    **FontAwesome icons are:**
     - SVG-based (consistent rendering)
-    - Professional (GitHub's icon set)
+    - Professional (industry-standard icon set)
     - Scalable (crisp at any size)
     - Theme-aware (adapt to dark/light mode)
 
@@ -542,7 +542,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-zap-16: Performance
+## :fontawesome-solid-bolt: Performance
 
 ### Build Metrics
 
@@ -583,7 +583,7 @@ Page change: ~50ms (client-side routing)
 
 ______________________________________________________________________
 
-## :octicons-graph-16: Stats
+## :fontawesome-solid-chart-line: Stats
 
 **As of February 2026:**
 
@@ -598,7 +598,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-terminal-16: Contributing
+## :fontawesome-solid-terminal: Contributing
 
 This is a personal documentation project, but if you find errors or have suggestions:
 
@@ -618,11 +618,11 @@ This is a personal documentation project, but if you find errors or have suggest
 
 ______________________________________________________________________
 
-**Built with:** :octicons-heart-16: **and way too much coffee**
+**Built with:** :fontawesome-solid-heart: **and way too much coffee**
 
 **Tech Stack:** Python 3.12 • MkDocs Material 9.7.0 • GitHub Pages • GitHub Actions • Octicons • Mermaid • Pygments • Way too many Markdown extensions
 
-**Last Updated:** 2026-02-02 | **Build Status:** :octicons-check-circle-16: Passing | **Uptime:** 99.9%
+**Last Updated:** 2026-02-02 | **Build Status:** :fontawesome-solid-circle-check: Passing | **Uptime:** 99.9%
 
 **Tags:** mkdocs, python, github-pages, documentation, static-site, markdown
 
