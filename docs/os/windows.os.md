@@ -3,7 +3,7 @@ title: Windows
 description: Windows reference - dominant desktop OS, WSL2 makes it developer-viable, gaming platform
 ---
 
-# :octicons-device-desktop-16: Windows
+# :fontawesome-solid-desktop: Windows
 
 Dominant desktop operating system (75%+ market share). Gaming platform of choice. Enterprise standard. Used to be hostile to developers, but WSL2 changed everything. PowerShell is powerful if you learn it. Active Directory runs corporate networks. Office suite integration unmatched.
 
@@ -160,7 +160,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-shield-check-16: Security Audit Tools
+## :fontawesome-solid-shield-halved: Security Audit Tools
 
 Windows security auditing tools for finding privilege escalation paths, Active Directory weaknesses, and configuration issues. Essential for pentesting and defensive security.
 

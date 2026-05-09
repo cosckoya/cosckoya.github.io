@@ -3,7 +3,7 @@ title: Checkov
 description: Infrastructure as Code security scanner - Terraform, CloudFormation, Kubernetes, Dockerfile auditing
 ---
 
-# :octicons-shield-lock-16: Checkov
+# :fontawesome-solid-shield: Checkov
 
 Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFormation, Kubernetes, Dockerfile, ARM templates, Helm charts. 1000+ built-in policies. Prevents misconfigurations before deployment. Python-based, developed by Bridgecrew (acquired by Palo Alto Networks). Free and open-source.
 
@@ -426,5 +426,5 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :octicons-shield-lock-16: **Essential DevSecOps** - Checkov is mandatory for modern IaC workflows. Catches security issues before deployment. 1000+ built-in policies. Free and open-source. Integrates seamlessly with CI/CD. If you're writing Terraform, you're running Checkov.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield: **Essential DevSecOps** - Checkov is mandatory for modern IaC workflows. Catches security issues before deployment. 1000+ built-in policies. Free and open-source. Integrates seamlessly with CI/CD. If you're writing Terraform, you're running Checkov.
 **Tags:** checkov, security, iac, terraform, kubernetes

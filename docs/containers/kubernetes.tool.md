@@ -290,7 +290,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-shield-check-16: Tools Ecosystem
+## :fontawesome-solid-shield-halved: Tools Ecosystem
 
 Essential tools for working with Kubernetes.
 
@@ -343,7 +343,7 @@ ______________________________________________________________________
 - **[KillerCoda K8s Labs](https://killercoda.com/kubernetes)** - Interactive scenarios
 - **[Kubernetes by Example](https://kubernetesbyexample.com/)** - Quick examples
 
-### :octicons-certificate-16: Certifications
+### :fontawesome-solid-certificate: Certifications
 
 !!! success "Worth Getting"
     - **CKA (Certified Kubernetes Administrator)** - $395, hands-on exam, industry standard

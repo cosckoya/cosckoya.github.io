@@ -3,7 +3,7 @@ title: Popeye
 description: Kubernetes cluster sanitizer - scan resources for misconfigurations, security issues, and best practices violations
 ---
 
-# :octicons-shield-check-16: Popeye
+# :fontawesome-solid-shield-halved: Popeye
 
 Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security issues, resource waste, and best practice violations. Color-coded report shows what's wrong and why. No cluster changes, just brutal honesty about your K8s setup.
 

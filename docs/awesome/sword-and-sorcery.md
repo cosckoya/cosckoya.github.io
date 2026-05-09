@@ -17,7 +17,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 !!! tip "Start Here: The Reading Path"
     Fantasy literature spans from ancient epic poetry to modern sagas. Classical mythology laid the foundation, pulp magazines defined sword & sorcery, Tolkien revolutionized epic fantasy, and modern authors continue pushing boundaries. Start with what speaks to you.
 
-### :octicons-history-16: Ancient Epic Poetry & Classical Mythology
+### :fontawesome-solid-clock-rotate-left: Ancient Epic Poetry & Classical Mythology
 
 !!! note "The Foundation of All Fantasy"
     Where it all began - epic poetry, gods, heroes, and monsters that inspired every fantasy story that followed.
@@ -72,7 +72,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **[The H.P. Lovecraft Archive](https://www.hplovecraft.com/)** - Lovecraft's complete works
 - **[Internet Archive](https://archive.org/)** - Pulp magazine archives
 
-### :octicons-star-fill-16: Epic Fantasy Foundations
+### :fontawesome-solid-star: Epic Fantasy Foundations
 
 !!! success "The Revolution - Tolkien & The Classics"
     These authors transformed fantasy from pulp magazines into literary epics. Middle-earth changed everything.
@@ -110,7 +110,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **N.K. Jemisin** - Broken Earth trilogy (Hugo winner)
 - **Scott Lynch** - Gentleman Bastards (heist fantasy)
 
-### :octicons-moon-16: Grimdark & Horror Fantasy
+### :fontawesome-solid-moon: Grimdark & Horror Fantasy
 
 !!! warning "No Heroes Here - Where Dark Meets Darker"
     Brutal, unforgiving, morally ambiguous. Cosmic horror meets grimdark.
@@ -246,7 +246,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-sparkle-fill-16: Magic: The Gathering
+## :fontawesome-solid-wand-magic-sparkles: Magic: The Gathering
 
 !!! abstract "Legendary Card Game - 30 Years of Magic"
     Planeswalkers, spells, and legendary creatures. The collectible card game that revolutionized strategy gaming.
@@ -387,7 +387,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-gift-16: Free Adventures & Modules
+## :fontawesome-solid-gift: Free Adventures & Modules
 
 !!! success "Free Content - Zero Cost, Maximum Adventure"
     Free adventures, modules, one-page dungeons, and complete RPG systems. Legal, high-quality content at no cost.
@@ -484,7 +484,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :octicons-repo-16: GitHub & Legal
+## :fontawesome-brands-github: GitHub & Legal
 
 !!! note "Open Source & Copyright"
     Awesome lists, RPG tools on GitHub, and legal considerations for public domain content.
@@ -501,6 +501,6 @@ Many fantasy classics are entering public domain (Conan stories pre-1928, early 
 
 ---
 
-**Last Updated:** 2026-02-03 | **Vibe Check:** :octicons-sword-16: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
+**Last Updated:** 2026-02-03 | **Vibe Check:** :fontawesome-solid-khanda: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
 
 **Tags:** fantasy, sword-and-sorcery, dungeons-and-dragons, warhammer, tolkien, martin, rothfuss, pratchett, drizzt, conan, elric, magic-the-gathering, elder-scrolls, pathfinder, tabletop-rpg, osr, grimdark, epic-fantasy
