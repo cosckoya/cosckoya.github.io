@@ -1,6 +1,6 @@
 babel==2.17.0
 backrefs==6.1
-bandit==1.9.3
+bandit==1.9.4
 certifi==2026.1.4
 cfgv==3.5.0
 charset-normalizer==3.4.4
