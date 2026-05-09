@@ -12,12 +12,6 @@ theme:
   logo: resources/img/logo.png
   favicon: resources/img/favicon.png
   language: en
-  #highlightjs: true
-  #hljs_style: gml
-  #hljs_languages:
-  #  - bash,sh
-  #  - yaml
-  #  - python
   palette:
     # ORIGINAL THEME (Deep Purple + Teal) - Uncomment to restore
     # - scheme: slate
@@ -128,6 +122,8 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.highlight:
       use_pygments: true
+      anchor_linenums: true
+      line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.snippets
   # Annotations and layout
