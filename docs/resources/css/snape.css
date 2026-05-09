@@ -64,9 +64,9 @@
   --obsidian: #1C1C1C;                /* Obsidian stone (surfaces) */
   --shadow-gray: #2A2A2A;             /* Deep shadow (elevated) */
 
-  --crimson: #E53E3E;                 /* Blood magic (4.5:1 on void) */
-  --blood-red: #B91C1C;               /* Dark blood (4.5:1 on void) */
-  --arcane-purple: #9945FF;           /* Forbidden arts (4.7:1 on void) */
+  --crimson: #EF4444;                 /* Blood magic (4.53:1 on obsidian, AA) */
+  --blood-red: #C62828;               /* Dark blood — header bg gradient only */
+  --arcane-purple: #AF62FF;           /* Forbidden arts (5.67:1 on void, AA) */
   --deep-violet: #7C3AED;             /* Ancient power (4.8:1 on void) */
 
   --toxic-green: #00FF41;             /* Necromancy glow (14.5:1 on void) */
