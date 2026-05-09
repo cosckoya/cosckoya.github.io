@@ -9,7 +9,7 @@ codespell==2.4.1
 colorama==0.4.6
 csscompressor==0.9.5
 distlib==0.4.0
-filelock==3.20.2
+filelock==3.20.3
 ghp-import==2.1.0
 htmlmin2==0.1.13
 identify==2.6.15
