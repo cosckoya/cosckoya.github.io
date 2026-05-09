@@ -3,7 +3,7 @@ title: macOS
 description: macOS reference - Unix-based OS for Apple hardware, developer-friendly with premium price tag
 ---
 
-# :octicons-device-desktop-16: macOS
+# :fontawesome-solid-desktop: macOS
 
 Unix-based operating system for Apple hardware. BSD foundation with polished UI. Popular among developers for Unix compatibility plus commercial software support. Expensive hardware, locked ecosystem, but excellent build quality. Terminal is real bash/zsh, runs Docker natively (ish), has Homebrew.
 
@@ -156,7 +156,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-shield-check-16: Security Audit Tools
+## :fontawesome-solid-shield-halved: Security Audit Tools
 
 Tools for macOS security auditing, compliance checking, and vulnerability assessment. Because Apple's security is good, but not perfect.
 

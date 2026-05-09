@@ -3,7 +3,7 @@ title: ASDF
 description: Universal version manager for multiple runtime versions - one tool to rule them all (Node, Python, Ruby, Go, etc.)
 ---
 
-# :octicons-versions-16: ASDF
+# :fontawesome-solid-code-branch: ASDF
 
 Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions with one tool. No more nvm, pyenv, rbenv, goenv chaos. One `.tool-versions` file, one command interface, done.
 

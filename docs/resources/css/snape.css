@@ -35,6 +35,12 @@
 
 /* SORCERER'S GRIMOIRE THEME (Light) + DARK MAGIC THEME (Dark) - WCAG AA Compliant */
 :root {
+  /* Navigation section header colors (theme-aware) */
+  --nav-section-light: #1565C0;             /* Same as --sorcerer-blue */
+  --nav-section-dark: #CCB2E5;              /* Soft purple on void-black (8.1:1) */
+  --accent-text-light: #6A1B9A;             /* Same as --enchanted-purple */
+  --accent-text-dark: #00FF41;              /* Toxic green (14.5:1 on void) */
+
   /* LIGHT MODE: Sorcerer's Grimoire - Aged Parchment & Disney Fantasia */
   --parchment-base: #F5E6D3;          /* Aged paper background */
   --parchment-light: #FAF3E8;         /* Elevated surfaces */
@@ -100,12 +106,10 @@
 /* Dark mode color overrides - DARK MAGIC PALETTE */
 [data-md-color-scheme="slate"] {
   --nav-section-color: var(--nav-section-dark);
-  --md-accent-fg-color: var(--accent-text-dark);
 
   /* Override Material theme defaults with Dark Magic colors */
   --md-default-bg-color: var(--void-black);
   --md-default-fg-color: var(--bone-ash);
-  --md-primary-fg-color: var(--arcane-purple);
   --md-accent-fg-color: var(--toxic-green);
 
   /* Header bar - Dark Magic gradient */

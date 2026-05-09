@@ -3,7 +3,7 @@ title: Kitty
 description: GPU-accelerated terminal emulator - fast rendering, tabs, splits, images, ligatures, and scriptable
 ---
 
-# :octicons-device-desktop-16: Kitty
+# :fontawesome-solid-desktop: Kitty
 
 GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image protocol, ligature support, keyboard-driven. Written in C and Python. No Electron bloat. Renders everything on GPU for instant response.
 
@@ -338,7 +338,7 @@ enabled_layouts splits:split_axis=horizontal
 
 ---
 
-## :octicons-image-16: Image Display
+## :fontawesome-solid-image: Image Display
 
 **Display images in terminal:**
 

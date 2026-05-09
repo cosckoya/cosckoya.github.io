@@ -308,7 +308,7 @@ jq '.layer | length' v2.json
 
 ---
 
-## :octicons-telescope-16: Efficiency Metrics
+## :fontawesome-solid-magnifying-glass: Efficiency Metrics
 
 **Image efficiency score:**
 ```

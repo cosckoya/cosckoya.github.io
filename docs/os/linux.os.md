@@ -156,7 +156,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-## :octicons-shield-check-16: Security Audit Tools
+## :fontawesome-solid-shield-halved: Security Audit Tools
 
 Tools for system hardening audits, privilege escalation detection, and security posture assessment. Run these before bad actors do.
 
