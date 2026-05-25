@@ -54,7 +54,13 @@
       "Bash(__NEW_LINE_5c5055a70c22df28__ sed:*)",
       "Bash(__NEW_LINE_79af253c735c9158__ find:*)",
       "Bash(xargs sed:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(xargs -I{} sh -c 'echo \"=== {} ===\"; cat {}')",
+      "Read(//tmp/testpkgs/**)",
+      "Bash(unzip -p mkdocs_same_dir-0.1.5-*.whl '*.py')",
+      "Bash(unzip -p mkdocs_section_index-0.3.12-*.whl '*.py')",
+      "Bash(unzip -p mkdocs_literate_nav-0.6.3-*.whl '*.py')",
+      "Bash(grep -v '^-e git+\\\\|^done==' /home/cosckoya/hack/cosckoya.github.io/requirements-lock.txt)"
     ],
     "block": [
       "Read(.env*)",
