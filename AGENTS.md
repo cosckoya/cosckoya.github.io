@@ -74,6 +74,9 @@ Global skills at `/home/cosckoya/.agentic/skills/`:
 - `github-expert` — GitHub administration, Actions, security
 - `python-architect` — Python architecture reviews
 
+Installed skills at `~/.agents/skills/`:
+- `github-actions-docs` — Grounded GitHub Actions documentation, workflow YAML, runners, CI/CD
+
 ## See Also
 
 - **mkdocs.yml** — Full theme, plugin, extension configuration
