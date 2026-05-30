@@ -21,6 +21,7 @@ mkdocs-section-index==0.3.10
 
 # Additional packages
 pillow==12.2.0                   # Image processing — 12.2.0 fixes 2 high + 3 medium CVEs
+cairosvg==2.9.0                  # SVG→PNG for social cards plugin
 
 # Development Tools (optional)
 mdformat>=0.7.22,<0.8.0
