@@ -79,6 +79,7 @@ theme:
     - content.code.select          # Select code easily
     - content.code.annotate        # Inline code annotations
     - content.tooltips             # Abbreviation tooltips
+    - navigation.prune             # Auto-remove orphaned nav entries
     - content.footnote.tooltips    # Footnotes as inline tooltips (9.x+)
     - content.action.edit          # Edit page link
     - content.action.view          # View source link
@@ -157,8 +158,13 @@ plugins:
   - same-dir
   - section-index
   - tags
+  - social:
+      cards_layout_options:
+        background_color: "#7b1fa2"
+        color: "#c6ff00"
   - literate-nav:
       nav_file: SUMMARY.md
+  - privacy
   - minify:
       minify_html: true
       minify_js: true

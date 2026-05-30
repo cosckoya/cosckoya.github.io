@@ -320,7 +320,7 @@ ______________________________________________________________________
 
 ### Basic Image
 
-![Material for MkDocs](https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/docs/assets/logo.png){ width="200" }
+![Site logo](resources/img/logo.png){ width="200" }
 
 ### Image with Caption
 

@@ -132,7 +132,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Claude Code local configuration (2026 best practices)
-.claude/settings.local.json
-.claude/CLAUDE.local.md
-.claude/.mcp.local.json
+# OpenCode runtime files (auto-generated, do not commit)
+.opencode/.cache
+.opencode/.session
+.opencode/sessions/
+.opencode/plans/
+.opencode/tasks/
+.opencode/backups/
