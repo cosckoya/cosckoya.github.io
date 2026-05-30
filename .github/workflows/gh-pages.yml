@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -18,7 +23,7 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
-      - run: pip install yamllint codespell
+      - run: pip install yamllint==1.38.0 codespell==2.4.2
 
       - name: Lint YAML
         run: yamllint -c .yamllint.yml mkdocs.yml
