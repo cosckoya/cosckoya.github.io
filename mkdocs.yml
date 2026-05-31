@@ -181,3 +181,6 @@ extra_css:
 docs_dir: docs
 site_dir: site
 dev_addr: 127.0.0.1:8000
+
+exclude_docs:
+  templates/*.md

@@ -1,2 +1,3 @@
 - [Python](python.lang.md)
+- [Go](go.lang.md)
 - [Tools](tools/)

@@ -3,6 +3,9 @@ title: {{TOOL_NAME}}
 description: {{ONE_LINE_DESCRIPTION}}
 ---
 
+!!! danger "⚠️ DEPRECATED"
+    Use [`page.template.md`](page.template.md) instead. This template is kept for reference only and will be removed in a future update.
+
 # {{TOOL_NAME}}
 
 {{INTRO_PARAGRAPH}}

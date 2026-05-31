@@ -10,11 +10,9 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
 !!! tip "Why Kitty"
     GPU rendering (smooth scrolling), built-in tabs/splits (no tmux needed), image display, font ligatures, scriptable with Python, cross-platform.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Installation"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -48,7 +46,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
     # kitty 0.32.0
     ```
 
-=== "Basic Usage"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Launch:**
     ```bash
@@ -75,7 +73,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
     - `Ctrl+Shift+F` - Search scrollback
     - `Ctrl+Shift+L` - Layout selector
 
-=== "Configuration"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Config location:** `~/.config/kitty/kitty.conf`
 
@@ -208,6 +206,32 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
     input_delay 3
     sync_to_monitor yes
     ```
+    
+    **Pro Tips:**
+    
+    - **Use GPU rendering** - Enable `sync_to_monitor yes` for smoothness
+    - **Font ligatures** - JetBrains Mono, Fira Code work great
+    - **Single instance mode** - `kitty --single-instance` opens new tabs in existing window
+    - **SSH integration** - `kitty +kitten ssh` preserves shell integration
+    - **Scrollback search** - `Ctrl+Shift+F` with regex support
+    - **Detach mode** - Use `--session` flag to save/restore window layouts
+    - **Remote control** - Enable `allow_remote_control yes` for scripting
+    - **Custom kittens** - Write Python scripts for custom functionality
+    - **Image protocol** - Unique to Kitty, works in Neovim with image.nvim
+    - **Use hints kitten** - `Ctrl+Shift+E` to hint at URLs/paths on screen
+    
+    **Common Gotchas:**
+    
+    - **Font not found** - Install Nerd Fonts or JetBrains Mono
+    - **Ligatures not working** - Enable `disable_ligatures never`
+    - **Clipboard broken** - Install `xclip` or `xsel` on Linux
+    - **Slow startup** - Disable `shell_integration` if not needed
+    - **Images not showing** - Check terminal size and image dimensions
+    - **SSH images broken** - Use `kitty +kitten ssh` instead of plain ssh
+    - **Colors wrong** - Set `TERM=xterm-kitty` in shell config
+    - **Tabs not showing** - Enable `tab_bar_edge top` or `bottom`
+    - **Key bindings conflict** - Remap in kitty.conf, prefix with `ctrl+shift`
+    - **Performance issues** - Disable cursor blinking, reduce scrollback
 
 ---
 
@@ -388,36 +412,6 @@ fi
 
 ---
 
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Use GPU rendering** - Enable `sync_to_monitor yes` for smoothness
-- **Font ligatures** - JetBrains Mono, Fira Code work great
-- **Single instance mode** - `kitty --single-instance` opens new tabs in existing window
-- **SSH integration** - `kitty +kitten ssh` preserves shell integration
-- **Scrollback search** - `Ctrl+Shift+F` with regex support
-- **Detach mode** - Use `--session` flag to save/restore window layouts
-- **Remote control** - Enable `allow_remote_control yes` for scripting
-- **Custom kittens** - Write Python scripts for custom functionality
-- **Image protocol** - Unique to Kitty, works in Neovim with image.nvim
-- **Use hints kitten** - `Ctrl+Shift+E` to hint at URLs/paths on screen
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Gotchas
-
-- **Font not found** - Install Nerd Fonts or JetBrains Mono
-- **Ligatures not working** - Enable `disable_ligatures never`
-- **Clipboard broken** - Install `xclip` or `xsel` on Linux
-- **Slow startup** - Disable `shell_integration` if not needed
-- **Images not showing** - Check terminal size and image dimensions
-- **SSH images broken** - Use `kitty +kitten ssh` instead of plain ssh
-- **Colors wrong** - Set `TERM=xterm-kitty` in shell config
-- **Tabs not showing** - Enable `tab_bar_edge top` or `bottom`
-- **Key bindings conflict** - Remap in kitty.conf, prefix with `ctrl+shift`
-- **Performance issues** - Disable cursor blinking, reduce scrollback
-
----
-
 ## :fontawesome-solid-link: Resources
 
 **Official:**
@@ -439,8 +433,8 @@ fi
 - **[r/KittyTerminal](https://reddit.com/r/KittyTerminal)** - Reddit community
 - **[GitHub Discussions](https://github.com/kovidgoyal/kitty/discussions)** - Official forum
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-tv: **GPU-Accelerated Power** - Fastest terminal emulator with GPU rendering. Built-in image display, tabs, and kitten remote control. Excellent font rendering and ligature support. If you live in the terminal, kitty makes everything feel instant.
 
 **Tags:** kitty, terminal-emulator, terminal, gpu-accelerated, terminal, cli, productivity, development-tools

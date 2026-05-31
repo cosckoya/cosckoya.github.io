@@ -10,11 +10,9 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
 !!! tip "Why NeoVim over Vim"
     Built-in LSP client, better plugin architecture, Lua configuration, active development, and Tree-sitter integration. Vim compatibility mode exists if you need it.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Installation"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -39,7 +37,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
     sudo make install
     ```
 
-=== "Basic Configuration"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Config location:** `~/.config/nvim/init.lua`
 
@@ -74,7 +72,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
     - Use `:help` for everything
     - Leader key choice matters (space is popular)
 
-=== "Plugin Manager"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **lazy.nvim (recommended):**
 
@@ -102,6 +100,28 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
     - Fast startup times
     - Simple configuration
     - No learning curve
+    
+    **Pro Tips:**
+    
+    - **Use `:checkhealth`** - Diagnose issues with your setup
+    - **Learn Lua basics** - `:help lua-guide`, it's simpler than Vimscript
+    - **Use `vim.keymap.set()`** - Modern keymap API, forget `nnoremap`
+    - **Lazy load plugins** - Don't load everything at startup
+    - **Keep config modular** - Split into `~/.config/nvim/lua/` modules
+    - **Read plugin docs** - Each plugin has `:help plugin-name`
+    - **Use built-in features** - LSP, Tree-sitter, file explorer are built-in
+    - **`:Telescope` everything** - File search, grep, git, LSP symbols
+    
+    **Common Gotchas:**
+    
+    - **Python provider issues** - Run `:checkhealth provider`, install `pynvim`
+    - **Clipboard not working** - Install `xclip` (Linux) or use `pbcopy` (macOS)
+    - **Slow startup** - Profile with `nvim --startuptime startup.log`, lazy load plugins
+    - **LSP not attaching** - Check `:LspInfo`, ensure language server is installed
+    - **Tree-sitter errors** - Run `:TSUpdate` after installing
+    - **Config not loading** - Check file path: `~/.config/nvim/init.lua` (not `.vim`)
+    - **Plugins not installing** - Run `:Lazy sync` manually
+    - **Color scheme broken** - Enable `termguicolors` in terminal emulator
 
 ---
 
@@ -279,32 +299,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 ---
 
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Use `:checkhealth`** - Diagnose issues with your setup
-- **Learn Lua basics** - `:help lua-guide`, it's simpler than Vimscript
-- **Use `vim.keymap.set()`** - Modern keymap API, forget `nnoremap`
-- **Lazy load plugins** - Don't load everything at startup
-- **Keep config modular** - Split into `~/.config/nvim/lua/` modules
-- **Read plugin docs** - Each plugin has `:help plugin-name`
-- **Use built-in features** - LSP, Tree-sitter, file explorer are built-in
-- **`:Telescope` everything** - File search, grep, git, LSP symbols
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Gotchas
-
-- **Python provider issues** - Run `:checkhealth provider`, install `pynvim`
-- **Clipboard not working** - Install `xclip` (Linux) or use `pbcopy` (macOS)
-- **Slow startup** - Profile with `nvim --startuptime startup.log`, lazy load plugins
-- **LSP not attaching** - Check `:LspInfo`, ensure language server is installed
-- **Tree-sitter errors** - Run `:TSUpdate` after installing
-- **Config not loading** - Check file path: `~/.config/nvim/init.lua` (not `.vim`)
-- **Plugins not installing** - Run `:Lazy sync` manually
-- **Color scheme broken** - Enable `termguicolors` in terminal emulator
-
----
-
 ## :fontawesome-solid-link: Resources
 
 **Official:**
@@ -324,8 +318,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 **Awesome Plugins:**
 - **[Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)** - Curated plugin list
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-fire: **Editor of the Gods** - Neovim is the modern Vim reincarnation. Lua config, LSP integration, tree-sitter parsing. Steep learning curve but unmatched editing speed. If you live in the terminal, this is your editor.
 
 **Tags:** neovim, vim, text-editor, lua, lsp, tree-sitter, terminal, cli, development-tools

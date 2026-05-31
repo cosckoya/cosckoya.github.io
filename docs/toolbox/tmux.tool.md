@@ -10,11 +10,9 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
 !!! tip "Why TMUX"
     Persistent sessions survive disconnects, split panes for multi-tasking, window management without GUI, pair programming over SSH, scriptable layouts.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Installation"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -37,7 +35,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
     # tmux 3.3a
     ```
 
-=== "Basic Usage"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Start session:**
     ```bash
@@ -74,7 +72,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
     tmux kill-server
     ```
 
-=== "Key Bindings"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Prefix key:** `Ctrl+b` (all commands start with this)
 
@@ -107,6 +105,31 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
     - `Space` - Start selection
     - `Enter` - Copy selection
     - `Ctrl+b ]` - Paste
+    
+    **Pro Tips:**
+    
+    - **Use Ctrl+a prefix** - Easier to reach than Ctrl+b (like GNU Screen)
+    - **Mouse mode is OK** - Don't let purists shame you, it's convenient
+    - **Name your sessions** - `tmux new -s project` beats `tmux-0`
+    - **Use zoom** - `Ctrl+b z` to fullscreen a pane temporarily
+    - **Copy mode is powerful** - `Ctrl+b [` then navigate with vi keys
+    - **Detach often** - Long-running tasks? Detach and close terminal
+    - **Save layouts** - Use scripts to recreate window/pane setups
+    - **Resurrect plugin** - Save/restore entire tmux environments
+    - **Synchronize panes** - `Ctrl+b :setw synchronize-panes` - type in all panes at once
+    - **Use tmuxinator** - Define project layouts in YAML
+    
+    **Common Gotchas:**
+    
+    - **Colors broken** - Set `TERM=screen-256color` or `xterm-256color` in config
+    - **Nested tmux sessions** - Don't start tmux inside tmux (detach first)
+    - **Clipboard doesn't work** - Install `reattach-to-user-namespace` (macOS) or `xclip` (Linux)
+    - **Mouse scroll not working** - Enable mouse mode: `set -g mouse on`
+    - **Prefix key conflicts** - Ctrl+b conflicts with vim? Change to Ctrl+a
+    - **Can't resize panes** - Check mouse mode, or use `Ctrl+b arrow` + arrow keys
+    - **Session persists after reboot** - Use tmux-continuum plugin for auto-save/restore
+    - **Status bar ugly** - Use powerline or tmux themes (tokyo-night, dracula)
+    - **Too many sessions** - Run `tmux ls`, clean up with `tmux kill-session -t name`
 
 ---
 
@@ -289,35 +312,6 @@ tmux select-layout tiled            # Tile all panes
 
 ---
 
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Use Ctrl+a prefix** - Easier to reach than Ctrl+b (like GNU Screen)
-- **Mouse mode is OK** - Don't let purists shame you, it's convenient
-- **Name your sessions** - `tmux new -s project` beats `tmux-0`
-- **Use zoom** - `Ctrl+b z` to fullscreen a pane temporarily
-- **Copy mode is powerful** - `Ctrl+b [` then navigate with vi keys
-- **Detach often** - Long-running tasks? Detach and close terminal
-- **Save layouts** - Use scripts to recreate window/pane setups
-- **Resurrect plugin** - Save/restore entire tmux environments
-- **Synchronize panes** - `Ctrl+b :setw synchronize-panes` - type in all panes at once
-- **Use tmuxinator** - Define project layouts in YAML
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Gotchas
-
-- **Colors broken** - Set `TERM=screen-256color` or `xterm-256color` in config
-- **Nested tmux sessions** - Don't start tmux inside tmux (detach first)
-- **Clipboard doesn't work** - Install `reattach-to-user-namespace` (macOS) or `xclip` (Linux)
-- **Mouse scroll not working** - Enable mouse mode: `set -g mouse on`
-- **Prefix key conflicts** - Ctrl+b conflicts with vim? Change to Ctrl+a
-- **Can't resize panes** - Check mouse mode, or use `Ctrl+b arrow` + arrow keys
-- **Session persists after reboot** - Use tmux-continuum plugin for auto-save/restore
-- **Status bar ugly** - Use powerline or tmux themes (tokyo-night, dracula)
-- **Too many sessions** - Run `tmux ls`, clean up with `tmux kill-session -t name`
-
----
-
 ## :fontawesome-solid-link: Resources
 
 **Official:**
@@ -342,8 +336,8 @@ tmux select-layout tiled            # Tile all panes
 **Communities:**
 - **[r/tmux](https://reddit.com/r/tmux)** - Reddit community
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-window-restore: **Terminal Multiplexer Essential** - TMUX is the difference between a terminal and a terminal *workstation*. Persistent sessions survive SSH disconnects. Split panes, window management, copy mode with vim bindings. Non-negotiable for remote development.
 
 **Tags:** tmux, terminal-multiplexer, terminal, cli, session-management, development-tools, productivity

@@ -10,11 +10,9 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 !!! tip "Why Popeye"
     Automated cluster health checks, security scanning, resource optimization, best practice enforcement, CI/CD integration, zero cluster modifications.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Installation"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -49,7 +47,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
     # Popeye 0.20.1
     ```
 
-=== "Basic Usage"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Scan current context:**
     ```bash
@@ -95,7 +93,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
     # 3: Error
     ```
 
-=== "Configuration"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Config file:** `spinach.yaml` (in current dir or `~/.config/popeye/`)
 
@@ -147,6 +145,83 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
         # Skip specific check codes
         - 100  # Image pull policy
         - 101  # Latest image tag
+    ```
+
+    **Pro Tips:**
+    
+    - **Run regularly** - Schedule daily scans in CI/CD
+    - **Track scores over time** - Monitor cluster health trends
+    - **Fix high-severity first** - Critical > Error > Warning
+    - **Use custom config** - Exclude known false positives
+    - **Generate HTML reports** - Share with team/stakeholders
+    - **Set score thresholds** - Fail CI if score drops below 80
+    - **Scan before deploy** - Catch issues in staging
+    - **Check deprecations** - API version warnings before upgrades
+    - **Resource right-sizing** - Use utilization data to set limits
+    - **Security focus** - Fix root containers and privileged mode first
+
+    **Common Issues & Fixes:**
+    
+    **No liveness probe (POP-106):**
+    ```yaml
+    # Add to deployment
+    spec:
+      template:
+        spec:
+          containers:
+          - name: app
+            livenessProbe:
+              httpGet:
+                path: /health
+                port: 8080
+              initialDelaySeconds: 30
+              periodSeconds: 10
+    ```
+
+    **Latest image tag (POP-101):**
+    ```yaml
+    # Use specific version
+    spec:
+      template:
+        spec:
+          containers:
+          - name: app
+            image: myapp:1.2.3  # Not :latest
+    ```
+
+    **No resource limits (POP-300):**
+    ```yaml
+    # Set requests and limits
+    spec:
+      template:
+        spec:
+          containers:
+          - name: app
+            resources:
+              requests:
+                memory: "128Mi"
+                cpu: "100m"
+              limits:
+                memory: "256Mi"
+                cpu: "200m"
+    ```
+
+    **Running as root (POP-500):**
+    ```yaml
+    # Add security context
+    spec:
+      template:
+        spec:
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+          containers:
+          - name: app
+            securityContext:
+              allowPrivilegeEscalation: false
+              capabilities:
+                drop:
+                  - ALL
     ```
 
 ---
@@ -395,89 +470,6 @@ popeye:
       - staging
 ```
 
----
-
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Run regularly** - Schedule daily scans in CI/CD
-- **Track scores over time** - Monitor cluster health trends
-- **Fix high-severity first** - Critical > Error > Warning
-- **Use custom config** - Exclude known false positives
-- **Generate HTML reports** - Share with team/stakeholders
-- **Set score thresholds** - Fail CI if score drops below 80
-- **Scan before deploy** - Catch issues in staging
-- **Check deprecations** - API version warnings before upgrades
-- **Resource right-sizing** - Use utilization data to set limits
-- **Security focus** - Fix root containers and privileged mode first
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Issues & Fixes
-
-**No liveness probe (POP-106):**
-```yaml
-# Add to deployment
-spec:
-  template:
-    spec:
-      containers:
-      - name: app
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8080
-          initialDelaySeconds: 30
-          periodSeconds: 10
-```
-
-**Latest image tag (POP-101):**
-```yaml
-# Use specific version
-spec:
-  template:
-    spec:
-      containers:
-      - name: app
-        image: myapp:1.2.3  # Not :latest
-```
-
-**No resource limits (POP-300):**
-```yaml
-# Set requests and limits
-spec:
-  template:
-    spec:
-      containers:
-      - name: app
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "100m"
-          limits:
-            memory: "256Mi"
-            cpu: "200m"
-```
-
-**Running as root (POP-500):**
-```yaml
-# Add security context
-spec:
-  template:
-    spec:
-      securityContext:
-        runAsNonRoot: true
-        runAsUser: 1000
-      containers:
-      - name: app
-        securityContext:
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop:
-              - ALL
-```
-
----
-
 ## :fontawesome-solid-list-check: Pre-Production Checklist
 
 ```bash
@@ -522,8 +514,8 @@ popeye -n production -o yaml > audit.yaml
 - **[K8s Slack](https://kubernetes.slack.com/)** - #popeye channel
 - **[GitHub Discussions](https://github.com/derailed/popeye/discussions)** - Q&A
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-shield-halved: **Cluster Hygiene Tool** - Popeye catches K8s misconfigurations that other tools miss. Resource limits, probe configurations, label standards. Essential pre-deployment sanity check. Run it before every production rollout. Free and open-source.
 
 **Tags:** popeye, kubernetes, k8s, cluster-scanner, security, best-practices, ci-cd, devops

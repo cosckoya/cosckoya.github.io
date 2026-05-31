@@ -10,11 +10,9 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
 !!! tip "Why Krew"
     Extend kubectl without rebuilding, community-maintained tools, easy install/update, fill gaps in official kubectl functionality, plugin ecosystem with 200+ tools.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Install Krew"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **macOS/Linux:**
     ```bash
@@ -41,7 +39,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
     # GitCommit: d8c4221
     ```
 
-=== "Basic Usage"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Plugin management:**
     ```bash
@@ -78,7 +76,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
     kubectl tree deploy/api       # Show resource tree
     ```
 
-=== "Essential Plugins"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Install recommended set:**
     ```bash
@@ -100,6 +98,32 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
     # Utilities
     kubectl krew install neat view-secret images
     ```
+
+    **Pro Tips:**
+    
+    - **Install Krew first** - It's the plugin manager for all others
+    - **Update regularly** - `kubectl krew update && kubectl krew upgrade`
+    - **Combine with native kubectl** - Plugins extend, not replace
+    - **Use stern for logs** - Better than `kubectl logs` for multiple pods
+    - **tree shows dependencies** - Understand resource relationships
+    - **neat cleans output** - Remove clutter for better diffs
+    - **who-can for RBAC** - Quick permission checks
+    - **node-shell for debugging** - Access nodes without SSH
+    - **Check plugin index** - New plugins added frequently
+    - **Custom plugins possible** - Write your own in any language
+
+    **Common Gotchas:**
+    
+    - **PATH not updated** - Add `$HOME/.krew/bin` to PATH
+    - **Krew not in kubectl plugins** - Krew manages plugins, not a plugin itself
+    - **Plugin name conflicts** - Some plugins duplicate kubectl functionality
+    - **Version compatibility** - Check plugin supports your K8s version
+    - **Slow plugin install** - Downloads binaries, can take time
+    - **Missing dependencies** - Some plugins need other tools (git, helm)
+    - **Permission issues** - Ensure `~/.krew` is writable
+    - **Plugins not showing** - Run `kubectl plugin list` to verify
+    - **Update krew itself** - `kubectl krew upgrade krew`
+    - **Custom plugins** - Must be in PATH with `kubectl-` prefix
 
 ---
 
@@ -378,38 +402,6 @@ kubectl krew install cost
 kubectl cost                     # Cluster cost breakdown
 ```
 
----
-
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Install Krew first** - It's the plugin manager for all others
-- **Update regularly** - `kubectl krew update && kubectl krew upgrade`
-- **Combine with native kubectl** - Plugins extend, not replace
-- **Use stern for logs** - Better than `kubectl logs` for multiple pods
-- **tree shows dependencies** - Understand resource relationships
-- **neat cleans output** - Remove clutter for better diffs
-- **who-can for RBAC** - Quick permission checks
-- **node-shell for debugging** - Access nodes without SSH
-- **Check plugin index** - New plugins added frequently
-- **Custom plugins possible** - Write your own in any language
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Gotchas
-
-- **PATH not updated** - Add `$HOME/.krew/bin` to PATH
-- **Krew not in kubectl plugins** - Krew manages plugins, not a plugin itself
-- **Plugin name conflicts** - Some plugins duplicate kubectl functionality
-- **Version compatibility** - Check plugin supports your K8s version
-- **Slow plugin install** - Downloads binaries, can take time
-- **Missing dependencies** - Some plugins need other tools (git, helm)
-- **Permission issues** - Ensure `~/.krew` is writable
-- **Plugins not showing** - Run `kubectl plugin list` to verify
-- **Update krew itself** - `kubectl krew upgrade krew`
-- **Custom plugins** - Must be in PATH with `kubectl-` prefix
-
----
-
 ## :fontawesome-solid-code: Custom Plugin Example
 
 **Create custom plugin (`kubectl-hello`):**
@@ -492,8 +484,8 @@ kubectl count-pods
 - **[K8s Slack](https://kubernetes.slack.com/)** - #kubectl channel
 - **[GitHub Discussions](https://github.com/kubernetes-sigs/krew/discussions)** - Krew Q&A
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-puzzle-piece: **kubectl Superpowers** - Krew is the kubectl plugin manager that turns a good CLI into an extensible platform. Index has 200+ plugins for debugging, scanning, reporting. Essential for any serious K8s practitioner.
 
 **Tags:** kubectl, kubernetes, k8s, krew, plugins, cli, development-tools, devops

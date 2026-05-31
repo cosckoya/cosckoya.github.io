@@ -1,4 +1,4 @@
-.PHONY: help serve build validate clean venv deps deps-lock update-lock lint
+.PHONY: help serve build validate clean venv deps deps-lock update-lock lint health
 
 help:
 	@echo "MkDocs Documentation Site"
@@ -13,6 +13,7 @@ help:
 	@echo "  make deps-lock    - Install exact locked deps (requirements-lock.txt)"
 	@echo "  make update-lock  - Upgrade packages and regenerate requirements-lock.txt"
 	@echo "  make lint         - Run ruff, codespell, yamllint"
+	@echo "  make health       - Check placeholders, orphans, Vibe Checks"
 
 serve:
 	@bash -c "source venv/bin/activate && mkdocs serve"
@@ -43,3 +44,6 @@ lint:
 	@bash -c "source venv/bin/activate && ruff check docs/ || true"
 	@bash -c "source venv/bin/activate && codespell docs/ --skip='*.png,*.jpg,*.svg' || true"
 	@bash -c "source venv/bin/activate && yamllint mkdocs.yml || true"
+
+health:
+	@bash -c "source venv/bin/activate && python3 scripts/health.py"

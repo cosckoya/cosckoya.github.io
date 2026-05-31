@@ -1,14 +1,18 @@
 ---
 title: {{TITLE}}
 description: {{DESCRIPTION}}
+tags:
+  - {{TAG_1}}
+  - {{TAG_2}}
+  - {{TAG_3}}
 ---
 
-!!! danger "⚠️ DEPRECATED"
-    Use [`page.template.md`](page.template.md) instead. This template is kept for reference only and will be removed in a future update.
-
-# {{TITLE}}
+# {{TITLE_ICON}} {{TITLE}}
 
 {{INTRO_PARAGRAPH}}
+
+!!! tip "2026 Update"
+    {{YEAR_UPDATE_NOTE}}
 
 ______________________________________________________________________
 
@@ -22,7 +26,7 @@ ______________________________________________________________________
 
     **Real talk:**
 
-    {{TAB_1_REAL_TALK_BULLETS}}
+    {{TAB_1_REAL_TALK}}
 
 === ":fontawesome-solid-bolt: Common Patterns"
 
@@ -32,29 +36,37 @@ ______________________________________________________________________
 
     **Why this works:**
 
-    {{TAB_2_EXPLANATION_BULLETS}}
+    {{TAB_2_EXPLANATION}}
 
 === ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
-    {{PRO_TIPS_BULLETS}}
+    {{PRO_TIPS}}
 
     **Gotchas:**
 
-    {{GOTCHAS_BULLETS}}
+    {{GOTCHAS}}
 
 ______________________________________________________________________
 
-## {{SECTION_2_TITLE}}
-
-{{SECTION_2_CONTENT}}
+{{OPTIONAL_INSTALL_SECTION}}
 
 ______________________________________________________________________
 
-## {{SECTION_3_TITLE}}
+{{OPTIONAL_CONFIG_SECTION}}
 
-{{SECTION_3_CONTENT}}
+______________________________________________________________________
+
+{{OPTIONAL_SECTION_1_TITLE}}
+
+{{OPTIONAL_SECTION_1_CONTENT}}
+
+______________________________________________________________________
+
+{{OPTIONAL_SECTION_2_TITLE}}
+
+{{OPTIONAL_SECTION_2_CONTENT}}
 
 ______________________________________________________________________
 
@@ -62,17 +74,16 @@ ______________________________________________________________________
 
 **Documentation:**
 
-- {{DOC_LINK_1}}
-- {{DOC_LINK_2}}
-- {{DOC_LINK_3}}
+- :fontawesome-solid-book: [Official Docs]({{DOCS_URL}})
+- :fontawesome-brands-github: [GitHub]({{GITHUB_URL}})
 
 **Related:**
 
-- :fontawesome-solid-fire: __{{RELATED_SECTION_1}}__
-- :fontawesome-solid-book: __{{RELATED_SECTION_2}}__
-- :fontawesome-solid-wrench: __{{RELATED_SECTION_3}}__
+- :fontawesome-solid-fire: __{{RELATED_1}}__
+- :fontawesome-solid-wrench: __{{RELATED_2}}__
 
 ______________________________________________________________________
 
-**Last Updated:** {{LAST_UPDATED}}
+**Last Updated:** {{LAST_UPDATED}} | **Vibe Check:** {{VIBE_CHECK_ICON}} **{{VIBE_CHECK_TITLE}}** - {{VIBE_CHECK_DESC}}
+
 **Tags:** {{TAG_1}}, {{TAG_2}}, {{TAG_3}}

@@ -10,11 +10,9 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
 !!! tip "Why Dive"
     Visual layer breakdown, wasted space analysis, efficiency score, file tree navigation, CI/CD integration for image size enforcement.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Installation"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -50,7 +48,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
     # dive 0.11.0
     ```
 
-=== "Basic Usage"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Analyze local image:**
     ```bash
@@ -93,7 +91,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
     dive docker-archive://image.tar # Tar archive
     ```
 
-=== "TUI Navigation"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Interface sections:**
     - **Left pane:** Layer list with sizes
@@ -120,6 +118,32 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
     - `-` - Removed file (wasted space!)
     - `M` - Modified file
     - No indicator - Unchanged
+
+    **Pro Tips:**
+    
+    - **Use multi-stage builds** - Final image only gets artifacts, not build tools
+    - **Order matters** - Put frequently changing files (code) after stable deps
+    - **Combine RUN commands** - Each RUN creates a layer
+    - **Clean in same layer** - Delete files in same RUN that created them
+    - **Use .dockerignore** - Don't COPY unnecessary files
+    - **Leverage build cache** - Order Dockerfile commands by change frequency
+    - **Check base image** - `alpine` vs `debian` size difference
+    - **Use specific tags** - `python:3.11-slim` vs `python:latest`
+    - **Run in CI** - Enforce image size standards automatically
+    - **Analyze prod images** - Not just dev builds
+
+    **Common Gotchas:**
+    
+    - **Deleted files waste space** - Removing in later layer doesn't free space
+    - **apt-get cache** - Always `rm -rf /var/lib/apt/lists/*` in same RUN
+    - **Large COPY commands** - Use .dockerignore or selective COPY
+    - **Package manager caches** - `npm cache clean`, `pip cache purge`
+    - **Log files** - Don't include logs in image
+    - **Source control** - Exclude .git directory
+    - **Development dependencies** - Use `--only=production` or similar
+    - **Temporary files** - Clean `/tmp` in same layer
+    - **Multiple FROM** - Only last stage ends up in final image (multi-stage)
+    - **Base image size** - Alpine 5MB vs Ubuntu 77MB
 
 ---
 
@@ -276,38 +300,6 @@ jq '.layer | length' v1.json  # Number of layers
 jq '.layer | length' v2.json
 ```
 
----
-
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Use multi-stage builds** - Final image only gets artifacts, not build tools
-- **Order matters** - Put frequently changing files (code) after stable deps
-- **Combine RUN commands** - Each RUN creates a layer
-- **Clean in same layer** - Delete files in same RUN that created them
-- **Use .dockerignore** - Don't COPY unnecessary files
-- **Leverage build cache** - Order Dockerfile commands by change frequency
-- **Check base image** - `alpine` vs `debian` size difference
-- **Use specific tags** - `python:3.11-slim` vs `python:latest`
-- **Run in CI** - Enforce image size standards automatically
-- **Analyze prod images** - Not just dev builds
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Gotchas
-
-- **Deleted files waste space** - Removing in later layer doesn't free space
-- **apt-get cache** - Always `rm -rf /var/lib/apt/lists/*` in same RUN
-- **Large COPY commands** - Use .dockerignore or selective COPY
-- **Package manager caches** - `npm cache clean`, `pip cache purge`
-- **Log files** - Don't include logs in image
-- **Source control** - Exclude .git directory
-- **Development dependencies** - Use `--only=production` or similar
-- **Temporary files** - Clean `/tmp` in same layer
-- **Multiple FROM** - Only last stage ends up in final image (multi-stage)
-- **Base image size** - Alpine 5MB vs Ubuntu 77MB
-
----
-
 ## :fontawesome-solid-magnifying-glass: Efficiency Metrics
 
 **Image efficiency score:**
@@ -411,8 +403,8 @@ CMD ["python", "src/main.py"]
 - **[docker-slim](https://github.com/docker-slim/docker-slim)** - Automated image minification
 - **[container-diff](https://github.com/GoogleContainerTools/container-diff)** - Compare container images
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-chart-simple: **Image Optimization Essential** - Dive reveals exactly what's wasting space in your Docker images. Layer-by-layer analysis with interactive UI. Essential for CI/CD pipeline optimization. Works with Docker and Podman images.
 
 **Tags:** dive, docker, containers, image-optimization, dockerfile, ci-cd, development-tools
