@@ -228,7 +228,7 @@ theme:
 
 **Performance metrics:**
 
-- Build time: ~3 seconds (100+ pages)
+- Build time: ~3 seconds (49 pages)
 - Page load: <1 second (minified assets)
 - Search: Client-side (no server latency)
 - Images: WebP with lazy loading
@@ -247,14 +247,17 @@ cosckoya.github.io/
 ├── docs/
 │   ├── SUMMARY.md              # Main navigation
 │   ├── index.md                # Home page
-│   ├── about.md                # This page
-│   ├── cloud/                  # Cloud platforms & tools
-│   ├── os/                     # Operating systems
-│   ├── containers/             # Container tech
-│   ├── ai/                     # AI/ML platforms & tools
-│   ├── code/                   # Programming languages & tools
-│   ├── devops/                 # DevOps tools
+│   ├── showcase.md             # Feature reference
 │   ├── 1337/                   # Cybersecurity
+│   ├── ai/                     # AI/ML platforms & tools
+│   ├── api/                    # API references
+│   ├── awesome/                # Curated lists
+│   ├── cloud/                  # Cloud platforms & tools
+│   ├── code/                   # Programming languages & tools
+│   ├── containers/             # Container tech
+│   ├── databases/              # Database tools
+│   ├── os/                     # Operating systems
+│   ├── toolbox/                # Dev environment tools
 │   ├── templates/              # Documentation templates
 │   └── resources/
 │       ├── css/
@@ -547,10 +550,10 @@ ______________________________________________________________________
 ### Build Metrics
 
 ```bash
-# Production build stats (February 2026)
-Pages: 100+
+# Production build stats (June 2026)
+Pages: 49
 Build time: ~3 seconds
-Site size: ~25 MB (minified)
+Site size: ~15 MB (minified)
 Largest page: ~50 KB (HTML)
 Total CSS: ~200 KB (Material theme + custom)
 Total JS: ~100 KB (search + instant loading)
@@ -585,9 +588,9 @@ ______________________________________________________________________
 
 ## :fontawesome-solid-chart-line: Stats
 
-**As of February 2026:**
+**As of June 2026:**
 
-- **100+ pages** across 8 major sections
+- **49 pages** across 10 major sections
 - **500+ code examples** with syntax highlighting
 - **200+ inline annotations** explaining code
 - **50+ Mermaid diagrams** for architecture visualization

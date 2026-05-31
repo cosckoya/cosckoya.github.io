@@ -10,11 +10,9 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
 !!! tip "Why Zinit over Oh-My-ZSH"
     10x faster startup (50ms vs 500ms), lazy loading, Turbo mode, granular control, load only what you need. Oh-My-ZSH loads everything at startup - Zinit loads on demand.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Installation"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **Install ZSH:**
     ```bash
@@ -45,7 +43,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
     zinit --help
     ```
 
-=== "Basic Configuration"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **`~/.zshrc` starter:**
 
@@ -156,7 +154,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     ```
 
-=== "Turbo Mode (Fast Loading)"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **Advanced `.zshrc` with Turbo mode:**
 
@@ -192,6 +190,31 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
     - `atload` - Run command after loading
     - `atinit` - Run command before loading
     - Result: Shell starts in ~50ms, plugins load in background
+    
+    **Pro Tips:**
+    
+    - **Use Turbo mode** - Shell starts instantly, plugins load in background
+    - **Cherry-pick OMZ plugins** - Don't load entire framework, just snippets
+    - **Benchmark startup** - Run `time zsh -i -c exit` to measure
+    - **Use ice modifiers** - `wait`, `lucid`, `atload` for fine control
+    - **Compile plugins** - Zinit compiles to native code for speed
+    - **Lazy load tools** - ASDF, NVM, etc. should load on first use
+    - **Use `p10k` instant prompt** - Appears before zsh fully loads
+    - **Profile slow plugins** - Run `zinit times` to find bottlenecks
+    - **Keep `.zshrc` organized** - Group plugins by category
+    - **Use `bindkey -v`** - Vi mode for command line editing
+    
+    **Common Gotchas:**
+    
+    - **Slow startup** - Profile with `zinit times`, use Turbo mode
+    - **Completions not working** - Run `zinit cclear && zinit creinstall -q .`
+    - **Oh-My-ZSH muscle memory** - Cherry-pick plugins as snippets instead
+    - **ASDF not loading** - Source after zinit: `. $HOME/.asdf/asdf.sh`
+    - **Theme not showing** - Install Nerd Font (MesloLGS NF for p10k)
+    - **Instant prompt warnings** - Move slow commands after `p10k` source
+    - **Keybindings reset** - Set keybindings after all plugins load
+    - **History not shared** - Enable `SHARE_HISTORY` and `INC_APPEND_HISTORY`
+    - **Autosuggestions color** - Set `ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'`
 
 ---
 
@@ -344,35 +367,6 @@ p10k configure
 
 ---
 
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Use Turbo mode** - Shell starts instantly, plugins load in background
-- **Cherry-pick OMZ plugins** - Don't load entire framework, just snippets
-- **Benchmark startup** - Run `time zsh -i -c exit` to measure
-- **Use ice modifiers** - `wait`, `lucid`, `atload` for fine control
-- **Compile plugins** - Zinit compiles to native code for speed
-- **Lazy load tools** - ASDF, NVM, etc. should load on first use
-- **Use `p10k` instant prompt** - Appears before zsh fully loads
-- **Profile slow plugins** - Run `zinit times` to find bottlenecks
-- **Keep `.zshrc` organized** - Group plugins by category
-- **Use `bindkey -v`** - Vi mode for command line editing
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Gotchas
-
-- **Slow startup** - Profile with `zinit times`, use Turbo mode
-- **Completions not working** - Run `zinit cclear && zinit creinstall -q .`
-- **Oh-My-ZSH muscle memory** - Cherry-pick plugins as snippets instead
-- **ASDF not loading** - Source after zinit: `. $HOME/.asdf/asdf.sh`
-- **Theme not showing** - Install Nerd Font (MesloLGS NF for p10k)
-- **Instant prompt warnings** - Move slow commands after `p10k` source
-- **Keybindings reset** - Set keybindings after all plugins load
-- **History not shared** - Enable `SHARE_HISTORY` and `INC_APPEND_HISTORY`
-- **Autosuggestions color** - Set `ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'`
-
----
-
 ## :fontawesome-solid-link: Resources
 
 **Zinit:**
@@ -399,8 +393,8 @@ p10k configure
 - **[r/zsh](https://reddit.com/r/zsh)** - Reddit community
 - **[ZSH Discord](https://discord.gg/zsh)** - Discord server
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-terminal: **Shell Perfection** - ZSH with Zinit and Powerlevel10k is the ultimate shell experience. Auto-suggestions, syntax highlighting, fast completions. Fish-level UX with Bash compatibility. The standard for serious terminal users.
 
 **Tags:** zsh, zinit, shell, terminal, cli, powerlevel10k, productivity, development-tools

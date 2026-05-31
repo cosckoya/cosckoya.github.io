@@ -10,11 +10,9 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
 !!! tip "Why ASDF"
     Single tool for all languages, project-specific versions via `.tool-versions`, shell-agnostic, plugin ecosystem for 300+ runtimes.
 
----
+## Quick Hits
 
-## :fontawesome-solid-bolt: Quick Start
-
-=== "Installation"
+=== ":fontawesome-solid-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -45,7 +43,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
     # asdf 0.14.0
     ```
 
-=== "Basic Usage"
+=== ":fontawesome-solid-bolt: Common Patterns"
 
     **Install a plugin:**
     ```bash
@@ -91,7 +89,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
     asdf shell nodejs 20.11.0
     ```
 
-=== "Project Configuration"
+=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
 
     **`.tool-versions` file:**
 
@@ -122,6 +120,29 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
     - Team gets same versions automatically
     - CI/CD can use same file
     - No more "works on my machine"
+    
+    **Pro Tips:**
+    
+    - **Use `latest` carefully** - Pin exact versions in production projects
+    - **Reshim after global installs** - Run `asdf reshim` if commands not found
+    - **Legacy version files** - ASDF reads `.nvmrc`, `.node-version`, `.ruby-version` automatically
+    - **Install dependencies first** - Some plugins need build tools (Python needs `libssl-dev`, etc.)
+    - **Update plugins regularly** - `asdf plugin update --all`
+    - **Check plugin docs** - Each plugin has specific requirements: `asdf plugin list all | grep <name>`
+    - **Use shell integration** - Auto-completion available for ZSH/Bash/Fish
+    - **Global defaults** - Set sensible global versions for new projects
+    - **CI/CD integration** - Use `.tool-versions` in build scripts
+    
+    **Common Gotchas:**
+    
+    - **Command not found after install** - Run `asdf reshim <plugin>`
+    - **Python build fails** - Install build dependencies: `sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev`
+    - **Node.js GPG errors** - Import Node.js release team keys (plugin handles this usually)
+    - **Slow installs** - Some languages compile from source (Python, Ruby), use precompiled when available
+    - **Wrong version used** - Check order: shell → local → global (`.tool-versions` in closest parent dir wins)
+    - **Shims not working** - Ensure ASDF is sourced in shell config AFTER other version managers
+    - **Plugin not found** - Update plugin repository: `asdf plugin update --all`
+    - **Version conflicts** - Remove old version managers (nvm, pyenv, rbenv) from shell config
 
 ---
 
@@ -273,33 +294,6 @@ python --version  # 3.12.1
 
 ---
 
-## :fontawesome-solid-lightbulb: Pro Tips
-
-- **Use `latest` carefully** - Pin exact versions in production projects
-- **Reshim after global installs** - Run `asdf reshim` if commands not found
-- **Legacy version files** - ASDF reads `.nvmrc`, `.node-version`, `.ruby-version` automatically
-- **Install dependencies first** - Some plugins need build tools (Python needs `libssl-dev`, etc.)
-- **Update plugins regularly** - `asdf plugin update --all`
-- **Check plugin docs** - Each plugin has specific requirements: `asdf plugin list all | grep <name>`
-- **Use shell integration** - Auto-completion available for ZSH/Bash/Fish
-- **Global defaults** - Set sensible global versions for new projects
-- **CI/CD integration** - Use `.tool-versions` in build scripts
-
----
-
-## :fontawesome-solid-triangle-exclamation: Common Gotchas
-
-- **Command not found after install** - Run `asdf reshim <plugin>`
-- **Python build fails** - Install build dependencies: `sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev`
-- **Node.js GPG errors** - Import Node.js release team keys (plugin handles this usually)
-- **Slow installs** - Some languages compile from source (Python, Ruby), use precompiled when available
-- **Wrong version used** - Check order: shell → local → global (`.tool-versions` in closest parent dir wins)
-- **Shims not working** - Ensure ASDF is sourced in shell config AFTER other version managers
-- **Plugin not found** - Update plugin repository: `asdf plugin update --all`
-- **Version conflicts** - Remove old version managers (nvm, pyenv, rbenv) from shell config
-
----
-
 ## :fontawesome-solid-link: Resources
 
 **Official:**
@@ -318,8 +312,8 @@ python --version  # 3.12.1
 - **[GitHub Discussions](https://github.com/asdf-vm/asdf/discussions)** - Official forum
 - **[r/asdf](https://reddit.com/r/asdf)** - Reddit community
 
----
+______________________________________________________________________
 
-**Last Updated:** 2026-02-03
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-toolbox: **Version Manager Done Right** - One tool to rule all runtimes. No more nvm/pyenv/rbenv/gvm fragmentation. Single `.tool-versions` file for reproducible environments. Plugin ecosystem covers everything. Essential for polyglot development.
 
 **Tags:** asdf, version-manager, nodejs, python, golang, rust, ruby, development-tools, cli, runtime

@@ -42,13 +42,26 @@ When adding new sections:
 
 ## Content Standards
 
-**File naming:** `{name}.cloud.md`, `{name}.tool.md`, `{name}.service.md`, `{name}.md`
+**File naming:** `{name}.cloud.md`, `{name}.tool.md`, `{name}.service.md`, `{name}.os.md`, `{name}.ai.md`, `{name}.1337.md`, `{name}.md`
 
 **Icons:** Use FontAwesome (`:fontawesome-solid-...:`), never plain emojis.
 
 **Tags:** At bottom of file, not in frontmatter: `**Tags:** tag1, tag2`
 
 **Structure:** Essential → Common Patterns → Pro Tips & Gotchas. Tone: cynical, practical.
+
+**Footer:** Every content page must end with: `**Last Updated:** <date> | **Vibe Check:** <icon> **<label>** - <description>` followed by `**Tags:** ...`
+
+## Template System
+
+Use `docs/templates/page.template.md` when creating new pages. It supports both tool and tech-reference content with optional sections. The old `tech-reference.template.md` and `tool-reference.template.md` are deprecated.
+
+When generating a new page:
+1. Copy `page.template.md` to the target directory
+2. Replace all `{{PLACEHOLDER}}` values
+3. Optionally remove unused sections (Installation, Configuration)
+4. Add entry to nearest `SUMMARY.md`
+5. Validate with `make validate`
 
 ## Linting
 
