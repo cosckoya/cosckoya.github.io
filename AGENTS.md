@@ -90,6 +90,12 @@ Global skills at `/home/cosckoya/.agentic/skills/`:
 Installed skills at `~/.agents/skills/`:
 - `github-actions-docs` — Grounded GitHub Actions documentation, workflow YAML, runners, CI/CD
 
+## Agents
+
+This project has a dedicated OpenCode agent for documentation tasks:
+
+- **`@mcdoc`** — MkDocs Material Documentation Publisher. Invoke for content creation, health audits, CI/CD management, theme configuration, and deployment. Knows this project's conventions (templates, Vibe Check, literate-nav, plugin pinning).
+
 ## See Also
 
 - **mkdocs.yml** — Full theme, plugin, extension configuration
