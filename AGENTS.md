@@ -25,9 +25,9 @@ make validate             # Equivalent: mkdocs build --strict
 make lint                 # ruff, codespell, yamllint (non-blocking)
 ```
 
-## Plugin Pinning (CRITICAL)
+## Plugin Pinning
 
-**DO NOT update** `mkdocs-same-dir==0.1.3`, `mkdocs-section-index==0.3.10`, `mkdocs-literate-nav==0.6.2`. Newer versions inject ProperDocs promotional warnings. See requirements.txt.
+Pinned to exact versions in `requirements.txt`. ProperDocs promotional warnings from newer versions are cosmetic (print to stdout, don't break `--strict`). Current pins: `mkdocs-literate-nav==0.6.3`, `mkdocs-same-dir==0.1.5`, `mkdocs-section-index==0.3.12`. Update lockfile in tandem.
 
 ## Navigation Architecture
 
