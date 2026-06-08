@@ -15,7 +15,7 @@ cssselect2==0.9.0
 defusedxml==0.7.1
 distlib==0.4.0
 done==1.0.4
-filelock==3.29.0
+filelock==3.29.1
 ghp-import==2.1.0
 htmlmin2==0.1.13
 identify==2.6.15
