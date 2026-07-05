@@ -330,8 +330,9 @@ ______________________________________________________________________
 # Documentation templates (DRY principle)
 docs/templates/
 ├── README.md                    # Template usage guide
-├── tech-reference.template.md   # Cloud platforms, major tech
-└── tool-reference.template.md   # CLI tools, utilities
+├── page.template.md             # **RECOMMENDED** - Universal template
+├── tech-reference.template.md   # DEPRECATED - Use page.template.md
+└── tool-reference.template.md   # DEPRECATED - Use page.template.md
 
 # Usage: Replace {{PLACEHOLDER}} values
 # Example placeholders:

@@ -921,8 +921,9 @@ docs/
 │   └── SUMMARY.md
 ├── templates/               # Doc generation templates
 │   ├── README.md
-│   ├── tech-reference.template.md
-│   └── tool-reference.template.md
+│   ├── page.template.md                 # RECOMMENDED
+│   ├── tech-reference.template.md       # DEPRECATED
+│   └── tool-reference.template.md       # DEPRECATED
 └── resources/
     ├── css/
     │   ├── snape.css        # Custom styling (single file, DRY)
@@ -956,7 +957,7 @@ ______________________________________________________________________
 
 ### 1. Use Templates
 
-Start with `tech-reference.template.md` or `tool-reference.template.md` for consistency.
+Start with `page.template.md` for consistency. The old `tech-reference.template.md` and `tool-reference.template.md` are deprecated.
 
 ### 2. Three-Tab Structure
 
