@@ -9,11 +9,6 @@
       "description": "MkDocs Material Documentation Publisher — creates, maintains, and publishes cosckoya.github.io",
       "mode": "subagent",
       "color": "#00BFA5"
-    },
-    "atticus": {
-      "description": "Documentation Architect — defines, audits, and enforces doc standards",
-      "mode": "subagent",
-      "color": "#00A86B"
     }
   },
   "permission": {
