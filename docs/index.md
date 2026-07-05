@@ -357,12 +357,11 @@ docs/templates/
 **Pre-write checklist:**
 
 - [ ] All `{{PLACEHOLDER}}` values replaced
-- [ ] FontAwesome icons only, no emojis (`:fontawesome-solid-...:`)
-- [ ] NO plain emojis (FontAwesome only)
+- [ ] FontAwesome icons only (`:fontawesome-solid-...:`), no plain emojis
 - [ ] All code blocks have language specified
 - [ ] "Real talk" bullets are practical and honest
 - [ ] Tone is cynical/realistic (not aspirational)
-- [ ] Tags at bottom (not in frontmatter)
+- [ ] Tags at bottom of page (not in frontmatter)
 - [ ] Frontmatter contains only `title` and `description`
 
 ______________________________________________________________________
