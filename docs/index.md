@@ -98,7 +98,7 @@ markdown_extensions = [
 - **Tabbed content** - Three-tab "Quick Hits" structure
 - **Admonitions** - Tips, warnings, danger callouts
 - **Code highlighting** - 100+ languages supported
-- **Octicons** - GitHub's icon set (`:octicons-name-16:`)
+- **FontAwesome** - Industry-standard icon set (`:fontawesome-solid-...:`)
 - **Mermaid diagrams** - Architecture visualizations
 
 ### CI/CD Pipeline
@@ -356,8 +356,8 @@ docs/templates/
 **Pre-write checklist:**
 
 - [ ] All `{{PLACEHOLDER}}` values replaced
-- [ ] Octicons use markdown syntax (`:octicons-name-16:`)
-- [ ] NO plain emojis (octicons only)
+- [ ] FontAwesome icons only, no emojis (`:fontawesome-solid-...:`)
+- [ ] NO plain emojis (FontAwesome only)
 - [ ] All code blocks have language specified
 - [ ] "Real talk" bullets are practical and honest
 - [ ] Tone is cynical/realistic (not aspirational)
@@ -615,7 +615,7 @@ This is a personal documentation project, but if you find errors or have suggest
 - Follow three-tab "Quick Hits" structure
 - Include inline code comments `# (1)!`
 - Maintain cynical-but-helpful tone
-- Use octicons (`:octicons-name-16:`), not emojis
+- Use FontAwesome icons (`:fontawesome-solid-...:`), no emojis
 - Tags at bottom of page (not frontmatter)
 - Validate with `mkdocs build --strict`
 
@@ -623,7 +623,7 @@ ______________________________________________________________________
 
 **Built with:** :fontawesome-solid-heart: **and way too much coffee**
 
-**Tech Stack:** Python 3.12 • MkDocs Material 9.7.0 • GitHub Pages • GitHub Actions • Octicons • Mermaid • Pygments • Way too many Markdown extensions
+**Tech Stack:** Python 3.12 • MkDocs Material 9.7.0 • GitHub Pages • GitHub Actions • FontAwesome • Mermaid • Pygments • Way too many Markdown extensions
 
 **Last Updated:** 2026-02-02 | **Build Status:** :fontawesome-solid-circle-check: Passing | **Uptime:** 99.9%
 
