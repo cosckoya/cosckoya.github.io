@@ -92,9 +92,11 @@ Installed skills at `~/.agents/skills/`:
 
 ## Agents
 
-This project has a dedicated OpenCode agent for documentation tasks:
+This project has two dedicated OpenCode agents for documentation tasks:
 
 - **`@mcdoc`** — MkDocs Material Documentation Publisher. Invoke for content creation, health audits, CI/CD management, theme configuration, and deployment. Knows this project's conventions (templates, Vibe Check, literate-nav, plugin pinning).
+- **`@atticus`** — Documentation Architect. Invoke for content audits, style enforcement, Diátaxis compliance, and documentation health assessments across any Markdown project.
+
 ## See Also
 
 - **mkdocs.yml** — Full theme, plugin, extension configuration
