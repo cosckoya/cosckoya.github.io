@@ -33,7 +33,6 @@ def main():
                 continue
             lines = content.split("\n")
             inside_code_block = False
-            placeholder_found = False
             for i, line in enumerate(lines):
                 stripped = line.strip()
                 if stripped.startswith("```"):
@@ -47,7 +46,6 @@ def main():
                     print(f"  PLACEHOLDER: {rel}:{i+1}")
                     issues += 1
                     count += 1
-                    placeholder_found = True
                     break
     if count == 0:
         print("  No unresolved placeholders found.")
