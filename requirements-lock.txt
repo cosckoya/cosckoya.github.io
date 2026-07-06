@@ -48,7 +48,7 @@ packaging==26.0
 paginate==0.5.7
 pathspec==1.1.1
 pillow==12.2.0
-platformdirs==4.5.1
+platformdirs==4.10.0
 pre_commit==4.6.0
 properdocs==1.6.7
 pycparser==3.0
