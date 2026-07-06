@@ -1,18 +1,18 @@
 ---
-title: Cybersecurity Learning Path (Zero to Hero)
-description: Complete roadmap from beginner to professional - foundations, certifications, specializations, career paths
+title: Cybersecurity Learning Path
+description: From zero to hired — realistic 12-18 month cybersecurity career path with phases, budgets, and action plans
 ---
 
-# :fontawesome-solid-road: Cybersecurity Learning Path (Zero to Hero)
+# :fontawesome-solid-graduation-cap: Cybersecurity Learning Path
 
-The realistic path from zero technical knowledge to cybersecurity professional. No shortcuts, no BS. Expect 12-18 months to first job. Linux fundamentals, networking basics, security concepts, hands-on labs, certifications. Choose specialization: offensive (red team), defensive (blue team), or governance (GRC). Practice beats theory.
+From zero to hired — a realistic 12-18 month path into cybersecurity. No shortcuts, no "learn hacking in 30 days" bullshit. This is what actually works.
 
 !!! tip "2026 Update"
-    Entry-level market competitive (100+ applicants per SOC role). Certifications + hands-on projects mandatory. TryHackMe/HackTheBox expected on resume. Cloud security skills premium (AWS/Azure/GCP). AI-assisted learning tools (ChatGPT explains vulnerabilities). Remote-first security roles common. Junior pentester roles rare (start SOC, pivot later).
+    The cybersecurity job market is competitive at entry-level (everyone wants to be a hacker). SOC analyst roles are your best bet for first job. Cloud security is the fastest-growing specialization. AI/ML security is emerging. Remote entry-level roles are scarce — prioritize in-person opportunities.
 
-______________________________________________________________________
+---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## Quick Hits
 
 === ":fontawesome-solid-list-check: Learning Phases"
 
@@ -23,7 +23,7 @@ ______________________________________________________________________
 
     # Linux fundamentals (Ubuntu/Kali)
     # Install VM (VirtualBox/VMware)
-    wget https://releases.ubuntu.com/22.04/ubuntu-22.04-desktop-amd64.iso  # (1)!
+    wget https://releases.ubuntu.com/22.04/ubuntu-22.04-desktop-amd64.iso
 
     # Essential Linux commands
     ls -la                  # List files (detailed)
@@ -31,14 +31,14 @@ ______________________________________________________________________
     cat syslog             # View file contents
     grep "error" syslog    # Search in files
     chmod 755 script.sh    # Change permissions
-    ps aux | grep apache   # Process management  # (2)!
+    ps aux | grep apache   # Process management
 
     # Networking basics (learn by doing)
     ping google.com        # Test connectivity
     traceroute google.com  # View route
     netstat -tuln          # View listening ports
     nslookup example.com   # DNS lookup
-    curl -I https://example.com  # HTTP headers  # (3)!
+    curl -I https://example.com  # HTTP headers
 
     # Python basics (security automation)
     # Example: Port scanner
@@ -48,7 +48,7 @@ ______________________________________________________________________
         """Basic port scanner."""
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(1)
-        result = sock.connect_ex((host, port))  # (4)!
+        result = sock.connect_ex((host, port))
         sock.close()
         return result == 0  # True if port open
 
@@ -58,183 +58,34 @@ ______________________________________________________________________
             print(f"Port {port}: OPEN")
     ```
 
-    1. Ubuntu VM for practice (or dual boot)
-    2. Understand processes, permissions, file system
-    3. Networking: OSI model, TCP/IP, DNS, HTTP
-    4. Python for security automation (scripting essential)
-
     **Free resources:**
-    - **Linux:** Linux Journey website, TryHackMe "Linux Fundamentals"
+    - **Linux:** Linux Journey website, TryHackME "Linux Fundamentals"
     - **Networking:** Professor Messer Network+ (YouTube, free)
     - **Python:** "Automate the Boring Stuff with Python" (free book)
 
     **Time commitment:** 1-2 hours daily
 
+    ---
+
     **Phase 1: Security Fundamentals (3-6 months)**
-    ```python
-    # Goal: Understand cybersecurity concepts, basic attacks, tools
-
-    # Core concepts to master
-    security_fundamentals = {
-        "CIA_Triad": {
-            "Confidentiality": "Prevent unauthorized access (encryption)",
-            "Integrity": "Prevent unauthorized modification (hashing)",
-            "Availability": "Ensure systems accessible (DDoS mitigation)"  # (1)!
-        },
-        "Authentication": {
-            "Something you know": "Password",
-            "Something you have": "Token, smart card",
-            "Something you are": "Biometrics (fingerprint)"
-        },
-        "OWASP_Top_10": [
-            "Broken Access Control",
-            "Cryptographic Failures",
-            "Injection (SQL, XSS, command)",
-            "Insecure Design",
-            "Security Misconfiguration"  # (2)!
-        ],
-        "Common_Attacks": {
-            "Phishing": "Social engineering via email",
-            "SQL Injection": "Database manipulation via input",
-            "XSS": "Inject JavaScript into web pages",
-            "MITM": "Intercept network traffic"
-        }
-    }
-
-    # Hands-on practice (TryHackMe example)
-    # Complete these paths:
-    paths = [
-        "Pre Security (free)",           # Basics  # (3)!
-        "Introduction to Cyber Security (free)",
-        "Jr Penetration Tester ($10/month)"
-    ]
-
-    # Essential tools to learn
-    tools = {
-        "nmap": "Network scanning (port discovery)",
-        "Wireshark": "Packet analysis (network traffic)",
-        "Burp Suite": "Web app testing (proxy, scanner)",
-        "Metasploit": "Exploitation framework",
-        "John the Ripper": "Password cracking"
-    }  # (4)!
-    ```
-
-    1. CIA Triad foundation of all security decisions
-    2. OWASP Top 10 roadmap for web vulnerabilities
-    3. TryHackMe best for beginners (gamified, structured)
-    4. Learn tools by using them (not just reading docs)
-
-    **First certification: CompTIA Security+**
-    ```bash
-    # Why Security+?
-    - Industry baseline (HR filters require it)
-    - Covers all security domains (breadth over depth)
-    - Makes you employable (entry-level requirement)
-    - Study time: 2-3 months (1 hour daily)
-
-    # Study resources
-    - Professor Messer YouTube (free, excellent)
-    - Jason Dion Udemy course ($15 on sale)
-    - Practice exams (critical - do 5+ full exams)
-
-    # Exam details
-    - Cost: $400
-    - Format: 90 questions, 90 minutes
-    - Passing: 750/900 (83%)
-    - Difficulty: Moderate (not technical deep-dive)  # (5)!
-    ```
-
-    5. Security+ opens doors (requirement for many DoD/gov jobs)
-
-    **By end of Phase 1:**
-    - ✅ Understand security concepts (CIA, AAA, defense in depth)
-    - ✅ Know basic attack techniques (SQLi, XSS, phishing)
-    - ✅ Completed 50+ TryHackMe rooms (hands-on practice)
-    - ✅ Security+ certification obtained
-    - ✅ Can explain MITM attack to non-technical person
+    See **[security-fundamentals.1337.md](security-fundamentals.1337.md)** — Core concepts, Security+ prep, essential tools.
 
     **Phase 2: Choose Specialization (6-12 months)**
-    ```markdown
-    ## Three Primary Paths
 
-    ### Path A: Offensive Security (Red Team)
-    **Best for:** Puzzle-solvers, people who like breaking things
-    **Difficulty:** Hard to get first job (fewer openings)
-    **Salary:** $60k-$150k+ (high ceiling)
-
-    **Learning focus:**
-    - Web app pentesting (PortSwigger Academy - free, excellent)
-    - Network pentesting (Nmap, Metasploit mastery)
-    - Active Directory attacks (Bloodhound, Mimikatz)
-    - Privilege escalation (Linux, Windows)
-
-    **Certifications (in order):**
-    1. eJPT ($200) - Beginner-friendly
-    2. PNPT ($400) - Practical focus
-    3. OSCP ($1,649) - Gold standard (very hard)  # (1)!
-
-    **Practice platforms:**
-    - HackTheBox (start with "Easy" retired boxes)
-    - TryHackMe "Offensive Pentesting" path
-    - VulnHub vulnerable VMs
-
-    ### Path B: Defensive Security (Blue Team)
-    **Best for:** Analytical thinkers, threat hunters
-    **Difficulty:** Easiest to get first job (high demand)
-    **Salary:** $50k-$120k+
-
-    **Learning focus:**
-    - SIEM fundamentals (Splunk free training)
-    - Threat detection (writing rules, IOC analysis)
-    - Incident response (SANS 6-step process)
-    - Log analysis (Windows Event Logs, syslog)
-
-    **Certifications (in order):**
-    1. Security+ (baseline)
-    2. BTL1 ($499) - Blue Team Level 1 (practical)
-    3. CySA+ ($400) - CompTIA Cybersecurity Analyst
-    4. GCIH ($2,499) - Incident handling (expensive)  # (2)!
-
-    **Practice platforms:**
-    - Blue Team Labs Online (blueteamlabs.online)
-    - CyberDefenders (free challenges)
-    - LetsDefend ($10/month SOC simulator)
-
-    ### Path C: GRC (Governance, Risk, Compliance)
-    **Best for:** Process-oriented, policy writers
-    **Difficulty:** Moderate (less competition)
-    **Salary:** $55k-$130k+
-
-    **Learning focus:**
-    - Security frameworks (NIST CSF, ISO 27001, CIS)
-    - Compliance standards (GDPR, HIPAA, PCI-DSS, SOC 2)
-    - Risk assessment methodologies (qualitative, quantitative)
-    - Audit processes (evidence collection, findings)
-
-    **Certifications (in order):**
-    1. Security+ (foundation)
-    2. CISA ($575) - Auditing focus
-    3. CRISC ($575) - Risk management
-    4. CISSP ($749) - After 5 years experience  # (3)!
-
-    **Reality check:**
-    - Less technical (more documentation)
-    - Stable work (predictable hours)
-    - Can be dry for technical people
-    ```
-
-    1. OSCP hardest beginner cert (24h practical exam)
-    2. BTL1 best value for blue team (practical, affordable)
-    3. CISSP requires 5 years experience (management-level)
+    | Path | Focus | Entry Difficulty | Salary Range |
+    |------|-------|-----------------|--------------|
+| :fontawesome-solid-crosshairs: **[Offensive (Red Team)](offensive-security.1337.md)** | Pentesting, AD attacks, exploit dev | Hard | $60-150k+ |
+| :fontawesome-solid-shield-halved: **[Defensive (Blue Team)](defensive-security.1337.md)** | SOC, SIEM, incident response | Easiest | $50-120k+ |
+| :fontawesome-solid-scale-balanced: **[GRC](grc.1337.md)** | Compliance, risk, policy | Moderate | $55-130k+ |
 
     **Recommended path for most people:**
 
     Start with **Blue Team (SOC Analyst)** path because:
-    - ✅ Easiest to get first job (SOC roles abundant)
-    - ✅ Learn both offense + defense (investigate attacks)
-    - ✅ Can pivot to red team later (understand defense first)
-    - ✅ Steady learning curve (not overwhelming)
-    - ✅ Clear certification progression
+    - Easiest to get first job (SOC roles abundant)
+    - Learn both offense + defense (investigate attacks)
+    - Can pivot to red team later (understand defense first)
+    - Steady learning curve (not overwhelming)
+    - Clear certification progression
 
 === ":fontawesome-solid-bolt: Career Paths & Jobs"
 
@@ -257,7 +108,7 @@ ______________________________________________________________________
                 "Escalate to Tier 2",
                 "Document findings"
             ]
-        },  # (1)!
+        },
         "Junior Security Analyst": {
             "difficulty": "Moderate",
             "salary": "$55-75k",
@@ -277,7 +128,7 @@ ______________________________________________________________________
                 "Web app + network testing",
                 "Report writing skills"
             ]
-        },  # (2)!
+        },
         "GRC Analyst": {
             "difficulty": "Moderate",
             "salary": "$55-70k",
@@ -291,9 +142,6 @@ ______________________________________________________________________
     }
     ```
 
-    1. SOC Tier 1 easiest entry (high turnover = always hiring)
-    2. Junior pentester rare (companies hire senior pentesters)
-
     **How to stand out (portfolio building):**
     ```bash
     # 1. GitHub portfolio (show your work)
@@ -302,7 +150,7 @@ ______________________________________________________________________
     ├── vulnerable-app-audit/     # Security assessment writeup
     ├── homelab-documentation/    # SIEM setup, network diagram
     ├── ctf-writeups/            # TryHackMe/HTB solutions
-    └── automation-scripts/       # PowerShell/Python security scripts  # (1)!
+    └── automation-scripts/       # PowerShell/Python security scripts
 
     # 2. Blog/website (demonstrate knowledge)
     # Write about:
@@ -310,7 +158,7 @@ ______________________________________________________________________
     - Walkthrough of HTB machine
     - Explanation of CVE you studied
     - Home lab setup guide
-    # Host on: Medium, GitHub Pages, personal domain  # (2)!
+    # Host on: Medium, GitHub Pages, personal domain
 
     # 3. Certifications + platform stats
     Resume-worthy metrics:
@@ -318,7 +166,7 @@ ______________________________________________________________________
     - TryHackMe: Top 5% (50,000+ points)
     - HackTheBox: 20+ boxes pwned
     - PortSwigger Academy: All labs completed
-    - GitHub: 10+ security projects  # (3)!
+    - GitHub: 10+ security projects
 
     # 4. Networking (most jobs never posted)
     # Attend:
@@ -326,13 +174,8 @@ ______________________________________________________________________
     - BSides conferences ($20-50, beginner-friendly)
     - Security meetups (Meetup.com)
     - Join Discord: TryHackMe, HackTheBox, InfoSec communities
-    - LinkedIn: Connect with security professionals, engage with content  # (4)!
+    - LinkedIn: Connect with security professionals, engage with content
     ```
-
-    1. Portfolio shows hands-on skills (certificates alone not enough)
-    2. Blog demonstrates communication (security is 50% communication)
-    3. Quantify everything (recruiters filter on numbers)
-    4. Networking gets interviews (many jobs filled via referrals)
 
     **Resume tips for security roles:**
     ```markdown
@@ -358,14 +201,11 @@ ______________________________________________________________________
       - Monitored security alerts (500+ tickets analyzed)
       - Assisted with vulnerability management (Nessus scans)
       - Documented security incidents (ticketing system)
-      - Collaborated with security team on phishing campaigns  # (1)!
+      - Collaborated with security team on phishing campaigns
 
     **Use security keywords:**
-    SIEM, IDS/IPS, SOC, incident response, threat intelligence, vulnerability assessment, penetration testing, MITRE ATT&CK, log analysis, network security, endpoint security, NIST CSF, ISO 27001  # (2)!
+    SIEM, IDS/IPS, SOC, incident response, threat intelligence, vulnerability assessment, penetration testing, MITRE ATT&CK, log analysis, network security, endpoint security, NIST CSF, ISO 27001
     ```
-
-    1. Reframe IT experience with security angle (legit if true)
-    2. Keywords pass ATS (Applicant Tracking Systems)
 
     **Salary expectations (US, 2026):**
     ```python
@@ -387,7 +227,7 @@ ______________________________________________________________________
             "Medium cost": "$60-75k",
             "High cost": "$70-90k"
         }
-    }  # (3)!
+    }
 
     # Career progression (5-year outlook)
     progression = {
@@ -397,8 +237,6 @@ ______________________________________________________________________
         "Years 10+": "Lead/Manager ($150-250k+)"
     }
     ```
-
-    3. Location hugely impacts salary (remote normalizing pay)
 
     **Phase 4: Continuous Growth (18+ months)**
     ```bash
@@ -410,7 +248,7 @@ ______________________________________________________________________
         "Speak at local meetups/conferences",
         "Mentor junior analysts",
         "Build professional network"
-    ]  # (1)!
+    ]
 
     # Specialization options (after generalist foundation)
     specializations = {
@@ -421,7 +259,7 @@ ______________________________________________________________________
         "Red Team Operations": "Full-scope adversary simulation",
         "Security Architecture": "Design secure systems, threat modeling",
         "Digital Forensics": "Incident investigation, evidence preservation"
-    }  # (2)!
+    }
 
     # Continuous learning (security never stops)
     stay_current = [
@@ -433,9 +271,6 @@ ______________________________________________________________________
     ]
     ```
 
-    1. Continuous learning mandatory (threat landscape evolves daily)
-    2. Specialize after 2-3 years (T-shaped skills: broad + deep)
-
 === ":fontawesome-solid-fire: Budget & Action Plan"
 
     **Budget breakdown (realistic costs):**
@@ -445,7 +280,7 @@ ______________________________________________________________________
         "Security+ exam": "$400",
         "TryHackMe subscription (1 year)": "$120",
         "Total": "$520"
-    }  # (1)!
+    }
 
     # Recommended (balanced)
     recommended_path = {
@@ -454,7 +289,7 @@ ______________________________________________________________________
         "BTL1 or eJPT": "$400-500",
         "Books/resources": "$100",
         "Total": "$1,120-1,220"
-    }  # (2)!
+    }
 
     # Premium (fastest path)
     premium_path = {
@@ -463,7 +298,7 @@ ______________________________________________________________________
         "OSCP": "$1,649",
         "Conference ticket (BSides)": "$50-200",
         "Total": "$2,449-2,599"
-    }  # (3)!
+    }
 
     # Free alternatives (if budget constrained)
     free_resources = {
@@ -472,13 +307,8 @@ ______________________________________________________________________
         "Learning": "Professor Messer (YouTube), Cybrary (free tier)",
         "Books": "Library, Anna's Archive, free online books",
         "VMs": "VirtualBox (free), VulnHub (free VMs)"
-    }  # (4)!
+    }
     ```
-
-    1. Minimum viable path ($520 gets you started)
-    2. Recommended for most people ($1,200 over 12-18 months)
-    3. Premium accelerates learning (not required)
-    4. Free resources exist (budget not a blocker)
 
     **Common mistakes to avoid:**
     ```bash
@@ -493,7 +323,7 @@ ______________________________________________________________________
     - 1 certification at a time
     - 100+ hours hands-on labs per cert
     - Build projects demonstrating knowledge
-    - Can explain AND demonstrate  # (1)!
+    - Can explain AND demonstrate
 
     # ❌ Tutorial hell (consuming content without doing)
     Wrong: Watch 50 hours of pentesting videos
@@ -501,7 +331,7 @@ ______________________________________________________________________
 
     # ❌ Trying to learn everything at once
     Wrong: Red team + blue team + GRC + cloud + forensics
-    ✅ Right: Pick one path, go deep, add breadth later  # (2)!
+    ✅ Right: Pick one path, go deep, add breadth later
 
     # ❌ Imposter syndrome paralysis
     Wrong: "I'm not ready to apply (after 2 years studying)"
@@ -511,7 +341,7 @@ ______________________________________________________________________
     # ❌ Ignoring soft skills
     Technical skills: 50% of job
     Communication: 25% (writing reports, explaining to non-technical)
-    Teamwork: 25% (security is collaborative)  # (3)!
+    Teamwork: 25% (security is collaborative)
 
     # ❌ Not networking
     Wrong: Only apply via job boards (10% success rate)
@@ -520,13 +350,8 @@ ______________________________________________________________________
     # ❌ Giving up too early
     Reality: 12-18 months minimum to first job
     Common mistake: Give up at month 6
-    Success: Consistent effort over 18 months  # (4)!
+    Success: Consistent effort over 18 months
     ```
-
-    1. Certs prove baseline knowledge (labs prove competence)
-    2. T-shaped skills: Deep in one area, broad in others
-    3. Communication critical (explain risks to executives)
-    4. Persistence wins (most people quit too early)
 
     **Day 1 action plan (start today):**
     ```bash
@@ -545,7 +370,7 @@ ______________________________________________________________________
     - Open terminal
     - Learn 10 commands: ls, cd, pwd, cat, grep, chmod, ps, netstat, ping, curl
     - Create directories, files via command line
-    - Practice navigating file system  # (1)!
+    - Practice navigating file system
 
     # This week (7 days):
     - 1 hour daily: TryHackMe (complete 2-3 rooms)
@@ -558,7 +383,7 @@ ______________________________________________________________________
     - Comfortable in Linux terminal (50+ commands memorized)
     - Decide specialization (Red/Blue/GRC)
     - Start Security+ study plan (2-3 month timeline)
-    - Join Discord communities (TryHackMe, HackTheBox)  # (2)!
+    - Join Discord communities (TryHackMe, HackTheBox)
 
     # Month 2-3:
     - Security+ focused study (1-2 hours daily)
@@ -582,12 +407,8 @@ ______________________________________________________________________
     - Continuous applications (10-20 per week)
     - Interview practice (technical + behavioral)
     - Land first security job
-    - Celebrate! 🎉  # (3)!
+    - Celebrate!
     ```
-
-    1. Start immediately (don't wait for "perfect" moment)
-    2. Consistency beats intensity (1 hour daily > 10 hours Sunday)
-    3. Timeline realistic (12-18 months common for career switchers)
 
     **Why this path works:**
     - Start with foundations (don't skip basics)
@@ -598,26 +419,26 @@ ______________________________________________________________________
     - Specialization after generalist base (T-shaped skills)
     - Realistic timeline (no get-rich-quick promises)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Recommended Learning Platforms
 
 ### :fontawesome-solid-book-open: Hands-On Practice
 
-- **[TryHackMe](https://tryhackme.com/)** - $10/month, best for beginners (structured paths)
-- **[HackTheBox](https://www.hackthebox.com/)** - $14/month, more challenging (realistic machines)
-- **[PentesterLab](https://pentesterlab.com/)** - $20/month, web exploitation focus
-- **[Blue Team Labs Online](https://blueteamlabs.online/)** - $15/month, SOC analyst training
-- **[LetsDefend](https://letsdefend.io/)** - $10/month, SOC simulator
-- **[PortSwigger Academy](https://portswigger.net/web-security)** - Free, web security (excellent)
+- **[TryHackMe](https://tryhackme.com/)** — $10/month, best for beginners (structured paths)
+- **[HackTheBox](https://www.hackthebox.com/)** — $14/month, more challenging (realistic machines)
+- **[PentesterLab](https://pentesterlab.com/)** — $20/month, web exploitation focus
+- **[Blue Team Labs Online](https://blueteamlabs.online/)** — $15/month, SOC analyst training
+- **[LetsDefend](https://letsdefend.io/)** — $10/month, SOC simulator
+- **[PortSwigger Academy](https://portswigger.net/web-security)** — Free, web security (excellent)
 
 ### :fontawesome-solid-rocket: Free Resources
 
-- **[Professor Messer](https://www.professormesser.com/)** - Free Security+ videos (YouTube)
-- **[Cybrary](https://www.cybrary.it/)** - Free tier (courses, paths)
-- **[CyberDefenders](https://cyberdefenders.org/)** - Free blue team challenges
-- **[Linux Journey](https://linuxjourney.com/)** - Free Linux fundamentals
-- **[OWASP](https://owasp.org/)** - Free resources (Top 10, guides, tools)
+- **[Professor Messer](https://www.professormesser.com/)** — Free Security+ videos (YouTube)
+- **[Cybrary](https://www.cybrary.it/)** — Free tier (courses, paths)
+- **[CyberDefenders](https://cyberdefenders.org/)** — Free blue team challenges
+- **[Linux Journey](https://linuxjourney.com/)** — Free Linux fundamentals
+- **[OWASP](https://owasp.org/)** — Free resources (Top 10, guides, tools)
 
 ### :fontawesome-solid-certificate: Certification Roadmaps
 
@@ -630,7 +451,7 @@ ______________________________________________________________________
 **Senior-Level (5+ years):**
 - CISSP (management) or OSEP (advanced offensive) or GCFA (forensics)
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-graduation-cap: **No Shortcuts** - 12-18 months to first job (realistic). Certifications required (HR filters). Hands-on projects mandatory (certs alone not enough). SOC easiest entry (pivot later). Junior pentester roles rare (start blue team). Portfolio + networking > 100 applications. Imposter syndrome normal (apply anyway). Budget $500-2,500 over 18 months.
 
