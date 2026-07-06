@@ -62,7 +62,7 @@ regex==2025.11.3
 requests==2.33.0
 rich==14.3.1
 ruamel.yaml==0.19.1
-ruff==0.15.16
+ruff==0.15.20
 setuptools==80.9.0
 six==1.17.0
 stevedore==5.6.0
