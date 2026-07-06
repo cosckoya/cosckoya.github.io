@@ -30,7 +30,7 @@ mdformat-frontmatter==2.1.2
 mdformat-mkdocs==2.1.1
 mdformat-tables==1.0.0
 codespell==2.4.2
-ruff==0.15.16
+ruff==0.15.20
 bandit==1.9.4
 yamllint==1.38.0
 
