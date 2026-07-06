@@ -336,7 +336,7 @@ tmux select-layout tiled            # Tile all panes
 **Communities:**
 - **[r/tmux](https://reddit.com/r/tmux)** - Reddit community
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-window-restore: **Terminal Multiplexer Essential** - TMUX is the difference between a terminal and a terminal *workstation*. Persistent sessions survive SSH disconnects. Split panes, window management, copy mode with vim bindings. Non-negotiable for remote development.
 

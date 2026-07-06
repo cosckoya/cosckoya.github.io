@@ -10,7 +10,7 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
 !!! tip "2026 Update"
     Windows 11 matured significantly. WSL2 is production-ready with GUI support, GPU acceleration, and systemd. Windows Terminal is excellent. Native package manager (winget) finally works. Developer experience improved dramatically.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -141,7 +141,7 @@ ______________________________________________________________________
         - **Hardware-accelerated GPU scheduling** - Enable in Graphics Settings
         - **Xbox Game Bar** - Useful for recording, but disable if performance issues
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -158,7 +158,7 @@ ______________________________________________________________________
 - **[PowerShell.org](https://powershell.org/)** - Community resources
 - **[PSKoans](https://github.com/vexx32/PSKoans)** - Interactive PowerShell learning
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield-halved: Security Audit Tools
 
@@ -500,7 +500,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
     - **Blindly trusting findings** - Always validate before exploiting
     - **Old tool versions** - Update monthly, security tools evolve rapidly
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -508,7 +508,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Windows Documentation](https://docs.microsoft.com/en-us/windows/)
 
@@ -518,7 +518,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-box: __Package Managers__
 
-    ______________________________________________________________________
+    ---
 
     [winget](https://docs.microsoft.com/en-us/windows/package-manager/)
 
@@ -528,7 +528,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Essential Tools__
 
-    ______________________________________________________________________
+    ---
 
     [Windows Terminal](https://github.com/microsoft/terminal)
 
@@ -540,7 +540,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [r/Windows11](https://reddit.com/r/Windows11)
 
@@ -550,7 +550,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Improved** - Windows finally respects developers thanks to WSL2. Still not as smooth as Linux/macOS for dev work, but gaming + productivity combo is unbeatable.
 **Tags:** windows, operating-system, microsoft, wsl

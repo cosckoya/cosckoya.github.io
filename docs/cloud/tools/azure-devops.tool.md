@@ -10,7 +10,7 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
 !!! tip "2026 Update"
     Azure Pipelines supports GitHub integration natively. Multi-stage YAML pipelines are standard. Artifact feeds now include npm, NuGet, Maven, Python. Boards integrate with Microsoft Teams. Free tier includes 1800 pipeline minutes/month.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -237,7 +237,7 @@ ______________________________________________________________________
         - **Artifact retention** - Default 30 days, configure longer for releases
         - **Cross-org PRs** - Not supported (unlike GitHub forks)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -255,7 +255,7 @@ ______________________________________________________________________
 - **Azure Artifacts** - Package feeds (npm, NuGet, Maven, Python, universal)
 - **Azure Test Plans** - Manual and exploratory testing (requires paid license)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Related Tools
 
@@ -263,7 +263,7 @@ ______________________________________________________________________
 - **[Azure Pipelines VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)** - YAML IntelliSense
 - **[Azure Repos VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)** - Git integration
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-building: **Enterprise Choice** - Better than GitHub for large organizations with complex workflows. Strong Azure integration. Boards more powerful than GitHub Projects. Free tier generous. UI less polished than GitHub.
 

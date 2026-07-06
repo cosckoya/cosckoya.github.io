@@ -393,7 +393,7 @@ p10k configure
 - **[r/zsh](https://reddit.com/r/zsh)** - Reddit community
 - **[ZSH Discord](https://discord.gg/zsh)** - Discord server
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-terminal: **Shell Perfection** - ZSH with Zinit and Powerlevel10k is the ultimate shell experience. Auto-suggestions, syntax highlighting, fast completions. Fish-level UX with Bash compatibility. The standard for serious terminal users.
 

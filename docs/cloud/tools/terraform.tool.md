@@ -10,7 +10,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 !!! tip "2026 Update"
     Terraform 1.9+ is mature and stable. OpenTofu fork is growing (post-license drama). Focus on modules, remote state, and workspace strategies. HCP Terraform (formerly Terraform Cloud) is the recommended state backend.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -301,7 +301,7 @@ ______________________________________________________________________
         - **Day-2 operations** - patching, log rotation, backups (use automation tools)
         - **Frequent changes** - if config changes hourly, Terraform's overhead isn't worth it
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Paths
 
@@ -355,7 +355,7 @@ ______________________________________________________________________
     - **Dynamic credentials** - Vault provider for short-lived AWS credentials
     - **Policy as code** - Sentinel or OPA for compliance checks in Terraform Cloud
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-heart-pulse: Community Pulse
 
@@ -396,7 +396,7 @@ ______________________________________________________________________
 - **[HashiCorp User Groups](https://www.meetup.com/pro/hugs/)** - Local meetups worldwide
 - **[Open Source Summit](https://events.linuxfoundation.org/)** - Often features IaC talks
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -404,7 +404,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Terraform Documentation](https://www.terraform.io/docs)
 
@@ -416,7 +416,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-flask: __Hands-on Practice__
 
-    ______________________________________________________________________
+    ---
 
     [Terraform Tutorials](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code)
 
@@ -428,7 +428,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Code Examples__
 
-    ______________________________________________________________________
+    ---
 
     [Terraform AWS Examples](https://github.com/hashicorp/terraform-provider-aws/tree/main/examples)
 
@@ -440,7 +440,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-fire: __Advanced Topics__
 
-    ______________________________________________________________________
+    ---
 
     [Terraform Best Practices](https://www.terraform-best-practices.com/)
 
@@ -452,7 +452,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-screwdriver-wrench: __Tools & Extensions__
 
-    ______________________________________________________________________
+    ---
 
     [Terraform VSCode Extension](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
 
@@ -468,7 +468,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-rss: __News & Updates__
 
-    ______________________________________________________________________
+    ---
 
     [Terraform Changelog](https://github.com/hashicorp/terraform/blob/main/CHANGELOG.md)
 
@@ -480,7 +480,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-fire: **Essential** - Infrastructure as Code is non-negotiable in 2026. Terraform is the industry standard. OpenTofu fork is viable alternative post-license drama. Master state management, modules, and workspaces. HCP Terraform (formerly Terraform Cloud) is worth paying for teams.
 **Tags:** terraform, iac, devops, hashicorp

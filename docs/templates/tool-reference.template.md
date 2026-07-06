@@ -3,14 +3,14 @@ title: {{TOOL_NAME}}
 description: {{ONE_LINE_DESCRIPTION}}
 ---
 
-!!! danger "⚠️ DEPRECATED"
-    Use [`page.template.md`](page.template.md) instead. This template is kept for reference only and will be removed in a future update.
+!!! danger "⚠️ DEPRECATED — Scheduled for removal: 2026-09-01"
+    Use [`page.template.md`](page.template.md) instead. This template is kept for reference until the removal date.
 
 # {{TOOL_NAME}}
 
 {{INTRO_PARAGRAPH}}
 
-______________________________________________________________________
+---
 
 ## Quick Hits
 
@@ -44,7 +44,7 @@ ______________________________________________________________________
 
     {{GOTCHAS_BULLETS}}
 
-______________________________________________________________________
+---
 
 ## Installation
 
@@ -52,19 +52,19 @@ ______________________________________________________________________
 {{INSTALLATION_COMMANDS}}
 ```
 
-______________________________________________________________________
+---
 
 ## Configuration
 
 {{CONFIGURATION_CONTENT}}
 
-______________________________________________________________________
+---
 
 ## {{ADVANCED_SECTION_TITLE}}
 
 {{ADVANCED_CONTENT}}
 
-______________________________________________________________________
+---
 
 ## Reference
 
@@ -79,7 +79,7 @@ ______________________________________________________________________
 - :fontawesome-solid-fire: __{{RELATED_1}}__
 - :fontawesome-solid-wrench: __{{RELATED_2}}__
 
-______________________________________________________________________
+---
 
 **Last Updated:** {{LAST_UPDATED}}
 **Tags:** {{TAG_1}}, {{TAG_2}}, tools

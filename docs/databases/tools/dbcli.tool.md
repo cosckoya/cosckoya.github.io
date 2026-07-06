@@ -10,7 +10,7 @@ Family of interactive SQL clients (mycli, pgcli, litecli) that add modern CLI co
 !!! tip "2026 Update"
     All DBCli tools support vi/emacs keybindings, custom themes, and can output in multiple formats (csv, tsv, json). PostgreSQL support is mature and feature-complete. SQLite version still catching up but solid for local dev.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -109,7 +109,7 @@ ______________________________________________________________________
     - Connection pooling doesn't work the same as in application connections — each DBCli session is a direct connection
     - Some DBCli tools are slower than native clients on large result sets — if you're streaming millions of rows, `psql` or `mysql` CLI might be faster
 
-______________________________________________________________________
+---
 
 ## Configuration
 
@@ -126,7 +126,7 @@ pager = less -SRXF                          # Custom pager
 theme = native                              # Color theme (monokai, native, solarized, etc.)
 ```
 
-______________________________________________________________________
+---
 
 ## Reference
 
@@ -143,7 +143,7 @@ ______________________________________________________________________
 - :fontawesome-solid-database: __ClickHouse CLI — specialized for OLAP queries__
 - :fontawesome-solid-code: __SQLAlchemy — Python ORM for programmatic queries__
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-terminal: **CLI Essential** - Unified database CLI with auto-completion and syntax highlighting. pgcli/mycli/litecli cover the major relational databases. Far better than raw psql/mysql/sqlite3 for interactive work.
 

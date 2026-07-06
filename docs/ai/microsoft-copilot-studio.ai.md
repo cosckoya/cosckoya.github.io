@@ -10,7 +10,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 !!! tip "2026 Update"
     Generative AI actions powered by Azure OpenAI. Custom plugins for Microsoft 365 Copilot. Dataverse integration for enterprise data. Multi-language support (50+ languages). Voice-enabled copilots. Analytics dashboard for conversation insights.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -249,7 +249,7 @@ ______________________________________________________________________
         - **File uploads** - Not supported in all channels (Teams yes, web varies)
         - **Voice** - Requires additional telephony integration
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -268,7 +268,7 @@ ______________________________________________________________________
 - **Analytics** - Conversation insights, topic performance
 - **Microsoft 365 Copilot plugins** - Extend enterprise copilot
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Deployment Channels
 
@@ -281,7 +281,7 @@ ______________________________________________________________________
 | Dynamics 365 | Easy | CRM integration | Sales, service teams |
 | Azure Bot Service | Advanced | Custom channels, speech | Enterprise scenarios |
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-dollar-sign: Pricing (2026)
 
@@ -298,7 +298,7 @@ ______________________________________________________________________
 - Power Automate flows: Included in premium licenses
 - Premium connectors: Varies by service
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Integration Points
 
@@ -310,7 +310,7 @@ ______________________________________________________________________
 - **Azure OpenAI** - Generative AI capabilities
 - **Microsoft 365 Copilot** - Extend with custom plugins
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-users: **Low-Code Champion** - Perfect for business users building conversational AI. Visual designer is intuitive. Power Platform integration is powerful. Licensing confusing. Great for internal use cases (Teams). Generative AI makes bots smarter.
 

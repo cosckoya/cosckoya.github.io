@@ -10,7 +10,7 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
 !!! tip "2026 Update"
     AI-powered code review (GPT-4 finds logic flaws). SAST/DAST in every pipeline. SCA (Software Composition Analysis) critical (87% apps use vulnerable dependencies). API security massive focus (APIs are 83% of web traffic). Supply chain attacks mainstream concern. DevSecOps standard practice.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -390,7 +390,7 @@ ______________________________________________________________________
         - **Third-party scripts** - CDN scripts can be compromised (Subresource Integrity)
         - **Deserialization** - Java, Python, Ruby deserialization RCE common
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning & Certifications
 
@@ -407,7 +407,7 @@ ______________________________________________________________________
 - **[PentesterLab](https://pentesterlab.com/)** - $20/month, web exploitation exercises
 - **[HackTheBox](https://www.hackthebox.com/)** - $14/month, includes web challenges
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Essential Toolkit
 
@@ -420,7 +420,7 @@ ______________________________________________________________________
 | **API** | Postman, ffuf, OWASP ZAP API scan | API security testing |
 | **Fuzzing** | ffuf, wfuzz, Burp Intruder | Input fuzzing |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield: **Shift Left** - Security in CI/CD now standard. SAST false positives annoying. API security critical (83% of traffic). SCA finds vulnerable dependencies (87% apps affected). Bug bounties democratized vuln research. DevSecOps culture shift painful but necessary.
 

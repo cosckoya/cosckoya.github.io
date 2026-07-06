@@ -10,7 +10,7 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
 !!! tip "2026 Update"
     Snyk Code (SAST) is GA with low false-positive rate. Container scanning includes malware detection. IaC scanning covers Terraform, CloudFormation, Kubernetes, Helm. DeepCode AI powers fix suggestions. Free tier increased to 200 tests/month.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -203,7 +203,7 @@ ______________________________________________________________________
         - **Language support** - Node, Python, Java, .NET, Go, Ruby, PHP well-supported
         - **Monorepo scanning** - Use `--all-projects` (counts as multiple tests)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -222,7 +222,7 @@ ______________________________________________________________________
 - **Auto-fix PRs** - Automated dependency upgrades
 - **Reachability analysis** - Shows if vulnerable code is actually used
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Alternatives
 
@@ -231,7 +231,7 @@ ______________________________________________________________________
 - **[WhiteSource/Mend](https://www.mend.io/)** - Enterprise, expensive
 - **[Aqua Security](https://www.aquasec.com/)** - Container runtime protection
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-star: **Developer Favorite** - Best balance of features and ease of use. Low false positives. Auto-fix PRs are game-changer. Free tier sufficient for small teams. Paid tiers expensive but worth it for enterprises.
 

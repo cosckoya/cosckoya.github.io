@@ -10,7 +10,7 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
 !!! tip "2026 Update"
     Purple teaming standard practice (not just red vs. blue). Detection-as-Code (version-controlled rules). Security chaos engineering (break security to improve it). Platform engineering includes security. Continuous validation replaces annual pentests. Security engineering career path distinct from SOC analyst.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -451,7 +451,7 @@ ______________________________________________________________________
         - **Atomic Red Team noise** - Some tests trigger too many alerts
         - **DevSecOps friction** - Security gates slow deployments (balance speed vs. security)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning & Certifications
 
@@ -468,7 +468,7 @@ ______________________________________________________________________
 - **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)** - Free, ATT&CK technique testing
 - **[Caldera](https://github.com/mitre/caldera)** - Free, automated adversary emulation
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Essential Toolkit
 
@@ -481,7 +481,7 @@ ______________________________________________________________________
 | **DevSecOps** | Semgrep, Snyk, Trivy, Gitleaks | Pipeline security scanning |
 | **Architecture** | Threat modeling tools, draw.io | Design security, threat models |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-handshake: **Collaboration Wins** - Purple team eliminates red vs. blue silos. Detection engineering requires offensive + defensive skills. Security architecture prevents issues at design. DevSecOps culture shift difficult but necessary. SOAR reduces alert fatigue. Metrics measure effectiveness (MTTD, MTTR).
 

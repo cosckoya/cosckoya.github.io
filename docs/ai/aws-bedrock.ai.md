@@ -10,7 +10,7 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
 !!! tip "2026 Update"
     Claude 3.5 Sonnet and Opus 4 available. Multi-modal support (text, images, documents). Custom model import (bring your own weights). Agents framework for autonomous workflows. Guardrails for content filtering. Model evaluation tools integrated.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -273,7 +273,7 @@ ______________________________________________________________________
         - **Knowledge Bases** - S3 sync not instant (10-15 min indexing)
         - **Agents** - Preview feature, API may change
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -292,7 +292,7 @@ ______________________________________________________________________
 - **Model evaluation** - Compare models, human feedback
 - **Custom models** - Import fine-tuned weights
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Available Models (2026)
 
@@ -305,7 +305,7 @@ ______________________________________________________________________
 | Mistral | Mistral Large | $4 | $12 | 32k |
 | Amazon | Titan Text G1 | $0.30 | $0.40 | 32k |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-cloud: **AWS Integration** - Best choice if already on AWS. Serverless is real (no cold starts). Knowledge Bases simplify RAG. Claude models are excellent. Pricing transparent. Regional availability matters.
 

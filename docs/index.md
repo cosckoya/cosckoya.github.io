@@ -9,7 +9,7 @@ description: Technical documentation built with MkDocs Material, GitHub Pages, a
 
 Personal technical knowledge base built by engineers, for engineers. No marketing fluff, no enterprise buzzwords, just practical technical content. Documentation as code. Open source tooling. Continuous deployment. Cyberpunk aesthetics optional.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-rocket: The Stack
 
@@ -98,7 +98,7 @@ markdown_extensions = [
 - **Tabbed content** - Three-tab "Quick Hits" structure
 - **Admonitions** - Tips, warnings, danger callouts
 - **Code highlighting** - 100+ languages supported
-- **Octicons** - GitHub's icon set (`:octicons-name-16:`)
+- **FontAwesome** - Industry-standard icon set (`:fontawesome-solid-...:`)
 - **Mermaid diagrams** - Architecture visualizations
 
 ### CI/CD Pipeline
@@ -233,7 +233,7 @@ theme:
 - Search: Client-side (no server latency)
 - Images: WebP with lazy loading
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-terminal: Tech Specs
 
@@ -320,7 +320,7 @@ extra_css:
   - resources/css/snape.css    # Custom styling
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-code: Content Generation
 
@@ -330,8 +330,9 @@ ______________________________________________________________________
 # Documentation templates (DRY principle)
 docs/templates/
 ├── README.md                    # Template usage guide
-├── tech-reference.template.md   # Cloud platforms, major tech
-└── tool-reference.template.md   # CLI tools, utilities
+├── page.template.md             # **RECOMMENDED** - Universal template
+├── tech-reference.template.md   # DEPRECATED - Use page.template.md
+└── tool-reference.template.md   # DEPRECATED - Use page.template.md
 
 # Usage: Replace {{PLACEHOLDER}} values
 # Example placeholders:
@@ -356,15 +357,14 @@ docs/templates/
 **Pre-write checklist:**
 
 - [ ] All `{{PLACEHOLDER}}` values replaced
-- [ ] Octicons use markdown syntax (`:octicons-name-16:`)
-- [ ] NO plain emojis (octicons only)
+- [ ] FontAwesome icons only (`:fontawesome-solid-...:`), no plain emojis
 - [ ] All code blocks have language specified
 - [ ] "Real talk" bullets are practical and honest
 - [ ] Tone is cynical/realistic (not aspirational)
-- [ ] Tags at bottom (not in frontmatter)
+- [ ] Tags at bottom of page (not in frontmatter)
 - [ ] Frontmatter contains only `title` and `description`
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Why This Tech Stack?
 
@@ -434,7 +434,7 @@ ______________________________________________________________________
 - **Cloudflare Pages** - Unlimited bandwidth, but GitHub integration smoother
 - **Netlify** - Great features, but free tier limits
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-heart: Philosophy
 
@@ -466,7 +466,7 @@ ______________________________________________________________________
 - :fontawesome-solid-xmark: Completeness (better to have 80% of useful content than 100% of everything)
 - :fontawesome-solid-xmark: Beginners first (assumes technical competence)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-circle-question: FAQ
 
@@ -543,7 +543,7 @@ ______________________________________________________________________
     - Per page: 1-2 hours (writing + review)
     - Maintenance: <1 hour/month
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Performance
 
@@ -584,7 +584,7 @@ Total: ~50ms
 Page change: ~50ms (client-side routing)
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-chart-line: Stats
 
@@ -599,7 +599,7 @@ ______________________________________________________________________
 - **Zero runtime errors** (thanks to strict builds)
 - **100% mobile responsive** (works on phones)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-terminal: Contributing
 
@@ -615,15 +615,15 @@ This is a personal documentation project, but if you find errors or have suggest
 - Follow three-tab "Quick Hits" structure
 - Include inline code comments `# (1)!`
 - Maintain cynical-but-helpful tone
-- Use octicons (`:octicons-name-16:`), not emojis
+- Use FontAwesome icons (`:fontawesome-solid-...:`), no emojis
 - Tags at bottom of page (not frontmatter)
 - Validate with `mkdocs build --strict`
 
-______________________________________________________________________
+---
 
 **Built with:** :fontawesome-solid-heart: **and way too much coffee**
 
-**Tech Stack:** Python 3.12 • MkDocs Material 9.7.0 • GitHub Pages • GitHub Actions • Octicons • Mermaid • Pygments • Way too many Markdown extensions
+**Tech Stack:** Python 3.12 • MkDocs Material 9.7.0 • GitHub Pages • GitHub Actions • FontAwesome • Mermaid • Pygments • Way too many Markdown extensions
 
 **Last Updated:** 2026-02-02 | **Build Status:** :fontawesome-solid-circle-check: Passing | **Uptime:** 99.9%
 

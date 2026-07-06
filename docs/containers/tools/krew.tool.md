@@ -484,7 +484,7 @@ kubectl count-pods
 - **[K8s Slack](https://kubernetes.slack.com/)** - #kubectl channel
 - **[GitHub Discussions](https://github.com/kubernetes-sigs/krew/discussions)** - Krew Q&A
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-puzzle-piece: **kubectl Superpowers** - Krew is the kubectl plugin manager that turns a good CLI into an extensible platform. Index has 200+ plugins for debugging, scanning, reporting. Essential for any serious K8s practitioner.
 

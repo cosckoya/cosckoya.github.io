@@ -318,7 +318,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 **Awesome Plugins:**
 - **[Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)** - Curated plugin list
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-fire: **Editor of the Gods** - Neovim is the modern Vim reincarnation. Lua config, LSP integration, tree-sitter parsing. Steep learning curve but unmatched editing speed. If you live in the terminal, this is your editor.
 

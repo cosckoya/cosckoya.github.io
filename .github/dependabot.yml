@@ -43,6 +43,16 @@ updates:
         update-types:
           - "minor"
           - "patch"
+      # Transitive dependencies (not directly managed)
+      transitive-deps:
+        patterns:
+          - "wcwidth"
+          - "filelock"
+          - "identify"
+          - "mdit-py-plugins"
+        update-types:
+          - "minor"
+          - "patch"
 
   # GitHub Actions
   - package-ecosystem: "github-actions"

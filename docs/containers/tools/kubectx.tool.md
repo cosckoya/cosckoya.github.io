@@ -10,7 +10,7 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
 !!! tip "2026 Update"
     Both tools now support JSON output for scripting. Tab completion improved for all shells. Supports kubeconfig with multiple contexts. Integration with Starship prompt. Maintained by Ahmet Alp Balkan (Google).
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -261,7 +261,7 @@ ______________________________________________________________________
         - **Renamed contexts** - Renames only local, not in cluster
         - **fzf required** - Interactive mode needs fzf installed separately
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -280,7 +280,7 @@ ______________________________________________________________________
 - **Context renaming** - Simplify long context names
 - **Shell completion** - Tab completion for bash/zsh/fish
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Alternatives & Related Tools
 
@@ -289,7 +289,7 @@ ______________________________________________________________________
 - **[Lens](https://k8slens.dev/)** - Desktop IDE with visual context switching
 - **[kubectl ctx/ns plugins](https://github.com/kubernetes-sigs/krew)** - Native kubectl plugins
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-bolt: **Essential Tool** - Must-have for anyone managing multiple clusters. Saves hours every week. Interactive mode with fzf is perfect. Zero learning curve. Install immediately.
 

@@ -3,14 +3,14 @@ title: {{TITLE}}
 description: {{DESCRIPTION}}
 ---
 
-!!! danger "⚠️ DEPRECATED"
-    Use [`page.template.md`](page.template.md) instead. This template is kept for reference only and will be removed in a future update.
+!!! danger "⚠️ DEPRECATED — Scheduled for removal: 2026-09-01"
+    Use [`page.template.md`](page.template.md) instead. This template is kept for reference until the removal date.
 
 # {{TITLE}}
 
 {{INTRO_PARAGRAPH}}
 
-______________________________________________________________________
+---
 
 ## Quick Hits
 
@@ -44,19 +44,19 @@ ______________________________________________________________________
 
     {{GOTCHAS_BULLETS}}
 
-______________________________________________________________________
+---
 
 ## {{SECTION_2_TITLE}}
 
 {{SECTION_2_CONTENT}}
 
-______________________________________________________________________
+---
 
 ## {{SECTION_3_TITLE}}
 
 {{SECTION_3_CONTENT}}
 
-______________________________________________________________________
+---
 
 ## Reference
 
@@ -72,7 +72,7 @@ ______________________________________________________________________
 - :fontawesome-solid-book: __{{RELATED_SECTION_2}}__
 - :fontawesome-solid-wrench: __{{RELATED_SECTION_3}}__
 
-______________________________________________________________________
+---
 
 **Last Updated:** {{LAST_UPDATED}}
 **Tags:** {{TAG_1}}, {{TAG_2}}, {{TAG_3}}

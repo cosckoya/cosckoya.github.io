@@ -10,7 +10,7 @@ Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, eve
 !!! tip "2026 Update"
     Linux dominates cloud and containers. Focus on systemd, networking, package management, and shell scripting. WSL2 made Linux essential even for Windows developers. Understanding Linux internals is a career multiplier.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -129,7 +129,7 @@ ______________________________________________________________________
         - **Timezone issues** - Set with `timedatectl set-timezone`
         - **SELinux/AppArmor** - Can block legitimate actions, check logs first
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -154,7 +154,7 @@ ______________________________________________________________________
     - **Pop!_OS** - Ubuntu-based, excellent for developers
     - **Linux Mint** - Windows-like experience, beginner-friendly
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield-halved: Security Audit Tools
 
@@ -386,7 +386,7 @@ Tools for system hardening audits, privilege escalation detection, and security 
     - **Breaking production** - Test hardening changes in staging first
     - **Alert fatigue** - Too many false positives = ignored alerts
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -394,7 +394,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Linux man pages](https://linux.die.net/man/)
 
@@ -404,7 +404,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Essential Skills__
 
-    ______________________________________________________________________
+    ---
 
     [Bash Scripting Guide](https://www.gnu.org/software/bash/manual/)
 
@@ -414,7 +414,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Tools__
 
-    ______________________________________________________________________
+    ---
 
     [Oh My Zsh](https://ohmyz.sh/)
 
@@ -424,7 +424,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [r/linux](https://reddit.com/r/linux)
 
@@ -434,7 +434,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-fire: **Foundation** - If you're doing anything serious with technology, you'll touch Linux. It's not optional anymore.
 **Tags:** linux, operating-system, unix

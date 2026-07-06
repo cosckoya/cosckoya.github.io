@@ -10,7 +10,7 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
 !!! tip "2026 Update"
     AI-powered threat hunting (GPT-4 analyzes IOCs). Dark web monitoring automated. OSINT tools evolved (GraphQL APIs, blockchain intel). Vulnerability research democratized (bug bounties paying millions). Nation-state TTPs publicly documented. Threat intel sharing via STIX/TAXII standard.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -401,7 +401,7 @@ ______________________________________________________________________
         - **LinkedIn intel** - Org structure, employee roles public
         - **Legal risks** - Vulnerability research can violate CFAA (get authorization)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning & Certifications
 
@@ -418,7 +418,7 @@ ______________________________________________________________________
 - **[MalwareBazaar](https://bazaar.abuse.ch/)** - Free, malware samples for research
 - **[Hack The Box](https://www.hackthebox.com/)** - $14/month, includes OSINT challenges
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Essential Toolkit
 
@@ -431,7 +431,7 @@ ______________________________________________________________________
 | **Malware** | Cuckoo, Volatility, Yara | Sandboxing, memory analysis |
 | **Fuzzing** | AFL, libFuzzer, Peach | Input generation, crash finding |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-binoculars: **Intel is Power** - Threat intel prioritizes defenses. OSINT 80% of intel (public sources undervalued). Commercial feeds expensive ($50k-500k/year). Bug bounties pay millions for 0-days. Reverse engineering requires patience. Attribution hard (false flags common).
 

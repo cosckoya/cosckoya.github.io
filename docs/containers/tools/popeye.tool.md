@@ -514,7 +514,7 @@ popeye -n production -o yaml > audit.yaml
 - **[K8s Slack](https://kubernetes.slack.com/)** - #popeye channel
 - **[GitHub Discussions](https://github.com/derailed/popeye/discussions)** - Q&A
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-shield-halved: **Cluster Hygiene Tool** - Popeye catches K8s misconfigurations that other tools miss. Resource limits, probe configurations, label standards. Essential pre-deployment sanity check. Run it before every production rollout. Free and open-source.
 

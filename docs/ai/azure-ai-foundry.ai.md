@@ -10,7 +10,7 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
 !!! tip "2026 Update"
     GPT-4 Turbo with 128k context. DALL-E 3 for image generation. Whisper for speech-to-text. Custom GPTs in Azure. Content safety built-in. Private endpoints standard. On Your Data feature for RAG without code.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -301,7 +301,7 @@ ______________________________________________________________________
         - **On Your Data** - Requires Azure AI Search (additional cost)
         - **Content Safety** - Can over-filter, test thresholds carefully
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -320,7 +320,7 @@ ______________________________________________________________________
 - **Custom models** - Fine-tuning GPT-3.5
 - **Responsible AI** - Built-in tools for ethical AI
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Model Pricing (2026)
 
@@ -332,7 +332,7 @@ ______________________________________________________________________
 | GPT-4o (optimized) | $5 | $15 | 128k |
 | DALL-E 3 | $0.040/image (1024x1024) | - | - |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-building: **Enterprise Standard** - Best for Microsoft shops. Managed Identity is great. Content Safety essential. On Your Data simplifies RAG. Quotas can be limiting. Excellent C# support.
 

@@ -41,9 +41,9 @@ update-lock:
 	@echo "requirements-lock.txt updated — review diff before committing"
 
 lint:
-	@bash -c "source venv/bin/activate && ruff check docs/ || true"
-	@bash -c "source venv/bin/activate && codespell docs/ --skip='*.png,*.jpg,*.svg' || true"
-	@bash -c "source venv/bin/activate && yamllint mkdocs.yml || true"
+	@bash -c "source venv/bin/activate && ruff check docs/"
+	@bash -c "source venv/bin/activate && codespell docs/ --skip='*.png,*.jpg,*.svg'"
+	@bash -c "source venv/bin/activate && yamllint -c .yamllint.yml mkdocs.yml"
 
 health:
 	@bash -c "source venv/bin/activate && python3 scripts/health.py"

@@ -1,4 +1,5 @@
 - [Learning Path (Zero to Hero)](learning-path.1337.md)
+- [Security Fundamentals](security-fundamentals.1337.md)
 - [Offensive Security (Red Team)](offensive-security.1337.md)
 - [Defensive Security (Blue Team)](defensive-security.1337.md)
 - [GRC (Governance, Risk & Compliance)](grc.1337.md)
