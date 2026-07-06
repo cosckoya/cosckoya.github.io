@@ -19,7 +19,7 @@ mkdocs-same-dir==0.1.5
 mkdocs-section-index==0.3.12
 
 # Additional packages
-pillow==12.2.0                   # Image processing — 12.2.0 fixes 2 high + 3 medium CVEs
+pillow==12.3.0                   # Image processing — 12.2.0 fixes 2 high + 3 medium CVEs
 cairosvg==2.9.0                  # SVG→PNG for social cards plugin
 
 # Development Tools (pinned exact)
