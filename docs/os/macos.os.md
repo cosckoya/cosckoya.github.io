@@ -10,7 +10,7 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
 !!! tip "2026 Update"
     Apple Silicon (M-series chips) changed the game - ARM architecture, incredible performance, amazing battery life. Most developer tools now ARM-native. macOS Sequoia introduces better window management and enhanced security features.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -138,7 +138,7 @@ ______________________________________________________________________
         - **Trackpad** - Enable tap-to-click, three-finger drag
         - **Accessibility → Pointer** - Shake to locate (useful on large displays)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -154,7 +154,7 @@ ______________________________________________________________________
 - **[Homebrew Documentation](https://docs.brew.sh/)** - Package manager docs
 - **[Oh My Zsh Wiki](https://github.com/ohmyzsh/ohmyzsh/wiki)** - Shell customization
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield-halved: Security Audit Tools
 
@@ -367,7 +367,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
     - **Homebrew security** - Keep updated, audit installed packages regularly
     - **Outdated tools** - Update audit tools monthly (security landscape changes)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -375,7 +375,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [macOS User Guide](https://support.apple.com/guide/mac-help/)
 
@@ -385,7 +385,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-box: __Package Managers__
 
-    ______________________________________________________________________
+    ---
 
     [Homebrew](https://brew.sh/)
 
@@ -395,7 +395,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Essential Tools__
 
-    ______________________________________________________________________
+    ---
 
     [iTerm2](https://iterm2.com/)
 
@@ -407,7 +407,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [r/macOS](https://reddit.com/r/macOS)
 
@@ -417,7 +417,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-heart: **Premium** - macOS is the developer's choice if you can afford it. Unix power with GUI polish, but you're locked into Apple's ecosystem.
 **Tags:** macos, operating-system, apple, unix

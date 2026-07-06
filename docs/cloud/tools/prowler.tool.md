@@ -10,7 +10,7 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
 !!! tip "2026 Update"
     Prowler 4.x brings multi-cloud support (AWS/Azure/GCP/K8s). Dashboard UI available (self-hosted or SaaS). 400+ security checks. Integrates with CI/CD pipelines. GDPR, HIPAA, PCI-DSS compliance frameworks. Active community with monthly releases.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -205,7 +205,7 @@ ______________________________________________________________________
         - **vs AWS Security Hub** - Prowler open-source and multi-cloud
         - **Use together** - Checkov (IaC) + Prowler (runtime) = full coverage
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield-halved: Compliance Frameworks
 
@@ -252,7 +252,7 @@ class custom_check_example(Check):
 prowler aws --checks-folder ./checks/custom/
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -282,7 +282,7 @@ ______________________________________________________________________
     - **Security KPIs** - Dashboard showing trend of critical findings
     - **DevSecOps** - Block deployments if Prowler finds critical issues
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -290,7 +290,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Prowler Documentation](https://docs.prowler.cloud/)
 
@@ -300,7 +300,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Related Tools__
 
-    ______________________________________________________________________
+    ---
 
     [Prowler Dashboard](https://dashboard.prowler.cloud/)
 
@@ -310,7 +310,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [Prowler Slack](https://join.slack.com/t/prowler-workspace/shared_invite/)
 
@@ -320,7 +320,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Integrations__
 
-    ______________________________________________________________________
+    ---
 
     [Terraform Module](https://github.com/prowler-cloud/terraform-prowler)
 
@@ -330,7 +330,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield-halved: **Industry Standard** - Prowler is THE tool for cloud security auditing. CIS benchmark compliance out-of-the-box. Multi-cloud support. Active development. If you're doing cloud security, you're using Prowler. Free and open-source beats expensive commercial tools.
 **Tags:** prowler, security, cloud, compliance, cis

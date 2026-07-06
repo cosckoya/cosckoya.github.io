@@ -10,7 +10,7 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
 !!! tip "2026 Update"
     Trivy 0.50+ adds SBOM generation (CycloneDX, SPDX). Kubernetes operator for automated cluster scanning. VEX support for vulnerability filtering. Malware scanning in container images. Plugin system for custom checks.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -238,7 +238,7 @@ ______________________________________________________________________
         - **Secret scanning** - Scans git history (use fetch-depth: 0)
         - **Language support** - Best for Go, Java, Node, Python; others less complete
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -257,7 +257,7 @@ ______________________________________________________________________
 - **SBOM generation** - CycloneDX, SPDX formats
 - **Kubernetes operator** - Automated cluster scanning
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Alternatives
 
@@ -266,7 +266,7 @@ ______________________________________________________________________
 - **[Clair](https://github.com/quay/clair)** - Container-only, older project
 - **[Anchore](https://anchore.com/)** - Commercial, policy enforcement
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-fire: **Open Source Champion** - Best free security scanner. No rate limits. Comprehensive coverage. Fast. Active development. Should be in every CI/CD pipeline. Commercial alternatives not significantly better.
 

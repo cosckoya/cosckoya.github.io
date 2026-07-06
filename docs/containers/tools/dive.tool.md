@@ -403,7 +403,7 @@ CMD ["python", "src/main.py"]
 - **[docker-slim](https://github.com/docker-slim/docker-slim)** - Automated image minification
 - **[container-diff](https://github.com/GoogleContainerTools/container-diff)** - Compare container images
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-chart-simple: **Image Optimization Essential** - Dive reveals exactly what's wasting space in your Docker images. Layer-by-layer analysis with interactive UI. Essential for CI/CD pipeline optimization. Works with Docker and Podman images.
 

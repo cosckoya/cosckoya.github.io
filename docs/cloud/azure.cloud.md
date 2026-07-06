@@ -10,7 +10,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 !!! tip "2026 Update"
     Azure continues strong growth in enterprise. Entra ID (formerly Azure AD) is rebranded. Azure Container Apps simplify container deployment. Bicep (infrastructure as code) is production-ready. Copilot integration in portal. Microsoft Defender for Cloud is comprehensive. Multi-cloud with Arc.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -398,7 +398,7 @@ ______________________________________________________________________
         - **Hybrid cloud** - Azure Arc beats AWS Outposts
         - **Learning curve** - Steeper than AWS (inconsistent naming)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Paths
 
@@ -452,7 +452,7 @@ ______________________________________________________________________
     - **ML pipeline** - Azure ML + Databricks + Data Lake
     - **Enterprise integration** - Logic Apps + API Management + Service Bus
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-sitemap: Architecture Patterns
 
@@ -678,7 +678,7 @@ graph LR
 - Extend Azure services to any infrastructure
 - SQL Server anywhere with Azure management
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield-halved: Well-Architected Framework
 
@@ -1058,7 +1058,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
     az security alert list
     ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-heart-pulse: Community Pulse
 
@@ -1092,7 +1092,7 @@ ______________________________________________________________________
 - **[Microsoft Build](https://build.microsoft.com/)** - May, developer-focused
 - **[Azure Community Conferences](https://www.azurecommunityday.org/)** - Free, local meetups
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -1100,7 +1100,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Azure Documentation](https://docs.microsoft.com/azure/)
 
@@ -1112,7 +1112,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-flask: __Hands-on Practice__
 
-    ______________________________________________________________________
+    ---
 
     [Azure Free Account](https://azure.microsoft.com/free/)
 
@@ -1124,7 +1124,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Tools & SDKs__
 
-    ______________________________________________________________________
+    ---
 
     [Azure CLI](https://docs.microsoft.com/cli/azure/)
 
@@ -1138,7 +1138,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-rss: __News & Updates__
 
-    ______________________________________________________________________
+    ---
 
     [Azure Blog](https://azure.microsoft.com/blog/)
 
@@ -1150,7 +1150,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-building: **Enterprise Standard** - Azure is the enterprise choice. Active Directory integration, hybrid cloud leadership, Windows/.NET best-in-class. Portal is slow but functional. Second largest cloud (23% share). If your company runs Microsoft stack, Azure is the path of least resistance.
 

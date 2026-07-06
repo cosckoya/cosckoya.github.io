@@ -10,7 +10,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 !!! tip "2026 Update"
     pre-commit 3.x brings performance improvements (30% faster). Native support for Ruff, Biome. Docker hooks no longer experimental. Remote hooks cached locally. Auto-update via `pre-commit autoupdate`. GitHub Actions integration official. 200+ hooks in community registry.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -358,7 +358,7 @@ ______________________________________________________________________
         - **terraform-docs** - Auto-generate Terraform documentation
         - **ansible-lint** - Ansible playbook linter
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-box: Hook Categories
 
@@ -408,7 +408,7 @@ ______________________________________________________________________
 - **terraform-docs** - Auto-generate Terraform docs
 - **godoc** - Go documentation checker
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -508,7 +508,7 @@ ______________________________________________________________________
             files: \.yaml$
     ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -516,7 +516,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [pre-commit Documentation](https://pre-commit.com/)
 
@@ -528,7 +528,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Popular Hooks__
 
-    ______________________________________________________________________
+    ---
 
     [pre-commit-hooks (official)](https://github.com/pre-commit/pre-commit-hooks)
 
@@ -542,7 +542,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Alternative Tools__
 
-    ______________________________________________________________________
+    ---
 
     [Husky](https://typicode.github.io/husky/) (Node.js-specific)
 
@@ -552,7 +552,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [GitHub Discussions](https://github.com/pre-commit/pre-commit/discussions)
 
@@ -562,7 +562,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield-halved: **Essential** - pre-commit prevents bad commits (formatting, secrets, syntax errors). Auto-fixes save time. Language-agnostic (works with Python, Go, Node.js, etc.). First run slow (environment setup), subsequent fast. Integrate with CI (GitHub Actions). Team adoption requires discipline (`--no-verify` tempting but dangerous). 200+ hooks available.
 

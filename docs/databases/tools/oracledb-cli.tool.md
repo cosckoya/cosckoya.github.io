@@ -7,7 +7,7 @@ description: Interactive Oracle Database CLI built on python-oracledb thin mode 
 
 Oracle abandoned the interactive CLI space when okcli went unmaintained in 2019. This fills that gap: a custom interactive client built on `python-oracledb` (Oracle's official Python driver) and `prompt_toolkit`. Thin mode by default means no Oracle Instant Client, no `LD_LIBRARY_PATH` nonsense, no `/etc/oracle` config files. Just Python and a connection string.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -124,7 +124,7 @@ ______________________________________________________________________
     - `SELECT *` on large tables will fetch everything into memory — always add `WHERE rownum <= N` for exploration
     - DML (`INSERT`, `UPDATE`, `DELETE`) auto-commits on success — there is no explicit transaction management in this CLI, be careful on production
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-box: Installation
 
@@ -151,7 +151,7 @@ python -c "import oracledb; print(oracledb.__version__)"
 !!! note "Thick mode dependencies"
     Thin mode (default) requires nothing beyond the pip packages above. Thick mode additionally requires Oracle Instant Client 19c, 21c, or 23c installed on the system. Download from Oracle's website and set `LD_LIBRARY_PATH=/opt/oracle/instantclient_23_x`.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-plug: Connection Reference
 
@@ -177,7 +177,7 @@ python oracledb-cli.py --help
 #      --thick-mode              Use thick mode (requires Instant Client)
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Reference
 
@@ -193,7 +193,7 @@ ______________________________________________________________________
 - :fontawesome-solid-code: __SQLAlchemy 2.0 — python-oracledb dialect for ORM-style programmatic access__
 - :fontawesome-solid-terminal: __prompt_toolkit — the library powering the interactive session__
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-database: **Specialized Tool** - Best Python-native Oracle DB client. Thin mode eliminates Oracle Instant Client dependency. Good for microservices and serverless. Not a replacement for SQL\*Plus for heavy DBA work.
 

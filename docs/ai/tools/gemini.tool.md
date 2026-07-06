@@ -10,7 +10,7 @@ Command-line interface for Google's Gemini AI models. Multimodal capabilities (t
 !!! tip "2026 Update"
     Gemini 2.0 Flash is default model (fast, multimodal). Gemini Ultra 2.0 available for complex tasks. CLI supports image uploads, code execution, function calling. Free tier: 60 queries/minute. Paid tier (Google AI Premium) for higher limits and Gemini Ultra access.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -173,7 +173,7 @@ ______________________________________________________________________
             - GitHub integration
             - Terminal-focused workflows
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-code: Practical Examples
 
@@ -271,7 +271,7 @@ for file in src/**/*.js; do
 done
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -302,7 +302,7 @@ ______________________________________________________________________
     - **UI feedback** - "Suggest improvements to this landing page design"
     - **Accessibility** - "Generate alt text for these product images"
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -310,7 +310,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Google AI Studio](https://makersuite.google.com/)
 
@@ -322,7 +322,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Tools & SDKs__
 
-    ______________________________________________________________________
+    ---
 
     [Python Client](https://pypi.org/project/google-generativeai/)
 
@@ -332,7 +332,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [Google AI Community](https://developers.google.com/community)
 
@@ -342,7 +342,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-graduation-cap: __Learning__
 
-    ______________________________________________________________________
+    ---
 
     [Prompt Engineering](https://ai.google.dev/docs/prompt_best_practices)
 
@@ -352,7 +352,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-bolt: **Solid Alternative** - Gemini CLI is good for quick queries and multimodal tasks. Free tier is generous. Not as workflow-integrated as Claude Code or Copilot, but powerful for general-purpose AI. Best for one-off tasks, image analysis, and learning.
 **Tags:** gemini, google, ai, cli, multimodal

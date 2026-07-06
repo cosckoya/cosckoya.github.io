@@ -10,7 +10,7 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
 !!! tip "2026 Update"
     GitHub Copilot integrates directly into workflows. Actions runners now support GPU workloads. Advanced Security includes AI-powered code scanning. GitHub Projects v2 is feature-complete. Codespaces supports team configurations.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -235,7 +235,7 @@ ______________________________________________________________________
         - **Large files** - Use Git LFS, not regular commits (100MB limit)
         - **Force push** - Can break branch protection if admin override enabled
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -256,7 +256,7 @@ ______________________________________________________________________
 - **Codespaces** - Cloud dev environments (60 hours/month free)
 - **GitHub Advanced Security** - Code scanning, secret scanning, dependency review
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Related Tools
 
@@ -265,7 +265,7 @@ ______________________________________________________________________
 - **[gh-dash](https://github.com/dlvhdr/gh-dash)** - Terminal dashboard for GitHub
 - **[hub](https://hub.github.com/)** - Legacy CLI (superseded by gh)
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-crown: **Industry Standard** - GitHub is the default choice. Actions CI/CD is solid. Copilot changes development workflow. Free tier generous for open source. Microsoft ownership hasn't ruined it (yet).
 

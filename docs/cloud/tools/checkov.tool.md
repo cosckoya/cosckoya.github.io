@@ -10,7 +10,7 @@ Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFor
 !!! tip "2026 Update"
     Checkov 3.x brings AI-powered fix suggestions. Policy-as-code with custom Python policies. Supply chain security (SCA for Terraform modules). Secrets detection. IDE integrations (VSCode, IntelliJ). CI/CD native with exit codes. 1000+ policies covering CIS, PCI-DSS, HIPAA, SOC2.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -252,7 +252,7 @@ ______________________________________________________________________
         - **vs Snyk IaC** - Checkov open-source, Snyk commercial with SCA
         - **Use together** - Checkov (IaC) + Prowler (runtime) = full coverage
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-code: Policy Examples
 
@@ -345,7 +345,7 @@ spec:
       readOnlyRootFilesystem: true
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -376,7 +376,7 @@ ______________________________________________________________________
     - **Custom policies** - Organization-specific security requirements
     - **Metrics dashboard** - Track security posture improvements
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -384,7 +384,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Checkov Documentation](https://www.checkov.io/documentation)
 
@@ -394,7 +394,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Integrations__
 
-    ______________________________________________________________________
+    ---
 
     [VSCode Extension](https://marketplace.visualstudio.com/items?itemName=Bridgecrew.checkov)
 
@@ -404,7 +404,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [Bridgecrew Community](https://community.bridgecrew.io/)
 
@@ -414,7 +414,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Learning__
 
-    ______________________________________________________________________
+    ---
 
     [Checkov Tutorial](https://www.checkov.io/1.Welcome/Quick%20Start.html)
 
@@ -424,7 +424,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield: **Essential DevSecOps** - Checkov is mandatory for modern IaC workflows. Catches security issues before deployment. 1000+ built-in policies. Free and open-source. Integrates seamlessly with CI/CD. If you're writing Terraform, you're running Checkov.
 **Tags:** checkov, security, iac, terraform, kubernetes

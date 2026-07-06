@@ -7,7 +7,7 @@ description: Practical reference for GitHub REST API v3 — repository and organ
 
 GitHub's REST API has been around since forever, has roughly 600 endpoints, and is the backbone of every automation script that's ever been written to avoid clicking around the UI. In 2026, the right way to interact with it is `gh api` — GitHub's own CLI handles auth, headers, pagination and JSON output without you babysitting curl flags. This covers repositories and organization management, the two things you'll actually automate.
 
-______________________________________________________________________
+---
 
 ## Quick Hits
 
@@ -122,7 +122,7 @@ ______________________________________________________________________
     - `--paginate` concatenates JSON arrays — if your `--jq` filter doesn't account for this, you'll get parse errors on page boundaries
     - Fine-grained PATs cannot access all org endpoints — audit log and billing still require classic PATs or GitHub Apps in 2026
 
-______________________________________________________________________
+---
 
 ## Repository Management
 
@@ -239,7 +239,7 @@ gh api /repos/{owner}/{repo}/releases \
   --jq '{id, tag_name, html_url}'
 ```
 
-______________________________________________________________________
+---
 
 ## Organization Management
 
@@ -348,7 +348,7 @@ gh api /orgs/{org}/settings/billing/actions \
   --jq '{total_minutes_used, total_paid_minutes_used, included_minutes}'
 ```
 
-______________________________________________________________________
+---
 
 ## Python: requests
 
@@ -505,7 +505,7 @@ for e in events:
     On large org audits with hundreds of API calls, this saves meaningful time.
     It also keeps headers DRY — set once, used everywhere.
 
-______________________________________________________________________
+---
 
 ## Reference
 
@@ -521,7 +521,7 @@ ______________________________________________________________________
 - :fontawesome-solid-code: __PyGithub — higher-level Python client if you want ORM-style access over raw requests__
 - :fontawesome-solid-key: __`gh auth login` — the only setup step you need before using `gh api`__
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-crown: **Platform Essential** - GitHub REST API is the foundation for all GitHub automation. Fine-grained PATs fixed the security model. Pagination and rate limiting are the main pain points. Use `gh api` for quick scripts, PyGithub for complex automation.
 

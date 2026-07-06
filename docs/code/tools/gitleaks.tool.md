@@ -10,7 +10,7 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
 !!! tip "2026 Update"
     Gitleaks 8.x adds custom rule support with regex. SARIF output for GitHub Security integration. Baseline files to ignore existing secrets. GitLab native integration. 140+ built-in secret patterns.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -214,7 +214,7 @@ ______________________________________________________________________
         - **Pre-commit bypass** - Developers can use `--no-verify` (educate team)
         - **Baseline drift** - Update baseline when fixing secrets (don't accumulate)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -232,7 +232,7 @@ ______________________________________________________________________
 - **Multiple outputs** - JSON, SARIF, CSV formats
 - **Fast scanning** - Hundreds of thousands of commits per minute
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Secret Remediation
 
@@ -258,7 +258,7 @@ git push --force --all
 
 4. **Update baseline** - Generate new baseline after remediation
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Alternatives
 
@@ -267,7 +267,7 @@ ______________________________________________________________________
 - **[detect-secrets](https://github.com/Yelp/detect-secrets)** - Yelp's secret scanner
 - **[GitGuardian](https://www.gitguardian.com/)** - Commercial, real-time monitoring
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-lock: **Essential Tool** - Every repo needs this. Fast, accurate, free. Pre-commit hooks are lifesavers. Finding secrets is easy, rotating them is the hard part. Baseline files make adoption painless.
 
