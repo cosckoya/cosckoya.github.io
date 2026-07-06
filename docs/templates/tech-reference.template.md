@@ -3,8 +3,8 @@ title: {{TITLE}}
 description: {{DESCRIPTION}}
 ---
 
-!!! danger "⚠️ DEPRECATED"
-    Use [`page.template.md`](page.template.md) instead. This template is kept for reference only and will be removed in a future update.
+!!! danger "⚠️ DEPRECATED — Scheduled for removal: 2026-09-01"
+    Use [`page.template.md`](page.template.md) instead. This template is kept for reference until the removal date.
 
 # {{TITLE}}
 
