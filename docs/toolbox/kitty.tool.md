@@ -433,7 +433,7 @@ fi
 - **[r/KittyTerminal](https://reddit.com/r/KittyTerminal)** - Reddit community
 - **[GitHub Discussions](https://github.com/kovidgoyal/kitty/discussions)** - Official forum
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-tv: **GPU-Accelerated Power** - Fastest terminal emulator with GPU rendering. Built-in image display, tabs, and kitten remote control. Excellent font rendering and ligature support. If you live in the terminal, kitty makes everything feel instant.
 

@@ -10,7 +10,7 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 !!! tip "2026 Update"
     AI-powered vulnerability discovery tools. Cloud-native pentesting focus (AWS/Azure/GCP). Container escape techniques standard. API security testing essential. Bug bounties pay $1M+ for critical vulns. Purple teaming replacing pure red/blue divide.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -248,7 +248,7 @@ ______________________________________________________________________
         - **EDR/AV** - Endpoint detection makes post-exploitation harder
         - **Cloud logging** - AWS CloudTrail records everything
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Paths
 
@@ -267,7 +267,7 @@ ______________________________________________________________________
 - **[PentesterLab](https://pentesterlab.com/)** - $20/month, web exploitation focus
 - **[PortSwigger Academy](https://portswigger.net/web-security)** - Free, web security learning
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Essential Toolkit
 
@@ -281,7 +281,7 @@ ______________________________________________________________________
 | **Network** | CrackMapExec, Responder, Impacket | Internal network testing |
 | **Cloud** | Pacu, ScoutSuite, CloudFox | AWS/Azure/GCP testing |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-skull-crossbones: **Break Things Legally** - Most fun security job. Requires constant learning (new vulns daily). Legal risks real (get authorization in writing). Bug bounties democratized field. OSCP still gold standard cert.
 

@@ -10,7 +10,7 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
 !!! tip "2026 Update"
     Helm 3.14+ includes OCI registry support by default. PostRenderer allows Kustomize integration. Chart dependencies from OCI registries. Improved diff output. Better RBAC integration.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -293,7 +293,7 @@ ______________________________________________________________________
         - **CRDs** - Custom Resource Definitions not upgraded (manual process)
         - **Hooks** - Pre/post install hooks can fail silently (check logs)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -312,7 +312,7 @@ ______________________________________________________________________
 - **Hooks** - Pre/post install/upgrade actions
 - **Plugin system** - Extend Helm functionality
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Related Tools
 
@@ -321,7 +321,7 @@ ______________________________________________________________________
 - **[ArgoCD](https://argo-cd.readthedocs.io/)** - GitOps with Helm chart support
 - **[Flux](https://fluxcd.io/)** - GitOps with HelmRelease CRD
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-crown: **K8s Standard** - De facto package manager for Kubernetes. Learning curve for templates. helm-diff plugin is essential. Rollbacks are lifesaver. Better than raw kubectl apply for complex apps.
 

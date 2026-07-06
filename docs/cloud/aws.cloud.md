@@ -10,7 +10,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 !!! tip "2026 Update"
     AWS continues to dominate cloud infrastructure with over 200 services. Focus on core services (EC2, S3, Lambda, RDS) and learn IAM inside-out. Cost optimization is more critical than ever.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -243,7 +243,7 @@ ______________________________________________________________________
     - :fontawesome-solid-graduation-cap: **[AWS Learning Path](aws-learning-path.howto.md)** — Certifications, projects, and free resources
     - :fontawesome-solid-sitemap: **[AWS Architecture & Well-Architected Framework](aws-architecture.explanation.md)** — Architecture patterns and design principles
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-heart-pulse: Community Pulse
 
@@ -299,7 +299,7 @@ ______________________________________________________________________
 - **[AWS Community Day](https://www.awscommunity.day/)** - Free, community-organized, worldwide, quality talks
 - **[ServerlessDays](https://serverlessdays.io/)** - Free/cheap, serverless-focused, technical talks
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -307,7 +307,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [AWS Documentation](https://docs.aws.amazon.com/)
 
@@ -319,7 +319,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-flask: __Hands-on Practice__
 
-    ______________________________________________________________________
+    ---
 
     [AWS Free Tier](https://aws.amazon.com/free/)
 
@@ -331,7 +331,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Code Examples__
 
-    ______________________________________________________________________
+    ---
 
     [Awesome AWS](https://github.com/donnemartin/awesome-aws)
 
@@ -345,7 +345,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-fire: __Deep Dives__
 
-    ______________________________________________________________________
+    ---
 
     [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 
@@ -359,7 +359,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-screwdriver-wrench: __Tools & CLIs__
 
-    ______________________________________________________________________
+    ---
 
     [AWS CLI v2](https://aws.amazon.com/cli/)
 
@@ -375,7 +375,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-rss: __News & Updates__
 
-    ______________________________________________________________________
+    ---
 
     [AWS What's New](https://aws.amazon.com/new/)
 
@@ -389,7 +389,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-globe: **Mainstream** - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.
 

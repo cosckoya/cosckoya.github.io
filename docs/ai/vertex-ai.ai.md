@@ -10,7 +10,7 @@ Google's unified AI platform. Access Gemini Pro, PaLM 2, Imagen via API. Custom 
 !!! tip "2026 Update"
     Gemini 2.0 Flash with native multimodal. 2M token context window. Grounding with Google Search. Extensions for real-time data. Vertex AI Agents for autonomous workflows. Model Garden with 100+ open-source models.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -307,7 +307,7 @@ Answer: What is our remote work policy?"""
         - **Safety filters** - Can over-block, test thresholds
         - **Model availability** - Not all models in all regions
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -326,7 +326,7 @@ ______________________________________________________________________
 - **Vertex AI Search** - Enterprise RAG solution
 - **MLOps** - Model monitoring, versioning, A/B testing
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Model Pricing (2026)
 
@@ -338,7 +338,7 @@ ______________________________________________________________________
 | PaLM 2 Text | $0.25 | $0.50 | 32k tokens |
 | Imagen 3 | $0.04/image | - | - |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Innovation Leader** - Best multimodal capabilities. 2M token context is huge. Grounding provides current data. Character-based pricing clearer. Free tier generous. Model Garden excellent for experimentation.
 

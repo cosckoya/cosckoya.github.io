@@ -10,7 +10,7 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
 !!! tip "2026 Update"
     AI-powered SIEM (GPT-4 writes detection rules). EDR mandatory (endpoints generate TB of telemetry). Cloud-native SOCs (Sentinel, Chronicle). SOAR automation reduces alert fatigue. Threat hunting proactive (not reactive). MDR (Managed Detection & Response) market exploding.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -320,7 +320,7 @@ ______________________________________________________________________
         - **Legal holds** - Preserve evidence for litigation
         - **Ransomware** - Backups useless if compromised (test regularly)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Paths
 
@@ -338,7 +338,7 @@ ______________________________________________________________________
 - **[LetsDefend](https://letsdefend.io/)** - $10/month, SOC analyst training
 - **[BOSS of the SOC](https://www.splunk.com/en_us/blog/conf-splunklive/boss-of-the-soc-splunk-security-dataset-project.html)** - Free Splunk SIEM competition dataset
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Essential Toolkit
 
@@ -351,7 +351,7 @@ ______________________________________________________________________
 | **IR** | Velociraptor, GRR, KAPE | Live response, artifact collection |
 | **Network** | Wireshark, Zeek, Suricata | Packet analysis, IDS |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield: **Always On Defense** - Thankless job until breach prevented. Alert fatigue real. Automation essential. Incident response stressful. SOC work 24/7 shifts. Blue team certs expensive (SANS). Career stable (always need defenders).
 

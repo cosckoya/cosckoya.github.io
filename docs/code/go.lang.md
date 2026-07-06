@@ -15,7 +15,7 @@ Compiled programming language created at Google. Fast compilation, fast executio
 !!! tip "2026 Update"
     Go 1.24 brings enhanced iterators, improved `unique` package, and better WASM support. Generics (added in 1.18) are now idiomatic. The standard library remains the gold standard — you rarely need third-party frameworks. `gofmt` is non-negotiable.
 
-______________________________________________________________________
+---
 
 ## Quick Hits
 
@@ -153,7 +153,7 @@ ______________________________________________________________________
     - Map iteration order is intentionally randomized — don't depend on it
     - `time.After` in loops leaks until the duration expires
 
-______________________________________________________________________
+---
 
 ## Installation
 
@@ -179,7 +179,7 @@ go mod init example.com/myproject
 go get github.com/lib/pq
 ```
 
-______________________________________________________________________
+---
 
 ## Reference
 
@@ -194,7 +194,7 @@ ______________________________________________________________________
 - :fontawesome-solid-fire: **Docker** — Written in Go, great codebase to study
 - :fontawesome-solid-wrench: **Kubernetes** — Largest Go project in existence
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-rocket: **Cloud Native Standard** - The language that built the cloud. Simple syntax, fast compilation, built-in concurrency. Not the best for everything (data science, UI), but unmatched for infrastructure, CLIs, and network services. Go is the modern C.
 

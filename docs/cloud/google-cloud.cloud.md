@@ -10,7 +10,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 !!! tip "2026 Update"
     GCP continues strong in AI/ML with Vertex AI and Gemini integration. Cloud Run is the easiest serverless platform. BigQuery remains unbeatable for analytics. Multi-region is now standard. GKE Autopilot eliminates cluster management. Pricing is still 20-30% cheaper than AWS for compute.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -356,7 +356,7 @@ ______________________________________________________________________
         - **Analytics** - BigQuery has no AWS equivalent (Redshift is different)
         - **Market share** - AWS 32%, Azure 23%, GCP 10% (smaller but growing)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Paths
 
@@ -409,7 +409,7 @@ ______________________________________________________________________
     - **Cost optimization dashboard** - Billing API + Cloud Functions + BigQuery
     - **Hybrid cloud** - Anthos for on-prem + GCP
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-sitemap: Architecture Patterns
 
@@ -604,7 +604,7 @@ graph TB
 - No manual sharding (scales horizontally)
 - More expensive than Cloud SQL but worth it for global apps
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield-halved: Well-Architected Framework
 
@@ -860,7 +860,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
     gcloud builds submit --config=cloudbuild.yaml
     ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-heart-pulse: Community Pulse
 
@@ -893,7 +893,7 @@ ______________________________________________________________________
 - **[Google I/O](https://io.google/)** - May, consumer + cloud products
 - **[GDG Cloud](https://gdg.community.dev/)** - Local meetups worldwide
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -901,7 +901,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [GCP Documentation](https://cloud.google.com/docs)
 
@@ -913,7 +913,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-flask: __Hands-on Practice__
 
-    ______________________________________________________________________
+    ---
 
     [GCP Free Tier](https://cloud.google.com/free)
 
@@ -925,7 +925,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Tools & CLIs__
 
-    ______________________________________________________________________
+    ---
 
     [gcloud CLI](https://cloud.google.com/sdk/gcloud)
 
@@ -937,7 +937,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-rss: __News & Updates__
 
-    ______________________________________________________________________
+    ---
 
     [GCP Blog](https://cloud.google.com/blog/)
 
@@ -949,7 +949,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Smart Choice** - GCP is cheaper and faster than AWS for most workloads. Cloud Run is the best serverless platform. BigQuery is unmatched for analytics. GKE Autopilot removes Kubernetes pain. Smaller market share but solid engineering. If you're starting fresh, GCP is compelling.
 

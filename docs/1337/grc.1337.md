@@ -10,7 +10,7 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
 !!! tip "2026 Update"
     AI-powered risk assessments. Continuous compliance monitoring (no more annual audits). Privacy regulations expanding (50+ countries have GDPR equivalents). ESG (Environmental, Social, Governance) now includes cyber. Zero-trust architecture standard requirement.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -307,7 +307,7 @@ ______________________________________________________________________
         - **Vendor dependencies** - Third-party breaches = your breach (supply chain)
         - **GDPR fines** - Rare but massive (intentional violations = 4% global revenue)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning & Certifications
 
@@ -326,7 +326,7 @@ ______________________________________________________________________
 - **[ISO 27001](https://www.iso.org/isoiec-27001-information-security.html)** - International standard
 - **[COBIT](https://www.isaca.org/resources/cobit)** - IT governance framework
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-file-contract: **Necessary Evil** - Not glamorous but essential. Prevents million-dollar fines. Compliance ≠ security. Audit prep stressful. GRC tools expensive but worth it. CISSP gold standard cert. Job stable (regulations increasing).
 

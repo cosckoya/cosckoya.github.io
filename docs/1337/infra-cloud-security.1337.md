@@ -10,7 +10,7 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
 !!! tip "2026 Update"
     Cloud-native security tools mandatory (CSPM, CWPP, CNAPP). Zero Trust Architecture standard. Container security critical (90% workloads containerized). Identity is perimeter (IAM everywhere). eBPF-based security (Cilium, Falco). Kubernetes security complex but essential.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -488,7 +488,7 @@ ______________________________________________________________________
         - **Kubernetes RBAC** - Default service account has permissions
         - **Secrets in env vars** - Visible in process list (use secret managers)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning & Certifications
 
@@ -504,7 +504,7 @@ ______________________________________________________________________
 - **[flAWS](http://flaws.cloud/)** - Free, AWS security challenges
 - **[CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)** - Free, vulnerable-by-design AWS environments
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-wrench: Essential Toolkit
 
@@ -517,7 +517,7 @@ ______________________________________________________________________
 | **IAM** | AWS IAM, Azure AD, GCP IAM | Identity and access management |
 | **Kubernetes** | kube-bench, OPA Gatekeeper, Falco | K8s security hardening |
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-cloud: **Misconfiguration Minefield** - Cloud breaches from misconfig (99%). IAM complexity overwhelming. CSPM tools expensive but necessary. Container security critical (90% workloads). Zero Trust replacing VPNs. Kubernetes security steep learning curve.
 

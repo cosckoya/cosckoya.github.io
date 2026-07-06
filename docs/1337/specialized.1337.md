@@ -10,7 +10,7 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
 !!! tip "2026 Update"
     Post-quantum cryptography standardized (NIST finalized algorithms). IoT security regulations enforced (EU Cyber Resilience Act). Mobile apps require privacy labels. Smart contract audits mandatory (DeFi lost billions). AI security critical (prompt injection, model theft). Privacy-enhancing technologies mainstream (homomorphic encryption, federated learning).
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -463,7 +463,7 @@ ______________________________________________________________________
         - **AI model theft** - API queries can reconstruct model
         - **Privacy theater** - Anonymized data often re-identifiable
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning & Certifications
 
@@ -480,7 +480,7 @@ ______________________________________________________________________
 - **[Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)** - Free, smart contract exploitation
 - **[OWASP Mobile Security Testing Guide](https://mobile-security.gitbook.io/mobile-security-testing-guide/)** - Free, mobile pentesting guide
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-microscope: **Deep Expertise Required** - Crypto math complex (use libraries). IoT devices rarely patched. Mobile root detection bypassable. Smart contracts lose billions (DeFi exploits). AI models not robust (adversarial attacks easy). Privacy compliance theater common.
 

@@ -15,7 +15,7 @@ Advanced open-source relational database. ACID compliant, extensible, battle-tes
 !!! tip "2026 Update"
     PostgreSQL 17 improves performance for large analytic queries, adds incremental backup, and enhances the SQL/JSON constructor. Extensions remain the killer feature (PostGIS, pgvector, TimescaleDB). Managed cloud services (RDS, Cloud SQL, Supabase) dominate production deployments.
 
-______________________________________________________________________
+---
 
 ## Quick Hits
 
@@ -114,7 +114,7 @@ ______________________________________________________________________
     - `ALTER TABLE ... ADD COLUMN` with DEFAULT rewrites the entire table (versions 11+ optimizes this)
     - Sequence gaps on rollback — don't rely on gapless IDs
 
-______________________________________________________________________
+---
 
 ## Architecture
 
@@ -130,7 +130,7 @@ ______________________________________________________________________
 | `/etc/postgresql/*/main/postgresql.conf` | Main config |
 | `/var/log/postgresql/` | Log files |
 
-______________________________________________________________________
+---
 
 ## Installation
 
@@ -151,7 +151,7 @@ sudo -u postgres psql -c "CREATE USER myuser WITH PASSWORD 'pass';"
 sudo -u postgres psql -c "CREATE DATABASE mydb OWNER myuser;"
 ```
 
-______________________________________________________________________
+---
 
 ## Reference
 
@@ -166,7 +166,7 @@ ______________________________________________________________________
 - :fontawesome-solid-fire: **DBCli (pgcli)** — Modern CLI with autocompletion
 - :fontawesome-solid-wrench: **SQLAlchemy** — Python ORM with Postgres dialect
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-database: **Industry Standard** - The default relational database for serious projects. ACID compliance, extensibility, and reliability beat MySQL for most use cases. Not the fastest for simple reads but the most trustworthy.
 

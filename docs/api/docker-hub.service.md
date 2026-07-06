@@ -15,7 +15,7 @@ Container registry API from Docker Inc. Pull and push images, search repositorie
 !!! tip "2026 Update"
     Docker Hub now enforces rate limits strictly. Authenticated pulls give higher limits. Organization accounts with team features require paid plans. Artifact Registry (cloud-specific) is replacing Docker Hub for enterprise production use. GHCR (GitHub Container Registry) is a popular alternative.
 
-______________________________________________________________________
+---
 
 ## Quick Hits
 
@@ -112,7 +112,7 @@ ______________________________________________________________________
     - Docker Hub downtime happens (rare but real) — always have a fallback registry
     - Image layers are cached, but manifest changes force re-pull — `--cache-from` helps in CI
 
-______________________________________________________________________
+---
 
 ## Reference
 
@@ -127,7 +127,7 @@ ______________________________________________________________________
 - :fontawesome-solid-fire: **Docker** — Container runtime that uses Docker Hub by default
 - :fontawesome-solid-wrench: **GitHub Container Registry (GHCR)** — Alternative registry integrated with GitHub
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-cube: **Registry Standard** - The default container registry for a reason. Rate limits are annoying but manageable. Free tier sufficient for personal projects. For teams, consider GHCR or cloud-native registries. The API is simple, well-documented, and works.
 

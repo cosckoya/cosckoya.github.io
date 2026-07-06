@@ -10,7 +10,7 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
 !!! tip "2026 Update"
     AI-powered code suggestions for fixes. Pull request decoration shows quality metrics inline. Security hotspot detection improved. Free for public repos (unlimited). Supports monorepos with project separation.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt-lightning: Quick Hits
 
@@ -214,7 +214,7 @@ ______________________________________________________________________
         - **Language detection** - Auto-detected, but can miscategorize (configure explicitly)
         - **Large codebases** - Analysis can take 10+ minutes (optimize exclusions)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -233,7 +233,7 @@ ______________________________________________________________________
 - **Technical debt** - Estimates time to fix issues
 - **Code smells** - Maintainability issues, duplications
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Alternatives
 
@@ -242,7 +242,7 @@ ______________________________________________________________________
 - **[Codacy](https://www.codacy.com/)** - Code quality + security
 - **[DeepSource](https://deepsource.io/)** - Modern alternative with auto-fix
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-chart-line: **Quality Standard** - Industry leader for code quality. Free for open source is generous. PR decoration is must-have. Quality gates enforce discipline. Can be noisy (configure exclusions). Worth the cost for private repos.
 

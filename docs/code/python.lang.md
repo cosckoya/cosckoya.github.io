@@ -10,7 +10,7 @@ General-purpose programming language known for readability and simplicity. Domin
 !!! tip "2026 Update"
     Python 3.12+ brings significant performance improvements (20-30% faster). Type hints are mainstream (mypy integration everywhere). Ruff replaces Black/Flake8/isort (50x faster). uv is the new package installer (10-100x faster than pip). AsyncIO is production-ready. Python 2 is finally dead.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -268,7 +268,7 @@ ______________________________________________________________________
         - **Async** - asyncio, aiohttp, httpx, uvloop (faster event loop)
         - **CLI** - Typer, Click, argparse (standard library)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-box: Package Management
 
@@ -332,7 +332,7 @@ poetry run python app.py
 poetry run pytest
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -364,7 +364,7 @@ ______________________________________________________________________
     - **Package** - Create and publish to PyPI
     - **CLI framework** - Typer-based tool with plugins
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -372,7 +372,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Python Documentation](https://docs.python.org/)
 
@@ -384,7 +384,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Essential Tools__
 
-    ______________________________________________________________________
+    ---
 
     [uv (package installer)](https://github.com/astral-sh/uv)
 
@@ -398,7 +398,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Popular Frameworks__
 
-    ______________________________________________________________________
+    ---
 
     [FastAPI](https://fastapi.tiangolo.com/)
 
@@ -412,7 +412,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [r/python](https://reddit.com/r/python)
 
@@ -424,7 +424,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-star: **Mainstream** - Python is the default choice for data science, ML, automation, and rapid prototyping. Slow execution but fast development. Modern tooling (uv, Ruff) makes it competitive. If you're doing AI/ML, you're learning Python.
 **Tags:** python, programming, scripting, data-science

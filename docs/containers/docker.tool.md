@@ -10,7 +10,7 @@ Container platform that packages applications with their dependencies into isola
 !!! tip "2026 Update"
     Docker Desktop is mature and feature-rich. BuildKit is default (faster builds, better caching). Docker Compose v2 is rewritten in Go (much faster). Multi-platform builds are standard. Kubernetes dropped dockershim but Docker containers still work (containerd).
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -224,7 +224,7 @@ ______________________________________________________________________
         - **Health checks** - Required for orchestrators to detect failures
         - **Graceful shutdown** - Handle SIGTERM properly (Node.js often doesn't by default)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-layer-group: Docker Compose
 
@@ -363,7 +363,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
     - macOS bind mounts are slow by default — use `:cached` flag or switch to named volumes for node_modules
     - Network isolation is strict — services on different custom networks cannot reach each other unless you add them to both
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -392,7 +392,7 @@ ______________________________________________________________________
     - **Private registry** - Self-hosted Harbor with scanning
     - **Security hardening** - Distroless images, rootless Docker, Falco monitoring
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -400,7 +400,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Docker Documentation](https://docs.docker.com/)
 
@@ -412,7 +412,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Essential Tools__
 
-    ______________________________________________________________________
+    ---
 
     [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
@@ -424,7 +424,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Examples & Patterns__
 
-    ______________________________________________________________________
+    ---
 
     [Awesome Compose](https://github.com/docker/awesome-compose)
 
@@ -434,7 +434,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [r/docker](https://reddit.com/r/docker)
 
@@ -446,7 +446,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Essential** - Docker is the standard for containerization. If you're deploying modern applications, you're using Docker (or at least OCI containers). Learn it well.
 **Tags:** docker, containers, devops, virtualization

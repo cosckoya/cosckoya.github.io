@@ -10,7 +10,7 @@ Container orchestration platform that manages Docker/containerd containers at sc
 !!! tip "2026 Update"
     Kubernetes 1.31+ is stable and feature-complete. Gateway API replaces Ingress (finally). Sidecars are native (no more init container hacks). kubectl plugins ecosystem is mature. Managed K8s (EKS, GKE, AKS) handles complexity - use them unless you enjoy pain.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bolt: Quick Hits
 
@@ -288,7 +288,7 @@ ______________________________________________________________________
         - **Production** - RBAC, Network Policies, Pod Security, Monitoring
         - **Optional** - Custom Resource Definitions (CRDs), Operators
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield-halved: Tools Ecosystem
 
@@ -331,7 +331,7 @@ brew install dive               # Analyze container images
 | **KEDA** | Event-driven autoscaling | Scale based on events (queue length, etc.) |
 | **Velero** | Backup/restore | Disaster recovery and migrations |
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book: Learning Resources
 
@@ -376,7 +376,7 @@ ______________________________________________________________________
     - **Custom operator** - Build CRD with Operator SDK
     - **Security hardening** - Pod Security Standards, Network Policies, OPA
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-star: Worth Checking
 
@@ -384,7 +384,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-book: __Official Docs__
 
-    ______________________________________________________________________
+    ---
 
     [Kubernetes Documentation](https://kubernetes.io/docs/)
 
@@ -396,7 +396,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-wrench: __Essential Tools__
 
-    ______________________________________________________________________
+    ---
 
     [kubectl](https://kubernetes.io/docs/tasks/tools/)
 
@@ -410,7 +410,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-code: __Learning & Practice__
 
-    ______________________________________________________________________
+    ---
 
     [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
@@ -422,7 +422,7 @@ ______________________________________________________________________
 
 - :fontawesome-solid-users: __Community__
 
-    ______________________________________________________________________
+    ---
 
     [Kubernetes Slack](https://kubernetes.slack.com/)
 
@@ -434,7 +434,7 @@ ______________________________________________________________________
 
 </div>
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-microchip: **Complex but Essential** - Kubernetes is overkill for small projects but mandatory at scale. Steep learning curve, but managed services (EKS/GKE/AKS) hide most complexity. If you're doing containers seriously, you're learning K8s.
 **Tags:** kubernetes, k8s, containers, orchestration, devops

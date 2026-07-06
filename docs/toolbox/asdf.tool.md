@@ -312,7 +312,7 @@ python --version  # 3.12.1
 - **[GitHub Discussions](https://github.com/asdf-vm/asdf/discussions)** - Official forum
 - **[r/asdf](https://reddit.com/r/asdf)** - Reddit community
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-toolbox: **Version Manager Done Right** - One tool to rule all runtimes. No more nvm/pyenv/rbenv/gvm fragmentation. Single `.tool-versions` file for reproducible environments. Plugin ecosystem covers everything. Essential for polyglot development.
 

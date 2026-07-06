@@ -9,7 +9,7 @@ description: Complete reference of all Material for MkDocs theme features, markd
 
 Last Updated: 2026-03-22 | Theme: Material 9.7.1
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-layer-group: Theme Features Overview
 
@@ -45,7 +45,7 @@ This site uses Material for MkDocs 9.7.1 with all major features enabled. Below 
 
     The right sidebar shows page sections with `toc.follow` — it highlights the current section as you scroll.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-palette: Typography & Colors
 
@@ -99,7 +99,7 @@ Subscript: H~2~O
 - [ ] Incomplete task
 - [x] Another completed task
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-cube: Code Blocks & Syntax Highlighting
 
@@ -184,7 +184,7 @@ plugins:
 
 Use backticks for `inline code`. For highlighting within text: `python`, `bash`, `yaml`.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-message: Admonitions
 
@@ -237,7 +237,7 @@ Admonitions draw attention to important information. Eleven types available:
     !!! bug "Bug inside collapsible"
         This bug is inside a collapsible admonition.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-table: Tables
 
@@ -263,7 +263,7 @@ ______________________________________________________________________
 | Cell     | Cell     | Cell     |
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-icons: Icons & Emojis
 
@@ -284,7 +284,7 @@ Regular icons: :fontawesome-regular-star: :fontawesome-regular-heart: :fontaweso
 | Security | :fontawesome-solid-lock: :fontawesome-solid-key: :fontawesome-solid-shield: :fontawesome-solid-bug: |
 | Status | :fontawesome-solid-circle-check: :fontawesome-solid-circle-xmark: :fontawesome-solid-hourglass: :fontawesome-solid-triangle-exclamation: |
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-link: Links & References
 
@@ -314,7 +314,7 @@ Another footnote reference[^2] in the text.
 
 [^2]: Footnotes appear at the bottom of the page and are clickable.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-images: Images
 
@@ -346,7 +346,7 @@ Centered (default):
 
 ![Center](resources/img/logo.png){ width="150" }
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-square-up: Abbreviations
 
@@ -357,7 +357,7 @@ The HTML specification is maintained by the W3C.
 
 Hover over "HTML" or "W3C" to see the abbreviation tooltip.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-bars: Horizontal Rules
 
@@ -367,7 +367,7 @@ Text before rule.
 
 Text after rule. Use horizontal rules to separate major sections visually.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-code-branch: Code Snippets & Includes
 
@@ -427,7 +427,7 @@ sequenceDiagram
     Browser-->>User: Render page
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-toggle-on: Tabs & Panels
 
@@ -510,7 +510,7 @@ Tabbed content with persistent state across pages:
     poetry add mkdocs-material
     ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-list: Advanced Lists
 
@@ -538,7 +538,7 @@ ______________________________________________________________________
   !!! warning "Be careful"
       Do not skip this step
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-comments: Comments & Annotations
 
@@ -554,7 +554,7 @@ Press ++ctrl+alt+delete++ to reboot.
 
 Use ++cmd+s++ on Mac to save.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-strikethrough: Text Decorations
 
@@ -572,7 +572,7 @@ ______________________________________________________________________
 
 This is ==highlighted text== using mark extension.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-sliders: Content Actions
 
@@ -587,7 +587,7 @@ features:
 
 Buttons appear in the header (if configured).
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-book-open: Blockquotes
 
@@ -604,7 +604,7 @@ ______________________________________________________________________
 >
 > And ***formatting***.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-calculator: Math & Formulas
 
@@ -640,7 +640,7 @@ g &= h + i
 $$
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-plug: Material Plugins in Action
 
@@ -676,7 +676,7 @@ With `section-index` plugin, sections with `index.md` files become clickable nav
 
 Navigation is defined in `SUMMARY.md` files (literate navigation) for readability and maintainability.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-browser: Responsive Design
 
@@ -698,7 +698,7 @@ Material uses these breakpoints:
 - **Medium** (768-1216px): Tablet
 - **Large** (> 1216px): Desktop
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-circle-half-stroke: Dark & Light Mode
 
@@ -716,7 +716,7 @@ palette:
     accent: teal
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-gears: Configuration Reference
 
@@ -776,7 +776,7 @@ features:
   - announce.dismiss             # Dismissible announcement bar
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-circle-question: Common Patterns
 
@@ -825,7 +825,7 @@ ______________________________________________________________________
     - Tip 1
     - Gotcha 1
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-rocket: Performance Tips
 
@@ -859,7 +859,7 @@ Use `SUMMARY.md` for clean, maintainable navigation structure.
 
 Material generates static URLs that leverage browser caching.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-shield: Accessibility (WCAG 2.1 AA)
 
@@ -878,7 +878,7 @@ This site aims for WCAG 2.1 AA compliance:
 - ++tab++: Navigate elements
 - ++enter++: Activate buttons / confirm
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-file: File Organization
 
@@ -933,7 +933,7 @@ docs/
         └── favicon.png
 ```
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-check: Validation Checklist
 
@@ -951,7 +951,7 @@ When creating new documentation, use this checklist:
 - [ ] `mkdocs build --strict` passes
 - [ ] Tone is cynical/realistic (not aspirational)
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-lightbulb: Tips for Content Creation
 
@@ -979,7 +979,7 @@ Internal links help users navigate. Use relative paths.
 
 Use heading hierarchy (h2, h3, h4) to structure content logically.
 
-______________________________________________________________________
+---
 
 ## :fontawesome-solid-graduation-cap: Learning Resources
 
@@ -997,7 +997,7 @@ ______________________________________________________________________
 - :fontawesome-solid-layer-group: Static site generation
 - :fontawesome-solid-magnifying-glass: Full-text search optimization
 
-______________________________________________________________________
+---
 
 **Last Updated:** 2026-03-22
 **Tags:** material, showcase, features, markdown, theme, documentation
