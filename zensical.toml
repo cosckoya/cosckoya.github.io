@@ -43,13 +43,7 @@ nav = [
     { "Terraform" = "cloud/tools/terraform.tool.md" },
   ]},
   { "DevSecOps" = [
-    { "Prowler" = "cloud/tools/prowler.tool.md" },
-    { "Checkov" = "cloud/tools/checkov.tool.md" },
     { "GitHub" = "cloud/tools/github.tool.md" },
-    { "Azure DevOps" = "cloud/tools/azure-devops.tool.md" },
-    { "Snyk" = "cloud/tools/snyk.tool.md" },
-    { "SonarCloud" = "cloud/tools/sonarcloud.tool.md" },
-    { "Trivy" = "cloud/tools/trivy.tool.md" },
   ]},
   { "API" = [
     { "GitHub REST API" = "api/github-rest-api.service.md" },
