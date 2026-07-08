@@ -4,32 +4,42 @@ site_description: Cosckoya's Tech Toolbox
 site_author: 'cosckoya'
 copyright: Copyright &copy; 2026 цосцкоыа
 
+validation:
+  invalid_links: true
+  invalid_link_anchors: true
+
 repo_url: https://github.com/cosckoya/cosckoya.github.io
 edit_uri: ""
 
 theme:
-  name: material
-  variant: classic
+  variant: modern
   logo: resources/img/logo.png
   favicon: resources/img/favicon.png
   language: en
   palette:
-    # MALEFICENT THEME (Purple + Acid Green)
-    # Dark mode (default)
-    - scheme: slate
-      primary: purple
-      accent: lime
+    # Auto mode (follows system preference)
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: lucide/sun-moon
+        name: Switch to system preference
 
-    # Light mode
-    - scheme: default
+    # MALEFICENT THEME - Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: deep purple
       accent: teal
       toggle:
-        icon: material/brightness-7
+        icon: lucide/sun
         name: Switch to dark mode
+
+    # MALEFICENT THEME - Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: lime
+      toggle:
+        icon: lucide/moon
+        name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
     admonition:
@@ -46,7 +56,16 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
     tag:
-      default: fontawesome/solid/tag
+      default: lucide/hash
+      cloud: lucide/cloud
+      security: lucide/shield
+      ai: lucide/sparkles
+      api: lucide/code
+      database: lucide/database
+      container: lucide/container
+      os: lucide/monitor
+      tool: lucide/wrench
+      language: lucide/code-2
   features:
     - navigation.sections
     - navigation.expand
@@ -75,6 +94,16 @@ theme:
     - announce.dismiss
 
 extra:
+  tags:
+    cloud: cloud
+    security: security
+    ai: ai
+    api: api
+    database: database
+    container: container
+    os: os
+    tool: tool
+    language: language
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/cosckoya
@@ -120,12 +149,10 @@ markdown_extensions:
   - abbr
   - footnotes
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-plugins:
-  - literate-nav:
-      nav_file: SUMMARY.md
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - zensical.extensions.glightbox
+  - zensical.extensions.macros
 
 extra_css:
   - resources/css/images.css

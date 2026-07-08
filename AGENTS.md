@@ -27,7 +27,7 @@ make lint                   # ruff, codespell, yamllint (non-blocking)
 
 ## Navigation Architecture
 
-- **System:** mkdocs-literate-nav (Zensical compat) with `SUMMARY.md` files
+- **System:** Zensical native literate-nav with `SUMMARY.md` files
 - **Structure:** 3-level hierarchy max, expandable sections
 - **No index.md per section** — managed via SUMMARY.md entries
 
@@ -76,7 +76,7 @@ Workflow: `.github/workflows/gh-pages.yml`
 ## Skills
 
 Global skills at `/home/cosckoya/.agentic/skills/`:
-- `mkdocs-material` — Theme config, navigation, icons, templates
+- `mkdocs-material` — Zensical theme config, navigation, icons, templates (compat)
 - `color-theory` — Color schemes, WCAG compliance
 - `markdown-redacter` — Document generation
 - `janitor` — Documentation audits and health scores

@@ -18,15 +18,15 @@ Personal technical knowledge base built by engineers, for engineers. No marketin
 ### Core Engine
 
 ```yaml
-Platform: MkDocs Material 9.7.0+
+Platform: Zensical 0.0.47 (Rust runtime)
 Language: Python 3.12
 Hosting: GitHub Pages (free, fast, reliable)
 CI/CD: GitHub Actions (auto-deploy on push to main)
-Theme: Material for MkDocs (slate color scheme, deep purple/teal accents)
+Theme: Zensical Modern (Maleficent - purple/lime, auto light/dark)
 Custom CSS: Snape theme (docs/resources/css/snape.css)
 ```
 
-**Why MkDocs Material?**
+**Why Zensical?**
 
 - Static site generation (fast, secure, no backend)
 - Markdown-native (docs live in git, version controlled)
@@ -38,7 +38,7 @@ Custom CSS: Snape theme (docs/resources/css/snape.css)
 ### Navigation Architecture
 
 ```python
-# Literate Navigation (mkdocs-literate-nav)
+# Literate Navigation (Zensical native)
 # SUMMARY.md files define navigation hierarchy
 # No more YAML hell in mkdocs.yml
 
@@ -105,7 +105,7 @@ markdown_extensions = [
 
 ```yaml
 # .github/workflows/gh-pages.yml
-name: Deploy MkDocs to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -125,14 +125,25 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build docs
-        run: mkdocs build --strict  # Warnings = errors
+      - run: zensical build --clean --strict  # Warnings = errors
 
-      - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          path: site
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v5
+        id: deployment
 ```
 
 **Pipeline benefits:**
@@ -206,24 +217,23 @@ git push origin feature/new-content
 ### Performance Optimizations
 
 ```yaml
-# Plugins for speed
-plugins:
-  - search:
-      lang: en
-      separator: '[\s\-\.]'  # Faster indexing
-
-  - minify:
-      minify_html: true      # Smaller HTML files
-      minify_js: true        # Smaller JavaScript
-      minify_css: true       # Smaller CSS
-
-# Features for UX
+# Zensical features for speed & UX
 theme:
   features:
-    - navigation.instant.loading   # SPA-like navigation
-    - navigation.instant.prefetch  # Prefetch on hover
-    - search.suggest               # Search autocomplete
-    - content.code.copy            # Copy code button
+    - navigation.instant          # SPA-like navigation
+    - navigation.instant.prefetch # Prefetch on hover
+    - navigation.instant.progress # Progress indicator
+    - navigation.prune            # 33%+ smaller HTML
+    - search.suggest              # Search autocomplete
+    - search.highlight            # Search term highlighting
+    - content.code.copy           # Copy code button
+    - content.code.annotate       # Inline code annotations
+
+# Built-in (no plugins needed):
+#   - Disco search (blazing fast, BM25 ranking)
+#   - Link validation (catches broken links at build)
+#   - Tags (native categorization)
+#   - Mermaid diagrams
 ```
 
 **Performance metrics:**
@@ -263,7 +273,7 @@ cosckoya.github.io/
 │       ├── css/
 │       │   └── snape.css       # Custom theme
 │       └── img/                # Images and logos
-├── mkdocs.yml                  # MkDocs configuration
+├── mkdocs.yml                  # Zensical configuration
 ├── requirements.txt            # Python dependencies
 ├── venv/                       # Virtual environment
 ├── CLAUDE.md                   # Claude Code instructions
@@ -274,47 +284,66 @@ cosckoya.github.io/
 
 ```text
 # requirements.txt
-mkdocs>=1.5.3
-mkdocs-material>=9.7.0
-mkdocs-literate-nav>=0.6.1
-mkdocs-minify-plugin>=0.8.0
-pymdown-extensions>=10.7
+zensical==0.0.47
+codespell==2.4.2
+ruff==0.15.20
+yamllint==1.38.0
+pre-commit==4.6.0
 ```
 
 ### Configuration Highlights
 
 ```yaml
-# mkdocs.yml (key sections)
-site_name: cosckoya's Tech Docs
+# mkdocs.yml (key sections - Zensical modern)
+site_name: It's dangerous to go alone!
 site_url: https://cosckoya.github.io
 repo_url: https://github.com/cosckoya/cosckoya.github.io
 
 theme:
-  name: material
+  variant: modern
   palette:
-    - scheme: slate            # Dark mode (default)
+    # Auto mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: lucide/sun-moon
+        name: Switch to system preference
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: deep purple
       accent: teal
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    - scheme: default          # Light mode
-      primary: deep purple
-      accent: teal
-      toggle:
-        icon: material/brightness-7
+        icon: lucide/sun
         name: Switch to dark mode
-
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: lime
+      toggle:
+        icon: lucide/moon
+        name: Switch to light mode
   features:
-    - navigation.instant.loading
-    - navigation.instant.prefetch
     - navigation.sections
     - navigation.expand
-    - navigation.breadcrumbs
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - navigation.path
+    - navigation.prune
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.code.annotate
+    - toc.follow
+    - header.autohide
+
+validation:
+  invalid_links: true
+  invalid_link_anchors: true
 
 extra_css:
   - resources/css/snape.css    # Custom styling
@@ -387,9 +416,9 @@ templates/
 
 **Trade-off:** Perfect for technical documentation. Don't need dynamic features.
 
-### MkDocs vs Alternatives
+### Zensical vs Alternatives
 
-| Feature | MkDocs Material | Docusaurus | GitBook | Confluence |
+| Feature | Zensical | Docusaurus | GitBook | Confluence |
 |---------|----------------|------------|---------|------------|
 | **Setup** | :fontawesome-solid-bolt: 5 minutes | :fontawesome-solid-hourglass: 15 minutes | :fontawesome-solid-cloud: Cloud only | :fontawesome-solid-dollar-sign: Enterprise |
 | **Markdown** | :fontawesome-solid-circle-check: Pure MD | :fontawesome-solid-triangle-exclamation: MDX (React) | :fontawesome-solid-circle-check: Pure MD | :fontawesome-solid-xmark: WYSIWYG |
@@ -399,13 +428,13 @@ templates/
 | **Performance** | :fontawesome-solid-rocket: Fast | :fontawesome-solid-rocket: Fast | :fontawesome-solid-snail: Slow | :fontawesome-solid-snail: Slow |
 | **Offline** | :fontawesome-solid-circle-check: Yes | :fontawesome-solid-circle-check: Yes | :fontawesome-solid-xmark: No | :fontawesome-solid-xmark: No |
 
-**Winner:** MkDocs Material (best docs-to-effort ratio)
+**Winner:** Zensical (best docs-to-effort ratio)
 
 ### Python Tooling
 
 **Why Python?**
 
-- MkDocs is Python-based (pip install, done)
+- Zensical is Python-installable (pip install, done) with a Rust core for speed
 - Virtual environments isolate dependencies
 - Requirements.txt locks versions (reproducible builds)
 - GitHub Actions has native Python support
@@ -524,7 +553,7 @@ templates/
     ```
 
     **Customize:**
-    - Edit `mkdocs.yml` (site name, colors, URL)
+    - Edit `mkdocs.yml` (site name, colors, variant)
     - Replace `docs/resources/css/snape.css` (custom styling)
     - Update `CLAUDE.md` (remove project-specific instructions)
     - Modify content in `docs/` (your own documentation)
@@ -555,7 +584,7 @@ Pages: 49
 Build time: ~3 seconds
 Site size: ~15 MB (minified)
 Largest page: ~50 KB (HTML)
-Total CSS: ~200 KB (Material theme + custom)
+Total CSS: ~200 KB (Zensical theme + custom)
 Total JS: ~100 KB (search + instant loading)
 
 # Lighthouse scores (mobile)

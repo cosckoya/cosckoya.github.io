@@ -1,9 +1,9 @@
 ---
-title: Material for MkDocs - Feature Showcase
-description: Complete reference of all Material for MkDocs theme features, markdown extensions, and plugins available in 2026
+title: Zensical - Feature Showcase
+description: Complete reference of all Zensical features, markdown extensions, and built-in modules
 ---
 
-# :fontawesome-solid-wand-magic-sparkles: Material for MkDocs Feature Showcase
+# :fontawesome-solid-wand-magic-sparkles: Zensical Feature Showcase
 
 **Kitchen sink documentation** — Every feature, pattern, and capability of the Material theme ecosystem. Use this as reference for what's possible, copy/paste examples, or generate new documentation.
 
