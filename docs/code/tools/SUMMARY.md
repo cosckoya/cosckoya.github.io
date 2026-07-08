@@ -1,2 +1,0 @@
-- [Gitleaks](gitleaks.tool.md)
-- [pre-commit](pre-commit.tool.md)

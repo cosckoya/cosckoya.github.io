@@ -1,2 +1,0 @@
-- [GitHub REST API](github-rest-api.service.md)
-- [Docker Hub API](docker-hub.service.md)

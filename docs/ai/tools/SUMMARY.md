@@ -1,1 +1,0 @@
-- [Google Gemini CLI](gemini.tool.md)

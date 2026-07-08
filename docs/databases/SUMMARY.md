@@ -1,2 +1,0 @@
-- [PostgreSQL](postgresql.database.md)
-- [Tools](tools/)

@@ -1,3 +1,0 @@
-- [Linux](linux.os.md)
-- [macOS](macos.os.md)
-- [Windows](windows.os.md)

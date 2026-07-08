@@ -1,5 +1,0 @@
-- [AWS Bedrock](aws-bedrock.ai.md)
-- [Azure AI Foundry](azure-ai-foundry.ai.md)
-- [Microsoft Copilot Studio](microsoft-copilot-studio.ai.md)
-- [Google Vertex AI](vertex-ai.ai.md)
-- [Tools](tools/)

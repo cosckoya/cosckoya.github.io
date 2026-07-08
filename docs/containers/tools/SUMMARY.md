@@ -1,5 +1,0 @@
-- [Helm](helm.tool.md)
-- [Krew](krew.tool.md)
-- [kubectx](kubectx.tool.md)
-- [Dive](dive.tool.md)
-- [Popeye](popeye.tool.md)
