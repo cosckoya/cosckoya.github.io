@@ -53,7 +53,7 @@ For new sections, create a `SUMMARY.md` in the section directory.
 ### 5. Validate
 
 ```bash
-make validate          # mkdocs build --strict
+make validate          # zensical build --strict
 make lint              # ruff + codespell + yamllint
 ```
 

@@ -6,7 +6,7 @@
   },
   "agent": {
     "mcdoc": {
-      "description": "MkDocs Material Documentation Publisher — creates, maintains, and publishes cosckoya.github.io",
+      "description": "Documentation Publisher — creates, maintains, and publishes cosckoya.github.io",
       "mode": "subagent",
       "color": "#00BFA5"
     }
@@ -32,7 +32,6 @@
       "git reset *": "allow",
       "git rm *": "allow",
       "gh *": "allow",
-      "mkdocs *": "allow",
       "pre-commit *": "allow",
       "python3 *": "allow",
       "pip *": "allow",

@@ -114,7 +114,7 @@ cp templates/page.template.md cloud/tools/new-tool.tool.md
 # 2. Replace all {{PLACEHOLDER}} values
 # 3. Add entry to appropriate SUMMARY.md
 # 4. Validate
-mkdocs build --strict
+zensical build --strict
 ```
 
 ## Validation Checklist
@@ -142,9 +142,9 @@ Skills can use these templates by:
 4. **Validate:** Check all placeholders filled
 5. **Write File:** Save to appropriate location
 6. **Update Navigation:** Add to SUMMARY.md
-7. **Build Test:** Run `mkdocs build --strict`
+7. **Build Test:** Run `zensical build --strict`
 
 ---
 
 **Last Updated:** 2026-06-01
-**Maintained By:** mkdocs-material-expert skill
+**Maintained By:** zensical-ecosystem skill

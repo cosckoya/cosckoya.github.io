@@ -22,15 +22,6 @@ updates:
       - "python"
     # Group related updates to reduce PR noise
     groups:
-      # Production dependencies
-      mkdocs-group:
-        patterns:
-          - "mkdocs*"
-          - "pymdown-extensions"
-          - "Markdown"
-        update-types:
-          - "minor"
-          - "patch"
       # Development tools
       dev-tools:
         patterns:
