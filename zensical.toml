@@ -11,18 +11,7 @@ docs_dir = "docs"
 site_dir = "site"
 dev_addr = "127.0.0.1:8000"
 
-extra_css = [
-  "resources/css/images.css",
-  "resources/css/snape.css",
-]
-
-[validation]
-invalid_links = true
-invalid_link_anchors = true
-
 nav = [
-  { "Home" = "index.md" },
-  { "Showcase" = "showcase.md" },
   { "Toolbox" = [
     "toolbox/index.md",
     { "NeoVim" = "toolbox/neovim.tool.md" },
@@ -31,6 +20,8 @@ nav = [
     { "ZSH + Zinit" = "toolbox/zsh.tool.md" },
     { "Kitty" = "toolbox/kitty.tool.md" },
   ]},
+  { "Home" = "index.md" },
+  { "Showcase" = "showcase.md" },
   { "Operating Systems" = [
     { "Linux" = "os/linux.os.md" },
     { "macOS" = "os/macos.os.md" },
@@ -98,6 +89,15 @@ nav = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
 ]
+
+extra_css = [
+  "resources/css/images.css",
+  "resources/css/snape.css",
+]
+
+[validation]
+invalid_links = true
+invalid_link_anchors = true
 
 [theme]
 variant = "modern"

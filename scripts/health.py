@@ -68,8 +68,10 @@ def main():
     nav_file = os.path.join(os.getcwd(), "zensical.toml")
     with open(nav_file, encoding="utf-8") as f:
         for line in f:
-            # Match TOML nav entries like  { "Title" = "path/to/page.md" },
-            m = re.search(r'=\s+"([\w/.-]+\.md)"', line)
+            # Match TOML nav entries:
+            #   { "Title" = "path/to/page.md" }  — dict entry
+            #   "path/to/page.md"                 — bare string (index pages)
+            m = re.search(r'"([\w/.-]+\.md)"', line)
             if m:
                 referenced.add(m.group(1))
 
