@@ -1,10 +1,10 @@
 # AGENTS.md
 
-Instructions for OpenCode when working on this MkDocs Material documentation site.
+Instructions for OpenCode when working on this Zensical documentation site.
 
 ## Project
 
-- **Type:** MkDocs Material documentation site hosted at https://cosckoya.github.io
+- **Type:** Zensical documentation site hosted at https://cosckoya.github.io
 - **Deploy:** GitHub Pages, auto-deploys main branch via GitHub Actions
 - **Python:** 3.12 only (see pyproject.toml and CI workflow)
 
@@ -19,26 +19,22 @@ Instructions for OpenCode when working on this MkDocs Material documentation sit
 
 ```bash
 source venv/bin/activate
-mkdocs serve              # Live-reload at localhost:8000
-mkdocs build --strict    # Strict mode (warnings = errors)
-make validate             # Equivalent: mkdocs build --strict
-make lint                 # ruff, codespell, yamllint (non-blocking)
+zensical serve              # Live-reload at localhost:8000
+zensical build --strict    # Strict mode (warnings = errors)
+make validate               # Equivalent: zensical build --strict
+make lint                   # ruff, codespell, yamllint (non-blocking)
 ```
-
-## Plugin Pinning
-
-Pinned to exact versions in `requirements.txt`. ProperDocs promotional warnings from newer versions are cosmetic (print to stdout, don't break `--strict`). Current pins: `mkdocs-literate-nav==0.6.3`, `mkdocs-same-dir==0.1.5`, `mkdocs-section-index==0.3.12`. Update lockfile in tandem.
 
 ## Navigation Architecture
 
-- **System:** `mkdocs-literate-nav` with `SUMMARY.md` files
+- **System:** mkdocs-literate-nav (Zensical compat) with `SUMMARY.md` files
 - **Structure:** 3-level hierarchy max, expandable sections
 - **No index.md per section** — managed via SUMMARY.md entries
 
 When adding new sections:
 1. Create `.md` file in appropriate category
 2. Add entry to nearest `SUMMARY.md`
-3. Test: `mkdocs serve` then `mkdocs build --strict`
+3. Test: `zensical serve` then `zensical build --strict`
 
 ## Content Standards
 
@@ -54,7 +50,7 @@ When adding new sections:
 
 ## Template System
 
-Use `docs/templates/page.template.md` when creating new pages. It supports both tool and tech-reference content with optional sections. The old `tech-reference.template.md` and `tool-reference.template.md` are deprecated.
+Use `templates/page.template.md` when creating new pages. It supports both tool and tech-reference content with optional sections.
 
 When generating a new page:
 1. Copy `page.template.md` to the target directory
@@ -75,7 +71,7 @@ yamllint -c .yamllint.yml mkdocs.yml
 
 Workflow: `.github/workflows/gh-pages.yml`
 - **Trigger:** Push to `main`
-- **Flow:** lint → `mkdocs build --strict` → `mkdocs gh-deploy --force`
+- **Flow:** lint → `pip install zensical` → health check → `zensical build --clean --strict` → upload artifact → deploy-pages
 
 ## Skills
 
@@ -94,8 +90,9 @@ Installed skills at `~/.agents/skills/`:
 
 This project has two dedicated OpenCode agents for documentation tasks:
 
-- **`@mcdoc`** — MkDocs Material Documentation Publisher. Invoke for content creation, health audits, CI/CD management, theme configuration, and deployment. Knows this project's conventions (templates, Vibe Check, literate-nav, plugin pinning).
+- **`@mcdoc`** — Documentation Publisher. Invoke for content creation, health audits, CI/CD management, theme configuration, and deployment.
 - **`@atticus`** — Documentation Architect. Invoke for content audits, style enforcement, Diátaxis compliance, and documentation health assessments across any Markdown project.
+
 ## See Also
 
 - **mkdocs.yml** — Full theme, plugin, extension configuration

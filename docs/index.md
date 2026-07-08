@@ -1,6 +1,6 @@
 ---
 title: Klaatu Barada Nikto
-description: Technical documentation built with MkDocs Material, GitHub Pages, and too much coffee
+description: Technical documentation built with Zensical, GitHub Pages, and too much coffee
 ---
 
 ![!](resources/img/zelda.png#center)
@@ -148,10 +148,10 @@ jobs:
 ```bash
 # Local development (live reload)
 source venv/bin/activate  # Activate Python virtual environment
-mkdocs serve              # http://localhost:8000
+zensical serve            # http://localhost:8000
 
 # Build validation (strict mode)
-mkdocs build --strict     # Warnings treated as errors
+zensical build --strict   # Warnings treated as errors
 
 # Branch strategy
 main       # Production (auto-deploys)
@@ -161,8 +161,8 @@ feature/*  # Feature branches from develop
 # Git workflow
 git checkout -b feature/new-content develop
 # Make changes...
-mkdocs serve  # Test locally
-mkdocs build --strict  # Validate
+zensical serve  # Test locally
+zensical build --strict  # Validate
 git add . && git commit -m "feat: add new content"
 git push origin feature/new-content
 # Create PR to develop → merge → PR to main → auto-deploy
@@ -328,7 +328,7 @@ extra_css:
 
 ```bash
 # Documentation templates (DRY principle)
-docs/templates/
+templates/
 ├── README.md                    # Template usage guide
 ├── page.template.md             # **RECOMMENDED** - Universal template
 ├── tech-reference.template.md   # DEPRECATED - Use page.template.md
@@ -520,7 +520,7 @@ docs/templates/
     python -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
-    mkdocs serve  # http://localhost:8000
+    zensical serve  # http://localhost:8000
     ```
 
     **Customize:**
@@ -532,8 +532,8 @@ docs/templates/
 ??? question "How do you maintain this?"
     **Minimal maintenance required:**
     - Write content in markdown (VS Code + preview)
-    - Test locally: `mkdocs serve`
-    - Validate: `mkdocs build --strict`
+    - Test locally: `zensical serve`
+    - Validate: `zensical build --strict`
     - Push to main → auto-deploy (GitHub Actions)
     - Monthly: `pre-commit autoupdate` (update hooks)
     - Quarterly: Update dependencies (`pip install --upgrade -r requirements.txt`)
@@ -611,22 +611,22 @@ This is a personal documentation project, but if you find errors or have suggest
 
 **Contribution guidelines:**
 
-- Use templates from `docs/templates/`
+- Use templates from `templates/`
 - Follow three-tab "Quick Hits" structure
 - Include inline code comments `# (1)!`
 - Maintain cynical-but-helpful tone
 - Use FontAwesome icons (`:fontawesome-solid-...:`), no emojis
 - Tags at bottom of page (not frontmatter)
-- Validate with `mkdocs build --strict`
+- Validate with `zensical build --strict` or `make validate`
 
 ---
 
 **Built with:** :fontawesome-solid-heart: **and way too much coffee**
 
-**Tech Stack:** Python 3.12 • MkDocs Material 9.7.0 • GitHub Pages • GitHub Actions • FontAwesome • Mermaid • Pygments • Way too many Markdown extensions
+**Tech Stack:** Python 3.12 • Zensical 0.0.47 • GitHub Pages • GitHub Actions • FontAwesome • Mermaid • Pygments • Way too many Markdown extensions
 
 **Last Updated:** 2026-02-02 | **Build Status:** :fontawesome-solid-circle-check: Passing | **Uptime:** 99.9%
 
-**Tags:** mkdocs, python, github-pages, documentation, static-site, markdown
+**Tags:** zensical, python, github-pages, documentation, static-site, markdown
 
 *"It's dangerous to go alone."*
