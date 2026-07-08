@@ -52,7 +52,7 @@ def main():
     print()
 
     # --- Orphan check ---
-    print("--- Checking for orphaned pages (not in any SUMMARY.md) ---")
+    print("--- Checking for orphaned pages (not in nav:) ---")
     all_pages = set()
     for root, dirs, files in os.walk(DOCS):
         dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
@@ -65,18 +65,18 @@ def main():
             all_pages.add(rel)
 
     referenced = set()
-    for root, dirs, files in os.walk(DOCS):
-        for f in files:
-            if f != SUMMARY_ONLY:
-                continue
-            path = os.path.join(root, f)
-            content = open(path, encoding="utf-8").read()
-            for m in re.finditer(r"\]\(([^)]+)\)", content):
+    nav_file = os.path.join(os.getcwd(), "mkdocs.yml")
+    with open(nav_file, encoding="utf-8") as f:
+        for line in f:
+            m = re.search(r"\]\(([^)]+)\)", line)
+            if m:
                 link = m.group(1)
                 if link.endswith(".md"):
-                    full = os.path.normpath(os.path.join(os.path.dirname(path), link))
-                    ref = os.path.relpath(full, DOCS)
-                    referenced.add(ref)
+                    referenced.add(link)
+            # Also match YAML nav entries like "- Page: path.md" or "path.md"
+            m = re.search(r':\s+([\w/.-]+\.md)\s*$', line)
+            if m:
+                referenced.add(m.group(1))
 
     orphaned = sorted(all_pages - referenced)
     if orphaned:
