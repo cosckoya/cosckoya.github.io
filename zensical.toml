@@ -124,8 +124,6 @@ features = [
   "content.tooltips",
   "navigation.prune",
   "content.footnote.tooltips",
-  "content.action.edit",
-  "content.action.view",
   "toc.follow",
   "header.autohide",
   "announce.dismiss",
