@@ -22,8 +22,6 @@ nav = [
   ]},
   { "Operating Systems" = [
     { "Linux" = "os/linux.os.md" },
-    { "macOS" = "os/macos.os.md" },
-    { "Windows" = "os/windows.os.md" },
   ]},
   { "Containers" = [
     { "Docker" = "containers/docker.tool.md" },
