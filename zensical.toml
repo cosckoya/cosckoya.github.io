@@ -11,6 +11,11 @@ docs_dir = "docs"
 site_dir = "site"
 dev_addr = "127.0.0.1:8000"
 
+extra_css = [
+  "resources/css/images.css",
+  "resources/css/snape.css",
+]
+
 [validation]
 invalid_links = true
 invalid_link_anchors = true
@@ -95,8 +100,6 @@ nav = [
 
 [theme]
 variant = "modern"
-logo = "resources/img/logo.png"
-favicon = "resources/img/favicon.png"
 language = "en"
 features = [
   "navigation.sections",
@@ -213,11 +216,6 @@ link = "https://www.linkedin.com/in/javier-coscolla-cabrera-95948224"
 [[extra.social]]
 icon = "simple/docker"
 link = "https://hub.docker.com/u/cosckoya"
-
-extra_css = [
-  "resources/css/images.css",
-  "resources/css/snape.css",
-]
 
 # --- Markdown Extensions ---
 

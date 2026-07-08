@@ -1,0 +1,57 @@
+/* ---------------------------------------------------------------------------
+   images.css — Image handling for Zensical modern theme
+   Uses Zensical's CSS custom properties and glightbox integration.
+   Complies with WCAG 2.1 AA contrast via theme variables.
+   --------------------------------------------------------------------------- */
+
+/* --- Image Max Width --- */
+.md-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* --- Image Alignment via attr_list --- */
+img[align="left"] {
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+  max-width: 40%;
+}
+
+img[align="right"] {
+  float: right;
+  margin: 0.5em 0 0.5em 1em;
+  max-width: 40%;
+}
+
+/* --- Figure-style images with captions --- */
+.md-content img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.25em;
+}
+
+/* --- GLightbox overrides --- */
+.glightbox {
+  cursor: zoom-in;
+  transition: opacity 0.2s ease;
+}
+
+.glightbox:hover {
+  opacity: 0.85;
+}
+
+/* --- Dark mode: image border for clarity --- */
+[data-md-color-scheme="slate"] .md-content img:not([align]) {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/* --- Prevent oversized images from breaking layout --- */
+.md-content img[alt]:not([width]):not([height]) {
+  max-height: 60vh;
+  object-fit: contain;
+}
