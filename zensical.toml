@@ -64,8 +64,8 @@ nav = [
     { "GitHub REST API" = "api/github-rest-api.service.md" },
     { "Docker Hub API" = "api/docker-hub.service.md" },
   ]},
-  { "Programming Languages" = [
-    { "Python" = "code/python.lang.md" },
+  { "Python" = [
+    "code/python.lang.md",
     { "Tools" = [
       { "Gitleaks" = "code/tools/gitleaks.tool.md" },
       { "pre-commit" = "code/tools/pre-commit.tool.md" },
