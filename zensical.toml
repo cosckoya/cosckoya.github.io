@@ -71,19 +71,9 @@ nav = [
   ]},
   { "Programming Languages" = [
     { "Python" = "code/python.lang.md" },
-    { "Go" = "code/go.lang.md" },
     { "Tools" = [
       { "Gitleaks" = "code/tools/gitleaks.tool.md" },
       { "pre-commit" = "code/tools/pre-commit.tool.md" },
-    ]},
-  ]},
-  { "Artificial Intelligence" = [
-    { "AWS Bedrock" = "ai/aws-bedrock.ai.md" },
-    { "Azure AI Foundry" = "ai/azure-ai-foundry.ai.md" },
-    { "Microsoft Copilot Studio" = "ai/microsoft-copilot-studio.ai.md" },
-    { "Google Vertex AI" = "ai/vertex-ai.ai.md" },
-    { "Tools" = [
-      { "Google Gemini CLI" = "ai/tools/gemini.tool.md" },
     ]},
   ]},
   { "1337" = [
