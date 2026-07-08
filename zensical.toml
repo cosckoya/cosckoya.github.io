@@ -51,10 +51,6 @@ nav = [
   ]},
   { "Python" = [
     "code/python.lang.md",
-    { "Tools" = [
-      { "Gitleaks" = "code/tools/gitleaks.tool.md" },
-      { "pre-commit" = "code/tools/pre-commit.tool.md" },
-    ]},
   ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
