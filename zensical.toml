@@ -24,7 +24,7 @@ nav = [
     "linux/index.md",
   ]},
   { "Python" = [
-    "code/python.lang.md",
+    "code/index.md",
   ]},
   { "Containers" = [
     { "Docker" = "containers/docker.tool.md" },
