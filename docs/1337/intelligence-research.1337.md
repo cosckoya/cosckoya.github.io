@@ -3,7 +3,7 @@ title: Threat Intelligence & Security Research
 description: Threat intelligence, OSINT, vulnerability research, malware reverse engineering, security research methodologies
 ---
 
-# :fontawesome-solid-magnifying-glass: Threat Intelligence & Security Research
+# :lucide-magnifying-glass: Threat Intelligence & Security Research
 
 Know your adversary. Collect, analyze, and operationalize threat intelligence. OSINT for reconnaissance. Vulnerability research finds 0-days. Malware reverse engineering understands attacker tools. Intelligence-driven security prioritizes defenses against real threats, not theoretical ones.
 
@@ -12,9 +12,9 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Disciplines"
+=== ":lucide-list-check: Core Disciplines"
 
     **Threat Intelligence Lifecycle:**
     ```python
@@ -198,7 +198,7 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
     - Most IOCs already stale (C2 infrastructure changes fast)
     - Vulnerability research high-value (bug bounties pay millions)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Threat Intel Platform (MISP):**
     ```python
@@ -364,7 +364,7 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
     - Reverse engineering understands attacker tools/TTPs
     - Intelligence sharing amplifies detection (community defense)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Prioritize intelligence** - Not all IOCs equal (contextualize)
@@ -403,16 +403,16 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning & Certifications
+## :lucide-graduation-cap: Learning & Certifications
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[GCTI](https://www.giac.org/certifications/cyber-threat-intelligence-gcti/)** - $2499, SANS threat intelligence
 - **[GREM](https://www.giac.org/certifications/reverse-engineering-malware-grem/)** - $2499, malware reverse engineering
 - **[OSINT](https://www.securityblue.team/courses/osint/)** - $499, Security Blue Team OSINT
 - **[eJPT](https://elearnsecurity.com/product/ejpt-certification/)** - $200, entry-level pentesting
 
-### :fontawesome-solid-rocket: Practice Platforms
+### :lucide-rocket: Practice Platforms
 
 - **[CyberDefenders](https://cyberdefenders.org/)** - Free, threat hunting challenges
 - **[MalwareBazaar](https://bazaar.abuse.ch/)** - Free, malware samples for research
@@ -420,7 +420,7 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
 
 ---
 
-## :fontawesome-solid-wrench: Essential Toolkit
+## :lucide-wrench: Essential Toolkit
 
 | Category | Tools | Purpose |
 |----------|-------|---------|
@@ -433,6 +433,6 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-binoculars: **Intel is Power** - Threat intel prioritizes defenses. OSINT 80% of intel (public sources undervalued). Commercial feeds expensive ($50k-500k/year). Bug bounties pay millions for 0-days. Reverse engineering requires patience. Attribution hard (false flags common).
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-binoculars: **Intel is Power** - Threat intel prioritizes defenses. OSINT 80% of intel (public sources undervalued). Commercial feeds expensive ($50k-500k/year). Bug bounties pay millions for 0-days. Reverse engineering requires patience. Attribution hard (false flags common).
 
 **Tags:** threat-intelligence, osint, vulnerability-research, malware-analysis, reverse-engineering

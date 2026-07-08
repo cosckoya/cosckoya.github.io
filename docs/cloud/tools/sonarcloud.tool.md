@@ -3,7 +3,7 @@ title: SonarCloud
 description: Code quality and security platform - static analysis, code smells, bugs, vulnerabilities, technical debt tracking
 ---
 
-# :fontawesome-solid-magnifying-glass-chart: SonarCloud
+# :lucide-magnifying-glass-chart: SonarCloud
 
 Cloud-based code quality and security platform by SonarSource. Static analysis for 30+ languages. Detects bugs, code smells, security vulnerabilities, duplications. Quality gates block merges. Free for open source.
 
@@ -12,9 +12,9 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation (via npm for Node.js projects)
@@ -65,7 +65,7 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
     - PR decoration shows issues inline (better than separate tool)
     - 30+ languages: Java, C#, JS, Python, Go, PHP, C/C++, etc.
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```properties
     # sonar-project.properties (project root)
@@ -181,7 +181,7 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
     - Historical trends identify technical debt accumulation
     - Multi-language support in single platform
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Quality gates** - Set realistic thresholds (80% coverage, no critical issues)
@@ -216,15 +216,15 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[SonarCloud Documentation](https://docs.sonarcloud.io/)** - Complete guide
 - **[SonarSource Rules](https://rules.sonarsource.com/)** - All language rules explained
 - **[Clean Code Guide](https://www.sonarsource.com/learn/clean-code/)** - Best practices
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **30+ languages** - Java, C#, JavaScript, Python, Go, PHP, C/C++, Kotlin, Ruby, etc.
 - **Quality gates** - Enforce code quality standards, block PRs
@@ -235,7 +235,7 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
 
 ---
 
-## :fontawesome-solid-star: Alternatives
+## :lucide-star: Alternatives
 
 - **[SonarQube](https://www.sonarsource.com/products/sonarqube/)** - Self-hosted version (on-prem)
 - **[CodeClimate](https://codeclimate.com/)** - Similar features, different pricing
@@ -244,6 +244,6 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-chart-line: **Quality Standard** - Industry leader for code quality. Free for open source is generous. PR decoration is must-have. Quality gates enforce discipline. Can be noisy (configure exclusions). Worth the cost for private repos.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-chart-line: **Quality Standard** - Industry leader for code quality. Free for open source is generous. PR decoration is must-have. Quality gates enforce discipline. Can be noisy (configure exclusions). Worth the cost for private repos.
 
 **Tags:** sonarcloud, code-quality, sast, static-analysis, security

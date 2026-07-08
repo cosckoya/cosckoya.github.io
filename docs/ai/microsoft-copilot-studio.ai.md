@@ -3,7 +3,7 @@ title: Microsoft Copilot Studio
 description: Build custom copilots - conversational AI, Power Platform integration, no-code/low-code agents, enterprise deployment
 ---
 
-# :fontawesome-brands-microsoft: Microsoft Copilot Studio
+# :lucide-microsoft: Microsoft Copilot Studio
 
 Microsoft's platform for building custom copilots and conversational AI agents. Low-code/no-code builder with Power Platform integration. Create chatbots for websites, Teams, Dynamics. Extends Microsoft 365 Copilot with custom plugins. GPT-4 powered conversations.
 
@@ -12,9 +12,9 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Concepts"
+=== ":lucide-list-check: Essential Concepts"
 
     ```yaml
     # Copilot Studio Components
@@ -73,7 +73,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
     - Free tier: 10 messages/user/month (limited but usable for testing)
     - Enterprise tier: Pay per conversation (starts $200/tenant/month)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # Topic definition (HR Benefits copilot)
@@ -215,7 +215,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
     - Teams integration provides instant user base
     - ALM via solutions (export/import between environments)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Start simple** - Begin with 5-10 topics, add complexity gradually
@@ -251,15 +251,15 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Copilot Studio Documentation](https://learn.microsoft.com/microsoft-copilot-studio/)** - Complete guide
 - **[Power Platform Documentation](https://learn.microsoft.com/power-platform/)** - Integration reference
 - **[Copilot Studio Community](https://powerusers.microsoft.com/t5/Microsoft-Copilot-Studio/ct-p/PVACommunity)** - Forums and examples
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Visual topic designer** - No-code conversation flows
 - **Generative AI** - GPT-4 powered fallback responses
@@ -270,7 +270,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 
 ---
 
-## :fontawesome-solid-star: Deployment Channels
+## :lucide-star: Deployment Channels
 
 | Channel | Setup Complexity | Features | Use Case |
 |---------|-----------------|----------|----------|
@@ -283,7 +283,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 
 ---
 
-## :fontawesome-solid-dollar-sign: Pricing (2026)
+## :lucide-dollar-sign: Pricing (2026)
 
 | Tier | Price | Messages Included | Best For |
 |------|-------|-------------------|----------|
@@ -300,7 +300,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 
 ---
 
-## :fontawesome-solid-star: Integration Points
+## :lucide-star: Integration Points
 
 - **Power Automate** - Business logic, API calls, data operations
 - **Power Apps** - Launch apps from copilot conversations
@@ -312,6 +312,6 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-users: **Low-Code Champion** - Perfect for business users building conversational AI. Visual designer is intuitive. Power Platform integration is powerful. Licensing confusing. Great for internal use cases (Teams). Generative AI makes bots smarter.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-users: **Low-Code Champion** - Perfect for business users building conversational AI. Visual designer is intuitive. Power Platform integration is powerful. Licensing confusing. Great for internal use cases (Teams). Generative AI makes bots smarter.
 
 **Tags:** copilot-studio, microsoft, conversational-ai, chatbots, low-code

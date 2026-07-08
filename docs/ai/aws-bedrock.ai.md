@@ -3,7 +3,7 @@ title: AWS Bedrock
 description: AWS managed AI service - foundation models from Anthropic, Meta, Mistral, serverless inference, RAG support
 ---
 
-# :fontawesome-brands-aws: AWS Bedrock
+# :lucide-aws: AWS Bedrock
 
 AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan via API. Serverless inference, no infrastructure management. RAG (Retrieval Augmented Generation) support with Knowledge Bases. Pay per token.
 
@@ -12,9 +12,9 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential API Usage"
+=== ":lucide-list-check: Essential API Usage"
 
     ```python
     # Install AWS SDK
@@ -118,7 +118,7 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
     - Regional availability matters (us-east-1, us-west-2 have most models)
     - IAM permissions required (bedrock:InvokeModel)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```python
     # RAG with Bedrock Knowledge Bases
@@ -238,7 +238,7 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
     - Guardrails prevent brand risk (filter harmful content)
     - IAM integration provides fine-grained access control
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Streaming** - Always use `invoke_model_with_response_stream` for UX
@@ -275,15 +275,15 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[AWS Bedrock Documentation](https://docs.aws.amazon.com/bedrock/)** - Complete reference
 - **[Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/)** - Per-token costs
 - **[Model IDs](https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids.html)** - Current model versions
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Foundation models** - Claude, Llama, Mistral, Cohere, Stability AI
 - **Knowledge Bases** - RAG with S3 documents, automatic embeddings
@@ -294,7 +294,7 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
 
 ---
 
-## :fontawesome-solid-star: Available Models (2026)
+## :lucide-star: Available Models (2026)
 
 | Provider | Model | Input $ / 1M tokens | Output $ / 1M tokens | Context Window |
 |----------|-------|---------------------|----------------------|----------------|
@@ -307,6 +307,6 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-cloud: **AWS Integration** - Best choice if already on AWS. Serverless is real (no cold starts). Knowledge Bases simplify RAG. Claude models are excellent. Pricing transparent. Regional availability matters.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-cloud: **AWS Integration** - Best choice if already on AWS. Serverless is real (no cold starts). Knowledge Bases simplify RAG. Claude models are excellent. Pricing transparent. Regional availability matters.
 
 **Tags:** aws-bedrock, ai, llm, claude, aws

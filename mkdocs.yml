@@ -114,20 +114,20 @@ theme:
         icon: lucide/moon
         name: Switch to light mode
   icon:
-    repo: fontawesome/brands/github
+    repo: simple/github
     admonition:
-      note: fontawesome/solid/circle-info
-      abstract: fontawesome/solid/list-check
-      info: fontawesome/solid/circle-info
-      tip: fontawesome/solid/lightbulb
-      success: fontawesome/solid/circle-check
-      question: fontawesome/solid/circle-question
-      warning: fontawesome/solid/triangle-exclamation
-      failure: fontawesome/solid/circle-xmark
-      danger: fontawesome/solid/skull
-      bug: fontawesome/solid/bug
-      example: fontawesome/solid/flask
-      quote: fontawesome/solid/quote-left
+      note: lucide/info
+      abstract: lucide/list-check
+      info: lucide/info
+      tip: lucide/lightbulb
+      success: lucide/circle-check
+      question: lucide/circle-help
+      warning: lucide/alert-triangle
+      failure: lucide/x-circle
+      danger: lucide/skull
+      bug: lucide/bug
+      example: lucide/flask-conical
+      quote: lucide/text-quote
     tag:
       default: lucide/hash
       cloud: lucide/cloud
@@ -178,17 +178,17 @@ extra:
     tool: tool
     language: language
   social:
-    - icon: fontawesome/brands/github
+    - icon: simple/github
       link: https://github.com/cosckoya
-    - icon: fontawesome/brands/gitlab
+    - icon: simple/gitlab
       link: https://gitlab.com/cosckoya
-    - icon: fontawesome/brands/twitter
+    - icon: simple/x
       link: https://twitter.com/cosckoya
-    - icon: fontawesome/brands/dev
+    - icon: simple/devdotto
       link: https://dev.to/cosckoya
-    - icon: fontawesome/brands/linkedin
+    - icon: material/linkedin
       link: https://www.linkedin.com/in/javier-coscolla-cabrera-95948224
-    - icon: fontawesome/brands/docker
+    - icon: simple/docker
       link: https://hub.docker.com/u/cosckoya
 
 markdown_extensions:

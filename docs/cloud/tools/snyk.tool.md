@@ -3,7 +3,7 @@ title: Snyk
 description: Security scanning platform - finds vulnerabilities in dependencies, containers, IaC, code with automated fixes
 ---
 
-# :fontawesome-solid-shield-halved: Snyk
+# :lucide-shield-halved: Snyk
 
 Developer-first security platform. Scans dependencies, containers, IaC, and code for vulnerabilities. Auto-generates fix PRs. Integrates with GitHub, GitLab, Bitbucket, CI/CD. Freemium model (200 tests/month free).
 
@@ -12,9 +12,9 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -70,7 +70,7 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
     - Container scanning finds OS-level vulnerabilities
     - IaC scanning catches misconfigurations before deployment
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # GitHub Actions integration (.github/workflows/snyk.yml)
@@ -170,7 +170,7 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
     - `.snyk` policy file version-controlled with code
     - `snyk monitor` tracks vulnerability trends over time
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Integrate early** - Add to CI/CD from day one
@@ -205,15 +205,15 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Snyk Documentation](https://docs.snyk.io/)** - Complete reference
 - **[Snyk CLI Reference](https://docs.snyk.io/snyk-cli/cli-reference)** - Command-line docs
 - **[Snyk Vulnerability Database](https://security.snyk.io/)** - Public CVE database
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Open Source scanning** - npm, pip, Maven, Go modules, etc.
 - **Container scanning** - Docker, Kubernetes, OS-level vulnerabilities
@@ -224,7 +224,7 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
 
 ---
 
-## :fontawesome-solid-star: Alternatives
+## :lucide-star: Alternatives
 
 - **[Dependabot](https://github.com/dependabot)** - GitHub native, free (basic scanning)
 - **[Trivy](trivy.tool.md)** - Open source, comprehensive (containers, IaC, secrets)
@@ -233,6 +233,6 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-star: **Developer Favorite** - Best balance of features and ease of use. Low false positives. Auto-fix PRs are game-changer. Free tier sufficient for small teams. Paid tiers expensive but worth it for enterprises.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-star: **Developer Favorite** - Best balance of features and ease of use. Low false positives. Auto-fix PRs are game-changer. Free tier sufficient for small teams. Paid tiers expensive but worth it for enterprises.
 
 **Tags:** snyk, security, sca, sast, vulnerability-scanning

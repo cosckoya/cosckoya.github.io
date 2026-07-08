@@ -3,7 +3,7 @@ title: Awesome Sword & Sorcery
 description: Curated resources for fantasy literature, tabletop RPGs, and sword & sorcery - from Tolkien to Martin, D&D to Warhammer
 ---
 
-# :fontawesome-solid-fire: Awesome Sword & Sorcery
+# :lucide-fire: Awesome Sword & Sorcery
 
 Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimdark, pulp classics, tabletop RPGs, video games, wikis, communities. From Tolkien's Middle-earth to Martin's Westeros, from Conan to Kvothe. Roll for initiative.
 
@@ -12,12 +12,12 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-book: Fantasy & Sword & Sorcery Literature
+## :lucide-book: Fantasy & Sword & Sorcery Literature
 
 !!! tip "Start Here: The Reading Path"
     Fantasy literature spans from ancient epic poetry to modern sagas. Classical mythology laid the foundation, pulp magazines defined sword & sorcery, Tolkien revolutionized epic fantasy, and modern authors continue pushing boundaries. Start with what speaks to you.
 
-### :fontawesome-solid-clock-rotate-left: Ancient Epic Poetry & Classical Mythology
+### :lucide-clock-rotate-left: Ancient Epic Poetry & Classical Mythology
 
 !!! note "The Foundation of All Fantasy"
     Where it all began - epic poetry, gods, heroes, and monsters that inspired every fantasy story that followed.
@@ -51,7 +51,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **[r/GreekMythology](https://reddit.com/r/GreekMythology)** - Greek myths (200k+ members)
 - **[r/Norse](https://reddit.com/r/Norse)** - Norse culture and mythology (150k+ members)
 
-### :fontawesome-solid-bolt: Classic Pulp Sword & Sorcery (1930s-1980s)
+### :lucide-bolt: Classic Pulp Sword & Sorcery (1930s-1980s)
 
 !!! example "The Pulp Era - Where Sword & Sorcery Was Born"
     Barbarians, sorcerers, demons, and adventure. The original grimdark before grimdark had a name.
@@ -72,7 +72,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **[The H.P. Lovecraft Archive](https://www.hplovecraft.com/)** - Lovecraft's complete works
 - **[Internet Archive](https://archive.org/)** - Pulp magazine archives
 
-### :fontawesome-solid-star: Epic Fantasy Foundations
+### :lucide-star: Epic Fantasy Foundations
 
 !!! success "The Revolution - Tolkien & The Classics"
     These authors transformed fantasy from pulp magazines into literary epics. Middle-earth changed everything.
@@ -93,7 +93,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **[r/discworld](https://reddit.com/r/discworld)** - Discworld community (400k+ members)
 - **[r/Forgotten_Realms](https://reddit.com/r/Forgotten_Realms)** - Forgotten Realms lore
 
-### :fontawesome-solid-rocket: Modern Epic Fantasy
+### :lucide-rocket: Modern Epic Fantasy
 
 !!! tip "Contemporary Masters - The New Guard"
     Modern fantasy pushing boundaries with complex magic systems, morally grey characters, and epic scope. Kvothe, Westeros, and the Cosmere await.
@@ -110,7 +110,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **N.K. Jemisin** - Broken Earth trilogy (Hugo winner)
 - **Scott Lynch** - Gentleman Bastards (heist fantasy)
 
-### :fontawesome-solid-moon: Grimdark & Horror Fantasy
+### :lucide-moon: Grimdark & Horror Fantasy
 
 !!! warning "No Heroes Here - Where Dark Meets Darker"
     Brutal, unforgiving, morally ambiguous. Cosmic horror meets grimdark.
@@ -119,7 +119,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 **Horror Fantasy:** H.P. Lovecraft (Cthulhu Mythos, public domain) | [Mythos Wiki](https://lovecraft.fandom.com/), Clive Barker (Hellbound Heart), China Miéville (Perdido Street Station)
 
-### :fontawesome-solid-globe: General Fantasy Resources
+### :lucide-globe: General Fantasy Resources
 
 **Communities:** [r/Fantasy](https://reddit.com/r/Fantasy) (2M+) • [r/books](https://reddit.com/r/books) (22M+) • [r/PrintSF](https://reddit.com/r/printSF) (200k+)
 
@@ -129,7 +129,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-star: General Sword & Sorcery Resources
+## :lucide-star: General Sword & Sorcery Resources
 
 !!! info "Tools, Communities & Resources for the Genre"
     OSR gaming, art, podcasts, random generators, and communities. Everything you need to run campaigns and discover content.
@@ -185,7 +185,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-layer-group: Dungeons & Dragons
+## :lucide-layer-group: Dungeons & Dragons
 
 !!! abstract "The Game That Started It All"
     Dungeons, dragons, dice, and destiny. The tabletop RPG that launched a thousand campaigns and changed gaming forever.
@@ -246,7 +246,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-wand-magic-sparkles: Magic: The Gathering
+## :lucide-wand-magic-sparkles: Magic: The Gathering
 
 !!! abstract "Legendary Card Game - 30 Years of Magic"
     Planeswalkers, spells, and legendary creatures. The collectible card game that revolutionized strategy gaming.
@@ -288,7 +288,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-fire: Warhammer
+## :lucide-fire: Warhammer
 
 !!! abstract "Grimdark Tabletop - In the Grim Darkness..."
     Warhammer 40K and Age of Sigmar. Miniatures, lore, video games, and endless war.
@@ -341,7 +341,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-shield-halved: Elder Scrolls
+## :lucide-shield-halved: Elder Scrolls
 
 !!! abstract "Open-World RPG Phenomenon"
     Tamriel awaits. Morrowind, Oblivion, Skyrim - epic open-world adventures with deep lore and endless modding.
@@ -387,7 +387,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-gift: Free Adventures & Modules
+## :lucide-gift: Free Adventures & Modules
 
 !!! success "Free Content - Zero Cost, Maximum Adventure"
     Free adventures, modules, one-page dungeons, and complete RPG systems. Legal, high-quality content at no cost.
@@ -432,7 +432,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
     - **[Reddit r/DnDBehindTheScreen](https://reddit.com/r/DnDBehindTheScreen)** - Community resources
 
 
-## :fontawesome-solid-shield-halved: Other Fantasy Tabletop RPGs
+## :lucide-shield-halved: Other Fantasy Tabletop RPGs
 
 !!! abstract "Beyond D&D - The Rich Tapestry"
     Pathfinder, OSR classics, modern innovations, and indie gems. Endless variety for every playstyle.
@@ -484,7 +484,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-brands-github: GitHub & Legal
+## :lucide-github: GitHub & Legal
 
 !!! note "Open Source & Copyright"
     Awesome lists, RPG tools on GitHub, and legal considerations for public domain content.
@@ -501,6 +501,6 @@ Many fantasy classics are entering public domain (Conan stories pre-1928, early 
 
 ---
 
-**Last Updated:** 2026-02-03 | **Vibe Check:** :fontawesome-solid-khanda: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
+**Last Updated:** 2026-02-03 | **Vibe Check:** :lucide-khanda: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
 
 **Tags:** fantasy, sword-and-sorcery, dungeons-and-dragons, warhammer, tolkien, martin, rothfuss, pratchett, drizzt, conan, elric, magic-the-gathering, elder-scrolls, pathfinder, tabletop-rpg, osr, grimdark, epic-fantasy

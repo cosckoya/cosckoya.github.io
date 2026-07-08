@@ -3,7 +3,7 @@ title: pre-commit
 description: Git hook framework - automate code quality checks, run linters/formatters before commits, prevent bad code from entering repo
 ---
 
-# :fontawesome-solid-shield-halved: pre-commit
+# :lucide-shield-halved: pre-commit
 
 Framework for managing git hooks. Runs linters, formatters, security scanners before commits. Language-agnostic (Python, Go, Node.js, Rust). Prevents bad commits (syntax errors, secrets, formatting issues). Hooks defined in `.pre-commit-config.yaml`. Fast parallel execution. Integrates with CI/CD.
 
@@ -12,9 +12,9 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -73,7 +73,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
     - Some hooks auto-fix (formatters), others report (linters)
     - Skip hooks with `git commit --no-verify` (emergency only)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Configuration file (.pre-commit-config.yaml):**
 
@@ -310,7 +310,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
     - Language-agnostic (works with any language)
     - CI integration ensures hooks run on all PRs
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Start simple** - Add hooks gradually (don't overwhelm team)
@@ -360,7 +360,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
 ---
 
-## :fontawesome-solid-box: Hook Categories
+## :lucide-box: Hook Categories
 
 ### Code Quality
 
@@ -410,16 +410,16 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Official Resources
+### :lucide-graduation-cap: Official Resources
 
 - **[pre-commit Documentation](https://pre-commit.com/)** - Official docs (comprehensive)
 - **[Supported Hooks](https://pre-commit.com/hooks.html)** - Community hook registry
 - **[Creating Hooks](https://pre-commit.com/#creating-new-hooks)** - Build custom hooks
 - **[GitHub Action](https://github.com/pre-commit/action)** - Official CI integration
 
-### :fontawesome-solid-code: Example Configurations
+### :lucide-code: Example Configurations
 
 !!! example "Minimal Python Project"
     ```yaml
@@ -510,11 +510,11 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -526,7 +526,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
     [GitHub Action](https://github.com/pre-commit/action)
 
-- :fontawesome-solid-wrench: __Popular Hooks__
+- :lucide-wrench: __Popular Hooks__
 
     ---
 
@@ -540,7 +540,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
     [golangci-lint](https://github.com/golangci/golangci-lint)
 
-- :fontawesome-solid-code: __Alternative Tools__
+- :lucide-code: __Alternative Tools__
 
     ---
 
@@ -550,7 +550,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
     [lint-staged](https://github.com/okonet/lint-staged) (Run on staged files only)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -564,6 +564,6 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield-halved: **Essential** - pre-commit prevents bad commits (formatting, secrets, syntax errors). Auto-fixes save time. Language-agnostic (works with Python, Go, Node.js, etc.). First run slow (environment setup), subsequent fast. Integrate with CI (GitHub Actions). Team adoption requires discipline (`--no-verify` tempting but dangerous). 200+ hooks available.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield-halved: **Essential** - pre-commit prevents bad commits (formatting, secrets, syntax errors). Auto-fixes save time. Language-agnostic (works with Python, Go, Node.js, etc.). First run slow (environment setup), subsequent fast. Integrate with CI (GitHub Actions). Team adoption requires discipline (`--no-verify` tempting but dangerous). 200+ hooks available.
 
 **Tags:** pre-commit, git-hooks, code-quality, automation, linting

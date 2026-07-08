@@ -14,7 +14,7 @@ description: {{ONE_LINE_DESCRIPTION}}
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     {{ESSENTIAL_COMMANDS}}
@@ -24,7 +24,7 @@ description: {{ONE_LINE_DESCRIPTION}}
 
     {{REAL_TALK_BULLETS}}
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```{{CODE_LANGUAGE}}
     {{COMMON_PATTERNS_CODE}}
@@ -34,7 +34,7 @@ description: {{ONE_LINE_DESCRIPTION}}
 
     {{PATTERN_EXPLANATION_BULLETS}}
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -70,14 +70,14 @@ description: {{ONE_LINE_DESCRIPTION}}
 
 **Documentation:**
 
-- :fontawesome-solid-book: [Official Docs]({{OFFICIAL_DOCS_URL}})
-- :fontawesome-brands-github: [GitHub]({{GITHUB_URL}})
-- :fontawesome-solid-comments: [Community]({{COMMUNITY_URL}})
+- :lucide-book: [Official Docs]({{OFFICIAL_DOCS_URL}})
+- :lucide-github: [GitHub]({{GITHUB_URL}})
+- :lucide-comments: [Community]({{COMMUNITY_URL}})
 
 **Related:**
 
-- :fontawesome-solid-fire: __{{RELATED_1}}__
-- :fontawesome-solid-wrench: __{{RELATED_2}}__
+- :lucide-fire: __{{RELATED_1}}__
+- :lucide-wrench: __{{RELATED_2}}__
 
 ---
 

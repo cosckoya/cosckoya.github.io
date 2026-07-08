@@ -3,7 +3,7 @@ title: Kubernetes
 description: Container orchestration platform - auto-scaling, self-healing, rolling updates, complexity at scale
 ---
 
-# :fontawesome-solid-microchip: Kubernetes (K8s)
+# :lucide-microchip: Kubernetes (K8s)
 
 Container orchestration platform that manages Docker/containerd containers at scale. Auto-scaling, self-healing, rolling updates, service discovery. Overkill for small projects, essential for large deployments. Steep learning curve but industry standard. YAML hell is real.
 
@@ -12,9 +12,9 @@ Container orchestration platform that manages Docker/containerd containers at sc
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Cluster info
@@ -72,7 +72,7 @@ Container orchestration platform that manages Docker/containerd containers at sc
     - `-n namespace` flag works with all commands
     - Learn `kubectl diff -f file.yaml` before applying changes
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # deployment.yaml - The bread and butter of K8s
@@ -238,7 +238,7 @@ Container orchestration platform that manages Docker/containerd containers at sc
     - Ingress provides HTTP routing + SSL termination at the edge
     - Secrets/ConfigMaps separate config from code
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Namespaces** - Isolate environments (dev, staging, prod)
@@ -290,11 +290,11 @@ Container orchestration platform that manages Docker/containerd containers at sc
 
 ---
 
-## :fontawesome-solid-shield-halved: Tools Ecosystem
+## :lucide-shield-halved: Tools Ecosystem
 
 Essential tools for working with Kubernetes.
 
-### :fontawesome-solid-wrench: CLI Tools
+### :lucide-wrench: CLI Tools
 
 ```bash
 # kubectl plugins via krew (package manager)
@@ -318,7 +318,7 @@ brew install stern              # Multi-pod log tailing
 brew install dive               # Analyze container images
 ```
 
-### :fontawesome-solid-box: Popular Tools
+### :lucide-box: Popular Tools
 
 | Tool | Purpose | Why Use It |
 |------|---------|------------|
@@ -333,9 +333,9 @@ brew install dive               # Analyze container images
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Free Resources
+### :lucide-graduation-cap: Free Resources
 
 - **[Kubernetes Documentation](https://kubernetes.io/docs/)** - Official docs, comprehensive
 - **[Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)** - Build K8s from scratch (deep understanding)
@@ -343,7 +343,7 @@ brew install dive               # Analyze container images
 - **[KillerCoda K8s Labs](https://killercoda.com/kubernetes)** - Interactive scenarios
 - **[Kubernetes by Example](https://kubernetesbyexample.com/)** - Quick examples
 
-### :fontawesome-solid-certificate: Certifications
+### :lucide-certificate: Certifications
 
 !!! success "Worth Getting"
     - **CKA (Certified Kubernetes Administrator)** - $395, hands-on exam, industry standard
@@ -357,7 +357,7 @@ brew install dive               # Analyze container images
 - Study 2-3 months if new to K8s
 - Certifications expire after 3 years
 
-### :fontawesome-solid-code: Practice Projects
+### :lucide-code: Practice Projects
 
 !!! example "Beginner"
     - **Deploy static site** - Nginx deployment + service + ingress
@@ -378,11 +378,11 @@ brew install dive               # Analyze container images
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -394,7 +394,7 @@ brew install dive               # Analyze container images
 
     [Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)
 
-- :fontawesome-solid-wrench: __Essential Tools__
+- :lucide-wrench: __Essential Tools__
 
     ---
 
@@ -408,7 +408,7 @@ brew install dive               # Analyze container images
 
     [krew (kubectl plugins)](https://krew.sigs.k8s.io/)
 
-- :fontawesome-solid-code: __Learning & Practice__
+- :lucide-code: __Learning & Practice__
 
     ---
 
@@ -420,7 +420,7 @@ brew install dive               # Analyze container images
 
     [CNCF Landscape](https://landscape.cncf.io/)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -436,5 +436,5 @@ brew install dive               # Analyze container images
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-microchip: **Complex but Essential** - Kubernetes is overkill for small projects but mandatory at scale. Steep learning curve, but managed services (EKS/GKE/AKS) hide most complexity. If you're doing containers seriously, you're learning K8s.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-microchip: **Complex but Essential** - Kubernetes is overkill for small projects but mandatory at scale. Steep learning curve, but managed services (EKS/GKE/AKS) hide most complexity. If you're doing containers seriously, you're learning K8s.
 **Tags:** kubernetes, k8s, containers, orchestration, devops

@@ -3,7 +3,7 @@ title: Azure AI Foundry
 description: Azure's AI platform - OpenAI models, custom models, ML workflows, enterprise features, responsible AI tools
 ---
 
-# :fontawesome-brands-microsoft: Azure AI Foundry
+# :lucide-microsoft: Azure AI Foundry
 
 Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 Turbo, GPT-3.5 via Azure OpenAI Service. Custom models, prompt flow, evaluation tools. Enterprise-grade security and compliance. Integrated with Microsoft ecosystem.
 
@@ -12,9 +12,9 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential API Usage"
+=== ":lucide-list-check: Essential API Usage"
 
     ```python
     # Install Azure SDK
@@ -134,7 +134,7 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
     - Regional quotas (TPM - tokens per minute)
     - Managed Identity better than API keys
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```python
     # Prompt Flow (visual workflow designer)
@@ -266,7 +266,7 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
     - On Your Data simplifies RAG (no vector DB setup)
     - Prompt Flow enables non-developers to build AI apps
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Managed Identity** - Use instead of API keys (better security)
@@ -303,15 +303,15 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Azure AI Foundry Documentation](https://learn.microsoft.com/azure/ai-studio/)** - Complete guide
 - **[Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/)** - API reference
 - **[Pricing Calculator](https://azure.microsoft.com/pricing/calculator/)** - Cost estimation
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Azure OpenAI Service** - GPT-4, GPT-3.5, DALL-E, Whisper
 - **Prompt Flow** - Visual workflow designer for AI apps
@@ -322,7 +322,7 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
 
 ---
 
-## :fontawesome-solid-star: Model Pricing (2026)
+## :lucide-star: Model Pricing (2026)
 
 | Model | Input $ / 1M tokens | Output $ / 1M tokens | Context Window |
 |-------|---------------------|----------------------|----------------|
@@ -334,6 +334,6 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-building: **Enterprise Standard** - Best for Microsoft shops. Managed Identity is great. Content Safety essential. On Your Data simplifies RAG. Quotas can be limiting. Excellent C# support.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-building: **Enterprise Standard** - Best for Microsoft shops. Managed Identity is great. Content Safety essential. On Your Data simplifies RAG. Quotas can be limiting. Excellent C# support.
 
 **Tags:** azure-ai-foundry, ai, llm, gpt-4, microsoft

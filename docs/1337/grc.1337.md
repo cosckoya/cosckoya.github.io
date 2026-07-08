@@ -3,7 +3,7 @@ title: GRC (Governance, Risk & Compliance)
 description: Security governance, risk management, compliance auditing, frameworks (GDPR, HIPAA, PCI-DSS, SOC 2, ISO 27001)
 ---
 
-# :fontawesome-solid-scale-balanced: GRC (Governance, Risk & Compliance)
+# :lucide-scale-balanced: GRC (Governance, Risk & Compliance)
 
 The paperwork side of security. Policies, procedures, risk assessments, compliance audits. Not sexy, but keeps companies out of legal trouble and million-dollar fines. GRC teams ensure security aligns with business goals and regulatory requirements.
 
@@ -12,9 +12,9 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Areas"
+=== ":lucide-list-check: Core Areas"
 
     **Security Governance:**
     ```markdown
@@ -118,7 +118,7 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
     - ISO 27001 internationally recognized (SOC 2 US-centric)
     - Risk assessments often subjective (quantitative better than qualitative)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Risk Assessment Matrix:**
     ```markdown
@@ -271,7 +271,7 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
     - Frameworks provide structured approach
     - Audit evidence proves control effectiveness
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Start with framework** - NIST CSF, ISO 27001, CIS Controls
@@ -309,9 +309,9 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning & Certifications
+## :lucide-graduation-cap: Learning & Certifications
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[CISSP](https://www.isc2.org/Certifications/CISSP)** - $749, 5 years experience, management-focused
 - **[CISM](https://www.isaca.org/credentialing/cism)** - $575, risk management focus
@@ -319,7 +319,7 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
 - **[CGRC](https://www.eccouncil.org/train-certify/certified-in-governance-risk-and-compliance-cgrc/)** - $999, GRC-specific
 - **[CIPP/E](https://iapp.org/certify/cipp/europe/)** - $550, privacy (GDPR focus)
 
-### :fontawesome-solid-rocket: Frameworks
+### :lucide-rocket: Frameworks
 
 - **[NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)** - Free, widely adopted
 - **[CIS Controls](https://www.cisecurity.org/controls/)** - Free, prioritized security controls
@@ -328,6 +328,6 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-file-contract: **Necessary Evil** - Not glamorous but essential. Prevents million-dollar fines. Compliance ≠ security. Audit prep stressful. GRC tools expensive but worth it. CISSP gold standard cert. Job stable (regulations increasing).
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-file-contract: **Necessary Evil** - Not glamorous but essential. Prevents million-dollar fines. Compliance ≠ security. Audit prep stressful. GRC tools expensive but worth it. CISSP gold standard cert. Job stable (regulations increasing).
 
 **Tags:** grc, governance, risk-management, compliance, audit

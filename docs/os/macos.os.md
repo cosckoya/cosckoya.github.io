@@ -3,7 +3,7 @@ title: macOS
 description: macOS reference - Unix-based OS for Apple hardware, developer-friendly with premium price tag
 ---
 
-# :fontawesome-solid-desktop: macOS
+# :lucide-desktop: macOS
 
 Unix-based operating system for Apple hardware. BSD foundation with polished UI. Popular among developers for Unix compatibility plus commercial software support. Expensive hardware, locked ecosystem, but excellent build quality. Terminal is real bash/zsh, runs Docker natively (ish), has Homebrew.
 
@@ -12,9 +12,9 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # System information
@@ -58,7 +58,7 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
     - Terminal.app is fine, but iTerm2 is better
     - Enable tap-to-click - System Settings → Trackpad
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # Homebrew setup (install from https://brew.sh)
@@ -99,7 +99,7 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
     - Spotlight indexing can get corrupted, rebuild fixes it
     - DNS cache causes weird networking issues
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Productivity Boosters"
         - **Rectangle/Magnet** - Window management (native snapping is weak)
@@ -140,15 +140,15 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Free Resources
+### :lucide-graduation-cap: Free Resources
 
 - **[macOS User Guide](https://support.apple.com/guide/mac-help/)** - Official Apple docs
 - **[Mac Power Users Podcast](https://www.relay.fm/mpu)** - Tips and workflows
 - **[Awesome macOS](https://github.com/iCHAIT/awesome-macOS)** - Curated list of apps/tools
 
-### :fontawesome-solid-terminal: Command Line
+### :lucide-terminal: Command Line
 
 - **[macOS Terminal Guide](https://support.apple.com/guide/terminal/)** - Official terminal docs
 - **[Homebrew Documentation](https://docs.brew.sh/)** - Package manager docs
@@ -156,11 +156,11 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
 
 ---
 
-## :fontawesome-solid-shield-halved: Security Audit Tools
+## :lucide-shield-halved: Security Audit Tools
 
 Tools for macOS security auditing, compliance checking, and vulnerability assessment. Because Apple's security is good, but not perfect.
 
-### :fontawesome-solid-list-check: Tool Overview
+### :lucide-list-check: Tool Overview
 
 | Tool | Purpose | Type | Best For |
 |------|---------|------|----------|
@@ -169,7 +169,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 | **Apple-Check** | macOS-specific security audit | OSS | Apple compliance baselines, MDM checks |
 | **Osquery** | SQL-based system monitoring | OSS | Fleet management, threat hunting |
 
-### :fontawesome-solid-gear: Installation & Usage
+### :lucide-gear: Installation & Usage
 
 === "Lynis - macOS Hardening Audit"
 
@@ -337,7 +337,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
     - Performance impact negligible if queries optimized
     - Essential for enterprise Mac security at scale
 
-### :fontawesome-solid-lightbulb: Best Practices
+### :lucide-lightbulb: Best Practices
 
 !!! success "macOS-Specific Hardening"
     - **FileVault** - Full-disk encryption (non-negotiable for laptops)
@@ -369,11 +369,11 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -383,7 +383,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 
     [macOS Release Notes](https://developer.apple.com/documentation/macos-release-notes)
 
-- :fontawesome-solid-box: __Package Managers__
+- :lucide-box: __Package Managers__
 
     ---
 
@@ -393,7 +393,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 
     [Nix](https://nixos.org/download.html#nix-install-macos)
 
-- :fontawesome-solid-wrench: __Essential Tools__
+- :lucide-wrench: __Essential Tools__
 
     ---
 
@@ -405,7 +405,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 
     [Alfred](https://www.alfredapp.com/)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -419,5 +419,5 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-heart: **Premium** - macOS is the developer's choice if you can afford it. Unix power with GUI polish, but you're locked into Apple's ecosystem.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-heart: **Premium** - macOS is the developer's choice if you can afford it. Unix power with GUI polish, but you're locked into Apple's ecosystem.
 **Tags:** macos, operating-system, apple, unix

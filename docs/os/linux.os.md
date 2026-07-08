@@ -3,7 +3,7 @@ title: Linux
 description: Linux reference - open source Unix-like OS powering servers, containers, and the cloud
 ---
 
-# :fontawesome-solid-terminal: Linux
+# :lucide-terminal: Linux
 
 Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, every container, and most embedded systems. Free as in freedom and free as in beer. Hundreds of distributions (you'll use Ubuntu, Debian, or RHEL family). Learning curve exists but worth climbing.
 
@@ -12,9 +12,9 @@ Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, eve
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # File operations
@@ -59,7 +59,7 @@ Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, eve
     - Use SSH keys, not passwords - generate with `ssh-keygen`
     - Read logs in /var/log - that's where problems reveal themselves
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # SSH configuration (~/.ssh/config)
@@ -97,7 +97,7 @@ Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, eve
     - journalctl provides structured logging
     - Understanding disk usage prevents surprises
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Productivity Boosters"
         - **tmux/screen** - Terminal multiplexing, survive disconnects
@@ -131,16 +131,16 @@ Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, eve
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Free Resources
+### :lucide-graduation-cap: Free Resources
 
 - **[Linux Journey](https://linuxjourney.com/)** - Interactive tutorials, beginner-friendly
 - **[The Linux Documentation Project](https://tldp.org/)** - Comprehensive guides
 - **[ArchWiki](https://wiki.archlinux.org/)** - Best documentation for any distro
 - **[linuxcommand.org](https://linuxcommand.org/)** - Command line basics
 
-### :fontawesome-solid-microchip: Distribution Choices
+### :lucide-microchip: Distribution Choices
 
 !!! success "Server Use"
     - **Ubuntu Server LTS** - Most popular, 5 years support, massive community
@@ -156,11 +156,11 @@ Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, eve
 
 ---
 
-## :fontawesome-solid-shield-halved: Security Audit Tools
+## :lucide-shield-halved: Security Audit Tools
 
 Tools for system hardening audits, privilege escalation detection, and security posture assessment. Run these before bad actors do.
 
-### :fontawesome-solid-list-check: Tool Overview
+### :lucide-list-check: Tool Overview
 
 | Tool | Purpose | Type | Best For |
 |------|---------|------|----------|
@@ -169,7 +169,7 @@ Tools for system hardening audits, privilege escalation detection, and security 
 | **Osquery** | SQL-based system introspection | OSS | Fleet-wide auditing, threat hunting |
 | **Rkhunter** | Rootkit and backdoor detection | OSS | Malware detection, incident response |
 
-### :fontawesome-solid-gear: Installation & Usage
+### :lucide-gear: Installation & Usage
 
 === "Lynis - System Hardening Audit"
 
@@ -356,7 +356,7 @@ Tools for system hardening audits, privilege escalation detection, and security 
     - Best used as part of layered defense
     - Check logs regularly - don't just automate and forget
 
-### :fontawesome-solid-lightbulb: Best Practices
+### :lucide-lightbulb: Best Practices
 
 !!! success "Audit Strategy"
     - **Baseline first** - Run Lynis on fresh install, track improvements over time
@@ -388,11 +388,11 @@ Tools for system hardening audits, privilege escalation detection, and security 
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -402,7 +402,7 @@ Tools for system hardening audits, privilege escalation detection, and security 
 
     [RHEL Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
 
-- :fontawesome-solid-code: __Essential Skills__
+- :lucide-code: __Essential Skills__
 
     ---
 
@@ -412,7 +412,7 @@ Tools for system hardening audits, privilege escalation detection, and security 
 
     [systemd for Administrators](https://www.freedesktop.org/wiki/Software/systemd/)
 
-- :fontawesome-solid-wrench: __Tools__
+- :lucide-wrench: __Tools__
 
     ---
 
@@ -422,7 +422,7 @@ Tools for system hardening audits, privilege escalation detection, and security 
 
     [fzf](https://github.com/junegunn/fzf)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -436,5 +436,5 @@ Tools for system hardening audits, privilege escalation detection, and security 
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-fire: **Foundation** - If you're doing anything serious with technology, you'll touch Linux. It's not optional anymore.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-fire: **Foundation** - If you're doing anything serious with technology, you'll touch Linux. It's not optional anymore.
 **Tags:** linux, operating-system, unix

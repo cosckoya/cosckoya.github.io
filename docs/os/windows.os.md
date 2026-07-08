@@ -3,7 +3,7 @@ title: Windows
 description: Windows reference - dominant desktop OS, WSL2 makes it developer-viable, gaming platform
 ---
 
-# :fontawesome-solid-desktop: Windows
+# :lucide-desktop: Windows
 
 Dominant desktop operating system (75%+ market share). Gaming platform of choice. Enterprise standard. Used to be hostile to developers, but WSL2 changed everything. PowerShell is powerful if you learn it. Active Directory runs corporate networks. Office suite integration unmatched.
 
@@ -12,9 +12,9 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```powershell
     # System information
@@ -58,7 +58,7 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
     - Use winget for packages - no more downloading .exe files
     - Windows Update breaks things - always have backups
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```powershell
     # WSL2 setup (run in PowerShell as Administrator)
@@ -102,7 +102,7 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
     - PowerShell is object-based, more powerful than bash for Windows tasks
     - winget eliminates manual installations
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Developer Setup"
         - **WSL2** - Must-have for web development, runs Docker natively
@@ -143,16 +143,16 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Free Resources
+### :lucide-graduation-cap: Free Resources
 
 - **[Windows Documentation](https://docs.microsoft.com/en-us/windows/)** - Official Microsoft docs
 - **[PowerShell Docs](https://docs.microsoft.com/en-us/powershell/)** - PowerShell reference
 - **[WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)** - Official WSL guide
 - **[PowerShell Gallery](https://www.powershellgallery.com/)** - PowerShell modules
 
-### :fontawesome-solid-terminal: PowerShell Learning
+### :lucide-terminal: PowerShell Learning
 
 - **[PowerShell in a Month of Lunches](https://www.manning.com/books/learn-powershell-in-a-month-of-lunches)** - Best beginner book
 - **[PowerShell.org](https://powershell.org/)** - Community resources
@@ -160,11 +160,11 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
 
 ---
 
-## :fontawesome-solid-shield-halved: Security Audit Tools
+## :lucide-shield-halved: Security Audit Tools
 
 Windows security auditing tools for finding privilege escalation paths, Active Directory weaknesses, and configuration issues. Essential for pentesting and defensive security.
 
-### :fontawesome-solid-list-check: Tool Overview
+### :lucide-list-check: Tool Overview
 
 | Tool | Purpose | Type | Best For |
 |------|---------|------|----------|
@@ -175,7 +175,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 | **Snaffler** | Sensitive data discovery | OSS | Finding secrets in file shares |
 | **Osquery** | SQL-based system monitoring | OSS | Fleet management, EDR-style queries |
 
-### :fontawesome-solid-gear: Installation & Usage
+### :lucide-gear: Installation & Usage
 
 === "WinPEAS - Privilege Escalation"
 
@@ -468,7 +468,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
     - Integrates with SIEM tools for alerting
     - Learning curve steep but worth it
 
-### :fontawesome-solid-lightbulb: Best Practices
+### :lucide-lightbulb: Best Practices
 
 !!! success "Windows Security Hardening"
     - **Windows Defender** - Keep enabled and updated (it's actually good now)
@@ -502,11 +502,11 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -516,7 +516,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 
     [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)
 
-- :fontawesome-solid-box: __Package Managers__
+- :lucide-box: __Package Managers__
 
     ---
 
@@ -526,7 +526,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 
     [Scoop](https://scoop.sh/)
 
-- :fontawesome-solid-wrench: __Essential Tools__
+- :lucide-wrench: __Essential Tools__
 
     ---
 
@@ -538,7 +538,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 
     [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -552,5 +552,5 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Improved** - Windows finally respects developers thanks to WSL2. Still not as smooth as Linux/macOS for dev work, but gaming + productivity combo is unbeatable.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-rocket: **Improved** - Windows finally respects developers thanks to WSL2. Still not as smooth as Linux/macOS for dev work, but gaming + productivity combo is unbeatable.
 **Tags:** windows, operating-system, microsoft, wsl

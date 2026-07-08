@@ -14,7 +14,7 @@ Zensical documentation site at cosckoya.github.io
 
 ## Conventions
 
-- FontAwesome icons only (`:fontawesome-solid-...:`), no emojis
+- Lucide icons only (`:lucide-...:`), no emojis
 - 3-tab Quick Hits structure (Essential / Common Patterns / Pro Tips & Gotchas)
 - Vibe Check footer on every content page
 - Tags at bottom of page (not in frontmatter)

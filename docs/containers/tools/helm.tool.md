@@ -3,7 +3,7 @@ title: Helm
 description: Kubernetes package manager - charts for templated manifests, releases, rollbacks, plugin ecosystem
 ---
 
-# :fontawesome-solid-ship: Helm
+# :lucide-ship: Helm
 
 Kubernetes package manager. Install apps with a single command. Charts are templated Kubernetes manifests. Manages releases, rollbacks, upgrades. Plugin ecosystem extends functionality. De facto standard for K8s package management.
 
@@ -12,9 +12,9 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -87,7 +87,7 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
     - Rollbacks save your ass when upgrades go wrong
     - Most popular apps have official Helm charts
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # Chart.yaml (chart metadata)
@@ -244,7 +244,7 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
     - Dependencies managed automatically (PostgreSQL, Redis)
     - Helper functions (_helpers.tpl) reduce duplication
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Essential Plugins"
         **[helm-diff](https://github.com/databus23/helm-diff)** - Show changes before upgrade
@@ -295,15 +295,15 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Helm Documentation](https://helm.sh/docs/)** - Complete guide
 - **[Artifact Hub](https://artifacthub.io/)** - Find Helm charts
 - **[Chart Best Practices](https://helm.sh/docs/chart_best_practices/)** - Official guidelines
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Package management** - Install/upgrade/rollback apps
 - **Templating** - Go templates for dynamic manifests
@@ -314,7 +314,7 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
 
 ---
 
-## :fontawesome-solid-star: Related Tools
+## :lucide-star: Related Tools
 
 - **[Helmfile](https://github.com/helmfile/helmfile)** - Declarative Helm release management
 - **[Helm Dashboard](https://github.com/komodorio/helm-dashboard)** - Web UI for Helm
@@ -323,6 +323,6 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-crown: **K8s Standard** - De facto package manager for Kubernetes. Learning curve for templates. helm-diff plugin is essential. Rollbacks are lifesaver. Better than raw kubectl apply for complex apps.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-crown: **K8s Standard** - De facto package manager for Kubernetes. Learning curve for templates. helm-diff plugin is essential. Rollbacks are lifesaver. Better than raw kubectl apply for complex apps.
 
 **Tags:** helm, kubernetes, package-manager, charts, k8s

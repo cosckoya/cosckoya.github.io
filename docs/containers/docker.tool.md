@@ -3,7 +3,7 @@ title: Docker
 description: Container platform - package apps with dependencies, ship anywhere, dev/prod parity
 ---
 
-# :fontawesome-solid-box: Docker
+# :lucide-box: Docker
 
 Container platform that packages applications with their dependencies into isolated, portable units. Lighter than VMs, faster startup, consistent environments from dev to prod. Industry standard for containerization. Kubernetes runs Docker containers (well, technically any OCI-compliant runtime).
 
@@ -12,9 +12,9 @@ Container platform that packages applications with their dependencies into isola
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Container lifecycle
@@ -64,7 +64,7 @@ Container platform that packages applications with their dependencies into isola
     - Don't run containers as root - use `USER` directive in Dockerfile
     - `docker system prune -a` is your friend when disk fills up
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```dockerfile
     # Dockerfile best practices (multi-stage build)
@@ -179,7 +179,7 @@ Container platform that packages applications with their dependencies into isola
     - Service dependencies ensure startup order
     - Networks isolate containers from host
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Build Optimization"
         - **Layer caching** - Order Dockerfile commands by change frequency (COPY dependencies before code)
@@ -226,11 +226,11 @@ Container platform that packages applications with their dependencies into isola
 
 ---
 
-## :fontawesome-solid-layer-group: Docker Compose
+## :lucide-layer-group: Docker Compose
 
 Compose V2 ships with Docker and manages multi-container stacks from a single YAML file. Already covered the `docker-compose.yml` structure in Quick Hits — this section covers the rest of the CLI, environment layering, and the parts that trip people up.
 
-=== ":fontawesome-solid-list-check: Compose Commands"
+=== ":lucide-list-check: Compose Commands"
 
     ```bash
     # Start / stop
@@ -275,7 +275,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
     - `docker compose run --rm` is the clean way to run migrations, seeds, or one-off scripts without leaving a dead container behind
     - Watch mode is genuinely useful for frontend dev — beats manual rebuild loops
 
-=== ":fontawesome-solid-bolt: Override Files & Profiles"
+=== ":lucide-bolt: Override Files & Profiles"
 
     ```yaml
     # docker-compose.override.yml
@@ -345,7 +345,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
     - `-f` flag stacking is explicit and reproducible in CI scripts
     - Profiles prevent dev tools (debuggers, monitoring) from starting in unintended environments
 
-=== ":fontawesome-solid-fire: Compose Gotchas"
+=== ":lucide-fire: Compose Gotchas"
 
     **Tips:**
 
@@ -365,9 +365,9 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Free Resources
+### :lucide-graduation-cap: Free Resources
 
 - **[Docker Documentation](https://docs.docker.com/)** - Official docs, comprehensive and well-written
 - **[Docker Getting Started](https://docs.docker.com/get-started/)** - Official tutorial, hands-on
@@ -375,7 +375,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 - **[Docker Curriculum](https://docker-curriculum.com/)** - Beginner-friendly tutorial
 - **[Awesome Docker](https://github.com/veggiemonk/awesome-docker)** - Curated list of tools and resources
 
-### :fontawesome-solid-code: Practice Projects
+### :lucide-code: Practice Projects
 
 !!! example "Beginner"
     - **Static website** - Nginx serving HTML/CSS/JS
@@ -394,11 +394,11 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -410,7 +410,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 
     [Docker CLI Reference](https://docs.docker.com/engine/reference/commandline/cli/)
 
-- :fontawesome-solid-wrench: __Essential Tools__
+- :lucide-wrench: __Essential Tools__
 
     ---
 
@@ -422,7 +422,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 
     [Hadolint](https://github.com/hadolint/hadolint) (Dockerfile linter)
 
-- :fontawesome-solid-code: __Examples & Patterns__
+- :lucide-code: __Examples & Patterns__
 
     ---
 
@@ -432,7 +432,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 
     [Google Distroless Images](https://github.com/GoogleContainerTools/distroless)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -448,5 +448,5 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Essential** - Docker is the standard for containerization. If you're deploying modern applications, you're using Docker (or at least OCI containers). Learn it well.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-rocket: **Essential** - Docker is the standard for containerization. If you're deploying modern applications, you're using Docker (or at least OCI containers). Learn it well.
 **Tags:** docker, containers, devops, virtualization

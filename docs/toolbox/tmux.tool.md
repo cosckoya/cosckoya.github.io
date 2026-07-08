@@ -3,7 +3,7 @@ title: TMUX
 description: Terminal multiplexer for persistent sessions, split panes, and window management - work survives disconnects
 ---
 
-# :fontawesome-solid-layer-group: TMUX
+# :lucide-layer-group: TMUX
 
 Terminal multiplexer. Split terminals, create windows, detach/reattach sessions. SSH connection drops? Session survives. Long-running processes? Background them. Multiple terminals? One window. The Swiss Army knife of terminal management.
 
@@ -12,7 +12,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -35,7 +35,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
     # tmux 3.3a
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Start session:**
     ```bash
@@ -72,7 +72,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
     tmux kill-server
     ```
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Prefix key:** `Ctrl+b` (all commands start with this)
 
@@ -133,7 +133,7 @@ Terminal multiplexer. Split terminals, create windows, detach/reattach sessions.
 
 ---
 
-## :fontawesome-solid-gear: Configuration
+## :lucide-gear: Configuration
 
 **Config file:** `~/.tmux.conf`
 
@@ -218,7 +218,7 @@ source-file ~/.tmux.conf
 
 ---
 
-## :fontawesome-solid-diagram-project: Common Workflows
+## :lucide-diagram-project: Common Workflows
 
 ### Development Session
 
@@ -274,7 +274,7 @@ tmux attach -t pair
 
 ---
 
-## :fontawesome-solid-terminal: Advanced Commands
+## :lucide-terminal: Advanced Commands
 
 ```bash
 # Session management
@@ -312,7 +312,7 @@ tmux select-layout tiled            # Tile all panes
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Official:**
 - **[TMUX Manual](https://man7.org/linux/man-pages/man1/tmux.1.html)** - Complete reference
@@ -338,6 +338,6 @@ tmux select-layout tiled            # Tile all panes
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-window-restore: **Terminal Multiplexer Essential** - TMUX is the difference between a terminal and a terminal *workstation*. Persistent sessions survive SSH disconnects. Split panes, window management, copy mode with vim bindings. Non-negotiable for remote development.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-window-restore: **Terminal Multiplexer Essential** - TMUX is the difference between a terminal and a terminal *workstation*. Persistent sessions survive SSH disconnects. Split panes, window management, copy mode with vim bindings. Non-negotiable for remote development.
 
 **Tags:** tmux, terminal-multiplexer, terminal, cli, session-management, development-tools, productivity

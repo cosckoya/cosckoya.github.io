@@ -3,7 +3,7 @@ title: GitHub
 description: Git hosting platform - code collaboration, CI/CD workflows, package registry, world's largest code repository
 ---
 
-# :fontawesome-brands-github: GitHub
+# :lucide-github: GitHub
 
 Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de facto standard for open source. GitHub Actions for CI/CD, Dependabot for security, Projects for issue tracking. More than just git hosting.
 
@@ -12,9 +12,9 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # GitHub CLI (gh) - essential for automation
@@ -74,7 +74,7 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
     - GitHub Projects v2 finally competitive with Jira/Linear
     - Codespaces is VS Code in browser (60 hours/month free)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # GitHub Actions workflow (.github/workflows/ci.yml)
@@ -199,7 +199,7 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
     - Environment protection rules prevent accidental production deploys
     - Matrix builds test multiple versions in parallel
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Branch protection** - Require PR reviews, status checks before merge
@@ -237,16 +237,16 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[GitHub Docs](https://docs.github.com/)** - Comprehensive documentation
 - **[GitHub CLI Manual](https://cli.github.com/manual/)** - gh command reference
 - **[GitHub Actions Docs](https://docs.github.com/en/actions)** - Workflow syntax, examples
 - **[GitHub Skills](https://skills.github.com/)** - Interactive tutorials
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **GitHub Actions** - CI/CD built into platform (free tier: 2000 min/month)
 - **GitHub Copilot** - AI pair programmer ($10/month, $19/month for business)
@@ -258,7 +258,7 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
 
 ---
 
-## :fontawesome-solid-star: Related Tools
+## :lucide-star: Related Tools
 
 - **[GitHub CLI](https://cli.github.com/)** - Official command-line tool
 - **[act](https://github.com/nektos/act)** - Run GitHub Actions locally
@@ -267,6 +267,6 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-crown: **Industry Standard** - GitHub is the default choice. Actions CI/CD is solid. Copilot changes development workflow. Free tier generous for open source. Microsoft ownership hasn't ruined it (yet).
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-crown: **Industry Standard** - GitHub is the default choice. Actions CI/CD is solid. Copilot changes development workflow. Free tier generous for open source. Microsoft ownership hasn't ruined it (yet).
 
 **Tags:** github, devops, ci-cd, git, version-control

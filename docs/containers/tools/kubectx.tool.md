@@ -3,7 +3,7 @@ title: kubectx & kubens
 description: Fast Kubernetes context and namespace switching - saves typing, improves workflow, essential productivity tool
 ---
 
-# :fontawesome-solid-rotate: kubectx & kubens
+# :lucide-rotate: kubectx & kubens
 
 Fast switching between Kubernetes contexts and namespaces. Two tools in one: kubectx switches clusters, kubens switches namespaces. Saves massive amounts of typing. Interactive mode with fzf. Essential for multi-cluster workflows.
 
@@ -12,9 +12,9 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -71,7 +71,7 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
     - Renaming contexts makes multi-cluster work sane
     - Works with any kubectl-compatible tool (k9s, lens, etc.)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # Multi-cluster workflow
@@ -227,7 +227,7 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
     - Shell integration shows current context/namespace
     - Works with any number of clusters/namespaces
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Install fzf** - Makes kubectx/kubens interactive (essential)
@@ -263,15 +263,15 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[kubectx GitHub](https://github.com/ahmetb/kubectx)** - Source and documentation
 - **[fzf GitHub](https://github.com/junegunn/fzf)** - Fuzzy finder (recommended)
 - **[Starship Prompt](https://starship.rs/config/#kubernetes)** - Modern prompt with k8s support
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Fast context switching** - Sub-second cluster changes
 - **Fast namespace switching** - Sub-second namespace changes
@@ -282,7 +282,7 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
 
 ---
 
-## :fontawesome-solid-star: Alternatives & Related Tools
+## :lucide-star: Alternatives & Related Tools
 
 - **[kubie](https://github.com/sbstp/kubie)** - Context switching with shell isolation
 - **[k9s](https://k9scli.io/)** - Terminal UI with built-in context/namespace switching
@@ -291,6 +291,6 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-bolt: **Essential Tool** - Must-have for anyone managing multiple clusters. Saves hours every week. Interactive mode with fzf is perfect. Zero learning curve. Install immediately.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-bolt: **Essential Tool** - Must-have for anyone managing multiple clusters. Saves hours every week. Interactive mode with fzf is perfect. Zero learning curve. Install immediately.
 
 **Tags:** kubectx, kubernetes, productivity, cli, kubectl

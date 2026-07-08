@@ -3,7 +3,7 @@ title: Trivy
 description: Open-source security scanner - containers, IaC, filesystems, git repos, comprehensive vulnerability detection
 ---
 
-# :fontawesome-solid-shield: Trivy
+# :lucide-shield: Trivy
 
 Open-source comprehensive security scanner by Aqua Security. Scans containers, filesystems, git repos, IaC, Kubernetes. Detects vulnerabilities, misconfigurations, secrets, licenses. Fast, accurate, free. No rate limits.
 
@@ -12,9 +12,9 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -72,7 +72,7 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
     - Offline mode: download DB locally for air-gapped environments
     - Accurate: low false-positive rate
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # GitHub Actions integration (.github/workflows/trivy.yml)
@@ -205,7 +205,7 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
     - Ignore files version-controlled with code
     - Fast scans don't slow down CI significantly
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Scan early** - Integrate in CI/CD from day one
@@ -240,15 +240,15 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Trivy Documentation](https://aquasecurity.github.io/trivy/)** - Complete guide
 - **[Trivy GitHub](https://github.com/aquasecurity/trivy)** - Source code, issues
 - **[Trivy Vulnerability DB](https://github.com/aquasecurity/trivy-db)** - CVE database
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Container scanning** - Docker, OCI, tar archives
 - **IaC scanning** - Terraform, CloudFormation, Kubernetes, Helm, Dockerfile
@@ -259,7 +259,7 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
 
 ---
 
-## :fontawesome-solid-star: Alternatives
+## :lucide-star: Alternatives
 
 - **[Snyk](snyk.tool.md)** - Commercial, better UI/UX, auto-fix PRs
 - **[Grype](https://github.com/anchore/grype)** - Open source, similar features
@@ -268,6 +268,6 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-fire: **Open Source Champion** - Best free security scanner. No rate limits. Comprehensive coverage. Fast. Active development. Should be in every CI/CD pipeline. Commercial alternatives not significantly better.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-fire: **Open Source Champion** - Best free security scanner. No rate limits. Comprehensive coverage. Fast. Active development. Should be in every CI/CD pipeline. Commercial alternatives not significantly better.
 
 **Tags:** trivy, security, containers, iac, vulnerability-scanning

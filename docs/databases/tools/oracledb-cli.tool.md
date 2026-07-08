@@ -3,15 +3,15 @@ title: oracledb-cli
 description: Interactive Oracle Database CLI built on python-oracledb thin mode — no Oracle Client libraries required.
 ---
 
-# :fontawesome-solid-terminal: oracledb-cli
+# :lucide-terminal: oracledb-cli
 
 Oracle abandoned the interactive CLI space when okcli went unmaintained in 2019. This fills that gap: a custom interactive client built on `python-oracledb` (Oracle's official Python driver) and `prompt_toolkit`. Thin mode by default means no Oracle Instant Client, no `LD_LIBRARY_PATH` nonsense, no `/etc/oracle` config files. Just Python and a connection string.
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -58,7 +58,7 @@ Oracle abandoned the interactive CLI space when okcli went unmaintained in 2019.
     - Query history is saved to `~/.oracledb_history` — persistent across sessions, searchable with Ctrl+R
     - `format: json` before a query is useful when you want to pipe results to `jq` or parse them in a script
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # --- Local development (Oracle XE or Docker) ---
@@ -106,7 +106,7 @@ Oracle abandoned the interactive CLI space when okcli went unmaintained in 2019.
     - Environment variables keep credentials out of process arguments (visible in `ps aux`)
     - Format switching is per-session, not per-query — set it once and all subsequent results use it
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -126,7 +126,7 @@ Oracle abandoned the interactive CLI space when okcli went unmaintained in 2019.
 
 ---
 
-## :fontawesome-solid-box: Installation
+## :lucide-box: Installation
 
 ```bash
 # Minimal install
@@ -153,7 +153,7 @@ python -c "import oracledb; print(oracledb.__version__)"
 
 ---
 
-## :fontawesome-solid-plug: Connection Reference
+## :lucide-plug: Connection Reference
 
 | Scenario | Flags Required |
 |---|---|
@@ -179,22 +179,22 @@ python oracledb-cli.py --help
 
 ---
 
-## :fontawesome-solid-book: Reference
+## :lucide-book: Reference
 
 **Documentation:**
 
-- :fontawesome-solid-book: [python-oracledb Official Docs](https://python-oracledb.readthedocs.io/)
-- :fontawesome-solid-shield: [Thin vs Thick Mode](https://python-oracledb.readthedocs.io/en/latest/user_guide/initialization.html)
-- :fontawesome-solid-cloud: [Oracle ADB Wallet Setup](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html)
+- :lucide-book: [python-oracledb Official Docs](https://python-oracledb.readthedocs.io/)
+- :lucide-shield: [Thin vs Thick Mode](https://python-oracledb.readthedocs.io/en/latest/user_guide/initialization.html)
+- :lucide-cloud: [Oracle ADB Wallet Setup](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html)
 
 **Related:**
 
-- :fontawesome-solid-database: __DBCli (pgcli / mycli / litecli) — same concept, for PostgreSQL / MySQL / SQLite__
-- :fontawesome-solid-code: __SQLAlchemy 2.0 — python-oracledb dialect for ORM-style programmatic access__
-- :fontawesome-solid-terminal: __prompt_toolkit — the library powering the interactive session__
+- :lucide-database: __DBCli (pgcli / mycli / litecli) — same concept, for PostgreSQL / MySQL / SQLite__
+- :lucide-code: __SQLAlchemy 2.0 — python-oracledb dialect for ORM-style programmatic access__
+- :lucide-terminal: __prompt_toolkit — the library powering the interactive session__
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-database: **Specialized Tool** - Best Python-native Oracle DB client. Thin mode eliminates Oracle Instant Client dependency. Good for microservices and serverless. Not a replacement for SQL\*Plus for heavy DBA work.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-database: **Specialized Tool** - Best Python-native Oracle DB client. Thin mode eliminates Oracle Instant Client dependency. Good for microservices and serverless. Not a replacement for SQL\*Plus for heavy DBA work.
 
 **Tags:** oracle, python-oracledb, cli, database, interactive, thin-mode, oracle-cloud

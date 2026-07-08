@@ -11,7 +11,7 @@ GitHub's REST API has been around since forever, has roughly 600 endpoints, and 
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # gh api wraps everything — auth is handled by `gh auth login`
@@ -45,7 +45,7 @@ GitHub's REST API has been around since forever, has roughly 600 endpoints, and 
     - `--jq` runs the filter server-side before printing — faster than piping to external `jq` for large responses
     - `--paginate` is a gift — no manual page loops, no off-by-one errors, just all the data
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # --- POST: create a repo in an org ---
@@ -104,7 +104,7 @@ GitHub's REST API has been around since forever, has roughly 600 endpoints, and 
     - `PUT` team and repo permission calls are idempotent — safe to re-run in provisioning scripts
     - `--paginate` + `--jq` is the pagination pattern — one line instead of a while loop
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -511,18 +511,18 @@ for e in events:
 
 **Documentation:**
 
-- :fontawesome-solid-book: [GitHub REST API Reference](https://docs.github.com/en/rest)
-- :fontawesome-solid-terminal: [gh api command reference](https://cli.github.com/manual/gh_api)
-- :fontawesome-solid-shield: [Fine-grained PATs Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+- :lucide-book: [GitHub REST API Reference](https://docs.github.com/en/rest)
+- :lucide-terminal: [gh api command reference](https://cli.github.com/manual/gh_api)
+- :lucide-shield: [Fine-grained PATs Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 **Related:**
 
-- :fontawesome-solid-building: __GitHub Apps — replace PATs for org-level automation that survives employee turnover__
-- :fontawesome-solid-code: __PyGithub — higher-level Python client if you want ORM-style access over raw requests__
-- :fontawesome-solid-key: __`gh auth login` — the only setup step you need before using `gh api`__
+- :lucide-building: __GitHub Apps — replace PATs for org-level automation that survives employee turnover__
+- :lucide-code: __PyGithub — higher-level Python client if you want ORM-style access over raw requests__
+- :lucide-key: __`gh auth login` — the only setup step you need before using `gh api`__
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-crown: **Platform Essential** - GitHub REST API is the foundation for all GitHub automation. Fine-grained PATs fixed the security model. Pagination and rate limiting are the main pain points. Use `gh api` for quick scripts, PyGithub for complex automation.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-crown: **Platform Essential** - GitHub REST API is the foundation for all GitHub automation. Fine-grained PATs fixed the security model. Pagination and rate limiting are the main pain points. Use `gh api` for quick scripts, PyGithub for complex automation.
 
 **Tags:** github, rest-api, gh-cli, python, repository-management, organization-management, automation

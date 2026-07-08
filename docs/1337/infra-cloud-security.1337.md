@@ -3,7 +3,7 @@ title: Infrastructure & Cloud Security
 description: Network security, cloud platform security (AWS/Azure/GCP), container security, IAM, endpoint protection
 ---
 
-# :fontawesome-solid-server: Infrastructure & Cloud Security
+# :lucide-server: Infrastructure & Cloud Security
 
 Securing the foundation. Network segmentation, firewalls, IAM, cloud configurations, container hardening. Cloud security is shared responsibility—providers secure infrastructure, you secure configuration. Misconfigured S3 buckets still leak data in 2026. Defense in depth prevents lateral movement.
 
@@ -12,9 +12,9 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Disciplines"
+=== ":lucide-list-check: Core Disciplines"
 
     **Network Security:**
     ```bash
@@ -228,7 +228,7 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
     - Least privilege hard to implement (easier to grant admin)
     - CSPM tools expensive but necessary (Wiz, Orca, Prisma Cloud)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Cloud Security Posture Management (CSPM):**
     ```bash
@@ -451,7 +451,7 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
     - Automation catches misconfigurations (CSPM)
     - Zero Trust assumes breach (limits lateral movement)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Immutable infrastructure** - Rebuild, don't patch (containers, IaC)
@@ -490,23 +490,23 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning & Certifications
+## :lucide-graduation-cap: Learning & Certifications
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[CCSP](https://www.isc2.org/Certifications/CCSP)** - $749, Certified Cloud Security Professional
 - **[CCSK](https://cloudsecurityalliance.org/education/ccsk/)** - $395, Cloud Security Knowledge
 - **[CKS](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)** - $395, Certified Kubernetes Security Specialist
 - **[AWS Security Specialty](https://aws.amazon.com/certification/certified-security-specialty/)** - $300, AWS-specific
 
-### :fontawesome-solid-rocket: Practice
+### :lucide-rocket: Practice
 
 - **[flAWS](http://flaws.cloud/)** - Free, AWS security challenges
 - **[CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)** - Free, vulnerable-by-design AWS environments
 
 ---
 
-## :fontawesome-solid-wrench: Essential Toolkit
+## :lucide-wrench: Essential Toolkit
 
 | Category | Tools | Purpose |
 |----------|-------|---------|
@@ -519,6 +519,6 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-cloud: **Misconfiguration Minefield** - Cloud breaches from misconfig (99%). IAM complexity overwhelming. CSPM tools expensive but necessary. Container security critical (90% workloads). Zero Trust replacing VPNs. Kubernetes security steep learning curve.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-cloud: **Misconfiguration Minefield** - Cloud breaches from misconfig (99%). IAM complexity overwhelming. CSPM tools expensive but necessary. Container security critical (90% workloads). Zero Trust replacing VPNs. Kubernetes security steep learning curve.
 
 **Tags:** infrastructure-security, cloud-security, network-security, container-security, iam, kubernetes-security

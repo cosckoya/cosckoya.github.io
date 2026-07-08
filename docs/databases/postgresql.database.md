@@ -8,7 +8,7 @@ tags:
   - relational
 ---
 
-# :fontawesome-solid-database: PostgreSQL
+# :lucide-database: PostgreSQL
 
 Advanced open-source relational database. ACID compliant, extensible, battle-tested. The default choice for new projects. Not as fast as MySQL for simple reads, but far more reliable and feature-rich. MVCC, JSON support, full-text search, custom functions. "It just works" is rare in databases — Postgres is the exception.
 
@@ -19,7 +19,7 @@ Advanced open-source relational database. ACID compliant, extensible, battle-tes
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Connect to database
@@ -55,7 +55,7 @@ Advanced open-source relational database. ACID compliant, extensible, battle-tes
     - `pg_dump` is your friend — automate backups day 1
     - Default `postgresql.conf` is conservative — tune for your hardware
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```sql
     -- Indexing strategies
@@ -94,7 +94,7 @@ Advanced open-source relational database. ACID compliant, extensible, battle-tes
     - CTEs improve query readability and enable recursion
     - Window functions replace complex self-joins
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -157,17 +157,17 @@ sudo -u postgres psql -c "CREATE DATABASE mydb OWNER myuser;"
 
 **Documentation:**
 
-- :fontawesome-solid-book: [Official Docs](https://www.postgresql.org/docs/)
-- :fontawesome-solid-book: [Postgres Weekly](https://postgresweekly.com/) — Newsletter
-- :fontawesome-brands-github: [PostgreSQL GitHub](https://github.com/postgres/postgres)
+- :lucide-book: [Official Docs](https://www.postgresql.org/docs/)
+- :lucide-book: [Postgres Weekly](https://postgresweekly.com/) — Newsletter
+- :lucide-github: [PostgreSQL GitHub](https://github.com/postgres/postgres)
 
 **Related:**
 
-- :fontawesome-solid-fire: **DBCli (pgcli)** — Modern CLI with autocompletion
-- :fontawesome-solid-wrench: **SQLAlchemy** — Python ORM with Postgres dialect
+- :lucide-fire: **DBCli (pgcli)** — Modern CLI with autocompletion
+- :lucide-wrench: **SQLAlchemy** — Python ORM with Postgres dialect
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-database: **Industry Standard** - The default relational database for serious projects. ACID compliance, extensibility, and reliability beat MySQL for most use cases. Not the fastest for simple reads but the most trustworthy.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-database: **Industry Standard** - The default relational database for serious projects. ACID compliance, extensibility, and reliability beat MySQL for most use cases. Not the fastest for simple reads but the most trustworthy.
 
 **Tags:** postgresql, database, sql, relational

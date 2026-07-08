@@ -3,7 +3,7 @@ title: Python
 description: General-purpose programming language - readable syntax, massive ecosystem, slow but productive
 ---
 
-# :fontawesome-solid-code: Python
+# :lucide-code: Python
 
 General-purpose programming language known for readability and simplicity. Dominant in data science, ML, automation, and web backends. Slow execution but fast development. "Batteries included" philosophy with comprehensive standard library. GIL (Global Interpreter Lock) is both a blessing and a curse.
 
@@ -12,9 +12,9 @@ General-purpose programming language known for readability and simplicity. Domin
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Syntax"
+=== ":lucide-list-check: Essential Syntax"
 
     ```python
     # Variables and types (dynamic typing)
@@ -96,7 +96,7 @@ General-purpose programming language known for readability and simplicity. Domin
     - `with` statements prevent resource leaks
     - PEP 8 style guide is law (use Ruff to enforce)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```python
     # Virtual environments (isolate project dependencies)
@@ -220,7 +220,7 @@ General-purpose programming language known for readability and simplicity. Domin
     - Pathlib is more readable than os.path
     - Logging beats print for production code
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Use uv for dependencies** - 10-100x faster than pip
@@ -270,7 +270,7 @@ General-purpose programming language known for readability and simplicity. Domin
 
 ---
 
-## :fontawesome-solid-box: Package Management
+## :lucide-box: Package Management
 
 ### Modern Approach (uv - Recommended)
 
@@ -334,9 +334,9 @@ poetry run pytest
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Free Resources
+### :lucide-graduation-cap: Free Resources
 
 - **[Official Python Tutorial](https://docs.python.org/3/tutorial/)** - Start here if new to Python
 - **[Real Python](https://realpython.com/)** - High-quality tutorials and articles
@@ -344,7 +344,7 @@ poetry run pytest
 - **[PEP 8 Style Guide](https://peps.python.org/pep-0008/)** - Official style guide
 - **[Full Stack Python](https://www.fullstackpython.com/)** - Web development focus
 
-### :fontawesome-solid-code: Practice Projects
+### :lucide-code: Practice Projects
 
 !!! example "Beginner"
     - **CLI tool** - Todo list, file organizer, password generator
@@ -366,11 +366,11 @@ poetry run pytest
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -382,7 +382,7 @@ poetry run pytest
 
     [PEP Index](https://peps.python.org/)
 
-- :fontawesome-solid-wrench: __Essential Tools__
+- :lucide-wrench: __Essential Tools__
 
     ---
 
@@ -396,7 +396,7 @@ poetry run pytest
 
     [pytest (testing)](https://pytest.org/)
 
-- :fontawesome-solid-code: __Popular Frameworks__
+- :lucide-code: __Popular Frameworks__
 
     ---
 
@@ -410,7 +410,7 @@ poetry run pytest
 
     [PyTorch](https://pytorch.org/)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -426,5 +426,5 @@ poetry run pytest
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-star: **Mainstream** - Python is the default choice for data science, ML, automation, and rapid prototyping. Slow execution but fast development. Modern tooling (uv, Ruff) makes it competitive. If you're doing AI/ML, you're learning Python.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-star: **Mainstream** - Python is the default choice for data science, ML, automation, and rapid prototyping. Slow execution but fast development. Modern tooling (uv, Ruff) makes it competitive. If you're doing AI/ML, you're learning Python.
 **Tags:** python, programming, scripting, data-science

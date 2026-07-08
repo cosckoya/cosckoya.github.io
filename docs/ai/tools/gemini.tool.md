@@ -3,7 +3,7 @@ title: Google Gemini CLI
 description: Google AI command-line interface - multimodal AI, code generation, image analysis via terminal
 ---
 
-# :fontawesome-solid-code: Google Gemini CLI
+# :lucide-code: Google Gemini CLI
 
 Command-line interface for Google's Gemini AI models. Multimodal capabilities (text, images, code). Free tier with generous limits. Good for quick queries and prototyping. Not as integrated into development workflows as Claude Code or Copilot, but powerful for general-purpose AI tasks.
 
@@ -12,9 +12,9 @@ Command-line interface for Google's Gemini AI models. Multimodal capabilities (t
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation (Python)
@@ -66,7 +66,7 @@ Command-line interface for Google's Gemini AI models. Multimodal capabilities (t
     - Not as context-aware as Claude Code (no file system access)
     - Good for one-off queries, not autonomous workflows
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # Code generation workflows
@@ -122,7 +122,7 @@ Command-line interface for Google's Gemini AI models. Multimodal capabilities (t
     - Good at code generation and explanation
     - JSON mode useful for scripting and automation
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Use Cases"
         - **Quick code snippets** - Faster than searching Stack Overflow
@@ -175,7 +175,7 @@ Command-line interface for Google's Gemini AI models. Multimodal capabilities (t
 
 ---
 
-## :fontawesome-solid-code: Practical Examples
+## :lucide-code: Practical Examples
 
 ### Shell Integration
 
@@ -273,16 +273,16 @@ done
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Official Resources
+### :lucide-graduation-cap: Official Resources
 
 - **[Google AI Studio](https://makersuite.google.com/)** - Web interface and API key management
 - **[Gemini API Documentation](https://ai.google.dev/docs)** - Official API docs
 - **[Gemini Quickstart](https://ai.google.dev/tutorials/python_quickstart)** - Python quickstart guide
 - **[Gemini Models](https://ai.google.dev/models/gemini)** - Model capabilities and pricing
 
-### :fontawesome-solid-code: Example Use Cases
+### :lucide-code: Example Use Cases
 
 !!! example "Development"
     - **Code generation** - "Create Express middleware for rate limiting"
@@ -304,11 +304,11 @@ done
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -320,7 +320,7 @@ done
 
     [Gemini Models](https://ai.google.dev/models/gemini)
 
-- :fontawesome-solid-wrench: __Tools & SDKs__
+- :lucide-wrench: __Tools & SDKs__
 
     ---
 
@@ -330,7 +330,7 @@ done
 
     [REST API](https://ai.google.dev/api/rest)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -340,7 +340,7 @@ done
 
     [Stack Overflow [gemini-api]](https://stackoverflow.com/questions/tagged/gemini-api)
 
-- :fontawesome-solid-graduation-cap: __Learning__
+- :lucide-graduation-cap: __Learning__
 
     ---
 
@@ -354,5 +354,5 @@ done
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-bolt: **Solid Alternative** - Gemini CLI is good for quick queries and multimodal tasks. Free tier is generous. Not as workflow-integrated as Claude Code or Copilot, but powerful for general-purpose AI. Best for one-off tasks, image analysis, and learning.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-bolt: **Solid Alternative** - Gemini CLI is good for quick queries and multimodal tasks. Free tier is generous. Not as workflow-integrated as Claude Code or Copilot, but powerful for general-purpose AI. Best for one-off tasks, image analysis, and learning.
 **Tags:** gemini, google, ai, cli, multimodal

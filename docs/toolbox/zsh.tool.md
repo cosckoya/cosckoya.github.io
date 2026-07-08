@@ -3,7 +3,7 @@ title: ZSH + Zinit
 description: Z Shell with Zinit plugin manager - fast, powerful shell without oh-my-zsh bloat
 ---
 
-# :fontawesome-solid-terminal: ZSH + Zinit
+# :lucide-terminal: ZSH + Zinit
 
 Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you blazing fast startup, lazy loading, and Turbo mode. No bloat, just speed and features.
 
@@ -12,7 +12,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **Install ZSH:**
     ```bash
@@ -43,7 +43,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
     zinit --help
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **`~/.zshrc` starter:**
 
@@ -154,7 +154,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     ```
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Advanced `.zshrc` with Turbo mode:**
 
@@ -218,7 +218,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
 
 ---
 
-## :fontawesome-solid-box: Essential Plugins
+## :lucide-box: Essential Plugins
 
 ```bash
 # ============================================
@@ -307,7 +307,7 @@ zinit snippet OMZ::plugins/asdf/asdf.plugin.zsh
 
 ---
 
-## :fontawesome-solid-terminal: Zinit Commands
+## :lucide-terminal: Zinit Commands
 
 ```bash
 # Plugin management
@@ -335,7 +335,7 @@ zinit creinstall <plugin>      # Reinstall completions
 
 ---
 
-## :fontawesome-solid-diagram-project: Powerlevel10k Setup
+## :lucide-diagram-project: Powerlevel10k Setup
 
 ```bash
 # Install Powerlevel10k
@@ -367,7 +367,7 @@ p10k configure
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Zinit:**
 - **[Zinit Wiki](https://github.com/zdharma-continuum/zinit/wiki)** - Complete documentation
@@ -395,6 +395,6 @@ p10k configure
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-terminal: **Shell Perfection** - ZSH with Zinit and Powerlevel10k is the ultimate shell experience. Auto-suggestions, syntax highlighting, fast completions. Fish-level UX with Bash compatibility. The standard for serious terminal users.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-terminal: **Shell Perfection** - ZSH with Zinit and Powerlevel10k is the ultimate shell experience. Auto-suggestions, syntax highlighting, fast completions. Fish-level UX with Bash compatibility. The standard for serious terminal users.
 
 **Tags:** zsh, zinit, shell, terminal, cli, powerlevel10k, productivity, development-tools

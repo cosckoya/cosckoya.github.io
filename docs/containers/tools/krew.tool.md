@@ -3,7 +3,7 @@ title: Krew
 description: kubectl plugin manager - extend kubectl with 200+ community plugins for better cluster management
 ---
 
-# :fontawesome-solid-plug: Krew
+# :lucide-plug: Krew
 
 kubectl plugin manager. 200+ community plugins extend kubectl with features the official binary doesn't have. Debug pods, view resources visually, manage contexts, scan security issues, and more. One plugin manager, endless possibilities.
 
@@ -12,7 +12,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **macOS/Linux:**
     ```bash
@@ -39,7 +39,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
     # GitCommit: d8c4221
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Plugin management:**
     ```bash
@@ -76,7 +76,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
     kubectl tree deploy/api       # Show resource tree
     ```
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Install recommended set:**
     ```bash
@@ -127,7 +127,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
 
 ---
 
-## :fontawesome-solid-box: Essential Plugins
+## :lucide-box: Essential Plugins
 
 ### Context & Namespace Management
 
@@ -274,7 +274,7 @@ kubectl graph deployments        # Generate dependency graph
 
 ---
 
-## :fontawesome-solid-diagram-project: Common Workflows
+## :lucide-diagram-project: Common Workflows
 
 ### Daily Operations
 
@@ -351,7 +351,7 @@ kubectl deprecations
 
 ---
 
-## :fontawesome-solid-terminal: Advanced Plugins
+## :lucide-terminal: Advanced Plugins
 
 ### Development & Testing
 
@@ -402,7 +402,7 @@ kubectl krew install cost
 kubectl cost                     # Cluster cost breakdown
 ```
 
-## :fontawesome-solid-code: Custom Plugin Example
+## :lucide-code: Custom Plugin Example
 
 **Create custom plugin (`kubectl-hello`):**
 
@@ -428,7 +428,7 @@ kubectl hello
 
 ---
 
-## :fontawesome-solid-book: Plugin Development
+## :lucide-book: Plugin Development
 
 **Plugin requirements:**
 - Executable file named `kubectl-<plugin-name>`
@@ -463,7 +463,7 @@ kubectl count-pods
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Official:**
 - **[Krew](https://krew.sigs.k8s.io/)** - Plugin manager
@@ -486,6 +486,6 @@ kubectl count-pods
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-puzzle-piece: **kubectl Superpowers** - Krew is the kubectl plugin manager that turns a good CLI into an extensible platform. Index has 200+ plugins for debugging, scanning, reporting. Essential for any serious K8s practitioner.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-puzzle-piece: **kubectl Superpowers** - Krew is the kubectl plugin manager that turns a good CLI into an extensible platform. Index has 200+ plugins for debugging, scanning, reporting. Essential for any serious K8s practitioner.
 
 **Tags:** kubectl, kubernetes, k8s, krew, plugins, cli, development-tools, devops

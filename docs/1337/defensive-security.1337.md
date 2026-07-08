@@ -3,7 +3,7 @@ title: Defensive Security (Blue Team)
 description: SOC operations, incident response, digital forensics, malware analysis, threat hunting, SIEM management
 ---
 
-# :fontawesome-solid-shield-halved: Defensive Security (Blue Team)
+# :lucide-shield-halved: Defensive Security (Blue Team)
 
 The defenders. Monitor networks, respond to incidents, hunt threats, analyze malware. Less glamorous than hacking, but you're the reason companies don't get pwned daily. SOC analysts, incident responders, threat hunters, forensics experts. Sleep is optional during incidents.
 
@@ -12,9 +12,9 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Disciplines"
+=== ":lucide-list-check: Core Disciplines"
 
     **Security Operations (SOC):**
     ```bash
@@ -140,7 +140,7 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
     - Threat intelligence overrated (most TI doesn't apply)
     - Blue team cert: GCIH, GMON, GCFA (SANS expensive but good)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **SIEM Detection Engineering:**
     ```yaml
@@ -284,7 +284,7 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
     - Forensics provides attribution and IOCs
     - Incident response limits damage
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Tuning is key** - 90% false positives kill SOCs (tune aggressively)
@@ -322,9 +322,9 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Paths
+## :lucide-graduation-cap: Learning Paths
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[GCIH](https://www.giac.org/certifications/certified-incident-handler-gcih/)** - $2499, SANS incident handling
 - **[GCFA](https://www.giac.org/certifications/certified-forensic-analyst-gcfa/)** - $2499, forensics
@@ -332,7 +332,7 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
 - **[BTL1](https://www.securityblue.team/courses/blue-team-level-1/)** - $499, affordable blue team cert
 - **[CEH](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/)** - $1199, entry-level (controversial)
 
-### :fontawesome-solid-rocket: Practice Platforms
+### :lucide-rocket: Practice Platforms
 
 - **[CyberDefenders](https://cyberdefenders.org/)** - Free blue team challenges
 - **[LetsDefend](https://letsdefend.io/)** - $10/month, SOC analyst training
@@ -340,7 +340,7 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
 
 ---
 
-## :fontawesome-solid-wrench: Essential Toolkit
+## :lucide-wrench: Essential Toolkit
 
 | Category | Tools | Purpose |
 |----------|-------|---------|
@@ -353,6 +353,6 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield: **Always On Defense** - Thankless job until breach prevented. Alert fatigue real. Automation essential. Incident response stressful. SOC work 24/7 shifts. Blue team certs expensive (SANS). Career stable (always need defenders).
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield: **Always On Defense** - Thankless job until breach prevented. Alert fatigue real. Automation essential. Incident response stressful. SOC work 24/7 shifts. Blue team certs expensive (SANS). Career stable (always need defenders).
 
 **Tags:** defensive-security, blue-team, soc, incident-response, forensics

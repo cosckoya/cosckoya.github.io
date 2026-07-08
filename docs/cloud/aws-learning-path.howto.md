@@ -3,11 +3,11 @@ title: AWS Learning Path
 description: How to learn AWS — free resources, certifications, hands-on labs, and projects to build
 ---
 
-# :fontawesome-solid-graduation-cap: AWS Learning Path
+# :lucide-graduation-cap: AWS Learning Path
 
 A practical guide to learning AWS, from zero to productive. This isn't a 12-month curriculum — it's the fastest path to being useful with AWS.
 
-## :fontawesome-solid-book-open: Free Resources
+## :lucide-book-open: Free Resources
 
 - **[AWS Skill Builder](https://skillbuilder.aws)** - Official training, tons of free courses (start here)
 - **[AWS Free Tier](https://aws.amazon.com/free)** - 12 months free for core services (stay within limits!)
@@ -17,7 +17,7 @@ A practical guide to learning AWS, from zero to productive. This isn't a 12-mont
 - **[AWS Getting Started Guides](https://aws.amazon.com/getting-started/)** - Official tutorials
 - **[AWS re:Post](https://repost.aws/)** - Official Q&A platform (replaced forums in 2024)
 
-## :fontawesome-solid-flask: Interactive Labs
+## :lucide-flask: Interactive Labs
 
 - **[AWS Sandbox Accounts](https://aws.amazon.com/getting-started/hands-on/)** - Official hands-on tutorials in real AWS
 - **[Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)** - Temporary accounts for safe experimentation
@@ -25,7 +25,7 @@ A practical guide to learning AWS, from zero to productive. This isn't a 12-mont
 - **[LocalStack](https://localstack.cloud/)** - Run AWS locally for development (Pro version worth it)
 - **[AWS CloudShell](https://aws.amazon.com/cloudshell/)** - Browser-based shell with AWS CLI pre-installed
 
-## :fontawesome-solid-certificate: Certifications Worth It
+## :lucide-certificate: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **Solutions Architect Associate** - Most valuable, industry standard
@@ -45,7 +45,7 @@ A practical guide to learning AWS, from zero to productive. This isn't a 12-mont
 - Use [Tutorials Dojo practice exams](https://tutorialsdojo.com/) ($15, best investment)
 - Join [r/AWSCertifications](https://reddit.com/r/AWSCertifications) for study tips
 
-## :fontawesome-solid-rocket: Projects to Build
+## :lucide-rocket: Projects to Build
 
 !!! example "Beginner (learn the basics)"
     - **Static website** - S3 + CloudFront + Route53 (learn storage + CDN)
@@ -66,6 +66,6 @@ A practical guide to learning AWS, from zero to productive. This isn't a 12-mont
 
 ---
 
-**Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-road: **Pathfinder** - The cert path is well-trodden. The projects section is the real value — build these, not more tutorials.
+**Last Updated:** 2026-01-31 | **Vibe Check:** :lucide-road: **Pathfinder** - The cert path is well-trodden. The projects section is the real value — build these, not more tutorials.
 
 **Tags:** aws, learning-path, certification, projects

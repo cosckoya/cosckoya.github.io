@@ -3,7 +3,7 @@ title: AWS Architecture Patterns & Well-Architected Framework
 description: Reference architecture patterns for AWS and the Well-Architected Framework pillars — security, reliability, performance, cost, operations
 ---
 
-# :fontawesome-solid-sitemap: AWS Architecture Patterns
+# :lucide-sitemap: AWS Architecture Patterns
 
 Common AWS architecture patterns for real-world applications.
 
@@ -154,11 +154,11 @@ graph TB
 
 ---
 
-## :fontawesome-solid-compass-drafting: Well-Architected Framework
+## :lucide-compass-drafting: Well-Architected Framework
 
 AWS's five pillars for building reliable, secure, efficient systems.
 
-### :fontawesome-solid-shield-halved: Security
+### :lucide-shield-halved: Security
 
 **Design Principles:**
 
@@ -180,7 +180,7 @@ AWS's five pillars for building reliable, secure, efficient systems.
     - [ ] VPC Flow Logs enabled
     - [ ] AWS Config rules for compliance
 
-### :fontawesome-solid-arrows-rotate: Reliability
+### :lucide-arrows-rotate: Reliability
 
 **Design Principles:**
 
@@ -199,7 +199,7 @@ AWS's five pillars for building reliable, secure, efficient systems.
     | 99.99% (4 nines) | 52.56 minutes | Multi-region |
     | 99.999% (5 nines) | 5.26 minutes | Multi-region + Failover |
 
-### :fontawesome-solid-gauge-high: Performance Efficiency
+### :lucide-gauge-high: Performance Efficiency
 
 **Design Principles:**
 
@@ -229,7 +229,7 @@ AWS's five pillars for building reliable, secure, efficient systems.
         style Batch fill:#ff9900
     ```
 
-### :fontawesome-solid-dollar-sign: Cost Optimization
+### :lucide-dollar-sign: Cost Optimization
 
 **Design Principles:**
 
@@ -250,7 +250,7 @@ AWS's five pillars for building reliable, secure, efficient systems.
     | Lambda vs EC2 | 80% | Low-traffic APIs |
     | Graviton Instances | 40% | ARM-compatible workloads |
 
-### :fontawesome-solid-leaf: Operational Excellence
+### :lucide-leaf: Operational Excellence
 
 **Design Principles:**
 
@@ -268,6 +268,6 @@ AWS's five pillars for building reliable, secure, efficient systems.
 
 ---
 
-**Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-compass: **Structural** - These patterns are industry-standard. Not innovative, but proven at scale. Use them unless you have a compelling reason not to.
+**Last Updated:** 2026-01-31 | **Vibe Check:** :lucide-compass: **Structural** - These patterns are industry-standard. Not innovative, but proven at scale. Use them unless you have a compelling reason not to.
 
 **Tags:** aws, architecture, well-architected, patterns

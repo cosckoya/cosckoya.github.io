@@ -3,7 +3,7 @@ title: ASDF
 description: Universal version manager for multiple runtime versions - one tool to rule them all (Node, Python, Ruby, Go, etc.)
 ---
 
-# :fontawesome-solid-code-branch: ASDF
+# :lucide-code-branch: ASDF
 
 Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions with one tool. No more nvm, pyenv, rbenv, goenv chaos. One `.tool-versions` file, one command interface, done.
 
@@ -12,7 +12,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -43,7 +43,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
     # asdf 0.14.0
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Install a plugin:**
     ```bash
@@ -89,7 +89,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
     asdf shell nodejs 20.11.0
     ```
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **`.tool-versions` file:**
 
@@ -146,7 +146,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
 
 ---
 
-## :fontawesome-solid-box: Common Plugins
+## :lucide-box: Common Plugins
 
 ### Essential Runtimes
 
@@ -203,7 +203,7 @@ asdf install terragrunt latest
 
 ---
 
-## :fontawesome-solid-terminal: Essential Commands
+## :lucide-terminal: Essential Commands
 
 ```bash
 # Plugin management
@@ -237,7 +237,7 @@ asdf update                         # Update asdf itself
 
 ---
 
-## :fontawesome-solid-diagram-project: Common Workflows
+## :lucide-diagram-project: Common Workflows
 
 ### New Project Setup
 
@@ -294,7 +294,7 @@ python --version  # 3.12.1
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Official:**
 - **[ASDF Docs](https://asdf-vm.com/)** - Official documentation
@@ -314,6 +314,6 @@ python --version  # 3.12.1
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-toolbox: **Version Manager Done Right** - One tool to rule all runtimes. No more nvm/pyenv/rbenv/gvm fragmentation. Single `.tool-versions` file for reproducible environments. Plugin ecosystem covers everything. Essential for polyglot development.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-toolbox: **Version Manager Done Right** - One tool to rule all runtimes. No more nvm/pyenv/rbenv/gvm fragmentation. Single `.tool-versions` file for reproducible environments. Plugin ecosystem covers everything. Essential for polyglot development.
 
 **Tags:** asdf, version-manager, nodejs, python, golang, rust, ruby, development-tools, cli, runtime

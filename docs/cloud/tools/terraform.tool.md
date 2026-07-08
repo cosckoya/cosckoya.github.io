@@ -3,7 +3,7 @@ title: Terraform
 description: Infrastructure as Code tool - declarative configs, multi-cloud, state management headaches
 ---
 
-# :fontawesome-solid-cube: Terraform
+# :lucide-cube: Terraform
 
 Infrastructure as Code tool that turns your infrastructure into declarative configuration files. Multi-cloud support, huge provider ecosystem, plan-before-apply workflow. State management is both its superpower and your biggest headache.
 
@@ -12,9 +12,9 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Initialize working directory (first time setup)
@@ -77,7 +77,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
     - Lock your provider versions - `terraform { required_providers { aws = { version = "~> 5.0" } } }`
     - Use `.terraform.lock.hcl` in version control - reproducible builds
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```hcl
     # Provider configuration (AWS example)
@@ -248,7 +248,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
     - Modules enable reusability - write once, use everywhere
     - Remote state + locking prevents concurrent modifications (corruption)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Pin ALL versions** - Terraform binary, providers, modules (prevents breaking changes)
@@ -303,9 +303,9 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Paths
+## :lucide-graduation-cap: Learning Paths
 
-### :fontawesome-solid-book-open: Free Resources
+### :lucide-book-open: Free Resources
 
 - **[Terraform Learn](https://learn.hashicorp.com/terraform)** - Official tutorials, start here (getting started track is excellent)
 - **[Terraform Registry](https://registry.terraform.io/)** - Browse providers and modules (AWS/Azure/GCP providers are massive)
@@ -313,14 +313,14 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 - **[Terraform Up & Running (book samples)](https://github.com/brikis98/terraform-up-and-running-code)** - Yevgeniy Brikman's book examples
 - **[Terraform AWS Examples](https://github.com/hashicorp/terraform-provider-aws/tree/main/examples)** - Official AWS provider examples
 
-### :fontawesome-solid-flask: Interactive Practice
+### :lucide-flask: Interactive Practice
 
 - **[Terraform Tutorials](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code)** - Hands-on labs in HashiCorp Learn
 - **[Katacoda Terraform](https://www.katacoda.com/courses/terraform)** - Browser-based scenarios (free)
 - **[Terraform LocalStack](https://docs.localstack.cloud/user-guide/integrations/terraform/)** - Test AWS Terraform locally (no real resources)
 - **[KillerCoda Terraform](https://killercoda.com/terraform)** - Interactive Terraform scenarios
 
-### :fontawesome-solid-certificate: Certifications
+### :lucide-certificate: Certifications
 
 !!! success "Recommended Path"
     **HashiCorp Certified: Terraform Associate (003)** - $70, proves foundational knowledge, worth it for resume
@@ -336,7 +336,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 - Hands-on experience matters more than cert
 - Focus on understanding state, modules, and workflows
 
-### :fontawesome-solid-rocket: Projects to Build
+### :lucide-rocket: Projects to Build
 
 !!! example "Beginner (learn the basics)"
     - **Static website** - S3 bucket + CloudFront distribution
@@ -357,9 +357,9 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
 ---
 
-## :fontawesome-solid-heart-pulse: Community Pulse
+## :lucide-heart-pulse: Community Pulse
 
-### :fontawesome-solid-users: Who to Follow
+### :lucide-users: Who to Follow
 
 **Twitter/X:**
 
@@ -376,21 +376,21 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 - [FreeCodeCamp Terraform](https://www.youtube.com/watch?v=SLB_c_ayRMo) - Full course, beginner-friendly
 - [Cloud Posse](https://www.youtube.com/c/CloudPosse) - Terraform modules, best practices
 
-### :fontawesome-solid-comments: Active Communities
+### :lucide-comments: Active Communities
 
 - **[r/Terraform](https://reddit.com/r/Terraform)** - 100k+ members, active daily, helpful for troubleshooting
 - **[HashiCorp Discuss](https://discuss.hashicorp.com/c/terraform-core)** - Official forums, core team responds
 - **[Terraform Community Slack](https://terraform-community.slack.com/)** - Real-time help (invite via website)
 - **[OpenTofu Community](https://opentofu.org/community)** - Open-source Terraform fork (post-license change)
 
-### :fontawesome-solid-podcast: Newsletters & Blogs
+### :lucide-podcast: Newsletters & Blogs
 
 - **[Terraform Weekly](https://www.terraformweekly.com/)** - Weekly curated links, tips, modules
 - **[HashiCorp Blog](https://www.hashicorp.com/blog)** - Official posts, product updates
 - **[Gruntwork Blog](https://blog.gruntwork.io/)** - Infrastructure patterns, best practices
 - **[env0 Blog](https://www.env0.com/blog)** - IaC management, Terraform tips
 
-### :fontawesome-solid-calendar: Events & Conferences
+### :lucide-calendar: Events & Conferences
 
 - **[HashiConf](https://hashiconf.com/)** - Annual conference, San Francisco + virtual, October
 - **[HashiCorp User Groups](https://www.meetup.com/pro/hugs/)** - Local meetups worldwide
@@ -398,11 +398,11 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -414,7 +414,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [Terraform Language Docs](https://www.terraform.io/language)
 
-- :fontawesome-solid-flask: __Hands-on Practice__
+- :lucide-flask: __Hands-on Practice__
 
     ---
 
@@ -426,7 +426,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [KillerCoda Scenarios](https://killercoda.com/terraform)
 
-- :fontawesome-solid-code: __Code Examples__
+- :lucide-code: __Code Examples__
 
     ---
 
@@ -438,7 +438,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [Awesome Terraform](https://github.com/shuaibiyy/awesome-terraform)
 
-- :fontawesome-solid-fire: __Advanced Topics__
+- :lucide-fire: __Advanced Topics__
 
     ---
 
@@ -450,7 +450,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [Policy as Code (Sentinel)](https://www.terraform.io/cloud-docs/policy-enforcement)
 
-- :fontawesome-solid-screwdriver-wrench: __Tools & Extensions__
+- :lucide-screwdriver-wrench: __Tools & Extensions__
 
     ---
 
@@ -466,7 +466,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [tfenv](https://github.com/tfutils/tfenv) (version manager)
 
-- :fontawesome-solid-rss: __News & Updates__
+- :lucide-rss: __News & Updates__
 
     ---
 
@@ -482,5 +482,5 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
 ---
 
-**Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-fire: **Essential** - Infrastructure as Code is non-negotiable in 2026. Terraform is the industry standard. OpenTofu fork is viable alternative post-license drama. Master state management, modules, and workspaces. HCP Terraform (formerly Terraform Cloud) is worth paying for teams.
+**Last Updated:** 2026-01-31 | **Vibe Check:** :lucide-fire: **Essential** - Infrastructure as Code is non-negotiable in 2026. Terraform is the industry standard. OpenTofu fork is viable alternative post-license drama. Master state management, modules, and workspaces. HCP Terraform (formerly Terraform Cloud) is worth paying for teams.
 **Tags:** terraform, iac, devops, hashicorp

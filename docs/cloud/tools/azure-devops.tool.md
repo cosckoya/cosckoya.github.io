@@ -3,7 +3,7 @@ title: Azure DevOps
 description: Microsoft's DevOps platform - pipelines, repos, boards, artifacts, test plans, enterprise focus
 ---
 
-# :fontawesome-brands-microsoft: Azure DevOps
+# :lucide-microsoft: Azure DevOps
 
 Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boards for work tracking, Artifacts for packages, Test Plans for QA. Better for Windows/.NET shops, more features than GitHub for enterprise workflows.
 
@@ -12,9 +12,9 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Azure DevOps CLI (az devops)
@@ -70,7 +70,7 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
     - Boards integration with work items better than GitHub Projects
     - YAML pipelines required (classic UI pipelines deprecated)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # Azure Pipelines YAML (azure-pipelines.yml)
@@ -202,7 +202,7 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
     - Environment tracking shows deployment history
     - Integration with Azure services (App Service, AKS, Functions)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **YAML pipelines only** - Classic UI pipelines deprecated
@@ -239,15 +239,15 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Azure DevOps Documentation](https://docs.microsoft.com/en-us/azure/devops/)** - Complete reference
 - **[Azure Pipelines YAML Schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema)** - Syntax reference
 - **[Azure DevOps CLI](https://docs.microsoft.com/en-us/azure/devops/cli/)** - Command-line reference
 
-### :fontawesome-solid-rocket: Key Components
+### :lucide-rocket: Key Components
 
 - **Azure Pipelines** - CI/CD with YAML or classic (use YAML)
 - **Azure Repos** - Git repositories with branch policies
@@ -257,7 +257,7 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
 
 ---
 
-## :fontawesome-solid-star: Related Tools
+## :lucide-star: Related Tools
 
 - **[Azure CLI with DevOps extension](https://docs.microsoft.com/en-us/azure/devops/cli/)** - Command-line automation
 - **[Azure Pipelines VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)** - YAML IntelliSense
@@ -265,6 +265,6 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-building: **Enterprise Choice** - Better than GitHub for large organizations with complex workflows. Strong Azure integration. Boards more powerful than GitHub Projects. Free tier generous. UI less polished than GitHub.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-building: **Enterprise Choice** - Better than GitHub for large organizations with complex workflows. Strong Azure integration. Boards more powerful than GitHub Projects. Free tier generous. UI less polished than GitHub.
 
 **Tags:** azure-devops, devops, ci-cd, microsoft, pipelines

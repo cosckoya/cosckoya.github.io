@@ -8,7 +8,7 @@ tags:
   - compiled
 ---
 
-# :fontawesome-solid-code: Go
+# :lucide-code: Go
 
 Compiled programming language created at Google. Fast compilation, fast execution, built-in concurrency. Simplicity by design — no generics drama (until 1.18), no inheritance, no exceptions. Dominant in cloud infrastructure: Docker, Kubernetes, Terraform, Prometheus, all written in Go. The language of the cloud.
 
@@ -19,7 +19,7 @@ Compiled programming language created at Google. Fast compilation, fast executio
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Syntax"
+=== ":lucide-list-check: Essential Syntax"
 
     ```go
     package main
@@ -75,7 +75,7 @@ Compiled programming language created at Google. Fast compilation, fast executio
     - The `go` keyword is all you need for concurrency
     - `gofmt` eliminates all formatting debates
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```go
     // Goroutines and channels (concurrency)
@@ -132,7 +132,7 @@ Compiled programming language created at Google. Fast compilation, fast executio
     - `context` package standardizes cancellation and deadlines across the ecosystem
     - Table-driven tests are the Go idiom — clear, comprehensive, maintainable
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -185,17 +185,17 @@ go get github.com/lib/pq
 
 **Documentation:**
 
-- :fontawesome-solid-book: [Official Docs](https://go.dev/doc/)
-- :fontawesome-solid-book: [Go by Example](https://gobyexample.com/) — Best learning resource
-- :fontawesome-brands-github: [Go GitHub](https://github.com/golang/go)
+- :lucide-book: [Official Docs](https://go.dev/doc/)
+- :lucide-book: [Go by Example](https://gobyexample.com/) — Best learning resource
+- :lucide-github: [Go GitHub](https://github.com/golang/go)
 
 **Related:**
 
-- :fontawesome-solid-fire: **Docker** — Written in Go, great codebase to study
-- :fontawesome-solid-wrench: **Kubernetes** — Largest Go project in existence
+- :lucide-fire: **Docker** — Written in Go, great codebase to study
+- :lucide-wrench: **Kubernetes** — Largest Go project in existence
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-rocket: **Cloud Native Standard** - The language that built the cloud. Simple syntax, fast compilation, built-in concurrency. Not the best for everything (data science, UI), but unmatched for infrastructure, CLIs, and network services. Go is the modern C.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-rocket: **Cloud Native Standard** - The language that built the cloud. Simple syntax, fast compilation, built-in concurrency. Not the best for everything (data science, UI), but unmatched for infrastructure, CLIs, and network services. Go is the modern C.
 
 **Tags:** go, golang, programming, compiled

@@ -3,7 +3,7 @@ title: Zensical - Feature Showcase
 description: Complete reference of all Zensical features, markdown extensions, and built-in modules
 ---
 
-# :fontawesome-solid-wand-magic-sparkles: Zensical Feature Showcase
+# :lucide-wand-magic-sparkles: Zensical Feature Showcase
 
 **Kitchen sink documentation** — Every feature, pattern, and capability of the Material theme ecosystem. Use this as reference for what's possible, copy/paste examples, or generate new documentation.
 
@@ -11,7 +11,7 @@ Last Updated: 2026-03-22 | Theme: Material 9.7.1
 
 ---
 
-## :fontawesome-solid-layer-group: Theme Features Overview
+## :lucide-layer-group: Theme Features Overview
 
 This site uses Material for MkDocs 9.7.1 with all major features enabled. Below is the complete reference.
 
@@ -47,7 +47,7 @@ This site uses Material for MkDocs 9.7.1 with all major features enabled. Below 
 
 ---
 
-## :fontawesome-solid-palette: Typography & Colors
+## :lucide-palette: Typography & Colors
 
 ### Headings
 
@@ -101,7 +101,7 @@ Subscript: H~2~O
 
 ---
 
-## :fontawesome-solid-cube: Code Blocks & Syntax Highlighting
+## :lucide-cube: Code Blocks & Syntax Highlighting
 
 ### Basic Code Block
 
@@ -186,7 +186,7 @@ Use backticks for `inline code`. For highlighting within text: `python`, `bash`,
 
 ---
 
-## :fontawesome-solid-message: Admonitions
+## :lucide-message: Admonitions
 
 Admonitions draw attention to important information. Eleven types available:
 
@@ -239,14 +239,14 @@ Admonitions draw attention to important information. Eleven types available:
 
 ---
 
-## :fontawesome-solid-table: Tables
+## :lucide-table: Tables
 
 | Feature | Material | Docusaurus | Jekyll | Status |
 |---------|----------|-----------|--------|--------|
-| Setup Time | :fontawesome-solid-bolt: 5 min | :fontawesome-solid-hourglass: 15 min | :fontawesome-solid-hourglass: 20 min | :fontawesome-solid-circle-check: |
-| Customization | :fontawesome-solid-star: Excellent | :fontawesome-solid-star: Excellent | :fontawesome-solid-star: Good | :fontawesome-solid-circle-check: |
-| Performance | :fontawesome-solid-rocket: Fast | :fontawesome-solid-rocket: Fast | :fontawesome-solid-snail: Slow | :fontawesome-solid-circle-check: |
-| Learning Curve | :fontawesome-solid-chart-line: Easy | :fontawesome-solid-chart-line: Moderate | :fontawesome-solid-chart-line: Easy | :fontawesome-solid-circle-check: |
+| Setup Time | :lucide-bolt: 5 min | :lucide-hourglass: 15 min | :lucide-hourglass: 20 min | :lucide-circle-check: |
+| Customization | :lucide-star: Excellent | :lucide-star: Excellent | :lucide-star: Good | :lucide-circle-check: |
+| Performance | :lucide-rocket: Fast | :lucide-rocket: Fast | :lucide-snail: Slow | :lucide-circle-check: |
+| Learning Curve | :lucide-chart-line: Easy | :lucide-chart-line: Moderate | :lucide-chart-line: Easy | :lucide-circle-check: |
 
 **Table with alignment:**
 
@@ -265,28 +265,28 @@ Admonitions draw attention to important information. Eleven types available:
 
 ---
 
-## :fontawesome-solid-icons: Icons & Emojis
+## :lucide-icons: Icons & Emojis
 
 ### FontAwesome Icons
 
-Solid icons: :fontawesome-solid-star: :fontawesome-solid-heart: :fontawesome-solid-rocket: :fontawesome-solid-skull: :fontawesome-solid-bug:
+Solid icons: :lucide-star: :lucide-heart: :lucide-rocket: :lucide-skull: :lucide-bug:
 
-Brand icons: :fontawesome-brands-github: :fontawesome-brands-gitlab: :fontawesome-brands-docker: :fontawesome-brands-python: :fontawesome-brands-react:
+Brand icons: :lucide-github: :lucide-gitlab: :lucide-docker: :lucide-python: :lucide-react:
 
-Regular icons: :fontawesome-regular-star: :fontawesome-regular-heart: :fontawesome-regular-file:
+Regular icons: :lucide-star: :lucide-heart: :lucide-file:
 
 ### Icon Collections
 
 | Category | Icons |
 |----------|-------|
-| Development | :fontawesome-brands-github: :fontawesome-brands-gitlab: :fontawesome-solid-code: :fontawesome-brands-git: |
-| Deployment | :fontawesome-solid-rocket: :fontawesome-brands-docker: :fontawesome-solid-server: :fontawesome-solid-cloud: |
-| Security | :fontawesome-solid-lock: :fontawesome-solid-key: :fontawesome-solid-shield: :fontawesome-solid-bug: |
-| Status | :fontawesome-solid-circle-check: :fontawesome-solid-circle-xmark: :fontawesome-solid-hourglass: :fontawesome-solid-triangle-exclamation: |
+| Development | :lucide-github: :lucide-gitlab: :lucide-code: :lucide-git: |
+| Deployment | :lucide-rocket: :lucide-docker: :lucide-server: :lucide-cloud: |
+| Security | :lucide-lock: :lucide-key: :lucide-shield: :lucide-bug: |
+| Status | :lucide-circle-check: :lucide-circle-xmark: :lucide-hourglass: :lucide-triangle-exclamation: |
 
 ---
 
-## :fontawesome-solid-link: Links & References
+## :lucide-link: Links & References
 
 ### Internal Links
 
@@ -316,7 +316,7 @@ Another footnote reference[^2] in the text.
 
 ---
 
-## :fontawesome-solid-images: Images
+## :lucide-images: Images
 
 ### Basic Image
 
@@ -348,7 +348,7 @@ Centered (default):
 
 ---
 
-## :fontawesome-solid-square-up: Abbreviations
+## :lucide-square-up: Abbreviations
 
 The HTML specification is maintained by the W3C.
 
@@ -359,7 +359,7 @@ Hover over "HTML" or "W3C" to see the abbreviation tooltip.
 
 ---
 
-## :fontawesome-solid-bars: Horizontal Rules
+## :lucide-bars: Horizontal Rules
 
 Text before rule.
 
@@ -369,7 +369,7 @@ Text after rule. Use horizontal rules to separate major sections visually.
 
 ---
 
-## :fontawesome-solid-code-branch: Code Snippets & Includes
+## :lucide-code-branch: Code Snippets & Includes
 
 Code snippets can be included from external files or inline highlighted sections.
 
@@ -429,7 +429,7 @@ sequenceDiagram
 
 ---
 
-## :fontawesome-solid-toggle-on: Tabs & Panels
+## :lucide-toggle-on: Tabs & Panels
 
 Tabbed content with persistent state across pages:
 
@@ -512,7 +512,7 @@ Tabbed content with persistent state across pages:
 
 ---
 
-## :fontawesome-solid-list: Advanced Lists
+## :lucide-list: Advanced Lists
 
 ### Nested Lists with Mixed Content
 
@@ -540,7 +540,7 @@ Tabbed content with persistent state across pages:
 
 ---
 
-## :fontawesome-solid-comments: Comments & Annotations
+## :lucide-comments: Comments & Annotations
 
 Comments can be added using HTML comments (they won't be rendered):
 
@@ -556,7 +556,7 @@ Use ++cmd+s++ on Mac to save.
 
 ---
 
-## :fontawesome-solid-strikethrough: Text Decorations
+## :lucide-strikethrough: Text Decorations
 
 ~~Strikethrough~~ text shows what was removed.
 
@@ -574,7 +574,7 @@ This is ==highlighted text== using mark extension.
 
 ---
 
-## :fontawesome-solid-sliders: Content Actions
+## :lucide-sliders: Content Actions
 
 Pages can have action buttons (edit/view source):
 
@@ -589,7 +589,7 @@ Buttons appear in the header (if configured).
 
 ---
 
-## :fontawesome-solid-book-open: Blockquotes
+## :lucide-book-open: Blockquotes
 
 > This is a simple blockquote.
 > It can span multiple lines.
@@ -606,7 +606,7 @@ Buttons appear in the header (if configured).
 
 ---
 
-## :fontawesome-solid-calculator: Math & Formulas
+## :lucide-calculator: Math & Formulas
 
 !!! warning "Requires additional setup"
     Math rendering requires `pymdownx.arithmatex` extension **plus** MathJax or KaTeX JavaScript.
@@ -642,7 +642,7 @@ $$
 
 ---
 
-## :fontawesome-solid-plug: Material Plugins in Action
+## :lucide-plug: Material Plugins in Action
 
 ### Search
 
@@ -678,7 +678,7 @@ Navigation is defined in `SUMMARY.md` files (literate navigation) for readabilit
 
 ---
 
-## :fontawesome-solid-browser: Responsive Design
+## :lucide-browser: Responsive Design
 
 This page is fully responsive. Try resizing your browser:
 
@@ -700,7 +700,7 @@ Material uses these breakpoints:
 
 ---
 
-## :fontawesome-solid-circle-half-stroke: Dark & Light Mode
+## :lucide-circle-half-stroke: Dark & Light Mode
 
 Toggle between dark (Maleficent theme) and light (Deep Purple + Teal) modes using the button in the top right.
 
@@ -718,7 +718,7 @@ palette:
 
 ---
 
-## :fontawesome-solid-gears: Configuration Reference
+## :lucide-gears: Configuration Reference
 
 ### Key Theme Options
 
@@ -778,7 +778,7 @@ features:
 
 ---
 
-## :fontawesome-solid-circle-question: Common Patterns
+## :lucide-circle-question: Common Patterns
 
 ### "Real Talk" Pattern
 
@@ -802,7 +802,7 @@ features:
 
 ### Three-Tab Quick Hits Pattern
 
-=== ":fontawesome-solid-list-check: Essential"
+=== ":lucide-list-check: Essential"
 
     Key commands and basic usage
 
@@ -810,7 +810,7 @@ features:
     command --flag argument
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     Real-world use cases
 
@@ -818,7 +818,7 @@ features:
     command pattern example
     ```
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     Advanced usage and warnings
 
@@ -827,7 +827,7 @@ features:
 
 ---
 
-## :fontawesome-solid-rocket: Performance Tips
+## :lucide-rocket: Performance Tips
 
 ### 1. Use Instant Loading
 
@@ -861,7 +861,7 @@ Material generates static URLs that leverage browser caching.
 
 ---
 
-## :fontawesome-solid-shield: Accessibility (WCAG 2.1 AA)
+## :lucide-shield: Accessibility (WCAG 2.1 AA)
 
 This site aims for WCAG 2.1 AA compliance:
 
@@ -880,7 +880,7 @@ This site aims for WCAG 2.1 AA compliance:
 
 ---
 
-## :fontawesome-solid-file: File Organization
+## :lucide-file: File Organization
 
 ```
 docs/
@@ -935,7 +935,7 @@ docs/
 
 ---
 
-## :fontawesome-solid-check: Validation Checklist
+## :lucide-check: Validation Checklist
 
 When creating new documentation, use this checklist:
 
@@ -953,7 +953,7 @@ When creating new documentation, use this checklist:
 
 ---
 
-## :fontawesome-solid-lightbulb: Tips for Content Creation
+## :lucide-lightbulb: Tips for Content Creation
 
 ### 1. Use Templates
 
@@ -981,21 +981,21 @@ Use heading hierarchy (h2, h3, h4) to structure content logically.
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
 **External Resources:**
 
-- :fontawesome-solid-book: [Material for MkDocs Official Documentation](https://squidfunk.github.io/mkdocs-material/)
-- :fontawesome-solid-book: [MkDocs Documentation](https://www.mkdocs.org/)
-- :fontawesome-solid-book: [Python-Markdown Extensions](https://python-markdown.github.io/)
-- :fontawesome-brands-github: [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
+- :lucide-book: [Material for MkDocs Official Documentation](https://squidfunk.github.io/mkdocs-material/)
+- :lucide-book: [MkDocs Documentation](https://www.mkdocs.org/)
+- :lucide-book: [Python-Markdown Extensions](https://python-markdown.github.io/)
+- :lucide-github: [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 
 **Related Topics:**
 
-- :fontawesome-solid-code: Markdown syntax and best practices
-- :fontawesome-solid-palette: Color theory and accessibility
-- :fontawesome-solid-layer-group: Static site generation
-- :fontawesome-solid-magnifying-glass: Full-text search optimization
+- :lucide-code: Markdown syntax and best practices
+- :lucide-palette: Color theory and accessibility
+- :lucide-layer-group: Static site generation
+- :lucide-magnifying-glass: Full-text search optimization
 
 ---
 

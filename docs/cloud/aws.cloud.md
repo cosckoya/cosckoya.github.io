@@ -3,7 +3,7 @@ title: Amazon Web Services (AWS)
 description: AWS reference - cloud platform running half the internet, 200+ services, pricing mystery
 ---
 
-# :fontawesome-brands-aws: AWS (Amazon Web Services)
+# :lucide-aws: AWS (Amazon Web Services)
 
 Cloud platform that runs half the internet. 200+ services (you'll use maybe 10). 33+ regions globally. Industry standard for cloud infrastructure. Pricing is a mystery, bills are scary, but it works.
 
@@ -12,9 +12,9 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Services"
+=== ":lucide-list-check: Essential Services"
 
     ```bash
     # EC2 - Virtual machines (you'll use this)
@@ -72,7 +72,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
     - us-east-1 is cheapest but goes down more often (Murphy's law applies)
     - Use `--profile` for multiple accounts (you'll have dev/staging/prod)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```python
     import boto3
@@ -185,7 +185,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
     - DynamoDB queries scale better than scans (use indexes!)
     - Lambda handler pattern is battle-tested across millions of functions
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization (your CFO will thank you)"
         - **Reserved Instances:** 72% savings for predictable workloads (1-3 year commitment)
@@ -240,14 +240,14 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 ---
 
 !!! tip "See Also"
-    - :fontawesome-solid-graduation-cap: **[AWS Learning Path](aws-learning-path.howto.md)** — Certifications, projects, and free resources
-    - :fontawesome-solid-sitemap: **[AWS Architecture & Well-Architected Framework](aws-architecture.explanation.md)** — Architecture patterns and design principles
+    - :lucide-graduation-cap: **[AWS Learning Path](aws-learning-path.howto.md)** — Certifications, projects, and free resources
+    - :lucide-sitemap: **[AWS Architecture & Well-Architected Framework](aws-architecture.explanation.md)** — Architecture patterns and design principles
 
 ---
 
-## :fontawesome-solid-heart-pulse: Community Pulse
+## :lucide-heart-pulse: Community Pulse
 
-### :fontawesome-solid-users: Who to Follow
+### :lucide-users: Who to Follow
 
 **Twitter/X:**
 
@@ -267,7 +267,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 - [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana) - DevOps + AWS tutorials
 - [AWS Events](https://www.youtube.com/c/AWSEventsChannel) - Conference talks, workshops
 
-### :fontawesome-solid-comments: Active Communities
+### :lucide-comments: Active Communities
 
 - **[r/aws](https://reddit.com/r/aws)** - 250k+ members, active daily, mix of beginner + advanced (best community)
 - **[AWS Community Discord](https://discord.gg/aws)** - Official, helpful, core team present
@@ -276,7 +276,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 - **[AWS re:Post](https://repost.aws/)** - Official Q&A (replaces old forums)
 - **[ServerlessLand Community](https://serverlessland.com/)** - Serverless-focused, active Slack/Discord
 
-### :fontawesome-solid-podcast: Podcasts & Newsletters
+### :lucide-podcast: Podcasts & Newsletters
 
 **Podcasts:**
 
@@ -292,7 +292,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 - **[AWS Week in Review](https://aws.amazon.com/blogs/aws/category/week-in-review/)** - Official blog, weekly updates
 - **[AWS Open Source News](https://dev.to/aws/aws-open-source-newsletter-191-4e9b)** - Open source projects on AWS
 
-### :fontawesome-solid-calendar: Events & Conferences
+### :lucide-calendar: Events & Conferences
 
 - **[AWS re:Invent](https://reinvent.awsevents.com/)** - Las Vegas, late November, 50k+ attendees, $2k+ (worth it once in career)
 - **[AWS Summit](https://aws.amazon.com/events/summits/)** - Free, regional (20+ cities), good for networking
@@ -301,11 +301,11 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -317,7 +317,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 
-- :fontawesome-solid-flask: __Hands-on Practice__
+- :lucide-flask: __Hands-on Practice__
 
     ---
 
@@ -329,7 +329,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [LocalStack](https://localstack.cloud/)
 
-- :fontawesome-solid-code: __Code Examples__
+- :lucide-code: __Code Examples__
 
     ---
 
@@ -343,7 +343,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
 
-- :fontawesome-solid-fire: __Deep Dives__
+- :lucide-fire: __Deep Dives__
 
     ---
 
@@ -357,7 +357,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [Corey Quinn's Blog](https://www.lastweekinaws.com/blog/)
 
-- :fontawesome-solid-screwdriver-wrench: __Tools & CLIs__
+- :lucide-screwdriver-wrench: __Tools & CLIs__
 
     ---
 
@@ -373,7 +373,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [Steampipe](https://steampipe.io/) (SQL for AWS APIs)
 
-- :fontawesome-solid-rss: __News & Updates__
+- :lucide-rss: __News & Updates__
 
     ---
 
@@ -391,7 +391,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
 ---
 
-**Last Updated:** 2026-01-31 | **Vibe Check:** :fontawesome-solid-globe: **Mainstream** - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.
+**Last Updated:** 2026-01-31 | **Vibe Check:** :lucide-globe: **Mainstream** - AWS is the default cloud. Not the coolest kid anymore (Vercel/Railway have better DX), but runs most production workloads. If you're doing cloud professionally, you're learning AWS.
 
 
 **Tags:** aws, cloud

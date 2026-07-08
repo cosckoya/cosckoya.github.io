@@ -27,7 +27,7 @@ Standardized templates for creating consistent, high-quality technical documenta
 | Placeholder | Required | Description | Example |
 |------------|----------|-------------|---------|
 | `{{TITLE}}` | Yes | Technology/tool name | `Amazon Web Services (AWS)` |
-| `{{TITLE_ICON}}` | Yes | FontAwesome icon prefix | `:fontawesome-brands-aws:` |
+| `{{TITLE_ICON}}` | Yes | Lucide icon prefix | `:lucide-aws:` |
 | `{{DESCRIPTION}}` | Yes | One-line description for SEO | `AWS reference - cloud platform running half the internet` |
 | `{{INTRO_PARAGRAPH}}` | Yes | Cynical, realistic intro (2-3 sentences) | `Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).` |
 | `{{YEAR_UPDATE_NOTE}}` | Yes | Annual update highlight | `AI-powered vulnerability discovery tools.` |
@@ -50,7 +50,7 @@ Standardized templates for creating consistent, high-quality technical documenta
 | `{{RELATED_1}}` | No | Related topic 1 | `Deep Dives`, `Best Practices` |
 | `{{RELATED_2}}` | No | Related topic 2 | `Troubleshooting Guide` |
 | `{{LAST_UPDATED}}` | Yes | ISO date | `2026-06-01` |
-| `{{VIBE_CHECK_ICON}}` | Yes | FontAwesome icon for vibe | `:fontawesome-solid-globe:` |
+| `{{VIBE_CHECK_ICON}}` | Yes | Lucide icon for vibe | `:lucide-globe:` |
 | `{{VIBE_CHECK_TITLE}}` | Yes | Short vibe label | `Mainstream`, `Industry Standard`, `Essential` |
 | `{{VIBE_CHECK_DESC}}` | Yes | Vibe explanation (1 sentence) | `AWS is the default cloud for most production workloads.` |
 | `{{TAG_1}}`, `{{TAG_2}}`, `{{TAG_3}}` | Yes | Lowercase search tags | `aws`, `cloud`, `infrastructure` |
@@ -73,15 +73,15 @@ Standardized templates for creating consistent, high-quality technical documenta
 - End with Vibe Check, date, and tags
 
 **Icons:**
-- ALWAYS use FontAwesome (`:fontawesome-solid-...:`)
+- ALWAYS use Lucide (`:lucide-...:`)
 - NEVER use plain emojis
 - Common icons:
-  - `:fontawesome-solid-list-check:` - Essential/basics
-  - `:fontawesome-solid-bolt:` - Common patterns/quick
-  - `:fontawesome-solid-fire:` - Pro tips/advanced
-  - `:fontawesome-solid-book:` - Documentation
-  - `:fontawesome-solid-wrench:` - Tools/utilities
-  - `:fontawesome-brands-github:` - GitHub links
+  - `:lucide-list-check:` - Essential/basics
+  - `:lucide-bolt:` - Common patterns/quick
+  - `:lucide-fire:` - Pro tips/advanced
+  - `:lucide-book:` - Documentation
+  - `:lucide-wrench:` - Tools/utilities
+  - `:lucide-github:` - GitHub links
 
 **Code Examples:**
 - Include inline annotations `# (1)!`
@@ -122,7 +122,7 @@ zensical build --strict
 Before publishing docs created from templates:
 
 - [ ] All placeholders replaced (search for `{{` in file)
-- [ ] FontAwesome icons used (no plain emojis)
+- [ ] Lucide icons used (no plain emojis)
 - [ ] Code blocks have language specified
 - [ ] "Real talk" bullets are practical and honest
 - [ ] Reference links are valid

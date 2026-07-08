@@ -5,13 +5,13 @@ description: Technical documentation built with Zensical, GitHub Pages, and too 
 
 ![!](resources/img/zelda.png#center)
 
-# :fontawesome-solid-circle-info: About This Project
+# :lucide-circle-info: About This Project
 
 Personal technical knowledge base built by engineers, for engineers. No marketing fluff, no enterprise buzzwords, just practical technical content. Documentation as code. Open source tooling. Continuous deployment. Cyberpunk aesthetics optional.
 
 ---
 
-## :fontawesome-solid-rocket: The Stack
+## :lucide-rocket: The Stack
 
 **Built with modern tooling because legacy tech is a choice, not a requirement.**
 
@@ -77,7 +77,7 @@ markdown_extensions = [
     "pymdownx.tabbed",         # === "Tab 1" syntax
 
     # Icons and emojis
-    "pymdownx.emoji",          # :fontawesome-solid-heart: syntax
+    "pymdownx.emoji",          # :lucide-heart: syntax
 
     # Tables and lists
     "tables",                  # GitHub-flavored tables
@@ -98,7 +98,7 @@ markdown_extensions = [
 - **Tabbed content** - Three-tab "Quick Hits" structure
 - **Admonitions** - Tips, warnings, danger callouts
 - **Code highlighting** - 100+ languages supported
-- **FontAwesome** - Industry-standard icon set (`:fontawesome-solid-...:`)
+- **Lucide** - Clean, consistent icon set (`:lucide-...:`)
 - **Mermaid diagrams** - Architecture visualizations
 
 ### CI/CD Pipeline
@@ -245,7 +245,7 @@ theme:
 
 ---
 
-## :fontawesome-solid-terminal: Tech Specs
+## :lucide-terminal: Tech Specs
 
 ### Repository Structure
 
@@ -351,7 +351,7 @@ extra_css:
 
 ---
 
-## :fontawesome-solid-code: Content Generation
+## :lucide-code: Content Generation
 
 ### Template-Based Documentation
 
@@ -386,7 +386,7 @@ templates/
 **Pre-write checklist:**
 
 - [ ] All `{{PLACEHOLDER}}` values replaced
-- [ ] FontAwesome icons only (`:fontawesome-solid-...:`), no plain emojis
+- [ ] Lucide icons only (`:lucide-...:`), no plain emojis
 - [ ] All code blocks have language specified
 - [ ] "Real talk" bullets are practical and honest
 - [ ] Tone is cynical/realistic (not aspirational)
@@ -395,24 +395,24 @@ templates/
 
 ---
 
-## :fontawesome-solid-wrench: Why This Tech Stack?
+## :lucide-wrench: Why This Tech Stack?
 
 ### Static Site Generation
 
 **Pros:**
 
-- :fontawesome-solid-circle-check: Fast (pre-rendered HTML, no server-side processing)
-- :fontawesome-solid-circle-check: Secure (no backend, no database, no SQL injection)
-- :fontawesome-solid-circle-check: Scalable (CDN-friendly, handles traffic spikes)
-- :fontawesome-solid-circle-check: Free hosting (GitHub Pages, Cloudflare Pages, Vercel)
-- :fontawesome-solid-circle-check: Version controlled (docs in git, rollback anytime)
-- :fontawesome-solid-circle-check: Offline-first (works without internet after first load)
+- :lucide-circle-check: Fast (pre-rendered HTML, no server-side processing)
+- :lucide-circle-check: Secure (no backend, no database, no SQL injection)
+- :lucide-circle-check: Scalable (CDN-friendly, handles traffic spikes)
+- :lucide-circle-check: Free hosting (GitHub Pages, Cloudflare Pages, Vercel)
+- :lucide-circle-check: Version controlled (docs in git, rollback anytime)
+- :lucide-circle-check: Offline-first (works without internet after first load)
 
 **Cons:**
 
-- :fontawesome-solid-xmark: No dynamic content (no user accounts, comments, forms)
-- :fontawesome-solid-xmark: Build step required (not instant publish)
-- :fontawesome-solid-xmark: Search is client-side (works well for <1000 pages)
+- :lucide-xmark: No dynamic content (no user accounts, comments, forms)
+- :lucide-xmark: Build step required (not instant publish)
+- :lucide-xmark: Search is client-side (works well for <1000 pages)
 
 **Trade-off:** Perfect for technical documentation. Don't need dynamic features.
 
@@ -420,13 +420,13 @@ templates/
 
 | Feature | Zensical | Docusaurus | GitBook | Confluence |
 |---------|----------------|------------|---------|------------|
-| **Setup** | :fontawesome-solid-bolt: 5 minutes | :fontawesome-solid-hourglass: 15 minutes | :fontawesome-solid-cloud: Cloud only | :fontawesome-solid-dollar-sign: Enterprise |
-| **Markdown** | :fontawesome-solid-circle-check: Pure MD | :fontawesome-solid-triangle-exclamation: MDX (React) | :fontawesome-solid-circle-check: Pure MD | :fontawesome-solid-xmark: WYSIWYG |
+| **Setup** | :lucide-bolt: 5 minutes | :lucide-hourglass: 15 minutes | :lucide-cloud: Cloud only | :lucide-dollar-sign: Enterprise |
+| **Markdown** | :lucide-circle-check: Pure MD | :lucide-triangle-exclamation: MDX (React) | :lucide-circle-check: Pure MD | :lucide-xmark: WYSIWYG |
 | **Hosting** | Free (Pages) | Free (Pages) | $$ Paid | $$$ Paid |
-| **Customization** | :fontawesome-solid-paintbrush: CSS/HTML | :fontawesome-brands-react: React | :fontawesome-solid-xmark: Limited | :fontawesome-solid-xmark: Limited |
-| **Search** | :fontawesome-solid-circle-check: Built-in | :fontawesome-solid-circle-check: Built-in | :fontawesome-solid-circle-check: Built-in | :fontawesome-solid-circle-check: Built-in |
-| **Performance** | :fontawesome-solid-rocket: Fast | :fontawesome-solid-rocket: Fast | :fontawesome-solid-snail: Slow | :fontawesome-solid-snail: Slow |
-| **Offline** | :fontawesome-solid-circle-check: Yes | :fontawesome-solid-circle-check: Yes | :fontawesome-solid-xmark: No | :fontawesome-solid-xmark: No |
+| **Customization** | :lucide-paintbrush: CSS/HTML | :lucide-react: React | :lucide-xmark: Limited | :lucide-xmark: Limited |
+| **Search** | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in |
+| **Performance** | :lucide-rocket: Fast | :lucide-rocket: Fast | :lucide-snail: Slow | :lucide-snail: Slow |
+| **Offline** | :lucide-circle-check: Yes | :lucide-circle-check: Yes | :lucide-xmark: No | :lucide-xmark: No |
 
 **Winner:** Zensical (best docs-to-effort ratio)
 
@@ -465,7 +465,7 @@ templates/
 
 ---
 
-## :fontawesome-solid-heart: Philosophy
+## :lucide-heart: Philosophy
 
 ### Documentation as Code
 
@@ -490,14 +490,14 @@ templates/
 
 **Anti-goals:**
 
-- :fontawesome-solid-xmark: SEO optimization (this is personal documentation)
-- :fontawesome-solid-xmark: Monetization (no ads, no affiliate links)
-- :fontawesome-solid-xmark: Completeness (better to have 80% of useful content than 100% of everything)
-- :fontawesome-solid-xmark: Beginners first (assumes technical competence)
+- :lucide-xmark: SEO optimization (this is personal documentation)
+- :lucide-xmark: Monetization (no ads, no affiliate links)
+- :lucide-xmark: Completeness (better to have 80% of useful content than 100% of everything)
+- :lucide-xmark: Beginners first (assumes technical competence)
 
 ---
 
-## :fontawesome-solid-circle-question: FAQ
+## :lucide-circle-question: FAQ
 
 ??? question "Why not use a CMS?"
     **CMSs are overkill for technical docs.** WordPress, Ghost, Strapi all require:
@@ -574,7 +574,7 @@ templates/
 
 ---
 
-## :fontawesome-solid-bolt: Performance
+## :lucide-bolt: Performance
 
 ### Build Metrics
 
@@ -615,7 +615,7 @@ Page change: ~50ms (client-side routing)
 
 ---
 
-## :fontawesome-solid-chart-line: Stats
+## :lucide-chart-line: Stats
 
 **As of June 2026:**
 
@@ -630,7 +630,7 @@ Page change: ~50ms (client-side routing)
 
 ---
 
-## :fontawesome-solid-terminal: Contributing
+## :lucide-terminal: Contributing
 
 This is a personal documentation project, but if you find errors or have suggestions:
 
@@ -644,17 +644,17 @@ This is a personal documentation project, but if you find errors or have suggest
 - Follow three-tab "Quick Hits" structure
 - Include inline code comments `# (1)!`
 - Maintain cynical-but-helpful tone
-- Use FontAwesome icons (`:fontawesome-solid-...:`), no emojis
+- Use Lucide icons (`:lucide-...:`), no emojis
 - Tags at bottom of page (not frontmatter)
 - Validate with `zensical build --strict` or `make validate`
 
 ---
 
-**Built with:** :fontawesome-solid-heart: **and way too much coffee**
+**Built with:** :lucide-heart: **and way too much coffee**
 
 **Tech Stack:** Python 3.12 • Zensical 0.0.47 • GitHub Pages • GitHub Actions • FontAwesome • Mermaid • Pygments • Way too many Markdown extensions
 
-**Last Updated:** 2026-02-02 | **Build Status:** :fontawesome-solid-circle-check: Passing | **Uptime:** 99.9%
+**Last Updated:** 2026-02-02 | **Build Status:** :lucide-circle-check: Passing | **Uptime:** 99.9%
 
 **Tags:** zensical, python, github-pages, documentation, static-site, markdown
 

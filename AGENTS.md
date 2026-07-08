@@ -40,7 +40,7 @@ When adding new sections:
 
 **File naming:** `{name}.cloud.md`, `{name}.tool.md`, `{name}.service.md`, `{name}.os.md`, `{name}.ai.md`, `{name}.1337.md`, `{name}.md`
 
-**Icons:** Use FontAwesome (`:fontawesome-solid-...:`), never plain emojis.
+**Icons:** Use Lucide (`:lucide-...:`), never plain emojis.
 
 **Tags:** At bottom of file, not in frontmatter: `**Tags:** tag1, tag2`
 

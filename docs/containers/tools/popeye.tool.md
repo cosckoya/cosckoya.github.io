@@ -3,7 +3,7 @@ title: Popeye
 description: Kubernetes cluster sanitizer - scan resources for misconfigurations, security issues, and best practices violations
 ---
 
-# :fontawesome-solid-shield-halved: Popeye
+# :lucide-shield-halved: Popeye
 
 Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security issues, resource waste, and best practice violations. Color-coded report shows what's wrong and why. No cluster changes, just brutal honesty about your K8s setup.
 
@@ -12,7 +12,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -47,7 +47,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
     # Popeye 0.20.1
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Scan current context:**
     ```bash
@@ -93,7 +93,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
     # 3: Error
     ```
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Config file:** `spinach.yaml` (in current dir or `~/.config/popeye/`)
 
@@ -226,7 +226,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :fontawesome-solid-shield-halved: Check Categories
+## :lucide-shield-halved: Check Categories
 
 ### Security Issues
 
@@ -280,7 +280,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :fontawesome-solid-diagram-project: Common Workflows
+## :lucide-diagram-project: Common Workflows
 
 ### Daily Cluster Health Check
 
@@ -355,7 +355,7 @@ k8s-scan:
 
 ---
 
-## :fontawesome-solid-terminal: Output Format
+## :lucide-terminal: Output Format
 
 **Terminal output (default):**
 ```
@@ -410,7 +410,7 @@ Legend:
 
 ---
 
-## :fontawesome-solid-gear: Configuration Examples
+## :lucide-gear: Configuration Examples
 
 ### Production Configuration
 
@@ -470,7 +470,7 @@ popeye:
       - staging
 ```
 
-## :fontawesome-solid-list-check: Pre-Production Checklist
+## :lucide-list-check: Pre-Production Checklist
 
 ```bash
 # Run comprehensive check
@@ -492,7 +492,7 @@ popeye -n production -o yaml > audit.yaml
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Official:**
 - **[GitHub](https://github.com/derailed/popeye)** - Source code
@@ -516,6 +516,6 @@ popeye -n production -o yaml > audit.yaml
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-shield-halved: **Cluster Hygiene Tool** - Popeye catches K8s misconfigurations that other tools miss. Resource limits, probe configurations, label standards. Essential pre-deployment sanity check. Run it before every production rollout. Free and open-source.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-shield-halved: **Cluster Hygiene Tool** - Popeye catches K8s misconfigurations that other tools miss. Resource limits, probe configurations, label standards. Essential pre-deployment sanity check. Run it before every production rollout. Free and open-source.
 
 **Tags:** popeye, kubernetes, k8s, cluster-scanner, security, best-practices, ci-cd, devops

@@ -3,7 +3,7 @@ title: Kitty
 description: GPU-accelerated terminal emulator - fast rendering, tabs, splits, images, ligatures, and scriptable
 ---
 
-# :fontawesome-solid-desktop: Kitty
+# :lucide-desktop: Kitty
 
 GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image protocol, ligature support, keyboard-driven. Written in C and Python. No Electron bloat. Renders everything on GPU for instant response.
 
@@ -12,7 +12,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -46,7 +46,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
     # kitty 0.32.0
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Launch:**
     ```bash
@@ -73,7 +73,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
     - `Ctrl+Shift+F` - Search scrollback
     - `Ctrl+Shift+L` - Layout selector
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Config location:** `~/.config/kitty/kitty.conf`
 
@@ -235,7 +235,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
 
 ---
 
-## :fontawesome-solid-paintbrush: Themes & Color Schemes
+## :lucide-paintbrush: Themes & Color Schemes
 
 ### Popular Themes
 
@@ -281,7 +281,7 @@ kitty-theme
 
 ---
 
-## :fontawesome-solid-box: Kittens (Plugins)
+## :lucide-box: Kittens (Plugins)
 
 **Built-in kittens:**
 
@@ -323,7 +323,7 @@ def handle_result(args, answer, target_window_id, boss):
 
 ---
 
-## :fontawesome-solid-diagram-project: Layouts
+## :lucide-diagram-project: Layouts
 
 **Built-in layouts:**
 
@@ -362,7 +362,7 @@ enabled_layouts splits:split_axis=horizontal
 
 ---
 
-## :fontawesome-solid-image: Image Display
+## :lucide-image: Image Display
 
 **Display images in terminal:**
 
@@ -390,7 +390,7 @@ im.display('/path/to/image.png')
 
 ---
 
-## :fontawesome-solid-terminal: Shell Integration
+## :lucide-terminal: Shell Integration
 
 **Automatic integration (ZSH example):**
 
@@ -412,7 +412,7 @@ fi
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Official:**
 - **[Kitty Documentation](https://sw.kovidgoyal.net/kitty/)** - Complete docs
@@ -435,6 +435,6 @@ fi
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-tv: **GPU-Accelerated Power** - Fastest terminal emulator with GPU rendering. Built-in image display, tabs, and kitten remote control. Excellent font rendering and ligature support. If you live in the terminal, kitty makes everything feel instant.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-tv: **GPU-Accelerated Power** - Fastest terminal emulator with GPU rendering. Built-in image display, tabs, and kitten remote control. Excellent font rendering and ligature support. If you live in the terminal, kitty makes everything feel instant.
 
 **Tags:** kitty, terminal-emulator, terminal, gpu-accelerated, terminal, cli, productivity, development-tools

@@ -3,7 +3,7 @@ title: Checkov
 description: Infrastructure as Code security scanner - Terraform, CloudFormation, Kubernetes, Dockerfile auditing
 ---
 
-# :fontawesome-solid-shield: Checkov
+# :lucide-shield: Checkov
 
 Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFormation, Kubernetes, Dockerfile, ARM templates, Helm charts. 1000+ built-in policies. Prevents misconfigurations before deployment. Python-based, developed by Bridgecrew (acquired by Palo Alto Networks). Free and open-source.
 
@@ -12,9 +12,9 @@ Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFor
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation (Python pip)
@@ -79,7 +79,7 @@ Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFor
     - JSON output enables custom dashboards and reporting
     - Baseline files prevent legacy code from blocking new PRs
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # Pre-commit hook integration
@@ -179,7 +179,7 @@ Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFor
     - Baseline files enable gradual security improvements
     - SARIF format integrates with GitHub Security tab
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Run locally first** - Catch issues before CI/CD
@@ -254,7 +254,7 @@ Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFor
 
 ---
 
-## :fontawesome-solid-code: Policy Examples
+## :lucide-code: Policy Examples
 
 ### Common Security Checks
 
@@ -347,16 +347,16 @@ spec:
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Official Resources
+### :lucide-graduation-cap: Official Resources
 
 - **[Checkov Documentation](https://www.checkov.io/documentation)** - Official docs
 - **[GitHub Repository](https://github.com/bridgecrewio/checkov)** - Source code, policies
 - **[Policy Index](https://www.checkov.io/5.Policy%20Index/terraform.html)** - All built-in checks
 - **[Bridgecrew Blog](https://bridgecrew.io/blog/)** - Tutorials and use cases
 
-### :fontawesome-solid-code: Example Use Cases
+### :lucide-code: Example Use Cases
 
 !!! example "Development Workflow"
     - **Local scanning** - Run Checkov before committing code
@@ -378,11 +378,11 @@ spec:
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -392,7 +392,7 @@ spec:
 
     [Policy Index](https://www.checkov.io/5.Policy%20Index/terraform.html)
 
-- :fontawesome-solid-wrench: __Integrations__
+- :lucide-wrench: __Integrations__
 
     ---
 
@@ -402,7 +402,7 @@ spec:
 
     [Pre-commit Hook](https://github.com/bridgecrewio/checkov#pre-commit)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -412,7 +412,7 @@ spec:
 
     [Slack Channel](https://slack.bridgecrew.io/)
 
-- :fontawesome-solid-code: __Learning__
+- :lucide-code: __Learning__
 
     ---
 
@@ -426,5 +426,5 @@ spec:
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield: **Essential DevSecOps** - Checkov is mandatory for modern IaC workflows. Catches security issues before deployment. 1000+ built-in policies. Free and open-source. Integrates seamlessly with CI/CD. If you're writing Terraform, you're running Checkov.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield: **Essential DevSecOps** - Checkov is mandatory for modern IaC workflows. Catches security issues before deployment. 1000+ built-in policies. Free and open-source. Integrates seamlessly with CI/CD. If you're writing Terraform, you're running Checkov.
 **Tags:** checkov, security, iac, terraform, kubernetes

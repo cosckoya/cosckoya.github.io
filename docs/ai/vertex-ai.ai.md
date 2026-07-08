@@ -3,7 +3,7 @@ title: Google Vertex AI
 description: Google's AI platform - Gemini models, custom models, ML workflows, AutoML, unified AI development
 ---
 
-# :fontawesome-brands-google: Google Vertex AI
+# :lucide-google: Google Vertex AI
 
 Google's unified AI platform. Access Gemini Pro, PaLM 2, Imagen via API. Custom model training with AutoML. MLOps for model deployment and monitoring. Native GCP integration. Multimodal capabilities (text, images, video, audio).
 
@@ -12,9 +12,9 @@ Google's unified AI platform. Access Gemini Pro, PaLM 2, Imagen via API. Custom 
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential API Usage"
+=== ":lucide-list-check: Essential API Usage"
 
     ```python
     # Install Vertex AI SDK
@@ -132,7 +132,7 @@ Google's unified AI platform. Access Gemini Pro, PaLM 2, Imagen via API. Custom 
     - Multimodal native (not bolted on)
     - Free tier: 15 requests/min, 1M chars/month
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```python
     # RAG with Vertex AI Search
@@ -272,7 +272,7 @@ Answer: What is our remote work policy?"""
     - AutoML simplifies custom model training
     - Model Garden offers 100+ pre-trained models
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Streaming** - Essential for long responses (better UX)
@@ -309,15 +309,15 @@ Answer: What is our remote work policy?"""
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Vertex AI Documentation](https://cloud.google.com/vertex-ai/docs)** - Complete reference
 - **[Gemini API Reference](https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini)** - Model details
 - **[Pricing](https://cloud.google.com/vertex-ai/pricing)** - Per-character costs
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **Gemini models** - Text, multimodal (image, video, audio)
 - **Grounding** - Real-time data from Google Search
@@ -328,7 +328,7 @@ Answer: What is our remote work policy?"""
 
 ---
 
-## :fontawesome-solid-star: Model Pricing (2026)
+## :lucide-star: Model Pricing (2026)
 
 | Model | Input $ / 1M chars | Output $ / 1M chars | Context Window |
 |-------|-------------------|---------------------|----------------|
@@ -340,6 +340,6 @@ Answer: What is our remote work policy?"""
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Innovation Leader** - Best multimodal capabilities. 2M token context is huge. Grounding provides current data. Character-based pricing clearer. Free tier generous. Model Garden excellent for experimentation.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-rocket: **Innovation Leader** - Best multimodal capabilities. 2M token context is huge. Grounding provides current data. Character-based pricing clearer. Free tier generous. Model Garden excellent for experimentation.
 
 **Tags:** vertex-ai, ai, llm, gemini, google-cloud

@@ -3,7 +3,7 @@ title: NeoVim
 description: Modern Vim fork with Lua configuration and LSP support - your terminal text editor that doesn't suck
 ---
 
-# :fontawesome-solid-code: NeoVim
+# :lucide-code: NeoVim
 
 Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sitter syntax, async everything. Vim keybindings without the technical debt. No Vimscript hell, just Lua.
 
@@ -12,7 +12,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -37,7 +37,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
     sudo make install
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Config location:** `~/.config/nvim/init.lua`
 
@@ -72,7 +72,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
     - Use `:help` for everything
     - Leader key choice matters (space is popular)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **lazy.nvim (recommended):**
 
@@ -125,7 +125,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
 
 ---
 
-## :fontawesome-solid-box: Essential Plugins
+## :lucide-box: Essential Plugins
 
 ### Core Setup
 
@@ -255,7 +255,7 @@ require("lazy").setup({
 
 ---
 
-## :fontawesome-solid-terminal: LSP Setup
+## :lucide-terminal: LSP Setup
 
 **Install language servers:**
 
@@ -299,7 +299,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Official:**
 - **[NeoVim Docs](https://neovim.io/doc/)** - Official documentation
@@ -320,6 +320,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-fire: **Editor of the Gods** - Neovim is the modern Vim reincarnation. Lua config, LSP integration, tree-sitter parsing. Steep learning curve but unmatched editing speed. If you live in the terminal, this is your editor.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-fire: **Editor of the Gods** - Neovim is the modern Vim reincarnation. Lua config, LSP integration, tree-sitter parsing. Steep learning curve but unmatched editing speed. If you live in the terminal, this is your editor.
 
 **Tags:** neovim, vim, text-editor, lua, lsp, tree-sitter, terminal, cli, development-tools

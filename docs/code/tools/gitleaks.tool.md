@@ -3,7 +3,7 @@ title: Gitleaks
 description: Secret scanner for git - finds API keys, passwords, tokens in git history, fast SAST tool for credentials
 ---
 
-# :fontawesome-solid-key: Gitleaks
+# :lucide-key: Gitleaks
 
 Fast secret scanner for git repositories. Detects API keys, passwords, tokens, credentials in code and git history. Open source. Scans commits, branches, files. Pre-commit hooks prevent secrets from being committed.
 
@@ -12,9 +12,9 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation
@@ -64,7 +64,7 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
     - Pre-commit hooks prevent secrets from entering repo
     - Baseline files let you fix secrets gradually
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```yaml
     # GitHub Actions integration (.github/workflows/gitleaks.yml)
@@ -181,7 +181,7 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
     - Baseline files allow incremental remediation
     - Custom rules catch company-specific secret formats
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Pre-commit hooks** - Install on developer machines (prevent accidents)
@@ -216,14 +216,14 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Resources
+## :lucide-graduation-cap: Learning Resources
 
-### :fontawesome-solid-book-open: Official Docs
+### :lucide-book-open: Official Docs
 
 - **[Gitleaks Documentation](https://github.com/gitleaks/gitleaks)** - README and wiki
 - **[Gitleaks Rules](https://github.com/gitleaks/gitleaks/blob/master/config/gitleaks.toml)** - Built-in secret patterns
 
-### :fontawesome-solid-rocket: Key Features
+### :lucide-rocket: Key Features
 
 - **140+ built-in rules** - AWS, GCP, Azure, GitHub, Slack, Stripe, etc.
 - **Custom rules** - Regex-based patterns for company secrets
@@ -234,7 +234,7 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
 
 ---
 
-## :fontawesome-solid-wrench: Secret Remediation
+## :lucide-wrench: Secret Remediation
 
 If Gitleaks finds secrets in git history:
 
@@ -260,7 +260,7 @@ git push --force --all
 
 ---
 
-## :fontawesome-solid-star: Alternatives
+## :lucide-star: Alternatives
 
 - **[Trivy](../../cloud/tools/trivy.tool.md)** - Multi-purpose scanner (includes secret scanning)
 - **[TruffleHog](https://github.com/trufflesecurity/trufflehog)** - Entropy-based detection
@@ -269,6 +269,6 @@ git push --force --all
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-lock: **Essential Tool** - Every repo needs this. Fast, accurate, free. Pre-commit hooks are lifesavers. Finding secrets is easy, rotating them is the hard part. Baseline files make adoption painless.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-lock: **Essential Tool** - Every repo needs this. Fast, accurate, free. Pre-commit hooks are lifesavers. Finding secrets is easy, rotating them is the hard part. Baseline files make adoption painless.
 
 **Tags:** gitleaks, security, secrets, credentials, git

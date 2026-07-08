@@ -72,9 +72,9 @@ make lint              # ruff + codespell + yamllint
 - Technical but accessible to juniors
 
 ### Icons
-- Use FontAwesome: `:fontawesome-solid-...:`
+- Use Lucide: `:lucide-...:`
 - Never plain emojis
-- Common: `:fontawesome-solid-list-check:` / `:fontawesome-solid-bolt:` / `:fontawesome-solid-fire:`
+- Common: `:lucide-list-check:` / `:lucide-bolt:` / `:lucide-fire:`
 
 ### Code
 - Include inline annotations `# (1)!`
@@ -85,13 +85,13 @@ make lint              # ruff + codespell + yamllint
 Every page ends with a Vibe Check in the footer:
 
 ```
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-fire: **Short Label** - One-sentence assessment.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-fire: **Short Label** - One-sentence assessment.
 ```
 
 ## Validation Checklist
 
 - [ ] All `{{PLACEHOLDER}}` replaced
-- [ ] FontAwesome icons only (no emojis)
+- [ ] Lucide icons only (no emojis)
 - [ ] Code blocks have language
 - [ ] Vibe Check in footer
 - [ ] Tags at bottom

@@ -3,7 +3,7 @@ title: Microsoft Azure
 description: Azure reference - Microsoft's cloud platform, enterprise focus, Windows/.NET integration, hybrid cloud leader
 ---
 
-# :fontawesome-brands-microsoft: Microsoft Azure
+# :lucide-microsoft: Microsoft Azure
 
 Microsoft's cloud infrastructure platform. Second largest cloud provider (23% market share). Enterprise-focused with Active Directory integration. Excellent Windows/.NET support (obviously). Strong hybrid cloud story (on-prem + cloud). Naming is inconsistent (App Service, Functions, Logic Apps). Portal UI is slow but functional.
 
@@ -12,9 +12,9 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Services"
+=== ":lucide-list-check: Essential Services"
 
     ```bash
     # Azure CLI (cross-platform)
@@ -129,7 +129,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
     - Container Apps are simpler than AKS for most workloads
     - Naming convention: all service names are globally unique
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```python
     # Azure Storage Blob client (Python)
@@ -352,7 +352,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
     - Bicep is cleaner than ARM JSON templates
     - .NET integration is best-in-class
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization"
         - **Reserved Instances** - 72% savings for 1-3 year commitment
@@ -400,9 +400,9 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Paths
+## :lucide-graduation-cap: Learning Paths
 
-### :fontawesome-solid-book-open: Free Resources
+### :lucide-book-open: Free Resources
 
 - **[Microsoft Learn](https://docs.microsoft.com/learn/)** - Official training, interactive modules
 - **[Azure Free Account](https://azure.microsoft.com/free/)** - $200 credit (30 days) + always free services
@@ -411,7 +411,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 - **[Azure Architecture Center](https://docs.microsoft.com/azure/architecture/)** - Best practices and patterns
 - **[Azure Friday](https://azure.microsoft.com/en-us/resources/videos/azure-friday/)** - Weekly video series
 
-### :fontawesome-solid-certificate: Certifications Worth It
+### :lucide-certificate: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **AZ-900 Fundamentals** - $99, non-technical, good starting point
@@ -433,7 +433,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 - Use [Microsoft Learn](https://docs.microsoft.com/learn/) (free)
 - Practice exams on [Whizlabs](https://www.whizlabs.com/) or [MeasureUp](https://www.measureup.com/)
 
-### :fontawesome-solid-rocket: Projects to Build
+### :lucide-rocket: Projects to Build
 
 !!! example "Beginner"
     - **Static website** - Blob Storage + CDN
@@ -454,7 +454,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 
 ---
 
-## :fontawesome-solid-sitemap: Architecture Patterns
+## :lucide-sitemap: Architecture Patterns
 
 Common Azure architecture patterns for enterprise and hybrid cloud solutions.
 
@@ -680,7 +680,7 @@ graph LR
 
 ---
 
-## :fontawesome-solid-shield-halved: Well-Architected Framework
+## :lucide-shield-halved: Well-Architected Framework
 
 Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) covers five pillars.
 
@@ -1060,9 +1060,9 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 
 ---
 
-## :fontawesome-solid-heart-pulse: Community Pulse
+## :lucide-heart-pulse: Community Pulse
 
-### :fontawesome-solid-users: Who to Follow
+### :lucide-users: Who to Follow
 
 **Twitter/X:**
 
@@ -1078,7 +1078,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 - [Azure Friday](https://www.youtube.com/c/AzureFriday) - Weekly demos
 - [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) - Deep dives, cert prep
 
-### :fontawesome-solid-comments: Active Communities
+### :lucide-comments: Active Communities
 
 - **[r/AZURE](https://reddit.com/r/AZURE)** - 150k+ members, very active
 - **[Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)** - Official forums
@@ -1086,7 +1086,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 - **[Dev.to #azure](https://dev.to/t/azure)** - Tutorials and articles
 - **[Azure Facebook Group](https://www.facebook.com/groups/MicrosoftAzure/)** - Active community
 
-### :fontawesome-solid-calendar: Events
+### :lucide-calendar: Events
 
 - **[Microsoft Ignite](https://ignite.microsoft.com/)** - November, major announcements
 - **[Microsoft Build](https://build.microsoft.com/)** - May, developer-focused
@@ -1094,11 +1094,11 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -1110,7 +1110,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 
     [Best Practices](https://docs.microsoft.com/azure/architecture/best-practices/)
 
-- :fontawesome-solid-flask: __Hands-on Practice__
+- :lucide-flask: __Hands-on Practice__
 
     ---
 
@@ -1122,7 +1122,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 
     [Azure Quickstarts](https://github.com/Azure/azure-quickstart-templates)
 
-- :fontawesome-solid-code: __Tools & SDKs__
+- :lucide-code: __Tools & SDKs__
 
     ---
 
@@ -1136,7 +1136,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 
     [Terraform Azure Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
-- :fontawesome-solid-rss: __News & Updates__
+- :lucide-rss: __News & Updates__
 
     ---
 
@@ -1152,7 +1152,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-building: **Enterprise Standard** - Azure is the enterprise choice. Active Directory integration, hybrid cloud leadership, Windows/.NET best-in-class. Portal is slow but functional. Second largest cloud (23% share). If your company runs Microsoft stack, Azure is the path of least resistance.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-building: **Enterprise Standard** - Azure is the enterprise choice. Active Directory integration, hybrid cloud leadership, Windows/.NET best-in-class. Portal is slow but functional. Second largest cloud (23% share). If your company runs Microsoft stack, Azure is the path of least resistance.
 
 
 **Tags:** azure, microsoft, cloud

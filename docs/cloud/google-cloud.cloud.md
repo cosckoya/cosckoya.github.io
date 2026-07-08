@@ -3,7 +3,7 @@ title: Google Cloud Platform (GCP)
 description: GCP reference - Google's cloud infrastructure, strong in ML/AI, Kubernetes birthplace, cheaper than AWS
 ---
 
-# :fontawesome-brands-google: Google Cloud Platform (GCP)
+# :lucide-google: Google Cloud Platform (GCP)
 
 Google's cloud infrastructure platform. Born from Google's internal systems (Kubernetes, Borg, BigTable). Strong in data analytics, ML/AI, and container orchestration. Generally cheaper than AWS, better per-core performance. Smaller market share (10%) but solid engineering. IAM is more sensible than AWS. Kubernetes runs best here (they invented it).
 
@@ -12,9 +12,9 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Services"
+=== ":lucide-list-check: Essential Services"
 
     ```bash
     # Compute Engine - VMs (like AWS EC2)
@@ -94,7 +94,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
     - IAM is more logical than AWS (fewer gotchas)
     - Pricing calculator is accurate (unlike AWS surprises)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```python
     # Cloud Storage client library (Python)
@@ -310,7 +310,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
     - Client libraries handle auth automatically (no key management)
     - Infrastructure as code (Terraform) enables version control
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization"
         - **Committed use discounts** - 57% savings for 1-3 year commitment
@@ -358,9 +358,9 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Paths
+## :lucide-graduation-cap: Learning Paths
 
-### :fontawesome-solid-book-open: Free Resources
+### :lucide-book-open: Free Resources
 
 - **[Google Cloud Skills Boost](https://www.cloudskillsboost.google/)** - Official training with labs
 - **[GCP Free Tier](https://cloud.google.com/free)** - Always free products + $300 credit (3 months)
@@ -369,7 +369,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 - **[Qwiklabs](https://www.qwiklabs.com/)** - Hands-on labs in real GCP (some free)
 - **[GCP Podcast](https://www.gcppodcast.com/)** - Weekly podcast with product teams
 
-### :fontawesome-solid-certificate: Certifications Worth It
+### :lucide-certificate: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **Cloud Digital Leader** - $99, non-technical, good for business roles
@@ -390,7 +390,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 - Use [Official Practice Exams](https://cloud.google.com/certification/practice-exam) ($20)
 - Join [r/googlecloud](https://reddit.com/r/googlecloud) for tips
 
-### :fontawesome-solid-rocket: Projects to Build
+### :lucide-rocket: Projects to Build
 
 !!! example "Beginner"
     - **Static website** - Cloud Storage + Cloud CDN
@@ -411,7 +411,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 
 ---
 
-## :fontawesome-solid-sitemap: Architecture Patterns
+## :lucide-sitemap: Architecture Patterns
 
 Common GCP architecture patterns for modern cloud-native applications.
 
@@ -606,7 +606,7 @@ graph TB
 
 ---
 
-## :fontawesome-solid-shield-halved: Well-Architected Framework
+## :lucide-shield-halved: Well-Architected Framework
 
 Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/framework) covers six pillars.
 
@@ -862,9 +862,9 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 
 ---
 
-## :fontawesome-solid-heart-pulse: Community Pulse
+## :lucide-heart-pulse: Community Pulse
 
-### :fontawesome-solid-users: Who to Follow
+### :lucide-users: Who to Follow
 
 **Twitter/X:**
 
@@ -879,7 +879,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 - [Google Cloud Tech](https://www.youtube.com/@googlecloudtech) - Official channel, product deep dives
 - [GCP Podcast](https://www.gcppodcast.com/) - Weekly interviews with product teams
 
-### :fontawesome-solid-comments: Active Communities
+### :lucide-comments: Active Communities
 
 - **[r/googlecloud](https://reddit.com/r/googlecloud)** - 50k+ members, helpful community
 - **[GCP Slack](https://bit.ly/gcp-slack)** - Active community Slack workspace
@@ -887,7 +887,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 - **[Google Cloud Community](https://www.googlecloudcommunity.com/)** - Official forums
 - **[Dev.to #gcp](https://dev.to/t/gcp)** - Tutorials and case studies
 
-### :fontawesome-solid-calendar: Events
+### :lucide-calendar: Events
 
 - **[Google Cloud Next](https://cloud.withgoogle.com/next)** - Annual conference, April, free virtual
 - **[Google I/O](https://io.google/)** - May, consumer + cloud products
@@ -895,11 +895,11 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -911,7 +911,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 
     [Best Practices](https://cloud.google.com/architecture/framework)
 
-- :fontawesome-solid-flask: __Hands-on Practice__
+- :lucide-flask: __Hands-on Practice__
 
     ---
 
@@ -923,7 +923,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 
     [Codelabs](https://codelabs.developers.google.com/cloud)
 
-- :fontawesome-solid-code: __Tools & CLIs__
+- :lucide-code: __Tools & CLIs__
 
     ---
 
@@ -935,7 +935,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 
     [Terraform GCP Provider](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
 
-- :fontawesome-solid-rss: __News & Updates__
+- :lucide-rss: __News & Updates__
 
     ---
 
@@ -951,7 +951,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-rocket: **Smart Choice** - GCP is cheaper and faster than AWS for most workloads. Cloud Run is the best serverless platform. BigQuery is unmatched for analytics. GKE Autopilot removes Kubernetes pain. Smaller market share but solid engineering. If you're starting fresh, GCP is compelling.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-rocket: **Smart Choice** - GCP is cheaper and faster than AWS for most workloads. Cloud Run is the best serverless platform. BigQuery is unmatched for analytics. GKE Autopilot removes Kubernetes pain. Smaller market share but solid engineering. If you're starting fresh, GCP is compelling.
 
 
 **Tags:** gcp, google-cloud, cloud

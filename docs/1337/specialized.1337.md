@@ -3,7 +3,7 @@ title: Specialized Security Areas
 description: Cryptography, IoT/OT security, mobile security, blockchain security, AI/ML security, privacy engineering
 ---
 
-# :fontawesome-solid-puzzle-piece: Specialized Security Areas
+# :lucide-puzzle-piece: Specialized Security Areas
 
 Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum resistance). IoT/OT security (industrial control systems, embedded devices). Mobile security (Android/iOS hardening). Blockchain security (smart contract auditing). AI/ML security (adversarial attacks, model poisoning). Privacy engineering (differential privacy, PETs).
 
@@ -12,9 +12,9 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Disciplines"
+=== ":lucide-list-check: Core Disciplines"
 
     **Cryptography:**
     ```python
@@ -323,7 +323,7 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
     - AI/ML: Adversarial attacks easy (models not robust)
     - Privacy: Compliance ≠ privacy (GDPR checkbox theater)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Post-Quantum Cryptography:**
     ```python
@@ -429,7 +429,7 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
     - AI defenses detect adversarial inputs
     - Privacy tech protects individual data points
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Crypto** - Use standard libraries (OpenSSL, libsodium), never roll your own
@@ -465,16 +465,16 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning & Certifications
+## :lucide-graduation-cap: Learning & Certifications
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[Offensive Security Wireless Professional (OSWP)](https://www.offensive-security.com/wifu-oswp/)** - $499, WiFi security
 - **[GIAC Mobile Device Security Analyst (GMOB)](https://www.giac.org/certifications/mobile-device-security-analyst-gmob/)** - $2499, mobile security
 - **[Certified Blockchain Security Professional (CBSP)](https://blockchaintrainingalliance.com/collections/certifications/products/cbsp)** - $795, blockchain
 - **[GIAC Critical Infrastructure Protection (GCIP)](https://www.giac.org/certifications/critical-infrastructure-protection-gcip/)** - $2499, ICS/SCADA
 
-### :fontawesome-solid-rocket: Practice
+### :lucide-rocket: Practice
 
 - **[Crackmes.one](https://crackmes.one/)** - Free, reverse engineering challenges
 - **[Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)** - Free, smart contract exploitation
@@ -482,6 +482,6 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-microscope: **Deep Expertise Required** - Crypto math complex (use libraries). IoT devices rarely patched. Mobile root detection bypassable. Smart contracts lose billions (DeFi exploits). AI models not robust (adversarial attacks easy). Privacy compliance theater common.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-microscope: **Deep Expertise Required** - Crypto math complex (use libraries). IoT devices rarely patched. Mobile root detection bypassable. Smart contracts lose billions (DeFi exploits). AI models not robust (adversarial attacks easy). Privacy compliance theater common.
 
 **Tags:** cryptography, iot-security, mobile-security, blockchain-security, ai-ml-security, privacy-engineering

@@ -3,7 +3,7 @@ title: Security Fundamentals — Phase 1
 description: Security fundamentals learning phase — core concepts, common attacks, Security+ certification prep, essential tools
 ---
 
-# :fontawesome-solid-shield: Security Fundamentals
+# :lucide-shield: Security Fundamentals
 
 ## Core Concepts
 
@@ -75,6 +75,6 @@ description: Security fundamentals learning phase — core concepts, common atta
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-book: **Foundation Builder** - Security+ is your first real credential. Don't skip the hands-on practice. 50+ TryHackMe rooms before the exam. Theory + practice = hireable.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-book: **Foundation Builder** - Security+ is your first real credential. Don't skip the hands-on practice. 50+ TryHackMe rooms before the exam. Theory + practice = hireable.
 
 **Tags:** security-fundamentals, security-plus, comptia, certification

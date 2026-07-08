@@ -3,7 +3,7 @@ title: Prowler
 description: Multi-cloud security auditing - CIS benchmarks, compliance checks, AWS/Azure/GCP/Kubernetes
 ---
 
-# :fontawesome-solid-shield-halved: Prowler
+# :lucide-shield-halved: Prowler
 
 Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry standard for CIS benchmark compliance auditing. Generates detailed security reports with risk ratings. Command-line tool with HTML/JSON/CSV output. Python-based, actively maintained by Toni de la Fuente and community.
 
@@ -12,9 +12,9 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation (Python pip)
@@ -78,7 +78,7 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
     - Compliance frameworks filter checks to specific standards
     - CI/CD integration: exit code 0 = pass, non-zero = findings
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # Daily security audit (production)
@@ -162,7 +162,7 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
     - JSON output enables custom dashboards and alerting
     - Compliance frameworks map to audit requirements
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Run daily** - Security posture changes, catch issues early
@@ -207,7 +207,7 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
 
 ---
 
-## :fontawesome-solid-shield-halved: Compliance Frameworks
+## :lucide-shield-halved: Compliance Frameworks
 
 Prowler supports major compliance standards out-of-the-box:
 
@@ -254,16 +254,16 @@ prowler aws --checks-folder ./checks/custom/
 
 ---
 
-## :fontawesome-solid-book: Learning Resources
+## :lucide-book: Learning Resources
 
-### :fontawesome-solid-graduation-cap: Official Resources
+### :lucide-graduation-cap: Official Resources
 
 - **[Prowler Documentation](https://docs.prowler.cloud/)** - Official docs
 - **[GitHub Repository](https://github.com/prowler-cloud/prowler)** - Source code, issues
 - **[Prowler Dashboard](https://dashboard.prowler.cloud/)** - SaaS UI (optional)
 - **[YouTube Channel](https://www.youtube.com/@prowlercloud)** - Tutorials and demos
 
-### :fontawesome-solid-code: Example Use Cases
+### :lucide-code: Example Use Cases
 
 !!! example "Daily Operations"
     - **Morning security check** - Run Prowler, review critical findings
@@ -284,11 +284,11 @@ prowler aws --checks-folder ./checks/custom/
 
 ---
 
-## :fontawesome-solid-star: Worth Checking
+## :lucide-star: Worth Checking
 
 <div class="grid cards" markdown>
 
-- :fontawesome-solid-book: __Official Docs__
+- :lucide-book: __Official Docs__
 
     ---
 
@@ -298,7 +298,7 @@ prowler aws --checks-folder ./checks/custom/
 
     [Checks Library](https://github.com/prowler-cloud/prowler/tree/master/prowler/providers)
 
-- :fontawesome-solid-wrench: __Related Tools__
+- :lucide-wrench: __Related Tools__
 
     ---
 
@@ -308,7 +308,7 @@ prowler aws --checks-folder ./checks/custom/
 
     [GitHub Actions](https://github.com/prowler-cloud/prowler-action)
 
-- :fontawesome-solid-users: __Community__
+- :lucide-users: __Community__
 
     ---
 
@@ -318,7 +318,7 @@ prowler aws --checks-folder ./checks/custom/
 
     [Twitter @prowlercloud](https://twitter.com/prowlercloud)
 
-- :fontawesome-solid-code: __Integrations__
+- :lucide-code: __Integrations__
 
     ---
 
@@ -332,5 +332,5 @@ prowler aws --checks-folder ./checks/custom/
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield-halved: **Industry Standard** - Prowler is THE tool for cloud security auditing. CIS benchmark compliance out-of-the-box. Multi-cloud support. Active development. If you're doing cloud security, you're using Prowler. Free and open-source beats expensive commercial tools.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield-halved: **Industry Standard** - Prowler is THE tool for cloud security auditing. CIS benchmark compliance out-of-the-box. Multi-cloud support. Active development. If you're doing cloud security, you're using Prowler. Free and open-source beats expensive commercial tools.
 **Tags:** prowler, security, cloud, compliance, cis

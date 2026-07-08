@@ -3,7 +3,7 @@ title: Offensive Security (Red Team)
 description: Penetration testing, red teaming, exploit development, social engineering, wireless and physical security testing
 ---
 
-# :fontawesome-solid-user-secret: Offensive Security (Red Team)
+# :lucide-user-secret: Offensive Security (Red Team)
 
 The art of breaking things professionally. Simulate attackers to find vulnerabilities before real adversaries do. Penetration testing, red teaming, exploit development, social engineering. You get paid to hack legally. Living the dream until the lawyers get involved.
 
@@ -12,9 +12,9 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Disciplines"
+=== ":lucide-list-check: Core Disciplines"
 
     **Penetration Testing:**
     ```bash
@@ -105,7 +105,7 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
     - Bug bounties democratized offensive security (HackerOne, Bugcrowd)
     - OSCP cert still gold standard (Offensive Security Certified Professional)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Web Application Pentesting:**
     ```bash
@@ -212,7 +212,7 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
     - BloodHound visualizes AD attack paths
     - Cloud metadata services often exposed (SSRF)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Legal authorization** - Written permission, defined scope, NDA
@@ -250,9 +250,9 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning Paths
+## :lucide-graduation-cap: Learning Paths
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[OSCP](https://www.offensive-security.com/pwk-oscp/)** - $1649, 24h practical exam, gold standard
 - **[PNPT](https://certifications.tcm-sec.com/pnpt/)** - $399, affordable alternative to OSCP
@@ -260,7 +260,7 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 - **[eCPPT](https://elearnsecurity.com/product/ecpptv2-certification/)** - $400, pivot-focused
 - **[CRTO](https://www.zeropointsecurity.co.uk/red-team-ops)** - $550, red team operations
 
-### :fontawesome-solid-rocket: Practice Platforms
+### :lucide-rocket: Practice Platforms
 
 - **[HackTheBox](https://www.hackthebox.com/)** - $14/month VIP, realistic machines
 - **[TryHackMe](https://tryhackme.com/)** - $10/month, beginner-friendly guided paths
@@ -269,7 +269,7 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 
 ---
 
-## :fontawesome-solid-wrench: Essential Toolkit
+## :lucide-wrench: Essential Toolkit
 
 | Category | Tools | Purpose |
 |----------|-------|---------|
@@ -283,6 +283,6 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-skull-crossbones: **Break Things Legally** - Most fun security job. Requires constant learning (new vulns daily). Legal risks real (get authorization in writing). Bug bounties democratized field. OSCP still gold standard cert.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-skull-crossbones: **Break Things Legally** - Most fun security job. Requires constant learning (new vulns daily). Legal risks real (get authorization in writing). Bug bounties democratized field. OSCP still gold standard cert.
 
 **Tags:** offensive-security, pentesting, red-team, hacking, exploit-dev

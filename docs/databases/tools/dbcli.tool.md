@@ -3,7 +3,7 @@ title: DBCli
 description: Interactive SQL clients for MySQL, PostgreSQL, and SQLite — autocomplete, syntax highlighting, query history
 ---
 
-# :fontawesome-solid-database: DBCli
+# :lucide-database: DBCli
 
 Family of interactive SQL clients (mycli, pgcli, litecli) that add modern CLI conveniences to database shells. Autocomplete, syntax highlighting, execution hints, query history. Makes repeated database interactions less tedious. Drop-in replacements for `mysql`, `psql`, `sqlite3`.
 
@@ -12,9 +12,9 @@ Family of interactive SQL clients (mycli, pgcli, litecli) that add modern CLI co
 
 ---
 
-## :fontawesome-solid-bolt: Quick Hits
+## :lucide-bolt: Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     ```bash
     # Installation (via pip or package manager)
@@ -56,7 +56,7 @@ Family of interactive SQL clients (mycli, pgcli, litecli) that add modern CLI co
     - Query history is persistent — arrow keys scroll through old queries, searchable with Ctrl+R
     - Output is still just SQL results — no magic, just better UX
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```bash
     # Connect with .pgpass or .my.cnf (password in config files)
@@ -91,7 +91,7 @@ Family of interactive SQL clients (mycli, pgcli, litecli) that add modern CLI co
     - `\watch` is invaluable for live monitoring without writing monitoring infrastructure
     - Batch mode still works — DBCli adds interactivity but doesn't force it
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -132,19 +132,19 @@ theme = native                              # Color theme (monokai, native, sola
 
 **Documentation:**
 
-- :fontawesome-solid-book: [DBCli Home](https://www.dbcli.com/) — All three tools (pgcli, mycli, litecli)
-- :fontawesome-brands-github: [pgcli on GitHub](https://github.com/dbcli/pgcli) — PostgreSQL client
-- :fontawesome-brands-github: [mycli on GitHub](https://github.com/dbcli/mycli) — MySQL client
-- :fontawesome-brands-github: [litecli on GitHub](https://github.com/dbcli/litecli) — SQLite client
+- :lucide-book: [DBCli Home](https://www.dbcli.com/) — All three tools (pgcli, mycli, litecli)
+- :lucide-github: [pgcli on GitHub](https://github.com/dbcli/pgcli) — PostgreSQL client
+- :lucide-github: [mycli on GitHub](https://github.com/dbcli/mycli) — MySQL client
+- :lucide-github: [litecli on GitHub](https://github.com/dbcli/litecli) — SQLite client
 
 **Related:**
 
-- :fontawesome-solid-terminal: __DBeaver — GUI alternative if you prefer graphical UI__
-- :fontawesome-solid-database: __ClickHouse CLI — specialized for OLAP queries__
-- :fontawesome-solid-code: __SQLAlchemy — Python ORM for programmatic queries__
+- :lucide-terminal: __DBeaver — GUI alternative if you prefer graphical UI__
+- :lucide-database: __ClickHouse CLI — specialized for OLAP queries__
+- :lucide-code: __SQLAlchemy — Python ORM for programmatic queries__
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-terminal: **CLI Essential** - Unified database CLI with auto-completion and syntax highlighting. pgcli/mycli/litecli cover the major relational databases. Far better than raw psql/mysql/sqlite3 for interactive work.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-terminal: **CLI Essential** - Unified database CLI with auto-completion and syntax highlighting. pgcli/mycli/litecli cover the major relational databases. Far better than raw psql/mysql/sqlite3 for interactive work.
 
 **Tags:** dbcli, pgcli, mycli, litecli, database, sql, cli

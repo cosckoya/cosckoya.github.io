@@ -18,7 +18,7 @@ tags:
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: {{TAB_1_TITLE}}"
+=== ":lucide-list-check: {{TAB_1_TITLE}}"
 
     ```{{CODE_LANGUAGE}}
     {{TAB_1_CODE_EXAMPLES}}
@@ -28,7 +28,7 @@ tags:
 
     {{TAB_1_REAL_TALK}}
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     ```{{CODE_LANGUAGE}}
     {{TAB_2_CODE_EXAMPLES}}
@@ -38,7 +38,7 @@ tags:
 
     {{TAB_2_EXPLANATION}}
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -74,13 +74,13 @@ tags:
 
 **Documentation:**
 
-- :fontawesome-solid-book: [Official Docs]({{DOCS_URL}})
-- :fontawesome-brands-github: [GitHub]({{GITHUB_URL}})
+- :lucide-book: [Official Docs]({{DOCS_URL}})
+- :lucide-github: [GitHub]({{GITHUB_URL}})
 
 **Related:**
 
-- :fontawesome-solid-fire: __{{RELATED_1}}__
-- :fontawesome-solid-wrench: __{{RELATED_2}}__
+- :lucide-fire: __{{RELATED_1}}__
+- :lucide-wrench: __{{RELATED_2}}__
 
 ---
 

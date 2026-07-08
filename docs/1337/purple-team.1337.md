@@ -3,7 +3,7 @@ title: Purple Team & Security Engineering
 description: Purple teaming, security architecture, detection engineering, security automation, DevSecOps
 ---
 
-# :fontawesome-solid-people-group: Purple Team & Security Engineering
+# :lucide-people-group: Purple Team & Security Engineering
 
 Bridge between offense and defense. Purple teamers combine red/blue skills to validate security controls. Security engineers build detection systems, automate responses, design security architecture. Detection engineers write rules, tune alerts, measure coverage. DevSecOps embeds security in engineering culture.
 
@@ -12,9 +12,9 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Disciplines"
+=== ":lucide-list-check: Core Disciplines"
 
     **Purple Teaming:**
     ```markdown
@@ -236,7 +236,7 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
     - SOAR reduces analyst burnout (automate repetitive tasks)
     - Detection-as-Code enables version control, testing, peer review
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **MITRE ATT&CK Coverage Mapping:**
     ```python
@@ -414,7 +414,7 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
     - Automation scales security (humans don't scale)
     - Metrics measure effectiveness (can't improve what you don't measure)
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Purple team regularly** - Quarterly exercises (not just annual)
@@ -453,16 +453,16 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning & Certifications
+## :lucide-graduation-cap: Learning & Certifications
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[GIAC Certified Detection Analyst (GCDA)](https://www.giac.org/certifications/certified-detection-analyst-gcda/)** - $2499, detection engineering
 - **[Certified Red Team Operator (CRTO)](https://www.zeropointsecurity.co.uk/red-team-ops)** - $550, red team operations
 - **[AWS Certified Security - Specialty](https://aws.amazon.com/certification/certified-security-specialty/)** - $300, cloud security architecture
 - **[SABSA](https://sabsa.org/)** - Varies, security architecture framework
 
-### :fontawesome-solid-rocket: Practice
+### :lucide-rocket: Practice
 
 - **[Detection Lab](https://github.com/clong/DetectionLab)** - Free, purple team lab environment
 - **[Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)** - Free, ATT&CK technique testing
@@ -470,7 +470,7 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
 
 ---
 
-## :fontawesome-solid-wrench: Essential Toolkit
+## :lucide-wrench: Essential Toolkit
 
 | Category | Tools | Purpose |
 |----------|-------|---------|
@@ -483,6 +483,6 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-handshake: **Collaboration Wins** - Purple team eliminates red vs. blue silos. Detection engineering requires offensive + defensive skills. Security architecture prevents issues at design. DevSecOps culture shift difficult but necessary. SOAR reduces alert fatigue. Metrics measure effectiveness (MTTD, MTTR).
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-handshake: **Collaboration Wins** - Purple team eliminates red vs. blue silos. Detection engineering requires offensive + defensive skills. Security architecture prevents issues at design. DevSecOps culture shift difficult but necessary. SOAR reduces alert fatigue. Metrics measure effectiveness (MTTD, MTTR).
 
 **Tags:** purple-team, detection-engineering, security-engineering, devsecops, security-automation, security-architecture

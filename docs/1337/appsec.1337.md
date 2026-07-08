@@ -3,7 +3,7 @@ title: Application Security (AppSec)
 description: Secure development, code review, SAST/DAST, DevSecOps, bug bounty, API security testing
 ---
 
-# :fontawesome-solid-code: Application Security (AppSec)
+# :lucide-code: Application Security (AppSec)
 
 Securing code before it ships. Static/dynamic analysis, secure coding, threat modeling, dependency scanning. Shift security left into CI/CD. Find vulnerabilities in code, dependencies, APIs. DevSecOps integration makes security everyone's problem, not just the security team's afterthought.
 
@@ -12,9 +12,9 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
 
 ---
 
-## :fontawesome-solid-bolt-lightning: Quick Hits
+## :lucide-bolt-lightning: Quick Hits
 
-=== ":fontawesome-solid-list-check: Core Disciplines"
+=== ":lucide-list-check: Core Disciplines"
 
     **Secure Development Lifecycle:**
     ```python
@@ -153,7 +153,7 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
     - API security often overlooked (83% of web traffic now APIs)
     - Secrets in code common (GitHub scans find thousands daily)
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **DevSecOps Pipeline Integration:**
     ```yaml
@@ -353,7 +353,7 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
     - Secure coding standards prevent entire classes of bugs
     - Bug bounty programs leverage crowd-sourced security
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Defense in depth** - Multiple security layers (WAF + input validation + output encoding)
@@ -392,16 +392,16 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
 
 ---
 
-## :fontawesome-solid-graduation-cap: Learning & Certifications
+## :lucide-graduation-cap: Learning & Certifications
 
-### :fontawesome-solid-book-open: Certifications
+### :lucide-book-open: Certifications
 
 - **[CSSLP](https://www.isc2.org/Certifications/CSSLP)** - $749, Certified Secure Software Lifecycle Professional
 - **[GWAPT](https://www.giac.org/certifications/web-application-penetration-tester-gwapt/)** - $2499, SANS web app pentesting
 - **[OSWE](https://www.offensive-security.com/awae-oswe/)** - $1649, web app exploitation expert-level
 - **[BSCP](https://portswigger.net/web-security/certification)** - $99, Burp Suite Certified Practitioner
 
-### :fontawesome-solid-rocket: Practice Platforms
+### :lucide-rocket: Practice Platforms
 
 - **[PortSwigger Academy](https://portswigger.net/web-security)** - Free, web security learning
 - **[PentesterLab](https://pentesterlab.com/)** - $20/month, web exploitation exercises
@@ -409,7 +409,7 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
 
 ---
 
-## :fontawesome-solid-wrench: Essential Toolkit
+## :lucide-wrench: Essential Toolkit
 
 | Category | Tools | Purpose |
 |----------|-------|---------|
@@ -422,6 +422,6 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-shield: **Shift Left** - Security in CI/CD now standard. SAST false positives annoying. API security critical (83% of traffic). SCA finds vulnerable dependencies (87% apps affected). Bug bounties democratized vuln research. DevSecOps culture shift painful but necessary.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield: **Shift Left** - Security in CI/CD now standard. SAST false positives annoying. API security critical (83% of traffic). SCA finds vulnerable dependencies (87% apps affected). Bug bounties democratized vuln research. DevSecOps culture shift painful but necessary.
 
 **Tags:** appsec, secure-coding, sast, dast, sca, devsecops, api-security

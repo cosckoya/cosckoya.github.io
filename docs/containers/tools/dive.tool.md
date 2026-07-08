@@ -3,7 +3,7 @@ title: Dive
 description: Docker image layer analyzer - explore image contents, find wasted space, optimize layer efficiency
 ---
 
-# :fontawesome-solid-magnifying-glass: Dive
+# :lucide-magnifying-glass: Dive
 
 Docker image layer explorer. See every layer, every file change, wasted space from deletions. Interactive TUI shows what bloats your images. Build smaller images by understanding what's actually inside.
 
@@ -12,7 +12,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Essential Commands"
+=== ":lucide-list-check: Essential Commands"
 
     **macOS:**
     ```bash
@@ -48,7 +48,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
     # dive 0.11.0
     ```
 
-=== ":fontawesome-solid-bolt: Common Patterns"
+=== ":lucide-bolt: Common Patterns"
 
     **Analyze local image:**
     ```bash
@@ -91,7 +91,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
     dive docker-archive://image.tar # Tar archive
     ```
 
-=== ":fontawesome-solid-fire: Pro Tips & Gotchas"
+=== ":lucide-fire: Pro Tips & Gotchas"
 
     **Interface sections:**
     - **Left pane:** Layer list with sizes
@@ -147,7 +147,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
 
 ---
 
-## :fontawesome-solid-gear: Configuration
+## :lucide-gear: Configuration
 
 **Config file:** `~/.dive.yaml` or `.dive-ci`
 
@@ -210,7 +210,7 @@ export DIVE_SOURCE=docker  # docker, podman, docker-archive
 
 ---
 
-## :fontawesome-solid-diagram-project: Common Workflows
+## :lucide-diagram-project: Common Workflows
 
 ### Optimize Dockerfile
 
@@ -300,7 +300,7 @@ jq '.layer | length' v1.json  # Number of layers
 jq '.layer | length' v2.json
 ```
 
-## :fontawesome-solid-magnifying-glass: Efficiency Metrics
+## :lucide-magnifying-glass: Efficiency Metrics
 
 **Image efficiency score:**
 ```
@@ -335,7 +335,7 @@ Wasted space by layer:
 
 ---
 
-## :fontawesome-solid-book: Dockerfile Best Practices
+## :lucide-book: Dockerfile Best Practices
 
 ```dockerfile
 # ============================================
@@ -385,7 +385,7 @@ CMD ["python", "src/main.py"]
 
 ---
 
-## :fontawesome-solid-link: Resources
+## :lucide-link: Resources
 
 **Official:**
 - **[GitHub](https://github.com/wagoodman/dive)** - Source code
@@ -405,6 +405,6 @@ CMD ["python", "src/main.py"]
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-chart-simple: **Image Optimization Essential** - Dive reveals exactly what's wasting space in your Docker images. Layer-by-layer analysis with interactive UI. Essential for CI/CD pipeline optimization. Works with Docker and Podman images.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-chart-simple: **Image Optimization Essential** - Dive reveals exactly what's wasting space in your Docker images. Layer-by-layer analysis with interactive UI. Essential for CI/CD pipeline optimization. Works with Docker and Podman images.
 
 **Tags:** dive, docker, containers, image-optimization, dockerfile, ci-cd, development-tools

@@ -3,7 +3,7 @@ title: Cybersecurity Learning Path
 description: From zero to hired — realistic 12-18 month cybersecurity career path with phases, budgets, and action plans
 ---
 
-# :fontawesome-solid-graduation-cap: Cybersecurity Learning Path
+# :lucide-graduation-cap: Cybersecurity Learning Path
 
 From zero to hired — a realistic 12-18 month path into cybersecurity. No shortcuts, no "learn hacking in 30 days" bullshit. This is what actually works.
 
@@ -14,7 +14,7 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 
 ## Quick Hits
 
-=== ":fontawesome-solid-list-check: Learning Phases"
+=== ":lucide-list-check: Learning Phases"
 
     **Phase 0: Foundation (1-3 months)**
     ```bash
@@ -74,9 +74,9 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 
     | Path | Focus | Entry Difficulty | Salary Range |
     |------|-------|-----------------|--------------|
-| :fontawesome-solid-crosshairs: **[Offensive (Red Team)](offensive-security.1337.md)** | Pentesting, AD attacks, exploit dev | Hard | $60-150k+ |
-| :fontawesome-solid-shield-halved: **[Defensive (Blue Team)](defensive-security.1337.md)** | SOC, SIEM, incident response | Easiest | $50-120k+ |
-| :fontawesome-solid-scale-balanced: **[GRC](grc.1337.md)** | Compliance, risk, policy | Moderate | $55-130k+ |
+| :lucide-crosshairs: **[Offensive (Red Team)](offensive-security.1337.md)** | Pentesting, AD attacks, exploit dev | Hard | $60-150k+ |
+| :lucide-shield-halved: **[Defensive (Blue Team)](defensive-security.1337.md)** | SOC, SIEM, incident response | Easiest | $50-120k+ |
+| :lucide-scale-balanced: **[GRC](grc.1337.md)** | Compliance, risk, policy | Moderate | $55-130k+ |
 
     **Recommended path for most people:**
 
@@ -87,7 +87,7 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
     - Steady learning curve (not overwhelming)
     - Clear certification progression
 
-=== ":fontawesome-solid-bolt: Career Paths & Jobs"
+=== ":lucide-bolt: Career Paths & Jobs"
 
     **Phase 3: Get Your First Job (12-18 months)**
     ```python
@@ -271,7 +271,7 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
     ]
     ```
 
-=== ":fontawesome-solid-fire: Budget & Action Plan"
+=== ":lucide-fire: Budget & Action Plan"
 
     **Budget breakdown (realistic costs):**
     ```python
@@ -421,9 +421,9 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 
 ---
 
-## :fontawesome-solid-graduation-cap: Recommended Learning Platforms
+## :lucide-graduation-cap: Recommended Learning Platforms
 
-### :fontawesome-solid-book-open: Hands-On Practice
+### :lucide-book-open: Hands-On Practice
 
 - **[TryHackMe](https://tryhackme.com/)** — $10/month, best for beginners (structured paths)
 - **[HackTheBox](https://www.hackthebox.com/)** — $14/month, more challenging (realistic machines)
@@ -432,7 +432,7 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 - **[LetsDefend](https://letsdefend.io/)** — $10/month, SOC simulator
 - **[PortSwigger Academy](https://portswigger.net/web-security)** — Free, web security (excellent)
 
-### :fontawesome-solid-rocket: Free Resources
+### :lucide-rocket: Free Resources
 
 - **[Professor Messer](https://www.professormesser.com/)** — Free Security+ videos (YouTube)
 - **[Cybrary](https://www.cybrary.it/)** — Free tier (courses, paths)
@@ -440,7 +440,7 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 - **[Linux Journey](https://linuxjourney.com/)** — Free Linux fundamentals
 - **[OWASP](https://owasp.org/)** — Free resources (Top 10, guides, tools)
 
-### :fontawesome-solid-certificate: Certification Roadmaps
+### :lucide-certificate: Certification Roadmaps
 
 **Entry-Level (0-2 years):**
 - CompTIA Security+ → CySA+ or BTL1 or eJPT
@@ -453,6 +453,6 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :fontawesome-solid-graduation-cap: **No Shortcuts** - 12-18 months to first job (realistic). Certifications required (HR filters). Hands-on projects mandatory (certs alone not enough). SOC easiest entry (pivot later). Junior pentester roles rare (start blue team). Portfolio + networking > 100 applications. Imposter syndrome normal (apply anyway). Budget $500-2,500 over 18 months.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-graduation-cap: **No Shortcuts** - 12-18 months to first job (realistic). Certifications required (HR filters). Hands-on projects mandatory (certs alone not enough). SOC easiest entry (pivot later). Junior pentester roles rare (start blue team). Portfolio + networking > 100 applications. Imposter syndrome normal (apply anyway). Budget $500-2,500 over 18 months.
 
 **Tags:** learning-path, career, certifications, beginner, roadmap, cybersecurity-careers
