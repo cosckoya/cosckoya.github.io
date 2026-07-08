@@ -3,7 +3,7 @@ title: Azure DevOps
 description: Microsoft's DevOps platform - pipelines, repos, boards, artifacts, test plans, enterprise focus
 ---
 
-# :lucide-microsoft: Azure DevOps
+# :material-microsoft-windows: Azure DevOps
 
 Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boards for work tracking, Artifacts for packages, Test Plans for QA. Better for Windows/.NET shops, more features than GitHub for enterprise workflows.
 
@@ -12,7 +12,7 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -202,7 +202,7 @@ Microsoft's enterprise DevOps platform. Pipelines for CI/CD, Repos for git, Boar
     - Environment tracking shows deployment history
     - Integration with Azure services (App Service, AKS, Functions)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **YAML pipelines only** - Classic UI pipelines deprecated

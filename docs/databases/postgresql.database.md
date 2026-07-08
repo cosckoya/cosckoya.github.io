@@ -94,7 +94,7 @@ Advanced open-source relational database. ACID compliant, extensible, battle-tes
     - CTEs improve query readability and enable recursion
     - Window functions replace complex self-joins
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -159,11 +159,11 @@ sudo -u postgres psql -c "CREATE DATABASE mydb OWNER myuser;"
 
 - :lucide-book: [Official Docs](https://www.postgresql.org/docs/)
 - :lucide-book: [Postgres Weekly](https://postgresweekly.com/) — Newsletter
-- :lucide-github: [PostgreSQL GitHub](https://github.com/postgres/postgres)
+- :simple-github: [PostgreSQL GitHub](https://github.com/postgres/postgres)
 
 **Related:**
 
-- :lucide-fire: **DBCli (pgcli)** — Modern CLI with autocompletion
+- :material-fire: **DBCli (pgcli)** — Modern CLI with autocompletion
 - :lucide-wrench: **SQLAlchemy** — Python ORM with Postgres dialect
 
 ---

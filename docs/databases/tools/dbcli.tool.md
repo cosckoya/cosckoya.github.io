@@ -91,7 +91,7 @@ Family of interactive SQL clients (mycli, pgcli, litecli) that add modern CLI co
     - `\watch` is invaluable for live monitoring without writing monitoring infrastructure
     - Batch mode still works — DBCli adds interactivity but doesn't force it
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -133,9 +133,9 @@ theme = native                              # Color theme (monokai, native, sola
 **Documentation:**
 
 - :lucide-book: [DBCli Home](https://www.dbcli.com/) — All three tools (pgcli, mycli, litecli)
-- :lucide-github: [pgcli on GitHub](https://github.com/dbcli/pgcli) — PostgreSQL client
-- :lucide-github: [mycli on GitHub](https://github.com/dbcli/mycli) — MySQL client
-- :lucide-github: [litecli on GitHub](https://github.com/dbcli/litecli) — SQLite client
+- :simple-github: [pgcli on GitHub](https://github.com/dbcli/pgcli) — PostgreSQL client
+- :simple-github: [mycli on GitHub](https://github.com/dbcli/mycli) — MySQL client
+- :simple-github: [litecli on GitHub](https://github.com/dbcli/litecli) — SQLite client
 
 **Related:**
 

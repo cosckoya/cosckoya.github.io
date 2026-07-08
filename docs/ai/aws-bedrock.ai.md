@@ -3,7 +3,7 @@ title: AWS Bedrock
 description: AWS managed AI service - foundation models from Anthropic, Meta, Mistral, serverless inference, RAG support
 ---
 
-# :lucide-aws: AWS Bedrock
+# :material-aws: AWS Bedrock
 
 AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan via API. Serverless inference, no infrastructure management. RAG (Retrieval Augmented Generation) support with Knowledge Bases. Pay per token.
 
@@ -12,7 +12,7 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential API Usage"
 
@@ -238,7 +238,7 @@ AWS managed service for foundation models. Access Claude, Llama, Mistral, Titan 
     - Guardrails prevent brand risk (filter harmful content)
     - IAM integration provides fine-grained access control
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Streaming** - Always use `invoke_model_with_response_stream` for UX

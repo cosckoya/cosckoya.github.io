@@ -3,7 +3,7 @@ title: SonarCloud
 description: Code quality and security platform - static analysis, code smells, bugs, vulnerabilities, technical debt tracking
 ---
 
-# :lucide-magnifying-glass-chart: SonarCloud
+# :fontawesome-solid-magnifying-glass-chart: SonarCloud
 
 Cloud-based code quality and security platform by SonarSource. Static analysis for 30+ languages. Detects bugs, code smells, security vulnerabilities, duplications. Quality gates block merges. Free for open source.
 
@@ -12,7 +12,7 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -181,7 +181,7 @@ Cloud-based code quality and security platform by SonarSource. Static analysis f
     - Historical trends identify technical debt accumulation
     - Multi-language support in single platform
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Quality gates** - Set realistic thresholds (80% coverage, no critical issues)

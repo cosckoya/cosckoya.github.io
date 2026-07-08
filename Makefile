@@ -10,7 +10,7 @@ help:
 	@echo "  make clean        - Remove site/ directory"
 	@echo "  make venv         - Create Python virtual environment"
 	@echo "  make deps         - Install Zensical"
-	@echo "  make lint         - Run ruff, codespell, yamllint"
+	@echo "  make lint         - Run ruff, codespell"
 	@echo "  make health       - Check placeholders, orphans, Vibe Checks"
 
 serve:
@@ -34,7 +34,7 @@ deps:
 lint:
 	@bash -c "source venv/bin/activate && ruff check docs/"
 	@bash -c "source venv/bin/activate && codespell docs/ --skip='*.png,*.jpg,*.svg'"
-	@bash -c "source venv/bin/activate && yamllint -c .yamllint.yml mkdocs.yml"
+	@bash -c "source venv/bin/activate && echo 'Config is TOML (no yamllint needed)'"
 
 health:
 	@bash -c "source venv/bin/activate && python3 scripts/health.py"

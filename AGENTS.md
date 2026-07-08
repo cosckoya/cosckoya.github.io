@@ -39,7 +39,7 @@ make deps                         # Install zensical in venv
 ├── AGENTS.md                 # ← You are here. Single source of truth.
 ├── CLAUDE.md                 # DELETED — fully consolidated into this file.
 ├── CONTRIBUTING.md           # Human contributor guide
-├── mkdocs.yml                # Full Zensical config (theme, nav, extensions, plugins)
+├── zensical.toml                # Full Zensical config (theme, nav, extensions, plugins)
 ├── requirements.txt          # zensical pinned with rationale comments
 ├── pyproject.toml            # Python 3.12 pin
 ├── Makefile                  # Targets: serve, build, validate, clean, lint, health
@@ -70,16 +70,16 @@ make deps                         # Install zensical in venv
 
 ## Navigation Architecture
 
-- **System:** Explicit `nav:` section in `mkdocs.yml` (72 lines, 55 pages, 16 categories)
-- **No `index.md` per section** — all navigation managed in `mkdocs.yml`
+- **System:** Explicit `nav:` section in `zensical.toml` (72 lines, 55 pages, 16 categories)
+- **No `index.md` per section** — all navigation managed in `zensical.toml`
 - **Structure:** 3-level hierarchy max, expandable sections
-- **Recent migration:** Replaced 16 `SUMMARY.md` files with flat `nav:` in mkdocs.yml (2026-07-08)
+- **Recent migration:** Replaced 16 `SUMMARY.md` files with flat `nav:` in zensical.toml (2026-07-08)
 
 **When adding new pages:**
 
 1. Create `.md` file in the appropriate directory (`docs/<category>/`)
 2. Use `templates/page.template.md` as starting point
-3. Add entry to the `nav:` block in `mkdocs.yml` (not `SUMMARY.md` — those no longer exist)
+3. Add entry to the `nav:` block in `zensical.toml` (not `SUMMARY.md` — those no longer exist)
 4. Test: `make validate`
 
 ---
@@ -98,18 +98,18 @@ make deps                         # Install zensical in venv
 
 ### Icons
 
-- **ALWAYS** use Lucide inline syntax: `:lucide-icon-name:`
+- **ALWAYS** use Lucide inline syntax: `:lucide-globe:`
 - **NEVER** use plain emojis
 - **NEVER** use FontAwesome (`:fontawesome-...:`) — all migrated
 - Common icons:
   - `:lucide-list-check:` — Essential/basics tab
   - `:lucide-bolt:` — Common patterns tab
-  - `:lucide-fire:` — Pro Tips & Gotchas tab
+  - `:material-fire:` — Pro Tips & Gotchas tab
   - `:lucide-book:` — Documentation links
   - `:lucide-wrench:` — Tools/utilities
-  - `:lucide-github:` — GitHub links
+  - `:simple-github:` — GitHub links
 
-**Theme config icons** (in `mkdocs.yml`):
+**Theme config icons** (in `zensical.toml`):
 - Admonitions: `lucide/info`, `lucide/list-check`, `lucide/lightbulb`, `lucide/circle-check`, `lucide/circle-help`, `lucide/alert-triangle`, `lucide/x-circle`, `lucide/skull`, `lucide/bug`, `lucide/flask-conical`, `lucide/text-quote`
 - Tags: `lucide/cloud`, `lucide/shield`, `lucide/sparkles`, `lucide/code`, `lucide/database`, `lucide/container`, `lucide/monitor`, `lucide/wrench`, `lucide/code-2`
 - Social brands: `simple/github`, `simple/gitlab`, `simple/x`, `simple/devdotto`, `material/linkedin`, `simple/docker`
@@ -140,7 +140,7 @@ Intro paragraph (2-3 cynical, practical sentences)
     Implementation examples
     **Why this works:** Explanation bullets
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
     **Tips:** Expert advice
     **Gotchas:** Common mistakes
 
@@ -149,8 +149,8 @@ Intro paragraph (2-3 cynical, practical sentences)
 ## Reference
 
 - :lucide-book: [Official Docs](url)
-- :lucide-github: [GitHub](url)
-- :lucide-fire: __Related Topic 1__
+- :simple-github: [GitHub](url)
+- :material-fire: __Related Topic 1__
 - :lucide-wrench: __Related Topic 2__
 
 ---
@@ -170,15 +170,15 @@ Intro paragraph (2-3 cynical, practical sentences)
 ### Footer Requirements
 
 Every content page MUST end with:
-1. **Vibe Check** — `**Vibe Check:** :lucide-icon: **Label** - Description.`
+1. **Vibe Check** — `**Vibe Check:** :lucide-globe: **Label** - Description.`
 2. **Last Updated** — ISO date: `**Last Updated:** YYYY-MM-DD`
 3. **Tags** — At bottom of page, NOT in frontmatter: `**Tags:** tag1, tag2`
 
 ---
 
-## Theme Configuration (mkdocs.yml)
+## Theme Configuration
 
-Key configuration points in `mkdocs.yml`:
+Key configuration points in `zensical.toml`:
 
 - **variant:** `modern` — Zensical modern theme
 - **palette:** tri-mode (auto / light / dark) with Lucide toggles
@@ -204,7 +204,7 @@ Key configuration points in `mkdocs.yml`:
 1. Copy template: `cp templates/page.template.md docs/<section>/<name>.<ext>.md`
 2. Replace all `{{PLACEHOLDER}}` values
 3. Optionally remove unused sections (Installation, Configuration)
-4. Add entry to `nav:` in `mkdocs.yml`
+4. Add entry to `nav:` in `zensical.toml`
 5. Validate: `make validate`
 
 ---
@@ -214,7 +214,7 @@ Key configuration points in `mkdocs.yml`:
 ```bash
 ruff check docs/
 codespell docs/ --skip='*.png,*.jpg,*.svg'
-yamllint -c .yamllint.yml mkdocs.yml
+# Config is TOML format (no yamllint needed)
 ```
 
 ---
@@ -224,7 +224,7 @@ yamllint -c .yamllint.yml mkdocs.yml
 Run `make health` (or `source venv/bin/activate && python3 scripts/health.py`):
 
 Checks for:
-- **Orphaned files** — `.md` files in `docs/` not referenced in `nav:` in `mkdocs.yml`
+- **Orphaned files** — `.md` files in `docs/` not referenced in `nav:` in `zensical.toml`
 - **Missing pages** — `nav:` entries pointing to non-existent files
 - **Placeholder leaks** — `{{PLACEHOLDER}}` still present in content
 - **Vibe Check compliance** — every content page has a Vibe Check footer
@@ -259,12 +259,12 @@ Workflow: `.github/workflows/gh-pages.yml`
 | Change | Details |
 |--------|---------|
 | **Theme variant** | Switched to `modern` (was default) — Lucide icons, auto light/dark, new features |
-| **Navigation** | Replaced 16 `SUMMARY.md` files with explicit `nav:` in `mkdocs.yml` (72 lines, 55 pages) |
+| **Navigation** | Replaced 16 `SUMMARY.md` files with explicit `nav:` in `zensical.toml` (72 lines, 55 pages) |
 | **Icon unification** | 785 FontAwesome → Lucide replacements across 63 files (55 content pages + 8 meta/template files) |
 | **Theme icon fixes** | 9 admonition icons mapped to existing Lucide SVGs; brand icons migrated to `simple/` set |
 | **Health check** | Updated to parse `nav:` instead of `SUMMARY.md` |
 | **Build fix** | yamllint warning fixed (missing document start `---`) |
-| **MkDocs-isms cleaned** | All MkDocs-specific references removed from mkdocs.yml, index.md, showcase.md, AGENTS.md |
+| **MkDocs-isms cleaned** | All MkDocs-specific references removed from zensical.toml, index.md, showcase.md, AGENTS.md |
 | **Disco search** | Enabled Zensical's built-in Disco search (no external search plugin) |
 | **Link validation** | Enabled `invalid_links` + `invalid_link_anchors` |
 | **Tags with icons** | 9 tag definitions with Lucide icons |
@@ -277,13 +277,13 @@ Workflow: `.github/workflows/gh-pages.yml`
 
 | File | Purpose |
 |------|---------|
-| `mkdocs.yml` | Theme, navigation, extensions, validation — primary config |
+| `zensical.toml` | Theme, navigation, extensions, validation — primary config |
 | `opencode.json` | OpenCode permissions, model config (qwen2.5-coder:7b local), skills |
 | `.opencodeignore` | Exclusion patterns for OpenCode context |
 | `pyproject.toml` | Python 3.12 constraint |
 | `requirements.txt` | `zensical` pinned with rationale comments |
 | `Makefile` | Targets: serve, build, validate, clean, lint, health, venv, deps |
-| `.yamllint.yml` | yamllint rules for mkdocs.yml |
+| `.yamllint.yml` | yamllint rules (legacy, no longer used) |
 | `scripts/health.py` | Documentation health checker |
 
 ---
@@ -339,7 +339,7 @@ This project has dedicated agents for documentation tasks:
 
 ## See Also
 
-- **`mkdocs.yml`** — Full theme, plugin, extension configuration (236 lines)
+- **`zensical.toml`** — Full theme, plugin, extension configuration (265 lines)
 - **`templates/README.md`** — Template placeholder reference
 - **`CONTRIBUTING.md`** — Human contributor guide
 - **`scripts/health.py`** — Documentation health checker source

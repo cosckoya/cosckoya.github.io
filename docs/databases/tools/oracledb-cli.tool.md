@@ -106,7 +106,7 @@ Oracle abandoned the interactive CLI space when okcli went unmaintained in 2019.
     - Environment variables keep credentials out of process arguments (visible in `ps aux`)
     - Format switching is per-session, not per-query — set it once and all subsequent results use it
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Tips:**
 

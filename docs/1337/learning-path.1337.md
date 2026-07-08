@@ -74,9 +74,9 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 
     | Path | Focus | Entry Difficulty | Salary Range |
     |------|-------|-----------------|--------------|
-| :lucide-crosshairs: **[Offensive (Red Team)](offensive-security.1337.md)** | Pentesting, AD attacks, exploit dev | Hard | $60-150k+ |
-| :lucide-shield-halved: **[Defensive (Blue Team)](defensive-security.1337.md)** | SOC, SIEM, incident response | Easiest | $50-120k+ |
-| :lucide-scale-balanced: **[GRC](grc.1337.md)** | Compliance, risk, policy | Moderate | $55-130k+ |
+| :material-crosshairs-gps: **[Offensive (Red Team)](offensive-security.1337.md)** | Pentesting, AD attacks, exploit dev | Hard | $60-150k+ |
+| :lucide-shield: **[Defensive (Blue Team)](defensive-security.1337.md)** | SOC, SIEM, incident response | Easiest | $50-120k+ |
+| :lucide-scale: **[GRC](grc.1337.md)** | Compliance, risk, policy | Moderate | $55-130k+ |
 
     **Recommended path for most people:**
 
@@ -271,7 +271,7 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
     ]
     ```
 
-=== ":lucide-fire: Budget & Action Plan"
+=== ":material-fire: Budget & Action Plan"
 
     **Budget breakdown (realistic costs):**
     ```python
@@ -440,7 +440,7 @@ From zero to hired — a realistic 12-18 month path into cybersecurity. No short
 - **[Linux Journey](https://linuxjourney.com/)** — Free Linux fundamentals
 - **[OWASP](https://owasp.org/)** — Free resources (Top 10, guides, tools)
 
-### :lucide-certificate: Certification Roadmaps
+### :material-certificate: Certification Roadmaps
 
 **Entry-Level (0-2 years):**
 - CompTIA Security+ → CySA+ or BTL1 or eJPT

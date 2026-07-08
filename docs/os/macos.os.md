@@ -3,7 +3,7 @@ title: macOS
 description: macOS reference - Unix-based OS for Apple hardware, developer-friendly with premium price tag
 ---
 
-# :lucide-desktop: macOS
+# :fontawesome-solid-desktop: macOS
 
 Unix-based operating system for Apple hardware. BSD foundation with polished UI. Popular among developers for Unix compatibility plus commercial software support. Expensive hardware, locked ecosystem, but excellent build quality. Terminal is real bash/zsh, runs Docker natively (ish), has Homebrew.
 
@@ -99,7 +99,7 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
     - Spotlight indexing can get corrupted, rebuild fixes it
     - DNS cache causes weird networking issues
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Productivity Boosters"
         - **Rectangle/Magnet** - Window management (native snapping is weak)
@@ -156,7 +156,7 @@ Unix-based operating system for Apple hardware. BSD foundation with polished UI.
 
 ---
 
-## :lucide-shield-halved: Security Audit Tools
+## :lucide-shield: Security Audit Tools
 
 Tools for macOS security auditing, compliance checking, and vulnerability assessment. Because Apple's security is good, but not perfect.
 
@@ -169,7 +169,7 @@ Tools for macOS security auditing, compliance checking, and vulnerability assess
 | **Apple-Check** | macOS-specific security audit | OSS | Apple compliance baselines, MDM checks |
 | **Osquery** | SQL-based system monitoring | OSS | Fleet management, threat hunting |
 
-### :lucide-gear: Installation & Usage
+### :fontawesome-solid-gear: Installation & Usage
 
 === "Lynis - macOS Hardening Audit"
 

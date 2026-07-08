@@ -220,7 +220,7 @@ General-purpose programming language known for readability and simplicity. Domin
     - Pathlib is more readable than os.path
     - Logging beats print for production code
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Use uv for dependencies** - 10-100x faster than pip

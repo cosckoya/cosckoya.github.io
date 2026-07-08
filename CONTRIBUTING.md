@@ -74,7 +74,7 @@ make lint              # ruff + codespell + yamllint
 ### Icons
 - Use Lucide: `:lucide-...:`
 - Never plain emojis
-- Common: `:lucide-list-check:` / `:lucide-bolt:` / `:lucide-fire:`
+- Common: `:lucide-list-check:` / `:lucide-bolt:` / `:material-fire:`
 
 ### Code
 - Include inline annotations `# (1)!`
@@ -85,7 +85,7 @@ make lint              # ruff + codespell + yamllint
 Every page ends with a Vibe Check in the footer:
 
 ```
-**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-fire: **Short Label** - One-sentence assessment.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :material-fire: **Short Label** - One-sentence assessment.
 ```
 
 ## Validation Checklist

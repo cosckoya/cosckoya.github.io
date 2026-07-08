@@ -3,7 +3,7 @@ title: kubectx & kubens
 description: Fast Kubernetes context and namespace switching - saves typing, improves workflow, essential productivity tool
 ---
 
-# :lucide-rotate: kubectx & kubens
+# :material-rotate-right: kubectx & kubens
 
 Fast switching between Kubernetes contexts and namespaces. Two tools in one: kubectx switches clusters, kubens switches namespaces. Saves massive amounts of typing. Interactive mode with fzf. Essential for multi-cluster workflows.
 
@@ -12,7 +12,7 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -227,7 +227,7 @@ Fast switching between Kubernetes contexts and namespaces. Two tools in one: kub
     - Shell integration shows current context/namespace
     - Works with any number of clusters/namespaces
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Install fzf** - Makes kubectx/kubens interactive (essential)

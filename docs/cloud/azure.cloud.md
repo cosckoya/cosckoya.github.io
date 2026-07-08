@@ -3,7 +3,7 @@ title: Microsoft Azure
 description: Azure reference - Microsoft's cloud platform, enterprise focus, Windows/.NET integration, hybrid cloud leader
 ---
 
-# :lucide-microsoft: Microsoft Azure
+# :material-microsoft-windows: Microsoft Azure
 
 Microsoft's cloud infrastructure platform. Second largest cloud provider (23% market share). Enterprise-focused with Active Directory integration. Excellent Windows/.NET support (obviously). Strong hybrid cloud story (on-prem + cloud). Naming is inconsistent (App Service, Functions, Logic Apps). Portal UI is slow but functional.
 
@@ -12,7 +12,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Services"
 
@@ -352,7 +352,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
     - Bicep is cleaner than ARM JSON templates
     - .NET integration is best-in-class
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization"
         - **Reserved Instances** - 72% savings for 1-3 year commitment
@@ -411,7 +411,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 - **[Azure Architecture Center](https://docs.microsoft.com/azure/architecture/)** - Best practices and patterns
 - **[Azure Friday](https://azure.microsoft.com/en-us/resources/videos/azure-friday/)** - Weekly video series
 
-### :lucide-certificate: Certifications Worth It
+### :material-certificate: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **AZ-900 Fundamentals** - $99, non-technical, good starting point
@@ -454,7 +454,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 
 ---
 
-## :lucide-sitemap: Architecture Patterns
+## :material-sitemap: Architecture Patterns
 
 Common Azure architecture patterns for enterprise and hybrid cloud solutions.
 
@@ -680,7 +680,7 @@ graph LR
 
 ---
 
-## :lucide-shield-halved: Well-Architected Framework
+## :lucide-shield: Well-Architected Framework
 
 Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) covers five pillars.
 
@@ -1078,7 +1078,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 - [Azure Friday](https://www.youtube.com/c/AzureFriday) - Weekly demos
 - [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) - Deep dives, cert prep
 
-### :lucide-comments: Active Communities
+### :fontawesome-solid-comments: Active Communities
 
 - **[r/AZURE](https://reddit.com/r/AZURE)** - 150k+ members, very active
 - **[Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)** - Official forums
@@ -1110,7 +1110,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 
     [Best Practices](https://docs.microsoft.com/azure/architecture/best-practices/)
 
-- :lucide-flask: __Hands-on Practice__
+- :lucide-flask-conical: __Hands-on Practice__
 
     ---
 

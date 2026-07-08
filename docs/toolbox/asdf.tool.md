@@ -3,7 +3,7 @@ title: ASDF
 description: Universal version manager for multiple runtime versions - one tool to rule them all (Node, Python, Ruby, Go, etc.)
 ---
 
-# :lucide-code-branch: ASDF
+# :fontawesome-solid-code-branch: ASDF
 
 Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions with one tool. No more nvm, pyenv, rbenv, goenv chaos. One `.tool-versions` file, one command interface, done.
 
@@ -89,7 +89,7 @@ Universal version manager. Manage Node, Python, Ruby, Go, Rust, Java versions wi
     asdf shell nodejs 20.11.0
     ```
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **`.tool-versions` file:**
 
@@ -237,7 +237,7 @@ asdf update                         # Update asdf itself
 
 ---
 
-## :lucide-diagram-project: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### New Project Setup
 

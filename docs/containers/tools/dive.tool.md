@@ -3,7 +3,7 @@ title: Dive
 description: Docker image layer analyzer - explore image contents, find wasted space, optimize layer efficiency
 ---
 
-# :lucide-magnifying-glass: Dive
+# :fontawesome-solid-magnifying-glass: Dive
 
 Docker image layer explorer. See every layer, every file change, wasted space from deletions. Interactive TUI shows what bloats your images. Build smaller images by understanding what's actually inside.
 
@@ -91,7 +91,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
     dive docker-archive://image.tar # Tar archive
     ```
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Interface sections:**
     - **Left pane:** Layer list with sizes
@@ -147,7 +147,7 @@ Docker image layer explorer. See every layer, every file change, wasted space fr
 
 ---
 
-## :lucide-gear: Configuration
+## :fontawesome-solid-gear: Configuration
 
 **Config file:** `~/.dive.yaml` or `.dive-ci`
 
@@ -210,7 +210,7 @@ export DIVE_SOURCE=docker  # docker, podman, docker-archive
 
 ---
 
-## :lucide-diagram-project: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### Optimize Dockerfile
 
@@ -300,7 +300,7 @@ jq '.layer | length' v1.json  # Number of layers
 jq '.layer | length' v2.json
 ```
 
-## :lucide-magnifying-glass: Efficiency Metrics
+## :fontawesome-solid-magnifying-glass: Efficiency Metrics
 
 **Image efficiency score:**
 ```
@@ -405,6 +405,6 @@ CMD ["python", "src/main.py"]
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-chart-simple: **Image Optimization Essential** - Dive reveals exactly what's wasting space in your Docker images. Layer-by-layer analysis with interactive UI. Essential for CI/CD pipeline optimization. Works with Docker and Podman images.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :fontawesome-solid-chart-simple: **Image Optimization Essential** - Dive reveals exactly what's wasting space in your Docker images. Layer-by-layer analysis with interactive UI. Essential for CI/CD pipeline optimization. Works with Docker and Podman images.
 
 **Tags:** dive, docker, containers, image-optimization, dockerfile, ci-cd, development-tools

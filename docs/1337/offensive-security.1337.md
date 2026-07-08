@@ -3,7 +3,7 @@ title: Offensive Security (Red Team)
 description: Penetration testing, red teaming, exploit development, social engineering, wireless and physical security testing
 ---
 
-# :lucide-user-secret: Offensive Security (Red Team)
+# :lucide-user-round: Offensive Security (Red Team)
 
 The art of breaking things professionally. Simulate attackers to find vulnerabilities before real adversaries do. Penetration testing, red teaming, exploit development, social engineering. You get paid to hack legally. Living the dream until the lawyers get involved.
 
@@ -12,7 +12,7 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Disciplines"
 
@@ -212,7 +212,7 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
     - BloodHound visualizes AD attack paths
     - Cloud metadata services often exposed (SSRF)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Legal authorization** - Written permission, defined scope, NDA
@@ -283,6 +283,6 @@ The art of breaking things professionally. Simulate attackers to find vulnerabil
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-skull-crossbones: **Break Things Legally** - Most fun security job. Requires constant learning (new vulns daily). Legal risks real (get authorization in writing). Bug bounties democratized field. OSCP still gold standard cert.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-skull: **Break Things Legally** - Most fun security job. Requires constant learning (new vulns daily). Legal risks real (get authorization in writing). Bug bounties democratized field. OSCP still gold standard cert.
 
 **Tags:** offensive-security, pentesting, red-team, hacking, exploit-dev

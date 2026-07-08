@@ -23,10 +23,7 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
-      - run: pip install yamllint==1.38.0 codespell==2.4.2
-
-      - name: Lint YAML
-        run: yamllint -c .yamllint.yml mkdocs.yml
+      - run: pip install codespell==2.4.2
 
       - name: Spell check
         run: codespell docs/ --skip="*.png,*.jpg,*.svg,*.ico"

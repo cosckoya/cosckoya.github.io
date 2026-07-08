@@ -3,7 +3,7 @@ title: pre-commit
 description: Git hook framework - automate code quality checks, run linters/formatters before commits, prevent bad code from entering repo
 ---
 
-# :lucide-shield-halved: pre-commit
+# :lucide-shield: pre-commit
 
 Framework for managing git hooks. Runs linters, formatters, security scanners before commits. Language-agnostic (Python, Go, Node.js, Rust). Prevents bad commits (syntax errors, secrets, formatting issues). Hooks defined in `.pre-commit-config.yaml`. Fast parallel execution. Integrates with CI/CD.
 
@@ -310,7 +310,7 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
     - Language-agnostic (works with any language)
     - CI integration ensures hooks run on all PRs
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Start simple** - Add hooks gradually (don't overwhelm team)
@@ -564,6 +564,6 @@ Framework for managing git hooks. Runs linters, formatters, security scanners be
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield-halved: **Essential** - pre-commit prevents bad commits (formatting, secrets, syntax errors). Auto-fixes save time. Language-agnostic (works with Python, Go, Node.js, etc.). First run slow (environment setup), subsequent fast. Integrate with CI (GitHub Actions). Team adoption requires discipline (`--no-verify` tempting but dangerous). 200+ hooks available.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield: **Essential** - pre-commit prevents bad commits (formatting, secrets, syntax errors). Auto-fixes save time. Language-agnostic (works with Python, Go, Node.js, etc.). First run slow (environment setup), subsequent fast. Integrate with CI (GitHub Actions). Team adoption requires discipline (`--no-verify` tempting but dangerous). 200+ hooks available.
 
 **Tags:** pre-commit, git-hooks, code-quality, automation, linting

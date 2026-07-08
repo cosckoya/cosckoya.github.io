@@ -12,7 +12,7 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Disciplines"
 
@@ -451,7 +451,7 @@ Securing the foundation. Network segmentation, firewalls, IAM, cloud configurati
     - Automation catches misconfigurations (CSPM)
     - Zero Trust assumes breach (limits lateral movement)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Immutable infrastructure** - Rebuild, don't patch (containers, IaC)

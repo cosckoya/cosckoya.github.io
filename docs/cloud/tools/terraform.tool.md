@@ -3,7 +3,7 @@ title: Terraform
 description: Infrastructure as Code tool - declarative configs, multi-cloud, state management headaches
 ---
 
-# :lucide-cube: Terraform
+# :material-cube-outline: Terraform
 
 Infrastructure as Code tool that turns your infrastructure into declarative configuration files. Multi-cloud support, huge provider ecosystem, plan-before-apply workflow. State management is both its superpower and your biggest headache.
 
@@ -12,7 +12,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -248,7 +248,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
     - Modules enable reusability - write once, use everywhere
     - Remote state + locking prevents concurrent modifications (corruption)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Pin ALL versions** - Terraform binary, providers, modules (prevents breaking changes)
@@ -313,14 +313,14 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 - **[Terraform Up & Running (book samples)](https://github.com/brikis98/terraform-up-and-running-code)** - Yevgeniy Brikman's book examples
 - **[Terraform AWS Examples](https://github.com/hashicorp/terraform-provider-aws/tree/main/examples)** - Official AWS provider examples
 
-### :lucide-flask: Interactive Practice
+### :lucide-flask-conical: Interactive Practice
 
 - **[Terraform Tutorials](https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code)** - Hands-on labs in HashiCorp Learn
 - **[Katacoda Terraform](https://www.katacoda.com/courses/terraform)** - Browser-based scenarios (free)
 - **[Terraform LocalStack](https://docs.localstack.cloud/user-guide/integrations/terraform/)** - Test AWS Terraform locally (no real resources)
 - **[KillerCoda Terraform](https://killercoda.com/terraform)** - Interactive Terraform scenarios
 
-### :lucide-certificate: Certifications
+### :material-certificate: Certifications
 
 !!! success "Recommended Path"
     **HashiCorp Certified: Terraform Associate (003)** - $70, proves foundational knowledge, worth it for resume
@@ -376,7 +376,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 - [FreeCodeCamp Terraform](https://www.youtube.com/watch?v=SLB_c_ayRMo) - Full course, beginner-friendly
 - [Cloud Posse](https://www.youtube.com/c/CloudPosse) - Terraform modules, best practices
 
-### :lucide-comments: Active Communities
+### :fontawesome-solid-comments: Active Communities
 
 - **[r/Terraform](https://reddit.com/r/Terraform)** - 100k+ members, active daily, helpful for troubleshooting
 - **[HashiCorp Discuss](https://discuss.hashicorp.com/c/terraform-core)** - Official forums, core team responds
@@ -414,7 +414,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [Terraform Language Docs](https://www.terraform.io/language)
 
-- :lucide-flask: __Hands-on Practice__
+- :lucide-flask-conical: __Hands-on Practice__
 
     ---
 
@@ -438,7 +438,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [Awesome Terraform](https://github.com/shuaibiyy/awesome-terraform)
 
-- :lucide-fire: __Advanced Topics__
+- :material-fire: __Advanced Topics__
 
     ---
 
@@ -450,7 +450,7 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
     [Policy as Code (Sentinel)](https://www.terraform.io/cloud-docs/policy-enforcement)
 
-- :lucide-screwdriver-wrench: __Tools & Extensions__
+- :fontawesome-solid-screwdriver-wrench: __Tools & Extensions__
 
     ---
 
@@ -482,5 +482,5 @@ Infrastructure as Code tool that turns your infrastructure into declarative conf
 
 ---
 
-**Last Updated:** 2026-01-31 | **Vibe Check:** :lucide-fire: **Essential** - Infrastructure as Code is non-negotiable in 2026. Terraform is the industry standard. OpenTofu fork is viable alternative post-license drama. Master state management, modules, and workspaces. HCP Terraform (formerly Terraform Cloud) is worth paying for teams.
+**Last Updated:** 2026-01-31 | **Vibe Check:** :material-fire: **Essential** - Infrastructure as Code is non-negotiable in 2026. Terraform is the industry standard. OpenTofu fork is viable alternative post-license drama. Master state management, modules, and workspaces. HCP Terraform (formerly Terraform Cloud) is worth paying for teams.
 **Tags:** terraform, iac, devops, hashicorp

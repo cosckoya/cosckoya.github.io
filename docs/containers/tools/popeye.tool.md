@@ -3,7 +3,7 @@ title: Popeye
 description: Kubernetes cluster sanitizer - scan resources for misconfigurations, security issues, and best practices violations
 ---
 
-# :lucide-shield-halved: Popeye
+# :lucide-shield: Popeye
 
 Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security issues, resource waste, and best practice violations. Color-coded report shows what's wrong and why. No cluster changes, just brutal honesty about your K8s setup.
 
@@ -93,7 +93,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
     # 3: Error
     ```
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Config file:** `spinach.yaml` (in current dir or `~/.config/popeye/`)
 
@@ -226,7 +226,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :lucide-shield-halved: Check Categories
+## :lucide-shield: Check Categories
 
 ### Security Issues
 
@@ -280,7 +280,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :lucide-diagram-project: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### Daily Cluster Health Check
 
@@ -410,7 +410,7 @@ Legend:
 
 ---
 
-## :lucide-gear: Configuration Examples
+## :fontawesome-solid-gear: Configuration Examples
 
 ### Production Configuration
 
@@ -516,6 +516,6 @@ popeye -n production -o yaml > audit.yaml
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-shield-halved: **Cluster Hygiene Tool** - Popeye catches K8s misconfigurations that other tools miss. Resource limits, probe configurations, label standards. Essential pre-deployment sanity check. Run it before every production rollout. Free and open-source.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-shield: **Cluster Hygiene Tool** - Popeye catches K8s misconfigurations that other tools miss. Resource limits, probe configurations, label standards. Essential pre-deployment sanity check. Run it before every production rollout. Free and open-source.
 
 **Tags:** popeye, kubernetes, k8s, cluster-scanner, security, best-practices, ci-cd, devops

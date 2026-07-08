@@ -72,7 +72,7 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
     - Use `:help` for everything
     - Leader key choice matters (space is popular)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **lazy.nvim (recommended):**
 
@@ -320,6 +320,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-fire: **Editor of the Gods** - Neovim is the modern Vim reincarnation. Lua config, LSP integration, tree-sitter parsing. Steep learning curve but unmatched editing speed. If you live in the terminal, this is your editor.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :material-fire: **Editor of the Gods** - Neovim is the modern Vim reincarnation. Lua config, LSP integration, tree-sitter parsing. Steep learning curve but unmatched editing speed. If you live in the terminal, this is your editor.
 
 **Tags:** neovim, vim, text-editor, lua, lsp, tree-sitter, terminal, cli, development-tools

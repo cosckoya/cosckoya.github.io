@@ -122,7 +122,7 @@ Command-line interface for Google's Gemini AI models. Multimodal capabilities (t
     - Good at code generation and explanation
     - JSON mode useful for scripting and automation
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Use Cases"
         - **Quick code snippets** - Faster than searching Stack Overflow

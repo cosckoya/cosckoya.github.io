@@ -3,7 +3,7 @@ title: GRC (Governance, Risk & Compliance)
 description: Security governance, risk management, compliance auditing, frameworks (GDPR, HIPAA, PCI-DSS, SOC 2, ISO 27001)
 ---
 
-# :lucide-scale-balanced: GRC (Governance, Risk & Compliance)
+# :lucide-scale: GRC (Governance, Risk & Compliance)
 
 The paperwork side of security. Policies, procedures, risk assessments, compliance audits. Not sexy, but keeps companies out of legal trouble and million-dollar fines. GRC teams ensure security aligns with business goals and regulatory requirements.
 
@@ -12,7 +12,7 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Areas"
 
@@ -271,7 +271,7 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
     - Frameworks provide structured approach
     - Audit evidence proves control effectiveness
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Start with framework** - NIST CSF, ISO 27001, CIS Controls
@@ -328,6 +328,6 @@ The paperwork side of security. Policies, procedures, risk assessments, complian
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-file-contract: **Necessary Evil** - Not glamorous but essential. Prevents million-dollar fines. Compliance ≠ security. Audit prep stressful. GRC tools expensive but worth it. CISSP gold standard cert. Job stable (regulations increasing).
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-file-text: **Necessary Evil** - Not glamorous but essential. Prevents million-dollar fines. Compliance ≠ security. Audit prep stressful. GRC tools expensive but worth it. CISSP gold standard cert. Job stable (regulations increasing).
 
 **Tags:** grc, governance, risk-management, compliance, audit

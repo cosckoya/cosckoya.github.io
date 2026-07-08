@@ -12,7 +12,7 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -181,7 +181,7 @@ Fast secret scanner for git repositories. Detects API keys, passwords, tokens, c
     - Baseline files allow incremental remediation
     - Custom rules catch company-specific secret formats
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Pre-commit hooks** - Install on developer machines (prevent accidents)

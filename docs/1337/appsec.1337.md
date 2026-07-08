@@ -12,7 +12,7 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Disciplines"
 
@@ -353,7 +353,7 @@ Securing code before it ships. Static/dynamic analysis, secure coding, threat mo
     - Secure coding standards prevent entire classes of bugs
     - Bug bounty programs leverage crowd-sourced security
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Defense in depth** - Multiple security layers (WAF + input validation + output encoding)

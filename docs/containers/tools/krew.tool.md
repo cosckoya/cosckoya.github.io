@@ -76,7 +76,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
     kubectl tree deploy/api       # Show resource tree
     ```
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Install recommended set:**
     ```bash
@@ -274,7 +274,7 @@ kubectl graph deployments        # Generate dependency graph
 
 ---
 
-## :lucide-diagram-project: Common Workflows
+## :fontawesome-solid-diagram-project: Common Workflows
 
 ### Daily Operations
 
@@ -486,6 +486,6 @@ kubectl count-pods
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-puzzle-piece: **kubectl Superpowers** - Krew is the kubectl plugin manager that turns a good CLI into an extensible platform. Index has 200+ plugins for debugging, scanning, reporting. Essential for any serious K8s practitioner.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-puzzle: **kubectl Superpowers** - Krew is the kubectl plugin manager that turns a good CLI into an extensible platform. Index has 200+ plugins for debugging, scanning, reporting. Essential for any serious K8s practitioner.
 
 **Tags:** kubectl, kubernetes, k8s, krew, plugins, cli, development-tools, devops

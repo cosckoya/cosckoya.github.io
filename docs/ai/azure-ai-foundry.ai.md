@@ -3,7 +3,7 @@ title: Azure AI Foundry
 description: Azure's AI platform - OpenAI models, custom models, ML workflows, enterprise features, responsible AI tools
 ---
 
-# :lucide-microsoft: Azure AI Foundry
+# :material-microsoft-windows: Azure AI Foundry
 
 Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 Turbo, GPT-3.5 via Azure OpenAI Service. Custom models, prompt flow, evaluation tools. Enterprise-grade security and compliance. Integrated with Microsoft ecosystem.
 
@@ -12,7 +12,7 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential API Usage"
 
@@ -266,7 +266,7 @@ Microsoft's unified AI platform (formerly Azure AI Studio). Access GPT-4, GPT-4 
     - On Your Data simplifies RAG (no vector DB setup)
     - Prompt Flow enables non-developers to build AI apps
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Managed Identity** - Use instead of API keys (better security)

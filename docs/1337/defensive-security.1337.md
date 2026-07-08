@@ -3,7 +3,7 @@ title: Defensive Security (Blue Team)
 description: SOC operations, incident response, digital forensics, malware analysis, threat hunting, SIEM management
 ---
 
-# :lucide-shield-halved: Defensive Security (Blue Team)
+# :lucide-shield: Defensive Security (Blue Team)
 
 The defenders. Monitor networks, respond to incidents, hunt threats, analyze malware. Less glamorous than hacking, but you're the reason companies don't get pwned daily. SOC analysts, incident responders, threat hunters, forensics experts. Sleep is optional during incidents.
 
@@ -12,7 +12,7 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Disciplines"
 
@@ -284,7 +284,7 @@ The defenders. Monitor networks, respond to incidents, hunt threats, analyze mal
     - Forensics provides attribution and IOCs
     - Incident response limits damage
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Tuning is key** - 90% false positives kill SOCs (tune aggressively)

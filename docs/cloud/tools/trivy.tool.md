@@ -12,7 +12,7 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -205,7 +205,7 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
     - Ignore files version-controlled with code
     - Fast scans don't slow down CI significantly
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Scan early** - Integrate in CI/CD from day one
@@ -268,6 +268,6 @@ Open-source comprehensive security scanner by Aqua Security. Scans containers, f
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-fire: **Open Source Champion** - Best free security scanner. No rate limits. Comprehensive coverage. Fast. Active development. Should be in every CI/CD pipeline. Commercial alternatives not significantly better.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :material-fire: **Open Source Champion** - Best free security scanner. No rate limits. Comprehensive coverage. Fast. Active development. Should be in every CI/CD pipeline. Commercial alternatives not significantly better.
 
 **Tags:** trivy, security, containers, iac, vulnerability-scanning

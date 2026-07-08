@@ -12,7 +12,7 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -244,7 +244,7 @@ Kubernetes package manager. Install apps with a single command. Charts are templ
     - Dependencies managed automatically (PostgreSQL, Redis)
     - Helper functions (_helpers.tpl) reduce duplication
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Essential Plugins"
         **[helm-diff](https://github.com/databus23/helm-diff)** - Show changes before upgrade

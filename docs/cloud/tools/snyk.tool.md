@@ -3,7 +3,7 @@ title: Snyk
 description: Security scanning platform - finds vulnerabilities in dependencies, containers, IaC, code with automated fixes
 ---
 
-# :lucide-shield-halved: Snyk
+# :lucide-shield: Snyk
 
 Developer-first security platform. Scans dependencies, containers, IaC, and code for vulnerabilities. Auto-generates fix PRs. Integrates with GitHub, GitLab, Bitbucket, CI/CD. Freemium model (200 tests/month free).
 
@@ -12,7 +12,7 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -170,7 +170,7 @@ Developer-first security platform. Scans dependencies, containers, IaC, and code
     - `.snyk` policy file version-controlled with code
     - `snyk monitor` tracks vulnerability trends over time
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Integrate early** - Add to CI/CD from day one

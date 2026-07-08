@@ -3,7 +3,7 @@ title: Google Vertex AI
 description: Google's AI platform - Gemini models, custom models, ML workflows, AutoML, unified AI development
 ---
 
-# :lucide-google: Google Vertex AI
+# :simple-google: Google Vertex AI
 
 Google's unified AI platform. Access Gemini Pro, PaLM 2, Imagen via API. Custom model training with AutoML. MLOps for model deployment and monitoring. Native GCP integration. Multimodal capabilities (text, images, video, audio).
 
@@ -12,7 +12,7 @@ Google's unified AI platform. Access Gemini Pro, PaLM 2, Imagen via API. Custom 
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential API Usage"
 
@@ -272,7 +272,7 @@ Answer: What is our remote work policy?"""
     - AutoML simplifies custom model training
     - Model Garden offers 100+ pre-trained models
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Streaming** - Essential for long responses (better UX)

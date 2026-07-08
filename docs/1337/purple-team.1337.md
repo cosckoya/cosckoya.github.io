@@ -3,7 +3,7 @@ title: Purple Team & Security Engineering
 description: Purple teaming, security architecture, detection engineering, security automation, DevSecOps
 ---
 
-# :lucide-people-group: Purple Team & Security Engineering
+# :fontawesome-solid-people-group: Purple Team & Security Engineering
 
 Bridge between offense and defense. Purple teamers combine red/blue skills to validate security controls. Security engineers build detection systems, automate responses, design security architecture. Detection engineers write rules, tune alerts, measure coverage. DevSecOps embeds security in engineering culture.
 
@@ -12,7 +12,7 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Disciplines"
 
@@ -414,7 +414,7 @@ Bridge between offense and defense. Purple teamers combine red/blue skills to va
     - Automation scales security (humans don't scale)
     - Metrics measure effectiveness (can't improve what you don't measure)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Purple team regularly** - Quarterly exercises (not just annual)

@@ -179,7 +179,7 @@ Static analysis tool for Infrastructure as Code (IaC). Scans Terraform, CloudFor
     - Baseline files enable gradual security improvements
     - SARIF format integrates with GitHub Security tab
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Run locally first** - Catch issues before CI/CD

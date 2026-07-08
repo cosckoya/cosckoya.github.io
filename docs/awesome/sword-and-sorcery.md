@@ -3,7 +3,7 @@ title: Awesome Sword & Sorcery
 description: Curated resources for fantasy literature, tabletop RPGs, and sword & sorcery - from Tolkien to Martin, D&D to Warhammer
 ---
 
-# :lucide-fire: Awesome Sword & Sorcery
+# :material-fire: Awesome Sword & Sorcery
 
 Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimdark, pulp classics, tabletop RPGs, video games, wikis, communities. From Tolkien's Middle-earth to Martin's Westeros, from Conan to Kvothe. Roll for initiative.
 
@@ -17,7 +17,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 !!! tip "Start Here: The Reading Path"
     Fantasy literature spans from ancient epic poetry to modern sagas. Classical mythology laid the foundation, pulp magazines defined sword & sorcery, Tolkien revolutionized epic fantasy, and modern authors continue pushing boundaries. Start with what speaks to you.
 
-### :lucide-clock-rotate-left: Ancient Epic Poetry & Classical Mythology
+### :lucide-history: Ancient Epic Poetry & Classical Mythology
 
 !!! note "The Foundation of All Fantasy"
     Where it all began - epic poetry, gods, heroes, and monsters that inspired every fantasy story that followed.
@@ -185,7 +185,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :lucide-layer-group: Dungeons & Dragons
+## :fontawesome-solid-layer-group: Dungeons & Dragons
 
 !!! abstract "The Game That Started It All"
     Dungeons, dragons, dice, and destiny. The tabletop RPG that launched a thousand campaigns and changed gaming forever.
@@ -246,7 +246,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :lucide-wand-magic-sparkles: Magic: The Gathering
+## :lucide-wand-sparkles: Magic: The Gathering
 
 !!! abstract "Legendary Card Game - 30 Years of Magic"
     Planeswalkers, spells, and legendary creatures. The collectible card game that revolutionized strategy gaming.
@@ -288,7 +288,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :lucide-fire: Warhammer
+## :material-fire: Warhammer
 
 !!! abstract "Grimdark Tabletop - In the Grim Darkness..."
     Warhammer 40K and Age of Sigmar. Miniatures, lore, video games, and endless war.
@@ -341,7 +341,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :lucide-shield-halved: Elder Scrolls
+## :lucide-shield: Elder Scrolls
 
 !!! abstract "Open-World RPG Phenomenon"
     Tamriel awaits. Morrowind, Oblivion, Skyrim - epic open-world adventures with deep lore and endless modding.
@@ -432,7 +432,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
     - **[Reddit r/DnDBehindTheScreen](https://reddit.com/r/DnDBehindTheScreen)** - Community resources
 
 
-## :lucide-shield-halved: Other Fantasy Tabletop RPGs
+## :lucide-shield: Other Fantasy Tabletop RPGs
 
 !!! abstract "Beyond D&D - The Rich Tapestry"
     Pathfinder, OSR classics, modern innovations, and indie gems. Endless variety for every playstyle.
@@ -484,7 +484,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :lucide-github: GitHub & Legal
+## :simple-github: GitHub & Legal
 
 !!! note "Open Source & Copyright"
     Awesome lists, RPG tools on GitHub, and legal considerations for public domain content.
@@ -501,6 +501,6 @@ Many fantasy classics are entering public domain (Conan stories pre-1928, early 
 
 ---
 
-**Last Updated:** 2026-02-03 | **Vibe Check:** :lucide-khanda: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
+**Last Updated:** 2026-02-03 | **Vibe Check:** :material-sword: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
 
 **Tags:** fantasy, sword-and-sorcery, dungeons-and-dragons, warhammer, tolkien, martin, rothfuss, pratchett, drizzt, conan, elric, magic-the-gathering, elder-scrolls, pathfinder, tabletop-rpg, osr, grimdark, epic-fantasy

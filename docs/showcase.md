@@ -3,31 +3,31 @@ title: Zensical - Feature Showcase
 description: Complete reference of all Zensical features, markdown extensions, and built-in modules
 ---
 
-# :lucide-wand-magic-sparkles: Zensical Feature Showcase
+# :lucide-wand-sparkles: Zensical Feature Showcase
 
-**Kitchen sink documentation** — Every feature, pattern, and capability of the Material theme ecosystem. Use this as reference for what's possible, copy/paste examples, or generate new documentation.
+**Kitchen sink documentation** — Every feature, pattern, and capability of the Zensical ecosystem. Use this as reference for what's possible, copy/paste examples, or generate new documentation.
 
-Last Updated: 2026-03-22 | Theme: Material 9.7.1
+Last Updated: 2026-07-08 | Theme: Zensical 0.0.47 (modern variant)
 
 ---
 
 ## :lucide-layer-group: Theme Features Overview
 
-This site uses Material for MkDocs 9.7.1 with all major features enabled. Below is the complete reference.
+This site uses Zensical 0.0.47 with all major features enabled. Below is the complete reference.
 
 ### Navigation Features
 
 === "Instant Loading (SPA)"
 
     ```markdown
-    # Automatic with Material
+    # Automatic with Zensical
     - Pages load without full refresh
     - URL updates smoothly
     - Preserves scroll position
     - Prefetches linked pages on hover
     ```
 
-    When enabled, navigation behaves like a single-page application. Click links and the page transitions smoothly without reloading. Enabled via `navigation.instant.loading` and `navigation.instant.prefetch` in `mkdocs.yml`.
+    When enabled, navigation behaves like a single-page application. Click links and the page transitions smoothly without reloading. Enabled via `navigation.instant` and `navigation.instant.prefetch` in `zensical.toml`.
 
 === "Breadcrumbs"
 
@@ -101,7 +101,7 @@ Subscript: H~2~O
 
 ---
 
-## :lucide-cube: Code Blocks & Syntax Highlighting
+## :lucide-code: Code Blocks & Syntax Highlighting
 
 ### Basic Code Block
 
@@ -111,7 +111,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Run server
-mkdocs serve
+zensical serve
 ```
 
 ### Python with Annotations
@@ -134,19 +134,12 @@ data = fetch_api("https://api.example.com/data")  # (4)!
 
 ### Code with Line Numbers
 
-Enable globally in `mkdocs.yml` with `linenums: true`, or per-block with `linenums="1"`:
+Enable globally in `zensical.toml` with `linenums: true`, or per-block with `linenums="1"`:
 
-```yaml linenums="1"
-# mkdocs.yml — Material theme config
-site_name: Documentation
-theme:
-  name: material
-  features:
-    - navigation.instant.loading
-    - search.suggest
-plugins:
-  - search
-  - minify
+```toml linenums="1"
+# zensical.toml — theme config
+[markdown_extensions.pymdownx]
+highlight = { use_pygments = true, anchor_linenums = true }
 ```
 
 ### Multiple Languages Tabbed
@@ -182,13 +175,13 @@ plugins:
 
 ### Inline Code
 
-Use backticks for `inline code`. For highlighting within text: `python`, `bash`, `yaml`.
+Use backticks for `inline code`. For highlighting within text: `python`, `bash`, `toml`.
 
 ---
 
 ## :lucide-message: Admonitions
 
-Admonitions draw attention to important information. Eleven types available:
+Admonitions draw attention to important information. Ten types available:
 
 !!! note "Note"
     This is a note. Use for additional information that doesn't fit elsewhere.
@@ -205,8 +198,14 @@ Admonitions draw attention to important information. Eleven types available:
 !!! success "Success"
     Positive outcome, successful operation, or confirmation.
 
+!!! question "Question"
+    FAQ entry or common question.
+
 !!! warning "Warning"
     Caution required. Potential issues or things to watch out for.
+
+!!! failure "Failure"
+    Failed operation or error condition.
 
 !!! danger "Danger"
     Critical warning. Do NOT do this or serious consequences may occur.
@@ -216,9 +215,6 @@ Admonitions draw attention to important information. Eleven types available:
 
 !!! example "Example"
     Code example or usage demonstration.
-
-!!! question "Question"
-    FAQ entry or common question.
 
 !!! quote "Quote"
     Quote from external source.
@@ -241,12 +237,12 @@ Admonitions draw attention to important information. Eleven types available:
 
 ## :lucide-table: Tables
 
-| Feature | Material | Docusaurus | Jekyll | Status |
-|---------|----------|-----------|--------|--------|
-| Setup Time | :lucide-bolt: 5 min | :lucide-hourglass: 15 min | :lucide-hourglass: 20 min | :lucide-circle-check: |
-| Customization | :lucide-star: Excellent | :lucide-star: Excellent | :lucide-star: Good | :lucide-circle-check: |
+| Feature | Zensical | Hugo | Jekyll | Status |
+|---------|----------|------|--------|--------|
+| Setup Time | :lucide-bolt: 2 min | :lucide-hourglass: 10 min | :lucide-hourglass: 20 min | :lucide-circle-check: |
+| Customization | :lucide-star: Excellent | :lucide-star: Good | :lucide-star: Good | :lucide-circle-check: |
 | Performance | :lucide-rocket: Fast | :lucide-rocket: Fast | :lucide-snail: Slow | :lucide-circle-check: |
-| Learning Curve | :lucide-chart-line: Easy | :lucide-chart-line: Moderate | :lucide-chart-line: Easy | :lucide-circle-check: |
+| Learning Curve | :material-chart-line: Easy | :material-chart-line: Moderate | :material-chart-line: Easy | :lucide-circle-check: |
 
 **Table with alignment:**
 
@@ -265,24 +261,41 @@ Admonitions draw attention to important information. Eleven types available:
 
 ---
 
-## :lucide-icons: Icons & Emojis
+## :lucide-icons: Icons
 
-### FontAwesome Icons
+### Lucide Icons (Inline)
 
 Solid icons: :lucide-star: :lucide-heart: :lucide-rocket: :lucide-skull: :lucide-bug:
 
-Brand icons: :lucide-github: :lucide-gitlab: :lucide-docker: :lucide-python: :lucide-react:
-
-Regular icons: :lucide-star: :lucide-heart: :lucide-file:
+Brand icons via Simple Icons: :simple-github: :simple-gitlab: :simple-docker: :simple-python:
 
 ### Icon Collections
 
 | Category | Icons |
 |----------|-------|
-| Development | :lucide-github: :lucide-gitlab: :lucide-code: :lucide-git: |
-| Deployment | :lucide-rocket: :lucide-docker: :lucide-server: :lucide-cloud: |
+| Development | :simple-github: :simple-gitlab: :lucide-code: :simple-git: |
+| Deployment | :lucide-rocket: :simple-docker: :material-aws: :lucide-cloud: |
 | Security | :lucide-lock: :lucide-key: :lucide-shield: :lucide-bug: |
-| Status | :lucide-circle-check: :lucide-circle-xmark: :lucide-hourglass: :lucide-triangle-exclamation: |
+| Status | :lucide-circle-check: :fontawesome-solid-circle-xmark: :lucide-hourglass: :fontawesome-solid-triangle-exclamation: |
+
+### Theme Config Icons
+
+Icons used for UI elements (admonitions, tags, social) in `zensical.toml`:
+
+```toml
+[theme.icon.repo]
+repo = "simple/github"
+
+[theme.icon.admonition]
+note = "lucide/info"
+tip = "lucide/lightbulb"
+danger = "lucide/skull"
+
+[theme.icon.tag]
+cloud = "lucide/cloud"
+security = "lucide/shield"
+ai = "lucide/sparkles"
+```
 
 ---
 
@@ -296,13 +309,12 @@ Regular icons: :lucide-star: :lucide-heart: :lucide-file:
 
 ### External Links
 
-- [Material for MkDocs Documentation](https://squidfunk.github.io/mkdocs-material/)
-- [MkDocs Official Docs](https://www.mkdocs.org/)
+- [Zensical Documentation](https://zensical.dev/)
 - [Python](https://www.python.org/)
 
 ### Automatic Link Detection
 
-Visit https://github.com/cosckoya/cosckoya.github.io or check out https://squidfunk.github.io/mkdocs-material/ for more.
+Visit https://github.com/cosckoya/cosckoya.github.io for the source.
 
 ### Anchor Links (Footnotes)
 
@@ -316,7 +328,7 @@ Another footnote reference[^2] in the text.
 
 ---
 
-## :lucide-images: Images
+## :lucide-image: Images
 
 ### Basic Image
 
@@ -348,7 +360,7 @@ Centered (default):
 
 ---
 
-## :lucide-square-up: Abbreviations
+## :lucide-square-asterisk: Abbreviations
 
 The HTML specification is maintained by the W3C.
 
@@ -359,7 +371,7 @@ Hover over "HTML" or "W3C" to see the abbreviation tooltip.
 
 ---
 
-## :lucide-bars: Horizontal Rules
+## :lucide-minus: Horizontal Rules
 
 Text before rule.
 
@@ -369,9 +381,7 @@ Text after rule. Use horizontal rules to separate major sections visually.
 
 ---
 
-## :lucide-code-branch: Code Snippets & Includes
-
-Code snippets can be included from external files or inline highlighted sections.
+## :lucide-code-branch: Code Snippets & Diagrams
 
 ### Inline Snippet Example
 
@@ -429,7 +439,7 @@ sequenceDiagram
 
 ---
 
-## :lucide-toggle-on: Tabs & Panels
+## :lucide-toggle-right: Tabs & Panels
 
 Tabbed content with persistent state across pages:
 
@@ -438,19 +448,20 @@ Tabbed content with persistent state across pages:
     ### Installation
 
     ```bash
-    pip install mkdocs-material
-    mkdocs new my-site
+    pip install zensical
+    zensical new my-site
     cd my-site
     ```
 
 === "Configuration"
 
-    ### mkdocs.yml
+    ### zensical.toml
 
-    ```yaml
-    site_name: My Site
-    theme:
-      name: material
+    ```toml
+    site_name = "My Site"
+
+    [theme]
+    variant = "modern"
     ```
 
 === "Deployment"
@@ -458,7 +469,8 @@ Tabbed content with persistent state across pages:
     ### Deploy to GitHub Pages
 
     ```bash
-    mkdocs gh-deploy
+    zensical build
+    # Deploy site/ to gh-pages branch
     ```
 
 ### Multiple Platform Tabs
@@ -473,21 +485,21 @@ Tabbed content with persistent state across pages:
 
     ```bash
     sudo apt-get install python3-pip
-    pip install mkdocs-material
+    pip install zensical
     ```
 
 === "macOS"
 
     ```bash
     brew install python3
-    pip install mkdocs-material
+    pip install zensical
     ```
 
 === "Windows"
 
     ```cmd
-    python -m pip install mkdocs-material
-    mkdocs serve
+    python -m pip install zensical
+    zensical serve
     ```
 
 **Tab group 2 — By package manager:**
@@ -495,19 +507,19 @@ Tabbed content with persistent state across pages:
 === "pip"
 
     ```bash
-    pip install mkdocs-material
+    pip install zensical
     ```
 
 === "conda"
 
     ```bash
-    conda install mkdocs-material
+    conda install zensical
     ```
 
-=== "poetry"
+=== "uv"
 
     ```bash
-    poetry add mkdocs-material
+    uv pip install zensical
     ```
 
 ---
@@ -524,7 +536,7 @@ Tabbed content with persistent state across pages:
 - **Feature 2**: Another description
   - With code example:
     ```bash
-    mkdocs serve
+    zensical serve
     ```
   - And some text
 
@@ -610,15 +622,12 @@ Buttons appear in the header (if configured).
 
 !!! warning "Requires additional setup"
     Math rendering requires `pymdownx.arithmatex` extension **plus** MathJax or KaTeX JavaScript.
-    Add to `mkdocs.yml`:
-    ```yaml
-    markdown_extensions:
-      - pymdownx.arithmatex:
-          generic: true
-    extra_javascript:
-      - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+    Add to `zensical.toml`:
+    ```toml
+    [markdown_extensions.pymdownx]
+    arithmatex = { generic = true }
     ```
-    Not enabled by default on this site — examples below are syntax references only.
+    Also add `extra_javascript`. Not enabled by default on this site.
 
 Inline math syntax: `$E = mc^2$`
 
@@ -642,15 +651,15 @@ $$
 
 ---
 
-## :lucide-plug: Material Plugins in Action
+## :lucide-search: Zensical Features
 
-### Search
+### Disco Search
 
-Search is built-in via `search` plugin. Try the search box (top right on desktop).
+Search is built-in via Disco (Zensical's native search engine). Try the search box (top right on desktop).
 
-- Powered by client-side indexing
-- Supports stemming (running → run)
-- Highlights matches
+- Powered by client-side Rust indexing
+- No external search plugin needed
+- Supports stemming and fuzzy matching
 - Shares search results via URL
 
 ### Tags
@@ -658,27 +667,19 @@ Search is built-in via `search` plugin. Try the search box (top right on desktop
 Pages can be tagged for organization:
 
 !!! info "Tags"
-    This page is tagged with: `material`, `showcase`, `features`, `markdown`, `theme`
+    This page is tagged with: `zensical`, `showcase`, `features`, `markdown`, `theme`
 
-### Minify
+### GLightbox
 
-HTML, CSS, and JavaScript are minified for smaller file size and faster loading.
+Images can be opened in a lightbox for full-size viewing. Powered by `zensical.extensions.glightbox`.
 
-### Same Directory
+### Template Macros
 
-The `same-dir` plugin allows static files (CSS, JS, images) to live alongside markdown in the same directory structure.
-
-### Section Index
-
-With `section-index` plugin, sections with `index.md` files become clickable navigation items.
-
-### Literate Navigation
-
-Navigation is defined in `SUMMARY.md` files (literate navigation) for readability and maintainability.
+Reusable content macros via `zensical.extensions.macros`. Define snippets once, include anywhere.
 
 ---
 
-## :lucide-browser: Responsive Design
+## :lucide-monitor: Responsive Design
 
 This page is fully responsive. Try resizing your browser:
 
@@ -692,7 +693,7 @@ On mobile/tablet, click the hamburger menu (three lines) to toggle the navigatio
 
 ### Breakpoints
 
-Material uses these breakpoints:
+Zensical's modern theme uses these breakpoints:
 
 - **Small** (< 768px): Mobile
 - **Medium** (768-1216px): Tablet
@@ -702,18 +703,20 @@ Material uses these breakpoints:
 
 ## :lucide-circle-half-stroke: Dark & Light Mode
 
-Toggle between dark (Maleficent theme) and light (Deep Purple + Teal) modes using the button in the top right.
+Toggle between dark (Purple theme) and light (Deep Purple + Teal) modes using the button in the top right.
 
-Color schemes are defined in `mkdocs.yml`:
+Color schemes are defined in `zensical.toml`:
 
-```yaml
-palette:
-  - scheme: slate
-    primary: purple
-    accent: lime
-  - scheme: default
-    primary: deep purple
-    accent: teal
+```toml
+[[theme.palette]]
+scheme = "slate"
+primary = "purple"
+accent = "lime"
+
+[[theme.palette]]
+scheme = "default"
+primary = "deep purple"
+accent = "teal"
 ```
 
 ---
@@ -722,16 +725,13 @@ palette:
 
 ### Key Theme Options
 
-```yaml
-theme:
-  name: material
-  logo: path/to/logo.png
-  favicon: path/to/favicon.png
-  language: en
-  direction: ltr  # or rtl for right-to-left
-  palette:        # Color schemes
-  features:       # Feature toggles
-  icon:           # Icon configuration
+```toml
+[theme]
+variant = "modern"
+logo = "path/to/logo.png"
+favicon = "path/to/favicon.png"
+language = "en"
+features = ["nav.sections", "nav.expand", ...]
 ```
 
 ### Essential Features
@@ -744,7 +744,7 @@ features:
   - navigation.sections          # Expandable/collapsible sections
   - navigation.expand            # Expand all sections by default
   - navigation.breadcrumbs       # Breadcrumb trail
-  - navigation.instant.loading   # SPA-like navigation (no full reload)
+  - navigation.instant           # SPA-like navigation (no full reload)
   - navigation.instant.prefetch  # Prefetch pages on hover
   - navigation.instant.progress  # Loading progress indicator
   - navigation.tracking          # URL fragment updates on scroll
@@ -756,7 +756,6 @@ features:
   # Search
   - search.suggest               # Search auto-complete
   - search.highlight             # Highlight matches in page
-  - search.share                 # Share search results via URL
 
   # Content
   - content.code.copy            # Copy button on code blocks
@@ -778,7 +777,7 @@ features:
 
 ---
 
-## :lucide-circle-question: Common Patterns
+## :lucide-circle-help: Common Patterns
 
 ### "Real Talk" Pattern
 
@@ -833,11 +832,7 @@ features:
 
 Already enabled. Pages load without full refresh.
 
-### 2. Minify Assets
-
-Enabled via `minify` plugin. HTML, CSS, JS are compressed.
-
-### 3. Lazy Load Images
+### 2. Lazy Load Images
 
 Use markdown image syntax with proper alt text:
 
@@ -845,19 +840,19 @@ Use markdown image syntax with proper alt text:
 ![Description](image.png){ alt="Detailed description" }
 ```
 
-### 4. Organize Navigation
+### 3. Organize Navigation
 
-Use `SUMMARY.md` for clean, maintainable navigation structure.
+Use explicit `nav:` in `zensical.toml` for clean, maintainable navigation structure.
 
-### 5. Optimize Images
+### 4. Optimize Images
 
 - Compress images before adding to docs
 - Use WebP format when possible
 - Set width/height attributes
 
-### 6. Cache-Friendly URLs
+### 5. Cache-Friendly URLs
 
-Material generates static URLs that leverage browser caching.
+Zensical generates static URLs that leverage browser caching.
 
 ---
 
@@ -873,7 +868,7 @@ This site aims for WCAG 2.1 AA compliance:
 
 ### Keyboard Shortcuts
 
-- ++s++ or ++slash++: Focus search (Material default)
+- ++s++ or ++slash++: Focus search
 - ++esc++: Close modals / exit search
 - ++tab++: Navigate elements
 - ++enter++: Activate buttons / confirm
@@ -884,71 +879,54 @@ This site aims for WCAG 2.1 AA compliance:
 
 ```
 docs/
-├── SUMMARY.md               # Main navigation (literate-nav)
 ├── index.md                 # Homepage
 ├── showcase.md              # This file (feature reference)
 ├── toolbox/                 # CLI tools: asdf, kitty, neovim, tmux, zsh
-│   └── SUMMARY.md
 ├── os/                      # Operating systems: linux, macos, windows
-│   └── SUMMARY.md
 ├── containers/              # Docker (+ Compose), Kubernetes
-│   ├── SUMMARY.md
 │   └── tools/               # helm, krew, kubectx, dive, popeye
-│       └── SUMMARY.md
 ├── databases/               # Database tooling
-│   ├── SUMMARY.md
 │   └── tools/               # dbcli, oracledb-cli
-│       └── SUMMARY.md
 ├── cloud/                   # Cloud & DevOps (AWS + merged tools)
-│   ├── SUMMARY.md
-│   ├── aws.cloud.md
 │   └── tools/               # terraform, prowler, checkov, github, azure-devops, snyk, sonarcloud, trivy
-│       └── SUMMARY.md
 ├── api/                     # API references
-│   ├── SUMMARY.md
-│   └── github-rest-api.service.md
 ├── code/                    # Programming languages + tools
-│   ├── SUMMARY.md
 │   └── tools/               # gitleaks, shellcheck, etc.
-│       └── SUMMARY.md
-├── ai/                      # AI tools: Claude Code, Copilot, Gemini
-│   ├── SUMMARY.md
+├── ai/                      # AI tools: Bedrock, AI Foundry, Vertex AI
 │   └── tools/
-│       └── SUMMARY.md
-├── 1337/                    # Security / CTF content
-│   └── SUMMARY.md
+├── 1337/                    # Security / CTF content (10 guides)
 ├── awesome/                 # Curated references
-│   └── SUMMARY.md
 ├── templates/               # Doc generation templates
-│   ├── README.md
 │   ├── page.template.md                 # RECOMMENDED
 │   ├── tech-reference.template.md       # DEPRECATED
 │   └── tool-reference.template.md       # DEPRECATED
 └── resources/
     ├── css/
-    │   ├── snape.css        # Custom styling (single file, DRY)
+    │   ├── snape.css        # Custom styling
     │   └── images.css
     └── img/
         ├── logo.png
         └── favicon.png
 ```
 
+Navigation is managed via explicit `nav:` in `zensical.toml` (no `SUMMARY.md` files).
+
 ---
 
-## :lucide-check: Validation Checklist
+## :lucide-circle-check: Validation Checklist
 
 When creating new documentation, use this checklist:
 
 - [ ] Page has `title` and `description` in frontmatter
 - [ ] All links are relative paths
 - [ ] All images have alt text
-- [ ] FontAwesome icons used (no plain emojis)
+- [ ] Lucide icons used (no plain emojis)
 - [ ] Code blocks have language specified
 - [ ] Admonitions used appropriately
 - [ ] "Real talk" sections for practical advice
 - [ ] Pro tips separated from gotchas
 - [ ] Tags placed at bottom of page
-- [ ] `mkdocs build --strict` passes
+- [ ] `zensical build --strict` passes
 - [ ] Tone is cynical/realistic (not aspirational)
 
 ---
@@ -985,10 +963,9 @@ Use heading hierarchy (h2, h3, h4) to structure content logically.
 
 **External Resources:**
 
-- :lucide-book: [Material for MkDocs Official Documentation](https://squidfunk.github.io/mkdocs-material/)
-- :lucide-book: [MkDocs Documentation](https://www.mkdocs.org/)
+- :lucide-book: [Zensical Documentation](https://zensical.dev/)
 - :lucide-book: [Python-Markdown Extensions](https://python-markdown.github.io/)
-- :lucide-github: [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
+- :simple-github: [cosckoya/cosckoya.github.io](https://github.com/cosckoya/cosckoya.github.io)
 
 **Related Topics:**
 
@@ -999,5 +976,5 @@ Use heading hierarchy (h2, h3, h4) to structure content logically.
 
 ---
 
-**Last Updated:** 2026-03-22
-**Tags:** material, showcase, features, markdown, theme, documentation
+**Last Updated:** 2026-07-08
+**Tags:** zensical, showcase, features, markdown, theme, documentation

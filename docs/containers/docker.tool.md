@@ -179,7 +179,7 @@ Container platform that packages applications with their dependencies into isola
     - Service dependencies ensure startup order
     - Networks isolate containers from host
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Build Optimization"
         - **Layer caching** - Order Dockerfile commands by change frequency (COPY dependencies before code)
@@ -226,7 +226,7 @@ Container platform that packages applications with their dependencies into isola
 
 ---
 
-## :lucide-layer-group: Docker Compose
+## :fontawesome-solid-layer-group: Docker Compose
 
 Compose V2 ships with Docker and manages multi-container stacks from a single YAML file. Already covered the `docker-compose.yml` structure in Quick Hits — this section covers the rest of the CLI, environment layering, and the parts that trip people up.
 
@@ -345,7 +345,7 @@ Compose V2 ships with Docker and manages multi-container stacks from a single YA
     - `-f` flag stacking is explicit and reproducible in CI scripts
     - Profiles prevent dev tools (debuggers, monitoring) from starting in unintended environments
 
-=== ":lucide-fire: Compose Gotchas"
+=== ":material-fire: Compose Gotchas"
 
     **Tips:**
 

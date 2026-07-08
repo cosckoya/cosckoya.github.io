@@ -3,7 +3,7 @@ title: GitHub
 description: Git hosting platform - code collaboration, CI/CD workflows, package registry, world's largest code repository
 ---
 
-# :lucide-github: GitHub
+# :simple-github: GitHub
 
 Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de facto standard for open source. GitHub Actions for CI/CD, Dependabot for security, Projects for issue tracking. More than just git hosting.
 
@@ -12,7 +12,7 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Commands"
 
@@ -199,7 +199,7 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
     - Environment protection rules prevent accidental production deploys
     - Matrix builds test multiple versions in parallel
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Branch protection** - Require PR reviews, status checks before merge

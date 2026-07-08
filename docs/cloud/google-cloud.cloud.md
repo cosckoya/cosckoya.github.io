@@ -3,7 +3,7 @@ title: Google Cloud Platform (GCP)
 description: GCP reference - Google's cloud infrastructure, strong in ML/AI, Kubernetes birthplace, cheaper than AWS
 ---
 
-# :lucide-google: Google Cloud Platform (GCP)
+# :simple-google: Google Cloud Platform (GCP)
 
 Google's cloud infrastructure platform. Born from Google's internal systems (Kubernetes, Borg, BigTable). Strong in data analytics, ML/AI, and container orchestration. Generally cheaper than AWS, better per-core performance. Smaller market share (10%) but solid engineering. IAM is more sensible than AWS. Kubernetes runs best here (they invented it).
 
@@ -12,7 +12,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Services"
 
@@ -310,7 +310,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
     - Client libraries handle auth automatically (no key management)
     - Infrastructure as code (Terraform) enables version control
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization"
         - **Committed use discounts** - 57% savings for 1-3 year commitment
@@ -369,7 +369,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 - **[Qwiklabs](https://www.qwiklabs.com/)** - Hands-on labs in real GCP (some free)
 - **[GCP Podcast](https://www.gcppodcast.com/)** - Weekly podcast with product teams
 
-### :lucide-certificate: Certifications Worth It
+### :material-certificate: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **Cloud Digital Leader** - $99, non-technical, good for business roles
@@ -411,7 +411,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 
 ---
 
-## :lucide-sitemap: Architecture Patterns
+## :material-sitemap: Architecture Patterns
 
 Common GCP architecture patterns for modern cloud-native applications.
 
@@ -606,7 +606,7 @@ graph TB
 
 ---
 
-## :lucide-shield-halved: Well-Architected Framework
+## :lucide-shield: Well-Architected Framework
 
 Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/framework) covers six pillars.
 
@@ -879,7 +879,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 - [Google Cloud Tech](https://www.youtube.com/@googlecloudtech) - Official channel, product deep dives
 - [GCP Podcast](https://www.gcppodcast.com/) - Weekly interviews with product teams
 
-### :lucide-comments: Active Communities
+### :fontawesome-solid-comments: Active Communities
 
 - **[r/googlecloud](https://reddit.com/r/googlecloud)** - 50k+ members, helpful community
 - **[GCP Slack](https://bit.ly/gcp-slack)** - Active community Slack workspace
@@ -911,7 +911,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 
     [Best Practices](https://cloud.google.com/architecture/framework)
 
-- :lucide-flask: __Hands-on Practice__
+- :lucide-flask-conical: __Hands-on Practice__
 
     ---
 

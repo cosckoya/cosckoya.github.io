@@ -3,7 +3,7 @@ title: Windows
 description: Windows reference - dominant desktop OS, WSL2 makes it developer-viable, gaming platform
 ---
 
-# :lucide-desktop: Windows
+# :fontawesome-solid-desktop: Windows
 
 Dominant desktop operating system (75%+ market share). Gaming platform of choice. Enterprise standard. Used to be hostile to developers, but WSL2 changed everything. PowerShell is powerful if you learn it. Active Directory runs corporate networks. Office suite integration unmatched.
 
@@ -102,7 +102,7 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
     - PowerShell is object-based, more powerful than bash for Windows tasks
     - winget eliminates manual installations
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Developer Setup"
         - **WSL2** - Must-have for web development, runs Docker natively
@@ -160,7 +160,7 @@ Dominant desktop operating system (75%+ market share). Gaming platform of choice
 
 ---
 
-## :lucide-shield-halved: Security Audit Tools
+## :lucide-shield: Security Audit Tools
 
 Windows security auditing tools for finding privilege escalation paths, Active Directory weaknesses, and configuration issues. Essential for pentesting and defensive security.
 
@@ -175,7 +175,7 @@ Windows security auditing tools for finding privilege escalation paths, Active D
 | **Snaffler** | Sensitive data discovery | OSS | Finding secrets in file shares |
 | **Osquery** | SQL-based system monitoring | OSS | Fleet management, EDR-style queries |
 
-### :lucide-gear: Installation & Usage
+### :fontawesome-solid-gear: Installation & Usage
 
 === "WinPEAS - Privilege Escalation"
 

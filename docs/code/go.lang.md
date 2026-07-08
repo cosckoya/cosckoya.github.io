@@ -132,7 +132,7 @@ Compiled programming language created at Google. Fast compilation, fast executio
     - `context` package standardizes cancellation and deadlines across the ecosystem
     - Table-driven tests are the Go idiom — clear, comprehensive, maintainable
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -187,11 +187,11 @@ go get github.com/lib/pq
 
 - :lucide-book: [Official Docs](https://go.dev/doc/)
 - :lucide-book: [Go by Example](https://gobyexample.com/) — Best learning resource
-- :lucide-github: [Go GitHub](https://github.com/golang/go)
+- :simple-github: [Go GitHub](https://github.com/golang/go)
 
 **Related:**
 
-- :lucide-fire: **Docker** — Written in Go, great codebase to study
+- :material-fire: **Docker** — Written in Go, great codebase to study
 - :lucide-wrench: **Kubernetes** — Largest Go project in existence
 
 ---

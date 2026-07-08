@@ -3,7 +3,7 @@ title: Amazon Web Services (AWS)
 description: AWS reference - cloud platform running half the internet, 200+ services, pricing mystery
 ---
 
-# :lucide-aws: AWS (Amazon Web Services)
+# :material-aws: AWS (Amazon Web Services)
 
 Cloud platform that runs half the internet. 200+ services (you'll use maybe 10). 33+ regions globally. Industry standard for cloud infrastructure. Pricing is a mystery, bills are scary, but it works.
 
@@ -12,7 +12,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Services"
 
@@ -185,7 +185,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
     - DynamoDB queries scale better than scans (use indexes!)
     - Lambda handler pattern is battle-tested across millions of functions
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization (your CFO will thank you)"
         - **Reserved Instances:** 72% savings for predictable workloads (1-3 year commitment)
@@ -241,7 +241,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
 !!! tip "See Also"
     - :lucide-graduation-cap: **[AWS Learning Path](aws-learning-path.howto.md)** — Certifications, projects, and free resources
-    - :lucide-sitemap: **[AWS Architecture & Well-Architected Framework](aws-architecture.explanation.md)** — Architecture patterns and design principles
+    - :material-sitemap: **[AWS Architecture & Well-Architected Framework](aws-architecture.explanation.md)** — Architecture patterns and design principles
 
 ---
 
@@ -267,7 +267,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 - [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana) - DevOps + AWS tutorials
 - [AWS Events](https://www.youtube.com/c/AWSEventsChannel) - Conference talks, workshops
 
-### :lucide-comments: Active Communities
+### :fontawesome-solid-comments: Active Communities
 
 - **[r/aws](https://reddit.com/r/aws)** - 250k+ members, active daily, mix of beginner + advanced (best community)
 - **[AWS Community Discord](https://discord.gg/aws)** - Official, helpful, core team present
@@ -317,7 +317,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 
-- :lucide-flask: __Hands-on Practice__
+- :lucide-flask-conical: __Hands-on Practice__
 
     ---
 
@@ -343,7 +343,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
 
-- :lucide-fire: __Deep Dives__
+- :material-fire: __Deep Dives__
 
     ---
 
@@ -357,7 +357,7 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     [Corey Quinn's Blog](https://www.lastweekinaws.com/blog/)
 
-- :lucide-screwdriver-wrench: __Tools & CLIs__
+- :fontawesome-solid-screwdriver-wrench: __Tools & CLIs__
 
     ---
 

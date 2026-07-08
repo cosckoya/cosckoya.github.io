@@ -3,7 +3,7 @@ title: Threat Intelligence & Security Research
 description: Threat intelligence, OSINT, vulnerability research, malware reverse engineering, security research methodologies
 ---
 
-# :lucide-magnifying-glass: Threat Intelligence & Security Research
+# :fontawesome-solid-magnifying-glass: Threat Intelligence & Security Research
 
 Know your adversary. Collect, analyze, and operationalize threat intelligence. OSINT for reconnaissance. Vulnerability research finds 0-days. Malware reverse engineering understands attacker tools. Intelligence-driven security prioritizes defenses against real threats, not theoretical ones.
 
@@ -12,7 +12,7 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Disciplines"
 
@@ -364,7 +364,7 @@ Know your adversary. Collect, analyze, and operationalize threat intelligence. O
     - Reverse engineering understands attacker tools/TTPs
     - Intelligence sharing amplifies detection (community defense)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Prioritize intelligence** - Not all IOCs equal (contextualize)

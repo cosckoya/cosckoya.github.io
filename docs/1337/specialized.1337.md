@@ -3,7 +3,7 @@ title: Specialized Security Areas
 description: Cryptography, IoT/OT security, mobile security, blockchain security, AI/ML security, privacy engineering
 ---
 
-# :lucide-puzzle-piece: Specialized Security Areas
+# :lucide-puzzle: Specialized Security Areas
 
 Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum resistance). IoT/OT security (industrial control systems, embedded devices). Mobile security (Android/iOS hardening). Blockchain security (smart contract auditing). AI/ML security (adversarial attacks, model poisoning). Privacy engineering (differential privacy, PETs).
 
@@ -12,7 +12,7 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Core Disciplines"
 
@@ -429,7 +429,7 @@ Niche domains requiring deep expertise. Cryptography (encryption, PKI, quantum r
     - AI defenses detect adversarial inputs
     - Privacy tech protects individual data points
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Crypto** - Use standard libraries (OpenSSL, libsodium), never roll your own

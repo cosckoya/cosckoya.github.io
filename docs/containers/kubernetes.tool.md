@@ -238,7 +238,7 @@ Container orchestration platform that manages Docker/containerd containers at sc
     - Ingress provides HTTP routing + SSL termination at the edge
     - Secrets/ConfigMaps separate config from code
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Namespaces** - Isolate environments (dev, staging, prod)
@@ -290,7 +290,7 @@ Container orchestration platform that manages Docker/containerd containers at sc
 
 ---
 
-## :lucide-shield-halved: Tools Ecosystem
+## :lucide-shield: Tools Ecosystem
 
 Essential tools for working with Kubernetes.
 
@@ -343,7 +343,7 @@ brew install dive               # Analyze container images
 - **[KillerCoda K8s Labs](https://killercoda.com/kubernetes)** - Interactive scenarios
 - **[Kubernetes by Example](https://kubernetesbyexample.com/)** - Quick examples
 
-### :lucide-certificate: Certifications
+### :material-certificate: Certifications
 
 !!! success "Worth Getting"
     - **CKA (Certified Kubernetes Administrator)** - $395, hands-on exam, industry standard

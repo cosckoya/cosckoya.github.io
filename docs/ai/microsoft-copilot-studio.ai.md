@@ -3,7 +3,7 @@ title: Microsoft Copilot Studio
 description: Build custom copilots - conversational AI, Power Platform integration, no-code/low-code agents, enterprise deployment
 ---
 
-# :lucide-microsoft: Microsoft Copilot Studio
+# :material-microsoft-windows: Microsoft Copilot Studio
 
 Microsoft's platform for building custom copilots and conversational AI agents. Low-code/no-code builder with Power Platform integration. Create chatbots for websites, Teams, Dynamics. Extends Microsoft 365 Copilot with custom plugins. GPT-4 powered conversations.
 
@@ -12,7 +12,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
 
 ---
 
-## :lucide-bolt-lightning: Quick Hits
+## :lucide-bolt: Quick Hits
 
 === ":lucide-list-check: Essential Concepts"
 
@@ -215,7 +215,7 @@ Microsoft's platform for building custom copilots and conversational AI agents. 
     - Teams integration provides instant user base
     - ALM via solutions (export/import between environments)
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Start simple** - Begin with 5-10 topics, add complexity gradually

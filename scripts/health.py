@@ -65,16 +65,11 @@ def main():
             all_pages.add(rel)
 
     referenced = set()
-    nav_file = os.path.join(os.getcwd(), "mkdocs.yml")
+    nav_file = os.path.join(os.getcwd(), "zensical.toml")
     with open(nav_file, encoding="utf-8") as f:
         for line in f:
-            m = re.search(r"\]\(([^)]+)\)", line)
-            if m:
-                link = m.group(1)
-                if link.endswith(".md"):
-                    referenced.add(link)
-            # Also match YAML nav entries like "- Page: path.md" or "path.md"
-            m = re.search(r':\s+([\w/.-]+\.md)\s*$', line)
+            # Match TOML nav entries like  { "Title" = "path/to/page.md" },
+            m = re.search(r'=\s+"([\w/.-]+\.md)"', line)
             if m:
                 referenced.add(m.group(1))
 

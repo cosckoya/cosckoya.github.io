@@ -154,7 +154,7 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
     ```
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     **Advanced `.zshrc` with Turbo mode:**
 
@@ -335,7 +335,7 @@ zinit creinstall <plugin>      # Reinstall completions
 
 ---
 
-## :lucide-diagram-project: Powerlevel10k Setup
+## :fontawesome-solid-diagram-project: Powerlevel10k Setup
 
 ```bash
 # Install Powerlevel10k

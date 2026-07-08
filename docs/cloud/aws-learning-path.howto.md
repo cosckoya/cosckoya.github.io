@@ -17,7 +17,7 @@ A practical guide to learning AWS, from zero to productive. This isn't a 12-mont
 - **[AWS Getting Started Guides](https://aws.amazon.com/getting-started/)** - Official tutorials
 - **[AWS re:Post](https://repost.aws/)** - Official Q&A platform (replaced forums in 2024)
 
-## :lucide-flask: Interactive Labs
+## :lucide-flask-conical: Interactive Labs
 
 - **[AWS Sandbox Accounts](https://aws.amazon.com/getting-started/hands-on/)** - Official hands-on tutorials in real AWS
 - **[Qwiklabs AWS](https://www.cloudskillsboost.google/catalog?keywords=aws)** - Temporary accounts for safe experimentation
@@ -25,7 +25,7 @@ A practical guide to learning AWS, from zero to productive. This isn't a 12-mont
 - **[LocalStack](https://localstack.cloud/)** - Run AWS locally for development (Pro version worth it)
 - **[AWS CloudShell](https://aws.amazon.com/cloudshell/)** - Browser-based shell with AWS CLI pre-installed
 
-## :lucide-certificate: Certifications Worth It
+## :material-certificate: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **Solutions Architect Associate** - Most valuable, industry standard

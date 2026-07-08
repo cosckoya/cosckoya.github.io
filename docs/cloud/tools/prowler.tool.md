@@ -3,7 +3,7 @@ title: Prowler
 description: Multi-cloud security auditing - CIS benchmarks, compliance checks, AWS/Azure/GCP/Kubernetes
 ---
 
-# :lucide-shield-halved: Prowler
+# :lucide-shield: Prowler
 
 Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry standard for CIS benchmark compliance auditing. Generates detailed security reports with risk ratings. Command-line tool with HTML/JSON/CSV output. Python-based, actively maintained by Toni de la Fuente and community.
 
@@ -162,7 +162,7 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
     - JSON output enables custom dashboards and alerting
     - Compliance frameworks map to audit requirements
 
-=== ":lucide-fire: Pro Tips & Gotchas"
+=== ":material-fire: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Run daily** - Security posture changes, catch issues early
@@ -207,7 +207,7 @@ Open-source cloud security tool for AWS, Azure, GCP, and Kubernetes. Industry st
 
 ---
 
-## :lucide-shield-halved: Compliance Frameworks
+## :lucide-shield: Compliance Frameworks
 
 Prowler supports major compliance standards out-of-the-box:
 
@@ -332,5 +332,5 @@ prowler aws --checks-folder ./checks/custom/
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield-halved: **Industry Standard** - Prowler is THE tool for cloud security auditing. CIS benchmark compliance out-of-the-box. Multi-cloud support. Active development. If you're doing cloud security, you're using Prowler. Free and open-source beats expensive commercial tools.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-shield: **Industry Standard** - Prowler is THE tool for cloud security auditing. CIS benchmark compliance out-of-the-box. Multi-cloud support. Active development. If you're doing cloud security, you're using Prowler. Free and open-source beats expensive commercial tools.
 **Tags:** prowler, security, cloud, compliance, cis

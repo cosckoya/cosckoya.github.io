@@ -3,7 +3,7 @@ title: AWS Architecture Patterns & Well-Architected Framework
 description: Reference architecture patterns for AWS and the Well-Architected Framework pillars — security, reliability, performance, cost, operations
 ---
 
-# :lucide-sitemap: AWS Architecture Patterns
+# :material-sitemap: AWS Architecture Patterns
 
 Common AWS architecture patterns for real-world applications.
 
@@ -154,11 +154,11 @@ graph TB
 
 ---
 
-## :lucide-compass-drafting: Well-Architected Framework
+## :lucide-compass: Well-Architected Framework
 
 AWS's five pillars for building reliable, secure, efficient systems.
 
-### :lucide-shield-halved: Security
+### :lucide-shield: Security
 
 **Design Principles:**
 
@@ -180,7 +180,7 @@ AWS's five pillars for building reliable, secure, efficient systems.
     - [ ] VPC Flow Logs enabled
     - [ ] AWS Config rules for compliance
 
-### :lucide-arrows-rotate: Reliability
+### :fontawesome-solid-arrows-rotate: Reliability
 
 **Design Principles:**
 
@@ -199,7 +199,7 @@ AWS's five pillars for building reliable, secure, efficient systems.
     | 99.99% (4 nines) | 52.56 minutes | Multi-region |
     | 99.999% (5 nines) | 5.26 minutes | Multi-region + Failover |
 
-### :lucide-gauge-high: Performance Efficiency
+### :lucide-gauge: Performance Efficiency
 
 **Design Principles:**
 

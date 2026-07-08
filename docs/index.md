@@ -5,7 +5,7 @@ description: Technical documentation built with Zensical, GitHub Pages, and too 
 
 ![!](resources/img/zelda.png#center)
 
-# :lucide-circle-info: About This Project
+# :fontawesome-solid-circle-info: About This Project
 
 Personal technical knowledge base built by engineers, for engineers. No marketing fluff, no enterprise buzzwords, just practical technical content. Documentation as code. Open source tooling. Continuous deployment. Cyberpunk aesthetics optional.
 
@@ -40,7 +40,7 @@ Custom CSS: Snape theme (docs/resources/css/snape.css)
 ```python
 # Literate Navigation (Zensical native)
 # SUMMARY.md files define navigation hierarchy
-# No more YAML hell in mkdocs.yml
+# No more YAML hell in zensical.toml
 
 docs/
 ├── SUMMARY.md              # Main nav
@@ -56,7 +56,7 @@ docs/
 # - DRY: Navigation lives next to content
 # - Scalable: Nested SUMMARY.md for subsections
 # - Git-friendly: Easy to review nav changes in PRs
-# - No more: "Where the hell is that page in mkdocs.yml?"
+# - No more: "Where the hell is that page in zensical.toml?"
 ```
 
 ### Markdown Extensions
@@ -273,7 +273,7 @@ cosckoya.github.io/
 │       ├── css/
 │       │   └── snape.css       # Custom theme
 │       └── img/                # Images and logos
-├── mkdocs.yml                  # Zensical configuration
+├── zensical.toml                  # Zensical configuration
 ├── requirements.txt            # Python dependencies
 ├── venv/                       # Virtual environment
 ├── CLAUDE.md                   # Claude Code instructions
@@ -294,7 +294,7 @@ pre-commit==4.6.0
 ### Configuration Highlights
 
 ```yaml
-# mkdocs.yml (key sections - Zensical modern)
+# zensical.toml (key sections - Zensical modern)
 site_name: It's dangerous to go alone!
 site_url: https://cosckoya.github.io
 repo_url: https://github.com/cosckoya/cosckoya.github.io
@@ -410,9 +410,9 @@ templates/
 
 **Cons:**
 
-- :lucide-xmark: No dynamic content (no user accounts, comments, forms)
-- :lucide-xmark: Build step required (not instant publish)
-- :lucide-xmark: Search is client-side (works well for <1000 pages)
+- :fontawesome-solid-xmark: No dynamic content (no user accounts, comments, forms)
+- :fontawesome-solid-xmark: Build step required (not instant publish)
+- :fontawesome-solid-xmark: Search is client-side (works well for <1000 pages)
 
 **Trade-off:** Perfect for technical documentation. Don't need dynamic features.
 
@@ -421,12 +421,12 @@ templates/
 | Feature | Zensical | Docusaurus | GitBook | Confluence |
 |---------|----------------|------------|---------|------------|
 | **Setup** | :lucide-bolt: 5 minutes | :lucide-hourglass: 15 minutes | :lucide-cloud: Cloud only | :lucide-dollar-sign: Enterprise |
-| **Markdown** | :lucide-circle-check: Pure MD | :lucide-triangle-exclamation: MDX (React) | :lucide-circle-check: Pure MD | :lucide-xmark: WYSIWYG |
+| **Markdown** | :lucide-circle-check: Pure MD | :fontawesome-solid-triangle-exclamation: MDX (React) | :lucide-circle-check: Pure MD | :fontawesome-solid-xmark: WYSIWYG |
 | **Hosting** | Free (Pages) | Free (Pages) | $$ Paid | $$$ Paid |
-| **Customization** | :lucide-paintbrush: CSS/HTML | :lucide-react: React | :lucide-xmark: Limited | :lucide-xmark: Limited |
+| **Customization** | :lucide-paintbrush: CSS/HTML | :simple-react: React | :fontawesome-solid-xmark: Limited | :fontawesome-solid-xmark: Limited |
 | **Search** | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in |
 | **Performance** | :lucide-rocket: Fast | :lucide-rocket: Fast | :lucide-snail: Slow | :lucide-snail: Slow |
-| **Offline** | :lucide-circle-check: Yes | :lucide-circle-check: Yes | :lucide-xmark: No | :lucide-xmark: No |
+| **Offline** | :lucide-circle-check: Yes | :lucide-circle-check: Yes | :fontawesome-solid-xmark: No | :fontawesome-solid-xmark: No |
 
 **Winner:** Zensical (best docs-to-effort ratio)
 
@@ -490,14 +490,14 @@ templates/
 
 **Anti-goals:**
 
-- :lucide-xmark: SEO optimization (this is personal documentation)
-- :lucide-xmark: Monetization (no ads, no affiliate links)
-- :lucide-xmark: Completeness (better to have 80% of useful content than 100% of everything)
-- :lucide-xmark: Beginners first (assumes technical competence)
+- :fontawesome-solid-xmark: SEO optimization (this is personal documentation)
+- :fontawesome-solid-xmark: Monetization (no ads, no affiliate links)
+- :fontawesome-solid-xmark: Completeness (better to have 80% of useful content than 100% of everything)
+- :fontawesome-solid-xmark: Beginners first (assumes technical competence)
 
 ---
 
-## :lucide-circle-question: FAQ
+## :fontawesome-solid-circle-question: FAQ
 
 ??? question "Why not use a CMS?"
     **CMSs are overkill for technical docs.** WordPress, Ghost, Strapi all require:
@@ -553,7 +553,7 @@ templates/
     ```
 
     **Customize:**
-    - Edit `mkdocs.yml` (site name, colors, variant)
+    - Edit `zensical.toml` (site name, colors, variant)
     - Replace `docs/resources/css/snape.css` (custom styling)
     - Update `CLAUDE.md` (remove project-specific instructions)
     - Modify content in `docs/` (your own documentation)

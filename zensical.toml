@@ -1,0 +1,265 @@
+site_name = "It's dangerous to go alone!"
+site_url = "https://cosckoya.github.io"
+site_description = "Cosckoya's Tech Toolbox"
+site_author = "cosckoya"
+copyright = "Copyright &copy; 2026 цосцкоыа"
+
+repo_url = "https://github.com/cosckoya/cosckoya.github.io"
+edit_uri = ""
+
+docs_dir = "docs"
+site_dir = "site"
+dev_addr = "127.0.0.1:8000"
+
+[validation]
+invalid_links = true
+invalid_link_anchors = true
+
+nav = [
+  { "Home" = "index.md" },
+  { "Showcase" = "showcase.md" },
+  { "Toolbox" = [
+    { "NeoVim" = "toolbox/neovim.tool.md" },
+    { "ASDF" = "toolbox/asdf.tool.md" },
+    { "TMUX" = "toolbox/tmux.tool.md" },
+    { "ZSH + Zinit" = "toolbox/zsh.tool.md" },
+    { "Kitty" = "toolbox/kitty.tool.md" },
+  ]},
+  { "Operating Systems" = [
+    { "Linux" = "os/linux.os.md" },
+    { "macOS" = "os/macos.os.md" },
+    { "Windows" = "os/windows.os.md" },
+  ]},
+  { "Containers" = [
+    { "Docker" = "containers/docker.tool.md" },
+    { "Kubernetes" = "containers/kubernetes.tool.md" },
+    { "Tools" = [
+      { "Helm" = "containers/tools/helm.tool.md" },
+      { "Krew" = "containers/tools/krew.tool.md" },
+      { "kubectx" = "containers/tools/kubectx.tool.md" },
+      { "Dive" = "containers/tools/dive.tool.md" },
+      { "Popeye" = "containers/tools/popeye.tool.md" },
+    ]},
+  ]},
+  { "Databases" = [
+    { "PostgreSQL" = "databases/postgresql.database.md" },
+    { "Tools" = [
+      { "DBCli" = "databases/tools/dbcli.tool.md" },
+      { "oracledb-cli" = "databases/tools/oracledb-cli.tool.md" },
+    ]},
+  ]},
+  { "Cloud & DevOps" = [
+    { "Amazon Web Services" = "cloud/aws.cloud.md" },
+    { "AWS Architecture & Well-Architected" = "cloud/aws-architecture.explanation.md" },
+    { "AWS Learning Path" = "cloud/aws-learning-path.howto.md" },
+    { "Google Cloud Platform" = "cloud/google-cloud.cloud.md" },
+    { "Microsoft Azure" = "cloud/azure.cloud.md" },
+    { "Tools" = [
+      { "Terraform" = "cloud/tools/terraform.tool.md" },
+      { "Prowler" = "cloud/tools/prowler.tool.md" },
+      { "Checkov" = "cloud/tools/checkov.tool.md" },
+      { "GitHub" = "cloud/tools/github.tool.md" },
+      { "Azure DevOps" = "cloud/tools/azure-devops.tool.md" },
+      { "Snyk" = "cloud/tools/snyk.tool.md" },
+      { "SonarCloud" = "cloud/tools/sonarcloud.tool.md" },
+      { "Trivy" = "cloud/tools/trivy.tool.md" },
+    ]},
+  ]},
+  { "API" = [
+    { "GitHub REST API" = "api/github-rest-api.service.md" },
+    { "Docker Hub API" = "api/docker-hub.service.md" },
+  ]},
+  { "Programming Languages" = [
+    { "Python" = "code/python.lang.md" },
+    { "Go" = "code/go.lang.md" },
+    { "Tools" = [
+      { "Gitleaks" = "code/tools/gitleaks.tool.md" },
+      { "pre-commit" = "code/tools/pre-commit.tool.md" },
+    ]},
+  ]},
+  { "Artificial Intelligence" = [
+    { "AWS Bedrock" = "ai/aws-bedrock.ai.md" },
+    { "Azure AI Foundry" = "ai/azure-ai-foundry.ai.md" },
+    { "Microsoft Copilot Studio" = "ai/microsoft-copilot-studio.ai.md" },
+    { "Google Vertex AI" = "ai/vertex-ai.ai.md" },
+    { "Tools" = [
+      { "Google Gemini CLI" = "ai/tools/gemini.tool.md" },
+    ]},
+  ]},
+  { "1337" = [
+    { "Learning Path (Zero to Hero)" = "1337/learning-path.1337.md" },
+    { "Security Fundamentals" = "1337/security-fundamentals.1337.md" },
+    { "Offensive Security (Red Team)" = "1337/offensive-security.1337.md" },
+    { "Defensive Security (Blue Team)" = "1337/defensive-security.1337.md" },
+    { "GRC (Governance, Risk & Compliance)" = "1337/grc.1337.md" },
+    { "Application Security" = "1337/appsec.1337.md" },
+    { "Infrastructure & Cloud Security" = "1337/infra-cloud-security.1337.md" },
+    { "Intelligence & Research" = "1337/intelligence-research.1337.md" },
+    { "Specialized Areas" = "1337/specialized.1337.md" },
+    { "Purple Team" = "1337/purple-team.1337.md" },
+  ]},
+  { "Awesome" = [
+    { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
+  ]},
+]
+
+[theme]
+variant = "modern"
+logo = "resources/img/logo.png"
+favicon = "resources/img/favicon.png"
+language = "en"
+features = [
+  "navigation.sections",
+  "navigation.expand",
+  "navigation.breadcrumbs",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.instant.progress",
+  "navigation.tracking",
+  "navigation.top",
+  "navigation.indexes",
+  "navigation.footer",
+  "navigation.path",
+  "search.suggest",
+  "search.highlight",
+  "content.tabs.link",
+  "content.code.copy",
+  "content.code.select",
+  "content.code.annotate",
+  "content.tooltips",
+  "navigation.prune",
+  "content.footnote.tooltips",
+  "content.action.edit",
+  "content.action.view",
+  "toc.follow",
+  "header.autohide",
+  "announce.dismiss",
+]
+
+[[theme.palette]]
+media = "(prefers-color-scheme)"
+[theme.palette.toggle]
+icon = "lucide/sun-moon"
+name = "Switch to system preference"
+
+[[theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "deep purple"
+accent = "teal"
+[theme.palette.toggle]
+icon = "lucide/sun"
+name = "Switch to dark mode"
+
+[[theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "purple"
+accent = "lime"
+[theme.palette.toggle]
+icon = "lucide/moon"
+name = "Switch to light mode"
+
+[theme.icon]
+repo = "simple/github"
+
+[theme.icon.admonition]
+note = "lucide/info"
+abstract = "lucide/list-check"
+info = "lucide/info"
+tip = "lucide/lightbulb"
+success = "lucide/circle-check"
+question = "lucide/circle-help"
+warning = "lucide/alert-triangle"
+failure = "lucide/x-circle"
+danger = "lucide/skull"
+bug = "lucide/bug"
+example = "lucide/flask-conical"
+quote = "lucide/text-quote"
+
+[theme.icon.tag]
+default = "lucide/hash"
+cloud = "lucide/cloud"
+security = "lucide/shield"
+ai = "lucide/sparkles"
+api = "lucide/code"
+database = "lucide/database"
+container = "lucide/container"
+os = "lucide/monitor"
+tool = "lucide/wrench"
+language = "lucide/code-2"
+
+[extra.tags]
+cloud = "cloud"
+security = "security"
+ai = "ai"
+api = "api"
+database = "database"
+container = "container"
+os = "os"
+tool = "tool"
+language = "language"
+
+[[extra.social]]
+icon = "simple/github"
+link = "https://github.com/cosckoya"
+
+[[extra.social]]
+icon = "simple/gitlab"
+link = "https://gitlab.com/cosckoya"
+
+[[extra.social]]
+icon = "simple/x"
+link = "https://twitter.com/cosckoya"
+
+[[extra.social]]
+icon = "simple/devdotto"
+link = "https://dev.to/cosckoya"
+
+[[extra.social]]
+icon = "material/linkedin"
+link = "https://www.linkedin.com/in/javier-coscolla-cabrera-95948224"
+
+[[extra.social]]
+icon = "simple/docker"
+link = "https://hub.docker.com/u/cosckoya"
+
+extra_css = [
+  "resources/css/images.css",
+  "resources/css/snape.css",
+]
+
+# --- Markdown Extensions ---
+
+[markdown_extensions]
+toc = { permalink = true }
+admonition = {}
+"attr_list" = {}
+"md_in_html" = {}
+"def_list" = {}
+"abbr" = {}
+"footnotes" = {}
+
+[markdown_extensions.pymdownx]
+details = {}
+superfences = { custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]}
+tabbed = { alternate_style = true }
+highlight = { use_pygments = true, anchor_linenums = true, line_spans = "__span" }
+inlinehilite = {}
+snippets = {}
+magiclink = {}
+mark = {}
+caret = {}
+tilde = {}
+keys = {}
+tasklist = { custom_checkbox = true }
+
+[markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[plugins]
+glightbox = {}
+macros = {}
