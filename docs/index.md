@@ -1,5 +1,5 @@
 ---
-title: Klaatu Barada Nikto
+title: Home
 description: Technical documentation built with Zensical, GitHub Pages, and too much coffee
 ---
 

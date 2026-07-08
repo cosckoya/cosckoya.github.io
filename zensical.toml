@@ -171,9 +171,6 @@ os = "lucide/monitor"
 tool = "lucide/wrench"
 language = "lucide/code-2"
 
-[extra]
-homepage = "index.md"
-
 [extra.tags]
 cloud = "cloud"
 security = "security"
