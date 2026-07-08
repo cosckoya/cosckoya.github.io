@@ -20,7 +20,6 @@ nav = [
     { "ZSH + Zinit" = "toolbox/zsh.tool.md" },
     { "Kitty" = "toolbox/kitty.tool.md" },
   ]},
-  { "Showcase" = "showcase.md" },
   { "Operating Systems" = [
     { "Linux" = "os/linux.os.md" },
     { "macOS" = "os/macos.os.md" },
@@ -87,6 +86,7 @@ nav = [
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
+  { "Showcase" = "showcase.md" },
 ]
 
 extra_css = [
