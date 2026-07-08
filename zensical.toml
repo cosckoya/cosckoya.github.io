@@ -24,6 +24,7 @@ nav = [
   { "Home" = "index.md" },
   { "Showcase" = "showcase.md" },
   { "Toolbox" = [
+    "toolbox/index.md",
     { "NeoVim" = "toolbox/neovim.tool.md" },
     { "ASDF" = "toolbox/asdf.tool.md" },
     { "TMUX" = "toolbox/tmux.tool.md" },
