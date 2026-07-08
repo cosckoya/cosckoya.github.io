@@ -12,6 +12,7 @@ site_dir = "site"
 dev_addr = "127.0.0.1:8000"
 
 nav = [
+  { "Home" = "index.md" },
   { "Toolbox" = [
     "toolbox/index.md",
     { "NeoVim" = "toolbox/neovim.tool.md" },
@@ -20,7 +21,6 @@ nav = [
     { "ZSH + Zinit" = "toolbox/zsh.tool.md" },
     { "Kitty" = "toolbox/kitty.tool.md" },
   ]},
-  { "Home" = "index.md" },
   { "Showcase" = "showcase.md" },
   { "Operating Systems" = [
     { "Linux" = "os/linux.os.md" },
