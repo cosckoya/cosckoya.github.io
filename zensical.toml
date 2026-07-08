@@ -71,18 +71,6 @@ nav = [
       { "pre-commit" = "code/tools/pre-commit.tool.md" },
     ]},
   ]},
-  { "1337" = [
-    { "Learning Path (Zero to Hero)" = "1337/learning-path.1337.md" },
-    { "Security Fundamentals" = "1337/security-fundamentals.1337.md" },
-    { "Offensive Security (Red Team)" = "1337/offensive-security.1337.md" },
-    { "Defensive Security (Blue Team)" = "1337/defensive-security.1337.md" },
-    { "GRC (Governance, Risk & Compliance)" = "1337/grc.1337.md" },
-    { "Application Security" = "1337/appsec.1337.md" },
-    { "Infrastructure & Cloud Security" = "1337/infra-cloud-security.1337.md" },
-    { "Intelligence & Research" = "1337/intelligence-research.1337.md" },
-    { "Specialized Areas" = "1337/specialized.1337.md" },
-    { "Purple Team" = "1337/purple-team.1337.md" },
-  ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
@@ -100,6 +88,7 @@ invalid_link_anchors = true
 
 [theme]
 variant = "modern"
+custom_dir = "overrides"
 logo = "resources/img/logo.png"
 favicon = "resources/img/favicon.png"
 language = "en"
@@ -181,6 +170,9 @@ container = "lucide/container"
 os = "lucide/monitor"
 tool = "lucide/wrench"
 language = "lucide/code-2"
+
+[extra]
+homepage = "index.md"
 
 [extra.tags]
 cloud = "cloud"
