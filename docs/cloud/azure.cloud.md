@@ -3,7 +3,7 @@ title: Microsoft Azure
 description: Azure reference - Microsoft's cloud platform, enterprise focus, Windows/.NET integration, hybrid cloud leader
 ---
 
-# :material-microsoft-windows: Microsoft Azure
+# :lucide-monitor: Microsoft Azure
 
 Microsoft's cloud infrastructure platform. Second largest cloud provider (23% market share). Enterprise-focused with Active Directory integration. Excellent Windows/.NET support (obviously). Strong hybrid cloud story (on-prem + cloud). Naming is inconsistent (App Service, Functions, Logic Apps). Portal UI is slow but functional.
 
@@ -352,7 +352,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
     - Bicep is cleaner than ARM JSON templates
     - .NET integration is best-in-class
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization"
         - **Reserved Instances** - 72% savings for 1-3 year commitment
@@ -411,7 +411,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 - **[Azure Architecture Center](https://docs.microsoft.com/azure/architecture/)** - Best practices and patterns
 - **[Azure Friday](https://azure.microsoft.com/en-us/resources/videos/azure-friday/)** - Weekly video series
 
-### :material-certificate: Certifications Worth It
+### :lucide-award: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **AZ-900 Fundamentals** - $99, non-technical, good starting point
@@ -454,7 +454,7 @@ Microsoft's cloud infrastructure platform. Second largest cloud provider (23% ma
 
 ---
 
-## :material-sitemap: Architecture Patterns
+## :lucide-folder-tree: Architecture Patterns
 
 Common Azure architecture patterns for enterprise and hybrid cloud solutions.
 
@@ -1078,7 +1078,7 @@ Azure's [Well-Architected Framework](https://docs.microsoft.com/azure/architectu
 - [Azure Friday](https://www.youtube.com/c/AzureFriday) - Weekly demos
 - [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) - Deep dives, cert prep
 
-### :fontawesome-solid-comments: Active Communities
+### :lucide-message-square: Active Communities
 
 - **[r/AZURE](https://reddit.com/r/AZURE)** - 150k+ members, very active
 - **[Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)** - Official forums

@@ -104,7 +104,7 @@ GitHub's REST API has been around since forever, has roughly 600 endpoints, and 
     - `PUT` team and repo permission calls are idempotent — safe to re-run in provisioning scripts
     - `--paginate` + `--jq` is the pagination pattern — one line instead of a while loop
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     **Tips:**
 

@@ -5,7 +5,7 @@ description: Technical documentation built with Zensical, GitHub Pages, and too 
 
 ![!](resources/img/zelda.png#center)
 
-# :fontawesome-solid-circle-info: About This Project
+# :lucide-circle-info: About This Project
 
 Personal technical knowledge base built by engineers, for engineers. No marketing fluff, no enterprise buzzwords, just practical technical content. Documentation as code. Open source tooling. Continuous deployment. Cyberpunk aesthetics optional.
 
@@ -410,9 +410,9 @@ templates/
 
 **Cons:**
 
-- :fontawesome-solid-xmark: No dynamic content (no user accounts, comments, forms)
-- :fontawesome-solid-xmark: Build step required (not instant publish)
-- :fontawesome-solid-xmark: Search is client-side (works well for <1000 pages)
+- :lucide-x: No dynamic content (no user accounts, comments, forms)
+- :lucide-x: Build step required (not instant publish)
+- :lucide-x: Search is client-side (works well for <1000 pages)
 
 **Trade-off:** Perfect for technical documentation. Don't need dynamic features.
 
@@ -421,12 +421,12 @@ templates/
 | Feature | Zensical | Docusaurus | GitBook | Confluence |
 |---------|----------------|------------|---------|------------|
 | **Setup** | :lucide-bolt: 5 minutes | :lucide-hourglass: 15 minutes | :lucide-cloud: Cloud only | :lucide-dollar-sign: Enterprise |
-| **Markdown** | :lucide-circle-check: Pure MD | :fontawesome-solid-triangle-exclamation: MDX (React) | :lucide-circle-check: Pure MD | :fontawesome-solid-xmark: WYSIWYG |
+| **Markdown** | :lucide-circle-check: Pure MD | :lucide-triangle-alert: MDX (React) | :lucide-circle-check: Pure MD | :lucide-x: WYSIWYG |
 | **Hosting** | Free (Pages) | Free (Pages) | $$ Paid | $$$ Paid |
-| **Customization** | :lucide-paintbrush: CSS/HTML | :simple-react: React | :fontawesome-solid-xmark: Limited | :fontawesome-solid-xmark: Limited |
+| **Customization** | :lucide-paintbrush: CSS/HTML | :simple-react: React | :lucide-x: Limited | :lucide-x: Limited |
 | **Search** | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in | :lucide-circle-check: Built-in |
 | **Performance** | :lucide-rocket: Fast | :lucide-rocket: Fast | :lucide-snail: Slow | :lucide-snail: Slow |
-| **Offline** | :lucide-circle-check: Yes | :lucide-circle-check: Yes | :fontawesome-solid-xmark: No | :fontawesome-solid-xmark: No |
+| **Offline** | :lucide-circle-check: Yes | :lucide-circle-check: Yes | :lucide-x: No | :lucide-x: No |
 
 **Winner:** Zensical (best docs-to-effort ratio)
 
@@ -490,14 +490,14 @@ templates/
 
 **Anti-goals:**
 
-- :fontawesome-solid-xmark: SEO optimization (this is personal documentation)
-- :fontawesome-solid-xmark: Monetization (no ads, no affiliate links)
-- :fontawesome-solid-xmark: Completeness (better to have 80% of useful content than 100% of everything)
-- :fontawesome-solid-xmark: Beginners first (assumes technical competence)
+- :lucide-x: SEO optimization (this is personal documentation)
+- :lucide-x: Monetization (no ads, no affiliate links)
+- :lucide-x: Completeness (better to have 80% of useful content than 100% of everything)
+- :lucide-x: Beginners first (assumes technical competence)
 
 ---
 
-## :fontawesome-solid-circle-question: FAQ
+## :lucide-circle-help: FAQ
 
 ??? question "Why not use a CMS?"
     **CMSs are overkill for technical docs.** WordPress, Ghost, Strapi all require:

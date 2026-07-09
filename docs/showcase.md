@@ -242,7 +242,7 @@ Admonitions draw attention to important information. Ten types available:
 | Setup Time | :lucide-bolt: 2 min | :lucide-hourglass: 10 min | :lucide-hourglass: 20 min | :lucide-circle-check: |
 | Customization | :lucide-star: Excellent | :lucide-star: Good | :lucide-star: Good | :lucide-circle-check: |
 | Performance | :lucide-rocket: Fast | :lucide-rocket: Fast | :lucide-snail: Slow | :lucide-circle-check: |
-| Learning Curve | :material-chart-line: Easy | :material-chart-line: Moderate | :material-chart-line: Easy | :lucide-circle-check: |
+| Learning Curve | :lucide-line-chart: Easy | :lucide-line-chart: Moderate | :lucide-line-chart: Easy | :lucide-circle-check: |
 
 **Table with alignment:**
 
@@ -274,9 +274,9 @@ Brand icons via Simple Icons: :simple-github: :simple-gitlab: :simple-docker: :s
 | Category | Icons |
 |----------|-------|
 | Development | :simple-github: :simple-gitlab: :lucide-code: :simple-git: |
-| Deployment | :lucide-rocket: :simple-docker: :material-aws: :lucide-cloud: |
+| Deployment | :lucide-rocket: :simple-docker: :simple-amazonaws: :lucide-cloud: |
 | Security | :lucide-lock: :lucide-key: :lucide-shield: :lucide-bug: |
-| Status | :lucide-circle-check: :fontawesome-solid-circle-xmark: :lucide-hourglass: :fontawesome-solid-triangle-exclamation: |
+| Status | :lucide-circle-check: :lucide-x-circle: :lucide-hourglass: :lucide-triangle-alert: |
 
 ### Theme Config Icons
 

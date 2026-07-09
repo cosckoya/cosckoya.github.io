@@ -76,7 +76,7 @@ kubectl plugin manager. 200+ community plugins extend kubectl with features the 
     kubectl tree deploy/api       # Show resource tree
     ```
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     **Install recommended set:**
     ```bash
@@ -274,7 +274,7 @@ kubectl graph deployments        # Generate dependency graph
 
 ---
 
-## :fontawesome-solid-diagram-project: Common Workflows
+## :lucide-folder-tree: Common Workflows
 
 ### Daily Operations
 

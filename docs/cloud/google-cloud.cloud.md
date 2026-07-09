@@ -310,7 +310,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
     - Client libraries handle auth automatically (no key management)
     - Infrastructure as code (Terraform) enables version control
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     !!! success "Cost Optimization"
         - **Committed use discounts** - 57% savings for 1-3 year commitment
@@ -369,7 +369,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 - **[Qwiklabs](https://www.qwiklabs.com/)** - Hands-on labs in real GCP (some free)
 - **[GCP Podcast](https://www.gcppodcast.com/)** - Weekly podcast with product teams
 
-### :material-certificate: Certifications Worth It
+### :lucide-award: Certifications Worth It
 
 !!! success "Recommended Path"
     1. **Cloud Digital Leader** - $99, non-technical, good for business roles
@@ -411,7 +411,7 @@ Google's cloud infrastructure platform. Born from Google's internal systems (Kub
 
 ---
 
-## :material-sitemap: Architecture Patterns
+## :lucide-folder-tree: Architecture Patterns
 
 Common GCP architecture patterns for modern cloud-native applications.
 
@@ -879,7 +879,7 @@ Google Cloud's [Architecture Framework](https://cloud.google.com/architecture/fr
 - [Google Cloud Tech](https://www.youtube.com/@googlecloudtech) - Official channel, product deep dives
 - [GCP Podcast](https://www.gcppodcast.com/) - Weekly interviews with product teams
 
-### :fontawesome-solid-comments: Active Communities
+### :lucide-message-square: Active Communities
 
 - **[r/googlecloud](https://reddit.com/r/googlecloud)** - 50k+ members, helpful community
 - **[GCP Slack](https://bit.ly/gcp-slack)** - Active community Slack workspace

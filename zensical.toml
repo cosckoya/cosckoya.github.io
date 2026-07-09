@@ -38,9 +38,7 @@ nav = [
     ]},
   ]},
   { "Cloud" = [
-    { "Amazon Web Services" = "cloud/aws.cloud.md" },
-    { "AWS Architecture & Well-Architected" = "cloud/aws-architecture.explanation.md" },
-    { "AWS Learning Path" = "cloud/aws-learning-path.howto.md" },
+    { "AWS" = "cloud/aws.cloud.md" },
     { "Google Cloud Platform" = "cloud/google-cloud.cloud.md" },
     { "Microsoft Azure" = "cloud/azure.cloud.md" },
     { "Terraform" = "cloud/tools/terraform.tool.md" },

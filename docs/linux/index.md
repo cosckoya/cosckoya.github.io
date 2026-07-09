@@ -97,7 +97,7 @@ Open source Unix-like operating system. Powers 90%+ of cloud infrastructure, eve
     - journalctl provides structured logging
     - Understanding disk usage prevents surprises
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     !!! success "Productivity Boosters"
         - **tmux/screen** - Terminal multiplexing, survive disconnects
@@ -169,7 +169,7 @@ Tools for system hardening audits, privilege escalation detection, and security 
 | **Osquery** | SQL-based system introspection | OSS | Fleet-wide auditing, threat hunting |
 | **Rkhunter** | Rootkit and backdoor detection | OSS | Malware detection, incident response |
 
-### :fontawesome-solid-gear: Installation & Usage
+### :lucide-settings: Installation & Usage
 
 === "Lynis - System Hardening Audit"
 
@@ -436,5 +436,5 @@ Tools for system hardening audits, privilege escalation detection, and security 
 
 ---
 
-**Last Updated:** 2026-02-02 | **Vibe Check:** :material-fire: **Foundation** - If you're doing anything serious with technology, you'll touch Linux. It's not optional anymore.
+**Last Updated:** 2026-02-02 | **Vibe Check:** :lucide-flame: **Foundation** - If you're doing anything serious with technology, you'll touch Linux. It's not optional anymore.
 **Tags:** linux, operating-system, unix

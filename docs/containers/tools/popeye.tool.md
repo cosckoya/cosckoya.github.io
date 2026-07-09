@@ -93,7 +93,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
     # 3: Error
     ```
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     **Config file:** `spinach.yaml` (in current dir or `~/.config/popeye/`)
 
@@ -280,7 +280,7 @@ Kubernetes cluster sanitizer. Scans your cluster for misconfigurations, security
 
 ---
 
-## :fontawesome-solid-diagram-project: Common Workflows
+## :lucide-folder-tree: Common Workflows
 
 ### Daily Cluster Health Check
 
@@ -410,7 +410,7 @@ Legend:
 
 ---
 
-## :fontawesome-solid-gear: Configuration Examples
+## :lucide-settings: Configuration Examples
 
 ### Production Configuration
 

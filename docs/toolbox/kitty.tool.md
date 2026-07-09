@@ -3,7 +3,7 @@ title: Kitty
 description: GPU-accelerated terminal emulator - fast rendering, tabs, splits, images, ligatures, and scriptable
 ---
 
-# :fontawesome-solid-desktop: Kitty
+# :lucide-monitor: Kitty
 
 GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image protocol, ligature support, keyboard-driven. Written in C and Python. No Electron bloat. Renders everything on GPU for instant response.
 
@@ -73,7 +73,7 @@ GPU-accelerated terminal emulator. Fast rendering, native tabs/splits, image pro
     - `Ctrl+Shift+F` - Search scrollback
     - `Ctrl+Shift+L` - Layout selector
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     **Config location:** `~/.config/kitty/kitty.conf`
 
@@ -323,7 +323,7 @@ def handle_result(args, answer, target_window_id, boss):
 
 ---
 
-## :fontawesome-solid-diagram-project: Layouts
+## :lucide-folder-tree: Layouts
 
 **Built-in layouts:**
 

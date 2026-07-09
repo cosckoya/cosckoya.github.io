@@ -3,7 +3,7 @@ title: Awesome Sword & Sorcery
 description: Curated resources for fantasy literature, tabletop RPGs, and sword & sorcery - from Tolkien to Martin, D&D to Warhammer
 ---
 
-# :material-fire: Awesome Sword & Sorcery
+# :lucide-flame: Awesome Sword & Sorcery
 
 Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimdark, pulp classics, tabletop RPGs, video games, wikis, communities. From Tolkien's Middle-earth to Martin's Westeros, from Conan to Kvothe. Roll for initiative.
 
@@ -185,7 +185,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :fontawesome-solid-layer-group: Dungeons & Dragons
+## :lucide-layers: Dungeons & Dragons
 
 !!! abstract "The Game That Started It All"
     Dungeons, dragons, dice, and destiny. The tabletop RPG that launched a thousand campaigns and changed gaming forever.
@@ -288,7 +288,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 ---
 
-## :material-fire: Warhammer
+## :lucide-flame: Warhammer
 
 !!! abstract "Grimdark Tabletop - In the Grim Darkness..."
     Warhammer 40K and Age of Sigmar. Miniatures, lore, video games, and endless war.
@@ -501,6 +501,6 @@ Many fantasy classics are entering public domain (Conan stories pre-1928, early 
 
 ---
 
-**Last Updated:** 2026-02-03 | **Vibe Check:** :material-sword: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
+**Last Updated:** 2026-02-03 | **Vibe Check:** :lucide-swords: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
 
 **Tags:** fantasy, sword-and-sorcery, dungeons-and-dragons, warhammer, tolkien, martin, rothfuss, pratchett, drizzt, conan, elric, magic-the-gathering, elder-scrolls, pathfinder, tabletop-rpg, osr, grimdark, epic-fantasy

@@ -199,7 +199,7 @@ Git hosting and collaboration platform owned by Microsoft. 100M+ developers, de 
     - Environment protection rules prevent accidental production deploys
     - Matrix builds test multiple versions in parallel
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     !!! success "Best Practices"
         - **Branch protection** - Require PR reviews, status checks before merge

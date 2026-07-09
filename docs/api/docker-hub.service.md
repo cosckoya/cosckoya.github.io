@@ -93,7 +93,7 @@ Container registry API from Docker Inc. Pull and push images, search repositorie
     - Pagination handling is essential — Docker Hub returns 100 results per page max
     - Tag cleanup prevents registry bloat — automate deletion of old dev/feature tags
 
-=== ":material-fire: Pro Tips & Gotchas"
+=== ":lucide-flame: Pro Tips & Gotchas"
 
     **Tips:**
 
@@ -124,11 +124,11 @@ Container registry API from Docker Inc. Pull and push images, search repositorie
 
 **Related:**
 
-- :material-fire: **Docker** — Container runtime that uses Docker Hub by default
+- :lucide-flame: **Docker** — Container runtime that uses Docker Hub by default
 - :lucide-wrench: **GitHub Container Registry (GHCR)** — Alternative registry integrated with GitHub
 
 ---
 
-**Last Updated:** 2026-06-01 | **Vibe Check:** :material-cube-outline: **Registry Standard** - The default container registry for a reason. Rate limits are annoying but manageable. Free tier sufficient for personal projects. For teams, consider GHCR or cloud-native registries. The API is simple, well-documented, and works.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-box: **Registry Standard** - The default container registry for a reason. Rate limits are annoying but manageable. Free tier sufficient for personal projects. For teams, consider GHCR or cloud-native registries. The API is simple, well-documented, and works.
 
 **Tags:** docker, container-registry, api, ci-cd
