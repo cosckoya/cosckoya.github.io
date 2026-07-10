@@ -19,9 +19,6 @@ nav = [
     { "ZSH" = "toolbox/zsh.tool.md" },
     { "Kitty" = "toolbox/kitty.tool.md" },
   ]},
-  { "Linux" = [
-    "linux/index.md",
-  ]},
   { "Python" = [
     "code/index.md",
   ]},

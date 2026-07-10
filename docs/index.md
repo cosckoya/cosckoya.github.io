@@ -43,7 +43,6 @@ Custom CSS: Snape theme (docs/resources/css/snape.css)
 
 docs/
 ├── toolbox/                 # CLI tools: neovim, mise, tmux, zsh, kitty
-├── linux/                   # Linux OS reference
 ├── code/                    # Python
 ├── containers/              # Docker, Kubernetes
 │   └── tools/               # Helm, Krew, kubectx, Dive, Popeye
@@ -273,8 +272,6 @@ cosckoya.github.io/
 │   │       ├── krew.tool.md
 │   │       ├── kubectx.tool.md
 │   │       └── popeye.tool.md
-│   ├── linux/
-│   │   └── index.md
 │   ├── resources/
 │   │   ├── css/
 │   │   │   └── snape.css
