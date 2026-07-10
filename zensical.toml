@@ -131,23 +131,13 @@ quote = "lucide/text-quote"
 [theme.icon.tag]
 default = "lucide/hash"
 cloud = "lucide/cloud"
-security = "lucide/shield"
-ai = "lucide/sparkles"
-api = "lucide/code"
-database = "lucide/database"
 container = "lucide/container"
-os = "lucide/monitor"
 tool = "lucide/wrench"
 language = "lucide/code-2"
 
 [extra.tags]
 cloud = "cloud"
-security = "security"
-ai = "ai"
-api = "api"
-database = "database"
 container = "container"
-os = "os"
 tool = "tool"
 language = "language"
 
