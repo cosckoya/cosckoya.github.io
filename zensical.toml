@@ -46,10 +46,6 @@ nav = [
     { "GitHub" = "cloud/tools/github.tool.md" },
     { "Terraform" = "cloud/tools/terraform.tool.md" },
   ]},
-  { "API" = [
-    { "GitHub REST API" = "api/github-rest-api.service.md" },
-    { "Docker Hub API" = "api/docker-hub.service.md" },
-  ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},

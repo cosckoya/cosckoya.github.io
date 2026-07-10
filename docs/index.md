@@ -260,7 +260,6 @@ cosckoya.github.io/
 │   ├── showcase.md             # Feature reference
 │   ├── 1337/                   # Cybersecurity
 │   ├── ai/                     # AI/ML platforms & tools
-│   ├── api/                    # API references
 │   ├── awesome/                # Curated lists
 │   ├── cloud/                  # Cloud platforms & tools
 │   ├── code/                   # Programming languages & tools

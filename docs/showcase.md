@@ -305,7 +305,6 @@ ai = "lucide/sparkles"
 
 - [Go to index](index.md)
 - [Cloud & DevOps section](cloud/)
-- [GitHub API documentation](api/github-rest-api.service.md)
 
 ### External Links
 
@@ -889,7 +888,6 @@ docs/
 │   └── tools/               # dbcli, oracledb-cli
 ├── cloud/                   # Cloud & DevOps (AWS + merged tools)
 │   └── tools/               # terraform, prowler, checkov, github, azure-devops, snyk, sonarcloud, trivy
-├── api/                     # API references
 ├── code/                    # Programming languages + tools
 │   └── tools/               # gitleaks, shellcheck, etc.
 ├── ai/                      # AI tools: Bedrock, AI Foundry, Vertex AI
