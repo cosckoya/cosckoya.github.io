@@ -48,7 +48,6 @@ docs/
 ├── containers/              # Docker, Kubernetes
 │   └── tools/               # Helm, Krew, kubectx, Dive, Popeye
 ├── cloud/                   # AWS, GCP, Azure
-│   └── tools/               # GitHub, Terraform
 ├── awesome/                 # Curated lists
 └── ...
 
@@ -263,9 +262,6 @@ cosckoya.github.io/
 │   │   ├── aws.cloud.md
 │   │   ├── azure.cloud.md
 │   │   ├── google-cloud.cloud.md
-│   │   └── tools/
-│   │       ├── github.tool.md
-│   │       └── terraform.tool.md
 │   ├── code/
 │   │   └── index.md
 │   ├── containers/

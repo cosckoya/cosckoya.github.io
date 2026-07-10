@@ -41,10 +41,6 @@ nav = [
     { "Google Cloud Platform" = "cloud/google-cloud.cloud.md" },
     { "Microsoft Azure" = "cloud/azure.cloud.md" },
   ]},
-  { "DevSecOps" = [
-    { "GitHub" = "cloud/tools/github.tool.md" },
-    { "Terraform" = "cloud/tools/terraform.tool.md" },
-  ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},

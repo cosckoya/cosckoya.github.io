@@ -101,7 +101,7 @@ Standardized templates for creating consistent, high-quality technical documenta
 
 ```bash
 # 1. Copy template to target location
-cp templates/page.template.md cloud/tools/new-tool.tool.md
+cp templates/page.template.md toolbox/new-tool.tool.md
 
 # 2. Replace all {{PLACEHOLDER}} values
 # 3. Add entry to nav: in zensical.toml
