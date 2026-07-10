@@ -890,8 +890,7 @@ docs/
 ├── awesome/                 # Curated references
 ├── templates/               # Doc generation templates
 │   ├── page.template.md                 # RECOMMENDED
-│   ├── tech-reference.template.md       # DEPRECATED
-│   └── tool-reference.template.md       # DEPRECATED
+│   └── README.md
 └── resources/
     ├── css/
     │   └── snape.css        # Custom styling
@@ -924,7 +923,7 @@ When creating new documentation, use this checklist:
 
 ### 1. Use Templates
 
-Start with `page.template.md` for consistency. The old `tech-reference.template.md` and `tool-reference.template.md` are deprecated.
+Use `page.template.md` for all new pages.
 
 ### 2. Three-Tab Structure
 

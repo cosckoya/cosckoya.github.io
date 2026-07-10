@@ -4,7 +4,7 @@ Standardized templates for creating consistent, high-quality technical documenta
 
 ## Available Templates
 
-### 1. page.template.md (Recommended)
+### page.template.md (Recommended)
 **Use for:** All pages — tools, cloud platforms, services, technologies, OS, languages.
 
 **Structure:**
@@ -13,14 +13,6 @@ Standardized templates for creating consistent, high-quality technical documenta
 - Optional sections: installation, configuration, custom deep-dives
 - Reference links
 - Vibe Check footer
-
-### 2. tech-reference.template.md (Deprecated)
-**Use for:** Cloud platforms, services, major technologies.
-**Status:** :lucide-triangle-alert: **Deprecated** — Use `page.template.md` instead.
-
-### 3. tool-reference.template.md (Deprecated)
-**Use for:** Tools, CLI utilities, libraries.
-**Status:** :lucide-triangle-alert: **Deprecated** — Use `page.template.md` instead.
 
 ## Template Placeholders (page.template.md)
 

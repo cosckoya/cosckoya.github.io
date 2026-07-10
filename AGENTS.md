@@ -48,8 +48,6 @@ make deps                         # Install zensical in venv
 │   └── health.py             # Documentation health check (orphans, placeholders, Vibe Checks)
 ├── templates/
 │   ├── page.template.md      # Active template — use for all new pages
-│   ├── tool-reference.template.md  # DEPRECATED — removal 2026-09-01
-│   ├── tech-reference.template.md  # DEPRECATED — removal 2026-09-01
 │   └── README.md             # Template documentation and placeholder reference
 └── docs/
     ├── index.md              # Home page
@@ -194,9 +192,7 @@ Key configuration points in `zensical.toml`:
 ## Template System
 
 - **Active template:** `templates/page.template.md` — use for ALL new pages (tools, cloud, services, OS, AI, security)
-- **Deprecated templates** (removal target: 2026-09-01):
-  - `templates/tool-reference.template.md`
-  - `templates/tech-reference.template.md`
+- **Deprecated templates removed:** 2026-07-09 (`tool-reference`, `tech-reference`) — unified into `page.template.md`
 - **Full documentation:** `templates/README.md` — complete placeholder reference table
 
 ### Creating a New Page

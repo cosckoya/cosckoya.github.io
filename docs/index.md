@@ -292,9 +292,7 @@ cosckoya.github.io/
 │   │   └── zsh.tool.md
 │   └── templates/
 │       ├── page.template.md
-│       ├── README.md
-│       ├── tech-reference.template.md
-│       └── tool-reference.template.md
+│       └── README.md
 ├── zensical.toml                  # Zensical configuration
 ├── requirements.txt            # Python dependencies
 ├── venv/                       # Virtual environment
@@ -381,10 +379,8 @@ extra_css:
 ```bash
 # Documentation templates (DRY principle)
 templates/
-├── README.md                    # Template usage guide
 ├── page.template.md             # **RECOMMENDED** - Universal template
-├── tech-reference.template.md   # DEPRECATED - Use page.template.md
-└── tool-reference.template.md   # DEPRECATED - Use page.template.md
+└── README.md                    # Template usage guide
 
 # Usage: Replace {{PLACEHOLDER}} values
 # Example placeholders:
