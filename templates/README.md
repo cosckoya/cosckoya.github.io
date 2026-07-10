@@ -16,11 +16,11 @@ Standardized templates for creating consistent, high-quality technical documenta
 
 ### 2. tech-reference.template.md (Deprecated)
 **Use for:** Cloud platforms, services, major technologies.
-**Status:** ⚠️ **Deprecated** — Use `page.template.md` instead.
+**Status:** :lucide-triangle-alert: **Deprecated** — Use `page.template.md` instead.
 
 ### 3. tool-reference.template.md (Deprecated)
 **Use for:** Tools, CLI utilities, libraries.
-**Status:** ⚠️ **Deprecated** — Use `page.template.md` instead.
+**Status:** :lucide-triangle-alert: **Deprecated** — Use `page.template.md` instead.
 
 ## Template Placeholders (page.template.md)
 
@@ -112,7 +112,7 @@ Standardized templates for creating consistent, high-quality technical documenta
 cp templates/page.template.md cloud/tools/new-tool.tool.md
 
 # 2. Replace all {{PLACEHOLDER}} values
-# 3. Add entry to appropriate SUMMARY.md
+# 3. Add entry to nav: in zensical.toml
 # 4. Validate
 zensical build --strict
 ```
@@ -129,7 +129,7 @@ Before publishing docs created from templates:
 - [ ] Tags include at least category tag
 - [ ] Last updated date is current
 - [ ] File follows naming convention
-- [ ] Added to appropriate SUMMARY.md
+- [ ] Added to `nav:` in `zensical.toml`
 - [ ] Build passes strict mode
 
 ## Integration with Skills
@@ -141,7 +141,7 @@ Skills can use these templates by:
 3. **Replace Placeholders:** Substitute `{{PLACEHOLDER}}` with actual content
 4. **Validate:** Check all placeholders filled
 5. **Write File:** Save to appropriate location
-6. **Update Navigation:** Add to SUMMARY.md
+6. **Update Navigation:** Add to `nav:` in `zensical.toml`
 7. **Build Test:** Run `zensical build --strict`
 
 ---

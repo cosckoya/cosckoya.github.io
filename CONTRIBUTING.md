@@ -42,13 +42,11 @@ Each page has these required sections:
 
 ### 4. Add to navigation
 
-Add an entry to the nearest `SUMMARY.md`:
+Add an entry to the `nav:` block in `zensical.toml`:
 
-```markdown
-- [Page Title](page-name.ext.md)
+```toml
+{ "Page Title" = "section/page-name.ext.md" },
 ```
-
-For new sections, create a `SUMMARY.md` in the section directory.
 
 ### 5. Validate
 
@@ -74,7 +72,7 @@ make lint              # ruff + codespell + yamllint
 ### Icons
 - Use Lucide: `:lucide-...:`
 - Never plain emojis
-- Common: `:lucide-list-check:` / `:lucide-bolt:` / `:material-fire:`
+- Common: `:lucide-list-check:` / `:lucide-bolt:` / `:lucide-flame:`
 
 ### Code
 - Include inline annotations `# (1)!`
@@ -85,7 +83,7 @@ make lint              # ruff + codespell + yamllint
 Every page ends with a Vibe Check in the footer:
 
 ```
-**Last Updated:** 2026-06-01 | **Vibe Check:** :material-fire: **Short Label** - One-sentence assessment.
+**Last Updated:** 2026-06-01 | **Vibe Check:** :lucide-flame: **Short Label** - One-sentence assessment.
 ```
 
 ## Validation Checklist
@@ -95,7 +93,7 @@ Every page ends with a Vibe Check in the footer:
 - [ ] Code blocks have language
 - [ ] Vibe Check in footer
 - [ ] Tags at bottom
-- [ ] Added to SUMMARY.md
+- [ ] Added to `nav:` in `zensical.toml`
 - [ ] `make validate` passes
 - [ ] `make lint` passes
 

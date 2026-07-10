@@ -880,19 +880,13 @@ This site aims for WCAG 2.1 AA compliance:
 docs/
 ├── index.md                 # Homepage
 ├── showcase.md              # This file (feature reference)
-├── toolbox/                 # CLI tools: asdf, kitty, neovim, tmux, zsh
-├── os/                      # Operating systems: linux, macos, windows
-├── containers/              # Docker (+ Compose), Kubernetes
+├── toolbox/                 # CLI tools: neovim, mise, tmux, zsh, kitty
+├── linux/                   # Linux OS reference
+├── code/                    # Python
+├── containers/              # Docker, Kubernetes
 │   └── tools/               # helm, krew, kubectx, dive, popeye
-├── databases/               # Database tooling
-│   └── tools/               # dbcli, oracledb-cli
-├── cloud/                   # Cloud & DevOps (AWS + merged tools)
-│   └── tools/               # terraform, prowler, checkov, github, azure-devops, snyk, sonarcloud, trivy
-├── code/                    # Programming languages + tools
-│   └── tools/               # gitleaks, shellcheck, etc.
-├── ai/                      # AI tools: Bedrock, AI Foundry, Vertex AI
-│   └── tools/
-├── 1337/                    # Security / CTF content (10 guides)
+├── cloud/                   # AWS, GCP, Azure
+│   └── tools/               # GitHub, Terraform
 ├── awesome/                 # Curated references
 ├── templates/               # Doc generation templates
 │   ├── page.template.md                 # RECOMMENDED
@@ -900,11 +894,8 @@ docs/
 │   └── tool-reference.template.md       # DEPRECATED
 └── resources/
     ├── css/
-    │   ├── snape.css        # Custom styling
-    │   └── images.css
+    │   └── snape.css        # Custom styling
     └── img/
-        ├── logo.png
-        └── favicon.png
 ```
 
 Navigation is managed via explicit `nav:` in `zensical.toml` (no `SUMMARY.md` files).

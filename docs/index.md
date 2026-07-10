@@ -38,25 +38,25 @@ Custom CSS: Snape theme (docs/resources/css/snape.css)
 ### Navigation Architecture
 
 ```python
-# Literate Navigation (Zensical native)
-# SUMMARY.md files define navigation hierarchy
-# No more YAML hell in zensical.toml
+# Navigation: Explicit nav: in zensical.toml
+# Flat nav block, 8 sections, 3 levels max
 
 docs/
-├── SUMMARY.md              # Main nav
-├── cloud/
-│   ├── SUMMARY.md          # Cloud section nav
-│   └── tools/
-│       └── SUMMARY.md      # Cloud tools nav
-├── 1337/
-│   └── SUMMARY.md          # Cybersecurity nav
+├── toolbox/                 # CLI tools: neovim, mise, tmux, zsh, kitty
+├── linux/                   # Linux OS reference
+├── code/                    # Python
+├── containers/              # Docker, Kubernetes
+│   └── tools/               # Helm, Krew, kubectx, Dive, Popeye
+├── cloud/                   # AWS, GCP, Azure
+│   └── tools/               # GitHub, Terraform
+├── awesome/                 # Curated lists
 └── ...
 
 # Benefits:
-# - DRY: Navigation lives next to content
-# - Scalable: Nested SUMMARY.md for subsections
-# - Git-friendly: Easy to review nav changes in PRs
-# - No more: "Where the hell is that page in zensical.toml?"
+# - Single file: All nav in zensical.toml (~70 lines)
+# - Visible: One glance shows the entire site structure
+# - Simple: No scattered SUMMARY.md files, no duplication
+# - Git-friendly: Nav changes tracked in a single diff
 ```
 
 ### Markdown Extensions
@@ -255,28 +255,52 @@ cosckoya.github.io/
 │   └── workflows/
 │       └── gh-pages.yml        # CI/CD pipeline
 ├── docs/
-│   ├── SUMMARY.md              # Main navigation
 │   ├── index.md                # Home page
 │   ├── showcase.md             # Feature reference
-│   ├── 1337/                   # Cybersecurity
-│   ├── ai/                     # AI/ML platforms & tools
-│   ├── awesome/                # Curated lists
-│   ├── cloud/                  # Cloud platforms & tools
-│   ├── code/                   # Programming languages & tools
-│   ├── containers/             # Container tech
-│   ├── databases/              # Database tools
-│   ├── os/                     # Operating systems
-│   ├── toolbox/                # Dev environment tools
-│   ├── templates/              # Documentation templates
-│   └── resources/
-│       ├── css/
-│       │   └── snape.css       # Custom theme
-│       └── img/                # Images and logos
+│   ├── awesome/
+│   │   └── sword-and-sorcery.md
+│   ├── cloud/
+│   │   ├── aws.cloud.md
+│   │   ├── azure.cloud.md
+│   │   ├── google-cloud.cloud.md
+│   │   └── tools/
+│   │       ├── github.tool.md
+│   │       └── terraform.tool.md
+│   ├── code/
+│   │   └── index.md
+│   ├── containers/
+│   │   ├── docker.tool.md
+│   │   ├── kubernetes.tool.md
+│   │   └── tools/
+│   │       ├── dive.tool.md
+│   │       ├── helm.tool.md
+│   │       ├── krew.tool.md
+│   │       ├── kubectx.tool.md
+│   │       └── popeye.tool.md
+│   ├── linux/
+│   │   └── index.md
+│   ├── resources/
+│   │   ├── css/
+│   │   │   └── snape.css
+│   │   └── img/
+│   ├── toolbox/
+│   │   ├── index.md
+│   │   ├── kitty.tool.md
+│   │   ├── mise.tool.md
+│   │   ├── neovim.tool.md
+│   │   ├── tmux.tool.md
+│   │   └── zsh.tool.md
+│   └── templates/
+│       ├── page.template.md
+│       ├── README.md
+│       ├── tech-reference.template.md
+│       └── tool-reference.template.md
 ├── zensical.toml                  # Zensical configuration
 ├── requirements.txt            # Python dependencies
 ├── venv/                       # Virtual environment
 ├── CLAUDE.md                   # Claude Code instructions
-└── README.md                   # Repository readme
+├── AGENTS.md                   # Agent operating guide
+└── Makefile                    # Build targets
 ```
 
 ### Dependencies

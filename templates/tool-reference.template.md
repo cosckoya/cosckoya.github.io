@@ -3,7 +3,7 @@ title: {{TOOL_NAME}}
 description: {{ONE_LINE_DESCRIPTION}}
 ---
 
-!!! danger "⚠️ DEPRECATED — Scheduled for removal: 2026-09-01"
+!!! danger "DEPRECATED — Scheduled for removal: 2026-09-01"
     Use [`page.template.md`](page.template.md) instead. This template is kept for reference until the removal date.
 
 # {{TOOL_NAME}}
