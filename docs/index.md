@@ -43,7 +43,6 @@ Custom CSS: Snape theme (docs/resources/css/snape.css)
 
 docs/
 ├── toolbox/                 # CLI tools: neovim, mise, tmux, zsh, kitty
-├── code/                    # Python
 ├── containers/              # Docker, Kubernetes
 │   └── tools/               # Helm, Krew, kubectx, Dive, Popeye
 ├── cloud/                   # AWS, GCP, Azure

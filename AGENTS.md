@@ -58,7 +58,6 @@ make deps                         # Install zensical in venv
     ├── databases/            # PostgreSQL, dbcli, oracledb-cli
     ├── cloud/                # AWS, Azure, GCP, Terraform, Prowler, Checkov...
     ├── api/                  # GitHub REST API, Docker Hub API
-    ├── code/                 # Python, Go, Gitleaks, pre-commit
     ├── ai/                   # AWS Bedrock, Azure AI Foundry, Vertex AI, Gemini
     ├── 1337/                 # Security/penetration testing (10 guides)
     └── awesome/              # Curated lists
