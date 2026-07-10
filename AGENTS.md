@@ -54,9 +54,7 @@ make deps                         # Install zensical in venv
     ├── ...                   # (content pages by category)
     ├── toolbox/              # Terminal tools: neovim, tmux, kitty, zsh, asdf
     ├── os/                   # Operating systems: linux, macos, windows
-    ├── containers/           # Docker, Kubernetes, Helm, Krew, Dive, Popeye
     ├── databases/            # PostgreSQL, dbcli, oracledb-cli
-    ├── cloud/                # AWS, Azure, GCP, Terraform, Prowler, Checkov...
     ├── api/                  # GitHub REST API, Docker Hub API
     ├── ai/                   # AWS Bedrock, Azure AI Foundry, Vertex AI, Gemini
     ├── 1337/                 # Security/penetration testing (10 guides)
@@ -85,7 +83,6 @@ make deps                         # Install zensical in venv
 
 ### File Naming
 
-`{name}.cloud.md` | Cloud platforms (AWS, Azure, GCP)
 `{name}.tool.md` | Tools, CLIs, utilities (Terraform, Docker)
 `{name}.service.md` | Services, APIs (GitHub REST API)
 `{name}.os.md` | Operating systems (Linux, macOS, Windows)
@@ -108,7 +105,6 @@ make deps                         # Install zensical in venv
 
 **Theme config icons** (in `zensical.toml`):
 - Admonitions: `lucide/info`, `lucide/list-check`, `lucide/lightbulb`, `lucide/circle-check`, `lucide/circle-help`, `lucide/alert-triangle`, `lucide/x-circle`, `lucide/skull`, `lucide/bug`, `lucide/flask-conical`, `lucide/text-quote`
-- Tags: `lucide/cloud`, `lucide/shield`, `lucide/sparkles`, `lucide/code`, `lucide/database`, `lucide/container`, `lucide/monitor`, `lucide/wrench`, `lucide/code-2`
 - Social brands: `simple/github`, `simple/gitlab`, `simple/x`, `simple/devdotto`, `material/linkedin`, `simple/docker`
 - Repo: `simple/github`
 - Theme toggles: `lucide/sun-moon`, `lucide/sun`, `lucide/moon`
@@ -184,13 +180,11 @@ Key configuration points in `zensical.toml`:
 - **custom extensions:** `zensical.extensions.glightbox` (image lightbox), `zensical.extensions.macros` (template macros)
 - **validation:** `invalid_links: true`, `invalid_link_anchors: true`
 - **extra_css:** `resources/css/images.css`, `resources/css/snape.css`
-- **tags:** 9 tag definitions (cloud, security, ai, api, database, container, os, tool, language)
 
 ---
 
 ## Template System
 
-- **Active template:** `templates/page.template.md` — use for ALL new pages (tools, cloud, services, OS, AI, security)
 - **Deprecated templates removed:** 2026-07-09 (`tool-reference`, `tech-reference`) — unified into `page.template.md`
 - **Full documentation:** `templates/README.md` — complete placeholder reference table
 

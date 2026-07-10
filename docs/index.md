@@ -43,9 +43,6 @@ Custom CSS: Snape theme (docs/resources/css/snape.css)
 
 docs/
 ├── toolbox/                 # CLI tools: neovim, mise, tmux, zsh, kitty
-├── containers/              # Docker, Kubernetes
-│   └── tools/               # Helm, Krew, kubectx, Dive, Popeye
-├── cloud/                   # AWS, GCP, Azure
 ├── awesome/                 # Curated lists
 └── ...
 
@@ -256,21 +253,6 @@ cosckoya.github.io/
 │   ├── ...                     # (template not published)
 │   ├── awesome/
 │   │   └── sword-and-sorcery.md
-│   ├── cloud/
-│   │   ├── aws.cloud.md
-│   │   ├── azure.cloud.md
-│   │   ├── google-cloud.cloud.md
-│   ├── code/
-│   │   └── index.md
-│   ├── containers/
-│   │   ├── docker.tool.md
-│   │   ├── kubernetes.tool.md
-│   │   └── tools/
-│   │       ├── dive.tool.md
-│   │       ├── helm.tool.md
-│   │       ├── krew.tool.md
-│   │       ├── kubectx.tool.md
-│   │       └── popeye.tool.md
 │   ├── resources/
 │   │   ├── css/
 │   │   │   └── snape.css

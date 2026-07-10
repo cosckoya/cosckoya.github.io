@@ -19,22 +19,6 @@ nav = [
     { "ZSH" = "toolbox/zsh.tool.md" },
     { "Kitty" = "toolbox/kitty.tool.md" },
   ]},
-  { "Containers" = [
-    { "Docker" = "containers/docker.tool.md" },
-    { "Kubernetes" = "containers/kubernetes.tool.md" },
-    { "Tools" = [
-      { "Helm" = "containers/tools/helm.tool.md" },
-      { "Krew" = "containers/tools/krew.tool.md" },
-      { "kubectx" = "containers/tools/kubectx.tool.md" },
-      { "Dive" = "containers/tools/dive.tool.md" },
-      { "Popeye" = "containers/tools/popeye.tool.md" },
-    ]},
-  ]},
-  { "Cloud" = [
-    { "AWS" = "cloud/aws.cloud.md" },
-    { "Google Cloud Platform" = "cloud/google-cloud.cloud.md" },
-    { "Microsoft Azure" = "cloud/azure.cloud.md" },
-  ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
