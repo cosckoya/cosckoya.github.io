@@ -256,7 +256,7 @@ cosckoya.github.io/
 │       └── gh-pages.yml        # CI/CD pipeline
 ├── docs/
 │   ├── index.md                # Home page
-│   ├── showcase.md             # Feature reference
+│   ├── ...                     # (template not published)
 │   ├── awesome/
 │   │   └── sword-and-sorcery.md
 │   ├── cloud/

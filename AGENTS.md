@@ -51,7 +51,7 @@ make deps                         # Install zensical in venv
 │   └── README.md             # Template documentation and placeholder reference
 └── docs/
     ├── index.md              # Home page
-    ├── showcase.md           # Capabilities overview
+    ├── ...                   # (content pages by category)
     ├── toolbox/              # Terminal tools: neovim, tmux, kitty, zsh, asdf
     ├── os/                   # Operating systems: linux, macos, windows
     ├── containers/           # Docker, Kubernetes, Helm, Krew, Dive, Popeye
@@ -92,7 +92,7 @@ make deps                         # Install zensical in venv
 `{name}.os.md` | Operating systems (Linux, macOS, Windows)
 `{name}.ai.md` | AI platforms (Bedrock, Vertex AI)
 `{name}.1337.md` | Security/penetration testing
-`{name}.md` | General pages (index, showcase)
+`{name}.md` | General pages (index)
 
 ### Icons
 
@@ -260,7 +260,7 @@ Workflow: `.github/workflows/gh-pages.yml`
 | **Theme icon fixes** | 9 admonition icons mapped to existing Lucide SVGs; brand icons migrated to `simple/` set |
 | **Health check** | Updated to parse `nav:` instead of `SUMMARY.md` |
 | **Build fix** | yamllint warning fixed (missing document start `---`) |
-| **MkDocs-isms cleaned** | All MkDocs-specific references removed from zensical.toml, index.md, showcase.md, AGENTS.md |
+| **MkDocs-isms cleaned** | All MkDocs-specific references removed from zensical.toml, index.md, AGENTS.md |
 | **Disco search** | Enabled Zensical's built-in Disco search (no external search plugin) |
 | **Link validation** | Enabled `invalid_links` + `invalid_link_anchors` |
 | **Tags with icons** | 9 tag definitions with Lucide icons |

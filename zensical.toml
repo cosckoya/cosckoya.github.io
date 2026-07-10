@@ -49,7 +49,6 @@ nav = [
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
-  { "Showcase" = "showcase.md" },
 ]
 
 extra_css = [
