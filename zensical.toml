@@ -15,7 +15,7 @@ nav = [
   { "Toolbox" = [
     "toolbox/index.md",
     { "NeoVim" = "toolbox/neovim.tool.md" },
-    { "ASDF" = "toolbox/asdf.tool.md" },
+    { "MISE" = "toolbox/mise.tool.md" },
     { "TMUX" = "toolbox/tmux.tool.md" },
     { "ZSH + Zinit" = "toolbox/zsh.tool.md" },
     { "Kitty" = "toolbox/kitty.tool.md" },
