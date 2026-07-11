@@ -247,42 +247,66 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
 | **[Starship](https://starship.rs/)** | Cross-shell prompt (not a PM) | Prompt only, no plugin management |
 
 **Essential plugins (regardless of manager):**
-- **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)** — Fish-like suggestions as you type
-- **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)** — Command syntax colors
-- **[zsh-completions](https://github.com/zsh-users/zsh-completions)** — Extra 9000+ completion definitions
-- **[zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)** — Type, press up arrow, find in history
-- **[fzf](https://github.com/junegunn/fzf)** — Fuzzy finder (completion, history, files)
+<div class="ref-cards" markdown>
+
+- :lucide-text-cursor: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) — Fish-like suggestions as you type
+- :lucide-palette: [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) — Command syntax colors
+- :lucide-list: [zsh-completions](https://github.com/zsh-users/zsh-completions) — Extra 9000+ completion definitions
+- :lucide-search: [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) — Type, press up arrow, find in history
+- :lucide-filter: [fzf](https://github.com/junegunn/fzf) — Fuzzy finder (completion, history, files)
+
+</div>
 
 **Notable configs to learn from:**
-- [Sindresorhus' pure theme](https://github.com/sindresorhus/pure) — Minimalist prompt, 10k+ stars
-- [Caarlos0's dotfiles](https://github.com/caarlos0/dotfiles) — Well-structured ZSH + tmux + Kitty
-- [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) — The OG macOS dotfiles
-- [Zinit Configs](https://github.com/zdharma-continuum/zinit-configs) — Example Zinit configurations
+<div class="ref-cards" markdown>
+
+- :lucide-star: [Pure theme](https://github.com/sindresorhus/pure) — Minimalist prompt by Sindre Sorhus, 10k+ stars
+- :lucide-github: [caarlos0's dotfiles](https://github.com/caarlos0/dotfiles) — Well-structured ZSH + tmux + Kitty
+- :lucide-github: [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) — The OG macOS dotfiles
+- :lucide-list: [Zinit Configs](https://github.com/zdharma-continuum/zinit-configs) — Example Zinit configurations
+
+</div>
 
 ---
 
 ## :lucide-link: Resources
 
 **ZSH:**
+<div class="ref-cards" markdown>
+
 - :lucide-book: [ZSH Manual](https://zsh.sourceforge.io/Doc/) — Official documentation
 - :lucide-book: [ZSH Lovers](https://grml.org/zsh/zsh-lovers.html) — Tips, tricks, one-liners
 - :lucide-github: [ZSH GitHub](https://github.com/zsh-users/zsh) — Source and issues
 - :lucide-star: [Awesome ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins) — The definitive curated list
 
+</div>
+
 **Zinit:**
+<div class="ref-cards" markdown>
+
 - :lucide-book: [Zinit Wiki](https://github.com/zdharma-continuum/zinit/wiki) — Complete docs
 - :lucide-github: [GitHub](https://github.com/zdharma-continuum/zinit) — Source, issues, discussions
 - :lucide-list: [Zinit Configs](https://github.com/zdharma-continuum/zinit-configs) — Example setups
 
+</div>
+
 **Themes:**
+<div class="ref-cards" markdown>
+
 - :lucide-palette: [Powerlevel10k](https://github.com/romkatv/powerlevel10k) — Fastest ZSH theme (what we use)
 - :lucide-palette: [Pure](https://github.com/sindresorhus/pure) — Minimalist, beautiful
-- :lucide-palette: [Starship](https://starship.rs/) — Cross-shell prompt (alternative to Powerlevel10k)
+- :lucide-palette: [Starship](https://starship.rs/) — Cross-shell prompt
+
+</div>
 
 **Communities:**
+<div class="ref-cards" markdown>
+
 - :lucide-reddit: [r/zsh](https://reddit.com/r/zsh) — Config showcases, troubleshooting
 - :lucide-message-circle: [ZSH Discord](https://discord.gg/zsh) — Active community
 - :lucide-message-square: [Zinit Discussions](https://github.com/zdharma-continuum/zinit/discussions) — Zinit Q&A
+
+</div>
 
 ---
 

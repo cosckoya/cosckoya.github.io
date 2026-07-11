@@ -175,22 +175,34 @@ rustup component add rust-analyzer
 ## :lucide-link: Resources
 
 **Official:**
+<div class="ref-cards" markdown>
+
 - :lucide-book: [NeoVim Docs](https://neovim.io/doc/) — Official documentation (`:help` inside Neovim)
 - :lucide-github: [GitHub](https://github.com/neovim/neovim) — 85k stars, source, issues
 - :lucide-wiki: [Wiki](https://github.com/neovim/neovim/wiki) — FAQ, tips, migration guides
-- :lucide-code: [Neovim API docs](https://neovim.io/doc/user/api.html) — Lua API reference
+- :lucide-code: [API docs](https://neovim.io/doc/user/api.html) — Lua API reference
+
+</div>
 
 **Learning:**
+<div class="ref-cards" markdown>
+
 - :lucide-book-open: [Learn Lua in Y minutes](https://learnxinyminutes.com/docs/lua/) — Lua primer (30 min)
-- :lucide-terminal: [`:Tutor`](https://neovim.io/doc/user/tutor.html) — Built-in interactive tutorial (run `:Tutor`)
+- :lucide-terminal: [`:Tutor`](https://neovim.io/doc/user/tutor.html) — Built-in interactive tutorial
 - :lucide-rocket: [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) — Start here for your own config
 - :lucide-star: [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim) — The definitive curated plugin list
 
+</div>
+
 **Communities:**
+<div class="ref-cards" markdown>
+
 - :lucide-reddit: [r/neovim](https://reddit.com/r/neovim) — 200k+ members, daily config showcases
 - :lucide-message-square: [Neovim Discourse](https://neovim.discourse.group/) — Official forum, RFCs
 - :lucide-message-circle: [Neovim Discord](https://discord.gg/neovim) — Active chat, plugin dev
 - :lucide-github: [GitHub Discussions](https://github.com/neovim/neovim/discussions) — Q&A, show and tell
+
+</div>
 
 ---
 

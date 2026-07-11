@@ -131,38 +131,62 @@ Kovid Goyal built Kitty because existing terminals couldn't keep up with his nee
 | **[Foot](https://codeberg.org/dnkl/foot)** | Wayland-native, minimal, fast | Linux-only, no GPU |
 
 **Customization ecosystem:**
-- **Theme galleries** — [kitty-themes](https://github.com/dexpota/kitty-themes) (200+), [Catppuccin](https://github.com/catppuccin/kitty), [Tokyo Night](https://github.com/davidmathers/tokyo-night-kitty-theme)
-- **Theme switcher** — `kitty +kitten themes` (built-in browser)
-- **Diff tool** — `kitty +kitten diff file1 file2` — side-by-side image-aware diff
-- **Clipboard manager** — `kitty +kitten clipboard` — history-aware clipboard
+<div class="ref-cards" markdown>
+
+- :lucide-palette: [kitty-themes](https://github.com/dexpota/kitty-themes) — 200+ community themes (Catppuccin, Tokyo Night, etc.)
+- :lucide-refresh-ccw: [Theme switcher](https://sw.kovidgoyal.net/kitty/kittens/themes/) — Built-in `kitty +kitten themes` browser
+- :lucide-git-compare: [Diff tool](https://sw.kovidgoyal.net/kitty/kittens/diff/) — Side-by-side image-aware `kitty +kitten diff`
+- :lucide-clipboard: [Clipboard](https://sw.kovidgoyal.net/kitty/kittens/clipboard/) — History-aware `kitty +kitten clipboard`
+
+</div>
 
 **Notable integrations:**
-- **[Neovim + image.nvim](https://github.com/3rd/image.nvim)** — Display images inline in Kitty
-- **[Ranger](https://github.com/ranger/ranger)** — File manager with image preview protocol
-- **SSH** — `kitty +kitten ssh` preserves all terminal features remotely
+<div class="ref-cards" markdown>
+
+- :lucide-code: [image.nvim](https://github.com/3rd/image.nvim) — Display images inline in Kitty + Neovim
+- :lucide-folder: [Ranger](https://github.com/ranger/ranger) — File manager with image preview protocol
+- :lucide-terminal: [Kitty SSH](https://sw.kovidgoyal.net/kitty/ssh/) — `kitty +kitten ssh` preserves all terminal features remotely
+
+</div>
 
 ---
 
 ## :lucide-link: Resources
 
 **Official:**
+<div class="ref-cards" markdown>
+
 - :lucide-book: [Kitty Documentation](https://sw.kovidgoyal.net/kitty/) — Complete reference
 - :lucide-github: [GitHub](https://github.com/kovidgoyal/kitty) — Source, issues, discussions
 - :lucide-history: [Changelog](https://sw.kovidgoyal.net/kitty/changelog/) — Version history
 
+</div>
+
 **Themes:**
+<div class="ref-cards" markdown>
+
 - :lucide-palette: [kitty-themes](https://github.com/dexpota/kitty-themes) — 200+ community themes
 - :lucide-palette: [Catppuccin Kitty](https://github.com/catppuccin/kitty) — Pastel theme port
 - :lucide-palette: [Tokyo Night Kitty](https://github.com/davidmathers/tokyo-night-kitty-theme) — Popular dark theme
 
+</div>
+
 **Learning:**
+<div class="ref-cards" markdown>
+
 - :lucide-book-open: [Kitty Config Reference](https://sw.kovidgoyal.net/kitty/conf/) — All config options
 - :lucide-terminal: [Kitty SSH Tutorial](https://sw.kovidgoyal.net/kitty/ssh/) — Remote setup guide
 - :lucide-code: [Kitten Tutorial](https://sw.kovidgoyal.net/kitty/kittens/custom/) — Write your own kittens
 
+</div>
+
 **Communities:**
+<div class="ref-cards" markdown>
+
 - :lucide-message-square: [GitHub Discussions](https://github.com/kovidgoyal/kitty/discussions) — Official Q&A
 - :lucide-reddit: [r/KittyTerminal](https://reddit.com/r/KittyTerminal) — User showcase, configs, themes
+
+</div>
 
 ---
 
