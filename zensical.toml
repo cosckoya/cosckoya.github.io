@@ -12,7 +12,7 @@ site_dir = "site"
 dev_addr = "127.0.0.1:8000"
 
 nav = [
-  { "Toolbox" = [
+  { "Terminal" = [
     { "NeoVim" = "toolbox/neovim.tool.md" },
     { "TMUX" = "toolbox/tmux.tool.md" },
     { "ZSH" = "toolbox/zsh.tool.md" },
