@@ -14,7 +14,6 @@ dev_addr = "127.0.0.1:8000"
 nav = [
   { "Toolbox" = [
     { "NeoVim" = "toolbox/neovim.tool.md" },
-    { "MISE" = "toolbox/mise.tool.md" },
     { "TMUX" = "toolbox/tmux.tool.md" },
     { "ZSH" = "toolbox/zsh.tool.md" },
     { "Kitty" = "toolbox/kitty.tool.md" },
