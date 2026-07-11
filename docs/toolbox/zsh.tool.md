@@ -218,180 +218,71 @@ Z Shell. Better than Bash, faster than oh-my-zsh. Zinit plugin manager gives you
 
 ---
 
-## :lucide-box: Essential Plugins
+## :lucide-star: Project & Author
 
-```bash
-# ============================================
-# THEME
-# ============================================
-
-# Powerlevel10k (best performance)
-zinit ice depth=1
-zinit light romkatv/powerlevel10k
-
-# Pure theme (minimalist alternative)
-# zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-# zinit light sindresorhus/pure
-
-# ============================================
-# CORE FUNCTIONALITY
-# ============================================
-
-# Syntax highlighting (fast fork)
-zinit light zdharma-continuum/fast-syntax-highlighting
-
-# Autosuggestions (fish-like)
-zinit light zsh-users/zsh-autosuggestions
-ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
-# Completions
-zinit light zsh-users/zsh-completions
-
-# History substring search
-zinit light zsh-users/zsh-history-substring-search
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-# ============================================
-# PRODUCTIVITY
-# ============================================
-
-# fzf (fuzzy finder)
-zinit ice from"gh-r" as"program"
-zinit light junegunn/fzf
-zinit snippet https://github.com/junegunn/fzf/blob/master/shell/completion.zsh
-zinit snippet https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
-
-# bat (better cat)
-zinit ice as"program" from"gh-r" mv"bat* -> bat" pick"bat/bat"
-zinit light sharkdp/bat
-
-# exa (better ls)
-zinit ice as"program" from"gh-r" mv"exa* -> exa"
-zinit light ogham/exa
-alias ls='exa'
-alias ll='exa -l'
-alias la='exa -la'
-
-# z (directory jumper)
-zinit light agkozak/zsh-z
-
-# ============================================
-# OH-MY-ZSH PLUGINS (cherry-pick)
-# ============================================
-
-# Git plugin
-zinit snippet OMZ::plugins/git/git.plugin.zsh
-
-# Docker plugin
-zinit snippet OMZ::plugins/docker/docker.plugin.zsh
-
-# Kubectl plugin
-zinit snippet OMZ::plugins/kubectl/kubectl.plugin.zsh
-
-# Terraform plugin
-zinit snippet OMZ::plugins/terraform/terraform.plugin.zsh
-
-# ============================================
-# DEVELOPMENT TOOLS
-# ============================================
-
-# asdf completions
-zinit ice wait lucid
-zinit snippet OMZ::plugins/asdf/asdf.plugin.zsh
-
-# NVM (if not using asdf)
-# zinit ice wait lucid
-# zinit snippet OMZ::plugins/nvm/nvm.plugin.zsh
-```
+| Aspect | Detail |
+|--------|--------|
+| **ZSH Author** | [Paul Falstad](https://www.falstad.com/) — created ZSH in 1990 at Princeton |
+| **Current ZSH maintainer** | [Peter Stephenson](https://www.zsh.org/mla/), [Oliver Kiddle](https://github.com/okiddle), et al. |
+| **Zinit (original)** | [Sebastian Gniazdowski](https://github.com/zdharma) — created Zinit, now inactive |
+| **Zinit (continuation)** | [zdharma-continuum](https://github.com/zdharma-continuum) — community fork that maintains Zinit |
+| **License** | ZSH: BSD-like / Zinit: MIT |
+| **Language** | C (ZSH) + Zsh script (Zinit) |
+| **Stars** | ZSH: ~38k / Zinit: ~3k |
+| **Since** | ZSH: 1990 / Zinit: 2019 |
+| **History** | ZSH started as a student project and grew into the most powerful shell for Unix. Zinit was created in 2019 as a faster alternative to oh-my-zsh, introducing Turbo mode and lazy loading. When the original author became inactive, the community forked it to zdharma-continuum to keep it alive. |
 
 ---
 
-## :lucide-terminal: Zinit Commands
+## :lucide-compass: Ecosystem & Customization
 
-```bash
-# Plugin management
-zinit self-update              # Update zinit itself
-zinit update                   # Update all plugins
-zinit update <plugin>          # Update specific plugin
-zinit delete <plugin>          # Delete plugin
-zinit list                     # List installed plugins
+**Which plugin manager should you use?**
 
-# Performance
-zinit times                    # Show plugin load times
-zinit report <plugin>          # Show plugin info
-zinit compile <plugin>         # Compile plugin for speed
+| Manager | Pros | Cons |
+|---------|------|------|
+| **Zinit** | Turbo mode, lazy loading, ~50ms startup | Complex syntax, fork history confusion |
+| **[Oh-My-ZSH](https://ohmyz.sh/)** | Huge plugin ecosystem, simple | ~500ms startup, loads everything |
+| **[Antidote](https://github.com/mattmc3/antidote)** | Fast, static cache, zsh_plugins.txt | Smaller ecosystem |
+| **[Sheldon](https://sheldon.cli.rs/)** | Rust-backed, TOML config | Newer, smaller community |
+| **[Starship](https://starship.rs/)** | Cross-shell prompt (not a PM) | Prompt only, no plugin management |
 
-# Debugging
-zinit status                   # Show zinit status
-zinit analytics                # Show usage analytics
-zinit help                     # Show help
+**Essential plugins (regardless of manager):**
+- **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)** — Fish-like suggestions as you type
+- **[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)** — Command syntax colors
+- **[zsh-completions](https://github.com/zsh-users/zsh-completions)** — Extra 9000+ completion definitions
+- **[zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)** — Type, press up arrow, find in history
+- **[fzf](https://github.com/junegunn/fzf)** — Fuzzy finder (completion, history, files)
 
-# Maintenance
-zinit cclear                   # Clear completions
-zinit csearch                  # Search for completion
-zinit creinstall <plugin>      # Reinstall completions
-```
-
----
-
-## :lucide-folder-tree: Powerlevel10k Setup
-
-```bash
-# Install Powerlevel10k
-zinit ice depth=1
-zinit light romkatv/powerlevel10k
-
-# Run configuration wizard
-p10k configure
-
-# Reload shell
-exec zsh
-
-# Reconfigure anytime
-p10k configure
-```
-
-**Recommended settings:**
-- Prompt style: Rainbow
-- Character set: Unicode
-- Show current time: 24-hour
-- Prompt separators: Angled
-- Prompt heads: Sharp
-- Prompt tails: Flat
-- Prompt height: Two lines
-- Prompt connection: Disconnected
-- Prompt frame: Left
-- Transient prompt: Yes
-- Instant prompt: Verbose
+**Notable configs to learn from:**
+- [Sindresorhus' pure theme](https://github.com/sindresorhus/pure) — Minimalist prompt, 10k+ stars
+- [Caarlos0's dotfiles](https://github.com/caarlos0/dotfiles) — Well-structured ZSH + tmux + Kitty
+- [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) — The OG macOS dotfiles
+- [Zinit Configs](https://github.com/zdharma-continuum/zinit-configs) — Example Zinit configurations
 
 ---
 
 ## :lucide-link: Resources
 
-**Zinit:**
-- **[Zinit Wiki](https://github.com/zdharma-continuum/zinit/wiki)** - Complete documentation
-- **[GitHub](https://github.com/zdharma-continuum/zinit)** - Source code
-- **[Zinit Configs](https://github.com/zdharma-continuum/zinit-configs)** - Example configs
-
 **ZSH:**
-- **[ZSH Manual](https://zsh.sourceforge.io/Doc/)** - Official documentation
-- **[ZSH Lovers](https://grml.org/zsh/zsh-lovers.html)** - Tips and tricks
-- **[Awesome ZSH](https://github.com/unixorn/awesome-zsh-plugins)** - Plugin list
+- :lucide-book: [ZSH Manual](https://zsh.sourceforge.io/Doc/) — Official documentation
+- :lucide-book: [ZSH Lovers](https://grml.org/zsh/zsh-lovers.html) — Tips, tricks, one-liners
+- :lucide-github: [ZSH GitHub](https://github.com/zsh-users/zsh) — Source and issues
+- :lucide-star: [Awesome ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins) — The definitive curated list
+
+**Zinit:**
+- :lucide-book: [Zinit Wiki](https://github.com/zdharma-continuum/zinit/wiki) — Complete docs
+- :lucide-github: [GitHub](https://github.com/zdharma-continuum/zinit) — Source, issues, discussions
+- :lucide-list: [Zinit Configs](https://github.com/zdharma-continuum/zinit-configs) — Example setups
 
 **Themes:**
-- **[Powerlevel10k](https://github.com/romkatv/powerlevel10k)** - Fast theme
-- **[Pure](https://github.com/sindresorhus/pure)** - Minimalist theme
-- **[Starship](https://starship.rs/)** - Cross-shell prompt (alternative)
-
-**Plugins:**
-- **[fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)** - Better highlighting
-- **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)** - Fish-like suggestions
-- **[zsh-completions](https://github.com/zsh-users/zsh-completions)** - Extra completions
+- :lucide-palette: [Powerlevel10k](https://github.com/romkatv/powerlevel10k) — Fastest ZSH theme (what we use)
+- :lucide-palette: [Pure](https://github.com/sindresorhus/pure) — Minimalist, beautiful
+- :lucide-palette: [Starship](https://starship.rs/) — Cross-shell prompt (alternative to Powerlevel10k)
 
 **Communities:**
-- **[r/zsh](https://reddit.com/r/zsh)** - Reddit community
-- **[ZSH Discord](https://discord.gg/zsh)** - Discord server
+- :lucide-reddit: [r/zsh](https://reddit.com/r/zsh) — Config showcases, troubleshooting
+- :lucide-message-circle: [ZSH Discord](https://discord.gg/zsh) — Active community
+- :lucide-message-square: [Zinit Discussions](https://github.com/zdharma-continuum/zinit/discussions) — Zinit Q&A
 
 ---
 

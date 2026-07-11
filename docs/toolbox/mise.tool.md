@@ -135,12 +135,50 @@ Pronounced "meez" (short for *mise-en-place*). One tool that replaces asdf, dire
 
 ---
 
+## :lucide-star: Project & Author
+
+| Aspect | Detail |
+|--------|--------|
+| **Creator** | [Jeff Dickey (jdx)](https://github.com/jdx/mise) — also created [aube](https://aube.jdx.dev) (Node PM), maintained [Heroku CLI](https://github.com/heroku/cli) |
+| **License** | MIT |
+| **Language** | Rust |
+| **Stars** | ~30.6k |
+| **Commits** | 7.4k+ |
+| **Release cadence** | Daily (v2026.7.x) |
+| **Former name** | `rtx` (renamed to MISE in 2024) |
+| **History** | jdx got tired of asdf's slow Bash shims. Wrote rtx in Rust as a drop-in replacement. Renamed to MISE in 2024. Now the most active tool in its category, with ThoughtWorks **Adopt** rating. |
+
+---
+
+## :lucide-compass: Ecosystem & Customization
+
+**What it replaces:**
+
+| Tool | Replaced by MISE | Why |
+|------|-----------------|-----|
+| **asdf** | `[tools]` section | Same `.tool-versions` compat, but Rust-fast, no shims |
+| **direnv** | `[env]` section | Per-project env vars without `.envrc` |
+| **Makefile** | `[tasks]` section | Run tasks with `mise run`, auto-installs dependencies first |
+
+**Notable integrations:**
+- **VS Code** — [MISE extension](https://marketplace.visualstudio.com/items?itemName=usernamehw.mise) for version switching in editor
+- **GitHub Actions** — [`jdx/mise-action`](https://github.com/jdx/mise-action) — setup tools in CI with caching
+- **Docker** — [`mise exec`](https://mise.en.dev/dev-tools/continuous-integration.html) — run tools inside containers without installing
+- **Dev Containers** — [`devcontainer-feature`](https://github.com/jdx/mise-devcontainer-feature) — MISE in dev containers
+
+**Community configs worth exploring:**
+- [mise.toml examples](https://github.com/jdx/mise/discussions/categories/show-and-tell) — GitHub Discussions show-and-tell
+- [dotfiles with MISE](https://github.com/search?q=mise.toml&type=code) — search for real-world `.mise.toml` files on GitHub
+
+---
+
 ## :lucide-link: Resources
 
 **Official:**
-- :lucide-book: [MISE Docs](https://mise.en.dev)
+- :lucide-book: [MISE Docs](https://mise.en.dev) — Complete reference
 - :lucide-github: [GitHub](https://github.com/jdx/mise) — 30.6k stars
 - :simple-git-compare: [Comparison to asdf](https://mise.en.dev/dev-tools/comparison-to-asdf.html)
+- :lucide-list: [Registry](https://mise.jdx.dev/registry.html) — 1000+ supported tools
 
 **Install:**
 - :lucide-download: [Quick install](https://mise.run) — `curl https://mise.run | sh`
@@ -148,13 +186,15 @@ Pronounced "meez" (short for *mise-en-place*). One tool that replaces asdf, dire
 - :lucide-box: [Crates.io](https://crates.io/crates/mise) — `cargo install mise`
 
 **Communities:**
-- :lucide-message-circle: [Discord](https://discord.gg/mABnUDvP57)
-- :lucide-message-square: [GitHub Discussions](https://github.com/jdx/mise/discussions)
-- :simple-x: [X/Twitter @jdxcode](https://x.com/jdxcode) — Creator
+- :lucide-message-circle: [Discord](https://discord.gg/mABnUDvP57) — Active, helpful
+- :lucide-message-square: [GitHub Discussions](https://github.com/jdx/mise/discussions) — Show-and-tell, Q&A
+- :simple-x: [X/Twitter @jdxcode](https://x.com/jdxcode) — Creator's account
+- :lucide-reddit: [r/devtools](https://reddit.com/r/devtools) — Occasional MISE threads
 
 **Related:**
-- :lucide-wrench: [aube](https://aube.jdx.dev) — Node.js PM by @jdx
+- :lucide-wrench: [aube](https://aube.jdx.dev) — Node.js PM by the same author
 - :lucide-wrench: [rtx](https://github.com/jdx/rtx) — Predecessor (renamed to MISE in 2024)
+- :lucide-wrench: [vfox](https://vfox.lhan.me/) — Alternative version manager (plugin-based, written in Go)
 
 ---
 

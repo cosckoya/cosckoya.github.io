@@ -125,176 +125,49 @@ Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sit
 
 ---
 
-## :lucide-box: Essential Plugins
+## :lucide-star: Project & Author
 
-### Core Setup
-
-```lua
-require("lazy").setup({
-  -- Colorscheme
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd([[colorscheme tokyonight-night]])
-    end,
-  },
-
-  -- File explorer
-  {
-    "nvim-tree/nvim-tree.lua",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-      require("nvim-tree").setup()
-      vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
-    end,
-  },
-
-  -- Fuzzy finder
-  {
-    "nvim-telescope/telescope.nvim",
-    tag = "0.1.5",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      local builtin = require('telescope.builtin')
-      vim.keymap.set('n', '<leader>ff', builtin.find_files)
-      vim.keymap.set('n', '<leader>fg', builtin.live_grep)
-      vim.keymap.set('n', '<leader>fb', builtin.buffers)
-    end,
-  },
-
-  -- Treesitter (syntax highlighting)
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = { "lua", "python", "javascript", "bash" },
-        highlight = { enable = true },
-        indent = { enable = true },
-      })
-    end,
-  },
-
-  -- LSP config
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      local lspconfig = require("lspconfig")
-      -- Example: Python LSP
-      lspconfig.pyright.setup{}
-      -- Example: Lua LSP
-      lspconfig.lua_ls.setup{}
-    end,
-  },
-
-  -- Autocompletion
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
-      "L3MON4D3/LuaSnip",
-    },
-    config = function()
-      local cmp = require("cmp")
-      cmp.setup({
-        mapping = {
-          ['<C-Space>'] = cmp.mapping.complete(),
-          ['<CR>'] = cmp.mapping.confirm({ select = true }),
-          ['<Tab>'] = cmp.mapping.select_next_item(),
-          ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-        },
-        sources = {
-          { name = 'nvim_lsp' },
-          { name = 'buffer' },
-          { name = 'path' },
-        },
-      })
-    end,
-  },
-
-  -- Status line
-  {
-    "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-      require("lualine").setup({
-        options = { theme = 'tokyonight' }
-      })
-    end,
-  },
-
-  -- Git signs
-  {
-    "lewis6991/gitsigns.nvim",
-    config = function()
-      require("gitsigns").setup()
-    end,
-  },
-
-  -- Auto pairs
-  {
-    "windwp/nvim-autopairs",
-    config = function()
-      require("nvim-autopairs").setup()
-    end,
-  },
-
-  -- Comment toggling
-  {
-    "numToStr/Comment.nvim",
-    config = function()
-      require("Comment").setup()
-    end,
-  },
-})
-```
+| Aspect | Detail |
+|--------|--------|
+| **Vim creator** | [Bram Moolenaar](https://www.moolenaar.net/) (1961–2023) — created Vim in 1991. RIP. |
+| **Neovim creator** | [Justin Keyes (tarruda)](https://github.com/tarruda) — started the fork in 2014 |
+| **Neovim maintainer** | [Justin M. Keyes (justinmk)](https://github.com/justinmk) — project lead since 2014, with [community team](https://github.com/neovim/neovim/blob/master/MAINTAINORS.md) |
+| **License** | Apache 2.0 (Neovim) / Vim (original Vim) |
+| **Language** | C (core), Lua (config/plugins), Vimscript (legacy compat) |
+| **Stars** | ~85k |
+| **Since** | Vim: 1991 / Neovim: 2014 (first stable: 2015) |
+| **History** | Neovim forked Vim to refactor the codebase, add async support, built-in LSP, and Lua as a first-class config language. It succeeded: most Vim users have migrated. Bram Moolenaar supported the fork before his passing. The project is now the de-facto standard modal editor. |
 
 ---
 
-## :lucide-terminal: LSP Setup
+## :lucide-compass: Ecosystem & Customization
 
-**Install language servers:**
+**Distributions (full config packs):**
 
+| Distro | Vibe | Best for |
+|--------|------|----------|
+| **[LazyVim](https://www.lazyvim.org/)** | Batteries-included, LunarVim successor | Most users — sensible defaults, easy customization |
+| **[NvChad](https://nvchad.com/)** | Fast, UI-focused, dark theme | People who want a beautiful editor out of the box |
+| **[AstroNvim](https://astronvim.com/)** | Modular, community-driven | Users who like to pick and choose |
+| **[kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)** | Minimal, educational | Learning to build your own config |
+
+**Core plugins everyone uses:**
+
+| Plugin | Purpose | Notes |
+|--------|---------|-------|
+| **[lazy.nvim](https://github.com/folke/lazy.nvim)** | Plugin manager | De-facto standard, lazy loading, 36k stars |
+| **[Telescope](https://github.com/nvim-telescope/telescope.nvim)** | Fuzzy finder | Files, grep, buffers, LSP, git — everything |
+| **[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)** | Syntax parsing | Better highlighting, code navigation, folding |
+| **[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)** | LSP integration | 100+ language servers, zero-config for many |
+| **[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)** | Autocompletion | LSP + buffer + path + snippet sources |
+| **[Comment.nvim](https://github.com/numToStr/Comment.nvim)** | Comment toggling | `gc` to comment, `gb` for block comments |
+
+**LSP servers to install:**
 ```bash
-# Python
-npm install -g pyright
-
-# JavaScript/TypeScript
-npm install -g typescript typescript-language-server
-
-# Lua
-brew install lua-language-server  # macOS
-# or
-cargo install stylua              # Formatter
-
-# Bash
-npm install -g bash-language-server
-
-# Go
+npm install -g pyright typescript typescript-language-server bash-language-server
+brew install lua-language-server      # macOS
 go install golang.org/x/tools/gopls@latest
-
-# Rust
 rustup component add rust-analyzer
-```
-
-**LSP keybindings:**
-
-```lua
--- Add to init.lua after LSP setup
-vim.api.nvim_create_autocmd('LspAttach', {
-  callback = function(ev)
-    local opts = { buffer = ev.buf }
-    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-    vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-    vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
-    vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
-    vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-  end,
-})
 ```
 
 ---
@@ -302,21 +175,22 @@ vim.api.nvim_create_autocmd('LspAttach', {
 ## :lucide-link: Resources
 
 **Official:**
-- **[NeoVim Docs](https://neovim.io/doc/)** - Official documentation
-- **[GitHub](https://github.com/neovim/neovim)** - Source code and issues
-- **[Wiki](https://github.com/neovim/neovim/wiki)** - Community wiki
+- :lucide-book: [NeoVim Docs](https://neovim.io/doc/) — Official documentation (`:help` inside Neovim)
+- :lucide-github: [GitHub](https://github.com/neovim/neovim) — 85k stars, source, issues
+- :lucide-wiki: [Wiki](https://github.com/neovim/neovim/wiki) — FAQ, tips, migration guides
+- :lucide-code: [Neovim API docs](https://neovim.io/doc/user/api.html) — Lua API reference
 
 **Learning:**
-- **[kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)** - Minimal starter config
-- **[Learn Lua in Y minutes](https://learnxinyminutes.com/docs/lua/)** - Lua primer
-- **`:Tutor`** - Built-in Vim tutorial (run in nvim)
+- :lucide-book-open: [Learn Lua in Y minutes](https://learnxinyminutes.com/docs/lua/) — Lua primer (30 min)
+- :lucide-terminal: [`:Tutor`](https://neovim.io/doc/user/tutor.html) — Built-in interactive tutorial (run `:Tutor`)
+- :lucide-rocket: [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) — Start here for your own config
+- :lucide-star: [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim) — The definitive curated plugin list
 
 **Communities:**
-- **[r/neovim](https://reddit.com/r/neovim)** - Reddit community (200k+ members)
-- **[Neovim Discourse](https://neovim.discourse.group/)** - Official forum
-
-**Awesome Plugins:**
-- **[Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)** - Curated plugin list
+- :lucide-reddit: [r/neovim](https://reddit.com/r/neovim) — 200k+ members, daily config showcases
+- :lucide-message-square: [Neovim Discourse](https://neovim.discourse.group/) — Official forum, RFCs
+- :lucide-message-circle: [Neovim Discord](https://discord.gg/neovim) — Active chat, plugin dev
+- :lucide-github: [GitHub Discussions](https://github.com/neovim/neovim/discussions) — Q&A, show and tell
 
 ---
 
