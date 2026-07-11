@@ -1,9 +1,9 @@
 ---
-title: NeoVim
+title: Neovim
 description: Modern Vim fork with Lua configuration and LSP support - your terminal text editor that doesn't suck
 ---
 
-# :lucide-code: NeoVim
+# :lucide-code: Neovim
 
 Modern Vim fork built for extensibility. Native LSP, Lua configuration, Tree-sitter syntax, async everything. Vim keybindings without the technical debt. No Vimscript hell, just Lua.
 
