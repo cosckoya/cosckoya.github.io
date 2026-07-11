@@ -74,8 +74,8 @@ name = "Switch to system preference"
 [[theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
-primary = "indigo"
-accent = "deep purple"
+primary = "blue-grey"
+accent = "green"
 [theme.palette.toggle]
 icon = "lucide/sun"
 name = "Switch to dark mode"
@@ -83,8 +83,8 @@ name = "Switch to dark mode"
 [[theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
-primary = "red"
-accent = "lime"
+primary = "green"
+accent = "light-green"
 [theme.palette.toggle]
 icon = "lucide/moon"
 name = "Switch to light mode"
