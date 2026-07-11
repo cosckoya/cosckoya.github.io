@@ -1,25 +1,26 @@
 ---
 title: Home
-description: Cosckoya's personal knowledge base — terminal tools, workflow hacks, and curated references
+description: Cosckoya's personal knowledge base — curated references, fantasy lore, and things worth remembering
 ---
 
 ![!](resources/img/rorschach.png#center)
 
-# :lucide-wrench: It's dangerous to go alone!
+# :lucide-skull: It's dangerous to go alone!
 
-Personal knowledge base. Terminal tools, workflow hacks, and things worth remembering. No marketing fluff, no enterprise buzzwords — just practical technical content written by someone who actually uses this stuff.
+Architect of cloud-native systems and resilient infrastructures. JRPG fanatic, film devourer, 3DS homebrewer. This is my personal reference vault — curated links, ecosystem maps, and things I don't want to Google twice.
+
+📍 Madrid, ES · Multi-cloud AI infra · DevSecOps · Platform Engineering
 
 ---
 
-## :lucide-toolbox: What's Here
+## :lucide-compass: What's Here
 
 | Section | What you'll find |
 |---------|-----------------|
-| :lucide-wrench: **Toolbox** | Terminal tools that make life bearable — NeoVim, tmux, Kitty, ZSH, MISE |
-| :lucide-swords: **Awesome** | Curated references — Sword & Sorcery reading lists, fantasy lore, tabletop RPGs |
+| :lucide-swords: **Awesome** | Curated references — Sword & Sorcery reading lists, fantasy lore, tabletop RPGs, Warhammer, MTG |
 
 Use the sidebar to navigate, or hit ++s++ to search.
 
 ---
 
-**Last Updated:** 2026-07-11 | **Vibe Check:** :lucide-wrench: **Tool Shed** — Terminal tools and workflow hacks for people who live in the command line.
+**Last Updated:** 2026-07-11 | **Vibe Check:** :lucide-skull: **Reference Vault** — Curated links and ecosystem maps for things worth remembering.
