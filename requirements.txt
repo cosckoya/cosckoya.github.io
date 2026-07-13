@@ -7,7 +7,7 @@ zensical==0.0.47
 
 # Development Tools (pinned exact)
 codespell==2.4.2
-ruff==0.15.20
+ruff==0.15.21
 bandit==1.9.4
 yamllint==1.38.0
 
