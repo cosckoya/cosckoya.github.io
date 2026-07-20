@@ -3,7 +3,7 @@
 # ALL dependencies pinned to exact versions for reproducible builds.
 
 # Build engine
-zensical==0.0.47
+zensical==0.0.51
 
 # Development Tools (pinned exact)
 codespell==2.4.2
