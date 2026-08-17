@@ -7,9 +7,9 @@ zensical==0.0.51
 
 # Development Tools (pinned exact)
 codespell==2.4.3
-ruff==0.16.0
+ruff==0.16.3
 bandit==1.9.4
 yamllint==1.38.0
 
 # Pre-commit (pinned exact)
-pre-commit==4.6.1
+pre-commit==4.6.2
