@@ -29,17 +29,20 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **Beowulf** - Anonymous Anglo-Saxon epic (dragon slaying, monsters, heroism)
 
 **Classical Mythology Collections:**
+
 - **Edith Hamilton** - Mythology (accessible introduction to Greek/Roman myths)
 - **Ovid** - Metamorphoses (Roman mythological transformations)
 - **Norse Mythology** - Poetic Edda, Prose Edda (Thor, Odin, Ragnarök)
 
 **Free Resources:**
+
 - **[Project Gutenberg Mythology](https://www.gutenberg.org/ebooks/bookshelf/60)** - Classical texts (public domain)
 - **[Sacred Texts](https://www.sacred-texts.com/)** - Mythology and folklore archives
 - **[Theoi Project](https://www.theoi.com/)** - Greek mythology encyclopedia
 - **[Perseus Digital Library](http://www.perseus.tufts.edu/)** - Classical literature database
 
 **Why They Matter:**
+
 - Epic heroes' journeys (Odysseus, Achilles, Aeneas, Beowulf)
 - Gods interfering with mortals (Zeus, Athena, Odin)
 - Legendary weapons (Achilles' armor, Excalibur)
@@ -47,6 +50,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - Direct inspiration for D&D, Tolkien, and all modern fantasy
 
 **Communities:**
+
 - **[r/mythology](https://reddit.com/r/mythology)** - General mythology discussions (300k+ members)
 - **[r/GreekMythology](https://reddit.com/r/GreekMythology)** - Greek myths (200k+ members)
 - **[r/Norse](https://reddit.com/r/Norse)** - Norse culture and mythology (150k+ members)
@@ -57,17 +61,20 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
     Barbarians, sorcerers, demons, and adventure. The original grimdark before grimdark had a name.
 
 **The Big Three:**
+
 - **Robert E. Howard** - Conan the Barbarian, Solomon Kane, Kull of Atlantis (original barbarian, 1930s pulp)
 - **Fritz Leiber** - Fafhrd and the Gray Mouser (definitive S&S duo, seven volumes)
 - **Michael Moorcock** - Elric of Melniboné, Eternal Champion (albino anti-hero with soul-drinking sword)
 
 **Other Pulp Masters:**
+
 - **Clark Ashton Smith** - Zothique, Hyperborea, Averoigne (dying Earth, weird fantasy)
 - **Jack Vance** - The Dying Earth, Lyonesse (inspired D&D magic system)
 - **C.L. Moore** - Jirel of Joiry (first female S&S protagonist, 1930s)
 - **Karl Edward Wagner** - Kane (immortal anti-hero, underrated gem)
 
 **Free Resources:**
+
 - **[Project Gutenberg](https://www.gutenberg.org/)** - Many classics in public domain
 - **[The H.P. Lovecraft Archive](https://www.hplovecraft.com/)** - Lovecraft's complete works
 - **[Internet Archive](https://archive.org/)** - Pulp magazine archives
@@ -78,6 +85,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
     These authors transformed fantasy from pulp magazines into literary epics. Middle-earth changed everything.
 
 **J.R.R. Tolkien (The Foundation):**
+
 - **The Lord of the Rings** - The trilogy that defined modern fantasy
 - **The Silmarillion** - Middle-earth creation mythology and First Age
 - **The Hobbit** - Where it all began
@@ -85,6 +93,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 - **[r/tolkienfans](https://reddit.com/r/tolkienfans)** - Lore-focused community (600k+ members)
 
 **Other Foundations:**
+
 - **Ursula K. Le Guin** - Earthsea Cycle (coming-of-age wizard saga)
 - **Terry Pratchett** - Discworld (40+ books, satirical fantasy, Death, Rincewind, the Watch)
 - **R.A. Salvatore** - Legend of Drizzt, Forgotten Realms (Drizzt Do'Urden, dark elf ranger)
@@ -99,6 +108,7 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
     Modern fantasy pushing boundaries with complex magic systems, morally grey characters, and epic scope. Kvothe, Westeros, and the Cosmere await.
 
 **Major Authors:**
+
 - **George R.R. Martin** - A Song of Ice and Fire (grimdark politics, no plot armor) | [Wiki](https://awoiaf.westeros.org/) | [r/asoiaf](https://reddit.com/r/asoiaf)
 - **Patrick Rothfuss** - The Kingkiller Chronicle (Kvothe, Name of the Wind) | [r/KingkillerChronicle](https://reddit.com/r/KingkillerChronicle)
 - **Brandon Sanderson** - Cosmere Universe (Mistborn, Stormlight Archive, hard magic) | [Coppermind](https://coppermind.net/) | [r/Cosmere](https://reddit.com/r/Cosmere)
@@ -501,6 +511,6 @@ Many fantasy classics are entering public domain (Conan stories pre-1928, early 
 
 ---
 
-**Last Updated:** 2026-02-03 | **Vibe Check:** :lucide-swords: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
+**Last Updated:** 2026-08-20 | **Vibe Check:** :lucide-swords: Steel and sorcery from ancient epics to modern grimdark. Public domain gold, passionate communities, OSR renaissance. Roll for initiative.
 
 **Tags:** fantasy, sword-and-sorcery, dungeons-and-dragons, warhammer, tolkien, martin, rothfuss, pratchett, drizzt, conan, elric, magic-the-gathering, elder-scrolls, pathfinder, tabletop-rpg, osr, grimdark, epic-fantasy
