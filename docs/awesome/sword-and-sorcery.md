@@ -109,10 +109,16 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 
 **Major Authors:**
 
-- **George R.R. Martin** - A Song of Ice and Fire (grimdark politics, no plot armor) | [Wiki](https://awoiaf.westeros.org/) | [r/asoiaf](https://reddit.com/r/asoiaf)
-- **Patrick Rothfuss** - The Kingkiller Chronicle (Kvothe, Name of the Wind) | [r/KingkillerChronicle](https://reddit.com/r/KingkillerChronicle)
-- **Brandon Sanderson** - Cosmere Universe (Mistborn, Stormlight Archive, hard magic) | [Coppermind](https://coppermind.net/) | [r/Cosmere](https://reddit.com/r/Cosmere)
-- **Joe Abercrombie** - The First Law (dark humor, no heroes) | [r/TheFirstLaw](https://reddit.com/r/TheFirstLaw)
+- **George R.R. Martin** - A Song of Ice and Fire (grimdark politics, no plot armor)
+    - [Wiki of Ice and Fire](https://awoiaf.westeros.org/)
+    - [r/asoiaf](https://reddit.com/r/asoiaf)
+- **Patrick Rothfuss** - The Kingkiller Chronicle (Kvothe, Name of the Wind)
+    - [r/KingkillerChronicle](https://reddit.com/r/KingkillerChronicle)
+- **Brandon Sanderson** - Cosmere Universe (Mistborn, Stormlight Archive, hard magic)
+    - [Coppermind](https://coppermind.net/)
+    - [r/Cosmere](https://reddit.com/r/Cosmere)
+- **Joe Abercrombie** - The First Law (dark humor, no heroes)
+    - [r/TheFirstLaw](https://reddit.com/r/TheFirstLaw)
 - **Steven Erikson** - Malazan Book of the Fallen (10-book epic)
 - **Robin Hobb** - Realm of the Elderlings (Farseer, character-driven)
 - **Brent Weeks** - Lightbringer, Night Angel
@@ -125,17 +131,38 @@ Curated collection of fantasy and sword & sorcery resources. Epic fantasy, grimd
 !!! warning "No Heroes Here - Where Dark Meets Darker"
     Brutal, unforgiving, morally ambiguous. Cosmic horror meets grimdark.
 
-**Grimdark:** Glen Cook (The Black Company - original grimdark), Richard K. Morgan (The Steel Remains), Anna Smith Spark (Empires of Dust) | [r/grimdark](https://reddit.com/r/grimdark)
+**Grimdark:**
 
-**Horror Fantasy:** H.P. Lovecraft (Cthulhu Mythos, public domain) | [Mythos Wiki](https://lovecraft.fandom.com/), Clive Barker (Hellbound Heart), China Miéville (Perdido Street Station)
+- **Glen Cook** - The Black Company (original grimdark)
+- **Richard K. Morgan** - The Steel Remains
+- **Anna Smith Spark** - Empires of Dust
+- **[r/grimdark](https://reddit.com/r/grimdark)** - Grimdark community
+
+**Horror Fantasy:**
+
+- **H.P. Lovecraft** - Cthulhu Mythos (public domain) | [Mythos Wiki](https://lovecraft.fandom.com/)
+- **Clive Barker** - Hellbound Heart
+- **China Miéville** - Perdido Street Station
 
 ### :lucide-globe: General Fantasy Resources
 
-**Communities:** [r/Fantasy](https://reddit.com/r/Fantasy) (2M+) • [r/books](https://reddit.com/r/books) (22M+) • [r/PrintSF](https://reddit.com/r/printSF) (200k+)
+**Communities:**
 
-**Lists:** [Goodreads Fantasy](https://www.goodreads.com/shelf/show/fantasy) • [Appendix N](https://en.wikipedia.org/wiki/Appendix_N) • [r/Fantasy Top Novels](https://www.reddit.com/r/Fantasy/wiki/lists/top_novels/)
+- [r/Fantasy](https://reddit.com/r/Fantasy) (2M+) - General fantasy community
+- [r/books](https://reddit.com/r/books) (22M+) - General books community
+- [r/PrintSF](https://reddit.com/r/printSF) (200k+) - Speculative fiction
 
-**YouTube:** [Daniel Greene](https://www.youtube.com/@DanielGreeneReviews) • [Merphy Napier](https://www.youtube.com/@MerphyNapier) • [Mike's Book Reviews](https://www.youtube.com/@MikesBookReviews)
+**Lists:**
+
+- [Goodreads Fantasy](https://www.goodreads.com/shelf/show/fantasy) - Reader-ranked fantasy shelf
+- [Appendix N](https://en.wikipedia.org/wiki/Appendix_N) - The reading list that built D&D
+- [r/Fantasy Top Novels](https://www.reddit.com/r/Fantasy/wiki/lists/top_novels/) - Community-voted rankings
+
+**YouTube:**
+
+- [Daniel Greene](https://www.youtube.com/@DanielGreeneReviews) - Fantasy reviews and news
+- [Merphy Napier](https://www.youtube.com/@MerphyNapier) - Book reviews and reading vlogs
+- [Mike's Book Reviews](https://www.youtube.com/@MikesBookReviews) - Fantasy deep dives
 
 ---
 
