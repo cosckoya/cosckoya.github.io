@@ -15,7 +15,6 @@ nav = [
   { "API" = [
     { "Python API Development" = "api/python-api.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
-    { "Azure DevOps" = "api/azure-devops.service.md" },
   ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },

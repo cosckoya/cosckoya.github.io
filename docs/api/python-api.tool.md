@@ -88,7 +88,6 @@ The modern Python API stack is FastAPI + Pydantic + pytest/httpx, and it's the c
 **Related:**
 
 - :lucide-shield-check: __Spectral__ — lint your OpenAPI specs
-- :material-microsoft-azure-devops: __Azure DevOps__ — CI/CD for your API
 
 ---
 

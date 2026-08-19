@@ -88,7 +88,6 @@ Stoplight Spectral is the linter for API contracts. It reads your OpenAPI (or As
 **Related:**
 
 - :simple-fastapi: __Python API Development__ — FastAPI generates specs worth linting
-- :material-microsoft-azure-devops: __Azure DevOps__ — hook Spectral into pipeline gating
 
 ---
 
