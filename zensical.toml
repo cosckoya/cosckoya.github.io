@@ -12,6 +12,11 @@ site_dir = "site"
 dev_addr = "127.0.0.1:8000"
 
 nav = [
+  { "API" = [
+    { "Python API Development" = "api/python-api.tool.md" },
+    { "Spectral" = "api/spectral.tool.md" },
+    { "Azure DevOps" = "api/azure-devops.service.md" },
+  ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
