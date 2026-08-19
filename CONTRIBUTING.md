@@ -6,7 +6,6 @@ Guide for humans adding or editing documentation on this site.
 
 ```bash
 git checkout develop
-source venv/bin/activate
 make serve    # Live preview at localhost:8000
 ```
 

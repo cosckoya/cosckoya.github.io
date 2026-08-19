@@ -157,39 +157,38 @@ Cloud platform that runs half the internet. 200+ services (you'll use maybe 10).
 
     ```bash
     # Install dependencies
-    source venv/bin/activate
-    pip install -r requirements.txt
+    make deps
 
     # Run server with live reload
-    zensical serve
+    uv run zensical serve
     ```
 
     **Real talk:**
-    - Always use virtual environments. No exceptions.
-    - Lock your dependencies (pip freeze > requirements.txt).
+    - Always use the uv-managed environment. No exceptions.
+    - Lock your dependencies in `requirements.txt` (pinned exact).
 
 === ":lucide-bolt: Common Patterns"
 
     ```bash
     # One-line setup after cloning
-    make venv && source venv/bin/activate && make deps
+    make venv && make deps
     ```
 
     **Why this works:**
     - Makefile abstracts complexity — new contributors don't need to know Python packaging
     - `make venv` + `make deps` is idempotent (safe to rerun)
-    - CI and local dev use the same path
+    - CI and local dev use the same path (uv + Python 3.14)
 
 === ":lucide-fire: Pro Tips & Gotchas"
 
     **Tips:**
     - Use `make validate` before every commit
-    - Add `venv/` to `.gitignore` (it is — check first)
-    - Pin Python 3.12 in `pyproject.toml` consistently
+    - `venv/` is already in `.gitignore` — check first
+    - Pin Python 3.14 in `pyproject.toml` consistently
 
     **Gotchas:**
     - `zensical build --strict` fails on warnings — run this, not plain `zensical build`
-    - Forgetting `source venv/bin/activate` means system Python — things WILL break
+    - Forgetting `make deps` after a fresh clone means missing packages — things WILL break
 
 ---
 
@@ -289,7 +288,7 @@ Reusable content macros via `zensical.extensions.macros`. Define snippets once, 
 **Documentation:**
 
 - :lucide-book: [Official Docs]({{DOCS_URL}})
-- :lucide-github: [GitHub]({{GITHUB_URL}})
+- :simple-github: [GitHub]({{GITHUB_URL}})
 
 **Related:**
 

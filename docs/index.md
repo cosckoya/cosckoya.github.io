@@ -5,9 +5,10 @@ description: Cosckoya's personal knowledge base — curated references, fantasy 
 
 ![!](resources/img/rorschach.png#center)
 
-# :lucide-skull: It's dangerous to go alone!
+By day: architect of cloud-native systems that (mostly) don't fall over.
+By night: JRPG completionist, film hoarder, and someone who's flashed more custom firmware onto a 3DS than is probably healthy.
 
-Architect of cloud-native systems and resilient infrastructures. JRPG fanatic, film devourer, 3DS homebrewer. This is my personal reference vault — curated links, ecosystem maps, and things I don't want to Google twice.
+This is my digital junk drawer — except organized, searchable, and full of things I refuse to Google a second time.
 
 📍 Madrid, ES · Multi-cloud AI infra · DevSecOps · Platform Engineering
 
@@ -17,10 +18,10 @@ Architect of cloud-native systems and resilient infrastructures. JRPG fanatic, f
 
 | Section | What you'll find |
 |---------|-----------------|
-| :lucide-swords: **Awesome** | Curated references — Sword & Sorcery reading lists, fantasy lore, tabletop RPGs, Warhammer, MTG |
+| :lucide-swords: **Awesome** | Sword & Sorcery reading lists, fantasy lore, tabletop RPGs, Warhammer, MTG — the good stuff |
 
-Use the sidebar to navigate, or hit ++s++ to search.
+Use the sidebar to navigate, or hit ++s++ to search like you actually know what you're doing.
 
 ---
 
-**Last Updated:** 2026-07-11 | **Vibe Check:** :lucide-skull: **Reference Vault** — Curated links and ecosystem maps for things worth remembering.
+**Last Updated:** 2026-07-11 | **Vibe Check:** :lucide-skull: **Reference Vault** — curated links and ecosystem maps, save scummed for quality.

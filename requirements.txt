@@ -1,15 +1,16 @@
 # Zensical Documentation Site - Core Dependencies
-# Updated: 2026-07-08
+# Updated: 2026-08-20
+# Python 3.14 - managed via uv (see Makefile)
 # ALL dependencies pinned to exact versions for reproducible builds.
 
 # Build engine
-zensical==0.0.51
+zensical==0.0.56
 
 # Development Tools (pinned exact)
 codespell==2.4.3
-ruff==0.16.0
+ruff==0.16.3
 bandit==1.9.4
 yamllint==1.38.0
 
 # Pre-commit (pinned exact)
-pre-commit==4.6.1
+pre-commit==4.6.2

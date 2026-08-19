@@ -8,7 +8,7 @@ Single source of truth for this Zensical documentation site — all project stat
 
 - **Type:** Zensical documentation site hosted at https://cosckoya.github.io
 - **Deploy:** GitHub Pages, auto-deploys `main` branch via GitHub Actions (`.github/workflows/gh-pages.yml`)
-- **Python:** 3.12 only — pinned in `pyproject.toml` and CI workflow
+- **Python:** 3.14 only — pinned in `pyproject.toml` (`requires-python`) and CI workflow. Managed via **uv** (`uv venv` + `uv pip install`, env at `venv/`).
 - **Theme variant:** `modern` — auto light/dark mode (Lucide toggle: `lucide/sun-moon`), scheme: `default`/`slate`, primary: `deep purple`/`purple`, accent: `teal`/`lime`
 - **Icon system:** All icons unified under Lucide (`:lucide-...:`) for inline content. Brand icons in theme config use `simple/` (github, gitlab, x, devdotto, docker) or `material/linkedin` where no Simple/Lucide SVG exists in the theme bundle.
 - **Zero FontAwesome references** in the entire repository — fully migrated.
@@ -18,17 +18,18 @@ Single source of truth for this Zensical documentation site — all project stat
 ## Critical Commands
 
 ```bash
-source venv/bin/activate          # Always activate first
-zensical serve                    # Dev server with live reload at localhost:8000
-zensical build --strict           # Build with strict mode (warnings = errors)
+make venv                         # Create Python 3.14 venv via uv
+make deps                         # Install pinned deps (zensical, ruff, codespell, ...) via uv
+uv run zensical serve             # Dev server with live reload at localhost:8000
+uv run zensical build --strict    # Build with strict mode (warnings = errors)
 make validate                     # Same as zensical build --strict
 make build                        # Build without strict mode
 make clean                        # Remove site/ directory
-make lint                         # ruff, codespell, yamllint (non-blocking)
+make lint                         # ruff, codespell (non-blocking)
 make health                       # Run health check script (placeholders, orphans, Vibe Checks)
-make venv                         # Create Python virtual environment
-make deps                         # Install zensical in venv
 ```
+
+> **uv:** All commands run through `uv run` (uses `venv/` via `UV_PROJECT_ENVIRONMENT`). Never create a separate `.venv`.
 
 ---
 
@@ -41,7 +42,7 @@ make deps                         # Install zensical in venv
 ├── CONTRIBUTING.md           # Human contributor guide
 ├── zensical.toml                # Full Zensical config (theme, nav, extensions, plugins)
 ├── requirements.txt          # zensical pinned with rationale comments
-├── pyproject.toml            # Python 3.12 pin
+├── pyproject.toml            # Python 3.14 pin
 ├── Makefile                  # Targets: serve, build, validate, clean, lint, health
 ├── .yamllint.yml             # yamllint config
 ├── scripts/
@@ -210,7 +211,7 @@ codespell docs/ --skip='*.png,*.jpg,*.svg'
 
 ## Health Check
 
-Run `make health` (or `source venv/bin/activate && python3 scripts/health.py`):
+Run `make health` (or `uv run python scripts/health.py`):
 
 Checks for:
 - **Orphaned files** — `.md` files in `docs/` not referenced in `nav:` in `zensical.toml`
@@ -230,8 +231,8 @@ Workflow: `.github/workflows/gh-pages.yml`
 
 ```
 1. Lint (ruff + codespell + yamllint)
-2. Setup Python 3.12
-3. pip install zensical
+2. Setup Python 3.14
+3. pip install zensical==0.0.56
 4. python scripts/health.py --ci
 5. zensical build --clean --strict
 6. Upload Pages Artifact
@@ -269,7 +270,7 @@ Workflow: `.github/workflows/gh-pages.yml`
 | `zensical.toml` | Theme, navigation, extensions, validation — primary config |
 | `opencode.json` | OpenCode permissions, model config (qwen2.5-coder:7b local), skills |
 | `.opencodeignore` | Exclusion patterns for OpenCode context |
-| `pyproject.toml` | Python 3.12 constraint |
+| `pyproject.toml` | Python 3.14 constraint |
 | `requirements.txt` | `zensical` pinned with rationale comments |
 | `Makefile` | Targets: serve, build, validate, clean, lint, health, venv, deps |
 | `.yamllint.yml` | yamllint rules (legacy, no longer used) |
