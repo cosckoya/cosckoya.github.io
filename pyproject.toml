@@ -13,4 +13,4 @@ ignore = ["E501"]
 
 [tool.codespell]
 skip = "venv,site,.git,*.png,*.jpg,*.svg,*.ico,requirements-lock.txt"
-ignore-words-list = "ciso,cosckoya,aks,ot"
+ignore-words-list = "ciso,cosckoya,aks,ot,Arges,Ther,te,Gastly"
