@@ -24,10 +24,8 @@ nav = [
     { "World Mythology" = [
       { "Classical Mythology" = "awesome/bestiary/classical.bestiary.md" },
       { "Norse & Celtic" = "awesome/bestiary/norse-celtic.bestiary.md" },
-      { "Basque" = "awesome/bestiary/basque.bestiary.md" },
       { "Spain & Iberian" = "awesome/bestiary/espana.bestiary.md" },
-      { "Latin America: Mexico" = "awesome/bestiary/mexico.bestiary.md" },
-      { "Latin America: Venezuela" = "awesome/bestiary/venezuela.bestiary.md" },
+      { "Latin America" = "awesome/bestiary/latinoamerica.bestiary.md" },
       { "Yokai (Japan)" = "awesome/bestiary/yokai.bestiary.md" },
     ]},
     { "Literary & Gothic" = [

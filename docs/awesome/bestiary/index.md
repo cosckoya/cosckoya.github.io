@@ -20,10 +20,8 @@ Monsters from every corner of myth, folklore, and fiction. Greek nightmares, Bas
 |--------|---------------|------|
 | :lucide-eye: **Classical Mythology** | Cyclops, Hydra, Medusa, Minotaur, Cerberus — the Greek and Roman nightmares | [:lucide-arrow-right: Explore](classical.bestiary.md) |
 | :lucide-moon: **Norse & Celtic** | Fenrir, Jörmungandr, Kraken, Draugr — ice, iron, and the end of the world | [:lucide-arrow-right: Explore](norse-celtic.bestiary.md) |
-| :lucide-tree-pine: **Basque** | Basajaun, Tartalo, Herensuge — the old gods of the Pyrenees | [:lucide-arrow-right: Explore](basque.bestiary.md) |
-| :lucide-castle: **Spain & Iberian** | El Coco, Santa Compaña, Culebre — the regional folklore of the peninsula | [:lucide-arrow-right: Explore](espana.bestiary.md) |
-| :material-sun-wireless: **Latin America: Mexico** | La Llorona, Ahuizotl, Cipactli — from the Aztec deep to colonial legend | [:lucide-arrow-right: Explore](mexico.bestiary.md) |
-| :lucide-wind: **Latin America: Venezuela** | El Silbón, La Sayona, El Coco — the whistlers of the llanos | [:lucide-arrow-right: Explore](venezuela.bestiary.md) |
+| :lucide-castle: **Spain & Iberian** | El Coco, Santa Compaña, Culebre, Basajaun — the regional folklore of the peninsula | [:lucide-arrow-right: Explore](espana.bestiary.md) |
+| :material-map: **Latin America** | La Llorona, Ahuizotl, El Silbón — the legends of Mexico and Venezuela | [:lucide-arrow-right: Explore](latinoamerica.bestiary.md) |
 | :lucide-sparkles: **Yokai (Japan)** | Kappa, Tengu, Oni, Kitsune — the supernatural spirits of Japan | [:lucide-arrow-right: Explore](yokai.bestiary.md) |
 
 ### :lucide-book: Literary & Gothic
