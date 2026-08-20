@@ -19,6 +19,32 @@ nav = [
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
+  { "Bestiary" = [
+    "awesome/bestiary/index.md",
+    { "World Mythology" = [
+      { "Classical Mythology" = "awesome/bestiary/classical.bestiary.md" },
+      { "Norse & Celtic" = "awesome/bestiary/norse-celtic.bestiary.md" },
+      { "Basque" = "awesome/bestiary/basque.bestiary.md" },
+      { "Spain & Iberian" = "awesome/bestiary/espana.bestiary.md" },
+      { "Latin America: Mexico" = "awesome/bestiary/mexico.bestiary.md" },
+      { "Latin America: Venezuela" = "awesome/bestiary/venezuela.bestiary.md" },
+      { "Yokai (Japan)" = "awesome/bestiary/yokai.bestiary.md" },
+    ]},
+    { "Literary & Gothic" = [
+      { "Gothic Horror" = "awesome/bestiary/gothic.bestiary.md" },
+      { "Lovecraftian" = "awesome/bestiary/lovecraftian.bestiary.md" },
+    ]},
+    { "Cinema & Pop Culture" = [
+      { "Sci-Fi & Modern" = "awesome/bestiary/scifi-modern.bestiary.md" },
+      { "Horror Cinema" = "awesome/bestiary/cinema.bestiary.md" },
+      { "Anime & Manga" = "awesome/bestiary/anime.bestiary.md" },
+    ]},
+    { "Gaming" = [
+      { "Dungeons & Dragons" = "awesome/bestiary/dnd.bestiary.md" },
+      { "Pokemon" = "awesome/bestiary/pokemon.bestiary.md" },
+      { "Digimon" = "awesome/bestiary/digimon.bestiary.md" },
+    ]},
+  ]},
 ]
 
 extra_css = [
