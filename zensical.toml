@@ -12,13 +12,16 @@ site_dir = "site"
 dev_addr = "127.0.0.1:8000"
 
 nav = [
+  { "Tools" = [
+    { "mise" = "tools/mise.tool.md" },
+  ]},
   { "API" = [
     { "Python API Development" = "api/python-api.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
   ]},
   { "DevSecOps" = [
     "devsecops/index.md",
-    { "Terraform" = [
+    { "Terraform (IaC)" = [
       { "Terraform" = "devsecops/terraform.tool.md" },
       { "tflint" = "devsecops/tflint.tool.md" },
       { "checkov" = "devsecops/checkov.tool.md" },

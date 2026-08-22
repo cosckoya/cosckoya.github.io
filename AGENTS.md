@@ -53,7 +53,9 @@ make health                       # Run health check script (placeholders, orpha
 └── docs/
     ├── index.md              # Home page
     ├── api/                  # python-api, spectral (API tooling)
-    ├── devsecops/            # Terraform core (+ OpenTofu comparison), tflint, checkov, terraform-docs
+    ├── tools/                # mise (polyglot tool-version manager)
+    ├── api/                  # python-api, spectral (API tooling)
+    ├── devsecops/            # Terraform (IaC): core (+ OpenTofu comparison), tflint, checkov, terraform-docs
     └── awesome/              # Curated lists (sword-and-sorcery, bestiary/)
 ```
 
@@ -263,6 +265,7 @@ Workflow: `.github/workflows/gh-pages.yml`
 | Date | Change |
 |------|--------|
 | 2026-08-22 | New **DevSecOps** section: `index.md` landing + Terraform core page (incl. OpenTofu comparison), tflint, checkov, terraform-docs — nested nav under `DevSecOps > Terraform`; new `iac` tag registered |
+| 2026-08-22 | New **Tools** section (first in nav) starting with **mise**; DevSecOps flattened to single `Terraform (IaC)` group (no subcategories); all install instructions standardized on mise/Linux-only |
 
 ---
 

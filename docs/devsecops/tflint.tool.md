@@ -17,8 +17,8 @@ TFLint catches what `terraform validate` shrugs off — invalid instance types, 
 === ":lucide-list-check: Essential Commands"
 
     ```bash
-    # Install (Homebrew)
-    brew install terraform-linters/tap/tflint            # (1)!
+    # Install via mise
+    mise use -g tflint@0.64                              # (1)!
 
     # Download plugins declared in .tflint.hcl
     tflint --init                                        # (2)!
@@ -33,7 +33,7 @@ TFLint catches what `terraform validate` shrugs off — invalid instance types, 
     tflint --format sarif                                # (5)!
     ```
 
-    1. No Homebrew? The install script from terraform-linters releases works on Linux and macOS.
+    1. mise resolves the release binary through its aqua backend — no system package manager involved.
     2. Nothing downloads until you ask — plugins are declared in config, fetched by `--init`.
     3. Generic core rules run without plugins or cloud access.
     4. Provider plugins resolve real schemas from the initialized environment — this catches invalid instance types and malformed ARNs.

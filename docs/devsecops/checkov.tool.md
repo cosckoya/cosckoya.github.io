@@ -17,8 +17,8 @@ Checkov scans your Infrastructure-as-Code for misconfigurations before the cloud
 === ":lucide-list-check: Essential Commands"
 
     ```bash
-    # Install
-    pip install checkov                                  # (1)!
+    # Install via mise
+    mise use -g checkov@latest                           # (1)!
 
     # Scan the whole repo — auto-detects frameworks
     checkov -d .                                         # (2)!
@@ -36,7 +36,7 @@ Checkov scans your Infrastructure-as-Code for misconfigurations before the cloud
     checkov -d . --output sarif > checkov.sarif
     ```
 
-    1. Also available via Homebrew and the bridgecrew/checkov Docker image.
+    1. mise installs it in an isolated environment — no venv juggling; the bridgecrew/checkov image remains the container option.
     2. Auto-detection is convenient; expect noise until suppressions are triaged.
     3. Cuts scan time and noise on single-framework repos.
     4. Start with `--soft-fail` for a sprint, then flip to hard-failing once the backlog is clean.

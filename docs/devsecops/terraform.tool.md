@@ -17,15 +17,12 @@ Terraform is the de-facto infrastructure-as-code standard: declare desired state
 === ":lucide-list-check: Essential Commands"
 
     ```bash
-    # Install via version manager (recommended)
-    brew install tfenv                                        # (1)!
-    tfenv install latest:^1\.15\.
+    # Install mise once — one manager for every tool in this section
+    curl https://mise.run | sh                                # (1)!
+    mise use -g terraform@1.15.8                              # (2)!
 
-    # Pin per-project — CI reads this file too
-    echo "1.15.8" > .terraform-version                        # (2)!
-
-    # Direct install alternative (no version manager)
-    brew tap hashicorp/tap && brew install hashicorp/tap/terraform   # (3)!
+    # Per-project pin — mise writes .mise.toml, commit it
+    mise use terraform@1.15.8                                 # (3)!
 
     # Core workflow
     terraform fmt -recursive                                  # (4)!
@@ -35,9 +32,9 @@ Terraform is the de-facto infrastructure-as-code standard: declare desired state
     terraform apply tfplan                                    # (7)!
     ```
 
-    1. tfenv handles multiple versions per project; mise and tenv are solid alternatives.
-    2. One plain-text file kills version drift between laptop and pipeline.
-    3. For people who refuse version managers — fine, but you manage upgrades by hand now.
+    1. Linux-first installer — lands in `~/.local/bin`, no root required; activate your shell afterwards (`mise activate zsh`).
+    2. Global default lives in `~/.config/mise/config.toml`.
+    3. Project-local pin replaces the old `.terraform-version` file convention — one `.mise.toml` can pin terraform AND tflint together.
     4. Normalizes formatting so style diffs never appear in code review.
     5. Downloads providers and writes `.terraform.lock.hcl` — COMMIT IT.
     6. Saves the plan so what gets applied is exactly what was reviewed.

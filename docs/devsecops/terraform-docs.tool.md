@@ -17,8 +17,8 @@ Hand-written input tables rot the moment someone adds a variable and forgets the
 === ":lucide-list-check: Essential Commands"
 
     ```bash
-    # Install (Homebrew)
-    brew install terraform-docs
+    # Install via mise
+    mise use -g terraform-docs@0.24
 
     # Generate straight to stdout
     terraform-docs markdown table ./modules/vpc          # (1)!
