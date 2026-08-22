@@ -52,14 +52,9 @@ make health                       # Run health check script (placeholders, orpha
 │   └── README.md             # Template documentation and placeholder reference
 └── docs/
     ├── index.md              # Home page
-    ├── ...                   # (content pages by category)
-    ├── toolbox/              # Terminal tools: neovim, tmux, kitty, zsh, asdf
-    ├── os/                   # Operating systems: linux, macos, windows
-    ├── databases/            # PostgreSQL, dbcli, oracledb-cli
-    ├── api/                  # GitHub REST API, Docker Hub API
-    ├── ai/                   # AWS Bedrock, Azure AI Foundry, Vertex AI, Gemini
-    ├── 1337/                 # Security/penetration testing (10 guides)
-    └── awesome/              # Curated lists
+    ├── api/                  # python-api, spectral (API tooling)
+    ├── devsecops/            # Terraform core (+ OpenTofu comparison), tflint, checkov, terraform-docs
+    └── awesome/              # Curated lists (sword-and-sorcery, bestiary/)
 ```
 
 ---
@@ -260,6 +255,14 @@ Workflow: `.github/workflows/gh-pages.yml`
 | **Tags with icons** | 9 tag definitions with Lucide icons |
 | **GLightbox** | Image lightbox via `zensical.extensions.glightbox` |
 | **Macros** | Template macros via `zensical.extensions.macros` |
+
+---
+
+## Recent Additions
+
+| Date | Change |
+|------|--------|
+| 2026-08-22 | New **DevSecOps** section: `index.md` landing + Terraform core page (incl. OpenTofu comparison), tflint, checkov, terraform-docs — nested nav under `DevSecOps > Terraform`; new `iac` tag registered |
 
 ---
 

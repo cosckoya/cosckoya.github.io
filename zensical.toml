@@ -16,6 +16,15 @@ nav = [
     { "Python API Development" = "api/python-api.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
   ]},
+  { "DevSecOps" = [
+    "devsecops/index.md",
+    { "Terraform" = [
+      { "Terraform" = "devsecops/terraform.tool.md" },
+      { "tflint" = "devsecops/tflint.tool.md" },
+      { "checkov" = "devsecops/checkov.tool.md" },
+      { "terraform-docs" = "devsecops/terraform-docs.tool.md" },
+    ]},
+  ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
   ]},
