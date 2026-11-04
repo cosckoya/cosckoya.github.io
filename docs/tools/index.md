@@ -3,7 +3,7 @@ title: Tools
 description: polyglot version management and general-purpose CLI tooling
 ---
 
-# :lucide-wrench: Tools
+# :lucide-wrench: Toolbox
 
 Small, sharp utilities that earn their place in the toolbox. Currently just `mise` — the polyglot version manager that replaced the pile of per-language version managers.
 
