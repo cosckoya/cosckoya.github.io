@@ -13,3 +13,6 @@ Verify items from the remediation plan and their results.
 - Lighthouse (mobile): not measured in this pass.
 - Privacy (Phase 7): keeping full LinkedIn slug, "Madrid, ES", and job profile. No employer names added.
 - Third-party fonts: removed Google Fonts via `font = false` in `zensical.toml`.
+- DevSecOps (Nov 2026): ruleset `main-develop-protection` active; auto-merge enabled; Dependabot target `develop`.
+- Required secrets for security workflows: `SNYK_TOKEN`, `SONAR_TOKEN`, `SONAR_ORGANIZATION`, `SONAR_PROJECT_KEY`.
+- Branch cleanup: only `origin/pr/{3,4,12,13,14,32,41}` are merged into develop; others need manual review.
