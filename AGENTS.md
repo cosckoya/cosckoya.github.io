@@ -9,7 +9,7 @@ Single source of truth for this Zensical documentation site — all project stat
 - **Type:** Zensical documentation site hosted at https://cosckoya.github.io
 - **Deploy:** GitHub Pages, auto-deploys `main` branch via GitHub Actions (`.github/workflows/gh-pages.yml`)
 - **Python:** 3.14 only — pinned in `pyproject.toml` (`requires-python`) and CI workflow. Managed via **uv** (`uv venv` + `uv pip install`, env at `venv/`).
-- **Theme variant:** `modern` — auto light/dark mode (Lucide toggle: `lucide/sun-moon`), scheme: `default`/`slate`, primary: `deep purple`/`purple`, accent: `teal`/`lime`
+- **Theme variant:** `modern` — auto light/dark mode (Lucide toggle: `lucide/sun-moon`), scheme: `default`/`slate`, primary: `blue-grey` (light) / `green` (dark), accent: `green` (light) / `light-green` (dark)
 - **Icon system:** All icons unified under Lucide (`:lucide-...:`) for inline content. Brand icons in theme config use `simple/` (github, gitlab, x, devdotto, docker) or `material/linkedin` where no Simple/Lucide SVG exists in the theme bundle.
 - **Zero FontAwesome references** in the entire repository — fully migrated.
 
@@ -52,21 +52,20 @@ make health                       # Run health check script (placeholders, orpha
 │   └── README.md             # Template documentation and placeholder reference
 └── docs/
     ├── index.md              # Home page
-    ├── api/                  # python-api, spectral (API tooling)
     ├── tools/                # mise (polyglot tool-version manager)
     ├── api/                  # python-api, spectral (API tooling)
-    ├── devsecops/            # Terraform (IaC): core (+ OpenTofu comparison), tflint, checkov, terraform-docs
-    └── awesome/              # Curated lists (sword-and-sorcery, bestiary/)
+    ├── devsecops/            # Terraform (IaC): core, tflint, checkov, terraform-docs
+    ├── awesome/              # Curated lists (sword-and-sorcery, bestiary/)
+    └── resources/            # CSS and images
 ```
 
 ---
 
 ## Navigation Architecture
 
-- **System:** Explicit `nav:` section in `zensical.toml` (72 lines, 55 pages, 16 categories)
+- **System:** Explicit `nav = [...]` in `zensical.toml` (47 lines, 25 pages, 4 top-level sections)
 - **No `index.md` per section** — all navigation managed in `zensical.toml`
 - **Structure:** 3-level hierarchy max, expandable sections
-- **Recent migration:** Replaced 16 `SUMMARY.md` files with flat `nav:` in zensical.toml (2026-07-08)
 
 **When adding new pages:**
 
@@ -173,9 +172,9 @@ Key configuration points in `zensical.toml`:
 
 - **variant:** `modern` — Zensical modern theme
 - **palette:** tri-mode (auto / light / dark) with Lucide toggles
-- **features:** 24 features enabled — navigation.sections, expand, breadcrumbs, instant, search.suggest, code.copy, content.tooltips, header.autohide, etc.
-- **extensions:** 19 markdown_extensions — toc (permalink), admonition, pymdownx.superfences (mermaid), pymdownx.tabbed (alternate), pymdownx.highlight, pymdownx.emoji (twemoji), attr_list, md_in_html, def_list, footnotes, magiclink, snippets, tasklist, etc.
-- **custom extensions:** `zensical.extensions.glightbox` (image lightbox), `zensical.extensions.macros` (template macros)
+- **features:** 23 features enabled — navigation.sections, expand, breadcrumbs, instant, search.suggest, code.copy, content.tooltips, header.autohide, etc.
+- **extensions:** 19 markdown extensions — toc (permalink), admonition, pymdownx.superfences (mermaid), pymdownx.tabbed (alternate), pymdownx.highlight, pymdownx.emoji (twemoji), attr_list, md_in_html, def_list, footnotes, magiclink, snippets, tasklist, etc.
+- **plugins:** `glightbox` (image lightbox), `macros` (template macros)
 - **validation:** `invalid_links: true`, `invalid_link_anchors: true`
 - **extra_css:** `resources/css/images.css`, `resources/css/snape.css`
 
@@ -212,10 +211,10 @@ Run `make health` (or `uv run python scripts/health.py`):
 
 Checks for:
 - **Orphaned files** — `.md` files in `docs/` not referenced in `nav:` in `zensical.toml`
-- **Missing pages** — `nav:` entries pointing to non-existent files
-- **Placeholder leaks** — `{{PLACEHOLDER}}` still present in content
+- **Placeholder leaks** — `{{PLACEHOLDER}}` still present in content (outside code blocks)
 - **Vibe Check compliance** — every content page has a Vibe Check footer
-- **Tag presence** — every content page has tags
+
+Note: `index.md`, `showcase.md`, and `robots.txt` are ignored; `templates/` is excluded. Tag presence and missing-page checks are not implemented.
 
 ---
 
@@ -223,17 +222,14 @@ Checks for:
 
 Workflow: `.github/workflows/gh-pages.yml`
 
-- **Trigger:** Push to `main` branch only
-- **Steps:**
+- **Trigger:** Push to `main`, pull request to `main`, `workflow_dispatch`
+- **Jobs:**
 
 ```
-1. Lint (ruff + codespell + yamllint)
-2. Setup Python 3.14
-3. pip install zensical==0.0.56
-4. python scripts/health.py --ci
-5. zensical build --clean --strict
-6. Upload Pages Artifact
-7. Deploy to GitHub Pages
+1. lint: codespell docs/ (codespell==2.4.3)
+2. build: health check (python3 scripts/health.py), zensical build --clean --strict (zensical==0.0.56)
+3. upload Pages artifact
+4. deploy to GitHub Pages
 ```
 
 - **Deployment URL:** https://cosckoya.github.io
@@ -246,15 +242,15 @@ Workflow: `.github/workflows/gh-pages.yml`
 | Change | Details |
 |--------|---------|
 | **Theme variant** | Switched to `modern` (was default) — Lucide icons, auto light/dark, new features |
-| **Navigation** | Replaced 16 `SUMMARY.md` files with explicit `nav:` in `zensical.toml` (72 lines, 55 pages) |
+| **Navigation** | Replaced 16 `SUMMARY.md` files with explicit `nav:` in `zensical.toml` (47 lines, 25 pages) |
 | **Icon unification** | 785 FontAwesome → Lucide replacements across 63 files (55 content pages + 8 meta/template files) |
-| **Theme icon fixes** | 9 admonition icons mapped to existing Lucide SVGs; brand icons migrated to `simple/` set |
+| **Theme icon fixes** | 11 admonition icons mapped to existing Lucide SVGs; brand icons migrated to `simple/` set |
 | **Health check** | Updated to parse `nav:` instead of `SUMMARY.md` |
 | **Build fix** | yamllint warning fixed (missing document start `---`) |
 | **MkDocs-isms cleaned** | All MkDocs-specific references removed from zensical.toml, index.md, AGENTS.md |
 | **Disco search** | Enabled Zensical's built-in Disco search (no external search plugin) |
 | **Link validation** | Enabled `invalid_links` + `invalid_link_anchors` |
-| **Tags with icons** | 9 tag definitions with Lucide icons |
+| **Tags with icons** | 5 tag icons defined in `[theme.icon.tag]` |
 | **GLightbox** | Image lightbox via `zensical.extensions.glightbox` |
 | **Macros** | Template macros via `zensical.extensions.macros` |
 
@@ -274,12 +270,12 @@ Workflow: `.github/workflows/gh-pages.yml`
 | File | Purpose |
 |------|---------|
 | `zensical.toml` | Theme, navigation, extensions, validation — primary config |
-| `opencode.json` | OpenCode permissions, model config (qwen2.5-coder:7b local), skills |
+| `opencode.json` | OpenCode permissions, skills, agent definitions |
 | `.opencodeignore` | Exclusion patterns for OpenCode context |
 | `pyproject.toml` | Python 3.14 constraint |
 | `requirements.txt` | `zensical` pinned with rationale comments |
 | `Makefile` | Targets: serve, build, validate, clean, lint, health, venv, deps |
-| `.yamllint.yml` | yamllint rules (legacy, no longer used) |
+| `.yamllint.yml` | yamllint rules (legacy; not used in CI) |
 | `scripts/health.py` | Documentation health checker |
 
 ---
@@ -335,7 +331,7 @@ This project has dedicated agents for documentation tasks:
 
 ## See Also
 
-- **`zensical.toml`** — Full theme, plugin, extension configuration (265 lines)
+- **`zensical.toml`** — Full theme, plugin, extension configuration (221 lines)
 - **`templates/README.md`** — Template placeholder reference
 - **`CONTRIBUTING.md`** — Human contributor guide
 - **`scripts/health.py`** — Documentation health checker source
