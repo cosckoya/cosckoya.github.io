@@ -144,7 +144,7 @@ The Indigenous peoples of Venezuela — the Wayuu, Carib, Warao, and others — 
 
 **Related:**
 
-- :lucide-castle: __Spain & Iberian Bestiary__ (El Coco, La Llorona origins)
+- :lucide-castle: [Spain & Iberian](https://cosckoya.github.io/awesome/bestiary/espana.bestiary/) (El Coco, La Llorona origins)
 
 ---
 

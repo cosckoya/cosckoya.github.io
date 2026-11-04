@@ -133,8 +133,8 @@ Hand-written input tables rot the moment someone adds a variable and forgets the
 
 **Related:**
 
-- :lucide-wrench: __Terraform__
-- :lucide-wrench: __tflint__
+- :lucide-wrench: [Terraform](https://cosckoya.github.io/devsecops/terraform.tool/)
+- :lucide-wrench: [tflint](https://cosckoya.github.io/devsecops/tflint.tool/)
 
 ---
 

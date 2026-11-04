@@ -119,8 +119,8 @@ The Chimera Ants are a species that eats other creatures and incorporates their 
 
 **Related:**
 
-- :lucide-sparkles: __Yokai Bestiary__
-- :material-movie-open: __Horror Cinema Bestiary__
+- :lucide-sparkles: [Yokai](https://cosckoya.github.io/awesome/bestiary/yokai.bestiary/)
+- :material-movie-open: [Horror Cinema](https://cosckoya.github.io/awesome/bestiary/cinema.bestiary/)
 
 ---
 

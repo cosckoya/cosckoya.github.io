@@ -150,9 +150,9 @@ Choosing between them:
 
 **Related:**
 
-- :lucide-wrench: __tflint__
-- :lucide-wrench: __checkov__
-- :lucide-wrench: __terraform-docs__
+- :lucide-wrench: [tflint](https://cosckoya.github.io/devsecops/tflint.tool/)
+- :lucide-wrench: [checkov](https://cosckoya.github.io/devsecops/checkov.tool/)
+- :lucide-wrench: [terraform-docs](https://cosckoya.github.io/devsecops/terraform-docs.tool/)
 
 ---
 

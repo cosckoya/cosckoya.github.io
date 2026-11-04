@@ -111,8 +111,8 @@ Machinedramon is the ultimate machine Digimon — a city-destroying dragon of me
 
 **Related:**
 
-- :material-pokeball: __Pokemon Bestiary__
-- :lucide-sparkles: __Anime & Manga Bestiary__
+- :material-pokeball: [Pokemon](https://cosckoya.github.io/awesome/bestiary/pokemon.bestiary/)
+- :lucide-sparkles: [Anime & Manga](https://cosckoya.github.io/awesome/bestiary/anime.bestiary/)
 
 ---
 

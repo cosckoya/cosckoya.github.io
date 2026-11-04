@@ -151,8 +151,8 @@ Lucario is the aura Pokemon: a jackal-like fighter that can read the aura — th
 
 **Related:**
 
-- :material-robot: __Digimon Bestiary__
-- :lucide-sparkles: __Yokai Bestiary__ (Pokemon's folkloric roots)
+- :material-robot: [Digimon](https://cosckoya.github.io/awesome/bestiary/digimon.bestiary/)
+- :lucide-sparkles: [Yokai](https://cosckoya.github.io/awesome/bestiary/yokai.bestiary/) (Pokemon's folkloric roots)
 
 ---
 

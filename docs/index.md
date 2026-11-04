@@ -18,7 +18,11 @@ This is my digital junk drawer — except organized, searchable, and full of thi
 
 | Section | What you'll find |
 |---------|-----------------|
-| :lucide-swords: **Awesome** | Sword & Sorcery reading lists, fantasy lore, tabletop RPGs, Warhammer, MTG — the good stuff |
+| :lucide-wrench: **Tools** | General-purpose CLI tools — currently `mise`, the polyglot version manager |
+| :simple-fastapi: **API** | Building and linting REST APIs — FastAPI/Pydantic stack, Spectral for OpenAPI linting |
+| :lucide-layers: **DevSecOps** | Infrastructure-as-code and its guardrails — Terraform, tflint, checkov, terraform-docs |
+| :lucide-swords: **Awesome** | Sword & Sorcery reading lists, fantasy lore, tabletop RPGs, Warhammer, MTG |
+| :lucide-skull: **Bestiary** | Ten categorized creature references — from Greek myth to Digimon evolution lines |
 
 Use the sidebar to navigate, or hit ++s++ to search like you actually know what you're doing.
 

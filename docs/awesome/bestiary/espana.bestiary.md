@@ -265,7 +265,9 @@ Tibicenas are demon dogs of Guanche mythology — fierce black dogs with burning
 
 **Related:**
 
-- :material-map: __Latin America Bestiary__
+- :material-map: [Latin America](https://cosckoya.github.io/awesome/bestiary/latinoamerica.bestiary/)
+- :lucide-eye: [Classical Mythology](https://cosckoya.github.io/awesome/bestiary/classical.bestiary/)
+- :lucide-moon: [Norse & Celtic](https://cosckoya.github.io/awesome/bestiary/norse-celtic.bestiary/)
 
 ---
 

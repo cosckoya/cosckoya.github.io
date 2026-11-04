@@ -131,8 +131,8 @@ Kuchisake-onna is a modern urban legend: a woman wearing a surgical mask who ask
 
 **Related:**
 
-- :material-alien: __Lovecraftian Bestiary__
-- :lucide-sparkles: __Anime & Manga Bestiary__
+- :material-alien: [Lovecraftian](https://cosckoya.github.io/awesome/bestiary/lovecraftian.bestiary/)
+- :lucide-sparkles: [Anime & Manga](https://cosckoya.github.io/awesome/bestiary/anime.bestiary/)
 
 ---
 

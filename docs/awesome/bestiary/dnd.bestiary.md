@@ -135,8 +135,7 @@ The D&D vampire is the gothic vampire fully systematized: it can charm, turn int
 
 **Related:**
 
-- :material-pokeball: __Pokemon Bestiary__
-- :lucide-castle: __Spain & Iberian Bestiary__ (the Tarrasque is French)
+- :material-pokeball: [Pokemon](https://cosckoya.github.io/awesome/bestiary/pokemon.bestiary/)
 
 ---
 

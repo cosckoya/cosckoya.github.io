@@ -131,8 +131,8 @@ The Bride is the female creature made to be the Monster's companion — she exis
 
 **Related:**
 
-- :material-robot: __Sci-Fi & Modern Bestiary__
-- :lucide-sparkles: __Anime & Manga Bestiary__
+- :material-robot: [Sci-Fi & Modern](https://cosckoya.github.io/awesome/bestiary/scifi-modern.bestiary/)
+- :lucide-sparkles: [Anime & Manga](https://cosckoya.github.io/awesome/bestiary/anime.bestiary/)
 
 ---
 

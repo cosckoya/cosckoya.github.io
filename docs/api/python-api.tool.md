@@ -87,7 +87,7 @@ The modern Python API stack is FastAPI + Pydantic + pytest/httpx, and it's the c
 
 **Related:**
 
-- :lucide-shield-check: __Spectral__ — lint your OpenAPI specs
+- :lucide-shield-check: [Spectral](https://cosckoya.github.io/api/spectral.tool/) — lint your OpenAPI specs
 
 ---
 

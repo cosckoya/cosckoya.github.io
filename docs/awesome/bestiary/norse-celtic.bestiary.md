@@ -127,8 +127,9 @@ The Fomorians are the hostile, misshapen race of Irish legend — one-armed, one
 
 **Related:**
 
-- :lucide-eye: __Classical Mythology Bestiary__
-- :lucide-ghost: __Gothic Horror Bestiary__
+- :lucide-eye: [Classical Mythology](https://cosckoya.github.io/awesome/bestiary/classical.bestiary/)
+- :lucide-ghost: [Gothic Horror](https://cosckoya.github.io/awesome/bestiary/gothic.bestiary/)
+- :lucide-castle: [Spain & Iberian](https://cosckoya.github.io/awesome/bestiary/espana.bestiary/)
 
 ---
 

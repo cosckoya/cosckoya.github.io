@@ -146,8 +146,8 @@ The last and greatest threat to Olympus: a monstrous giant with a hundred serpen
 
 **Related:**
 
-- :lucide-moon: __Norse & Celtic Bestiary__
-- :lucide-skull: __Gothic Horror Bestiary__
+- :lucide-moon: [Norse & Celtic](https://cosckoya.github.io/awesome/bestiary/norse-celtic.bestiary/)
+- :lucide-skull: [Gothic Horror](https://cosckoya.github.io/awesome/bestiary/gothic.bestiary/)
 
 ---
 
