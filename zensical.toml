@@ -2,7 +2,7 @@ site_name = "Cosckoya | DevSecOps & Cloud Notes"
 site_url = "https://cosckoya.github.io"
 site_description = "Cloud, DevSecOps, and platform engineering notes, plus fantasy lore and curated reference lists. By cosckoya."
 site_author = "cosckoya"
-copyright = "Copyright &copy; 2026 cosckoya (цосцкоыа)"
+copyright = "Copyright &copy; 2026 cosckoya <span lang=\"ru\">цосцкоыа</span>"
 
 repo_url = "https://github.com/cosckoya/cosckoya.github.io"
 edit_uri = ""
@@ -155,26 +155,32 @@ tool = "tool"
 language = "language"
 
 [[extra.social]]
+name = "GitHub"
 icon = "simple/github"
 link = "https://github.com/cosckoya"
 
 [[extra.social]]
+name = "GitLab"
 icon = "simple/gitlab"
 link = "https://gitlab.com/cosckoya"
 
 [[extra.social]]
+name = "X"
 icon = "simple/x"
 link = "https://twitter.com/cosckoya"
 
 [[extra.social]]
+name = "dev.to"
 icon = "simple/devdotto"
 link = "https://dev.to/cosckoya"
 
 [[extra.social]]
+name = "LinkedIn"
 icon = "material/linkedin"
 link = "https://www.linkedin.com/in/javier-coscolla-cabrera-95948224"
 
 [[extra.social]]
+name = "Docker Hub"
 icon = "simple/docker"
 link = "https://hub.docker.com/u/cosckoya"
 
