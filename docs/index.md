@@ -20,9 +20,7 @@ This is my digital junk drawer — except organized, searchable, and full of thi
 
 | Section | What you'll find |
 |---------|-----------------|
-| :lucide-wrench: **Toolbox** | General-purpose CLI tools — `mise`, Spectral, Terraform and friends |
-| :simple-fastapi: **API** | Building and linting REST APIs — FastAPI/Pydantic stack, Spectral for OpenAPI linting |
-| :lucide-layers: **DevSecOps** | Infrastructure-as-code and its guardrails — Terraform, tflint, checkov, terraform-docs |
+| :lucide-wrench: **Toolbox** | General-purpose CLI tools — currently `mise` |
 | :lucide-swords: **Awesome** | Sword & Sorcery reading lists, fantasy lore, tabletop RPGs, Warhammer, MTG |
 | :lucide-skull: **Bestiary** | Ten categorized creature references — from Greek myth to Digimon evolution lines |
 
