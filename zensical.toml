@@ -19,12 +19,7 @@ nav = [
     { "GitHub" = "tools/github.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
   ]},
-  { "Terraform" = [
-    "devsecops/terraform.tool.md",
-    { "tflint" = "devsecops/tflint.tool.md" },
-    { "checkov" = "devsecops/checkov.tool.md" },
-    { "terraform-docs" = "devsecops/terraform-docs.tool.md" },
-  ]},
+  { "Terraform" = "devsecops/terraform.tool.md" },
 
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
