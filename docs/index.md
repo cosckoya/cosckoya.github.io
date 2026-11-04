@@ -5,8 +5,10 @@ description: Cosckoya's personal knowledge base — curated references, fantasy 
 
 ![!](resources/img/rorschach.png#center)
 
-By day: architect of cloud-native systems that (mostly) don't fall over.
-By night: JRPG completionist, film hoarder, and someone who's flashed more custom firmware onto a 3DS than is probably healthy.
+Architect of cloud-native systems that (mostly) don't fall over — by day.
+Also: JRPG completionist, film hoarder, and someone who's flashed more custom firmware onto a 3DS than is probably healthy.
+
+> It's dangerous to go alone! Take this.
 
 This is my digital junk drawer — except organized, searchable, and full of things I refuse to Google a second time.
 
