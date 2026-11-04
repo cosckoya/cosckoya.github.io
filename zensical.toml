@@ -15,20 +15,8 @@ nav = [
   { "Toolbox" = [
     "tools/index.md",
     { "mise" = "tools/mise.tool.md" },
-    { "Spectral" = "api/spectral.tool.md" },
-    { "Terraform (IaC)" = [
-      { "Terraform" = "devsecops/terraform.tool.md" },
-      { "tflint" = "devsecops/tflint.tool.md" },
-      { "checkov" = "devsecops/checkov.tool.md" },
-      { "terraform-docs" = "devsecops/terraform-docs.tool.md" },
-    ]},
   ]},
-  { "API" = [
-    "api/index.md",
-  ]},
-  { "DevSecOps" = [
-    "devsecops/index.md",
-  ]},
+
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
     { "Bestiary" = [
