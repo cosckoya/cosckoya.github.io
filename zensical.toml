@@ -13,9 +13,11 @@ dev_addr = "127.0.0.1:8000"
 
 nav = [
   { "Tools" = [
+    "tools/index.md",
     { "mise" = "tools/mise.tool.md" },
   ]},
   { "API" = [
+    "api/index.md",
     { "Python API Development" = "api/python-api.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
   ]},
@@ -30,29 +32,29 @@ nav = [
   ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
-  ]},
-  { "Bestiary" = [
-    "awesome/bestiary/index.md",
-    { "World Mythology" = [
-      { "Classical Mythology" = "awesome/bestiary/classical.bestiary.md" },
-      { "Norse & Celtic" = "awesome/bestiary/norse-celtic.bestiary.md" },
-      { "Spain & Iberian" = "awesome/bestiary/espana.bestiary.md" },
-      { "Latin America" = "awesome/bestiary/latinoamerica.bestiary.md" },
-      { "Yokai (Japan)" = "awesome/bestiary/yokai.bestiary.md" },
-    ]},
-    { "Literary & Gothic" = [
-      { "Gothic Horror" = "awesome/bestiary/gothic.bestiary.md" },
-      { "Lovecraftian" = "awesome/bestiary/lovecraftian.bestiary.md" },
-    ]},
-    { "Cinema & Pop Culture" = [
-      { "Sci-Fi & Modern" = "awesome/bestiary/scifi-modern.bestiary.md" },
-      { "Horror Cinema" = "awesome/bestiary/cinema.bestiary.md" },
-      { "Anime & Manga" = "awesome/bestiary/anime.bestiary.md" },
-    ]},
-    { "Gaming" = [
-      { "Dungeons & Dragons" = "awesome/bestiary/dnd.bestiary.md" },
-      { "Pokemon" = "awesome/bestiary/pokemon.bestiary.md" },
-      { "Digimon" = "awesome/bestiary/digimon.bestiary.md" },
+    { "Bestiary" = [
+      "awesome/bestiary/index.md",
+      { "World Mythology" = [
+        { "Classical Mythology" = "awesome/bestiary/classical.bestiary.md" },
+        { "Norse & Celtic" = "awesome/bestiary/norse-celtic.bestiary.md" },
+        { "Spain & Iberian" = "awesome/bestiary/espana.bestiary.md" },
+        { "Latin America" = "awesome/bestiary/latinoamerica.bestiary.md" },
+        { "Yokai (Japan)" = "awesome/bestiary/yokai.bestiary.md" },
+      ]},
+      { "Literary & Gothic" = [
+        { "Gothic Horror" = "awesome/bestiary/gothic.bestiary.md" },
+        { "Lovecraftian" = "awesome/bestiary/lovecraftian.bestiary.md" },
+      ]},
+      { "Cinema & Pop Culture" = [
+        { "Sci-Fi & Modern" = "awesome/bestiary/scifi-modern.bestiary.md" },
+        { "Horror Cinema" = "awesome/bestiary/cinema.bestiary.md" },
+        { "Anime & Manga" = "awesome/bestiary/anime.bestiary.md" },
+      ]},
+      { "Gaming" = [
+        { "Dungeons & Dragons" = "awesome/bestiary/dnd.bestiary.md" },
+        { "Pokemon" = "awesome/bestiary/pokemon.bestiary.md" },
+        { "Digimon" = "awesome/bestiary/digimon.bestiary.md" },
+      ]},
     ]},
   ]},
 ]
