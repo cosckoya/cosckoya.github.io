@@ -71,6 +71,7 @@ invalid_link_anchors = true
 [theme]
 variant = "modern"
 custom_dir = "overrides"
+font = false
 logo = "resources/img/logo.png"
 favicon = "resources/img/favicon.png"
 language = "en"

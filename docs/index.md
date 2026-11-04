@@ -3,7 +3,7 @@ title: Home
 description: Cosckoya's personal knowledge base — curated references, fantasy lore, and things worth remembering
 ---
 
-![Rorschach inkblot illustration](resources/img/rorschach.png#center)
+![Rorschach inkblot illustration](resources/img/rorschach.webp#center){ width=1200 height=609 }
 
 Architect of cloud-native systems that (mostly) don't fall over — by day.
 Also: JRPG completionist, film hoarder, and someone who's flashed more custom firmware onto a 3DS than is probably healthy.
