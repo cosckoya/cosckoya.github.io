@@ -12,23 +12,23 @@ site_dir = "site"
 dev_addr = "127.0.0.1:8000"
 
 nav = [
-  { "Tools" = [
+  { "Toolbox" = [
     "tools/index.md",
     { "mise" = "tools/mise.tool.md" },
-  ]},
-  { "API" = [
-    "api/index.md",
-    { "Python API Development" = "api/python-api.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
-  ]},
-  { "DevSecOps" = [
-    "devsecops/index.md",
     { "Terraform (IaC)" = [
       { "Terraform" = "devsecops/terraform.tool.md" },
       { "tflint" = "devsecops/tflint.tool.md" },
       { "checkov" = "devsecops/checkov.tool.md" },
       { "terraform-docs" = "devsecops/terraform-docs.tool.md" },
     ]},
+  ]},
+  { "API" = [
+    "api/index.md",
+    { "Python API Development" = "api/python-api.tool.md" },
+  ]},
+  { "DevSecOps" = [
+    "devsecops/index.md",
   ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
