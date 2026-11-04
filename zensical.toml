@@ -1,8 +1,8 @@
-site_name = "It's dangerous to go alone!"
+site_name = "Cosckoya | DevSecOps & Cloud Notes"
 site_url = "https://cosckoya.github.io"
-site_description = "Cosckoya's Tech Toolbox"
+site_description = "Cloud, DevSecOps, and platform engineering notes, plus fantasy lore and curated reference lists. By cosckoya."
 site_author = "cosckoya"
-copyright = "Copyright &copy; 2026 цосцкоыа"
+copyright = "Copyright &copy; 2026 cosckoya <span lang=\"ru\">цосцкоыа</span>"
 
 repo_url = "https://github.com/cosckoya/cosckoya.github.io"
 edit_uri = ""
@@ -13,9 +13,11 @@ dev_addr = "127.0.0.1:8000"
 
 nav = [
   { "Tools" = [
+    "tools/index.md",
     { "mise" = "tools/mise.tool.md" },
   ]},
   { "API" = [
+    "api/index.md",
     { "Python API Development" = "api/python-api.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
   ]},
@@ -30,29 +32,29 @@ nav = [
   ]},
   { "Awesome" = [
     { "Sword & Sorcery" = "awesome/sword-and-sorcery.md" },
-  ]},
-  { "Bestiary" = [
-    "awesome/bestiary/index.md",
-    { "World Mythology" = [
-      { "Classical Mythology" = "awesome/bestiary/classical.bestiary.md" },
-      { "Norse & Celtic" = "awesome/bestiary/norse-celtic.bestiary.md" },
-      { "Spain & Iberian" = "awesome/bestiary/espana.bestiary.md" },
-      { "Latin America" = "awesome/bestiary/latinoamerica.bestiary.md" },
-      { "Yokai (Japan)" = "awesome/bestiary/yokai.bestiary.md" },
-    ]},
-    { "Literary & Gothic" = [
-      { "Gothic Horror" = "awesome/bestiary/gothic.bestiary.md" },
-      { "Lovecraftian" = "awesome/bestiary/lovecraftian.bestiary.md" },
-    ]},
-    { "Cinema & Pop Culture" = [
-      { "Sci-Fi & Modern" = "awesome/bestiary/scifi-modern.bestiary.md" },
-      { "Horror Cinema" = "awesome/bestiary/cinema.bestiary.md" },
-      { "Anime & Manga" = "awesome/bestiary/anime.bestiary.md" },
-    ]},
-    { "Gaming" = [
-      { "Dungeons & Dragons" = "awesome/bestiary/dnd.bestiary.md" },
-      { "Pokemon" = "awesome/bestiary/pokemon.bestiary.md" },
-      { "Digimon" = "awesome/bestiary/digimon.bestiary.md" },
+    { "Bestiary" = [
+      "awesome/bestiary/index.md",
+      { "World Mythology" = [
+        { "Classical Mythology" = "awesome/bestiary/classical.bestiary.md" },
+        { "Norse & Celtic" = "awesome/bestiary/norse-celtic.bestiary.md" },
+        { "Spain & Iberian" = "awesome/bestiary/espana.bestiary.md" },
+        { "Latin America" = "awesome/bestiary/latinoamerica.bestiary.md" },
+        { "Yokai (Japan)" = "awesome/bestiary/yokai.bestiary.md" },
+      ]},
+      { "Literary & Gothic" = [
+        { "Gothic Horror" = "awesome/bestiary/gothic.bestiary.md" },
+        { "Lovecraftian" = "awesome/bestiary/lovecraftian.bestiary.md" },
+      ]},
+      { "Cinema & Pop Culture" = [
+        { "Sci-Fi & Modern" = "awesome/bestiary/scifi-modern.bestiary.md" },
+        { "Horror Cinema" = "awesome/bestiary/cinema.bestiary.md" },
+        { "Anime & Manga" = "awesome/bestiary/anime.bestiary.md" },
+      ]},
+      { "Gaming" = [
+        { "Dungeons & Dragons" = "awesome/bestiary/dnd.bestiary.md" },
+        { "Pokemon" = "awesome/bestiary/pokemon.bestiary.md" },
+        { "Digimon" = "awesome/bestiary/digimon.bestiary.md" },
+      ]},
     ]},
   ]},
 ]
@@ -69,6 +71,7 @@ invalid_link_anchors = true
 [theme]
 variant = "modern"
 custom_dir = "overrides"
+font = false
 logo = "resources/img/logo.png"
 favicon = "resources/img/favicon.png"
 language = "en"
@@ -153,26 +156,32 @@ tool = "tool"
 language = "language"
 
 [[extra.social]]
+name = "GitHub"
 icon = "simple/github"
 link = "https://github.com/cosckoya"
 
 [[extra.social]]
+name = "GitLab"
 icon = "simple/gitlab"
 link = "https://gitlab.com/cosckoya"
 
 [[extra.social]]
+name = "X"
 icon = "simple/x"
 link = "https://twitter.com/cosckoya"
 
 [[extra.social]]
+name = "dev.to"
 icon = "simple/devdotto"
 link = "https://dev.to/cosckoya"
 
 [[extra.social]]
+name = "LinkedIn"
 icon = "material/linkedin"
 link = "https://www.linkedin.com/in/javier-coscolla-cabrera-95948224"
 
 [[extra.social]]
+name = "Docker Hub"
 icon = "simple/docker"
 link = "https://hub.docker.com/u/cosckoya"
 

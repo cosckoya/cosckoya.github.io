@@ -122,8 +122,8 @@ Dr. Jekyll creates a potion that separates his respectable self from his repress
 
 **Related:**
 
-- :material-alien: __Lovecraftian Bestiary__
-- :material-robot: __Sci-Fi & Modern Bestiary__
+- :material-alien: [Lovecraftian](https://cosckoya.github.io/awesome/bestiary/lovecraftian.bestiary/)
+- :material-robot: [Sci-Fi & Modern](https://cosckoya.github.io/awesome/bestiary/scifi-modern.bestiary/)
 
 ---
 

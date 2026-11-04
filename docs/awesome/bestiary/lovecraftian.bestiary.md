@@ -107,8 +107,8 @@ The Elder Things (or Old Ones) are the star-faring race that created the Shoggot
 
 **Related:**
 
-- :lucide-ghost: __Gothic Horror Bestiary__
-- :material-robot: __Sci-Fi & Modern Bestiary__
+- :lucide-ghost: [Gothic Horror](https://cosckoya.github.io/awesome/bestiary/gothic.bestiary/)
+- :material-robot: [Sci-Fi & Modern](https://cosckoya.github.io/awesome/bestiary/scifi-modern.bestiary/)
 
 ---
 

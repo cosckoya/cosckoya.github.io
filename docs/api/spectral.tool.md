@@ -87,7 +87,7 @@ Stoplight Spectral is the linter for API contracts. It reads your OpenAPI (or As
 
 **Related:**
 
-- :simple-fastapi: __Python API Development__ — FastAPI generates specs worth linting
+- :simple-fastapi: [Python API Development](https://cosckoya.github.io/api/python-api.tool/) — FastAPI generates specs worth linting
 
 ---
 

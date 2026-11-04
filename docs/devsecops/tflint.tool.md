@@ -121,8 +121,8 @@ TFLint catches what `terraform validate` shrugs off — invalid instance types, 
 
 **Related:**
 
-- :lucide-wrench: __checkov__
-- :lucide-wrench: __Terraform__
+- :lucide-wrench: [checkov](https://cosckoya.github.io/devsecops/checkov.tool/)
+- :lucide-wrench: [Terraform](https://cosckoya.github.io/devsecops/terraform.tool/)
 
 ---
 

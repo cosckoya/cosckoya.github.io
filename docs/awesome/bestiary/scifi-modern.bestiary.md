@@ -107,8 +107,8 @@ The Replicants of *Blade Runner* are genetically engineered beings used as slave
 
 **Related:**
 
-- :material-alien: __Lovecraftian Bestiary__
-- :lucide-ghost: __Gothic Horror Bestiary__
+- :material-alien: [Lovecraftian](https://cosckoya.github.io/awesome/bestiary/lovecraftian.bestiary/)
+- :lucide-ghost: [Gothic Horror](https://cosckoya.github.io/awesome/bestiary/gothic.bestiary/)
 
 ---
 

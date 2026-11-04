@@ -103,8 +103,10 @@ Every language ecosystem invented its own version manager, so you ended up juggl
 
 **Related:**
 
-- :lucide-wrench: __Terraform__
-- :lucide-wrench: __tflint__
+- :lucide-wrench: [Terraform](https://cosckoya.github.io/devsecops/terraform.tool/)
+- :lucide-wrench: [tflint](https://cosckoya.github.io/devsecops/tflint.tool/)
+- :lucide-wrench: [checkov](https://cosckoya.github.io/devsecops/checkov.tool/)
+- :lucide-wrench: [terraform-docs](https://cosckoya.github.io/devsecops/terraform-docs.tool/)
 
 ---
 

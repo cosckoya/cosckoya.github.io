@@ -115,8 +115,8 @@ Checkov scans your Infrastructure-as-Code for misconfigurations before the cloud
 
 **Related:**
 
-- :lucide-wrench: __Terraform__
-- :lucide-wrench: __tflint__
+- :lucide-wrench: [Terraform](https://cosckoya.github.io/devsecops/terraform.tool/)
+- :lucide-wrench: [tflint](https://cosckoya.github.io/devsecops/tflint.tool/)
 
 ---
 
