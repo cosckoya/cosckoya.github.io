@@ -11,7 +11,6 @@ REST API development and linting notes: a FastAPI/Pydantic stack for building, S
 
 ## Reference
 
-- :lucide-wrench: [Python API Development](python-api.tool/)
 - :lucide-wrench: [Spectral](spectral.tool/)
 
 ---

@@ -25,7 +25,6 @@ nav = [
   ]},
   { "API" = [
     "api/index.md",
-    { "Python API Development" = "api/python-api.tool.md" },
   ]},
   { "DevSecOps" = [
     "devsecops/index.md",
