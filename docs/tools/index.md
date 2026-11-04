@@ -5,13 +5,15 @@ description: polyglot version management and general-purpose CLI tooling
 
 # :lucide-wrench: Toolbox
 
-Small, sharp utilities that earn their place in the toolbox. Currently just `mise` — the polyglot version manager that replaced the pile of per-language version managers.
+Small, sharp utilities that earn their place in the toolbox: `mise`, Spectral for OpenAPI linting, and the Terraform toolchain.
 
 ---
 
 ## Reference
 
 - :lucide-wrench: [mise](mise.tool/)
+- :lucide-wrench: [Spectral](../api/spectral.tool/)
+- :lucide-wrench: [Terraform](../devsecops/terraform.tool/)
 
 ---
 
