@@ -15,6 +15,8 @@ nav = [
   { "Toolbox" = [
     "tools/index.md",
     { "mise" = "tools/mise.tool.md" },
+    { "Nuclei" = "tools/nuclei.tool.md" },
+    { "GitHub" = "tools/github.tool.md" },
     { "Spectral" = "api/spectral.tool.md" },
     { "Terraform (IaC)" = [
       { "Terraform" = "devsecops/terraform.tool.md" },
