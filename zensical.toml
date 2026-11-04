@@ -1,8 +1,8 @@
-site_name = "It's dangerous to go alone!"
+site_name = "Cosckoya | DevSecOps & Cloud Notes"
 site_url = "https://cosckoya.github.io"
-site_description = "Cosckoya's Tech Toolbox"
+site_description = "Cloud, DevSecOps, and platform engineering notes, plus fantasy lore and curated reference lists. By cosckoya."
 site_author = "cosckoya"
-copyright = "Copyright &copy; 2026 цосцкоыа"
+copyright = "Copyright &copy; 2026 cosckoya (цосцкоыа)"
 
 repo_url = "https://github.com/cosckoya/cosckoya.github.io"
 edit_uri = ""
