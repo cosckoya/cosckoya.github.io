@@ -32,9 +32,9 @@ Mewtwo is the franchise's first legendary: a psychic Pokemon created by scientis
 
 ---
 
-## :material-flame: The Starters
+## :material-fire: The Starters
 
-### :material-flame: Charizard
+### :material-fire: Charizard
 
 **Origin:** Pokemon Red/Green, 1996 · **Type:** Fire/Flying · **Source:** Game Freak
 
@@ -100,9 +100,9 @@ Suicune is one of the legendary beasts — a creature that embodies the north wi
 
 ---
 
-## :material-dragon: The Pseudo-Legendaries
+## :material-fire: The Pseudo-Legendaries
 
-### :material-dragon: Dragonite
+### :material-fire: Dragonite
 
 **Origin:** Pokemon Red/Green, 1996 · **Type:** Dragon/Flying · **Source:** Game Freak
 
@@ -110,7 +110,7 @@ Dragonite is the franchise's original pseudo-legendary: the final evolution of D
 
 **Where to learn more:** [Bulbapedia: Dragonite](https://bulbapedia.bulbagarden.net/wiki/Dragonite_(Pok%C3%A9mon)) · [Dratini line](https://bulbapedia.bulbagarden.net/wiki/Dratini_(Pok%C3%A9mon)) · [Pseudo-legendary](https://bulbapedia.bulbagarden.net/wiki/Pseudo-legendary_Pok%C3%A9mon)
 
-### :material-cloud-lightning: Rayquaza
+### :lucide-cloud: Rayquaza
 
 **Origin:** Pokemon Ruby/Sapphire, 2002 · **Type:** Dragon/Flying · **Source:** Game Freak
 
