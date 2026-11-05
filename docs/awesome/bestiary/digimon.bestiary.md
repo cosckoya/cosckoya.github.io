@@ -12,9 +12,9 @@ Digimon ("Digital Monsters") is Pokemon's edgier rival: creatures born from data
 
 ---
 
-## :material-flame: The Classic Hero Lines
+## :material-fire: The Classic Hero Lines
 
-### :material-flame: Agumon → Greymon → MetalGreymon → WarGreymon
+### :material-fire: Agumon → Greymon → MetalGreymon → WarGreymon
 
 **Origin:** Digimon Adventure, 1999 · **Type:** Reptile → Dinosaur → Cyborg → Dragon · **Source:** Bandai, Toei
 
