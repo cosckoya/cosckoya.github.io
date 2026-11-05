@@ -1,5 +1,5 @@
 ---
-title: Warhammer Fantasy — Skaven & Goblins
+title: Warhammer Fantasy — Skaven & Goblins Bestiary
 description: ratmen of the Under-Empire and greenskin hordes of the Old World
 ---
 
@@ -7,48 +7,72 @@ description: ratmen of the Under-Empire and greenskin hordes of the Old World
 
 Ratmen scheming in the dark and greenskins swarming in numbers. Both win by attrition, tricks, and sheer volume.
 
-!!! tip "2026 Update"
-    Skaven and Goblins remain fan favorites for chaotic, swarm-style armies. Expect unreliable but hilarious mechanics.
+!!! tip "Start Here"
+    Start with Clanrats/Stormvermin and Night Goblins with Fanatics — the backbone of both armies.
 
 ---
 
-## Quick Hits
+## :lucide-rat: The Skaven
 
-=== ":lucide-list-check: Essential Skaven"
-    - Clanrats / Stormvermin
-    - Warpfire Throwers / Poisoned Wind Mortars
-    - Grey Seer on Screaming Bell
-    - Hell Pit Abomination
+### :lucide-rat: Clanrat / Stormvermin
 
-    **Real talk:**
-    - Skaven win by numbers and warpstone.
-    - Leadership is shaky; embrace the chaos.
+**Origin:** Warhammer Fantasy · **Type:** Skaven infantry · **Source:** Army Book
 
-=== ":lucide-bolt: Essential Goblins"
-    - Night Goblins with Fanatics
-    - Squig Hoppers / Squig Herds
-    - Doom Diver Catapult
-    - Trolls (when they behave)
+The backbone of the Under-Empire: cheap, expendable, and endless. Stormvermin are the elite guard — better armed, better trained, still rats.
 
-    **Why this works:**
-    - Goblins are cheap and disposable.
-    - Fanatics punish charges; Squigs hit hard.
+**Where to learn more:** [Lexicanum: Skaven](https://whfb.lexicanum.com/wiki/Skaven) · [Total War: Warhammer](https://www.totalwar.com)
 
-=== ":material-fire: Pro Tips & Gotchas"
-    **Tips:**
-    - Bring redundancy; Skaven units flee.
-    - Use terrain and numbers to control the board.
+### :lucide-flame: Warpfire Thrower / Poisoned Wind Mortar
 
-    **Gotchas:**
-    - Animosity and panic can ruin plans.
-    - Magic is unreliable; don't depend on it.
+**Origin:** Warhammer Fantasy · **Type:** Skaven weapon team · **Source:** Army Book
+
+Warpstone-powered chaos: short-range flamethrowers and gas mortars that punish clustered enemies. High risk, high reward.
+
+**Where to learn more:** [Lexicanum: Warpfire Thrower](https://whfb.lexicanum.com/wiki/Warpfire_Thrower)
+
+### :lucide-eye: Grey Seer
+
+**Origin:** Warhammer Fantasy · **Type:** Skaven wizard · **Source:** Army Book
+
+The prophets of the Horned Rat, riding Screaming Bells. Powerful magic, fragile bodies, and a tendency to explode.
+
+**Where to learn more:** [Lexicanum: Grey Seer](https://whfb.lexicanum.com/wiki/Grey_Seer)
 
 ---
 
-## Reference
+## :material-sprout: The Goblins
 
-- :lucide-book: [Warhammer Fantasy Battles](https://www.warhammer.com)
-- :simple-github: [Total War: Warhammer](https://www.totalwar.com)
+### :material-mushroom: Night Goblin with Fanatics
+
+**Origin:** Warhammer Fantasy · **Type:** Goblin infantry · **Source:** Army Book
+
+Cheap, sneaky, and armed with Fanatics — spinning balls of death released on the charge. The classic goblin trick.
+
+**Where to learn more:** [Lexicanum: Night Goblin](https://whfb.lexicanum.com/wiki/Night_Goblin)
+
+### :lucide-zap: Squig Hopper / Squig Herd
+
+**Origin:** Warhammer Fantasy · **Type:** Squig cavalry · **Source:** Army Book
+
+Unpredictable hopping mounts that hit hard and die fast. Fun, chaotic, and occasionally game-winning.
+
+**Where to learn more:** [Lexicanum: Squig](https://whfb.lexicanum.com/wiki/Squig)
+
+### :lucide-target: Doom Diver Catapult
+
+**Origin:** Warhammer Fantasy · **Type:** Goblin artillery · **Source:** Army Book
+
+A goblin launched by catapult, steering mid-flight. Absurd, effective, and very goblin.
+
+**Where to learn more:** [Lexicanum: Doom Diver](https://whfb.lexicanum.com/wiki/Doom_Diver_Catapult)
+
+---
+
+## :material-fire: Tactics
+
+Both armies win by numbers, terrain, and chaos. Skaven rely on warpstone and swarm tactics; Goblins on tricks and disposable units.
+
+**Where to learn more:** [Warhammer Fantasy Battles](https://www.warhammer.com)
 
 ---
 
