@@ -38,6 +38,9 @@ nav = [
       { "Dungeons & Dragons" = "awesome/bestiary/dnd.bestiary.md" },
       { "Pokemon" = "awesome/bestiary/pokemon.bestiary.md" },
       { "Digimon" = "awesome/bestiary/digimon.bestiary.md" },
+      { "Magic: The Gathering (Black)" = "awesome/bestiary/mtg-black.bestiary.md" },
+      { "Warhammer Fantasy" = "awesome/bestiary/warhammer-fantasy.bestiary.md" },
+      { "Warhammer 40K" = "awesome/bestiary/warhammer-40k.bestiary.md" },
     ]},
   ]},
 ]
